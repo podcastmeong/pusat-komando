@@ -1,0 +1,26 @@
+{
+  "id": null,
+  "jenis": "translation-job",
+  "tanggal": "YYYY-MM-DD",
+  "dari_agent": 5,
+  "ke_agent": 8,
+  "ringkasan": null,
+  "isi": {
+    "judul_asli": null,
+    "judul_inggris": null,
+    "file_sumber": null,
+    "bagian": null,
+    "target_platform": [],
+    "glosarium_dipakai": true,
+    "bagian_perlu_verifikasi": []
+  },
+  "status": "draf",
+  "_status_yang_diperbolehkan": [
+    "draf",
+    "diperiksa",
+    "disetujui",
+    "ditolak",
+    "selesai"
+  ],
+  "catatan_muse": null
+}

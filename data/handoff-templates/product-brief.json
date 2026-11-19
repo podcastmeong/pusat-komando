@@ -1,0 +1,29 @@
+{
+  "id": null,
+  "jenis": "product-brief",
+  "tanggal": "YYYY-MM-DD",
+  "dari_agent": 10,
+  "ke_agent": 5,
+  "ringkasan": null,
+  "isi": {
+    "nama_produk": null,
+    "jenis_produk": null,
+    "masalah_customer": null,
+    "target_customer": null,
+    "bukti_permintaan": null,
+    "skor_peluang": null,
+    "verdict": null,
+    "harga_usulan_rp": null,
+    "platform_jualan": [],
+    "catatan_kejujuran": null
+  },
+  "status": "draf",
+  "_status_yang_diperbolehkan": [
+    "draf",
+    "diperiksa",
+    "disetujui",
+    "ditolak",
+    "selesai"
+  ],
+  "catatan_muse": null
+}

@@ -1,0 +1,26 @@
+{
+  "id": null,
+  "jenis": "finance-entry",
+  "tanggal": "YYYY-MM-DD",
+  "dari_agent": 7,
+  "ke_agent": 7,
+  "ringkasan": null,
+  "isi": {
+    "platform": null,
+    "produk": null,
+    "jumlah_rp": null,
+    "jumlah_usd": null,
+    "status_pembayaran": null,
+    "metode_payout": null,
+    "catatan": null
+  },
+  "status": "draf",
+  "_status_yang_diperbolehkan": [
+    "draf",
+    "diperiksa",
+    "disetujui",
+    "ditolak",
+    "selesai"
+  ],
+  "catatan_muse": null
+}

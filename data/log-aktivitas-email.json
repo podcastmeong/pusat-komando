@@ -1,0 +1,20 @@
+[
+  {
+    "tanggal": "2026-11-18 23:53:35",
+    "aksi": "cek_email",
+    "detail": "akun=masduki1189@gmail.com (siaga)",
+    "hasil": "8 baru, 3 penting, 3 draf cepat"
+  },
+  {
+    "tanggal": "2026-11-18 23:55:10",
+    "aksi": "cek_email",
+    "detail": "akun=masduki1189@gmail.com (siaga)",
+    "hasil": "0 baru, 0 penting, 0 draf cepat"
+  },
+  {
+    "tanggal": "2026-11-18 23:56:09",
+    "aksi": "cek_email",
+    "detail": "akun=masduki1189@gmail.com (siaga)",
+    "hasil": "0 baru, 0 penting, 0 draf cepat"
+  }
+]

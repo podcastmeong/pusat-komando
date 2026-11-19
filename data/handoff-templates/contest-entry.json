@@ -1,0 +1,28 @@
+{
+  "id": null,
+  "jenis": "contest-entry",
+  "tanggal": "YYYY-MM-DD",
+  "dari_agent": 6,
+  "ke_agent": "Cipta (via Muse)",
+  "ringkasan": null,
+  "isi": {
+    "nama_lomba": null,
+    "kategori": null,
+    "hadiah": null,
+    "tenggat": "YYYY-MM-DD",
+    "kebijakan_ai": null,
+    "karya": null,
+    "file_karya": null,
+    "status_lomba": null
+  },
+  "status": "draf",
+  "_status_yang_diperbolehkan": [
+    "draf",
+    "diperiksa",
+    "disetujui",
+    "ditolak",
+    "selesai"
+  ],
+  "keputusan_cipta": null,
+  "catatan_muse": null
+}

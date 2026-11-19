@@ -1,0 +1,27 @@
+{
+  "id": null,
+  "jenis": "sales-lead",
+  "tanggal": "YYYY-MM-DD",
+  "dari_agent": 2,
+  "ke_agent": 2,
+  "ringkasan": null,
+  "isi": {
+    "nama_bisnis": null,
+    "jenis_bisnis": null,
+    "kontak": null,
+    "terverifikasi": false,
+    "status_lead": "baru",
+    "produk_ditawarkan": null,
+    "harga_rp": null,
+    "riwayat": []
+  },
+  "status": "draf",
+  "_status_yang_diperbolehkan": [
+    "draf",
+    "diperiksa",
+    "disetujui",
+    "ditolak",
+    "selesai"
+  ],
+  "catatan_muse": null
+}

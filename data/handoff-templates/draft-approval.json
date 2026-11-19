@@ -1,0 +1,27 @@
+{
+  "id": null,
+  "jenis": "draft-approval",
+  "tanggal": "YYYY-MM-DD",
+  "dari_agent": null,
+  "ke_agent": "Cipta (via Muse)",
+  "ringkasan": null,
+  "isi": {
+    "nama_item": null,
+    "jenis": null,
+    "file": null,
+    "judul": null,
+    "caption": null,
+    "harga_rp": null,
+    "catatan": null
+  },
+  "status": "draf",
+  "_status_yang_diperbolehkan": [
+    "draf",
+    "diperiksa",
+    "disetujui",
+    "ditolak",
+    "selesai"
+  ],
+  "keputusan_cipta": null,
+  "catatan_muse": null
+}

@@ -1,0 +1,113 @@
+{
+  "_keterangan": "Aturan triase Agent 13. Urutan pengecekan: aturan 'pengirim' dulu (paling spesifik), lalu 'kata_kunci'. Aturan pertama yang cocok menang. Bila tidak ada yang cocok -> kategori 'BELUM CUKUP DATA', prioritas '—'. Edit lewat tab 'Aturan & Log' di aplikasi.",
+  "aturan": [
+    {
+      "aktif": true,
+      "catatan": "Balasan banding / akun Devpost — selalu penting.",
+      "id": "R01",
+      "jenis": "pengirim",
+      "kategori": "Penting",
+      "pola": "support@devpost.com",
+      "prioritas": "Tinggi"
+    },
+    {
+      "aktif": true,
+      "catatan": "Semua email AdArena = lomba (tenggat & hadiah).",
+      "id": "R02",
+      "jenis": "pengirim",
+      "kategori": "Lomba",
+      "pola": "adarena.app",
+      "prioritas": "Tinggi"
+    },
+    {
+      "aktif": true,
+      "catatan": "Lomba poster Kemenkes.",
+      "id": "R03",
+      "jenis": "kata_kunci",
+      "kategori": "Lomba",
+      "pola": "kemenkes",
+      "prioritas": "Sedang"
+    },
+    {
+      "aktif": true,
+      "catatan": "Kata 'lomba' di subjek/isi (umum).",
+      "id": "R04",
+      "jenis": "kata_kunci",
+      "kategori": "Lomba",
+      "pola": "lomba",
+      "prioritas": "Sedang"
+    },
+    {
+      "aktif": true,
+      "catatan": "Zazzle: payout, pajak (W-8BEN), produk.",
+      "id": "R05",
+      "jenis": "pengirim",
+      "kategori": "Keuangan",
+      "pola": "zazzle.com",
+      "prioritas": "Sedang"
+    },
+    {
+      "aktif": true,
+      "catatan": "KaryaKarsa: terbit, penjualan, payout.",
+      "id": "R06",
+      "jenis": "kata_kunci",
+      "kategori": "Keuangan",
+      "pola": "karyakarsa",
+      "prioritas": "Sedang"
+    },
+    {
+      "aktif": true,
+      "catatan": "Pajak Google Play / platform — butuh tindakan Cipta.",
+      "id": "R07",
+      "jenis": "kata_kunci",
+      "kategori": "Keuangan",
+      "pola": "tax information",
+      "prioritas": "Tinggi"
+    },
+    {
+      "aktif": true,
+      "catatan": "Penawaran kerjasama / klien jasa video.",
+      "id": "R08",
+      "jenis": "kata_kunci",
+      "kategori": "Affiliate/Bisnis",
+      "pola": "penawaran",
+      "prioritas": "Tinggi"
+    },
+    {
+      "aktif": true,
+      "catatan": "Permintaan jasa video promo (KikiWorks).",
+      "id": "R09",
+      "jenis": "kata_kunci",
+      "kategori": "Affiliate/Bisnis",
+      "pola": "video promo",
+      "prioritas": "Tinggi"
+    },
+    {
+      "aktif": true,
+      "catatan": "Newsletter massal (ada tautan berhenti berlangganan).",
+      "id": "R10",
+      "jenis": "kata_kunci",
+      "kategori": "Promo",
+      "pola": "unsubscribe",
+      "prioritas": "Rendah"
+    },
+    {
+      "aktif": true,
+      "catatan": "Email kode verifikasi (Indonesia) — selalu penting, butuh tindakan segera.",
+      "id": "R11",
+      "jenis": "kata_kunci",
+      "kategori": "Penting",
+      "pola": "kode verifikasi",
+      "prioritas": "Tinggi"
+    },
+    {
+      "aktif": true,
+      "catatan": "Email kode verifikasi (Inggris) — selalu penting.",
+      "id": "R12",
+      "jenis": "kata_kunci",
+      "kategori": "Penting",
+      "pola": "verification code",
+      "prioritas": "Tinggi"
+    }
+  ]
+}

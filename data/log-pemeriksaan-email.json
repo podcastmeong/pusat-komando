@@ -1,0 +1,35 @@
+[
+  {
+    "tanggal": "2026-11-18 23:53:35",
+    "mode": "demo (CONTOH)",
+    "akun": "masduki1189@gmail.com",
+    "total_email": 8,
+    "baru": 8,
+    "penting_baru": 3,
+    "draf_dibuat": 3,
+    "durasi_detik": 0.07,
+    "durasi_draf_detik": 0.01
+  },
+  {
+    "tanggal": "2026-11-18 23:55:10",
+    "mode": "demo (CONTOH)",
+    "akun": "masduki1189@gmail.com",
+    "total_email": 8,
+    "baru": 0,
+    "penting_baru": 0,
+    "draf_dibuat": 0,
+    "durasi_detik": 0.01,
+    "durasi_draf_detik": 0.0
+  },
+  {
+    "tanggal": "2026-11-18 23:56:09",
+    "mode": "demo (CONTOH)",
+    "akun": "masduki1189@gmail.com",
+    "total_email": 8,
+    "baru": 0,
+    "penting_baru": 0,
+    "draf_dibuat": 0,
+    "durasi_detik": 0.0,
+    "durasi_draf_detik": 0.0
+  }
+]
