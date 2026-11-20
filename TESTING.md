@@ -68,8 +68,12 @@
 - [x] Dashboard data nyata setelah proof run: total_agent 30, aktif 3
       (A01, A12, A25), aktif sebagian 4, belum jalan 23, mesin_pasif 14,
       terkendala 0, handoff menunggu 11, draf penawaran toko 12.
-- [ ] Live di Faable (https://pusat-komando-972u7.faable.link/): HTTP 200 —
-      dicek setelah push commit v2.0 (catat hasilnya di sini).
+- [x] Live di Faable (https://pusat-komando-972u7.faable.link/): HTTP 200,
+      215.119 byte, 21 Nov ~05:00 (commit b93dfa4; cek pertama sempat
+      timeout 30 dtk saat deploy berjalan, cek ulang 90 dtk lolos 1,4 dtk).
+      Catatan jujur: curl hanya membuktikan shell Gradio ter-serve; nomor
+      v2.0 di header terverifikasi lewat build_app() lokal — tampil saat
+      aplikasi dibuka di browser (Faable auto-deploy dari main).
 
 ## Catatan
 
