@@ -9,9 +9,11 @@
 # ======================================================================
 import json
 import os
+import shutil
 import sys
 import tempfile
 import unittest
+from datetime import datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -282,6 +284,46 @@ class TestFungsiBaruDashboard(unittest.TestCase):
         for nama in belum_6:
             self.assertTrue(any(nama in p for p in semua_belum), nama)
             self.assertFalse(any(nama in p for p in semua_terhubung), nama)
+
+
+class TestTargetHarian(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.mkdtemp(prefix="pk-dash-target-")
+        shutil.copy(ROOT / "data" / "agents.json",
+                    Path(self.tmp) / "agents.json")
+        hari_ini = dashboard._waktu_sekarang()[:10]
+        kemarin = (datetime.now(dashboard.WIB)
+                   - timedelta(days=1)).strftime("%Y-%m-%d")
+        _tulis(self.tmp, "mesin_eksekusi_log.json", [
+            {"id": "ME-T1", "kode_agent": "A12", "status": "selesai",
+             "waktu_selesai": hari_ini + " 04:54"},
+            {"id": "ME-T2", "kode_agent": "A25",
+             "status": "menunggu persetujuan",
+             "waktu_selesai": hari_ini + " 05:19"},
+            {"id": "ME-T3", "kode_agent": "A25", "status": "selesai",
+             "waktu_selesai": kemarin + " 20:00"},
+        ])
+
+    def test_tiga_puluh_baris_target_per_agent(self):
+        rows = dashboard.target_harian_dashboard(base=self.tmp)
+        self.assertEqual(len(rows), 30)
+        for r in rows:
+            self.assertTrue(r["target_harian"]
+                            and r["target_harian"] != "—", r["kode"])
+            self.assertTrue(r["tugas_harian"]
+                            and r["tugas_harian"] != "—", r["kode"])
+        a12 = next(r for r in rows if r["kode"] == "A12")
+        self.assertEqual(a12["target_harian"], "3–5 visual siap QC")
+        self.assertTrue(a12["jalan"])
+        self.assertEqual(a12["jalan_hari_ini"], 1)
+        self.assertEqual(a12["draf_menunggu"], 0)
+        a25 = next(r for r in rows if r["kode"] == "A25")
+        # Run kemarin tidak dihitung sebagai jalan hari ini.
+        self.assertEqual(a25["jalan_hari_ini"], 1)
+        self.assertEqual(a25["draf_menunggu"], 1)
+        a01 = next(r for r in rows if r["kode"] == "A01")
+        self.assertFalse(a01["jalan"])
+        self.assertEqual(a01["jalan_hari_ini"], 0)
 
 
 if __name__ == "__main__":

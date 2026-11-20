@@ -679,7 +679,7 @@ def _ringkasan_dashboard_md():
         r = DASH.ringkasan_dashboard()
     except Exception as e:  # noqa: BLE001
         return "⚠️ Gagal membaca ringkasan: {}: {}".format(type(e).__name__, e)
-    return ("# 📊 Dashboard Pergerakan Agent — Pusat Komando v{}\n\n"
+    teks = ("# 📊 Dashboard Pergerakan Agent — Pusat Komando v{}\n\n"
             "**30 Agent Bintang** — ✅ Aktif: **{}** · 🟡 Aktif sebagian: **{}** · "
             "⏸️ Belum jalan: **{}**.\n\n"
             "🔧 14 mesin lama: **Pasif — non job** (modul + data tetap, dipakai "
@@ -692,6 +692,24 @@ def _ringkasan_dashboard_md():
                 VERSI, r["aktif"], r["aktif_sebagian"],
                 r["belum_jalan"], r["handoff_menunggu"],
                 r["penawaran_toko_draf"], r["terkendala"], r["entri_log"])
+    try:
+        target = DASH.target_harian_dashboard()
+        jalan = sum(1 for t in target if t["jalan"])
+        teks += ("\n\n## 🎯 Target Harian (SOP)\n\n"
+                 "Target harian per agent (SOP Harian 30 Agent Bintang) — "
+                 "**{} dari 30 agent sudah jalan hari ini.** \"Jalan\" = ada run "
+                 "mesin hari ini. Target SOP umumnya kualitatif — tercapai "
+                 "tidaknya dinilai di QC 11.30, bukan dari angka di sini.\n\n"
+                 "| Agent | Target harian | Jalan hari ini | Draf menunggu |\n"
+                 "|---|---|---|---|\n".format(jalan))
+        for t in target:
+            teks += "| **{} {}** | {} | {} | {} |\n".format(
+                t["kode"], t["nama"], t["target_harian"],
+                "✅ {}×".format(t["jalan_hari_ini"]) if t["jalan"] else "⏳ 0",
+                t["draf_menunggu"])
+    except Exception:  # noqa: BLE001 — tabel target tidak boleh merusak ringkasan
+        pass
+    return teks
 
 
 def _tabel_antrean():

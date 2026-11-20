@@ -26,6 +26,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent / "data"
 LOG_FILE_NAMA = "activity_log.json"
+LOG_MESIN_NAMA = "mesin_eksekusi_log.json"
 MAKS_LOG = 500
 WIB = timezone(timedelta(hours=7))
 
@@ -301,6 +302,41 @@ def ringkasan_dashboard(base=None):
             "handoff_menunggu": len(menunggu),
             "penawaran_toko_draf": len(toko_draf),
             "entri_log": len(_baca_json(folder / LOG_FILE_NAMA, []))}
+
+
+def target_harian_dashboard(base=None, tanggal=None):
+    """Target harian SOP per agent Bintang + realisasi hari itu.
+
+    Satu baris per agent: kode, nama, divisi, tugas_harian, target_harian
+    (dari sop_harian di agents.json), jalan_hari_ini (jumlah run mesin
+    pada tanggal itu), draf_menunggu (run hari itu yang menunggu
+    persetujuan), jalan (True bila ada run hari itu).
+    tanggal: 'YYYY-MM-DD' (WIB); default hari ini. Target SOP umumnya
+    kualitatif — tercapai tidaknya dinilai di QC 11.30, bukan dari angka
+    di sini. Jujur: kerja lewat Muse tanpa mesin tidak tercatat di sini.
+    """
+    folder = Path(base) if base else BASE
+    if tanggal is None:
+        tanggal = _waktu_sekarang()[:10]
+    data = _baca_json(folder / "agents.json", {})
+    b30 = (data.get("agent_30") or {}).get("agents", [])
+    log = _baca_json(folder / LOG_MESIN_NAMA, [])
+    rows = []
+    for e in b30:
+        kode = e.get("code", "")
+        jalan = [x for x in log
+                 if x.get("kode_agent") == kode
+                 and str(x.get("waktu_selesai", ""))[:10] == tanggal]
+        rows.append({"kode": kode, "nama": e.get("name", ""),
+                     "divisi": e.get("division", ""),
+                     "tugas_harian": e.get("tugas_harian", "—"),
+                     "target_harian": e.get("target_harian", "—"),
+                     "jalan_hari_ini": len(jalan),
+                     "draf_menunggu": sum(
+                         1 for x in jalan
+                         if x.get("status") == "menunggu persetujuan"),
+                     "jalan": bool(jalan)})
+    return rows
 
 
 def tugas_menunggu(base=None):
