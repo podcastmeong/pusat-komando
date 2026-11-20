@@ -33,5 +33,12 @@
     "aksi": "buat draf: arahan_harian",
     "hasil": "Arahan harian CEO — 2026-11-20",
     "detail": ""
+  },
+  {
+    "waktu": "2026-11-21 04:19",
+    "kode_agent": "Pusat Komando",
+    "aksi": "deploy Faable",
+    "hasil": "commit 6ce0f03 — 30 Agent + tab B + tab C live, Faable HTTP 200",
+    "detail": "37 file"
   }
 ]
