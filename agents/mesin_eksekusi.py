@@ -199,9 +199,11 @@ def muat_modul_bintang(kode, base=None):
 
 
 # ---------------------------------------------------------------------------
-# Jadwal harian mesin — alur Gemini #1 dalam bingkai 06:00–21:00 ChatGPT #18
-# Sumber tunggal: b03.jadwal_harian() (Share Gemini #1). Bila b03 tidak
-# bisa dimuat, dipakai salinan darurat dengan catatan jujur.
+# Jadwal harian mesin — SIKLUS SOP (9 tahap, 07:00–16:30) sejak keputusan
+# Cipta 21 Nov 2026 ("Mesin ikut SOP" / "Mesin ikut siklus SOP").
+# Sumber tunggal: sop_harian.siklus_harian di agents.json. Jadwal Gemini #1
+# (b03.jadwal_harian + salinan darurat di bawah) hanya fallback bila SOP
+# belum ada di data.
 # ---------------------------------------------------------------------------
 _JADWAL_DARURAT = [
     {"jam": "06.00", "kegiatan": "Riset & Lomba",
@@ -242,9 +244,41 @@ def _kode_dari_teks(teks):
     return sorted(set(kode))
 
 
+def _rentang_jam(teks):
+    """'07.00–07.20' -> (420, 440) menit. Bukan rentang -> None."""
+    import re
+    m = re.match(r"(\d{1,2})\.(\d{2})\s*[–-]\s*(\d{1,2})\.(\d{2})$",
+                 (teks or "").strip())
+    if not m:
+        return None
+    return (int(m.group(1)) * 60 + int(m.group(2)),
+            int(m.group(3)) * 60 + int(m.group(4)))
+
+
 def jadwal_harian_mesin(base=None):
-    """5 slot harian (Gemini #1) + bingkai ChatGPT #18 06:00–21:00.
+    """Siklus harian SOP (9 tahap, 07:00–16:30) — keputusan Cipta
+    21 Nov 2026: mesin ikut SOP. Sumber: sop_harian.siklus_harian di
+    agents.json. Bila SOP belum ada, fallback ke 5 slot Gemini #1
+    (b03.jadwal_harian, lalu salinan darurat).
     Tiap slot: jam, kegiatan, agent (kode Bintang), output."""
+    folder = Path(base) if base else DATA_DIR
+    sop = (_baca_json(folder / "agents.json", {}).get("sop_harian") or {})
+    siklus = sop.get("siklus_harian") or []
+    if siklus:
+        slot = []
+        for s in siklus:
+            slot.append({"jam": s.get("jam", "?"),
+                         "kegiatan": s.get("tahap", "?"),
+                         "agent": _kode_dari_teks(s.get("penanggung_jawab", "")),
+                         "agent_teks": s.get("penanggung_jawab", ""),
+                         "output": s.get("hasil_wajib", "")})
+        return {"sumber": ("SOP Harian 30 Agent Bintang (keputusan Cipta "
+                           "21 Nov 2026 — mesin ikut SOP)"),
+                "bingkai": "07:00–16:30 (SOP)",
+                "catatan": ("Jadwal referensi — BUKAN jadwal otomatis. Agent pasif; "
+                            "mesin hanya jalan saat dipicu (tombol/CLI). "
+                            "Di luar 07:00–16:30 tidak ada tahap SOP."),
+                "slot": slot}
     try:
         b03, _err = muat_modul_bintang("A03", base)
         data = b03.jadwal_harian() if b03 is not None else None
@@ -276,21 +310,32 @@ def jadwal_harian_mesin(base=None):
 
 def slot_untuk_jam(jam=None):
     """Slot yang berlaku untuk satu jam (0–23 WIB). Tanpa argumen:
-    jam sekarang WIB."""
+    jam sekarang WIB. Siklus SOP: tahap yang rentang jamnya memuat
+    jam itu; di luar 07:00–16:30 (mis. istirahat 12:00–13:00, malam)
+    tidak ada tahap -> None. Jadwal Gemini lama (fallback) memakai
+    pemetaan jam tetap."""
     if jam is None:
         jam = datetime.now(WIB).hour
-    jadwal = jadwal_harian_mesin()["slot"]
-    if not jadwal:
+    jadwal = jadwal_harian_mesin()
+    slot = jadwal["slot"]
+    if not slot:
         return None
+    menit = jam * 60
+    for s in slot:
+        rentang = _rentang_jam(s.get("jam", ""))
+        if rentang and rentang[0] <= menit < rentang[1]:
+            return s
+    if any(_rentang_jam(s.get("jam", "")) for s in slot):
+        return None  # jadwal SOP, jam di luar tahap mana pun
     if jam in (6, 7):
-        return jadwal[0]
+        return slot[0]
     if jam in (8, 9, 10):
-        return jadwal[1]
+        return slot[1]
     if jam in (11, 15, 19):
-        return jadwal[2]
+        return slot[2]
     if jam in (21, 22):
-        return jadwal[4]
-    return jadwal[3]  # CS & Closing sepanjang hari
+        return slot[4]
+    return slot[3]  # CS & Closing sepanjang hari
 
 
 # ---------------------------------------------------------------------------
@@ -776,7 +821,7 @@ def _tandai_antrean_diproses(run_id, id_antrean, base=None):
 
 
 def jalankan_slot(jam=None, base=None):
-    """Jalankan semua agent pada slot jam tersebut (jadwal Gemini).
+    """Jalankan semua agent pada slot jam tersebut (siklus SOP).
     Tanpa tugas antrean -> mode 'contoh' (dicatat jujur di log)."""
     folder = Path(base) if base else DATA_DIR
     slot = slot_untuk_jam(jam)

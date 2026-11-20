@@ -98,27 +98,40 @@ class TestDaftarDanJadwal(_BaseFixture):
         self.assertIsNone(modul)
         self.assertIn("tidak ada", err)
 
-    def test_jadwal_lima_slot_gemini(self):
+    def test_jadwal_sembilan_tahap_sop(self):
+        # Keputusan Cipta 21 Nov 2026: mesin ikut siklus SOP (9 tahap).
         jadwal = MESIN.jadwal_harian_mesin(self.tmp)
-        self.assertIn("06:00", jadwal["bingkai"])
+        self.assertIn("07:00", jadwal["bingkai"])
+        self.assertIn("SOP", jadwal["sumber"])
         slot = jadwal["slot"]
-        self.assertEqual(len(slot), 5)
-        self.assertEqual(slot[0]["jam"], "06.00")
-        self.assertEqual(slot[0]["agent"], ["A06", "A07", "A09", "A10", "A28"])
-        self.assertEqual(slot[1]["agent"],
+        self.assertEqual(len(slot), 9)
+        self.assertEqual(slot[0]["jam"], "07.00–07.20")
+        self.assertEqual(slot[0]["kegiatan"], "Briefing & prioritas")
+        self.assertEqual(slot[0]["agent"], ["A01", "A02", "A03"])
+        self.assertEqual(slot[3]["kegiatan"], "Produksi utama")
+        self.assertEqual(slot[3]["agent"],
                          ["A%02d" % i for i in range(11, 20)])
-        self.assertEqual(slot[2]["agent"],
-                         ["A%02d" % i for i in range(20, 25)])
-        self.assertEqual(slot[3]["agent"], ["A25", "A26", "A27"])
-        self.assertEqual(slot[4]["agent"], ["A05", "A29"])
+        self.assertEqual(slot[5]["kegiatan"], "Distribusi konten")
+        self.assertEqual(slot[5]["agent"],
+                         ["A%02d" % i for i in range(19, 25)])
+        self.assertEqual(slot[8]["kegiatan"], "Rekonsiliasi & laporan")
+        self.assertEqual(slot[8]["agent"], ["A03", "A04", "A05", "A30"])
 
     def test_slot_untuk_jam(self):
-        self.assertEqual(MESIN.slot_untuk_jam(6)["kegiatan"], "Riset & Lomba")
-        self.assertEqual(MESIN.slot_untuk_jam(8)["kegiatan"], "Produksi")
-        self.assertEqual(MESIN.slot_untuk_jam(15)["kegiatan"], "Distribusi")
-        self.assertEqual(MESIN.slot_untuk_jam(21)["kegiatan"],
-                         "Audit Keuangan & Operasional")
-        self.assertEqual(MESIN.slot_untuk_jam(13)["kegiatan"], "CS & Closing")
+        self.assertEqual(MESIN.slot_untuk_jam(7)["kegiatan"],
+                         "Briefing & prioritas")
+        self.assertEqual(MESIN.slot_untuk_jam(8)["kegiatan"], "Riset pasar")
+        self.assertEqual(MESIN.slot_untuk_jam(10)["kegiatan"],
+                         "Produksi utama")
+        self.assertEqual(MESIN.slot_untuk_jam(13)["kegiatan"],
+                         "Distribusi konten")
+        self.assertEqual(MESIN.slot_untuk_jam(15)["kegiatan"],
+                         "Peluang & keuangan")
+        self.assertEqual(MESIN.slot_untuk_jam(16)["kegiatan"],
+                         "Rekonsiliasi & laporan")
+        # Di luar tahap SOP (istirahat 12:00–13:00, malam): tidak ada slot.
+        self.assertIsNone(MESIN.slot_untuk_jam(12))
+        self.assertIsNone(MESIN.slot_untuk_jam(21))
 
     def test_target_30_hari_dari_data_fixture(self):
         t = MESIN.target_30_hari(self.tmp)
@@ -229,11 +242,16 @@ class TestEksekusiNyata(_BaseFixture):
         self.assertEqual(len(MESIN.audit_log(self.tmp)), 3)
 
     def test_jalankan_slot_produksi(self):
-        hasil = MESIN.jalankan_slot(8, self.tmp)
-        self.assertEqual(hasil["kegiatan"], "Produksi")
+        hasil = MESIN.jalankan_slot(10, self.tmp)
+        self.assertEqual(hasil["kegiatan"], "Produksi utama")
         self.assertEqual(hasil["dijalankan"], 9)
         self.assertEqual(hasil["berhasil"], 9)
         self.assertTrue(all(r["mode"] == "contoh" for r in hasil["rincian"]))
+
+    def test_jalankan_slot_di_luar_sop(self):
+        # Jam 12 (istirahat) dan 21 (malam): tidak ada tahap SOP.
+        self.assertFalse(MESIN.jalankan_slot(12, self.tmp)["ok"])
+        self.assertFalse(MESIN.jalankan_slot(21, self.tmp)["ok"])
 
     def test_kpi_dan_audit_dan_persetujuan(self):
         MESIN.jalankan_agent(

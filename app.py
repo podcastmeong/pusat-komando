@@ -14,8 +14,9 @@
 #
 # 30 Agent Bintang (modul agents/b01–b30, job description dari Share
 # ChatGPT #18/#19 + Share Gemini #1; dipetakan ke 14 mesin lama + Muse +
-# Pusat Komando; strategi SESUAI ChatGPT + Gemini: jadwal harian alur
-# Gemini #1 06:00–21:00, KPI gemini_kpi, target 30 hari Gemini).
+# Pusat Komando; strategi SESUAI ChatGPT + Gemini: KPI gemini_kpi, target
+# 30 hari Gemini; JADWAL MESIN = siklus SOP 07:00–16:30, keputusan Cipta
+# 21 Nov 2026 "Mesin ikut SOP" — slot Gemini hanya fallback).
 # 14 mesin lama (a01–a14): Asisten, Penjualan, Pertumbuhan, Penjualan
 # Harian, Produksi Produk, Lomba, Keuangan, Terjemah Inggris, Game &
 # Aplikasi (+ tim 9A–9F), Riset Produk, Oyen, Momo, Email, Upwork.
@@ -637,13 +638,28 @@ def _detail_agent30(kode):
             pass
     if kode == "A03":
         try:
-            j = modul.jadwal_harian()
-            baris.append("\n## 🕐 Jadwal Harian Gemini (referensi, bukan jadwal otomatis)")
-            for s in j.get("jadwal", []):
-                baris.append("- **{}:** {}".format(s.get("jam", ""), s.get("kegiatan", "")))
-            baris.append("\n{}".format(j.get("catatan_jujur", "")))
-        except Exception:  # noqa: BLE001
-            pass
+            if MESIN is not None:
+                j = MESIN.jadwal_harian_mesin()
+                sop = "SOP" in j.get("sumber", "")
+                baris.append("\n## 🕐 Siklus Harian SOP — jadwal yang diikuti mesin"
+                             if sop else
+                             "\n## 🕐 Jadwal Harian Gemini (referensi, bukan jadwal otomatis)")
+                for s in j.get("slot", []):
+                    baris.append("- **{} ({}):** {} — {}".format(
+                        s.get("jam", ""), s.get("agent_teks", ""),
+                        s.get("kegiatan", ""), s.get("output", "")))
+                baris.append("\n{}".format(j.get("catatan", "")))
+            else:
+                raise RuntimeError("mesin tidak dimuat")
+        except Exception:  # noqa: BLE001 — fallback ke jadwal Gemini b03
+            try:
+                j = modul.jadwal_harian()
+                baris.append("\n## 🕐 Jadwal Harian Gemini (referensi, bukan jadwal otomatis)")
+                for s in j.get("jadwal", []):
+                    baris.append("- **{}:** {}".format(s.get("jam", ""), s.get("kegiatan", "")))
+                baris.append("\n{}".format(j.get("catatan_jujur", "")))
+            except Exception:  # noqa: BLE001
+                pass
     baris.append("\n_Agent pasif — dijalankan Muse, bukan layanan otonom 24 jam. "
                  "Semua output DRAF untuk persetujuan Cipta._")
     return "\n".join(baris)
