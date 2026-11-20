@@ -1,29 +1,24 @@
 # ==========================================================================
-# PUSAT KOMANDO PODCAST MEONG
-# Satu aplikasi gabungan 14 agent AI bernomor + 6 tim Agent 9 + workshop
-# Avatar Podcast + bus Koordinasi antar-agent + 30 Agent Bintang (B)
-# + Dashboard Agent (C) (26 tab) dalam SATU Space Gradio, berbagi satu
-# folder data/ — supaya agent bisa membaca output agent lain langsung
-# dari Papan Handoff, tanpa antre lewat Muse.
+# PUSAT KOMANDO PODCAST MEONG — v2.0
+# 30 Agent Bintang (A01–A30) + Mesin Eksekusi + Dashboard Agent +
+# Command Center (3.0) + Papan Handoff + bus Koordinasi antar-agent
+# (5 tab) dalam SATU Space Gradio, berbagi satu folder data/ — supaya
+# output satu agent langsung bisa dipakai agent lain lewat Papan Handoff,
+# tanpa antre lewat Muse.
 #
-# Agent yang digabung (modul di agents/, salinan dari agent aslinya dengan
-# path data dialihkan ke data/ bersama):
-#   1 Asisten (a01) · 2 Penjualan (a02, FastAPI — dibuatkan tab Gradio di
-#   sini) · 3 Pertumbuhan (a03) · 4 Penjualan Harian (a04 — diaktifkan
-#   kembali 20 Nov 2026 atas perintah Cipta, mengisi slot Agent 4 yang
-#   dulu dihapus; dibantu Agent 2 untuk memasarkan) · 5 Produksi Produk
-#   (a05) · 6 Lomba (a06)
-#   7 Keuangan (a07) · 8 Terjemah Inggris (a08) · 9 Produksi Game &
-#   Aplikasi (a09) · 9A Rancang (a09a) · 9B Bangun (a09b) · 9C Jualan
-#   (a09c) · 9D Bangun-2 (a09d) · 9E Bangun-3 (a09e) · 9F Verifikasi &
-#   Katalog (a09f) — enam tim di bawah Agent 9 · 10 Riset Produk &
-#   Strategi (a10) · 11 Oyen (a11_oyen) · 12 Momo (a12_momo) · 13 Email
-#   (a13_email) · 14 Upwork (a14 — dibuat 20 Nov 2026 atas perintah
-#   Cipta, mode persiapan: akun Upwork belum ada, signup tertahan di
-#   Cloudflare; riset job + draf proposal saja) · Workshop Avatar Podcast
-#   (a11, tanpa nomor)
-# Agent 4 TIDAK ADA — dihapus atas perintah Cipta; upload harian ditangani
-# Muse langsung.
+# v2.0 (21 Nov 2026, perintah Cipta): 30 Agent Bintang + mesin eksekusi
+# (agents/mesin_eksekusi.py) + 14 agent lama menjadi PASIF NON-JOB
+# (modul + data tetap utuh sebagai mesin/engine yang dipakai 30 Bintang;
+# tab UI mereka dihapus, hanya tab B/C/0/Handoff/Koordinasi yang tampil).
+# v1 = sistem 14 agent bernomor + 6 tim Agent 9 + workshop Avatar Podcast.
+#
+# 30 Agent Bintang (modul agents/b01–b30, job description dari Share
+# ChatGPT #18/#19 + Share Gemini #1; dipetakan ke 14 mesin lama + Muse +
+# Pusat Komando; strategi SESUAI ChatGPT + Gemini: jadwal harian alur
+# Gemini #1 06:00–21:00, KPI gemini_kpi, target 30 hari Gemini).
+# 14 mesin lama (a01–a14): Asisten, Penjualan, Pertumbuhan, Penjualan
+# Harian, Produksi Produk, Lomba, Keuangan, Terjemah Inggris, Game &
+# Aplikasi (+ tim 9A–9F), Riset Produk, Oyen, Momo, Email, Upwork.
 #
 # ATURAN YANG TETAP BERLAKU (SOP Kerja Sama Agent AI, berlaku 18 Nov 2026):
 # - Semua output agent adalah DRAF untuk persetujuan Cipta.
@@ -32,6 +27,8 @@
 #   tulis "belum cukup data". Tidak ada janji penghasilan.
 # - Fokus gratis dulu: Gemini free tier via env var GEMINI_API_KEY saja;
 #   tanpa key semua agent jalan mode template lokal. Tanpa layanan berbayar.
+# - Kendala HARUS diinfokan: pekerjaan yang tidak bisa jalan mendapat
+#   status "terkendala" + penyebab + apa yang dibutuhkan dari Cipta.
 # - Telemetri Gradio dimatikan.
 # ==========================================================================
 import importlib
@@ -70,6 +67,7 @@ NAMA_AGENT = {1: "1 · Asisten", 2: "2 · Penjualan", 3: "3 · Pertumbuhan",
 _URUTAN_AGENT = [1, 2, 3, 4, 5, 6, 7, 8, 9, "9A", "9B", "9C", "9D", "9E", "9F",
                  10, 11, 12, 13, 14]
 MODE_AI = bool(os.environ.get("GEMINI_API_KEY", "").strip())
+VERSI = "2.0"  # Pusat Komando v2.0 (21 Nov 2026): 30 Bintang + mesin eksekusi
 
 
 # ---------------------------------------------------------------------------
@@ -82,41 +80,13 @@ def _muat(nama_modul):
         return None, "{}: {}".format(type(e).__name__, e)
 
 
-A01, E01 = _muat("a01_asisten")
-A02, E02 = _muat("a02_penjualan")
-A03, E03 = _muat("a03_pertumbuhan")
-A04, E04 = _muat("a04_penjualan_harian")
-A05, E05 = _muat("a05_produksi")
-A06, E06 = _muat("a06_lomba")
-A07, E07 = _muat("a07_keuangan")
-A08, E08 = _muat("a08_terjemah")
-A09, E09 = _muat("a09_game")
-A09A, E09A = _muat("a09a_rancang")
-A09B, E09B = _muat("a09b_bangun")
-A09C, E09C = _muat("a09c_jualan")
-A09D, E09D = _muat("a09d_bangun2")
-A09E, E09E = _muat("a09e_bangun3")
-A09F, E09F = _muat("a09f_verifikasi_katalog")
-A10, E10 = _muat("a10_riset")
-A11, E11 = _muat("a11_avatar")
-A11O, E11O = _muat("a11_oyen")
-A12M, E12M = _muat("a12_momo")
-A13, E13 = _muat("a13_email")
-A14, E14 = _muat("a14_upwork")
+# 14 modul lama (a01–a14) TIDAK dimuat di sini lagi sejak v2.0 — mereka
+# tetap bisa diimpor sebagai mesin oleh modul Bintang (b01–b30) dan mesin
+# eksekusi; tab UI mereka dihapus. Yang dimuat di app.py: koordinasi,
+# dashboard, dan mesin eksekusi.
 KOORD, EKOORD = _muat("koordinasi")
 DASH, E_DASH = _muat("dashboard")
-
-
-def _blok_dari_modul(modul, getter, nama):
-    """Ambil objek Blocks dari sebuah modul agent (demo / build_*)."""
-    if modul is None:
-        return None, "Agent {} gagal dimuat.".format(nama)
-    try:
-        blok = getter(modul)
-        return blok, None
-    except Exception as e:  # noqa: BLE001
-        return None, "Agent {} gagal membangun UI: {}: {}".format(
-            nama, type(e).__name__, e)
+MESIN, E_MESIN = _muat("mesin_eksekusi")
 
 
 # ---------------------------------------------------------------------------
@@ -586,67 +556,12 @@ def _jalankan_siklus_koord():
 
 
 # ---------------------------------------------------------------------------
-# Tab Agent 2 — Penjualan (modul FastAPI, tanpa UI Gradio; dibuatkan tab di sini)
+# UI — satu Blocks (5 tab sejak v2.0)
 # ---------------------------------------------------------------------------
-def _rencana_markdown():
-    if A02 is None:
-        return "⚠️ Agent 2 gagal dimuat: {}".format(E02)
-    try:
-        r = A02.rencana()
-    except Exception as e:  # noqa: BLE001
-        return "⚠️ Gagal membuat rencana: {}: {}".format(type(e).__name__, e)
-    baris = ["# 📋 Rencana Harian Penjualan — {}\n".format(r.get("tanggal", "")),
-             "Total lead: **{}** (belum terverifikasi: **{}**). Ringkasan status: {}.".format(
-                 r.get("total", 0), r.get("belum_terverifikasi", 0),
-                 ", ".join("{}: {}".format(k, v) for k, v in (r.get("ringkasan") or {}).items()))]
-    for a in r.get("aksi", []):
-        baris.append("\n## {}\n{}".format(a.get("judul", ""), a.get("detail", "")))
-    baris.append("\n_Draf saja — pesan outreach dikirim manual oleh Cipta setelah dicek, "
-                 "dan kontak harus terverifikasi dulu._")
-    return "\n".join(baris)
+HEADER = """# 🎛️ Pusat Komando Podcast Meong — v2.0
 
-
-def _tabel_leads():
-    if A02 is None:
-        return []
-    try:
-        return [[l.get("id", ""), l.get("nama", ""), l.get("kontak", ""),
-                 l.get("alamat", ""), l.get("jenis", ""), l.get("status", ""),
-                 "Ya" if l.get("terverifikasi") else "Belum",
-                 l.get("catatan", "")] for l in A02.load_leads()]
-    except Exception:  # noqa: BLE001
-        return []
-
-
-def _tambah_lead(nama, kontak, alamat, jenis, status, terverifikasi, catatan):
-    if A02 is None:
-        return "⚠️ Agent 2 gagal dimuat: {}".format(E02), _tabel_leads()
-    nama = (nama or "").strip()
-    if not nama:
-        return "⚠️ Nama bisnis wajib diisi.", _tabel_leads()
-    leads = A02.load_leads()
-    baru_id = "lead-%02d" % (max([int(l["id"].split("-")[1]) for l in leads
-                                  if str(l.get("id", "")).startswith("lead-")
-                                  and str(l["id"].split("-")[1]).isdigit()],
-                                 default=0) + 1)
-    leads.append({"id": baru_id, "nama": nama, "kontak": (kontak or "").strip(),
-                  "alamat": (alamat or "").strip(),
-                  "jenis": (jenis or "pet shop").strip() or "pet shop",
-                  "status": status, "terverifikasi": bool(terverifikasi),
-                  "catatan": (catatan or "").strip()})
-    A02.save_leads(leads)
-    return "✅ Lead {} ditambahkan (status: {}). Ingat: verifikasi kontak dulu sebelum dihubungi.".format(
-        baru_id, status), _tabel_leads()
-
-
-# ---------------------------------------------------------------------------
-# UI — satu Blocks, satu tab per agent + Papan Handoff
-# ---------------------------------------------------------------------------
-HEADER = """# 🎛️ Pusat Komando Podcast Meong
-
-Satu wadah untuk **14 agent AI bernomor + 6 tim Agent 9 + workshop Avatar Podcast + bus Koordinasi + 30 Agent Bintang + Dashboard Agent (26 tab)** — berbagi satu folder `data/`, jadi output satu agent
-langsung bisa dipakai agent lain lewat **Papan Handoff** dan **bus Koordinasi**. Agent 4 tidak ada
-(dihapus atas perintah Cipta — upload harian ditangani Muse langsung).
+**30 Agent Bintang** (A01–A30) + **Mesin Eksekusi** + **Dashboard Agent** + Command Center + Papan Handoff + bus Koordinasi — berbagi satu folder `data/`, jadi output satu agent
+langsung bisa dipakai agent lain lewat **Papan Handoff** dan **bus Koordinasi**. 14 mesin lama (a01–a14) kini **pasif non-job**: modul + datanya tetap utuh sebagai engine yang dipakai 30 Bintang, tab UI-nya dihapus.
 
 **Aturan keras (SOP, berlaku 18 Nov 2026):** semua hasil adalah **DRAF** untuk persetujuan
 Cipta · **tidak ada** yang otomatis upload / kirim / transfer / bayar · dilarang mengarang
@@ -748,17 +663,103 @@ def _ringkasan_dashboard_md():
         r = DASH.ringkasan_dashboard()
     except Exception as e:  # noqa: BLE001
         return "⚠️ Gagal membaca ringkasan: {}: {}".format(type(e).__name__, e)
-    return ("# 📊 Dashboard Pergerakan Agent\n\n"
-            "**Total agent: {}** — ✅ Aktif: **{}** · 🟡 Aktif sebagian: **{}** · "
-            "⏸️ Belum jalan: **{}** · 🛠️ Mode persiapan: **{}**.\n\n"
+    return ("# 📊 Dashboard Pergerakan Agent — Pusat Komando v{}\n\n"
+            "**30 Agent Bintang** — ✅ Aktif: **{}** · 🟡 Aktif sebagian: **{}** · "
+            "⏸️ Belum jalan: **{}**.\n\n"
+            "🔧 14 mesin lama: **Pasif — non job** (modul + data tetap, dipakai "
+            "sebagai engine oleh 30 Bintang).\n\n"
             "📥 Handoff menunggu: **{}** · 📨 Draf penawaran toko: **{}** · "
-            "📝 Entri log aktivitas: **{}**.\n\n"
+            "🚧 Pekerjaan terkendala: **{}** · 📝 Entri log aktivitas: **{}**.\n\n"
             "_\"Belum jalan\" = status Aktif tapi belum ada aktivitas tercatat di folder "
             "data/. Agent yang bekerja lewat Muse tanpa menulis ke data/ tetap tampil "
             "\"belum ada aktivitas\"._").format(
-                r["total_agent"], r["aktif"], r["aktif_sebagian"],
-                r["belum_jalan"], r["mode_persiapan"], r["handoff_menunggu"],
-                r["penawaran_toko_draf"], r["entri_log"])
+                VERSI, r["aktif"], r["aktif_sebagian"],
+                r["belum_jalan"], r["handoff_menunggu"],
+                r["penawaran_toko_draf"], r["terkendala"], r["entri_log"])
+
+
+def _tabel_antrean():
+    if DASH is None:
+        return []
+    try:
+        antrean = DASH.antrean_kerja()
+    except Exception:  # noqa: BLE001
+        return []
+    return [[a.get("id", ""), a.get("jenis", ""), a.get("agent", ""),
+             a.get("ringkasan", "")[:100], a.get("status", ""),
+             a.get("prioritas", ""), a.get("tenggat", "")]
+            for a in antrean]
+
+
+def _tabel_terkendala():
+    if DASH is None:
+        return []
+    try:
+        antrean = DASH.tugas_terkendala()
+    except Exception:  # noqa: BLE001
+        return []
+    return [[a.get("id", ""), a.get("jenis", ""), a.get("agent", ""),
+             a.get("ringkasan", "")[:100], a.get("penyebab", "")[:150],
+             a.get("dibutuhkan_dari_cipta", "")[:150]]
+            for a in antrean]
+
+
+def _target_30_hari_md():
+    if DASH is None:
+        return "⚠️ Modul dashboard gagal dimuat: {}".format(E_DASH)
+    try:
+        t = DASH.target_30_hari()
+    except Exception as e:  # noqa: BLE001
+        return "⚠️ Gagal membaca target: {}: {}".format(type(e).__name__, e)
+    baris = ["### 🎯 Target 30 Hari Gemini (tolok ukur, bukan janji)\n"]
+    for item in t.get("target", []):
+        baris.append("- **{}**: target **{}** {} — realisasi: **{}**{}.".format(
+            item.get("nama", "?"), item.get("target", "?"),
+            item.get("satuan", ""), item.get("realisasi", "?"),
+            (" — " + item.get("catatan", "")) if item.get("catatan") else ""))
+    baris.append("\n_{}_".format(t.get("catatan_jujur", "")))
+    return "\n".join(baris)
+
+
+def _tabel_platform():
+    if DASH is None:
+        return []
+    try:
+        data = DASH.platform_per_agent()
+    except Exception:  # noqa: BLE001
+        return []
+    return [[p.get("kode", ""), p.get("nama", ""),
+             ", ".join(p.get("terhubung", []) or ["—"]),
+             ", ".join(p.get("belum_terhubung", []) or ["—"])]
+            for p in data]
+
+
+def _jalankan_mesin():
+    """Tombol Dashboard: jalankan antrean menunggu lewat mesin eksekusi
+    (maks 5 item). Semua output DRAF — menunggu persetujuan Cipta."""
+    if MESIN is None:
+        return ("⚠️ Mesin eksekusi gagal dimuat: {}".format(E_MESIN),
+                _ringkasan_dashboard_md(), _tabel_dashboard(),
+                _feed_dashboard_md(), _tabel_antrean(), _tabel_terkendala())
+    try:
+        hasil = MESIN.jalankan_antrean()
+    except Exception as e:  # noqa: BLE001
+        return ("⚠️ Mesin gagal jalan: {}: {}".format(type(e).__name__, e),
+                _ringkasan_dashboard_md(), _tabel_dashboard(),
+                _feed_dashboard_md(), _tabel_antrean(), _tabel_terkendala())
+    baris = ["# ▶️ Mesin Eksekusi — hasil jalan\n",
+             "Dijalankan: **{}** · Berhasil (draf menunggu persetujuan): **{}** · "
+             "Terkendala: **{}** · Dilewati: **{}**.\n".format(
+                 hasil.get("dijalankan", 0), hasil.get("berhasil", 0),
+                 hasil.get("terkendala", 0), hasil.get("dilewati", 0))]
+    for r in hasil.get("rincian", []):
+        baris.append("- `{}` · **{}** — {} (mode: {}; run: {})".format(
+            r.get("id", "?"), r.get("agent", "?"), r.get("status", "?"),
+            r.get("mode", "?"), r.get("run_id", "?")))
+    baris.append("\n_Semua draf menunggu persetujuan Cipta — mesin tidak pernah "
+                 "mengirim/mempublikasi apa pun._")
+    return ("\n".join(baris), _ringkasan_dashboard_md(), _tabel_dashboard(),
+            _feed_dashboard_md(), _tabel_antrean(), _tabel_terkendala())
 
 
 def _tabel_dashboard(f_divisi="Semua", f_agent="Semua"):
@@ -798,11 +799,12 @@ def _feed_dashboard_md():
 
 def _segarkan_dashboard(f_divisi="Semua", f_agent="Semua"):
     return (_ringkasan_dashboard_md(), _tabel_dashboard(f_divisi, f_agent),
-            _feed_dashboard_md())
+            _feed_dashboard_md(), _tabel_antrean(), _tabel_terkendala(),
+            _target_30_hari_md(), _tabel_platform())
 
 
 def build_app():
-    with gr.Blocks(title="Pusat Komando Podcast Meong",
+    with gr.Blocks(title="Pusat Komando Podcast Meong v2.0",
                    analytics_enabled=False) as demo:
         gr.Markdown(HEADER)
         gr.Markdown(MODE_TEKS)
@@ -817,7 +819,7 @@ def build_app():
                     "Semua pekerjaan di sini DRAF — keputusan akhir di tangan Cipta.")
                 cc_papan = gr.Markdown(tampilkan_command_center())
                 btn_cc = gr.Button("🔄 Segarkan Command Center", variant="primary")
-                gr.Markdown("### 🧑‍💼 62 Agent Spesialis → 14 Agen Nyata")
+                gr.Markdown("### 🧑‍💼 62 Agent Spesialis → 14 Mesin (pasif non-job)")
                 cc_tabel = gr.Dataframe(
                     value=_tabel_agent3(),
                     headers=["Kode", "Direktorat", "Tugas", "Dipetakan ke",
@@ -837,9 +839,10 @@ def build_app():
             with gr.Tab("B · 30 Agent"):
                 gr.Markdown(
                     "30 Agent Bintang A01–A30 (Bintang Command Center) — rancangan Share "
-                    "ChatGPT #18/#19 + Share Gemini #1, dipetakan ke 14 agen nyata + Muse + "
-                    "Pusat Komando. **Agent pasif** (dijalankan Muse, bukan layanan otonom "
-                    "24 jam); semua output DRAF untuk persetujuan Cipta. Konfigurasi di "
+                    "ChatGPT #18/#19 + Share Gemini #1, dipetakan ke 14 mesin lama "
+                    "(pasif non-job) + Muse + Pusat Komando. **Agent pasif** (dijalankan "
+                    "Muse/mesin eksekusi, bukan layanan otonom 24 jam); semua output "
+                    "DRAF untuk persetujuan Cipta. Konfigurasi di "
                     "`data/agents.json` (key `agent_30`).")
                 b30_tabel = gr.Dataframe(
                     value=_tabel_b30(),
@@ -859,9 +862,10 @@ def build_app():
             # ============================ DASHBOARD AGENT ============================
             with gr.Tab("C · Dashboard Agent"):
                 gr.Markdown(
-                    "Pergerakan semua agent (30 Bintang + 14 lama) dari data NYATA di "
+                    "Pergerakan **30 Agent Bintang** dari data NYATA di "
                     "folder `data/` — bukan angka karangan. Bila kosong tertulis "
-                    "\"belum ada aktivitas\". Umpan aktivitas dibaca dari "
+                    "\"belum ada aktivitas\". 14 mesin lama tampil terpisah sebagai "
+                    "\"Pasif — non job\". Umpan aktivitas dibaca dari "
                     "`data/activity_log.json`; modul b01–b30 menulis ke sana tiap kali "
                     "menghasilkan draf.")
                 dash_ringkas = gr.Markdown(_ringkasan_dashboard_md())
@@ -881,14 +885,43 @@ def build_app():
                     interactive=False, wrap=True)
                 btn_dash = gr.Button("🔄 Segarkan Dashboard", variant="primary")
                 dash_feed = gr.Markdown(_feed_dashboard_md())
+                gr.Markdown("### ▶️ Mesin Eksekusi")
+                btn_mesin = gr.Button("▶️ Jalankan Mesin Eksekusi (antrean menunggu, maks 5)",
+                                      variant="primary")
+                hasil_mesin = gr.Markdown("")
+                gr.Markdown("### 📋 Antrean Kerja (status + prioritas + tenggat)")
+                dash_antrean = gr.Dataframe(
+                    value=_tabel_antrean(),
+                    headers=["ID", "Jenis", "Agent Bintang", "Ringkasan",
+                             "Status", "Prioritas", "Tenggat"],
+                    interactive=False, wrap=True)
+                gr.Markdown("### 🚧 Pekerjaan Terkendala (butuh info/keputusan Cipta)")
+                dash_terkendala = gr.Dataframe(
+                    value=_tabel_terkendala(),
+                    headers=["ID", "Jenis", "Agent Bintang", "Ringkasan",
+                             "Penyebab", "Dibutuhkan dari Cipta"],
+                    interactive=False, wrap=True)
+                dash_target = gr.Markdown(_target_30_hari_md())
+                gr.Markdown("### 🔌 Platform per Agent Bintang")
+                dash_platform = gr.Dataframe(
+                    value=_tabel_platform(),
+                    headers=["Kode", "Nama", "Platform Terhubung",
+                             "Platform Belum Terhubung"],
+                    interactive=False, wrap=True)
                 btn_dash_filter.click(fn=_tabel_dashboard,
                                       inputs=[dash_divisi, dash_agent],
                                       outputs=dash_tabel,
                                       api_name="filter_dashboard")
                 btn_dash.click(fn=_segarkan_dashboard,
                                inputs=[dash_divisi, dash_agent],
-                               outputs=[dash_ringkas, dash_tabel, dash_feed],
+                               outputs=[dash_ringkas, dash_tabel, dash_feed,
+                                        dash_antrean, dash_terkendala,
+                                        dash_target, dash_platform],
                                api_name="segarkan_dashboard")
+                btn_mesin.click(fn=_jalankan_mesin,
+                                outputs=[hasil_mesin, dash_ringkas, dash_tabel,
+                                         dash_feed, dash_antrean, dash_terkendala],
+                                api_name="jalankan_mesin_eksekusi")
 
             # ============================ PAPAN HANDOFF ============================
             with gr.Tab("🏠 Papan Handoff"):
@@ -1047,225 +1080,9 @@ def build_app():
                                      api_name="jalankan_siklus_harian")
                     btn_log.click(fn=lambda: KOORD.teks_log(), outputs=log_koord)
 
-            # ============================ AGENT 1 — ASISTEN ============================
-            with gr.Tab("1 · Asisten"):
-                blok, err = _blok_dari_modul(A01, lambda m: m.demo, "1 Asisten")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E01 or "tidak diketahui")
-
-            # ============================ AGENT 2 — PENJUALAN ============================
-            with gr.Tab("2 · Penjualan"):
-                gr.Markdown(
-                    "Agent Penjualan (aslinya layanan FastAPI — di sini dibuatkan tab Gradio "
-                    "dengan fungsi yang sama). **Draf saja:** pesan outreach dikirim manual "
-                    "oleh Cipta setelah dicek, dan kontak lead harus terverifikasi dulu.")
-                if A02 is None:
-                    _tab_error(E02 or "tidak diketahui")
-                else:
-                    with gr.Row():
-                        tanya = gr.Textbox(label="Tanya seputar jasa / harga (mode template)",
-                                           placeholder="Contoh: berapa harga video promo 30 detik?")
-                        btn_tanya = gr.Button("💬 Jawab")
-                    jawab_out = gr.Textbox(label="Jawaban", lines=4)
-                    btn_tanya.click(fn=A02.jawab_template, inputs=tanya, outputs=jawab_out)
-                    gr.Markdown("### ✍️ Generator Draf Promosi")
-                    with gr.Row():
-                        gen_jenis = gr.Dropdown(
-                            choices=["caption_tiktok", "caption_ig", "caption_yt",
-                                     "wa_outreach", "wa_followup", "dm_ig", "email"],
-                            value="caption_tiktok", label="Jenis draf")
-                        gen_toko = gr.Textbox(label="Nama toko", placeholder="Contoh: Petshop Momo")
-                        gen_produk = gr.Textbox(label="Produk", placeholder="Contoh: makanan kucing")
-                        gen_paket = gr.Dropdown(choices=["15", "30", "60"], value="30",
-                                                label="Paket (detik)")
-                    btn_gen = gr.Button("✍️ Buat Draf", variant="primary")
-                    gen_out = gr.Textbox(label="Draf (periksa dulu sebelum dikirim)", lines=8)
-                    btn_gen.click(fn=A02.template_generator,
-                                  inputs=[gen_jenis, gen_toko, gen_produk, gen_paket],
-                                  outputs=gen_out)
-                    gr.Markdown("### 📋 Rencana Harian")
-                    btn_rencana = gr.Button("📋 Tampilkan Rencana Hari Ini")
-                    rencana_out = gr.Markdown("")
-                    btn_rencana.click(fn=_rencana_markdown, outputs=rencana_out)
-                    gr.Markdown("### 👥 Leads (15 lead awal dari daftar target pet shop)")
-                    leads_tabel = gr.Dataframe(
-                        value=_tabel_leads(),
-                        headers=["ID", "Nama", "Kontak", "Alamat", "Jenis",
-                                 "Status", "Terverifikasi", "Catatan"],
-                        interactive=False, wrap=True)
-                    with gr.Row():
-                        l_nama = gr.Textbox(label="Nama bisnis *")
-                        l_kontak = gr.Textbox(label="Kontak (WA/telp)")
-                        l_alamat = gr.Textbox(label="Alamat")
-                    with gr.Row():
-                        l_jenis = gr.Textbox(label="Jenis", value="pet shop")
-                        l_status = gr.Dropdown(choices=A02.STATUS_LEAD, value="baru",
-                                               label="Status")
-                        l_verif = gr.Checkbox(label="Terverifikasi", value=False)
-                    l_catatan = gr.Textbox(label="Catatan")
-                    btn_lead = gr.Button("➕ Tambah Lead", variant="primary")
-                    pesan_lead = gr.Markdown("")
-                    btn_lead.click(fn=_tambah_lead,
-                                   inputs=[l_nama, l_kontak, l_alamat, l_jenis,
-                                           l_status, l_verif, l_catatan],
-                                   outputs=[pesan_lead, leads_tabel])
-
-            # ============================ AGENT 3 — PERTUMBUHAN ============================
-            with gr.Tab("3 · Pertumbuhan"):
-                blok, err = _blok_dari_modul(A03, lambda m: m.demo, "3 Pertumbuhan")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E03 or "tidak diketahui")
-
-            # ============================ AGENT 4 — PENJUALAN HARIAN ============================
-            with gr.Tab("4 · Penjualan Harian"):
-                blok, err = _blok_dari_modul(A04, lambda m: m.build_ui(), "4 Penjualan Harian")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E04 or "tidak diketahui")
-
-            # ============================ AGENT 5 — PRODUKSI PRODUK ============================
-            with gr.Tab("5 · Produksi Produk"):
-                blok, err = _blok_dari_modul(A05, lambda m: m.demo, "5 Produksi Produk")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E05 or "tidak diketahui")
-
-            # ============================ AGENT 6 — LOMBA ============================
-            with gr.Tab("6 · Lomba"):
-                blok, err = _blok_dari_modul(A06, lambda m: m.build_app(), "6 Lomba")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E06 or "tidak diketahui")
-
-            # ============================ AGENT 7 — KEUANGAN ============================
-            with gr.Tab("7 · Keuangan"):
-                blok, err = _blok_dari_modul(A07, lambda m: m.build_ui(), "7 Keuangan")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E07 or "tidak diketahui")
-
-            # ============================ AGENT 8 — TERJEMAH INGGRIS ============================
-            with gr.Tab("8 · Terjemah Inggris"):
-                blok, err = _blok_dari_modul(A08, lambda m: m.demo, "8 Terjemah Inggris")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E08 or "tidak diketahui")
-
-            # ============================ AGENT 9 — GAME & APLIKASI ============================
-            with gr.Tab("9 · Game & Aplikasi"):
-                blok, err = _blok_dari_modul(A09, lambda m: m.bangun_ui(), "9 Game & Aplikasi")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E09 or "tidak diketahui")
-
-            # ============================ TIM 9A — RANCANG ============================
-            with gr.Tab("9A · Rancang"):
-                blok, err = _blok_dari_modul(A09A, lambda m: m.bangun_ui(), "9A Rancang")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E09A or "tidak diketahui")
-
-            # ============================ TIM 9B — BANGUN ============================
-            with gr.Tab("9B · Bangun"):
-                blok, err = _blok_dari_modul(A09B, lambda m: m.bangun_ui(), "9B Bangun")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E09B or "tidak diketahui")
-
-            # ============================ TIM 9C — JUALAN ============================
-            with gr.Tab("9C · Jualan"):
-                blok, err = _blok_dari_modul(A09C, lambda m: m.bangun_ui(), "9C Jualan")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E09C or "tidak diketahui")
-
-            # ============================ TIM 9D — BANGUN-2 ============================
-            with gr.Tab("9D · Bangun-2"):
-                blok, err = _blok_dari_modul(A09D, lambda m: m.bangun_ui(), "9D Bangun-2")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E09D or "tidak diketahui")
-
-            # ============================ TIM 9E — BANGUN-3 ============================
-            with gr.Tab("9E · Bangun-3"):
-                blok, err = _blok_dari_modul(A09E, lambda m: m.bangun_ui(), "9E Bangun-3")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E09E or "tidak diketahui")
-
-            # ============================ TIM 9F — VERIFIKASI & KATALOG ============================
-            with gr.Tab("9F · Verifikasi & Katalog"):
-                blok, err = _blok_dari_modul(A09F, lambda m: m.bangun_ui(), "9F Verifikasi & Katalog")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E09F or "tidak diketahui")
-
-            # ============================ AGENT 10 — RISET PRODUK ============================
-            with gr.Tab("10 · Riset Produk"):
-                blok, err = _blok_dari_modul(A10, lambda m: m.build_ui(), "10 Riset Produk")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E10 or "tidak diketahui")
-
-            # ============================ WORKSHOP AVATAR PODCAST ============================
-            with gr.Tab("Avatar Podcast"):
-                blok, err = _blok_dari_modul(A11, lambda m: m.build_ui(), "Avatar Podcast")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E11 or "tidak diketahui")
-
-            # ============================ AGENT 11 — OYEN ============================
-            with gr.Tab("11 · Oyen"):
-                blok, err = _blok_dari_modul(A11O, lambda m: m.build_ui(), "11 Oyen")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E11O or "tidak diketahui")
-
-            # ============================ AGENT 12 — MOMO ============================
-            with gr.Tab("12 · Momo"):
-                blok, err = _blok_dari_modul(A12M, lambda m: m.build_ui(), "12 Momo")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E12M or "tidak diketahui")
-
-            # ============================ AGENT 13 — EMAIL ============================
-            with gr.Tab("13 · Email"):
-                blok, err = _blok_dari_modul(A13, lambda m: m.build_ui(), "13 Email")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E13 or "tidak diketahui")
-
-            # ============================ AGENT 14 — UPWORK ============================
-            with gr.Tab("14 · Upwork"):
-                blok, err = _blok_dari_modul(A14, lambda m: m.build_ui(), "14 Upwork")
-                if blok is not None:
-                    blok.render()
-                else:
-                    _tab_error(err or E14 or "tidak diketahui")
-
         gr.Markdown(
-            "---\n*Pusat Komando Podcast Meong — 14 agent bernomor + 6 tim Agent 9 + workshop Avatar Podcast + bus Koordinasi + 30 Agent Bintang + Dashboard Agent, 1 Space, 1 folder data. "
+            "---\n*Pusat Komando Podcast Meong v2.0 — 30 Agent Bintang + Mesin Eksekusi + Dashboard Agent + Command Center + Papan Handoff + bus Koordinasi, 1 Space, 1 folder data. "
+            "14 mesin lama (a01–a14) pasif non-job: modul + data tetap, dipakai sebagai engine oleh 30 Bintang. "
             "Data di `data/` hilang bila Space di-rebuild — unduh berkala. "
             "SOP Kerja Sama Agent AI berlaku (18 Nov 2026).*")
     return demo

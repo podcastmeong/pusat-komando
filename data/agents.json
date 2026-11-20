@@ -1,6 +1,6 @@
 {
   "applied_date": "2026-11-21",
-  "applied_to": "Pusat Komando + 14 agen (SatuKiki / Podcast Meong)",
+  "applied_to": "Pusat Komando v2.0 + 30 Agent Bintang + 14 mesin pasif (SatuKiki / Podcast Meong)",
   "authority_levels": {
     "hijau": "AI boleh mengerjakan otomatis sesuai aturan (riset, draft, pencatatan, klasifikasi, laporan, pemantauan). Hasil berupa draf/laporan.",
     "kuning": "AI menyiapkan pekerjaan untuk diperiksa pemilik (draf siap kirim, konten siap upload, usulan harga, laporan harian).",
@@ -761,7 +761,11 @@
           "Gemini Advanced / ChatGPT",
           "Notion",
           "Google Sheets"
-        ]
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A02",
@@ -781,7 +785,11 @@
           "Gemini Advanced / ChatGPT",
           "Notion",
           "Google Sheets"
-        ]
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A03",
@@ -802,7 +810,13 @@
           "Gemini Advanced / ChatGPT",
           "Notion",
           "Google Sheets"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "Faable — Pusat Komando"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A04",
@@ -816,7 +830,11 @@
         "gemini_division": "Agent 0 — Chief Orchestrator",
         "gemini_role": "Bagian dari Agent 0 — QC melekat pada orchestrator",
         "gemini_kpi": [],
-        "gemini_tools": []
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A05",
@@ -835,7 +853,14 @@
         "gemini_tools": [
           "Google Sheets",
           "Notion"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "PayPal (analisis data pemasukan)",
+            "BCA (analisis data pemasukan)"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A06",
@@ -855,7 +880,11 @@
           "Google Trends",
           "Perplexity.ai",
           "Gemini Deep Research"
-        ]
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A07",
@@ -875,7 +904,11 @@
           "Google Trends",
           "Perplexity.ai",
           "Gemini Deep Research"
-        ]
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A08",
@@ -895,7 +928,11 @@
           "Google Trends",
           "Perplexity.ai",
           "Gemini Deep Research"
-        ]
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A09",
@@ -916,7 +953,11 @@
           "Google Search",
           "Gemini Deep Research",
           "Email Alerts"
-        ]
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A10",
@@ -936,7 +977,11 @@
           "Google Trends",
           "Perplexity.ai",
           "Gemini Deep Research"
-        ]
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A11",
@@ -956,7 +1001,11 @@
           "Kling AI",
           "Hailuo AI",
           "CapCut Desktop"
-        ]
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A12",
@@ -976,7 +1025,14 @@
           "Bing Image Creator",
           "Leonardo.ai",
           "Flux (HuggingFace)"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "Adobe Stock (foto AI)",
+            "Dreamstime (foto AI)"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A13",
@@ -996,7 +1052,13 @@
           "Gemini / ChatGPT / Claude",
           "VS Code",
           "GitHub"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "GitHub Pages (demo aplikasi)"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A14",
@@ -1016,7 +1078,13 @@
           "Gemini / ChatGPT / Claude",
           "VS Code",
           "GitHub"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "GitHub Pages (website demo)"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A15",
@@ -1035,7 +1103,13 @@
         "gemini_tools": [
           "Bing Image Creator",
           "Leonardo.ai"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "Zazzle (terbit desain POD)"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A16",
@@ -1054,7 +1128,15 @@
         "gemini_tools": [
           "Gemini / ChatGPT",
           "Google Docs"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "KaryaKarsa (terbit eBook)",
+            "Lynk.id (terbit eBook)",
+            "KBM (terbit eBook)"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A17",
@@ -1073,7 +1155,14 @@
         "gemini_tools": [
           "Gemini / ChatGPT",
           "Google Docs"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "KaryaKarsa (terbit tulisan)",
+            "KBM (terbit tulisan)"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A18",
@@ -1093,7 +1182,13 @@
           "Gemini / ChatGPT / Claude",
           "VS Code",
           "GitHub"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "GitHub Pages (demo game)"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A19",
@@ -1113,7 +1208,13 @@
         "gemini_tools": [
           "Gemini / ChatGPT",
           "CapCut"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "Facebook \"Masduki Kiki\" (tanpa Page) — distribusi konten"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A20",
@@ -1135,7 +1236,16 @@
         "gemini_tools": [
           "Gemini / ChatGPT",
           "CapCut"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "Instagram posting @meongcast",
+            "Instagram Messages @meongcast"
+          ],
+          "belum_terhubung": [
+            "Instagram @podcast_meong (login ditolak)"
+          ]
+        }
       },
       {
         "code": "A21",
@@ -1157,7 +1267,15 @@
         "gemini_tools": [
           "Gemini / ChatGPT",
           "CapCut"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "TikTok @podcast_kucing (via browser)"
+          ],
+          "belum_terhubung": [
+            "TikTok @meongcast (butuh login Cipta)"
+          ]
+        }
       },
       {
         "code": "A22",
@@ -1179,7 +1297,15 @@
         "gemini_tools": [
           "Gemini / ChatGPT",
           "CapCut"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "YouTube Podcast meong (via browser)"
+          ],
+          "belum_terhubung": [
+            "YouTube @meongcast (tertahan verifikasi)"
+          ]
+        }
       },
       {
         "code": "A23",
@@ -1201,7 +1327,14 @@
         "gemini_tools": [
           "Gemini / ChatGPT",
           "CapCut"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "Threads posting @ciptabintanglestari",
+            "Threads Messages @ciptabintanglestari"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A24",
@@ -1221,7 +1354,14 @@
         "gemini_tools": [
           "Google Trends",
           "Perplexity.ai"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "GitHub Pages (SEO website)",
+            "Impact.com (affiliate)"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A25",
@@ -1239,7 +1379,22 @@
           "1–3 penjualan langsung (closing)/hari (target rancangan)",
           "Pembayaran hanya ke BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai"
         ],
-        "gemini_tools": []
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [
+            "KaryaKarsa (jualan)",
+            "Lynk.id (jualan)",
+            "Zazzle (jualan)",
+            "KBM (jualan)",
+            "Saweria (jualan)",
+            "Trakteer (jualan)",
+            "PayPal (pembayaran)",
+            "BCA (pembayaran)"
+          ],
+          "belum_terhubung": [
+            "Mayar (KYC belum selesai)"
+          ]
+        }
       },
       {
         "code": "A26",
@@ -1255,7 +1410,18 @@
         "gemini_kpi": [
           "Respons < 1 jam (target rancangan)"
         ],
-        "gemini_tools": []
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [
+            "KaryaKarsa (CS)",
+            "Lynk.id (CS)",
+            "Zazzle (CS)",
+            "KBM (CS)",
+            "Saweria (CS)",
+            "Trakteer (CS)"
+          ],
+          "belum_terhubung": []
+        }
       },
       {
         "code": "A27",
@@ -1272,7 +1438,13 @@
           "Respons < 1 jam (target rancangan)",
           "Email diperiksa 2–3 kali/hari (target rancangan)"
         ],
-        "gemini_tools": []
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": [
+            "Gmail (tidak terhubung — kerja via browser, draf saja)"
+          ]
+        }
       },
       {
         "code": "A28",
@@ -1289,7 +1461,13 @@
           "5 proposal/hari — DRAF saja, kirim hanya setelah Cipta setuju (target rancangan)",
           "Target 1–2 proyek didapat/bulan (target rancangan)"
         ],
-        "gemini_tools": []
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": [
+            "Upwork (belum ada akun)"
+          ]
+        }
       },
       {
         "code": "A29",
@@ -1309,7 +1487,20 @@
         "gemini_tools": [
           "Google Sheets",
           "Notion"
-        ]
+        ],
+        "platform": {
+          "terhubung": [
+            "PayPal (pencatatan)",
+            "BCA (pencatatan)",
+            "Saweria (pencatatan)",
+            "Trakteer (pencatatan)",
+            "KaryaKarsa (pencatatan)",
+            "Lynk.id (pencatatan)"
+          ],
+          "belum_terhubung": [
+            "Mayar (KYC belum selesai)"
+          ]
+        }
       },
       {
         "code": "A30",
@@ -1323,7 +1514,106 @@
         "gemini_division": "Agent 0 — Chief Orchestrator",
         "gemini_role": "Agent 0 — Chief Orchestrator (dukungan operasional; Gemini #1 tidak punya divisi operasional terpisah)",
         "gemini_kpi": [],
-        "gemini_tools": []
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [
+            "DeployVera (papan status cadangan)",
+            "GitHub Pages (repo)"
+          ],
+          "belum_terhubung": []
+        }
+      }
+    ]
+  },
+  "versi_pusat_komando": "2.0",
+  "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor.",
+  "agent_lama": {
+    "status": "Pasif — non job",
+    "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang.",
+    "agents": [
+      {
+        "kode": "1",
+        "nama": "Asisten",
+        "modul": "a01_asisten",
+        "sumber_data": "handoff"
+      },
+      {
+        "kode": "2",
+        "nama": "Penjualan",
+        "modul": "a02_penjualan",
+        "sumber_data": "leads"
+      },
+      {
+        "kode": "3",
+        "nama": "Pertumbuhan",
+        "modul": "a03_pertumbuhan",
+        "sumber_data": "handoff"
+      },
+      {
+        "kode": "4",
+        "nama": "Penjualan Harian",
+        "modul": "a04_penjualan_harian",
+        "sumber_data": "penjualan_toko"
+      },
+      {
+        "kode": "5",
+        "nama": "Produksi Produk",
+        "modul": "a05_produksi",
+        "sumber_data": "produksi_game"
+      },
+      {
+        "kode": "6",
+        "nama": "Lomba",
+        "modul": "a06_lomba",
+        "sumber_data": "lomba"
+      },
+      {
+        "kode": "7",
+        "nama": "Keuangan",
+        "modul": "a07_keuangan",
+        "sumber_data": "keuangan"
+      },
+      {
+        "kode": "8",
+        "nama": "Terjemah Inggris",
+        "modul": "a08_terjemah",
+        "sumber_data": "terjemahan"
+      },
+      {
+        "kode": "9",
+        "nama": "Game & Aplikasi",
+        "modul": "a09_game",
+        "sumber_data": "worklist"
+      },
+      {
+        "kode": "10",
+        "nama": "Riset Produk",
+        "modul": "a10_riset",
+        "sumber_data": "riset"
+      },
+      {
+        "kode": "11",
+        "nama": "Oyen",
+        "modul": "a11_oyen",
+        "sumber_data": "handoff"
+      },
+      {
+        "kode": "12",
+        "nama": "Momo",
+        "modul": "a12_momo",
+        "sumber_data": "handoff"
+      },
+      {
+        "kode": "13",
+        "nama": "Email",
+        "modul": "a13_email",
+        "sumber_data": "email"
+      },
+      {
+        "kode": "14",
+        "nama": "Upwork",
+        "modul": "a14_upwork",
+        "sumber_data": "upwork"
       }
     ]
   }

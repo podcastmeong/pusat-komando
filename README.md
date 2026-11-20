@@ -9,29 +9,24 @@ app_file: app.py
 pinned: false
 ---
 
-# Pusat Komando Podcast Meong
+# Pusat Komando Podcast Meong — v2.0
 
-Satu aplikasi gabungan **9 agent AI** dalam **SATU Space Gradio**, berbagi satu
-folder `data/` — supaya output satu agent langsung bisa dipakai agent lain lewat
-**Papan Handoff**, tanpa antre lewat Muse. Dibangun atas keputusan Cipta
-18 Nov 2026 (Opsi A — "Pusat Komando").
+**Versi 2.0** (21 Nov 2026). v1 = sistem 14 agent bernomor. v2.0 = **30 Agent
+Bintang** (A01–A30) + **Mesin Eksekusi** + **Dashboard Agent** dalam **SATU Space
+Gradio**, berbagi satu folder `data/` — supaya output satu agent langsung bisa
+dipakai agent lain lewat **Papan Handoff**, tanpa antre lewat Muse. Dibangun
+atas keputusan Cipta 18 Nov 2026 (Opsi A — "Pusat Komando").
 
-Agent yang digabung (Agent 4 tidak ada — dihapus atas perintah Cipta; upload
-harian ditangani Muse langsung):
+14 agent lama (a01–a14) kini **pasif non-job**: modul + data tetap utuh sebagai
+mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tab UI mereka dihapus.
 
-| Tab | Agent | Asal |
-|---|---|---|
-| 🏠 Papan Handoff | Antrean kerja bersama + ringkasan lintas agent | Baru (aplikasi ini) |
-| 1 · Asisten | Jawab pertanyaan pelanggan | `agent-ai-gratis` |
-| 2 · Penjualan | Jualan, promosi, cari customer, leads | `agent-penjualan-oracle` (FastAPI — dibuatkan tab Gradio di sini) |
-| 3 · Pertumbuhan | View / like / subscribe / follow (organik) | `agent-pertumbuhan` |
-| 4 · Penjualan Harian | Cari 15 toko/hari, verifikasi nomor, draf personal, log hasil | Baru (20 Nov 2026) — dibantu Agent 2 untuk memasarkan |
-| 5 · Produksi Produk | Draf video, foto, eBook, puisi, cerpen, POD, lagu | `agent-produksi-produk` |
-| 6 · Lomba | Cari lomba, cek aturan AI, tenggat, cek pemenang | `agent-lomba` |
-| 7 · Keuangan | Catat uang masuk, ringkasan, payout | `agent-keuangan` |
-| 8 · Terjemah Inggris | eBook & artikel ke Bahasa Inggris | `agent-terjemah-inggris` |
-| 9 · Game & Aplikasi | Ide game/aplikasi, kerangka kode, naskah toko | `agent-produksi-game-aplikasi` |
-| 10 · Riset Produk | Riset peluang, rancang produk, strategi penjualan, riset konten | `agent-riset-produk` |
+| Tab | Isi |
+|---|---|
+| 0 · Command Center | CEO Agent (Muse) + 8 direktorat + Approval Center (pemetaan 3.0) |
+| B · 30 Agent | 30 Agent Bintang A01–A30 + job description + contoh draf |
+| C · Dashboard Agent | Pergerakan agent, antrean kerja, pekerjaan terkendala, target 30 hari Gemini, platform per agent, tombol Jalankan Mesin Eksekusi |
+| 🏠 Papan Handoff | Antrean kerja bersama + ringkasan lintas agent |
+| 🔄 Koordinasi | Message bus antar-agent (`data/koordinasi.json`) |
 
 ## Cara kerja Papan Handoff
 
@@ -165,3 +160,41 @@ Spaces masalah ini tidak ada.
 - **Batasan jujur:** agent tetap aplikasi pasif — bus bukan obrolan live;
   rantai komando tetap Cipta → Muse → agent; butuh Space/VM live untuk
   pemakaian nyata.
+
+## Pembaruan 21 Nov 2026 — Pusat Komando v2.0
+
+- **30 Agent Bintang A01–A30** (tab B): job description dari Share ChatGPT
+  #18/#19 + Share Gemini #1, dipetakan ke 14 mesin lama + Muse + Pusat
+  Komando. Strategi SESUAI ChatGPT + Gemini: jadwal harian alur Gemini #1
+  (06:00 riset, 08:00 produksi, 11/15/19 distribusi, CS sepanjang hari,
+  21:00 audit) dalam bingkai 06:00–21:00 ChatGPT #18; KPI gemini_kpi;
+  target 30 hari Gemini (15 produk, 30 konten, 1000 followers baru,
+  5–10 lomba, Rp500rb–Rp2jt) sebagai tolok ukur Dashboard.
+- **Mesin Eksekusi** (`agents/mesin_eksekusi.py`, CLI
+  `python -m agents.mesin_eksekusi`): menjalankan fungsi kerja NYATA tiap
+  agent Bintang sesuai job description-nya (bukan sekadar contoh()) dengan
+  argumen dari tugas antrean; bila argumen tidak cukup, memanggil contoh()
+  dan mencatat mode="contoh". Semua output DRAF; tidak pernah kirim/bayar/
+  publikasi/submit/upload. Jalan hanya saat dipicu (tombol/CLI).
+- **14 agent lama (a01–a14) menjadi PASIF NON-JOB** (pekerjaan dicabut atas
+  perintah Cipta 21 Nov 2026): modul + data tetap utuh sebagai mesin yang
+  dipakai 30 Bintang; 21 tab UI lama dihapus; aplikasi kini **5 tab**
+  (0 Command Center, B 30 Agent, C Dashboard Agent, Papan Handoff,
+  Koordinasi). Dashboard menampilkan hitungan utama 30 Bintang + 14 mesin
+  pasif terpisah (bukan 44 agent).
+- **Kendala harus diinfokan:** pekerjaan yang tidak bisa jalan (platform
+  belum terhubung, data tidak ada, butuh login/keputusan Cipta, error)
+  berstatus "terkendala" di antrean + audit log, lengkap dengan penyebab
+  dan apa yang dibutuhkan dari Cipta — tampil terpisah di Dashboard.
+- **Pemetaan platform** (`data/agents.json`, key "platform" per agent):
+  21 platform terhubung + 6 belum terhubung dipetakan ke agent Bintang
+  yang job description-nya mencakup platform itu; tampil di Dashboard.
+- **Konflik ChatGPT vs Gemini yang dicatat** (diutamakan yang tercatat di
+  agents.json): (1) jadwal rinci 12 baris ChatGPT #18 tidak tercatat di
+  agents.json — dipakai 5 slot Gemini; (2) KPI ChatGPT per-agent tidak
+  tercatat — dipakai gemini_kpi; (3) Gemini bilang "6 divisi" padahal
+  isinya 5 divisi + Agent 0 — dipakai yang nyata.
+- **Batasan jujur:** mesin hanya menjalankan draf; distribusi (posting/
+  upload/kirim) tetap butuh persetujuan Cipta atas isi persisnya; jendela
+  30 hari belum punya tanggal mulai tercatat sehingga realisasi target
+  ditampilkan sebagai total tercatat, bukan hitungan dalam jendela.

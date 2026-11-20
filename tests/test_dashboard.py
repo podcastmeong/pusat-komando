@@ -112,20 +112,24 @@ class TestTabelFixture(unittest.TestCase):
         a01 = next(r for r in rows if r["kode"] == "A01")
         self.assertEqual(a01["aktivitas_terakhir"], "belum ada aktivitas")
         agent1 = next(r for r in rows if r["kode"] == "1")
+        # 14 mesin lama: status pasif non-job, aktivitas tetap dihitung.
+        self.assertEqual(agent1["status"], dashboard.STATUS_PASIF)
         self.assertIn("HO-001", agent1["aktivitas_terakhir"])
         self.assertIn("Tugas uji", agent1["output_terakhir"])
 
     def test_ringkasan_matematika_fixture(self):
-        # A01 Aktif tanpa aktivitas -> belum jalan; A02 Aktif sebagian;
-        # Agent 1 (handoff) + Agent 7 (baseline keuangan tercatat) -> aktif;
-        # Agent 14 -> mode persiapan; sisanya belum jalan.
+        # Hitungan utama hanya 30 Bintang (di fixture cuma 2): A01 Aktif
+        # tanpa aktivitas -> belum jalan; A02 Aktif sebagian. 14 mesin lama
+        # dihitung terpisah sebagai mesin_pasif, bukan sebagai agent.
         r = dashboard.ringkasan_dashboard(base=self.tmp)
-        self.assertEqual(r["total_agent"], 16)
-        self.assertEqual(r["aktif"], 2)
+        self.assertEqual(r["total_agent"], 2)
+        self.assertEqual(r["aktif"], 0)
         self.assertEqual(r["aktif_sebagian"], 1)
-        self.assertEqual(r["belum_jalan"], 12)
-        self.assertEqual(r["mode_persiapan"], 1)
+        self.assertEqual(r["belum_jalan"], 1)
+        self.assertEqual(r["mesin_pasif"], 14)
+        self.assertEqual(r["terkendala"], 0)
         self.assertEqual(r["handoff_menunggu"], 1)
+        self.assertNotIn("mode_persiapan", r)
 
     def test_tugas_menunggu_jujur_tanpa_tanggal(self):
         t = dashboard.tugas_menunggu(base=self.tmp)
@@ -156,20 +160,23 @@ class TestDataNyata(unittest.TestCase):
         self.assertEqual(rows["10"]["aktivitas_terakhir"],
                          "belum ada aktivitas")
         self.assertIn("2026-11-18 23:56", rows["13"]["aktivitas_terakhir"])
-        self.assertIn("mode persiapan", rows["14"]["status"])
+        # 14 mesin lama: status pasif non-job (bukan "mode persiapan").
+        self.assertEqual(rows["14"]["status"], dashboard.STATUS_PASIF)
         self.assertIn("Belum ada lamaran", rows["14"]["aktivitas_terakhir"])
         self.assertIn("15 lead tercatat", rows["2"]["aktivitas_terakhir"])
 
     def test_ringkasan_data_nyata(self):
         r = dashboard.ringkasan_dashboard()
-        self.assertEqual(r["total_agent"], 44)
+        self.assertEqual(r["total_agent"], 30)
+        self.assertEqual(r["mesin_pasif"], 14)
         self.assertEqual(r["handoff_menunggu"], 11)
         self.assertEqual(r["penawaran_toko_draf"], 12)
         self.assertEqual(r["aktif_sebagian"], 4)
-        self.assertEqual(r["mode_persiapan"], 1)
-        self.assertGreaterEqual(r["entri_log"], 3)
-        self.assertEqual(r["aktif"] + r["aktif_sebagian"] + r["belum_jalan"]
-                         + r["mode_persiapan"], 44)
+        self.assertEqual(r["terkendala"], 0)
+        self.assertGreaterEqual(r["entri_log"], 6)
+        self.assertEqual(r["aktif"] + r["aktif_sebagian"] + r["belum_jalan"],
+                         30)
+        self.assertGreaterEqual(r["aktif"], 1)
 
     def test_feed_memuat_entri_seed(self):
         log = dashboard.baca_log(limit=50)
@@ -177,6 +184,100 @@ class TestDataNyata(unittest.TestCase):
         aksi = [e["aksi"] for e in log]
         self.assertIn("30 modul dibuat", aksi)
         self.assertIn("agents.json digabung", aksi)
+
+
+class TestFungsiBaruDashboard(unittest.TestCase):
+    """Antrean kerja, pekerjaan terkendala, target 30 hari, platform."""
+
+    def setUp(self):
+        self._pk_no_log = os.environ.pop("PK_NO_LOG", None)
+        self.tmp = tempfile.mkdtemp(prefix="pk-dash-")
+        _tulis(self.tmp, "agents.json", {"agent_30": {"agents": [
+            {"code": "A01", "name": "CEO Director", "division": "Direksi",
+             "boss": "Pemilik", "job_desc": "j", "mapped_to": "Muse",
+             "status": "Aktif"}]}})
+        _tulis(self.tmp, "handoff.json", [
+            {"id": "HO-001", "jenis": "penugasan", "dari_agent": "Muse",
+             "ke_agent": "Agent 1", "ringkasan": "Tugas uji", "status": "draf"},
+            {"id": "HO-002", "jenis": "penugasan", "dari_agent": "Muse",
+             "ke_agent": "Agent 3",
+             "ringkasan": "Posting video baru ke TikTok @meongcast hari ini",
+             "status": "draf"},
+        ])
+        _tulis(self.tmp, "penjualan_toko.json", {"toko": [
+            {"id": "toko-01", "nama": "Toko Uji", "status": "draf",
+             "catatan": "IG toko aktif. | HASIL: belum dikirim"}]})
+        _tulis(self.tmp, "produksi_game.json", [{"nama": "P1"}])
+        _tulis(self.tmp, "lomba.json", [{"nama": "L1", "status": "dikirim"}])
+        _tulis(self.tmp, "keuangan_data.json",
+               {"baseline_tanggal": "2026-11-18", "entries": []})
+
+    def tearDown(self):
+        if self._pk_no_log is not None:
+            os.environ["PK_NO_LOG"] = self._pk_no_log
+        else:
+            os.environ.pop("PK_NO_LOG", None)
+
+    def test_antrean_kerja_fixture(self):
+        antrean = dashboard.antrean_kerja(base=self.tmp)
+        self.assertEqual(len(antrean), 3)
+        by_id = {a["id"]: a for a in antrean}
+        self.assertEqual(by_id["HO-HO-001"]["agent"], "A26")
+        self.assertEqual(by_id["HO-HO-001"]["status"], "menunggu")
+        self.assertEqual(by_id["HO-HO-001"]["prioritas"], "normal")
+        self.assertEqual(by_id["HO-HO-001"]["tenggat"], "—")
+        self.assertEqual(by_id["TK-toko-01"]["agent"], "A25")
+
+    def test_tugas_terkendala_terpisah(self):
+        terkendala = dashboard.tugas_terkendala(base=self.tmp)
+        self.assertEqual(len(terkendala), 1)
+        self.assertEqual(terkendala[0]["id"], "HO-HO-002")
+        self.assertIn("TikTok @meongcast", terkendala[0]["penyebab"])
+        self.assertIn("login", terkendala[0]["dibutuhkan_dari_cipta"])
+
+    def test_target_30_hari_fixture(self):
+        t = dashboard.target_30_hari(base=self.tmp)
+        target = {x["nama"]: x for x in t["target"]}
+        self.assertEqual(len(t["target"]), 5)
+        self.assertEqual(target["Produk digital selesai"]["target"], 15)
+        self.assertEqual(target["Produk digital selesai"]["realisasi"], 1)
+        self.assertEqual(target["Lomba diikuti"]["realisasi"], 1)
+        self.assertEqual(target["Pemasukan pertama"]["realisasi"], "Rp0")
+        self.assertEqual(target["Konten terbit"]["realisasi"],
+                         "belum cukup data")
+        self.assertIn("bukan janji", t["catatan_jujur"])
+
+    def test_platform_per_agent_data_nyata(self):
+        data = {p["kode"]: p for p in dashboard.platform_per_agent()}
+        a20 = data["A20"]
+        self.assertIn("Instagram posting @meongcast", a20["terhubung"])
+        self.assertIn("Instagram Messages @meongcast", a20["terhubung"])
+        self.assertIn("Instagram @podcast_meong (login ditolak)",
+                      a20["belum_terhubung"])
+        a27 = data["A27"]
+        self.assertIn("Gmail (tidak terhubung — kerja via browser, draf saja)",
+                      a27["belum_terhubung"])
+        # Semua 21 platform terhubung + 6 belum terhubung tercakup oleh
+        # pemetaan (per agent memakai label dengan keterangan peran, jadi
+        # dicek per nama platform, bukan jumlah string yang sama persis).
+        terhubung_21 = ["Instagram posting @meongcast",
+                        "Instagram Messages @meongcast",
+                        "Threads posting @ciptabintanglestari",
+                        "Threads Messages @ciptabintanglestari",
+                        'Facebook "Masduki Kiki"', "TikTok @podcast_kucing",
+                        "YouTube Podcast meong", "KaryaKarsa", "Lynk.id",
+                        "Zazzle", "KBM", "Saweria", "Trakteer", "PayPal",
+                        "BCA", "Adobe Stock", "Dreamstime", "Impact.com",
+                        "GitHub Pages", "Faable", "DeployVera"]
+        belum_6 = ["Gmail", "TikTok @meongcast", "Instagram @podcast_meong",
+                   "YouTube @meongcast", "Mayar", "Upwork"]
+        semua_terhubung = [p for a in data.values() for p in a["terhubung"]]
+        semua_belum = [p for a in data.values() for p in a["belum_terhubung"]]
+        for nama in terhubung_21:
+            self.assertTrue(any(nama in p for p in semua_terhubung), nama)
+        for nama in belum_6:
+            self.assertTrue(any(nama in p for p in semua_belum), nama)
+            self.assertFalse(any(nama in p for p in semua_terhubung), nama)
 
 
 if __name__ == "__main__":

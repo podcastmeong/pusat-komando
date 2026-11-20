@@ -1,7 +1,9 @@
 # ======================================================================
-# BINTANG COMMAND CENTER — Dashboard Pergerakan Agent.
+# BINTANG COMMAND CENTER — Dashboard Pergerakan Agent. Pusat Komando v2.0.
 # Dibuat 21 Nov 2026 atas perintah Cipta ("Setelah ini buat dashboard
-# agar aku bisa liat juga pergerakan agent").
+# agar aku bisa liat juga pergerakan agent"). Diperbarui 21 Nov 2026
+# (v2.0): hitungan utama 30 Agent Bintang; 14 mesin lama tampil terpisah
+# sebagai "Pasif — non job" (bukan agent bertugas).
 #
 # Modul ini HANYA MEMBACA data nyata di folder data/ dan menulis log
 # aktivitas ke data/activity_log.json. Tidak ada yang dikarang: bila
@@ -12,6 +14,9 @@
 # "Belum jalan" = status Aktif tapi belum ada aktivitas tercatat di
 # folder data/. Hitungan ini berdasarkan data — agent yang bekerja lewat
 # Muse tanpa menulis ke data/ akan tetap tampil "belum ada aktivitas".
+# Target 30 hari Gemini (15 produk, 30 konten, 1000 followers baru,
+# 5–10 lomba, Rp500rb–Rp2jt) dibaca dari mesin eksekusi (sumber:
+# b01.rencana_30_hari, Share Gemini #1) — bukan janji.
 # ======================================================================
 import json
 import os
@@ -24,24 +29,30 @@ LOG_FILE_NAMA = "activity_log.json"
 MAKS_LOG = 500
 WIB = timezone(timedelta(hours=7))
 
-# 14 agent lama (bernomor 1–14). Tim 9A–9F tercakup dalam baris Agent 9
-# (mereka berbagi satu sumber kerja: worklist-73.json).
-AGENT_LAMA = [
-    ("1", "Asisten", "Agent lama", "Muse", "handoff"),
-    ("2", "Penjualan", "Agent lama", "Muse", "leads"),
-    ("3", "Pertumbuhan", "Agent lama", "Muse", "handoff"),
-    ("4", "Penjualan Harian", "Agent lama", "Muse", "penjualan_toko"),
-    ("5", "Produksi Produk", "Agent lama", "Muse", "produksi_game"),
-    ("6", "Lomba", "Agent lama", "Muse", "lomba"),
-    ("7", "Keuangan", "Agent lama", "Muse", "keuangan"),
-    ("8", "Terjemah Inggris", "Agent lama", "Muse", "terjemahan"),
-    ("9", "Game & Aplikasi", "Agent lama", "Muse", "worklist"),
-    ("10", "Riset Produk", "Agent lama", "Muse", "riset"),
-    ("11", "Oyen", "Agent lama", "Muse", "handoff"),
-    ("12", "Momo", "Agent lama", "Muse", "handoff"),
-    ("13", "Email", "Agent lama", "Muse", "email"),
-    ("14", "Upwork", "Agent lama", "Muse", "upwork"),
+# 14 mesin lama (dulu agent bernomor 1–14). Pekerjaan mereka DICABUT
+# 21 Nov 2026 (perintah Cipta): modul + data tetap utuh sebagai mesin
+# (engine/pustaka) yang dipakai 30 Agent Bintang, tapi tidak lagi punya
+# pekerjaan/tugas sendiri. Status: "Pasif — non job". Tim 9A–9F tercakup
+# dalam baris Mesin 9 (mereka berbagi satu sumber kerja: worklist-73.json).
+STATUS_PASIF = "Pasif — non job"
+MESIN_PASIF = [
+    ("1", "Asisten", "Mesin pasif", "Muse", "handoff"),
+    ("2", "Penjualan", "Mesin pasif", "Muse", "leads"),
+    ("3", "Pertumbuhan", "Mesin pasif", "Muse", "handoff"),
+    ("4", "Penjualan Harian", "Mesin pasif", "Muse", "penjualan_toko"),
+    ("5", "Produksi Produk", "Mesin pasif", "Muse", "produksi_game"),
+    ("6", "Lomba", "Mesin pasif", "Muse", "lomba"),
+    ("7", "Keuangan", "Mesin pasif", "Muse", "keuangan"),
+    ("8", "Terjemah Inggris", "Mesin pasif", "Muse", "terjemahan"),
+    ("9", "Game & Aplikasi", "Mesin pasif", "Muse", "worklist"),
+    ("10", "Riset Produk", "Mesin pasif", "Muse", "riset"),
+    ("11", "Oyen", "Mesin pasif", "Muse", "handoff"),
+    ("12", "Momo", "Mesin pasif", "Muse", "handoff"),
+    ("13", "Email", "Mesin pasif", "Muse", "email"),
+    ("14", "Upwork", "Mesin pasif", "Muse", "upwork"),
 ]
+# Alias lama (kompatibilitas): nama lama tetap bisa diimpor.
+AGENT_LAMA = MESIN_PASIF
 
 BELUM_ADA = "belum ada aktivitas"
 
@@ -118,8 +129,10 @@ def _aktivitas_handoff(folder, kode):
             (terakhir.get("ringkasan", "") or "—")[:120])
 
 
-def _aktivitas_agent_lama(folder, kode, sumber):
-    """Kembalikan (aktivitas_terakhir, output_terakhir) dari data nyata."""
+def _aktivitas_mesin(folder, kode, sumber):
+    """Kembalikan (aktivitas_terakhir, output_terakhir) dari data nyata.
+    Dipakai untuk 14 mesin pasif — aktivitas HISTORIS mesin itu (apa
+    yang dulu dikerjakannya sebelum pekerjaannya dicabut)."""
     if sumber == "handoff":
         return _aktivitas_handoff(folder, kode)
     if sumber == "leads":
@@ -207,7 +220,7 @@ def _aktivitas_agent_lama(folder, kode, sumber):
 
 
 # ---------------------------------------------------------------------------
-# Tabel gabungan 44 agent (30 Bintang + 14 lama)
+# Tabel gabungan: 30 Agent Bintang + 14 mesin pasif (44 baris)
 # ---------------------------------------------------------------------------
 def _aktivitas_b30(folder, kode):
     log = _baca_json(folder / LOG_FILE_NAMA, [])
@@ -221,8 +234,9 @@ def _aktivitas_b30(folder, kode):
 
 
 def tabel_semua_agent(base=None):
-    """Satu baris per agent: kode, nama, kelompok, dipetakan_ke, status,
-    aktivitas_terakhir, output_terakhir. Sumber: agents.json + data nyata."""
+    """Satu baris per agent/mesin: kode, nama, kelompok, dipetakan_ke,
+    status, aktivitas_terakhir, output_terakhir. Sumber: agents.json +
+    data nyata. Urutan: 30 Bintang dulu, lalu 14 mesin pasif."""
     folder = Path(base) if base else BASE
     data = _baca_json(folder / "agents.json", {})
     b30 = (data.get("agent_30") or {}).get("agents", [])
@@ -236,14 +250,17 @@ def tabel_semua_agent(base=None):
                      "status": e.get("status", ""),
                      "aktivitas_terakhir": aktivitas,
                      "output_terakhir": output})
-    for kode, nama, kelompok, peta, sumber in AGENT_LAMA:
-        aktivitas, output = _aktivitas_agent_lama(folder, kode, sumber)
-        status = "Aktif (mode persiapan)" if kode == "14" else "Aktif"
+    for kode, nama, kelompok, peta, sumber in MESIN_PASIF:
+        aktivitas, output = _aktivitas_mesin(folder, kode, sumber)
         rows.append({"kode": kode, "nama": nama, "kelompok": kelompok,
-                     "dipetakan_ke": peta, "status": status,
+                     "dipetakan_ke": peta, "status": STATUS_PASIF,
                      "aktivitas_terakhir": aktivitas,
                      "output_terakhir": output})
     return rows
+
+
+# Alias lama (kompatibilitas).
+_aktivitas_agent_lama = _aktivitas_mesin
 
 
 def daftar_divisi(base=None):
@@ -255,26 +272,32 @@ def daftar_divisi(base=None):
 
 
 def ringkasan_dashboard(base=None):
-    """Hitungan ringkas: Aktif / Aktif sebagian / Belum jalan + antrean."""
+    """Hitungan ringkas (Pusat Komando v2.0): hitungan utama 30 Agent
+    Bintang (Aktif / Aktif sebagian / Belum jalan) + 14 mesin pasif
+    terpisah + antrean. 'total_agent' = 30 (Bintang); 'total_baris' = 44
+    (30 Bintang + 14 mesin)."""
     folder = Path(base) if base else BASE
     rows = tabel_semua_agent(folder)
-    aktif = sum(1 for r in rows
+    bintang = [r for r in rows if r["kode"].startswith("A")]
+    mesin = [r for r in rows if r["status"] == STATUS_PASIF]
+    aktif = sum(1 for r in bintang
                 if r["status"] == "Aktif"
                 and r["aktivitas_terakhir"] != BELUM_ADA)
-    aktif_sebagian = sum(1 for r in rows if r["status"] == "Aktif sebagian")
-    belum_jalan = sum(1 for r in rows
+    aktif_sebagian = sum(1 for r in bintang if r["status"] == "Aktif sebagian")
+    belum_jalan = sum(1 for r in bintang
                       if r["status"] == "Aktif"
                       and r["aktivitas_terakhir"] == BELUM_ADA)
-    persiapan = sum(1 for r in rows if "mode persiapan" in r["status"])
     handoff = _baca_json(folder / "handoff.json", [])
     menunggu = [h for h in handoff if h.get("status") in ("draf", "diperiksa")]
     toko = _baca_json(folder / "penjualan_toko.json", {}).get("toko", [])
     toko_draf = [t for t in toko if t.get("status") == "draf"]
-    return {"total_agent": len(rows),
+    return {"total_agent": len(bintang),
+            "total_baris": len(rows),
             "aktif": aktif,
             "aktif_sebagian": aktif_sebagian,
             "belum_jalan": belum_jalan,
-            "mode_persiapan": persiapan,
+            "mesin_pasif": len(mesin),
+            "terkendala": len(tugas_terkendala(folder)),
             "handoff_menunggu": len(menunggu),
             "penawaran_toko_draf": len(toko_draf),
             "entri_log": len(_baca_json(folder / LOG_FILE_NAMA, []))}
@@ -307,13 +330,102 @@ def persetujuan_menunggu(base=None):
     return tugas_menunggu(base)["handoff"]
 
 
+# ---------------------------------------------------------------------------
+# Mesin eksekusi — antrean, kendala, target 30 hari, platform
+# (delegasi malas ke agents/mesin_eksekusi.py; fallback jujur bila mesin
+# tidak bisa dimuat)
+# ---------------------------------------------------------------------------
+def _muat_mesin():
+    try:
+        import mesin_eksekusi as _mesin
+        return _mesin
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def antrean_kerja(base=None):
+    """Antrean kerja mesin: status + prioritas + tenggat + agent Bintang
+    + kendala. Fallback: antrean minimal dari tugas_menunggu."""
+    mesin = _muat_mesin()
+    if mesin is not None:
+        try:
+            return mesin.antrean_kerja(base)
+        except Exception:  # noqa: BLE001
+            pass
+    tugas = tugas_menunggu(base)
+    antrean = []
+    for h in tugas["handoff"]:
+        antrean.append({"id": "HO-" + str(h.get("id", "?")),
+                        "sumber": "handoff", "jenis": h.get("jenis", "?"),
+                        "agent": "A01", "ringkasan": h.get("ringkasan", ""),
+                        "status": ("menunggu" if h.get("status") == "draf"
+                                   else "menunggu persetujuan"),
+                        "prioritas": "normal", "tenggat": "—",
+                        "tugas": {}, "sudah_diproses": False})
+    for t in tugas["penawaran_toko_draf"]:
+        antrean.append({"id": "TK-" + str(t.get("id", "?")),
+                        "sumber": "penawaran-toko", "jenis": "draf-penawaran",
+                        "agent": "A25",
+                        "ringkasan": "Penawaran ke {}".format(t.get("nama", "?")),
+                        "status": "menunggu", "prioritas": "normal",
+                        "tenggat": "—", "tugas": {}, "sudah_diproses": False})
+    return antrean
+
+
+def tugas_terkendala(base=None):
+    """Hanya item antrean berstatus 'terkendala' — tampil terpisah di
+    Dashboard supaya Cipta langsung melihat apa yang mentok."""
+    return [a for a in antrean_kerja(base) if a.get("status") == "terkendala"]
+
+
+def target_30_hari(base=None):
+    """Tolok ukur 30 hari Gemini (dari mesin eksekusi). Fallback: target
+    + 'belum cukup data' bila mesin tidak bisa dimuat."""
+    mesin = _muat_mesin()
+    if mesin is not None:
+        try:
+            return mesin.target_30_hari(base)
+        except Exception:  # noqa: BLE001
+            pass
+    return {"sumber": "Share Gemini #1 — Checklist Sistem 30 Hari (fallback)",
+            "catatan_jujur": "Mesin eksekusi tidak bisa dimuat — realisasi tidak dihitung.",
+            "target": [
+                {"nama": "Produk digital selesai", "target": 15,
+                 "realisasi": "belum cukup data", "satuan": "produk", "catatan": ""},
+                {"nama": "Konten terbit", "target": 30,
+                 "realisasi": "belum cukup data", "satuan": "konten", "catatan": ""},
+                {"nama": "Followers baru", "target": 1000,
+                 "realisasi": "belum cukup data", "satuan": "followers", "catatan": ""},
+                {"nama": "Lomba diikuti", "target": "5–10",
+                 "realisasi": "belum cukup data", "satuan": "lomba", "catatan": ""},
+                {"nama": "Pemasukan pertama", "target": "500.000–2.000.000",
+                 "realisasi": "belum cukup data", "satuan": "rupiah", "catatan": ""}]}
+
+
+def platform_per_agent(base=None):
+    """Pemetaan platform per agent Bintang (dari agents.json)."""
+    mesin = _muat_mesin()
+    if mesin is not None:
+        try:
+            return mesin.platform_per_agent(base)
+        except Exception:  # noqa: BLE001
+            pass
+    folder = Path(base) if base else BASE
+    data = _baca_json(folder / "agents.json", {})
+    return [{"kode": e.get("code", ""), "nama": e.get("name", ""),
+             "terhubung": (e.get("platform") or {}).get("terhubung", []),
+             "belum_terhubung": (e.get("platform") or {}).get("belum_terhubung", [])}
+            for e in (data.get("agent_30") or {}).get("agents", [])]
+
+
 if __name__ == "__main__":
     import sys
     r = ringkasan_dashboard()
-    print("Total agent:", r["total_agent"], "| Aktif:", r["aktif"],
+    print("Agent Bintang:", r["total_agent"], "| Aktif:", r["aktif"],
           "| Aktif sebagian:", r["aktif_sebagian"],
           "| Belum jalan:", r["belum_jalan"],
-          "| Mode persiapan:", r["mode_persiapan"])
+          "| Mesin pasif:", r["mesin_pasif"],
+          "| Terkendala:", r["terkendala"])
     print("Handoff menunggu:", r["handoff_menunggu"],
           "| Penawaran toko draf:", r["penawaran_toko_draf"],
           "| Entri log:", r["entri_log"])

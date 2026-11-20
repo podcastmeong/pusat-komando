@@ -41,7 +41,39 @@
 - [ ] Dibangun setelah #16 selesai (antre — satu repo, satu push sekali jalan).
 - [ ] Verifikasi sama seperti #16 (HTTP 200, byte-identik, node --check, 0× "ChatGPT", kartu kamar).
 
+## 7. Pusat Komando v2.0 — Mesin Eksekusi (21 Nov 2026)
+
+- [x] `data/agents.json` valid JSON; versi 2.0; key `agent_lama` (14 entri,
+      status "Pasif — non job"); key `platform` per agent Bintang (21
+      platform terhubung + 6 belum terhubung tercakup).
+- [x] `python -c "import app; app.build_app()"` jalan tanpa error
+      (venv-pk, env bersih) — 21 Nov ~05:00: **5 tab** ("0 · Command Center",
+      "B · 30 Agent", "C · Dashboard Agent", "🏠 Papan Handoff",
+      "🔄 Koordinasi"); API `jalankan_mesin_eksekusi` ada; tombol
+      "Jalankan Mesin Eksekusi" ada di tab Dashboard; header menampilkan
+      v2.0.
+- [x] `tests/` lolos — 21 Nov ~05:00: **220/220** (`unittest discover`,
+      venv-pk, env bersih). Termasuk `tests/test_mesin_eksekusi.py` (baru:
+      impor, antrean berstatus, eksekusi A12 + A25 mode tugas, audit log,
+      persetujuan, status 14 lama = pasif non-job, larangan kirim/bayar,
+      CLI tanpa sentuh data nyata) dan pembaruan `test_dashboard.py` +
+      `test_koordinasi.py` ke model v2.0.
+- [x] Proof run mesin di data asli (tanpa PK_NO_LOG): A12 "ilustrasi eBook
+      — Nabi Yunus dan Ikan Paus" (run ME-20261121045453-A12-001, mode
+      tugas, prompt gambar nyata) + A25 "Draf penawaran: Balini Petshop"
+      (run ME-20261121045454-A25-001, mode tugas, via
+      a04_penjualan_harian.draf_personal). Keduanya tercatat di
+      `data/mesin_eksekusi_log.json` + `data/activity_log.json` dengan
+      status "menunggu persetujuan".
+- [x] Dashboard data nyata setelah proof run: total_agent 30, aktif 3
+      (A01, A12, A25), aktif sebagian 4, belum jalan 23, mesin_pasif 14,
+      terkendala 0, handoff menunggu 11, draf penawaran toko 12.
+- [ ] Live di Faable (https://pusat-komando-972u7.faable.link/): HTTP 200 —
+      dicek setelah push commit v2.0 (catat hasilnya di sini).
+
 ## Catatan
 
-- Semua cron dijeda 21 Nov 02:49 (STOP Cipta). Pengujian di atas tidak mengaktifkan cron apa pun.
+- STOP semua agent 21 Nov 02:49 **DICABUT 21 Nov 04:30** (15 cron aktif
+  lagi). Pengujian di atas tidak mengaktifkan cron apa pun; mesin eksekusi
+  jalan hanya saat dipicu (tombol/CLI), bukan layanan 24 jam.
 - Bila ada cek yang gagal, catat tanggal + apa yang gagal di bawah ini sebelum melapor selesai.

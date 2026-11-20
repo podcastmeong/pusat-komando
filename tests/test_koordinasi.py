@@ -680,29 +680,33 @@ class TestPendaftaranWadah(unittest.TestCase):
         self.assertIn("game-pipeline", app.JENIS_HANDOFF)
 
     def test_modul_tim_termuat_di_app(self):
+        # v2.0: 14 modul lama (a01–a14 + tim 9A–9F) TIDAK lagi dimuat sebagai
+        # tab di app.py — mereka tetap bisa diimpor sebagai mesin oleh
+        # modul Bintang dan mesin eksekusi. Yang dimuat: koordinasi,
+        # dashboard, mesin eksekusi; versi aplikasi 2.0.
         import app
-        self.assertIsNotNone(app.A09A)
-        self.assertIsNotNone(app.A09B)
-        self.assertIsNotNone(app.A09C)
-        self.assertIsNotNone(app.A09D)
-        self.assertIsNotNone(app.A09E)
-        self.assertIsNotNone(app.A09F)
-        self.assertIsNone(app.E09A)
-        self.assertIsNone(app.E09B)
-        self.assertIsNone(app.E09C)
-        self.assertIsNone(app.E09D)
-        self.assertIsNone(app.E09E)
-        self.assertIsNone(app.E09F)
+        self.assertEqual(app.VERSI, "2.0")
+        self.assertIsNotNone(app.KOORD)
+        self.assertIsNotNone(app.DASH)
+        self.assertIsNotNone(app.MESIN)
+        for nama in ("A01", "A02", "A03", "A04", "A05", "A06", "A07",
+                     "A08", "A09", "A10", "A11", "A12M", "A13", "A14",
+                     "A09A", "A09B", "A09C", "A09D", "A09E", "A09F",
+                     "E01", "E09A", "E09F"):
+            self.assertFalse(hasattr(app, nama), nama)
 
-    def test_build_app_memuat_enam_tab_tim(self):
-        import json as _json
+    def test_build_app_lima_tab_v2(self):
+        # v2.0: aplikasi hanya punya 5 tab; 21 tab lama (14 bernomor +
+        # 6 tim 9A–9F + Avatar Podcast) sudah dihapus. Dicek lewat label
+        # komponen tabitem (bukan teks mentah — nama lama masih muncul
+        # sebagai pilihan dropdown di Papan Handoff/Koordinasi).
         import app
         demo = app.build_app()
-        teks = _json.dumps(demo.config, ensure_ascii=False, default=str)
-        for label in ("9A · Rancang", "9B · Bangun", "9C · Jualan",
-                      "9D · Bangun-2", "9E · Bangun-3",
-                      "9F · Verifikasi & Katalog"):
-            self.assertIn(label, teks)
+        labels = [c["props"]["label"] for c in demo.config["components"]
+                  if c.get("type") == "tabitem"]
+        self.assertEqual(labels, ["0 · Command Center", "B · 30 Agent",
+                                  "C · Dashboard Agent", "🏠 Papan Handoff",
+                                  "🔄 Koordinasi"])
 
     def test_template_game_pipeline_valid(self):
         path = ROOT / "data" / "handoff-templates" / "game-pipeline.json"
