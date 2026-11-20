@@ -46,7 +46,7 @@
   "kategori": "website",
   "kebijakan_ai": "diizinkan",
   "status": "baru",
-  "catatan": "HAMPIR SIAP: Spookify selesai+teruji, repo publik podcastmeong/spookify + .kiro/ + MIT, video demo v2 2:53 siap (file lokal). KURANG: upload video ke YouTube publik (butuh persetujuan Cipta) + verifikasi ulang GitHub Pages live + persetujuan Cipta + konfirmasi akun Devpost. Kategori Costume Contest. Kredit Kiro 4.000 OPSIONAL, tutup 1 Des 12:00 PT, butuh KTP+foto wajah — JANGAN ajukan tanpa persetujuan. Tenggat 5 Des 05:00 WIB.",
+  "catatan": "HAMPIR SIAP (update 20 Nov 18:35): video demo v2 2:53 SUDAH PUBLIK di YouTube https://youtu.be/plTqvlL9nkQ (terverifikasi 20 Nov) + Spookify Pages live HTTP 200 + app.js/styles.css 200. KURANG: persetujuan Cipta atas video + karya + konfirmasi akun Devpost. Kategori Costume Contest. Kredit Kiro 4.000 OPSIONAL, tutup 1 Des 12:00 PT, butuh KTP+foto wajah — JANGAN ajukan tanpa persetujuan. Tenggat 5 Des 05:00 WIB.",
   "cek_berikutnya": ""
  },
  {
@@ -136,7 +136,7 @@
   "kategori": "aplikasi",
   "kebijakan_ai": "diizinkan",
   "status": "baru",
-  "catatan": "HAMPIR SIAP: Meong Tales lengkap (6 cerita nabi, TTS Oyen/Momo, avatar terpasang), repo publik podcastmeong/meong-tales (Apache 2.0), naskah demo 2,5 mnt siap. KURANG: uji live end-to-end + video demo belum direkam/YouTube + URL live belum terverifikasi + proyek Firebase/App Check belum ada + persetujuan Cipta. PERINGATAN: kunci API di js/firebase-config.js tampak ASLI (peringatan GitHub 19 Nov) — cabut/putar SEBELUM submit/push. Tenggat 1 Des 05:00 WIB (30 Nov 17:00 ET).",
+  "catatan": "HAMPIR SIAP (update 20 Nov 18:35): kunci API Firebase LAMA sudah dicabut, kunci BARU live di ?v=6 (commit c17f07c, hash kunci lokal = live, terverifikasi 20 Nov); URL live https://podcastmeong.github.io/meong-tales/ HTTP 200. App Check Enterprise (reCAPTCHA) terpasang di kode; UJI LIVE 401 BELUM bisa dikonfirmasi dari subagent — butuh uji browser live (buka halaman, klik generate, lihat badge LIVE vs fallback template). KURANG: uji live end-to-end + video demo belum direkam/YouTube + persetujuan Cipta + status akun Devpost. Tenggat 1 Des 05:00 WIB (30 Nov 17:00 ET).",
   "cek_berikutnya": ""
  },
  {

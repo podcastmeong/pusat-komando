@@ -1,158 +1,158 @@
 [
- {
-  "id": "PG-19NOV-01",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 1",
-  "ringkasan": "Asisten — jawab pertanyaan pelanggan di semua platform (fast respon), pantau komentar/DM, laporkan yang butuh keputusan Cipta.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-01",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 1",
+    "ringkasan": "Asisten — jawab pertanyaan pelanggan di semua platform (fast respon), pantau komentar/DM, laporkan yang butuh keputusan Cipta.",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-02",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 2",
-  "ringkasan": "Penjualan — (1) Outreach jasa video promo: cari 10 toko target pertama, kirim Template A/B; MENUNGGU harga per video dari Cipta. (2) Jalankan rencana affiliate/promo 7 hari; MENUNGGU persetujuan caption Day 1 + 3 produk Lazada. (3) Upload POD pod-06..12 ke Zazzle; pod-13..16 menunggu teks listing Inggris.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-02",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 2",
+    "ringkasan": "Penjualan — (1) Outreach jasa video promo: cari 10 toko target pertama, kirim Template A/B; MENUNGGU harga per video dari Cipta. (2) Jalankan rencana affiliate/promo 7 hari; MENUNGGU persetujuan caption Day 1 + 3 produk Lazada. (3) Upload POD pod-06..12 ke Zazzle; pod-13..16 menunggu teks listing Inggris.",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-03",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 3",
-  "ringkasan": "Pertumbuhan — pertumbuhan organik follower/subscriber/view/like semua akun (TikTok 72, YT 73, IG 2); riset dulu, tanpa beli follower/bot. Target: satu kanal tembus 500 follower (buka Temu Influencer & Impact Marketplace).",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-03",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 3",
+    "ringkasan": "Pertumbuhan — pertumbuhan organik follower/subscriber/view/like semua akun (TikTok 72, YT 73, IG 2); riset dulu, tanpa beli follower/bot. Target: satu kanal tembus 500 follower (buka Temu Influencer & Impact Marketplace).",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-04",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 5",
-  "ringkasan": "Produksi Produk — (1) Produksi harian target Point 2 (foto 50, video 5, lagu 5, musik 5, puisi 5, cerpen 5, POD 5, eBook 5). (2) 1 cerpen + 2 puisi BARU untuk Basabasi/IDN Times; JANGAN submit sebelum Cipta setuju; JANGAN pakai isi Rindu. (3) eBook Nabi Ibrahim + PDF bergambar menunggu persetujuan + harga. (4) Video Risol, Astronot Lanjutan, promo POD v1, eBook Nabi Nuh menunggu verdict Cipta.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-04",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 5",
+    "ringkasan": "Produksi Produk — (1) Produksi harian target Point 2 (foto 50, video 5, lagu 5, musik 5, puisi 5, cerpen 5, POD 5, eBook 5). (2) 1 cerpen + 2 puisi BARU untuk Basabasi/IDN Times; JANGAN submit sebelum Cipta setuju; JANGAN pakai isi Rindu. (3) eBook Nabi Ibrahim + PDF bergambar menunggu persetujuan + harga. (4) Video Risol, Astronot Lanjutan, promo POD v1, eBook Nabi Nuh menunggu verdict Cipta.",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-05",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 6",
-  "ringkasan": "Lomba — (1) AdArena entry #2 PRIORITAS tenggat 20 Nov 03:00 WIB; MENUNGGU keputusan Cipta (Micro Drama vs lainnya), cek syarat IP dulu, jangan buat akun kedua. (2) Cek pemenang entry #1 'The Last Key' setelah tutup. (3) Devpost: email support terkirim 19 Nov 08:15, tunggu balasan, jangan spam. (4) Antrean: #BuildHybridAI 30 Nov, Reichman 27 Nov, Guardio 4 Des, Deck the Pixels 7 Des (TERBLOKIR Nano Banana), Reddit 8 Des, QNX 15 Des (AI BELUM terverifikasi, JANGAN submit), Codegeist 22 Des, Open Agentic Web 11 Jan 2027. (5) Kemenkes: form menunggu surat pernyataan orisinalitas dari Cipta, tenggat 30 Nov.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-05",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 6",
+    "ringkasan": "Lomba — (1) AdArena entry #2 PRIORITAS tenggat 20 Nov 03:00 WIB; MENUNGGU keputusan Cipta (Micro Drama vs lainnya), cek syarat IP dulu, jangan buat akun kedua. (2) Cek pemenang entry #1 'The Last Key' setelah tutup. (3) Devpost: email support terkirim 19 Nov 08:15, tunggu balasan, jangan spam. (4) Antrean: #BuildHybridAI 30 Nov, Reichman 27 Nov, Guardio 4 Des, Deck the Pixels 7 Des (TERBLOKIR Nano Banana), Reddit 8 Des, QNX 15 Des (AI BELUM terverifikasi, JANGAN submit), Codegeist 22 Des, Open Agentic Web 11 Jan 2027. (5) Kemenkes: form menunggu surat pernyataan orisinalitas dari Cipta, tenggat 30 Nov.",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-06",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 7",
-  "ringkasan": "Keuangan — cek uang masuk semua platform; bila memenuhi syarat transfer ke PayPal dan BCA; catat pemasukan (per 18 Nov: Rp0/$0). Pantau ambang payout: Zazzle $50, Dreamstime $100.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-06",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 7",
+    "ringkasan": "Keuangan — cek uang masuk semua platform; bila memenuhi syarat transfer ke PayPal dan BCA; catat pemasukan (per 18 Nov: Rp0/$0). Pantau ambang payout: Zazzle $50, Dreamstime $100.",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-07",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 8",
-  "ringkasan": "Terjemah Inggris — terjemahkan naskah baru ke Bahasa Inggris bila diminta (eBook seri Nabi Anak berikutnya, artikel, deskripsi produk). Jangan terjemahkan karya terbit tanpa perintah Cipta.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-07",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 8",
+    "ringkasan": "Terjemah Inggris — terjemahkan naskah baru ke Bahasa Inggris bila diminta (eBook seri Nabi Anak berikutnya, artikel, deskripsi produk). Jangan terjemahkan karya terbit tanpa perintah Cipta.",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-08",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 9",
-  "ringkasan": "Game & Aplikasi — (1) Upload Spookify ke Samsung Galaxy Store (akun seller jadi 19 Nov, 'masduki Kiki', Free Distribution Seller). (2) Target 1 game/aplikasi per hari; lanjutkan Oyen Tangkap Ikan. (3) APKPure: buat akun gratis. Amazon Appstore: Cipta daftar sendiri.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-08",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 9",
+    "ringkasan": "Game & Aplikasi — (1) Upload Spookify ke Samsung Galaxy Store (akun seller jadi 19 Nov, 'masduki Kiki', Free Distribution Seller). (2) Target 1 game/aplikasi per hari; lanjutkan Oyen Tangkap Ikan. (3) APKPure: buat akun gratis. Amazon Appstore: Cipta daftar sendiri.",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-09",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 10",
-  "ringkasan": "Riset Produk & Strategi — (1) Alat riset Genspark (login jadi 19 Nov, masduki1189@gmail.com, gratis, 100 kredit). (2) Riset pasar mingguan tiap Senin. (3) Usulkan HARGA jasa video promo (per video + paket 1/3/5) untuk persetujuan Cipta — dibutuhkan Agent 2.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-09",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 10",
+    "ringkasan": "Riset Produk & Strategi — (1) Alat riset Genspark (login jadi 19 Nov, masduki1189@gmail.com, gratis, 100 kredit). (2) Riset pasar mingguan tiap Senin. (3) Usulkan HARGA jasa video promo (per video + paket 1/3/5) untuk persetujuan Cipta — dibutuhkan Agent 2.",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-10",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 11",
-  "ringkasan": "Oyen (Avatar) — jaga wajah + suara Oyen (MAI_01 tinggi, speed 110) konsisten dan stabil; lanjutkan badan 3D Oyen bersama Agent 12.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-10",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 11",
+    "ringkasan": "Oyen (Avatar) — jaga wajah + suara Oyen (MAI_01 tinggi, speed 110) konsisten dan stabil; lanjutkan badan 3D Oyen bersama Agent 12.",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-11",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 12",
-  "ringkasan": "Momo (Avatar) — jaga wajah + suara Momo (MAI_03 rendah, speed 100) konsisten dan stabil; lanjutkan badan 3D Momo bersama Agent 11.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
+  {
+    "id": "PG-19NOV-11",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 12",
+    "ringkasan": "Momo (Avatar) — jaga wajah + suara Momo (MAI_03 rendah, speed 100) konsisten dan stabil; lanjutkan badan 3D Momo bersama Agent 11.",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "draf"
   },
-  "status": "draf"
- },
- {
-  "id": "PG-19NOV-12",
-  "jenis": "penugasan",
-  "dari_agent": "Muse",
-  "ke_agent": "Agent 13",
-  "ringkasan": "Email — pantau email masuk (balasan Devpost, keputusan Magnific/Freepik, info AdArena); laporkan yang penting. Gmail BELUM terhubung (MODE DEMO); jangan kirim/arsip email sendiri.",
-  "isi": {
-   "tanggal": "2026-11-19",
-   "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
-   "dokumen": "penugasan-agent-2026-11-19.md"
-  },
-  "status": "draf"
- }
+  {
+    "id": "PG-19NOV-12",
+    "jenis": "penugasan",
+    "dari_agent": "Muse",
+    "ke_agent": "Agent 13",
+    "ringkasan": "Email — STANDBY setiap saat + FAST RESPON (diperbarui 20 Nov 2026, perintah Cipta poin 27): cek email tiap hari pagi (rencana 05:00) + malam (laporan 20:00); triase segera bila ada email penting (lomba, keuangan, affiliate/bisnis, platform) dan laporkan ke Muse/Cipta; pantau balasan Devpost, keputusan Magnific/Freepik, info AdArena; buat DRAF balasan (5 template) — semua BUTUH PERSETUJUAN Cipta; TIDAK PERNAH kirim/hapus/arsip sendiri; bantu kode verifikasi login (kode tidak pernah disimpan/dikirim); catat aktivitas di log + laporkan ke Muse untuk laporan 20:00. Gmail BELUM terhubung (MODE DEMO).",
+    "isi": {
+      "tanggal": "2026-11-19",
+      "perintah": "Berikan semua tugas ke agent sesuai bidangnya (Cipta, 19 Nov 2026 10:08 WIB)",
+      "dokumen": "penugasan-agent-2026-11-19.md"
+    },
+    "status": "diperbarui 2026-11-20"
+  }
 ]

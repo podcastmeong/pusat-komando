@@ -1,20 +1,26 @@
 # ==========================================================================
 # PUSAT KOMANDO PODCAST MEONG
-# Satu aplikasi gabungan 12 agent AI bernomor + 6 tim Agent 9 + workshop
-# Avatar Podcast + bus Koordinasi antar-agent (21 tab) dalam SATU Space
+# Satu aplikasi gabungan 14 agent AI bernomor + 6 tim Agent 9 + workshop
+# Avatar Podcast + bus Koordinasi antar-agent (23 tab) dalam SATU Space
 # Gradio, berbagi satu folder data/ — supaya agent bisa membaca output
 # agent lain langsung dari Papan Handoff, tanpa antre lewat Muse.
 #
 # Agent yang digabung (modul di agents/, salinan dari agent aslinya dengan
 # path data dialihkan ke data/ bersama):
 #   1 Asisten (a01) · 2 Penjualan (a02, FastAPI — dibuatkan tab Gradio di
-#   sini) · 3 Pertumbuhan (a03) · 5 Produksi Produk (a05) · 6 Lomba (a06)
+#   sini) · 3 Pertumbuhan (a03) · 4 Penjualan Harian (a04 — diaktifkan
+#   kembali 20 Nov 2026 atas perintah Cipta, mengisi slot Agent 4 yang
+#   dulu dihapus; dibantu Agent 2 untuk memasarkan) · 5 Produksi Produk
+#   (a05) · 6 Lomba (a06)
 #   7 Keuangan (a07) · 8 Terjemah Inggris (a08) · 9 Produksi Game &
 #   Aplikasi (a09) · 9A Rancang (a09a) · 9B Bangun (a09b) · 9C Jualan
 #   (a09c) · 9D Bangun-2 (a09d) · 9E Bangun-3 (a09e) · 9F Verifikasi &
 #   Katalog (a09f) — enam tim di bawah Agent 9 · 10 Riset Produk &
 #   Strategi (a10) · 11 Oyen (a11_oyen) · 12 Momo (a12_momo) · 13 Email
-#   (a13_email) · Workshop Avatar Podcast (a11, tanpa nomor)
+#   (a13_email) · 14 Upwork (a14 — dibuat 20 Nov 2026 atas perintah
+#   Cipta, mode persiapan: akun Upwork belum ada, signup tertahan di
+#   Cloudflare; riset job + draf proposal saja) · Workshop Avatar Podcast
+#   (a11, tanpa nomor)
 # Agent 4 TIDAK ADA — dihapus atas perintah Cipta; upload harian ditangani
 # Muse langsung.
 #
@@ -50,17 +56,18 @@ JENIS_HANDOFF = ["product-brief", "draft-approval", "sales-lead",
                  "contest-entry", "finance-entry", "translation-job",
                  "game-pipeline", "lainnya"]
 NAMA_AGENT = {1: "1 · Asisten", 2: "2 · Penjualan", 3: "3 · Pertumbuhan",
+              4: "4 · Penjualan Harian",
               5: "5 · Produksi Produk", 6: "6 · Lomba", 7: "7 · Keuangan",
               8: "8 · Terjemah Inggris", 9: "9 · Game & Aplikasi",
               "9A": "9A · Rancang", "9B": "9B · Bangun", "9C": "9C · Jualan",
               "9D": "9D · Bangun-2", "9E": "9E · Bangun-3",
               "9F": "9F · Verifikasi & Katalog",
               10: "10 · Riset Produk", 11: "11 · Oyen", 12: "12 · Momo",
-              13: "13 · Email"}
+              13: "13 · Email", 14: "14 · Upwork"}
 # Urutan agent di dropdown (angka dulu, tim 9A–9F tepat setelah 9) —
 # sorted() biasa tidak bisa dipakai karena kunci campuran int + str.
-_URUTAN_AGENT = [1, 2, 3, 5, 6, 7, 8, 9, "9A", "9B", "9C", "9D", "9E", "9F",
-                 10, 11, 12, 13]
+_URUTAN_AGENT = [1, 2, 3, 4, 5, 6, 7, 8, 9, "9A", "9B", "9C", "9D", "9E", "9F",
+                 10, 11, 12, 13, 14]
 MODE_AI = bool(os.environ.get("GEMINI_API_KEY", "").strip())
 
 
@@ -77,6 +84,7 @@ def _muat(nama_modul):
 A01, E01 = _muat("a01_asisten")
 A02, E02 = _muat("a02_penjualan")
 A03, E03 = _muat("a03_pertumbuhan")
+A04, E04 = _muat("a04_penjualan_harian")
 A05, E05 = _muat("a05_produksi")
 A06, E06 = _muat("a06_lomba")
 A07, E07 = _muat("a07_keuangan")
@@ -93,6 +101,7 @@ A11, E11 = _muat("a11_avatar")
 A11O, E11O = _muat("a11_oyen")
 A12M, E12M = _muat("a12_momo")
 A13, E13 = _muat("a13_email")
+A14, E14 = _muat("a14_upwork")
 KOORD, EKOORD = _muat("koordinasi")
 
 
@@ -533,7 +542,7 @@ def _tambah_lead(nama, kontak, alamat, jenis, status, terverifikasi, catatan):
 # ---------------------------------------------------------------------------
 HEADER = """# 🎛️ Pusat Komando Podcast Meong
 
-Satu wadah untuk **12 agent AI bernomor + 6 tim Agent 9 + workshop Avatar Podcast + bus Koordinasi (21 tab)** — berbagi satu folder `data/`, jadi output satu agent
+Satu wadah untuk **14 agent AI bernomor + 6 tim Agent 9 + workshop Avatar Podcast + bus Koordinasi (23 tab)** — berbagi satu folder `data/`, jadi output satu agent
 langsung bisa dipakai agent lain lewat **Papan Handoff** dan **bus Koordinasi**. Agent 4 tidak ada
 (dihapus atas perintah Cipta — upload harian ditangani Muse langsung).
 
@@ -790,6 +799,14 @@ def build_app():
                 else:
                     _tab_error(err or E03 or "tidak diketahui")
 
+            # ============================ AGENT 4 — PENJUALAN HARIAN ============================
+            with gr.Tab("4 · Penjualan Harian"):
+                blok, err = _blok_dari_modul(A04, lambda m: m.build_ui(), "4 Penjualan Harian")
+                if blok is not None:
+                    blok.render()
+                else:
+                    _tab_error(err or E04 or "tidak diketahui")
+
             # ============================ AGENT 5 — PRODUKSI PRODUK ============================
             with gr.Tab("5 · Produksi Produk"):
                 blok, err = _blok_dari_modul(A05, lambda m: m.demo, "5 Produksi Produk")
@@ -918,8 +935,16 @@ def build_app():
                 else:
                     _tab_error(err or E13 or "tidak diketahui")
 
+            # ============================ AGENT 14 — UPWORK ============================
+            with gr.Tab("14 · Upwork"):
+                blok, err = _blok_dari_modul(A14, lambda m: m.build_ui(), "14 Upwork")
+                if blok is not None:
+                    blok.render()
+                else:
+                    _tab_error(err or E14 or "tidak diketahui")
+
         gr.Markdown(
-            "---\n*Pusat Komando Podcast Meong — 12 agent bernomor + 6 tim Agent 9 + workshop Avatar Podcast + bus Koordinasi, 1 Space, 1 folder data. "
+            "---\n*Pusat Komando Podcast Meong — 14 agent bernomor + 6 tim Agent 9 + workshop Avatar Podcast + bus Koordinasi, 1 Space, 1 folder data. "
             "Data di `data/` hilang bila Space di-rebuild — unduh berkala. "
             "SOP Kerja Sama Agent AI berlaku (18 Nov 2026).*")
     return demo

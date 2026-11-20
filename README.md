@@ -25,6 +25,7 @@ harian ditangani Muse langsung):
 | 1 · Asisten | Jawab pertanyaan pelanggan | `agent-ai-gratis` |
 | 2 · Penjualan | Jualan, promosi, cari customer, leads | `agent-penjualan-oracle` (FastAPI — dibuatkan tab Gradio di sini) |
 | 3 · Pertumbuhan | View / like / subscribe / follow (organik) | `agent-pertumbuhan` |
+| 4 · Penjualan Harian | Cari 15 toko/hari, verifikasi nomor, draf personal, log hasil | Baru (20 Nov 2026) — dibantu Agent 2 untuk memasarkan |
 | 5 · Produksi Produk | Draf video, foto, eBook, puisi, cerpen, POD, lagu | `agent-produksi-produk` |
 | 6 · Lomba | Cari lomba, cek aturan AI, tenggat, cek pemenang | `agent-lomba` |
 | 7 · Keuangan | Catat uang masuk, ringkasan, payout | `agent-keuangan` |
@@ -116,6 +117,28 @@ Spaces masalah ini tidak ada.
 - **Pusat Komando kini 11 agent bernomor + workshop Avatar Podcast (12 tab)**: tab baru "11 · Oyen" dan "12 · Momo"; tab "11 · Avatar Podcast" yang lama diubah menjadi tab tanpa nomor "Avatar Podcast" (workshop bersama, tetap ada). NAMA_AGENT diperbarui (11: Oyen, 12: Momo); header/footer jumlah agent diperbarui.
 - **SOP Kerja Sama Agent AI kini v1.3** (18 Nov 2026): tabel peran agent + daftar folder + riwayat versi ditambah Agent 11 dan 12.
 - **Suara dan wajah TIDAK BOLEH diubah** tanpa perintah eksplisit Cipta — tidak ada kontrol UI untuk itu di kedua agent baru. Semua output adalah DRAF untuk persetujuan Cipta.
+
+## Pembaruan 20 Nov 2026 — Agent 4 Penjualan Harian
+
+- **Agent 4 diaktifkan kembali** atas perintah Cipta ("Exsekusi / Buatkan"),
+  mengisi slot Agent 4 yang dulu dihapus. Total agent menjadi **13
+  (slot 1–13 penuh) + Muse = 14**. Modul: `agents/a04_penjualan_harian.py`,
+  data: `data/penjualan_toko.json` (log awal: 10 pet shop Jakarta Selatan,
+  sudah ada draf, BELUM ada yang dikirim).
+- **Tugas:** penjualan harian ke toko-toko (alur kerja 4 Cipta) — cari
+  minimal 15 toko/hari (nomor HP dari Google Maps), verifikasi nomor, buat
+  draf penawaran personal dari katalog baru, catat hasil + follow-up.
+- **Dibantu Agent 2 untuk memasarkan:** draf memakai generator promosi
+  Agent 2 (WA outreach/follow-up, DM IG, email, caption); toko terverifikasi
+  Agent 4 masuk sebagai lead Agent 2 (`leads.json`); lead baru Agent 2
+  bisa diambil Agent 4 untuk penawaran harian.
+- **Aturan keras:** agent TIDAK PERNAH mengirim pesan — Cipta menyetujui
+  draf persisnya dulu, lalu mengirim sendiri dari WA-nya.
+- **Deploy:** kode baru ini ada di folder lokal Pusat Komando. Cara Faable
+  mengambil update TIDAK tercatat di repo ini — sinkronisasi ulang ke
+  Faable (dashboard Faable / GitHub App) masih perlu dilakukan manual;
+  JANGAN anggap sudah live di Faable sebelum dicek di
+  https://pusat-komando-972u7.faable.link/.
 
 ## Pembaruan 19 Nov 2026 — Sistem Koordinasi Antar-Agent
 
