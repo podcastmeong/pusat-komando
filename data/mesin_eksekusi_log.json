@@ -8,9 +8,9 @@
       "tema": "Nabi Yunus dan Ikan Paus"
     },
     "mode": "tugas",
-    "status": "menunggu persetujuan",
-    "keputusan": null,
-    "oleh": null,
+    "status": "selesai",
+    "keputusan": "disetujui",
+    "oleh": "Cipta",
     "draf": {
       "status": "draf",
       "butuh_persetujuan": true,
@@ -23,7 +23,7 @@
       "catatan": "DRAF — wajib diperiksa dan disetujui Cipta sebelum dipakai/dikirim.",
       "tema": "Nabi Yunus dan Ikan Paus",
       "ukuran": "720x1280",
-      "prompt_gambar_draf": "Ilustrasi ilustrasi eBook bertema 'Nabi Yunus dan Ikan Paus', gaya bersih dan menarik, tanpa teks, tanpa merek/logo, tanpa orang asli.",
+      "prompt_gambar_draf": "Ilustrasi eBook bertema 'Nabi Yunus dan Ikan Paus', gaya bersih dan menarik, tanpa teks, tanpa merek/logo, tanpa orang asli.",
       "tools_referensi": [
         "Bing Image Creator",
         "Leonardo.ai",
@@ -35,7 +35,9 @@
     },
     "hasil": "Brief visual: ilustrasi eBook — Nabi Yunus dan Ikan Paus",
     "waktu_mulai": "2026-11-21 04:54:53",
-    "waktu_selesai": "2026-11-21 04:54:53"
+    "waktu_selesai": "2026-11-21 04:54:53",
+    "catatan_keputusan": "Disetujui Cipta 21 Nov 05:16 (WA: Setuju A12 saja). Prompt diperbaiki: Ilustrasi ilustrasi -> Ilustrasi.",
+    "waktu_keputusan": "2026-11-21 05:17:03"
   },
   {
     "id": "ME-20261121045454-A25-001",
