@@ -151,7 +151,9 @@ class TestDataNyata(unittest.TestCase):
 
     def test_nilai_aktivitas_agent_lama(self):
         rows = {r["kode"]: r for r in dashboard.tabel_semua_agent()}
-        self.assertIn("2 penawaran terkirim, 12 draf",
+        # 21 Nov 2026: draf 12 -> 9 (Balini menunggu persetujuan,
+        # Zoom + Efxi dilewati — lihat data/penjualan_toko.json).
+        self.assertIn("2 penawaran terkirim, 9 draf",
                       rows["4"]["aktivitas_terakhir"])
         self.assertIn("28 lomba tercatat", rows["6"]["aktivitas_terakhir"])
         self.assertIn("3 dikirim", rows["6"]["aktivitas_terakhir"])
@@ -169,8 +171,10 @@ class TestDataNyata(unittest.TestCase):
         r = dashboard.ringkasan_dashboard()
         self.assertEqual(r["total_agent"], 30)
         self.assertEqual(r["mesin_pasif"], 14)
-        self.assertEqual(r["handoff_menunggu"], 11)
-        self.assertEqual(r["penawaran_toko_draf"], 12)
+        # 21 Nov 2026: 11 penugasan harian 19 Nov diarsipkan (digantikan
+        # jadwal mesin v2.0) -> handoff menunggu 0; draf toko 12 -> 9.
+        self.assertEqual(r["handoff_menunggu"], 0)
+        self.assertEqual(r["penawaran_toko_draf"], 9)
         self.assertEqual(r["aktif_sebagian"], 4)
         self.assertEqual(r["terkendala"], 0)
         self.assertGreaterEqual(r["entri_log"], 6)
