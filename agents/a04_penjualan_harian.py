@@ -265,7 +265,18 @@ def draf_personal(nama, observasi="", produk="video"):
     a02 = _a02()
     if produk == "video":
         if a02 is not None:
-            draf = a02.template_generator("wa_outreach", toko, obs or "produk", "15")
+            # PERBAIKAN 21 Nov 2026: argumen ke-3 template_generator adalah
+            # PRODUK ("video"), BUKAN observasi — observasi yang dulu
+            # dikirim ke slot produk menghasilkan kalimat canggung
+            # ("contoh konsep dulu untuk di Kebagusan Raya jual ...").
+            # Observasi kini jadi kalimat sendiri setelah salam.
+            draf = a02.template_generator("wa_outreach", toko, "video", "15")
+            if obs:
+                draf = draf.replace(
+                    "Halo Kak, perkenalkan saya Masduki dari Podcast Meong "
+                    "(video kucing Oyen & Momo). ",
+                    "Halo Kak, perkenalkan saya Masduki dari Podcast Meong "
+                    "(video kucing Oyen & Momo). Saya lihat toko Kakak {}. ".format(obs), 1)
             return _sisip_katalog(draf)
         kalimat_obs = ("Saya lihat {} — ".format(obs) if obs else "")
         return (

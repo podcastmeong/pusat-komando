@@ -75,5 +75,200 @@
     "hasil": "Draf penawaran: Balini Petshop",
     "waktu_mulai": "2026-11-21 04:54:53",
     "waktu_selesai": "2026-11-21 04:54:54"
+  },
+  {
+    "id": "ME-20261121051949-A25-001",
+    "kode_agent": "A25",
+    "nama_agent": "Sales Manager",
+    "tugas": {
+      "nama_toko": "Michelle Petshop",
+      "produk": "video",
+      "observasi": "Hanya telepon rumah — telepon dulu minta nomor WA admin. Sumber: daftar-target-petshop-10.md (verifikasi 20 Nov 2026).",
+      "ringkasan": "Halo Kak, saya Masduki dari Podcast Meong (video kucing Oyen & Momo). Saya lihat Michelle Petshop di Ampera Raya agen makanan hewan brand ternama, harganya dari murah sampai mahal — cocok banget dipro"
+    },
+    "mode": "tugas",
+    "status": "menunggu persetujuan",
+    "keputusan": null,
+    "oleh": null,
+    "draf": {
+      "status": "draf",
+      "butuh_persetujuan": true,
+      "agent": "A25",
+      "nama_agent": "Sales Manager",
+      "jenis": "draf_penawaran",
+      "judul": "Draf penawaran: Michelle Petshop",
+      "mode": "template",
+      "tanggal": "2026-11-20",
+      "catatan": "DRAF — wajib diperiksa dan disetujui Cipta sebelum dipakai/dikirim.",
+      "teks": "Halo Kak, perkenalkan saya Masduki dari Podcast Meong (video kucing Oyen & Momo). Saya lihat toko Kakak Hanya telepon rumah — telepon dulu minta nomor WA admin. Sumber: daftar-target-petshop-10.md (verifikasi 20 Nov 2026).. Saya menawarkan jasa video promosi AI untuk Michelle Petshop: video pendek 9:16 dengan karakter kucing lucu, cocok untuk TikTok, Reels, dan WhatsApp. Contoh: https://www.youtube.com/shorts/ONkM6dQQHxg. Harga: 15 detik Rp75.000, 30 detik Rp150.000, 60 detik Rp250.000 (termasuk naskah + 1x revisi kecil). Bila berminat, saya bisa buatkan contoh konsep dulu untuk video. Katalog jasa: https://podcastmeong.github.io/ (bagian #jasa). Terima kasih 🙏",
+      "produk": "video",
+      "sumber": "a04_penjualan_harian.draf_personal",
+      "pembayaran": "BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai",
+      "target_rancangan_gemini": [
+        "Respons < 1 jam (target rancangan)",
+        "1–3 penjualan langsung (closing)/hari (target rancangan)",
+        "Pembayaran hanya ke BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai"
+      ]
+    },
+    "hasil": "Draf penawaran: Michelle Petshop",
+    "waktu_mulai": "2026-11-21 05:19:49",
+    "waktu_selesai": "2026-11-21 05:19:49",
+    "id_antrean": "TK-toko-04"
+  },
+  {
+    "id": "ME-20261121051949-A25-002",
+    "kode_agent": "A25",
+    "nama_agent": "Sales Manager",
+    "tugas": {
+      "nama_toko": "Gentoo Petshop",
+      "produk": "video",
+      "observasi": "Jam buka paling panjang (10.00–23.55). Cabang Lenteng Agung sudah TUTUP PERMANEN — jangan hubungi nomor cabang itu. Sumber: daftar-target-petshop-10.md (verifikasi 20 Nov 2026).",
+      "ringkasan": "Halo Kak, saya Masduki dari Podcast Meong (video kucing Oyen & Momo). Saya lihat Gentoo Petshop di Poltangan Raya bukanya panjang banget sampai hampir tengah malam — tokonya pasti ramai. Saya tawarkan"
+    },
+    "mode": "tugas",
+    "status": "menunggu persetujuan",
+    "keputusan": null,
+    "oleh": null,
+    "draf": {
+      "status": "draf",
+      "butuh_persetujuan": true,
+      "agent": "A25",
+      "nama_agent": "Sales Manager",
+      "jenis": "draf_penawaran",
+      "judul": "Draf penawaran: Gentoo Petshop",
+      "mode": "template",
+      "tanggal": "2026-11-20",
+      "catatan": "DRAF — wajib diperiksa dan disetujui Cipta sebelum dipakai/dikirim.",
+      "teks": "Halo Kak, perkenalkan saya Masduki dari Podcast Meong (video kucing Oyen & Momo). Saya lihat toko Kakak Jam buka paling panjang (10.00–23.55). Cabang Lenteng Agung sudah TUTUP PERMANEN — jangan hubungi nomor cabang itu. Sumber: daftar-target-petshop-10.md (verifikasi 20 Nov 2026).. Saya menawarkan jasa video promosi AI untuk Gentoo Petshop: video pendek 9:16 dengan karakter kucing lucu, cocok untuk TikTok, Reels, dan WhatsApp. Contoh: https://www.youtube.com/shorts/ONkM6dQQHxg. Harga: 15 detik Rp75.000, 30 detik Rp150.000, 60 detik Rp250.000 (termasuk naskah + 1x revisi kecil). Bila berminat, saya bisa buatkan contoh konsep dulu untuk video. Katalog jasa: https://podcastmeong.github.io/ (bagian #jasa). Terima kasih 🙏",
+      "produk": "video",
+      "sumber": "a04_penjualan_harian.draf_personal",
+      "pembayaran": "BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai",
+      "target_rancangan_gemini": [
+        "Respons < 1 jam (target rancangan)",
+        "1–3 penjualan langsung (closing)/hari (target rancangan)",
+        "Pembayaran hanya ke BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai"
+      ]
+    },
+    "hasil": "Draf penawaran: Gentoo Petshop",
+    "waktu_mulai": "2026-11-21 05:19:49",
+    "waktu_selesai": "2026-11-21 05:19:49",
+    "id_antrean": "TK-toko-05"
+  },
+  {
+    "id": "ME-20261121051949-A25-003",
+    "kode_agent": "A25",
+    "nama_agent": "Sales Manager",
+    "tugas": {
+      "nama_toko": "Jangki Petshop Cilandak",
+      "produk": "video",
+      "observasi": "IG @jangkicilandak terakhir posting 29 Jun 2026 — medsos KURANG AKTIF (5 bln). Prioritas tawaran 2. Grooming antar-jemput gratis + free delivery. Hanya cabang Cilandak (cabang Bandung nomor berbeda). ",
+      "ringkasan": "Halo Kak, saya Masduki dari Podcast Meong (video kucing Oyen & Momo). Saya lihat Jangki Petshop Cilandak ada grooming antar-jemput gratis — layanan seperti itu paling enak dipromosikan lewat video. Sa"
+    },
+    "mode": "tugas",
+    "status": "menunggu persetujuan",
+    "keputusan": null,
+    "oleh": null,
+    "draf": {
+      "status": "draf",
+      "butuh_persetujuan": true,
+      "agent": "A25",
+      "nama_agent": "Sales Manager",
+      "jenis": "draf_penawaran",
+      "judul": "Draf penawaran: Jangki Petshop Cilandak",
+      "mode": "template",
+      "tanggal": "2026-11-20",
+      "catatan": "DRAF — wajib diperiksa dan disetujui Cipta sebelum dipakai/dikirim.",
+      "teks": "Halo Kak, perkenalkan saya Masduki dari Podcast Meong (video kucing Oyen & Momo). Saya lihat toko Kakak IG @jangkicilandak terakhir posting 29 Jun 2026 — medsos KURANG AKTIF (5 bln). Prioritas tawaran 2. Grooming antar-jemput gratis + free delivery. Hanya cabang Cilandak (cabang Bandung nomor berbeda).. Saya menawarkan jasa video promosi AI untuk Jangki Petshop Cilandak: video pendek 9:16 dengan karakter kucing lucu, cocok untuk TikTok, Reels, dan WhatsApp. Contoh: https://www.youtube.com/shorts/ONkM6dQQHxg. Harga: 15 detik Rp75.000, 30 detik Rp150.000, 60 detik Rp250.000 (termasuk naskah + 1x revisi kecil). Bila berminat, saya bisa buatkan contoh konsep dulu untuk video. Katalog jasa: https://podcastmeong.github.io/ (bagian #jasa). Terima kasih 🙏",
+      "produk": "video",
+      "sumber": "a04_penjualan_harian.draf_personal",
+      "pembayaran": "BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai",
+      "target_rancangan_gemini": [
+        "Respons < 1 jam (target rancangan)",
+        "1–3 penjualan langsung (closing)/hari (target rancangan)",
+        "Pembayaran hanya ke BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai"
+      ]
+    },
+    "hasil": "Draf penawaran: Jangki Petshop Cilandak",
+    "waktu_mulai": "2026-11-21 05:19:49",
+    "waktu_selesai": "2026-11-21 05:19:49",
+    "id_antrean": "TK-toko-06"
+  },
+  {
+    "id": "ME-20261121051949-A25-004",
+    "kode_agent": "A25",
+    "nama_agent": "Sales Manager",
+    "tugas": {
+      "nama_toko": "BB Petshop",
+      "produk": "video",
+      "observasi": "Hanya telepon rumah — telepon dulu minta nomor WA admin. Sumber: daftar-target-petshop-10.md (verifikasi 20 Nov 2026).",
+      "ringkasan": "Halo Kak, saya Masduki dari Podcast Meong (video kucing Oyen & Momo). Saya lihat BB Petshop di Radio Dalam produknya lengkap dan murah, plus ada grooming — toko lama yang sudah dipercaya. Saya tawarka"
+    },
+    "mode": "tugas",
+    "status": "menunggu persetujuan",
+    "keputusan": null,
+    "oleh": null,
+    "draf": {
+      "status": "draf",
+      "butuh_persetujuan": true,
+      "agent": "A25",
+      "nama_agent": "Sales Manager",
+      "jenis": "draf_penawaran",
+      "judul": "Draf penawaran: BB Petshop",
+      "mode": "template",
+      "tanggal": "2026-11-20",
+      "catatan": "DRAF — wajib diperiksa dan disetujui Cipta sebelum dipakai/dikirim.",
+      "teks": "Halo Kak, perkenalkan saya Masduki dari Podcast Meong (video kucing Oyen & Momo). Saya lihat toko Kakak Hanya telepon rumah — telepon dulu minta nomor WA admin. Sumber: daftar-target-petshop-10.md (verifikasi 20 Nov 2026).. Saya menawarkan jasa video promosi AI untuk BB Petshop: video pendek 9:16 dengan karakter kucing lucu, cocok untuk TikTok, Reels, dan WhatsApp. Contoh: https://www.youtube.com/shorts/ONkM6dQQHxg. Harga: 15 detik Rp75.000, 30 detik Rp150.000, 60 detik Rp250.000 (termasuk naskah + 1x revisi kecil). Bila berminat, saya bisa buatkan contoh konsep dulu untuk video. Katalog jasa: https://podcastmeong.github.io/ (bagian #jasa). Terima kasih 🙏",
+      "produk": "video",
+      "sumber": "a04_penjualan_harian.draf_personal",
+      "pembayaran": "BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai",
+      "target_rancangan_gemini": [
+        "Respons < 1 jam (target rancangan)",
+        "1–3 penjualan langsung (closing)/hari (target rancangan)",
+        "Pembayaran hanya ke BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai"
+      ]
+    },
+    "hasil": "Draf penawaran: BB Petshop",
+    "waktu_mulai": "2026-11-21 05:19:49",
+    "waktu_selesai": "2026-11-21 05:19:49",
+    "id_antrean": "TK-toko-08"
+  },
+  {
+    "id": "ME-20261121051949-A25-005",
+    "kode_agent": "A25",
+    "nama_agent": "Sales Manager",
+    "tugas": {
+      "nama_toko": "Faunafella Care",
+      "produk": "video",
+      "observasi": "IG @faunafella.cat: 0 postingan terbaca via konektor (tidak bisa dicek). Valid via WA resmi dari situs grooming.faunafella.com. Grooming kucing panggilan ke rumah; groomer bersertifikat, disupervisi d",
+      "ringkasan": "Halo Kak, saya Masduki dari Podcast Meong (video kucing Oyen & Momo). Saya lihat Faunafella Care grooming kucing panggilan ke rumah — groomer bersertifikat, disupervisi dokter hewan, sudah ribuan kuci"
+    },
+    "mode": "tugas",
+    "status": "menunggu persetujuan",
+    "keputusan": null,
+    "oleh": null,
+    "draf": {
+      "status": "draf",
+      "butuh_persetujuan": true,
+      "agent": "A25",
+      "nama_agent": "Sales Manager",
+      "jenis": "draf_penawaran",
+      "judul": "Draf penawaran: Faunafella Care",
+      "mode": "template",
+      "tanggal": "2026-11-20",
+      "catatan": "DRAF — wajib diperiksa dan disetujui Cipta sebelum dipakai/dikirim.",
+      "teks": "Halo Kak, perkenalkan saya Masduki dari Podcast Meong (video kucing Oyen & Momo). Saya lihat toko Kakak IG @faunafella.cat: 0 postingan terbaca via konektor (tidak bisa dicek). Valid via WA resmi dari situs grooming.faunafella.com. Grooming kucing panggilan ke rumah; groomer bersertifikat, disupervisi d. Saya menawarkan jasa video promosi AI untuk Faunafella Care: video pendek 9:16 dengan karakter kucing lucu, cocok untuk TikTok, Reels, dan WhatsApp. Contoh: https://www.youtube.com/shorts/ONkM6dQQHxg. Harga: 15 detik Rp75.000, 30 detik Rp150.000, 60 detik Rp250.000 (termasuk naskah + 1x revisi kecil). Bila berminat, saya bisa buatkan contoh konsep dulu untuk video. Katalog jasa: https://podcastmeong.github.io/ (bagian #jasa). Terima kasih 🙏",
+      "produk": "video",
+      "sumber": "a04_penjualan_harian.draf_personal",
+      "pembayaran": "BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai",
+      "target_rancangan_gemini": [
+        "Respons < 1 jam (target rancangan)",
+        "1–3 penjualan langsung (closing)/hari (target rancangan)",
+        "Pembayaran hanya ke BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai"
+      ]
+    },
+    "hasil": "Draf penawaran: Faunafella Care",
+    "waktu_mulai": "2026-11-21 05:19:49",
+    "waktu_selesai": "2026-11-21 05:19:49",
+    "id_antrean": "TK-toko-09"
   }
 ]

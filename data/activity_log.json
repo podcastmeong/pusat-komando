@@ -75,5 +75,75 @@
     "aksi": "persetujuan: disetujui",
     "hasil": "ME-20261121045453-A12-001 — Brief visual: ilustrasi eBook — Nabi Yunus dan Ikan Paus",
     "detail": "oleh Cipta"
+  },
+  {
+    "waktu": "2026-11-21 05:19",
+    "kode_agent": "A25",
+    "aksi": "buat draf: draf_penawaran",
+    "hasil": "Draf penawaran: Michelle Petshop",
+    "detail": ""
+  },
+  {
+    "waktu": "2026-11-21 05:19",
+    "kode_agent": "A25",
+    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+    "hasil": "Draf penawaran: Michelle Petshop",
+    "detail": "mode=tugas; run ME-20261121051949-A25-001"
+  },
+  {
+    "waktu": "2026-11-21 05:19",
+    "kode_agent": "A25",
+    "aksi": "buat draf: draf_penawaran",
+    "hasil": "Draf penawaran: Gentoo Petshop",
+    "detail": ""
+  },
+  {
+    "waktu": "2026-11-21 05:19",
+    "kode_agent": "A25",
+    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+    "hasil": "Draf penawaran: Gentoo Petshop",
+    "detail": "mode=tugas; run ME-20261121051949-A25-002"
+  },
+  {
+    "waktu": "2026-11-21 05:19",
+    "kode_agent": "A25",
+    "aksi": "buat draf: draf_penawaran",
+    "hasil": "Draf penawaran: Jangki Petshop Cilandak",
+    "detail": ""
+  },
+  {
+    "waktu": "2026-11-21 05:19",
+    "kode_agent": "A25",
+    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+    "hasil": "Draf penawaran: Jangki Petshop Cilandak",
+    "detail": "mode=tugas; run ME-20261121051949-A25-003"
+  },
+  {
+    "waktu": "2026-11-21 05:19",
+    "kode_agent": "A25",
+    "aksi": "buat draf: draf_penawaran",
+    "hasil": "Draf penawaran: BB Petshop",
+    "detail": ""
+  },
+  {
+    "waktu": "2026-11-21 05:19",
+    "kode_agent": "A25",
+    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+    "hasil": "Draf penawaran: BB Petshop",
+    "detail": "mode=tugas; run ME-20261121051949-A25-004"
+  },
+  {
+    "waktu": "2026-11-21 05:19",
+    "kode_agent": "A25",
+    "aksi": "buat draf: draf_penawaran",
+    "hasil": "Draf penawaran: Faunafella Care",
+    "detail": ""
+  },
+  {
+    "waktu": "2026-11-21 05:19",
+    "kode_agent": "A25",
+    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+    "hasil": "Draf penawaran: Faunafella Care",
+    "detail": "mode=tugas; run ME-20261121051949-A25-005"
   }
 ]

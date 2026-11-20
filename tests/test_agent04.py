@@ -72,6 +72,17 @@ class TestDraf(Basis):
         self.assertIn("Toko Contoh Jaya", draf)
         self.assertEqual(A04.cek_draf(draf), [])
 
+    def test_draf_observasi_tidak_masuk_slot_produk(self):
+        # Regresi 21 Nov 2026: observasi pernah dikirim ke slot produk
+        # template wa_outreach -> "contoh konsep dulu untuk di Kebagusan ...".
+        draf = A04.draf_personal(
+            "Balini Petshop",
+            "di Kebagusan Raya jual makanan untuk banyak hewan", "video")
+        self.assertIn("Saya lihat toko Kakak di Kebagusan Raya", draf)
+        self.assertIn("contoh konsep dulu untuk video", draf)
+        self.assertNotIn("contoh konsep dulu untuk di Kebagusan", draf)
+        self.assertEqual(A04.cek_draf(draf), [])
+
     def test_draf_aplikasi_harga_benar(self):
         draf = A04.draf_personal("Toko Contoh Jaya", "", "aplikasi")
         self.assertIn("Rp499.000", draf)
