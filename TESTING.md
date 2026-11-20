@@ -12,10 +12,10 @@
 
 ## 2. Dashboard (Pusat Komando)
 
-- [ ] `python -c "import app; app.build_app()"` jalan tanpa error (venv `~/workspace/tmp/venv-pk/bin/python`, env bersih tanpa proxy).
-- [ ] Jumlah tab = **24** (23 lama + "0 · Command Center").
-- [ ] `tests/` lolos (terakhir: 55/55 — jalankan ulang setelah perubahan ini).
-- [ ] Live di Faable (https://pusat-komando-972u7.faable.link/): tab "0 · Command Center" terlihat; tabel 62 agent tampil; Approval Center menampilkan antrean handoff terbuka (status draf/diperiksa).
+- [x] `python -c "import app; app.build_app()"` jalan tanpa error (venv `~/workspace/tmp/venv-pk/bin/python`, env bersih tanpa proxy) — 21 Nov 03:36.
+- [x] Jumlah tab = **24** (23 lama + "0 · Command Center") — 21 Nov 03:36, tab tingkat atas dihitung langsung.
+- [x] `tests/` lolos — 21 Nov 03:36: **161/161** (`unittest discover`, venv-pk, env bersih). Catatan: angka "55/55" di laporan lama adalah subset lama; suite kini 161 test.
+- [x] Live di Faable (https://pusat-komando-972u7.faable.link/): HTTP 200, 1.339.116 byte, 21 Nov 03:37 (commit 71930a1). Tab "0 · Command Center" terverifikasi lewat build_app() + 62 baris agent + 11 baris antrean Approval Center (cek lokal, karena Gradio dirender di sisi klien).
 
 ## 3. Workflow n8n (`workflows.json`)
 
@@ -34,7 +34,7 @@
 - [x] https://podcastmeong.github.io/agen-bisnis-otonom-3/ — HTTP 200, 37.873 byte, byte-identik dengan file lokal (commit c35a182).
 - [x] JS lolos `node --check`; 0× kata "ChatGPT" di halaman.
 - [x] Kartu Kamar Aplikasi muncul 1×; total kartu kamar 73 (chip "Semua (71)" sengaja TIDAK diubah — menunggu keputusan Cipta).
-- [ ] Perilaku klik di browser (tab direktorat + filter kewenangan) — **belum diuji langsung**; uji dengan Playwright headless bila sempat.
+- [x] Perilaku klik di browser (tab direktorat + filter kewenangan) — **lolos 21 Nov 03:37** (Playwright headless, file lokal byte-identik): klik B → panel B terlihat, panel A tersembunyi; filter Merah → 7 dari 13 baris terlihat; filter Semua → 13 baris kembali; 0 console error.
 
 ## 6. Halaman demo (Share ChatGPT #17)
 
