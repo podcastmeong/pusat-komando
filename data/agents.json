@@ -735,5 +735,596 @@
       "status": "sebagian",
       "us": "Lihat status per agent di atas; IG Messages + Threads Messages TERHUBUNG (21 Nov 03:33); WA Web rusak, TikTok @meongcast butuh login Cipta"
     }
-  ]
+  ],
+  "agent_30": {
+    "source": "Share ChatGPT #18 + #19 dan Share Gemini #1 — Bintang Command Center",
+    "applied_date": "2026-11-21",
+    "note": "30 agent A01–A30 (Bintang) dipetakan ke 14 agen nyata + Muse + Pusat Komando. Agent bersifat PASIF — dijalankan Muse, bukan layanan otonom 24 jam. Semua output DRAF untuk persetujuan Cipta.",
+    "agents": [
+      {
+        "code": "A01",
+        "name": "CEO Director",
+        "division": "Direksi",
+        "boss": "Pemilik",
+        "job_desc": "Menentukan arah, target, prioritas dan keputusan perusahaan",
+        "file": "agents/b01_ceo_director.py",
+        "mapped_to": "Muse (koordinator / CEO)",
+        "status": "Aktif",
+        "gemini_division": "Agent 0 — Chief Orchestrator",
+        "gemini_role": "0 — Chief Orchestrator",
+        "gemini_kpi": [
+          "Semua agen aktif setiap hari (target rancangan)",
+          "1 produk baru dirilis setiap hari (target rancangan)",
+          "Laporan harian tepat waktu (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini Advanced / ChatGPT",
+          "Notion",
+          "Google Sheets"
+        ]
+      },
+      {
+        "code": "A02",
+        "name": "COO Manager",
+        "division": "Direksi",
+        "boss": "A01",
+        "job_desc": "Mengatur operasi, kapasitas, jadwal dan koordinasi divisi",
+        "file": "agents/b02_coo_manager.py",
+        "mapped_to": "Muse + koordinasi.py",
+        "status": "Aktif sebagian",
+        "gemini_division": "Agent 0 — Chief Orchestrator",
+        "gemini_role": "0 — Chief Orchestrator (dukungan operasional)",
+        "gemini_kpi": [
+          "Semua agen aktif setiap hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini Advanced / ChatGPT",
+          "Notion",
+          "Google Sheets"
+        ]
+      },
+      {
+        "code": "A03",
+        "name": "Command Controller",
+        "division": "Direksi",
+        "boss": "A02",
+        "job_desc": "Membagi tugas, melacak status dan mengonsolidasikan laporan",
+        "file": "agents/b03_command_controller.py",
+        "mapped_to": "Pusat Komando (Faable) + koordinasi.py",
+        "status": "Aktif",
+        "gemini_division": "Agent 0 — Chief Orchestrator",
+        "gemini_role": "0 — Chief Orchestrator (pembagian tugas)",
+        "gemini_kpi": [
+          "Semua agen aktif setiap hari (target rancangan)",
+          "Laporan harian tepat waktu (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini Advanced / ChatGPT",
+          "Notion",
+          "Google Sheets"
+        ]
+      },
+      {
+        "code": "A04",
+        "name": "Quality Control",
+        "division": "Direksi",
+        "boss": "A02",
+        "job_desc": "Memeriksa akurasi, kualitas dan kepatuhan hasil",
+        "file": "agents/b04_quality_control.py",
+        "mapped_to": "Muse + A9F verifikasi",
+        "status": "Aktif",
+        "gemini_division": "Agent 0 — Chief Orchestrator",
+        "gemini_role": "Bagian dari Agent 0 — QC melekat pada orchestrator",
+        "gemini_kpi": [],
+        "gemini_tools": []
+      },
+      {
+        "code": "A05",
+        "name": "Business Analyst",
+        "division": "Direksi",
+        "boss": "A02",
+        "job_desc": "Menganalisis KPI, hasil, risiko dan profitabilitas",
+        "file": "agents/b05_business_analyst.py",
+        "mapped_to": "A7 Keuangan + Muse",
+        "status": "Aktif",
+        "gemini_division": "Divisi 5 — Freelance & Finance",
+        "gemini_role": "5B — Finance & Operational Controller (analisis)",
+        "gemini_kpi": [
+          "Laporan pembukuan harian/mingguan (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Sheets",
+          "Notion"
+        ]
+      },
+      {
+        "code": "A06",
+        "name": "Market Researcher",
+        "division": "Riset",
+        "boss": "A03",
+        "job_desc": "Meneliti kebutuhan, masalah dan segmen pelanggan",
+        "file": "agents/b06_market_researcher.py",
+        "mapped_to": "A10 Riset",
+        "status": "Aktif",
+        "gemini_division": "Divisi 1 — R&D",
+        "gemini_role": "1A — Market Researcher",
+        "gemini_kpi": [
+          "5 ide produk valid/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Trends",
+          "Perplexity.ai",
+          "Gemini Deep Research"
+        ]
+      },
+      {
+        "code": "A07",
+        "name": "Trend Hunter",
+        "division": "Riset",
+        "boss": "A03",
+        "job_desc": "Memantau tren, topik dan permintaan pasar",
+        "file": "agents/b07_trend_hunter.py",
+        "mapped_to": "A10 Riset",
+        "status": "Aktif",
+        "gemini_division": "Divisi 1 — R&D",
+        "gemini_role": "1A — Market Researcher (tren)",
+        "gemini_kpi": [
+          "5 tren produk/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Trends",
+          "Perplexity.ai",
+          "Gemini Deep Research"
+        ]
+      },
+      {
+        "code": "A08",
+        "name": "Product Developer",
+        "division": "Riset",
+        "boss": "A03",
+        "job_desc": "Mengubah kebutuhan tervalidasi menjadi konsep dan produk",
+        "file": "agents/b08_product_developer.py",
+        "mapped_to": "A5 Produksi + A9",
+        "status": "Aktif",
+        "gemini_division": "Divisi 1 — R&D",
+        "gemini_role": "1A — Market Researcher (pengembangan konsep)",
+        "gemini_kpi": [
+          "5 ide produk valid/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Trends",
+          "Perplexity.ai",
+          "Gemini Deep Research"
+        ]
+      },
+      {
+        "code": "A09",
+        "name": "Competitor Analyst",
+        "division": "Riset",
+        "boss": "A06",
+        "job_desc": "Menganalisis pesaing, penawaran, harga dan celah pasar",
+        "file": "agents/b09_competitor_analyst.py",
+        "mapped_to": "A10 Riset",
+        "status": "Aktif",
+        "gemini_division": "Divisi 1 — R&D",
+        "gemini_role": "1B — Competition & Grant Scout",
+        "gemini_kpi": [
+          "3 info lomba baru/hari (target rancangan)",
+          "5–10 lomba diikuti/bulan (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Search",
+          "Gemini Deep Research",
+          "Email Alerts"
+        ]
+      },
+      {
+        "code": "A10",
+        "name": "Product Validator",
+        "division": "Riset",
+        "boss": "A08",
+        "job_desc": "Menguji manfaat, kelayakan, permintaan dan kesiapan produk",
+        "file": "agents/b10_product_validator.py",
+        "mapped_to": "A9F verifikasi + Muse",
+        "status": "Aktif",
+        "gemini_division": "Divisi 1 — R&D",
+        "gemini_role": "1A — Market Researcher (validasi)",
+        "gemini_kpi": [
+          "5 ide produk valid/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Trends",
+          "Perplexity.ai",
+          "Gemini Deep Research"
+        ]
+      },
+      {
+        "code": "A11",
+        "name": "AI Video Producer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat naskah, storyboard dan video AI",
+        "file": "agents/b11_ai_video_producer.py",
+        "mapped_to": "A5 Produksi + A11/A12 pitch",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2B — Visual & AI Media Producer (video)",
+        "gemini_kpi": [
+          "5–10 aset visual/hari, termasuk video AI (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Kling AI",
+          "Hailuo AI",
+          "CapCut Desktop"
+        ]
+      },
+      {
+        "code": "A12",
+        "name": "AI Image Designer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat visual, foto, ilustrasi dan aset desain AI",
+        "file": "agents/b12_ai_image_designer.py",
+        "mapped_to": "A5 Produksi",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2B — Visual & AI Media Producer",
+        "gemini_kpi": [
+          "5–10 aset visual/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Bing Image Creator",
+          "Leonardo.ai",
+          "Flux (HuggingFace)"
+        ]
+      },
+      {
+        "code": "A13",
+        "name": "App Developer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat prototipe dan aplikasi",
+        "file": "agents/b13_app_developer.py",
+        "mapped_to": "A9 + tim 9A–9F",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2C — Web, App & Micro-Game Developer",
+        "gemini_kpi": [
+          "1 tools/game/landing page per minggu (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT / Claude",
+          "VS Code",
+          "GitHub"
+        ]
+      },
+      {
+        "code": "A14",
+        "name": "Web Developer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat website, landing page dan katalog",
+        "file": "agents/b14_web_developer.py",
+        "mapped_to": "A9 + Muse",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2C — Web, App & Micro-Game Developer",
+        "gemini_kpi": [
+          "1 tools/game/landing page per minggu (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT / Claude",
+          "VS Code",
+          "GitHub"
+        ]
+      },
+      {
+        "code": "A15",
+        "name": "POD Designer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat desain produk print-on-demand",
+        "file": "agents/b15_pod_designer.py",
+        "mapped_to": "A5 Produksi",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2B — Visual & AI Media Producer (POD)",
+        "gemini_kpi": [
+          "5–10 aset visual/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Bing Image Creator",
+          "Leonardo.ai"
+        ]
+      },
+      {
+        "code": "A16",
+        "name": "eBook Publisher",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Menulis, menyunting dan menyiapkan eBook",
+        "file": "agents/b16_ebook_publisher.py",
+        "mapped_to": "A5 Produksi",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2A — Literary & Content Writer",
+        "gemini_kpi": [
+          "1 bab cerbung / 1 puisi-cerpen / 1 draf eBook per hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "Google Docs"
+        ]
+      },
+      {
+        "code": "A17",
+        "name": "Creative Writer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat puisi, cerpen dan cerita bersambung",
+        "file": "agents/b17_creative_writer.py",
+        "mapped_to": "A5 Produksi",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2A — Literary & Content Writer",
+        "gemini_kpi": [
+          "1 bab cerbung / 1 puisi-cerpen / 1 draf eBook per hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "Google Docs"
+        ]
+      },
+      {
+        "code": "A18",
+        "name": "Game Developer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Merancang dan mengembangkan game",
+        "file": "agents/b18_game_developer.py",
+        "mapped_to": "A9 Produksi Game",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2C — Web, App & Micro-Game Developer",
+        "gemini_kpi": [
+          "1 tools/game/landing page per minggu (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT / Claude",
+          "VS Code",
+          "GitHub"
+        ]
+      },
+      {
+        "code": "A19",
+        "name": "Content Producer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Mengubah produk dan riset menjadi materi konten",
+        "file": "agents/b19_content_producer.py",
+        "mapped_to": "A5 Produksi + A3",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2A/2B + Divisi 3 (content producer)",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "1 produk → 7 format konten (strategi rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "CapCut"
+        ]
+      },
+      {
+        "code": "A20",
+        "name": "Instagram Manager",
+        "division": "Marketing",
+        "boss": "A03",
+        "job_desc": "Mengelola dua akun Instagram, konten dan interaksi",
+        "file": "agents/b20_instagram_manager.py",
+        "mapped_to": "A3 Pertumbuhan (IG @meongcast terhubung; @podcast_meong login ditolak)",
+        "status": "Aktif",
+        "gemini_division": "Divisi 3 — Social Growth",
+        "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "Target +20% followers/bulan (target rancangan)",
+          "1 produk → 7 format konten (strategi rancangan)",
+          "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "CapCut"
+        ]
+      },
+      {
+        "code": "A21",
+        "name": "TikTok Manager",
+        "division": "Marketing",
+        "boss": "A03",
+        "job_desc": "Mengelola dua akun TikTok dan analitik",
+        "file": "agents/b21_tiktok_manager.py",
+        "mapped_to": "A3 Pertumbuhan (TikTok @podcast_kucing jalan; @meongcast butuh login Cipta)",
+        "status": "Aktif sebagian",
+        "gemini_division": "Divisi 3 — Social Growth",
+        "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "Target +20% followers/bulan (target rancangan)",
+          "1 produk → 7 format konten (strategi rancangan)",
+          "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "CapCut"
+        ]
+      },
+      {
+        "code": "A22",
+        "name": "YouTube Manager",
+        "division": "Marketing",
+        "boss": "A03",
+        "job_desc": "Mengelola dua channel YouTube dan analitik",
+        "file": "agents/b22_youtube_manager.py",
+        "mapped_to": "A3 Pertumbuhan (YT Podcast meong jalan; @meongcast tertahan verifikasi)",
+        "status": "Aktif sebagian",
+        "gemini_division": "Divisi 3 — Social Growth",
+        "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "Target +20% followers/bulan (target rancangan)",
+          "1 produk → 7 format konten (strategi rancangan)",
+          "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "CapCut"
+        ]
+      },
+      {
+        "code": "A23",
+        "name": "Threads Manager",
+        "division": "Marketing",
+        "boss": "A03",
+        "job_desc": "Mengelola satu akun Threads dan percakapan",
+        "file": "agents/b23_threads_manager.py",
+        "mapped_to": "A3 Pertumbuhan (Threads @ciptabintanglestari terhubung)",
+        "status": "Aktif",
+        "gemini_division": "Divisi 3 — Social Growth",
+        "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "Target +20% followers/bulan (target rancangan)",
+          "1 produk → 7 format konten (strategi rancangan)",
+          "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "CapCut"
+        ]
+      },
+      {
+        "code": "A24",
+        "name": "SEO & Growth",
+        "division": "Marketing",
+        "boss": "A03",
+        "job_desc": "SEO, optimasi distribusi dan pertumbuhan organik",
+        "file": "agents/b24_seo_growth.py",
+        "mapped_to": "A3 Pertumbuhan",
+        "status": "Aktif",
+        "gemini_division": "Divisi 3 — Social Growth",
+        "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker (SEO)",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "Target +20% followers/bulan (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Trends",
+          "Perplexity.ai"
+        ]
+      },
+      {
+        "code": "A25",
+        "name": "Sales Manager",
+        "division": "Penjualan",
+        "boss": "A02",
+        "job_desc": "Mengelola pipeline, penawaran dan target penjualan",
+        "file": "agents/b25_sales_manager.py",
+        "mapped_to": "A2 + A4 Penjualan",
+        "status": "Aktif",
+        "gemini_division": "Divisi 4 — CS & Closer",
+        "gemini_role": "4 — Omnichannel CS & Closer",
+        "gemini_kpi": [
+          "Respons < 1 jam (target rancangan)",
+          "1–3 penjualan langsung (closing)/hari (target rancangan)",
+          "Pembayaran hanya ke BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai"
+        ],
+        "gemini_tools": []
+      },
+      {
+        "code": "A26",
+        "name": "Customer Service",
+        "division": "Penjualan",
+        "boss": "A25",
+        "job_desc": "Menjawab pertanyaan, komentar dan keluhan pelanggan",
+        "file": "agents/b26_customer_service.py",
+        "mapped_to": "A1 + A13 (WA Web rusak; IG/Threads Messages terhubung)",
+        "status": "Aktif",
+        "gemini_division": "Divisi 4 — CS & Closer",
+        "gemini_role": "4 — Omnichannel CS & Closer",
+        "gemini_kpi": [
+          "Respons < 1 jam (target rancangan)"
+        ],
+        "gemini_tools": []
+      },
+      {
+        "code": "A27",
+        "name": "Email Administrator",
+        "division": "Penjualan",
+        "boss": "A02",
+        "job_desc": "Memilah email, membuat draft dan menindaklanjuti",
+        "file": "agents/b27_email_administrator.py",
+        "mapped_to": "A13 Email (Gmail TIDAK terhubung — baca via browser)",
+        "status": "Aktif sebagian",
+        "gemini_division": "Divisi 4 — CS & Closer",
+        "gemini_role": "4 — Omnichannel CS & Closer (email)",
+        "gemini_kpi": [
+          "Respons < 1 jam (target rancangan)",
+          "Email diperiksa 2–3 kali/hari (target rancangan)"
+        ],
+        "gemini_tools": []
+      },
+      {
+        "code": "A28",
+        "name": "Opportunity Hunter",
+        "division": "Peluang & Keuangan",
+        "boss": "A02",
+        "job_desc": "Mencari lomba, freelance, hibah dan kemitraan",
+        "file": "agents/b28_opportunity_hunter.py",
+        "mapped_to": "A6 + A14",
+        "status": "Aktif",
+        "gemini_division": "Divisi 5 — Freelance & Finance",
+        "gemini_role": "5A — Freelance & Gig Bidder",
+        "gemini_kpi": [
+          "5 proposal/hari — DRAF saja, kirim hanya setelah Cipta setuju (target rancangan)",
+          "Target 1–2 proyek didapat/bulan (target rancangan)"
+        ],
+        "gemini_tools": []
+      },
+      {
+        "code": "A29",
+        "name": "Finance Manager",
+        "division": "Peluang & Keuangan",
+        "boss": "A02",
+        "job_desc": "Mencatat pendapatan, biaya, saldo dan laporan",
+        "file": "agents/b29_finance_manager.py",
+        "mapped_to": "A7 Keuangan (baseline Rp0)",
+        "status": "Aktif",
+        "gemini_division": "Divisi 5 — Freelance & Finance",
+        "gemini_role": "5B — Finance & Operational Controller",
+        "gemini_kpi": [
+          "Laporan pembukuan harian/mingguan (target rancangan)",
+          "Pantau status KYC Mayar"
+        ],
+        "gemini_tools": [
+          "Google Sheets",
+          "Notion"
+        ]
+      },
+      {
+        "code": "A30",
+        "name": "Operations Manager",
+        "division": "Peluang & Keuangan",
+        "boss": "A02",
+        "job_desc": "Mengelola dokumen, SOP, jadwal dan administrasi",
+        "file": "agents/b30_operations_manager.py",
+        "mapped_to": "koordinasi.py + Pusat Komando",
+        "status": "Aktif",
+        "gemini_division": "Agent 0 — Chief Orchestrator",
+        "gemini_role": "Agent 0 — Chief Orchestrator (dukungan operasional; Gemini #1 tidak punya divisi operasional terpisah)",
+        "gemini_kpi": [],
+        "gemini_tools": []
+      }
+    ]
+  }
 }

@@ -1,9 +1,10 @@
 # ==========================================================================
 # PUSAT KOMANDO PODCAST MEONG
 # Satu aplikasi gabungan 14 agent AI bernomor + 6 tim Agent 9 + workshop
-# Avatar Podcast + bus Koordinasi antar-agent (24 tab) dalam SATU Space
-# Gradio, berbagi satu folder data/ — supaya agent bisa membaca output
-# agent lain langsung dari Papan Handoff, tanpa antre lewat Muse.
+# Avatar Podcast + bus Koordinasi antar-agent + 30 Agent Bintang (B)
+# + Dashboard Agent (C) (26 tab) dalam SATU Space Gradio, berbagi satu
+# folder data/ — supaya agent bisa membaca output agent lain langsung
+# dari Papan Handoff, tanpa antre lewat Muse.
 #
 # Agent yang digabung (modul di agents/, salinan dari agent aslinya dengan
 # path data dialihkan ke data/ bersama):
@@ -103,6 +104,7 @@ A12M, E12M = _muat("a12_momo")
 A13, E13 = _muat("a13_email")
 A14, E14 = _muat("a14_upwork")
 KOORD, EKOORD = _muat("koordinasi")
+DASH, E_DASH = _muat("dashboard")
 
 
 def _blok_dari_modul(modul, getter, nama):
@@ -131,6 +133,27 @@ def _baca_json(path, default):
         return data if isinstance(data, type(default)) else default
     except (OSError, ValueError):
         return default
+
+
+# ---------------------------------------------------------------------------
+# 30 Agent Bintang (B) — dimuat defensif dari data/agents.json (key agent_30)
+# ---------------------------------------------------------------------------
+def _muat_b30():
+    """Muat 30 modul b01..b30. Satu modul gagal tidak menjatuhkan yang lain."""
+    hasil, kesalahan = {}, {}
+    data = _baca_json(DATA_DIR / "agents.json", {})
+    for entri in (data.get("agent_30") or {}).get("agents", []):
+        kode = entri.get("code", "")
+        nama_file = (entri.get("file", "") or "").replace("agents/", "").replace(".py", "")
+        if not kode or not nama_file:
+            continue
+        modul, err = _muat(nama_file)
+        hasil[kode] = modul
+        kesalahan[kode] = err
+    return hasil, kesalahan
+
+
+B30, E_B30 = _muat_b30()
 
 
 def _parse_tanggal(teks):
@@ -621,7 +644,7 @@ def _tambah_lead(nama, kontak, alamat, jenis, status, terverifikasi, catatan):
 # ---------------------------------------------------------------------------
 HEADER = """# 🎛️ Pusat Komando Podcast Meong
 
-Satu wadah untuk **14 agent AI bernomor + 6 tim Agent 9 + workshop Avatar Podcast + bus Koordinasi (23 tab)** — berbagi satu folder `data/`, jadi output satu agent
+Satu wadah untuk **14 agent AI bernomor + 6 tim Agent 9 + workshop Avatar Podcast + bus Koordinasi + 30 Agent Bintang + Dashboard Agent (26 tab)** — berbagi satu folder `data/`, jadi output satu agent
 langsung bisa dipakai agent lain lewat **Papan Handoff** dan **bus Koordinasi**. Agent 4 tidak ada
 (dihapus atas perintah Cipta — upload harian ditangani Muse langsung).
 
@@ -639,6 +662,143 @@ MODE_TEKS = ("**Mode: AI penuh (Gemini free tier).**" if MODE_AI
 def _tab_error(pesan):
     gr.Markdown("⚠️ {}\n\nTab ini tidak bisa dibuka. Agent aslinya tetap bisa dipakai "
                 "terpisah di foldernya masing-masing.".format(pesan))
+
+
+# ---------------------------------------------------------------------------
+# Tab B — 30 Agent Bintang (A01–A30, Share ChatGPT #18/#19 + Gemini #1)
+# ---------------------------------------------------------------------------
+def _daftar_b30():
+    """Metadata 30 agent dari data/agents.json (key agent_30)."""
+    data = _baca_json(DATA_DIR / "agents.json", {})
+    return (data.get("agent_30") or {}).get("agents", [])
+
+
+def _tabel_b30():
+    rows = []
+    for e in _daftar_b30():
+        kode = e.get("code", "")
+        modul = B30.get(kode)
+        muat = "✅" if modul is not None else "⚠️ gagal: {}".format(E_B30.get(kode) or "?")
+        rows.append([kode, e.get("name", ""), e.get("division", ""), e.get("boss", ""),
+                     e.get("job_desc", ""), e.get("mapped_to", ""), e.get("status", ""),
+                     e.get("gemini_division", ""), muat])
+    return rows
+
+
+def _detail_agent30(kode):
+    entri = next((e for e in _daftar_b30() if e.get("code") == kode), None)
+    if entri is None:
+        return "⚠️ Agent {} tidak ditemukan di data/agents.json.".format(kode)
+    modul = B30.get(kode)
+    baris = ["# {} · {}\n".format(entri.get("code", ""), entri.get("name", "")),
+             "**Divisi:** {} · **Atasan:** {} · **Status:** {}\n".format(
+                 entri.get("division", ""), entri.get("boss", ""), entri.get("status", "")),
+             "**Job description (ChatGPT #18):** {}\n".format(entri.get("job_desc", "")),
+             "**Dipetakan ke (sistem kita):** {}\n".format(entri.get("mapped_to", "")),
+             "**Pemetaan Gemini #1:** {} — {}\n".format(
+                 entri.get("gemini_division", ""), entri.get("gemini_role", "")),
+             "**KPI Gemini (target rancangan, bukan janji):** {}\n".format(
+                 "; ".join(entri.get("gemini_kpi", []) or ["—"])),
+             "**Tools Gemini:** {}\n".format(", ".join(entri.get("gemini_tools", []) or ["—"]))]
+    if modul is None:
+        baris.append("\n⚠️ Modul gagal dimuat: {}".format(E_B30.get(kode) or "?"))
+        return "\n".join(baris)
+    try:
+        contoh = modul.contoh()
+    except Exception as e:  # noqa: BLE001
+        baris.append("\n⚠️ Gagal membuat contoh draf: {}: {}".format(type(e).__name__, e))
+        return "\n".join(baris)
+    baris.append("\n## 📄 Contoh Draf (mode: {})\n".format(contoh.get("mode", "?")))
+    baris.append("```json\n{}\n```".format(json.dumps(contoh, ensure_ascii=False, indent=2)))
+    if kode == "A01":
+        try:
+            r = modul.rencana_30_hari()
+            baris.append("\n## 📅 Rencana 30 Hari Gemini (target rancangan)")
+            for f in r.get("fase", []):
+                baris.append("- **Hari {} ({}):** {}".format(
+                    f.get("hari", ""), f.get("nama", ""), f.get("fokus", "")))
+            baris.append("\n{}".format(r.get("catatan_jujur", "")))
+        except Exception:  # noqa: BLE001
+            pass
+    if kode == "A03":
+        try:
+            j = modul.jadwal_harian()
+            baris.append("\n## 🕐 Jadwal Harian Gemini (referensi, bukan jadwal otomatis)")
+            for s in j.get("jadwal", []):
+                baris.append("- **{}:** {}".format(s.get("jam", ""), s.get("kegiatan", "")))
+            baris.append("\n{}".format(j.get("catatan_jujur", "")))
+        except Exception:  # noqa: BLE001
+            pass
+    baris.append("\n_Agent pasif — dijalankan Muse, bukan layanan otonom 24 jam. "
+                 "Semua output DRAF untuk persetujuan Cipta._")
+    return "\n".join(baris)
+
+
+def _segarkan_b30():
+    return _tabel_b30(), _detail_agent30("A01")
+
+
+# ---------------------------------------------------------------------------
+# Tab C — Dashboard Pergerakan Agent (modul agents/dashboard.py)
+# ---------------------------------------------------------------------------
+def _ringkasan_dashboard_md():
+    if DASH is None:
+        return "⚠️ Modul dashboard gagal dimuat: {}".format(E_DASH)
+    try:
+        r = DASH.ringkasan_dashboard()
+    except Exception as e:  # noqa: BLE001
+        return "⚠️ Gagal membaca ringkasan: {}: {}".format(type(e).__name__, e)
+    return ("# 📊 Dashboard Pergerakan Agent\n\n"
+            "**Total agent: {}** — ✅ Aktif: **{}** · 🟡 Aktif sebagian: **{}** · "
+            "⏸️ Belum jalan: **{}** · 🛠️ Mode persiapan: **{}**.\n\n"
+            "📥 Handoff menunggu: **{}** · 📨 Draf penawaran toko: **{}** · "
+            "📝 Entri log aktivitas: **{}**.\n\n"
+            "_\"Belum jalan\" = status Aktif tapi belum ada aktivitas tercatat di folder "
+            "data/. Agent yang bekerja lewat Muse tanpa menulis ke data/ tetap tampil "
+            "\"belum ada aktivitas\"._").format(
+                r["total_agent"], r["aktif"], r["aktif_sebagian"],
+                r["belum_jalan"], r["mode_persiapan"], r["handoff_menunggu"],
+                r["penawaran_toko_draf"], r["entri_log"])
+
+
+def _tabel_dashboard(f_divisi="Semua", f_agent="Semua"):
+    if DASH is None:
+        return []
+    try:
+        rows = DASH.tabel_semua_agent()
+    except Exception:  # noqa: BLE001
+        return []
+    out = []
+    for r in rows:
+        if f_divisi and f_divisi != "Semua" and r["kelompok"] != f_divisi:
+            continue
+        if f_agent and f_agent != "Semua" and r["kode"] != f_agent:
+            continue
+        out.append([r["kode"], r["nama"], r["kelompok"], r["dipetakan_ke"],
+                    r["status"], r["aktivitas_terakhir"], r["output_terakhir"]])
+    return out
+
+
+def _feed_dashboard_md():
+    if DASH is None:
+        return "⚠️ Modul dashboard gagal dimuat: {}".format(E_DASH)
+    try:
+        log = DASH.baca_log(limit=20)
+    except Exception as e:  # noqa: BLE001
+        return "⚠️ Gagal membaca log: {}: {}".format(type(e).__name__, e)
+    if not log:
+        return "Belum ada aktivitas tercatat."
+    baris = ["### 📝 Umpan Aktivitas (20 terbaru)\n"]
+    for e in log:
+        baris.append("- **{}** · `{}` · **{}** — {}".format(
+            e.get("waktu", "?"), e.get("kode_agent", "?"),
+            e.get("aksi", "?"), e.get("hasil", "?")))
+    return "\n".join(baris)
+
+
+def _segarkan_dashboard(f_divisi="Semua", f_agent="Semua"):
+    return (_ringkasan_dashboard_md(), _tabel_dashboard(f_divisi, f_agent),
+            _feed_dashboard_md())
 
 
 def build_app():
@@ -672,6 +832,63 @@ def build_app():
                 btn_cc.click(fn=_segarkan_command_center,
                              outputs=[cc_papan, cc_tabel, cc_approval],
                              api_name="segarkan_command_center")
+
+            # ============================ 30 AGENT BINTANG ============================
+            with gr.Tab("B · 30 Agent"):
+                gr.Markdown(
+                    "30 Agent Bintang A01–A30 (Bintang Command Center) — rancangan Share "
+                    "ChatGPT #18/#19 + Share Gemini #1, dipetakan ke 14 agen nyata + Muse + "
+                    "Pusat Komando. **Agent pasif** (dijalankan Muse, bukan layanan otonom "
+                    "24 jam); semua output DRAF untuk persetujuan Cipta. Konfigurasi di "
+                    "`data/agents.json` (key `agent_30`).")
+                b30_tabel = gr.Dataframe(
+                    value=_tabel_b30(),
+                    headers=["Kode", "Nama", "Divisi", "Atasan", "Job Description",
+                             "Dipetakan ke", "Status", "Divisi Gemini", "Modul"],
+                    interactive=False, wrap=True)
+                b30_dd = gr.Dropdown(
+                    choices=[e.get("code", "") for e in _daftar_b30()],
+                    value="A01", label="Detail agent")
+                b30_detail = gr.Markdown(_detail_agent30("A01"))
+                btn_b30 = gr.Button("🔄 Segarkan 30 Agent", variant="primary")
+                b30_dd.change(fn=_detail_agent30, inputs=b30_dd, outputs=b30_detail,
+                              api_name="detail_agent30")
+                btn_b30.click(fn=_segarkan_b30, outputs=[b30_tabel, b30_detail],
+                              api_name="segarkan_b30")
+
+            # ============================ DASHBOARD AGENT ============================
+            with gr.Tab("C · Dashboard Agent"):
+                gr.Markdown(
+                    "Pergerakan semua agent (30 Bintang + 14 lama) dari data NYATA di "
+                    "folder `data/` — bukan angka karangan. Bila kosong tertulis "
+                    "\"belum ada aktivitas\". Umpan aktivitas dibaca dari "
+                    "`data/activity_log.json`; modul b01–b30 menulis ke sana tiap kali "
+                    "menghasilkan draf.")
+                dash_ringkas = gr.Markdown(_ringkasan_dashboard_md())
+                with gr.Row():
+                    dash_divisi = gr.Dropdown(
+                        choices=["Semua"] + (DASH.daftar_divisi() if DASH else []),
+                        value="Semua", label="Filter divisi")
+                    dash_agent = gr.Dropdown(
+                        choices=["Semua"] + [r["kode"] for r in
+                                             (DASH.tabel_semua_agent() if DASH else [])],
+                        value="Semua", label="Filter agent")
+                    btn_dash_filter = gr.Button("🔍 Terapkan Filter")
+                dash_tabel = gr.Dataframe(
+                    value=_tabel_dashboard(),
+                    headers=["Kode", "Nama", "Kelompok", "Dipetakan ke", "Status",
+                             "Aktivitas Terakhir", "Output Terakhir"],
+                    interactive=False, wrap=True)
+                btn_dash = gr.Button("🔄 Segarkan Dashboard", variant="primary")
+                dash_feed = gr.Markdown(_feed_dashboard_md())
+                btn_dash_filter.click(fn=_tabel_dashboard,
+                                      inputs=[dash_divisi, dash_agent],
+                                      outputs=dash_tabel,
+                                      api_name="filter_dashboard")
+                btn_dash.click(fn=_segarkan_dashboard,
+                               inputs=[dash_divisi, dash_agent],
+                               outputs=[dash_ringkas, dash_tabel, dash_feed],
+                               api_name="segarkan_dashboard")
 
             # ============================ PAPAN HANDOFF ============================
             with gr.Tab("🏠 Papan Handoff"):
@@ -1048,7 +1265,7 @@ def build_app():
                     _tab_error(err or E14 or "tidak diketahui")
 
         gr.Markdown(
-            "---\n*Pusat Komando Podcast Meong — 14 agent bernomor + 6 tim Agent 9 + workshop Avatar Podcast + bus Koordinasi, 1 Space, 1 folder data. "
+            "---\n*Pusat Komando Podcast Meong — 14 agent bernomor + 6 tim Agent 9 + workshop Avatar Podcast + bus Koordinasi + 30 Agent Bintang + Dashboard Agent, 1 Space, 1 folder data. "
             "Data di `data/` hilang bila Space di-rebuild — unduh berkala. "
             "SOP Kerja Sama Agent AI berlaku (18 Nov 2026).*")
     return demo
