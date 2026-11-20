@@ -765,7 +765,9 @@
         "platform": {
           "terhubung": [],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Tetapkan sasaran, pilih satu prioritas utama, putuskan eskalasi",
+        "target_harian": "1 brief harian; maksimal 3 prioritas"
       },
       {
         "code": "A02",
@@ -789,7 +791,9 @@
         "platform": {
           "terhubung": [],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Cek kapasitas, jadwal, dependensi dan hambatan",
+        "target_harian": "100% tugas punya PIC dan tenggat"
       },
       {
         "code": "A03",
@@ -816,7 +820,9 @@
             "Faable — Pusat Komando"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Bagi tugas, perbarui status, kumpulkan laporan",
+        "target_harian": "Semua tugas berstatus"
       },
       {
         "code": "A04",
@@ -834,7 +840,9 @@
         "platform": {
           "terhubung": [],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Periksa fakta, ejaan, hak cipta, tautan, klaim dan konsistensi",
+        "target_harian": "100% output penting diperiksa"
       },
       {
         "code": "A05",
@@ -860,7 +868,9 @@
             "BCA (analisis data pemasukan)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Hitung performa konten, biaya, pemasukan, risiko",
+        "target_harian": "1 ringkasan harian"
       },
       {
         "code": "A06",
@@ -884,7 +894,9 @@
         "platform": {
           "terhubung": [],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Cari masalah pelanggan dan peluang pasar",
+        "target_harian": "5 ide; 1 rekomendasi"
       },
       {
         "code": "A07",
@@ -908,7 +920,9 @@
         "platform": {
           "terhubung": [],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Pantau tren dan kata kunci",
+        "target_harian": "5 tren dengan bukti/sumber"
       },
       {
         "code": "A08",
@@ -932,7 +946,9 @@
         "platform": {
           "terhubung": [],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Ubah masalah tervalidasi menjadi konsep",
+        "target_harian": "1 brief produk/konten"
       },
       {
         "code": "A09",
@@ -957,7 +973,9 @@
         "platform": {
           "terhubung": [],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Bandingkan pesaing, harga, penawaran dan celah",
+        "target_harian": "3 pesaing/penawaran dibandingkan"
       },
       {
         "code": "A10",
@@ -981,7 +999,9 @@
         "platform": {
           "terhubung": [],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Nilai permintaan, manfaat, kelayakan dan risiko",
+        "target_harian": "1 ide diberi skor dan keputusan"
       },
       {
         "code": "A11",
@@ -1005,7 +1025,9 @@
         "platform": {
           "terhubung": [],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Naskah, storyboard, prompt, video pendek",
+        "target_harian": "1 video utama atau storyboard siap produksi"
       },
       {
         "code": "A12",
@@ -1032,7 +1054,9 @@
             "Dreamstime (foto AI)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Buat visual utama dan variasinya",
+        "target_harian": "3–5 visual siap QC"
       },
       {
         "code": "A13",
@@ -1058,7 +1082,9 @@
             "GitHub Pages (demo aplikasi)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Kerjakan backlog aplikasi/tool",
+        "target_harian": "1 tugas kecil; rilis mingguan"
       },
       {
         "code": "A14",
@@ -1084,7 +1110,9 @@
             "GitHub Pages (website demo)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Perbaiki landing page/katalog/SEO teknis",
+        "target_harian": "1 perbaikan; rilis mingguan"
       },
       {
         "code": "A15",
@@ -1109,7 +1137,9 @@
             "Zazzle (terbit desain POD)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Buat desain print-on-demand",
+        "target_harian": "2–3 desain konsep"
       },
       {
         "code": "A16",
@@ -1136,7 +1166,9 @@
             "KBM (terbit eBook)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Susun/edit naskah eBook",
+        "target_harian": "1 bagian/bab draf"
       },
       {
         "code": "A17",
@@ -1162,7 +1194,9 @@
             "KBM (terbit tulisan)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Tulis cerita, puisi atau naskah",
+        "target_harian": "1 karya/bagian draf"
       },
       {
         "code": "A18",
@@ -1188,7 +1222,9 @@
             "GitHub Pages (demo game)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Bangun fitur game sesuai backlog",
+        "target_harian": "1 fitur kecil; rilis mingguan"
       },
       {
         "code": "A19",
@@ -1214,7 +1250,9 @@
             "Facebook \"Masduki Kiki\" (tanpa Page) — distribusi konten"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Pecah satu ide menjadi format konten",
+        "target_harian": "1 ide → 7 format draf"
       },
       {
         "code": "A20",
@@ -1245,7 +1283,9 @@
           "belum_terhubung": [
             "Instagram @podcast_meong (login ditolak)"
           ]
-        }
+        },
+        "tugas_harian": "Siapkan caption, visual, jadwal dan interaksi",
+        "target_harian": "1 draf konten; cek inbox"
       },
       {
         "code": "A21",
@@ -1275,7 +1315,9 @@
           "belum_terhubung": [
             "TikTok @meongcast (butuh login Cipta)"
           ]
-        }
+        },
+        "tugas_harian": "Siapkan video, hook, caption dan analitik",
+        "target_harian": "1 draf video; cek performa"
       },
       {
         "code": "A22",
@@ -1305,7 +1347,9 @@
           "belum_terhubung": [
             "YouTube @meongcast (tertahan verifikasi)"
           ]
-        }
+        },
+        "tugas_harian": "Siapkan Shorts/video, judul, deskripsi",
+        "target_harian": "1 draf Shorts atau 1 paket video"
       },
       {
         "code": "A23",
@@ -1334,7 +1378,9 @@
             "Threads Messages @ciptabintanglestari"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Buat percakapan, utas dan respons",
+        "target_harian": "1–2 draf posting; cek balasan"
       },
       {
         "code": "A24",
@@ -1361,7 +1407,9 @@
             "Impact.com (affiliate)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Riset keyword, optimasi dan distribusi organik",
+        "target_harian": "1 optimasi; 3 keyword"
       },
       {
         "code": "A25",
@@ -1394,7 +1442,9 @@
           "belum_terhubung": [
             "Mayar (KYC belum selesai)"
           ]
-        }
+        },
+        "tugas_harian": "Kelola lead, penawaran, follow-up dan closing",
+        "target_harian": "Semua lead tercatat; 1–3 closing sebagai target aspirasi"
       },
       {
         "code": "A26",
@@ -1421,7 +1471,9 @@
             "Trakteer (CS)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Kelompokkan dan siapkan respons pertanyaan/keluhan",
+        "target_harian": "Inbox dipantau; respons draf <1 jam selama jam layanan"
       },
       {
         "code": "A27",
@@ -1444,7 +1496,9 @@
           "belum_terhubung": [
             "Gmail (tidak terhubung — kerja via browser, draf saja)"
           ]
-        }
+        },
+        "tugas_harian": "Sortir email, ringkas, siapkan balasan",
+        "target_harian": "2–3 pemeriksaan; semua tindak lanjut tercatat"
       },
       {
         "code": "A28",
@@ -1467,7 +1521,9 @@
           "belum_terhubung": [
             "Upwork (belum ada akun)"
           ]
-        }
+        },
+        "tugas_harian": "Cari lomba, freelance, hibah, kemitraan",
+        "target_harian": "Hingga 5 draf proposal berkualitas"
       },
       {
         "code": "A29",
@@ -1500,7 +1556,9 @@
           "belum_terhubung": [
             "Mayar (KYC belum selesai)"
           ]
-        }
+        },
+        "tugas_harian": "Catat pemasukan, biaya, saldo dan status pembayaran",
+        "target_harian": "Rekonsiliasi harian; tidak ada transaksi tanpa bukti"
       },
       {
         "code": "A30",
@@ -1521,7 +1579,9 @@
             "GitHub Pages (repo)"
           ],
           "belum_terhubung": []
-        }
+        },
+        "tugas_harian": "Rapikan SOP, dokumen, jadwal dan arsip",
+        "target_harian": "Dokumen dan status tugas diperbarui"
       }
     ]
   },
@@ -1616,5 +1676,296 @@
         "sumber_data": "upwork"
       }
     ]
+  },
+  "sop_harian": {
+    "sumber": "Sistem_Operasional_Harian_30_Agent_Bintang.docx (diunggah Cipta, 21 Nov 2026)",
+    "tanggal": "2026-11-21",
+    "catatan": "Target di SOP ini adalah target awal — dievaluasi setelah 14 hari. KPI Gemini di agent_30 tetap sebagai target rancangan. Siklus SOP (07.00-16.30, 9 tahap) BERBEDA dari jadwal mesin saat ini (slot Gemini 06.00/08.00/11/15/19/21.00) — keputusan Cipta diperlukan sebelum mesin mengikuti siklus SOP.",
+    "siklus_harian": [
+      {
+        "tahap": "Briefing & prioritas",
+        "jam": "07.00–07.20",
+        "penanggung_jawab": "A01, A02, A03",
+        "hasil_wajib": "3 prioritas hari ini, kapasitas, tugas dan tenggat"
+      },
+      {
+        "tahap": "Riset pasar",
+        "jam": "07.20–08.30",
+        "penanggung_jawab": "A06–A10",
+        "hasil_wajib": "5 ide awal, 5 tren, 3 pesaing, 1 ide terpilih"
+      },
+      {
+        "tahap": "Perencanaan produk",
+        "jam": "08.30–09.00",
+        "penanggung_jawab": "A08, A10, A05",
+        "hasil_wajib": "Skor validasi dan brief produk/konten"
+      },
+      {
+        "tahap": "Produksi utama",
+        "jam": "09.00–11.30",
+        "penanggung_jawab": "A11–A19",
+        "hasil_wajib": "1 aset utama + variasi konten; draf produk"
+      },
+      {
+        "tahap": "QC & persetujuan",
+        "jam": "11.30–12.00",
+        "penanggung_jawab": "A04, A10, Cipta",
+        "hasil_wajib": "Checklist lolos/gagal; daftar yang perlu persetujuan"
+      },
+      {
+        "tahap": "Distribusi konten",
+        "jam": "13.00–14.00",
+        "penanggung_jawab": "A19–A24",
+        "hasil_wajib": "3–5 konten lintas kanal dalam bentuk draf/jadwal"
+      },
+      {
+        "tahap": "Penjualan & layanan",
+        "jam": "14.00–15.00",
+        "penanggung_jawab": "A25–A27",
+        "hasil_wajib": "Lead ditindaklanjuti, FAQ dijawab/draf, pipeline diperbarui"
+      },
+      {
+        "tahap": "Peluang & keuangan",
+        "jam": "15.00–16.00",
+        "penanggung_jawab": "A28–A29",
+        "hasil_wajib": "5 draf proposal yang relevan; pembukuan diperbarui"
+      },
+      {
+        "tahap": "Rekonsiliasi & laporan",
+        "jam": "16.00–16.30",
+        "penanggung_jawab": "A03, A04, A05, A30",
+        "hasil_wajib": "Dashboard, hambatan, keputusan besok"
+      }
+    ],
+    "target_perusahaan": [
+      {
+        "area": "Riset",
+        "target_harian_awal": "5 ide → 1 ide prioritas",
+        "definisi_selesai": "Ada masalah pelanggan, segmen, bukti tren, pesaing, dan alasan memilih"
+      },
+      {
+        "area": "Produk",
+        "target_harian_awal": "1 brief tervalidasi",
+        "definisi_selesai": "Skor manfaat, permintaan, biaya/waktu, risiko dan langkah berikut"
+      },
+      {
+        "area": "Konten",
+        "target_harian_awal": "1 aset utama → 7 format draf",
+        "definisi_selesai": "Format dapat berupa video pendek, carousel, gambar, caption, Threads, Shorts, dan artikel; bukan 7 unggahan wajib"
+      },
+      {
+        "area": "Publikasi",
+        "target_harian_awal": "3–5 konten total lintas kanal",
+        "definisi_selesai": "Hanya konten yang lolos QC dan disetujui; jangan menggandakan spam"
+      },
+      {
+        "area": "Penjualan",
+        "target_harian_awal": "Semua lead dicatat; 1–3 closing sebagai target aspirasi",
+        "definisi_selesai": "Ada sumber lead, kebutuhan, status, nilai, tindak lanjut dan bukti pembayaran"
+      },
+      {
+        "area": "Peluang",
+        "target_harian_awal": "Maksimal 5 draf proposal relevan",
+        "definisi_selesai": "Kualitas dan kecocokan lebih penting daripada jumlah; kirim setelah persetujuan"
+      },
+      {
+        "area": "Keuangan",
+        "target_harian_awal": "1 rekonsiliasi harian",
+        "definisi_selesai": "Pemasukan, biaya, saldo dan bukti cocok"
+      },
+      {
+        "area": "Produk digital",
+        "target_harian_awal": "1 rilis kecil per minggu sebagai target awal",
+        "definisi_selesai": "Produk lolos uji, halaman penjualan dan instruksi penggunaan siap"
+      }
+    ],
+    "status_tugas": [
+      {
+        "status": "BACKLOG",
+        "arti": "Belum dijadwalkan",
+        "aturan": "Belum dikerjakan"
+      },
+      {
+        "status": "READY",
+        "arti": "Brief, PIC dan tenggat lengkap",
+        "aturan": "Siap dieksekusi"
+      },
+      {
+        "status": "DOING",
+        "arti": "Sedang dikerjakan",
+        "aturan": "PIC wajib memberi pembaruan"
+      },
+      {
+        "status": "QC",
+        "arti": "Menunggu pemeriksaan",
+        "aturan": "Belum boleh dipublikasikan/dikirim"
+      },
+      {
+        "status": "APPROVAL",
+        "arti": "Menunggu keputusan Cipta",
+        "aturan": "Tampilkan pilihan dan konsekuensi"
+      },
+      {
+        "status": "APPROVED",
+        "arti": "Disetujui",
+        "aturan": "Boleh dieksekusi sesuai ruang lingkup izin"
+      },
+      {
+        "status": "PUBLISHED / SENT",
+        "arti": "Sudah terbit/terkirim",
+        "aturan": "Simpan URL, waktu, bukti"
+      },
+      {
+        "status": "BLOCKED",
+        "arti": "Terhambat",
+        "aturan": "Catat alasan dan siapa yang perlu bertindak"
+      },
+      {
+        "status": "DONE",
+        "arti": "Selesai",
+        "aturan": "Lampirkan hasil dan metrik"
+      }
+    ],
+    "pemicu_otomatis": [
+      {
+        "pemicu": "Setiap hari 07.00",
+        "aksi_otomatis": "Buat brief, tarik tugas tertunda, susun prioritas dan tenggat",
+        "batas_aman": "Jangan mengarang data yang belum tersedia"
+      },
+      {
+        "pemicu": "Setelah riset selesai",
+        "aksi_otomatis": "Buat kartu ide dan skor validasi; kirim ke Product Developer",
+        "batas_aman": "Sertakan sumber dan tanggal data"
+      },
+      {
+        "pemicu": "Setelah aset dibuat",
+        "aksi_otomatis": "Buat turunan format 7 kanal dan checklist QC",
+        "batas_aman": "Semua tetap draf"
+      },
+      {
+        "pemicu": "Saat QC lolos",
+        "aksi_otomatis": "Pindahkan ke antrean persetujuan Cipta",
+        "batas_aman": "QC bukan persetujuan publikasi"
+      },
+      {
+        "pemicu": "Setelah persetujuan",
+        "aksi_otomatis": "Jadwalkan/terbitkan jika koneksi platform benar-benar tersedia",
+        "batas_aman": "Catat akun, konten, waktu dan URL"
+      },
+      {
+        "pemicu": "Setiap 2 jam pada jam layanan",
+        "aksi_otomatis": "Periksa inbox/lead yang terhubung dan tandai prioritas",
+        "batas_aman": "Jangan menjanjikan respons 24/7"
+      },
+      {
+        "pemicu": "Setiap hari 16.00",
+        "aksi_otomatis": "Rekap konten, lead, penjualan, biaya, hambatan",
+        "batas_aman": "Pisahkan angka aktual dari target"
+      },
+      {
+        "pemicu": "Setiap Senin",
+        "aksi_otomatis": "Review mingguan dan pilih eksperimen minggu berikutnya",
+        "batas_aman": "Hentikan pekerjaan yang tidak menghasilkan nilai"
+      }
+    ],
+    "dashboard_harian": [
+      {
+        "indikator": "Ide riset tervalidasi",
+        "target_awal": "1"
+      },
+      {
+        "indikator": "Brief produk/konten",
+        "target_awal": "1"
+      },
+      {
+        "indikator": "Aset utama",
+        "target_awal": "1"
+      },
+      {
+        "indikator": "Turunan konten",
+        "target_awal": "7 draf"
+      },
+      {
+        "indikator": "Konten terbit",
+        "target_awal": "3–5 total, setelah izin"
+      },
+      {
+        "indikator": "Lead baru / ditindaklanjuti",
+        "target_awal": "Semua tercatat"
+      },
+      {
+        "indikator": "Penjualan / omzet",
+        "target_awal": "Catat aktual; target aspirasi 1–3 closing"
+      },
+      {
+        "indikator": "Proposal peluang",
+        "target_awal": "Hingga 5 draf"
+      },
+      {
+        "indikator": "Pemasukan / biaya / saldo",
+        "target_awal": "Rekonsiliasi"
+      },
+      {
+        "indikator": "Tugas selesai / tertunda",
+        "target_awal": "Ukur dari daftar tugas"
+      },
+      {
+        "indikator": "Hambatan utama",
+        "target_awal": "Maksimal 3 prioritas eskalasi"
+      }
+    ],
+    "skor_prioritas": {
+      "kriteria": [
+        {
+          "kriteria": "Permintaan",
+          "pertanyaan": "Apakah ada bukti orang mencari/membutuhkan ini?"
+        },
+        {
+          "kriteria": "Potensi pendapatan",
+          "pertanyaan": "Apakah ada jalur monetisasi dan pembeli yang jelas?"
+        },
+        {
+          "kriteria": "Kecepatan produksi",
+          "pertanyaan": "Bisakah dibuat dengan kemampuan dan waktu yang tersedia?"
+        },
+        {
+          "kriteria": "Keunggulan",
+          "pertanyaan": "Apakah ada pembeda dari pesaing?"
+        },
+        {
+          "kriteria": "Risiko rendah",
+          "pertanyaan": "Apakah aman dari masalah hak cipta, klaim, biaya dan kebijakan platform?"
+        }
+      ],
+      "aturan": "Beri nilai 1-5 untuk setiap kriteria. Total maksimal 25. 20-25 = kerjakan; 15-19 = uji kecil; 10-14 = simpan untuk riset; di bawah 10 = jangan dikerjakan dulu. Skor adalah alat bantu, bukan pengganti penilaian pemilik."
+    },
+    "rencana_14_hari": [
+      {
+        "periode": "Hari 1–2",
+        "fokus": "Bangun papan tugas, daftar produk, kalender konten, tabel keuangan dan folder bukti",
+        "hasil": "Satu sumber data operasional"
+      },
+      {
+        "periode": "Hari 3–4",
+        "fokus": "Jalankan alur riset → brief → produksi → QC",
+        "hasil": "Satu siklus produksi terukur"
+      },
+      {
+        "periode": "Hari 5–7",
+        "fokus": "Jalankan distribusi dan pencatatan lead dengan persetujuan manual",
+        "hasil": "Konten dan pipeline mulai terukur"
+      },
+      {
+        "periode": "Hari 8–10",
+        "fokus": "Tambahkan pemantauan inbox, proposal peluang dan laporan otomatis",
+        "hasil": "Mengurangi tugas administratif berulang"
+      },
+      {
+        "periode": "Hari 11–14",
+        "fokus": "Audit waktu, kualitas, konversi, biaya dan hambatan",
+        "hasil": "Tetapkan target versi 2 berdasarkan data"
+      }
+    ],
+    "prompt_komando_harian": "Bertindak sebagai COO dan Command Controller Bintang Command Center. Gunakan hanya data yang tersedia di papan kerja dan dokumen sumber. \n1) Baca target perusahaan dan semua tugas yang belum selesai.\n2) Tetapkan maksimal 3 prioritas utama hari ini.\n3) Tugaskan pekerjaan kepada agent sesuai job description A01–A30, lengkap dengan PIC, input, output, tenggat, dan kriteria selesai.\n4) Jalankan urutan riset → validasi → brief → produksi → QC → persetujuan → distribusi → penjualan → keuangan → laporan.\n5) Semua konten, proposal, email, balasan pelanggan, dan tindakan eksternal berstatus DRAF sampai Cipta menyetujui.\n6) Jangan mengaku telah memublikasikan, mengirim, menghubungkan akun, atau melakukan transaksi tanpa bukti eksekusi.\n7) Tandai data yang tidak tersedia sebagai BELUM DIKETAHUI. Sertakan sumber dan tanggal untuk temuan riset.\n8) Akhiri dengan dashboard: target, aktual, selisih, hambatan, keputusan yang dibutuhkan, dan 3 prioritas besok.\nMulai dengan membuat brief operasional hari ini."
   }
 }
