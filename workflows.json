@@ -1,0 +1,447 @@
+{
+  "version": "3.0-adaptasi",
+  "note": "Template n8n untuk AI Business Autonomous Agent 3.0 (disesuaikan dengan Pusat Komando). active=false. Impor ke n8n BELUM diuji — lihat TESTING.md.",
+  "workflows": [
+    {
+      "name": "Produksi Harian 3.0",
+      "nodes": [
+        {
+          "id": "22291dea-6ed4-4294-8ef8-917b7965c698",
+          "name": "Catatan adaptasi",
+          "type": "n8n-nodes-base.code",
+          "typeVersion": 1,
+          "position": [
+            0,
+            0
+          ],
+          "parameters": {
+            "jsCode": "// ADAPTASI 3.0 — alur ini meniru jadwal harian Pusat Komando.\n// Agent bersifat pasif: perintah dijalankan Muse/cron, output DRAF.\n// Ujung alur SELALU 'Menunggu persetujuan Cipta' — tidak ada\n// upload/kirim/bayar otomatis. Sesuaikan path python + cron\n// dengan instalasi n8n Anda sebelum mengaktifkan workflow ini.\nreturn items;"
+          }
+        },
+        {
+          "id": "0c07a616-c44d-4fbd-a3ed-41b9b049ab39",
+          "name": "Jadwal 05.00",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1,
+          "position": [
+            240,
+            0
+          ],
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "field": "cronExpression",
+                  "expression": "0 5 * * *"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "964292fe-2324-4f0a-b6af-1b003ed1447c",
+          "name": "Riset (Agent 10)",
+          "type": "n8n-nodes-base.executeCommand",
+          "typeVersion": 1,
+          "position": [
+            480,
+            0
+          ],
+          "parameters": {
+            "command": "python3 agents/a10_riset.py"
+          }
+        },
+        {
+          "id": "84ae008f-526b-408b-9639-76b76833e67a",
+          "name": "Saring brief layak",
+          "type": "n8n-nodes-base.code",
+          "typeVersion": 1,
+          "position": [
+            720,
+            0
+          ],
+          "parameters": {
+            "jsCode": "return items.filter(i => String(i.json.verdict || '').toLowerCase().includes('layak'));\n"
+          }
+        },
+        {
+          "id": "ec716624-361d-46bf-8ddf-de1be19e3665",
+          "name": "Produksi (Agent 5)",
+          "type": "n8n-nodes-base.executeCommand",
+          "typeVersion": 1,
+          "position": [
+            960,
+            0
+          ],
+          "parameters": {
+            "command": "python3 agents/a05_produksi.py"
+          }
+        },
+        {
+          "id": "6b3231a5-ae6c-463d-b476-59c64b4466de",
+          "name": "Menunggu persetujuan Cipta",
+          "type": "n8n-nodes-base.noOp",
+          "typeVersion": 1,
+          "position": [
+            1200,
+            0
+          ],
+          "parameters": {}
+        }
+      ],
+      "connections": {
+        "Catatan adaptasi": {
+          "main": [
+            [
+              {
+                "node": "Jadwal 05.00",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Jadwal 05.00": {
+          "main": [
+            [
+              {
+                "node": "Riset (Agent 10)",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Riset (Agent 10)": {
+          "main": [
+            [
+              {
+                "node": "Saring brief layak",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Saring brief layak": {
+          "main": [
+            [
+              {
+                "node": "Produksi (Agent 5)",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Produksi (Agent 5)": {
+          "main": [
+            [
+              {
+                "node": "Menunggu persetujuan Cipta",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "active": false,
+      "settings": {
+        "executionOrder": "v1"
+      },
+      "pinData": {},
+      "tags": [
+        {
+          "name": "agent-3.0"
+        }
+      ]
+    },
+    {
+      "name": "Penjualan Harian 3.0",
+      "nodes": [
+        {
+          "id": "4ef780f9-eba6-438f-b9e9-019a948bb8fd",
+          "name": "Catatan adaptasi",
+          "type": "n8n-nodes-base.code",
+          "typeVersion": 1,
+          "position": [
+            0,
+            0
+          ],
+          "parameters": {
+            "jsCode": "// ADAPTASI 3.0 — alur ini meniru jadwal harian Pusat Komando.\n// Agent bersifat pasif: perintah dijalankan Muse/cron, output DRAF.\n// Ujung alur SELALU 'Menunggu persetujuan Cipta' — tidak ada\n// upload/kirim/bayar otomatis. Sesuaikan path python + cron\n// dengan instalasi n8n Anda sebelum mengaktifkan workflow ini.\nreturn items;"
+          }
+        },
+        {
+          "id": "5f80ee57-1a04-423e-b470-9e106f8efe9e",
+          "name": "Jadwal 12.00",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1,
+          "position": [
+            240,
+            0
+          ],
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "field": "cronExpression",
+                  "expression": "0 12 * * *"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "55782385-0a58-4392-a0ce-dd12da14cd5d",
+          "name": "Penjualan harian (Agent 4)",
+          "type": "n8n-nodes-base.executeCommand",
+          "typeVersion": 1,
+          "position": [
+            480,
+            0
+          ],
+          "parameters": {
+            "command": "python3 agents/a04_penjualan_harian.py"
+          }
+        },
+        {
+          "id": "1acb8b12-1165-446d-be16-d12f64e9505d",
+          "name": "Saring prospek terverifikasi",
+          "type": "n8n-nodes-base.code",
+          "typeVersion": 1,
+          "position": [
+            720,
+            0
+          ],
+          "parameters": {
+            "jsCode": "return items.filter(i => i.json.terverifikasi === true);\n"
+          }
+        },
+        {
+          "id": "312ab71e-61e7-422f-9288-1fc14f2cc64b",
+          "name": "Draf penawaran ke Approval Center",
+          "type": "n8n-nodes-base.noOp",
+          "typeVersion": 1,
+          "position": [
+            960,
+            0
+          ],
+          "parameters": {}
+        }
+      ],
+      "connections": {
+        "Catatan adaptasi": {
+          "main": [
+            [
+              {
+                "node": "Jadwal 12.00",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Jadwal 12.00": {
+          "main": [
+            [
+              {
+                "node": "Penjualan harian (Agent 4)",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Penjualan harian (Agent 4)": {
+          "main": [
+            [
+              {
+                "node": "Saring prospek terverifikasi",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Saring prospek terverifikasi": {
+          "main": [
+            [
+              {
+                "node": "Draf penawaran ke Approval Center",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "active": false,
+      "settings": {
+        "executionOrder": "v1"
+      },
+      "pinData": {},
+      "tags": [
+        {
+          "name": "agent-3.0"
+        }
+      ]
+    },
+    {
+      "name": "Lomba & Peluang 3.0",
+      "nodes": [
+        {
+          "id": "15c19df5-8566-4c69-8e9f-ae4454d3220a",
+          "name": "Catatan adaptasi",
+          "type": "n8n-nodes-base.code",
+          "typeVersion": 1,
+          "position": [
+            0,
+            0
+          ],
+          "parameters": {
+            "jsCode": "// ADAPTASI 3.0 — alur ini meniru jadwal harian Pusat Komando.\n// Agent bersifat pasif: perintah dijalankan Muse/cron, output DRAF.\n// Ujung alur SELALU 'Menunggu persetujuan Cipta' — tidak ada\n// upload/kirim/bayar otomatis. Sesuaikan path python + cron\n// dengan instalasi n8n Anda sebelum mengaktifkan workflow ini.\nreturn items;"
+          }
+        },
+        {
+          "id": "b643914f-7ea4-48e0-9831-8d0443f6a774",
+          "name": "Jadwal Senin 07.00",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1,
+          "position": [
+            240,
+            0
+          ],
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "field": "cronExpression",
+                  "expression": "0 7 * * 1"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "1d9d1378-e98b-4a06-8b08-ced96f9b15fd",
+          "name": "Lomba (Agent 6)",
+          "type": "n8n-nodes-base.executeCommand",
+          "typeVersion": 1,
+          "position": [
+            480,
+            0
+          ],
+          "parameters": {
+            "command": "python3 agents/a06_lomba.py"
+          }
+        },
+        {
+          "id": "edd3da1c-710a-4bef-a47e-746e60cdecea",
+          "name": "Upwork (Agent 14)",
+          "type": "n8n-nodes-base.executeCommand",
+          "typeVersion": 1,
+          "position": [
+            720,
+            0
+          ],
+          "parameters": {
+            "command": "python3 agents/a14_upwork.py"
+          }
+        },
+        {
+          "id": "774313ab-997f-4ea4-8203-ba627dcc7726",
+          "name": "Saring tenggat <= 14 hari",
+          "type": "n8n-nodes-base.code",
+          "typeVersion": 1,
+          "position": [
+            960,
+            0
+          ],
+          "parameters": {
+            "jsCode": "return items.filter(i => { const t = Date.parse(i.json.tenggat || ''); return t && (t - Date.now()) / 864e5 <= 14; });\n"
+          }
+        },
+        {
+          "id": "1a174527-92ad-4609-b8db-cf737169b939",
+          "name": "Daftar lomba ke Approval Center",
+          "type": "n8n-nodes-base.noOp",
+          "typeVersion": 1,
+          "position": [
+            1200,
+            0
+          ],
+          "parameters": {}
+        }
+      ],
+      "connections": {
+        "Catatan adaptasi": {
+          "main": [
+            [
+              {
+                "node": "Jadwal Senin 07.00",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Jadwal Senin 07.00": {
+          "main": [
+            [
+              {
+                "node": "Lomba (Agent 6)",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Lomba (Agent 6)": {
+          "main": [
+            [
+              {
+                "node": "Upwork (Agent 14)",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Upwork (Agent 14)": {
+          "main": [
+            [
+              {
+                "node": "Saring tenggat <= 14 hari",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        },
+        "Saring tenggat <= 14 hari": {
+          "main": [
+            [
+              {
+                "node": "Daftar lomba ke Approval Center",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "active": false,
+      "settings": {
+        "executionOrder": "v1"
+      },
+      "pinData": {},
+      "tags": [
+        {
+          "name": "agent-3.0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 # ==========================================================================
 # PUSAT KOMANDO PODCAST MEONG
 # Satu aplikasi gabungan 14 agent AI bernomor + 6 tim Agent 9 + workshop
-# Avatar Podcast + bus Koordinasi antar-agent (23 tab) dalam SATU Space
+# Avatar Podcast + bus Koordinasi antar-agent (24 tab) dalam SATU Space
 # Gradio, berbagi satu folder data/ — supaya agent bisa membaca output
 # agent lain langsung dari Papan Handoff, tanpa antre lewat Muse.
 #
@@ -274,6 +274,85 @@ def tampilkan_papan():
     baris.append("\n## 📋 Antrean Handoff: {} terbuka / {} total".format(
         len(terbuka), len(antrean)))
     return "\n".join(baris)
+
+
+# ---------------------------------------------------------------------------
+# COMMAND CENTER 3.0 — CEO + 8 direktorat + Approval Center
+# Pemetaan AI Business Autonomous Agent 3.0 (Share ChatGPT #16/#17) ke
+# 14 agen nyata. Konfigurasi di data/agents.json. Semua pekerjaan DRAF —
+# keputusan akhir selalu di tangan Cipta.
+# ---------------------------------------------------------------------------
+AGENTS3_FILE = DATA_DIR / "agents.json"
+_OTORITAS_LABEL = {"hijau": "🟢 Hijau — otomatis",
+                   "kuning": "🟡 Kuning — periksa dulu",
+                   "merah": "🔴 Merah — wajib persetujuan Cipta"}
+
+
+def _muat_agents3():
+    return _baca_json(AGENTS3_FILE, {})
+
+
+def tampilkan_command_center():
+    a3 = _muat_agents3()
+    if not a3:
+        return ("# 🎛️ Command Center\n\n"
+                "File `data/agents.json` belum ada — jalankan pemetaan 3.0 dulu.")
+    baris = ["# 🎛️ Command Center — AI Business Autonomous Agent 3.0\n",
+             "CEO Agent: **{}**. Pemilik: **{}** (pengendali tertinggi).\n".format(
+                 a3.get("command", {}).get("ceo", "Muse (koordinator)"),
+                 a3.get("command", {}).get("owner", "Cipta")),
+             "Model: **{}** · Anggaran: **{}** · Prioritas: **{}** · "
+             "Persetujuan pemilik: **{}**.\n".format(
+                 a3.get("decisions", {}).get("automation_model", "?"),
+                 a3.get("decisions", {}).get("budget", "?"),
+                 a3.get("decisions", {}).get("priority", "?"),
+                 a3.get("decisions", {}).get("owner_approval", "?"))]
+    for d in a3.get("directorates", []):
+        agents = d.get("agents", [])
+        hitung = {}
+        for ag in agents:
+            hitung[ag.get("status", "?")] = hitung.get(ag.get("status", "?"), 0) + 1
+        baris.append("\n## {} · {} — {} ({} agent, {})".format(
+            d.get("id", "?"), d.get("name", "?"), d.get("chief", "?"),
+            len(agents), ", ".join("{}: {}".format(k, v)
+                                   for k, v in sorted(hitung.items()))))
+        baris.append("Dipetakan ke: {}.".format(", ".join(d.get("mapped_to", []))))
+    baris.append("\n## 🔑 Tingkat Kewenangan")
+    baris.append("🟢 **Hijau** — AI boleh otomatis sesuai aturan (riset, draft, "
+                 "pencatatan, klasifikasi, laporan, pemantauan, QC).")
+    baris.append("🟡 **Kuning** — AI menyiapkan untuk diperiksa (draf siap kirim, "
+                 "konten siap upload, usulan harga, laporan harian).")
+    baris.append("🔴 **Merah** — WAJIB persetujuan Cipta (upload, kirim keluar, "
+                 "proposal freelance, ikut lomba, ubah harga, transfer uang — "
+                 "TIDAK PERNAH dilakukan AI — hapus akun/data, pembayaran, "
+                 "tanda tangan).")
+    baris.append("\n## ⚠️ Catatan Jujur")
+    for n in a3.get("honest_notes", []):
+        baris.append("- {}".format(n))
+    return "\n".join(baris)
+
+
+def _tabel_agent3():
+    a3 = _muat_agents3()
+    rows = []
+    for d in a3.get("directorates", []):
+        for ag in d.get("agents", []):
+            rows.append([ag.get("code", ""), "{} · {}".format(d.get("id", ""), d.get("name", "")),
+                         ag.get("task", ""), ag.get("mapped_to", ""),
+                         ag.get("status", ""),
+                         _OTORITAS_LABEL.get(ag.get("authority", ""), ag.get("authority", ""))])
+    return rows
+
+
+def _tabel_approval():
+    items = [h for h in _muat_handoff() if h.get("status") in ("draf", "diperiksa")]
+    return [[h.get("id", ""), h.get("jenis", ""), str(h.get("dari_agent", "")),
+             str(h.get("ke_agent", "")), h.get("ringkasan", ""),
+             h.get("status", ""), h.get("tanggal", "")] for h in items]
+
+
+def _segarkan_command_center():
+    return tampilkan_command_center(), _tabel_agent3(), _tabel_approval()
 
 
 # ---------------------------------------------------------------------------
@@ -569,6 +648,31 @@ def build_app():
         gr.Markdown(MODE_TEKS)
 
         with gr.Tabs():
+            # ============================ COMMAND CENTER (3.0) ============================
+            with gr.Tab("0 · Command Center"):
+                gr.Markdown(
+                    "CEO Agent (Muse) + 8 direktorat + Approval Center. "
+                    "Konfigurasi di `data/agents.json` (pemetaan AI Business "
+                    "Autonomous Agent 3.0, Share ChatGPT #16/#17). "
+                    "Semua pekerjaan di sini DRAF — keputusan akhir di tangan Cipta.")
+                cc_papan = gr.Markdown(tampilkan_command_center())
+                btn_cc = gr.Button("🔄 Segarkan Command Center", variant="primary")
+                gr.Markdown("### 🧑‍💼 62 Agent Spesialis → 14 Agen Nyata")
+                cc_tabel = gr.Dataframe(
+                    value=_tabel_agent3(),
+                    headers=["Kode", "Direktorat", "Tugas", "Dipetakan ke",
+                             "Status", "Otoritas"],
+                    interactive=False, wrap=True)
+                gr.Markdown("### ✅ Approval Center — Antrean Menunggu Persetujuan Cipta")
+                cc_approval = gr.Dataframe(
+                    value=_tabel_approval(),
+                    headers=["ID", "Jenis", "Dari", "Ke", "Ringkasan",
+                             "Status", "Tanggal"],
+                    interactive=False, wrap=True)
+                btn_cc.click(fn=_segarkan_command_center,
+                             outputs=[cc_papan, cc_tabel, cc_approval],
+                             api_name="segarkan_command_center")
+
             # ============================ PAPAN HANDOFF ============================
             with gr.Tab("🏠 Papan Handoff"):
                 gr.Markdown(

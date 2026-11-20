@@ -1,0 +1,739 @@
+{
+  "applied_date": "2026-11-21",
+  "applied_to": "Pusat Komando + 14 agen (SatuKiki / Podcast Meong)",
+  "authority_levels": {
+    "hijau": "AI boleh mengerjakan otomatis sesuai aturan (riset, draft, pencatatan, klasifikasi, laporan, pemantauan). Hasil berupa draf/laporan.",
+    "kuning": "AI menyiapkan pekerjaan untuk diperiksa pemilik (draf siap kirim, konten siap upload, usulan harga, laporan harian).",
+    "merah": "WAJIB persetujuan pemilik: upload ke TikTok/YouTube/Instagram, kirim penawaran/pesan keluar, kirim proposal freelance, ikut/daftar lomba, ubah harga, transfer uang (TIDAK PERNAH dilakukan AI), hapus akun/data, pembayaran, tanda tangan."
+  },
+  "channels": {
+    "instagram": [
+      "podcast_meong",
+      "@meongcast"
+    ],
+    "notes": "7 akun media + website + toko = 9 aset. Spesifikasi menyebut '8 kanal media' — rincian akunnya 2+2+2+1 = 7 akun media.",
+    "store": "https://podcastmeong.github.io/toko.html",
+    "threads": [
+      "@ciptabintanglestari"
+    ],
+    "tiktok": [
+      "@podcast_kucing",
+      "@meongcast"
+    ],
+    "total_assets": 9,
+    "website": "https://podcastmeong.github.io/",
+    "youtube": [
+      "Podcast meong",
+      "@meongcast"
+    ]
+  },
+  "command": {
+    "ceo": "Muse (koordinator) — agents/koordinasi.py + SOP Kerja Sama Agent",
+    "note": "Agent bersifat pasif: Muse menjalankannya lewat perintah/jadwal; output berupa DRAF; pengiriman/publikasi/pembayaran selalu butuh persetujuan Cipta. Bukan layanan otonom 24 jam.",
+    "owner": "Cipta (Human Approval Center — keputusan tertinggi)"
+  },
+  "decisions": {
+    "automation_model": "Hybrid — pekerjaan rutin otomatis, tindakan penting disetujui pemilik",
+    "budget": "Rp0 — prioritaskan layanan gratis",
+    "owner_approval": "Hanya tindakan penting dan berisiko",
+    "priority": "Penjualan dan pendapatan"
+  },
+  "directorates": [
+    {
+      "agents": [
+        {
+          "authority": "kuning",
+          "code": "SM-01",
+          "mapped_to": "Agent 3 — akun podcast_meong",
+          "notes": "Posting butuh persetujuan Cipta (merah); login IG podcast_meong lewat browser.",
+          "status": "aktif-sebagian",
+          "task": "Mengelola Instagram 1"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-02",
+          "mapped_to": "Agent 3 — akun @meongcast",
+          "notes": "Konektor IG terhubung ke @meongcast; rename ke Dunia Kiki ditunda s.d. 20 Des 2026.",
+          "status": "aktif-sebagian",
+          "task": "Mengelola Instagram 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-03",
+          "mapped_to": "Agent 3 — akun @podcast_kucing",
+          "notes": "Login tersimpan bekerja; upload butuh persetujuan (merah).",
+          "status": "aktif",
+          "task": "Mengelola TikTok 1"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-04",
+          "mapped_to": "Agent 3 — akun @meongcast",
+          "notes": "Upload butuh Cipta login sendiri.",
+          "status": "aktif-sebagian",
+          "task": "Mengelola TikTok 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-05",
+          "mapped_to": "Agent 3 — kanal Podcast meong (lawaklucu182@gmail.com)",
+          "notes": "80 subscriber; upload butuh persetujuan (merah).",
+          "status": "aktif",
+          "task": "Mengelola YouTube 1"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-06",
+          "mapped_to": "Agent 3 — kanal @meongcast (ciptabintanglestari@gmail.com)",
+          "notes": "Verifikasi ID diajukan; kata sandi tersimpan pernah ditolak — jangan coba lagi tanpa kata sandi benar dari Cipta.",
+          "status": "aktif-sebagian",
+          "task": "Mengelola YouTube 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-07",
+          "mapped_to": "Agent 3 — @ciptabintanglestari (belum sinkron ke @meongcast)",
+          "notes": "Threads Messages belum terhubung.",
+          "status": "aktif-sebagian",
+          "task": "Mengelola Threads"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-08",
+          "mapped_to": "Agent 2 + Agent 4",
+          "notes": "Pengumuman toko tayang di 4 akun promo 20 Nov 2026.",
+          "status": "aktif",
+          "task": "Mengelola promosi website dan toko"
+        }
+      ],
+      "chief": "Chief Marketing Agent",
+      "id": "A",
+      "mapped_to": [
+        "a03_pertumbuhan.py (Agent 3 Pertumbuhan)",
+        "a02_penjualan.py (Agent 2 Penjualan)"
+      ],
+      "name": "Marketing & Social Media Growth",
+      "status": "aktif-sebagian"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "PF-01",
+          "mapped_to": "Agent 5 + pipeline Flow (Muse)",
+          "notes": "Flow alat utama; 5 video/hari; wajib lulus cek pitch sebelum ke Cipta.",
+          "status": "aktif",
+          "task": "AI Video — memproduksi video AI"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-02",
+          "mapped_to": "Agent 5 + pipeline foto AI (Dreamstime/Adobe)",
+          "notes": "50 foto/hari; batch-5 upload Dreamstime DIHENTIKAN 21 Nov 02:49 (STOP).",
+          "status": "aktif",
+          "task": "AI Image — memproduksi foto dan gambar AI"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-03",
+          "mapped_to": "Muse (pembangun demo website)",
+          "notes": "Website 2.0 live; demo website L3 butuh pilihan jenis dari Cipta.",
+          "status": "aktif",
+          "task": "Website — membuat website dan landing page"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-04",
+          "mapped_to": "Agent 9 (a09_game.py, a09a-f)",
+          "notes": "Antrean 73 demo SELESAI 21 Nov 00:39; min 1 aplikasi/game per hari.",
+          "status": "aktif",
+          "task": "Application — membuat aplikasi"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-05",
+          "mapped_to": "Agent 9",
+          "notes": "Oyen Tangkap Ikan, Susun Balok, Spookify, Oyen Benang live.",
+          "status": "aktif",
+          "task": "Game — membuat game"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-06",
+          "mapped_to": "Agent 5",
+          "notes": "Zazzle toko Podcast_Meong live; 14 kaos di /pod/.",
+          "status": "aktif",
+          "task": "POD — desain Print on Demand"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-07",
+          "mapped_to": "Agent 5",
+          "notes": "Seri Cerita Nabi 6/6 + Orang Sholeh 4/4; 9 PDF menunggu persetujuan Cipta.",
+          "status": "aktif",
+          "task": "eBook — menulis dan menerbitkan eBook"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-08",
+          "mapped_to": "Agent 5",
+          "notes": "5 puisi + 5 cerpen/hari; cerbung 'Misteri Ikan yang Hilang' di /cerbung/.",
+          "status": "aktif",
+          "task": "Literary — puisi, cerpen, cerita bersambung"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-09",
+          "mapped_to": "Agent 5 + Agent 10 Riset",
+          "notes": "Artikel di /artikel/; Dunia Kiki = Artikel + Video Edukasi.",
+          "status": "aktif",
+          "task": "Content — artikel, konten edukasi dan hiburan"
+        }
+      ],
+      "chief": "Chief Product Creation Agent",
+      "id": "B",
+      "mapped_to": [
+        "a05_produksi.py (Agent 5 Produksi)",
+        "a09_game.py + a09a-f (Agent 9 Game & Aplikasi)",
+        "a11_oyen.py + a12_momo.py (Agent 11/12 penjaga suara)"
+      ],
+      "name": "AI Product Factory",
+      "status": "aktif"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "SA-01",
+          "mapped_to": "Agent 2 + Agent 4",
+          "notes": "15 lead belum terverifikasi; draf saja.",
+          "status": "aktif",
+          "task": "Mencari calon customer"
+        },
+        {
+          "authority": "merah",
+          "code": "SA-02",
+          "mapped_to": "Agent 4 (DM TikTok/IG/Threads)",
+          "notes": "Isi persis harus disetujui Cipta dulu; TANPA WhatsApp untuk penawaran; Facebook ditahan.",
+          "status": "aktif",
+          "task": "Menawarkan produk secara online"
+        },
+        {
+          "authority": "merah",
+          "code": "SA-03",
+          "mapped_to": "Cipta (manusia)",
+          "notes": "AI menyiapkan daftar prospek, materi, jadwal; manusia kunjungan/pertemuan fisik.",
+          "status": "aktif",
+          "task": "Menawarkan produk secara langsung"
+        },
+        {
+          "authority": "kuning",
+          "code": "SA-04",
+          "mapped_to": "Agent 2 + Muse",
+          "notes": "Strategi 1 Juta Dolar + Strategi Cuan Maksimal (target, bukan janji).",
+          "status": "aktif",
+          "task": "Membuat strategi penjualan"
+        },
+        {
+          "authority": "merah",
+          "code": "SA-05",
+          "mapped_to": "Agent 2 + Muse",
+          "notes": "Ubah harga WAJIB persetujuan Cipta; katalog PDF v2 live.",
+          "status": "aktif",
+          "task": "Mengelola katalog dan harga"
+        },
+        {
+          "authority": "merah",
+          "code": "SA-06",
+          "mapped_to": "Agent 4",
+          "notes": "Follow-up keluar butuh persetujuan isi persis.",
+          "status": "aktif",
+          "task": "Follow-up calon pembeli"
+        },
+        {
+          "authority": "kuning",
+          "code": "SA-07",
+          "mapped_to": "Agent 4 + data/penjualan_toko.json",
+          "notes": "2 DM terkirim (Paws & Claws, Deku), 0 balasan per 20 Nov.",
+          "status": "aktif",
+          "task": "Mengelola pesanan dan konversi"
+        }
+      ],
+      "chief": "Chief Sales Agent",
+      "id": "C",
+      "mapped_to": [
+        "a02_penjualan.py (Agent 2 Penjualan)",
+        "a04_penjualan_harian.py (Agent 4 Penjualan Harian)"
+      ],
+      "name": "Sales & Customer Acquisition",
+      "status": "aktif"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "RI-01",
+          "mapped_to": "Agent 10",
+          "notes": "Output: 20 ide kebutuhan pasar/minggu (target).",
+          "status": "aktif",
+          "task": "Riset kebutuhan customer"
+        },
+        {
+          "authority": "hijau",
+          "code": "RI-02",
+          "mapped_to": "Agent 10 + cron cek-pasar-mingguan (Senin 07:42)",
+          "notes": "Cron cek-pasar-mingguan DIJEDA 21 Nov 02:49 (STOP).",
+          "status": "aktif-sebagian",
+          "task": "Riset tren pasar"
+        },
+        {
+          "authority": "hijau",
+          "code": "RI-03",
+          "mapped_to": "Agent 10",
+          "notes": "Riset kompetitor jasa website selesai 20 Nov.",
+          "status": "aktif",
+          "task": "Riset kompetitor"
+        },
+        {
+          "authority": "hijau",
+          "code": "RI-04",
+          "mapped_to": "Agent 10",
+          "notes": "Riset aplikasi ronde 1 + 2 selesai.",
+          "status": "aktif",
+          "task": "Riset produk unik"
+        },
+        {
+          "authority": "hijau",
+          "code": "RI-05",
+          "mapped_to": "Agent 10",
+          "notes": "Matriks riset harga per level selesai.",
+          "status": "aktif",
+          "task": "Riset harga dan peluang"
+        },
+        {
+          "authority": "hijau",
+          "code": "RI-06",
+          "mapped_to": "Agent 10 + Agent 5",
+          "notes": "Daftar bahan cerita + 30 judul Ramadan-Lebaran 2027.",
+          "status": "aktif",
+          "task": "Riset ide konten"
+        }
+      ],
+      "chief": "Chief Research Agent",
+      "id": "D",
+      "mapped_to": [
+        "a10_riset.py (Agent 10 Riset — HARIAN)",
+        "a03_pertumbuhan.py (Agent 3)"
+      ],
+      "name": "Market Research & Product Intelligence",
+      "status": "aktif"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "CS-01",
+          "mapped_to": "Agent 13 (cek 05:00 + 20:00; triase 12 aturan)",
+          "notes": "Gmail TIDAK terhubung (mode demo via browser); draf saja, kirim butuh persetujuan.",
+          "status": "aktif",
+          "task": "Memeriksa email masuk dan keluar"
+        },
+        {
+          "authority": "kuning",
+          "code": "CS-02",
+          "mapped_to": "Agent 1 (lingkup disepakati)",
+          "notes": "Instagram Messages @meongcast TERHUBUNG (terverifikasi live 21 Nov 03:33); balasan hanya info yang disetujui; kirim butuh persetujuan Cipta.",
+          "status": "aktif",
+          "task": "Menjawab pertanyaan Instagram 1 dan 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "CS-03",
+          "mapped_to": "Agent 1",
+          "notes": "Hanya info disetujui; negosiasi/custom/pembayaran/keluhan diteruskan ke Cipta.",
+          "status": "aktif-sebagian",
+          "task": "Menjawab komentar dan DM TikTok 1 dan 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "CS-04",
+          "mapped_to": "Agent 1",
+          "notes": "Sama seperti CS-02/CS-03.",
+          "status": "aktif-sebagian",
+          "task": "Menjawab komentar YouTube 1 dan 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "CS-05",
+          "mapped_to": "Agent 1",
+          "notes": "Threads Messages @ciptabintanglestari TERHUBUNG (terverifikasi live 21 Nov 03:33, inbox kosong); kirim butuh persetujuan Cipta.",
+          "status": "aktif",
+          "task": "Menjawab Threads"
+        },
+        {
+          "authority": "merah",
+          "code": "CS-06",
+          "mapped_to": "Agent 1 → diteruskan ke Cipta",
+          "notes": "Komplain serius, refund, negosiasi khusus, masalah hukum WAJIB persetujuan manusia.",
+          "status": "aktif",
+          "task": "Menangani komplain dan pengembalian"
+        },
+        {
+          "authority": "hijau",
+          "code": "CS-07",
+          "mapped_to": "Agent 1 + Agent 13",
+          "notes": "Log di wa-customer-replies-log.md; sesi WA Web RUSAK sejak 19 Nov.",
+          "status": "aktif",
+          "task": "Mengumpulkan masukan customer"
+        }
+      ],
+      "chief": "Chief Customer Experience Agent",
+      "id": "E",
+      "mapped_to": [
+        "a01_asisten.py (Agent 1 Asisten)",
+        "a13_email.py (Agent 13 Email)"
+      ],
+      "name": "Customer Service & Communication",
+      "status": "aktif-sebagian"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "OP-01",
+          "mapped_to": "Agent 6 (database 28 lomba)",
+          "notes": "Hanya lomba GRATIS, AMAN, AI diizinkan.",
+          "status": "aktif",
+          "task": "Mencari lomba tingkat lokal"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-02",
+          "mapped_to": "Agent 6",
+          "notes": "Lomba Puisi Nasional #2 DILEWATI (keputusan Cipta 19 Nov).",
+          "status": "aktif",
+          "task": "Mencari lomba nasional"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-03",
+          "mapped_to": "Agent 6",
+          "notes": "Chroma, AdArena, Guardio, Reichman, Kiroween, BuildHybridAI.",
+          "status": "aktif",
+          "task": "Mencari lomba global/internasional"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-04",
+          "mapped_to": "Agent 6",
+          "notes": "Tenggat dicatat; setelah tutup cek hasil; menang dikawal sampai hadiah CAIR.",
+          "status": "aktif",
+          "task": "Memeriksa syarat dan deadline"
+        },
+        {
+          "authority": "merah",
+          "code": "OP-05",
+          "mapped_to": "Agent 6 + Muse",
+          "notes": "Daftar/kirim lomba HANYA setelah Cipta setuju.",
+          "status": "aktif",
+          "task": "Menyiapkan karya dan dokumen lomba"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-06",
+          "mapped_to": "Agent 14 (MODE PERSIAPAN; tab '14 · Upwork' live di Faable)",
+          "notes": "Akun Upwork BELUM ADA — tertahan cek Cloudflare (butuh Cipta klik sendiri).",
+          "status": "aktif-sebagian",
+          "task": "Mencari pekerjaan di Upwork"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-07",
+          "mapped_to": "Agent 14 (antre setelah Upwork)",
+          "notes": "Fiverr, Freelancer.com, Sribulancer, Projects.co.id, Fastwork antre.",
+          "status": "belum",
+          "task": "Mencari pekerjaan di Fiverr"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-08",
+          "mapped_to": "Agent 14",
+          "notes": "Sama seperti OP-07.",
+          "status": "belum",
+          "task": "Mencari proyek freelance lainnya"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-09",
+          "mapped_to": "Agent 14 (saringan: pembayaran terverifikasi, fixed ≥$50, hourly ≥$10/jam)",
+          "notes": "Tolak unpaid test/crypto.",
+          "status": "aktif",
+          "task": "Menganalisis kesesuaian proyek"
+        },
+        {
+          "authority": "kuning",
+          "code": "OP-10",
+          "mapped_to": "Agent 14 (template-proposal-upwork.md)",
+          "notes": "Semua output DRAF; pengiriman diputuskan Cipta.",
+          "status": "aktif",
+          "task": "Menyiapkan proposal penawaran"
+        },
+        {
+          "authority": "merah",
+          "code": "OP-11",
+          "mapped_to": "Agent 14 + Agent 7",
+          "notes": "Blokir Connects: Cipta tidak punya kartu kredit; jalan dengan 10 Connects gratis/bulan.",
+          "status": "aktif-sebagian",
+          "task": "Memantau status pekerjaan dan pembayaran"
+        }
+      ],
+      "chief": "Chief Opportunity Agent",
+      "id": "F",
+      "mapped_to": [
+        "a06_lomba.py (Agent 6 Lomba)",
+        "a14_upwork.py (Agent 14 Upwork)"
+      ],
+      "name": "Opportunity, Competition & Freelance",
+      "status": "aktif"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "FN-01",
+          "mapped_to": "Agent 7 — data/keuangan_data.json",
+          "notes": "Baseline Rp0/$0 per 18 Nov.",
+          "status": "aktif",
+          "task": "Mencatat pendapatan"
+        },
+        {
+          "authority": "hijau",
+          "code": "FN-02",
+          "mapped_to": "Agent 7",
+          "notes": "Kurs Rp16.500/USD.",
+          "status": "aktif",
+          "task": "Mencatat pengeluaran"
+        },
+        {
+          "authority": "hijau",
+          "code": "FN-03",
+          "mapped_to": "Agent 7",
+          "notes": "Laporan harian/mingguan/bulanan.",
+          "status": "aktif",
+          "task": "Menghitung laba dan rugi"
+        },
+        {
+          "authority": "hijau",
+          "code": "FN-04",
+          "mapped_to": "Agent 7",
+          "notes": "Fokus gratis dulu; token ekstra hanya bila gratis habis.",
+          "status": "aktif",
+          "task": "Mengatur anggaran operasional"
+        },
+        {
+          "authority": "kuning",
+          "code": "FN-05",
+          "mapped_to": "Agent 7",
+          "notes": "Transfer HANYA bila syarat terpenuhi DAN Cipta setuju.",
+          "status": "aktif",
+          "task": "Mengawasi tagihan dan pembayaran"
+        },
+        {
+          "authority": "hijau",
+          "code": "FN-06",
+          "mapped_to": "Agent 7",
+          "notes": "Masuk laporan malam 20:00.",
+          "status": "aktif",
+          "task": "Membuat laporan keuangan"
+        },
+        {
+          "authority": "hijau",
+          "code": "FN-07",
+          "mapped_to": "Agent 7 + Agent 10",
+          "notes": "Video buku Kolam = performa terbaik (203 views).",
+          "status": "aktif",
+          "task": "Menganalisis produk paling menguntungkan"
+        }
+      ],
+      "chief": "Chief Financial Agent",
+      "id": "G",
+      "mapped_to": [
+        "a07_keuangan.py (Agent 7 Keuangan)"
+      ],
+      "name": "Finance & Asset Management",
+      "status": "aktif"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "OPX-01",
+          "mapped_to": "koordinasi.py + rencana pagi 05:00",
+          "notes": "Cron rencana-pagi-0500 DIJEDA 21 Nov 02:49 (STOP).",
+          "status": "aktif-sebagian",
+          "task": "Mengatur tugas seluruh divisi"
+        },
+        {
+          "authority": "hijau",
+          "code": "OPX-02",
+          "mapped_to": "koordinasi.py + data/progres.json",
+          "notes": "Tenggat lomba + BuildHybridAI 1 Des 05:00 WIB.",
+          "status": "aktif",
+          "task": "Mengawasi deadline"
+        },
+        {
+          "authority": "hijau",
+          "code": "OPX-03",
+          "mapped_to": "data/ (JSON, bukan SQL)",
+          "notes": "Database tetap JSON (katalog-lengkap-aplikasi.md, worklist-73.json, produksi_game.json).",
+          "status": "aktif",
+          "task": "Mengelola database produk"
+        },
+        {
+          "authority": "hijau",
+          "code": "OPX-04",
+          "mapped_to": "Agent 11/12 (cek pitch) + skill verify_before_claiming_done",
+          "notes": "Setiap video wajib lulus cek pitch sebelum ke Cipta; setiap demo diverifikasi live sebelum dilaporkan selesai.",
+          "status": "aktif",
+          "task": "Quality Control produk"
+        },
+        {
+          "authority": "hijau",
+          "code": "OPX-05",
+          "mapped_to": "Muse",
+          "notes": "Kunci Firebase bocor sudah dirotasi 20 Nov 06:55.",
+          "status": "aktif",
+          "task": "Memeriksa keamanan sistem"
+        },
+        {
+          "authority": "hijau",
+          "code": "OPX-06",
+          "mapped_to": "Muse (SOP Operasional + SOP Kerja Sama Agent v1.3)",
+          "notes": "Aturan/keputusan dicatat di MEMORY.md + log harian.",
+          "status": "aktif",
+          "task": "Mengelola dokumentasi dan SOP"
+        },
+        {
+          "authority": "kuning",
+          "code": "OPX-07",
+          "mapped_to": "Muse (laporan malam 20:00 PPTX)",
+          "notes": "Cron laporan-malam-2000 DIJEDA 21 Nov 02:49 (STOP).",
+          "status": "aktif-sebagian",
+          "task": "Membuat laporan kinerja seluruh divisi"
+        }
+      ],
+      "chief": "Chief Operations Agent",
+      "id": "H",
+      "mapped_to": [
+        "koordinasi.py (Muse)",
+        "Pusat Komando (Faable, 23 tab)",
+        "a11_oyen.py + a12_momo.py (QC suara)"
+      ],
+      "name": "Operations, Administration & Quality Control",
+      "status": "aktif"
+    }
+  ],
+  "honest_notes": [
+    "Spesifikasi menyebut '32 AI Agent spesialis', tetapi daftar direktorat bila dijumlahkan berisi 62 baris agent (8+9+7+6+7+11+7+7). Pemetaan ini memakai daftar 62.",
+    "Spesifikasi menyebut '8 kanal media', tetapi rincian akunnya 7 akun media (2 IG + 2 TikTok + 2 YT + 1 Threads) + website + toko = 9 aset.",
+    "Sistem TIDAK berjalan otonom 24 jam: 14 agen bersifat pasif dan dijalankan Muse lewat perintah/jadwal; tidak ada layanan independen 24 jam (keputusan: framework CrewAI/LangGraph/AutoGen DITOLAK).",
+    "Integrasi medsos belum penuh: WA Web rusak; Instagram Messages + Threads Messages TERHUBUNG (verifikasi live 21 Nov 03:33); TikTok @meongcast butuh login Cipta sendiri.",
+    "14 cron dijeda 21 Nov 02:49 atas perintah STOP Cipta — status 'aktif-sebagian' di atas mencerminkan kondisi itu.",
+    "Share #17 menyebut '71 Agent Roles' padahal 8 + 62 = 70 — angka 71 tidak cocok dengan rinciannya.",
+    "Paket starter kit (ZIP) yang diklaim ChatGPT TIDAK ada file-nya di sini — yang ada adalah pemetaan ini (agents.json + dokumen + workflows.json + TESTING.md)."
+  ],
+  "source": "Share ChatGPT #16 + #17 — AI BUSINESS AUTONOMOUS AGENT 3.0",
+  "system": "AI Business Autonomous Agent 3.0",
+  "tech_stack": {
+    "automation": "n8n 2.48.5 (lokal, webhook tanpa auth) + Activepieces (terverifikasi, 1.000 kredit)",
+    "backend": "Python (agents/) + Google Apps Script (belum dipakai)",
+    "brain": "Gemini API (free tier via env) + Muse",
+    "dashboard": "Pusat Komando — Faable, 24 tab (incl. 0 · Command Center), https://pusat-komando-972u7.faable.link/",
+    "database": "JSON files (data/) — spesifikasi menyarankan Google Sheets + SQL; belum dipakai"
+  },
+  "starter_kit": {
+    "spec_isi": [
+      "Konfigurasi seluruh Agent",
+      "Database PostgreSQL",
+      "3 workflow n8n",
+      "Dashboard responsif",
+      "Google Apps Script",
+      "SOP dan job description",
+      "Checklist pengujian"
+    ],
+    "adapted": [
+      {
+        "item": "Konfigurasi seluruh Agent",
+        "status": "sudah",
+        "file": "data/agents.json"
+      },
+      {
+        "item": "Database PostgreSQL",
+        "status": "disesuaikan",
+        "file": "data/ (JSON) — tetap JSON: gratis, tanpa server, sudah jalan"
+      },
+      {
+        "item": "3 workflow n8n",
+        "status": "template",
+        "file": "workflows.json — impor ke n8n belum diuji"
+      },
+      {
+        "item": "Dashboard responsif",
+        "status": "sudah",
+        "file": "Pusat Komando (Faable, 24 tab incl. 0 · Command Center)"
+      },
+      {
+        "item": "Google Apps Script",
+        "status": "tidak-dipakai",
+        "file": "Digantikan cron + Muse + Python"
+      },
+      {
+        "item": "SOP dan job description",
+        "status": "sudah",
+        "file": "SOP Operasional + SOP Kerja Sama Agent v1.3 + pemetaan-agen-3.0.md + daftar-agent-ai.md"
+      },
+      {
+        "item": "Checklist pengujian",
+        "status": "sudah",
+        "file": "TESTING.md"
+      }
+    ]
+  },
+  "next_steps_adapted": [
+    {
+      "spec": "1. Instalasi dashboard dan database",
+      "status": "sudah",
+      "us": "Pusat Komando live di Faable (24 tab) + data/ JSON"
+    },
+    {
+      "spec": "2. Hubungkan Google Sheets dan Apps Script",
+      "status": "disesuaikan",
+      "us": "TIDAK dipakai — data tetap JSON (gratis, tanpa server, sudah jalan)"
+    },
+    {
+      "spec": "3. Instalasi n8n dan impor workflow",
+      "status": "belum-diuji",
+      "us": "n8n 2.48.5 lokal sudah ada; workflows.json (3 alur) perlu diimpor + diuji end-to-end"
+    },
+    {
+      "spec": "4. Hubungkan Gemini API",
+      "status": "sudah",
+      "us": "Gemini free tier via env GEMINI_API_KEY; tanpa key jalan mode template"
+    },
+    {
+      "spec": "5. Aktifkan CEO Agent dan 8 direktorat",
+      "status": "sudah",
+      "us": "Muse = CEO; 14 agen = 8 direktorat; tab '0 · Command Center' di Pusat Komando"
+    },
+    {
+      "spec": "6. Uji Approval Center",
+      "status": "sudah",
+      "us": "Approval Center = antrean handoff (status 'diperiksa') + aturan persetujuan Cipta; uji = cek antrean terbuka di tab 0"
+    },
+    {
+      "spec": "7. Hubungkan akun IG/TikTok/YT/Threads/email/website/toko",
+      "status": "sebagian",
+      "us": "Lihat status per agent di atas; IG Messages + Threads Messages TERHUBUNG (21 Nov 03:33); WA Web rusak, TikTok @meongcast butuh login Cipta"
+    }
+  ]
+}
