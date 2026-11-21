@@ -1,7 +1,7 @@
 # ======================================================================
 # BINTANG COMMAND CENTER — Mesin Eksekusi 30 Agent Bintang.
 # Dibuat 21 Nov 2026 atas perintah Cipta ("Bangun mesin eksekusi").
-# Pusat Komando v2.0: 30 Agent Bintang + mesin ini + 14 mesin lama pasif.
+# Pusat Komando v2.0: 30 Agent Bintang + mesin ini + 14 mesin lama (no 1–6 aktif A31–A36, no 7–14 pasif).
 #
 # CARA KERJA (baca dulu — kejujuran wajib):
 # - Mesin ini menjalankan 30 Agent Bintang SAJA (A01–A30). Titik jalan:

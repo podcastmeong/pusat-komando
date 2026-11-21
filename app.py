@@ -562,7 +562,7 @@ def _jalankan_siklus_koord():
 HEADER = """# 🎛️ Pusat Komando Podcast Meong — v2.0
 
 **30 Agent Bintang** (A01–A30) + **Mesin Eksekusi** + **Dashboard Agent** + Command Center + Papan Handoff + bus Koordinasi — berbagi satu folder `data/`, jadi output satu agent
-langsung bisa dipakai agent lain lewat **Papan Handoff** dan **bus Koordinasi**. 14 mesin lama (a01–a14) kini **pasif non-job**: modul + datanya tetap utuh sebagai engine yang dipakai 30 Bintang, tab UI-nya dihapus.
+langsung bisa dipakai agent lain lewat **Papan Handoff** dan **bus Koordinasi**. Mesin lama (a01–a14): no 1–6 **aktif**, diganti nama jadi A31–A36 (Publish, Build, Pertumbuhan, Penerjemah, Ngetik, Copywriter); no 7–14 **pasif non-job**: modul + datanya tetap utuh sebagai engine yang dipakai 30 Bintang, tab UI-nya dihapus.
 
 **Aturan keras (SOP, berlaku 18 Nov 2026):** semua hasil adalah **DRAF** untuk persetujuan
 Cipta · **tidak ada** yang otomatis upload / kirim / transfer / bayar · dilarang mengarang
@@ -682,7 +682,7 @@ def _ringkasan_dashboard_md():
     teks = ("# 📊 Dashboard Pergerakan Agent — Pusat Komando v{}\n\n"
             "**30 Agent Bintang** — ✅ Aktif: **{}** · 🟡 Aktif sebagian: **{}** · "
             "⏸️ Belum jalan: **{}**.\n\n"
-            "🔧 14 mesin lama: **Pasif — non job** (modul + data tetap, dipakai "
+            "🔧 Mesin lama: **{} aktif (A31–A36)** · **{} pasif — non job** (modul + data tetap, dipakai "
             "sebagai engine oleh 30 Bintang).\n\n"
             "📥 Handoff menunggu: **{}** · 📨 Draf penawaran toko: **{}** · "
             "🚧 Pekerjaan terkendala: **{}** · 📝 Entri log aktivitas: **{}**.\n\n"
@@ -690,8 +690,9 @@ def _ringkasan_dashboard_md():
             "data/. Agent yang bekerja lewat Muse tanpa menulis ke data/ tetap tampil "
             "\"belum ada aktivitas\"._").format(
                 VERSI, r["aktif"], r["aktif_sebagian"],
-                r["belum_jalan"], r["handoff_menunggu"],
-                r["penawaran_toko_draf"], r["terkendala"], r["entri_log"])
+                r["belum_jalan"], 14 - r["mesin_pasif"], r["mesin_pasif"],
+                r["handoff_menunggu"], r["penawaran_toko_draf"],
+                r["terkendala"], r["entri_log"])
     try:
         target = DASH.target_harian_dashboard()
         jalan = sum(1 for t in target if t["jalan"])
@@ -874,7 +875,7 @@ def build_app():
                 gr.Markdown(
                     "30 Agent Bintang A01–A30 (Bintang Command Center) — rancangan Share "
                     "ChatGPT #18/#19 + Share Gemini #1, dipetakan ke 14 mesin lama "
-                    "(pasif non-job) + Muse + Pusat Komando. **Agent pasif** (dijalankan "
+                    "(no 1–6 aktif A31–A36, no 7–14 pasif non-job) + Muse + Pusat Komando. **Agent pasif** (dijalankan "
                     "Muse/mesin eksekusi, bukan layanan otonom 24 jam); semua output "
                     "DRAF untuk persetujuan Cipta. Konfigurasi di "
                     "`data/agents.json` (key `agent_30`).")
@@ -898,8 +899,8 @@ def build_app():
                 gr.Markdown(
                     "Pergerakan **30 Agent Bintang** dari data NYATA di "
                     "folder `data/` — bukan angka karangan. Bila kosong tertulis "
-                    "\"belum ada aktivitas\". 14 mesin lama tampil terpisah sebagai "
-                    "\"Pasif — non job\". Umpan aktivitas dibaca dari "
+                    "\"belum ada aktivitas\". Mesin lama tampil terpisah: no 1–6 aktif "
+                    "(A31–A36), no 7–14 \"Pasif — non job\". Umpan aktivitas dibaca dari "
                     "`data/activity_log.json`; modul b01–b30 menulis ke sana tiap kali "
                     "menghasilkan draf.")
                 dash_ringkas = gr.Markdown(_ringkasan_dashboard_md())
@@ -1116,7 +1117,7 @@ def build_app():
 
         gr.Markdown(
             "---\n*Pusat Komando Podcast Meong v2.0 — 30 Agent Bintang + Mesin Eksekusi + Dashboard Agent + Command Center + Papan Handoff + bus Koordinasi, 1 Space, 1 folder data. "
-            "14 mesin lama (a01–a14) pasif non-job: modul + data tetap, dipakai sebagai engine oleh 30 Bintang. "
+            "Mesin lama (a01–a14): no 1–6 aktif A31–A36, no 7–14 pasif non-job: modul + data tetap, dipakai sebagai engine oleh 30 Bintang. "
             "Data di `data/` hilang bila Space di-rebuild — unduh berkala. "
             "SOP Kerja Sama Agent AI berlaku (18 Nov 2026).*")
     return demo
