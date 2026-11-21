@@ -1586,96 +1586,123 @@
   ]
  },
  "versi_pusat_komando": "2.0",
- "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor.",
+ "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif.",
  "agent_lama": {
-  "status": "Pasif — non job",
-  "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang.",
+  "status": "No 1–6 Aktif — diganti nama jadi A31–A36; no 7–14 Pasif — non job",
+  "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang. KOREKSI 22 Nov 2026 (perintah Cipta): dari 14 agent lama, no 1–6 AKTIF dan DIGANTI NAMA jadi A31–A36 (1 Asisten→A31 Publish, 2 Penjualan→A32 Build, 3 Pertumbuhan→A33 Pertumbuhan, 4 Penjualan Harian→A34 Penerjemah, 5 Produksi Produk→A35 Ngetik, 6 Lomba→A36 Copywriter); sisanya no 7–14 tetap Pasif — non job.",
   "agents": [
    {
     "kode": "1",
     "nama": "Asisten",
     "modul": "a01_asisten",
-    "sumber_data": "handoff"
+    "sumber_data": "handoff",
+    "status": "Aktif — diganti nama jadi A31 Publish",
+    "kode_baru": "A31",
+    "nama_baru": "Publish"
    },
    {
     "kode": "2",
     "nama": "Penjualan",
     "modul": "a02_penjualan",
-    "sumber_data": "leads"
+    "sumber_data": "leads",
+    "status": "Aktif — diganti nama jadi A32 Build",
+    "kode_baru": "A32",
+    "nama_baru": "Build"
    },
    {
     "kode": "3",
     "nama": "Pertumbuhan",
     "modul": "a03_pertumbuhan",
-    "sumber_data": "handoff"
+    "sumber_data": "handoff",
+    "status": "Aktif — diganti nama jadi A33 Pertumbuhan",
+    "kode_baru": "A33",
+    "nama_baru": "Pertumbuhan"
    },
    {
     "kode": "4",
     "nama": "Penjualan Harian",
     "modul": "a04_penjualan_harian",
-    "sumber_data": "penjualan_toko"
+    "sumber_data": "penjualan_toko",
+    "status": "Aktif — diganti nama jadi A34 Penerjemah",
+    "kode_baru": "A34",
+    "nama_baru": "Penerjemah"
    },
    {
     "kode": "5",
     "nama": "Produksi Produk",
     "modul": "a05_produksi",
-    "sumber_data": "produksi_game"
+    "sumber_data": "produksi_game",
+    "status": "Aktif — diganti nama jadi A35 Ngetik",
+    "kode_baru": "A35",
+    "nama_baru": "Ngetik"
    },
    {
     "kode": "6",
     "nama": "Lomba",
     "modul": "a06_lomba",
-    "sumber_data": "lomba"
+    "sumber_data": "lomba",
+    "status": "Aktif — diganti nama jadi A36 Copywriter",
+    "kode_baru": "A36",
+    "nama_baru": "Copywriter"
    },
    {
     "kode": "7",
     "nama": "Keuangan",
     "modul": "a07_keuangan",
-    "sumber_data": "keuangan"
+    "sumber_data": "keuangan",
+    "status": "Pasif — non job"
    },
    {
     "kode": "8",
     "nama": "Terjemah Inggris",
     "modul": "a08_terjemah",
-    "sumber_data": "terjemahan"
+    "sumber_data": "terjemahan",
+    "status": "Pasif — non job"
    },
    {
     "kode": "9",
     "nama": "Game & Aplikasi",
     "modul": "a09_game",
-    "sumber_data": "worklist"
+    "sumber_data": "worklist",
+    "status": "Pasif — non job"
    },
    {
     "kode": "10",
     "nama": "Riset Produk",
     "modul": "a10_riset",
-    "sumber_data": "riset"
+    "sumber_data": "riset",
+    "status": "Pasif — non job"
    },
    {
     "kode": "11",
     "nama": "Oyen",
     "modul": "a11_oyen",
-    "sumber_data": "handoff"
+    "sumber_data": "handoff",
+    "status": "Pasif — non job"
    },
    {
     "kode": "12",
     "nama": "Momo",
     "modul": "a12_momo",
-    "sumber_data": "handoff"
+    "sumber_data": "handoff",
+    "status": "Pasif — non job"
    },
    {
     "kode": "13",
     "nama": "Email",
     "modul": "a13_email",
-    "sumber_data": "email"
+    "sumber_data": "email",
+    "status": "Pasif — non job"
    },
    {
     "kode": "14",
     "nama": "Upwork",
     "modul": "a14_upwork",
-    "sumber_data": "upwork"
+    "sumber_data": "upwork",
+    "status": "Pasif — non job"
    }
-  ]
+  ],
+  "catatan": "A31–A33 belum punya modul; A34 (terjemahan) DITUNDA perintah Cipta; A35/A36 punya modul (b35_ngetik.py, b36_copywriter.py). Koreksi 21 Nov 14:23: yang dihitung agent hanya 30 Bintang (A01–A30); A31–A36 adalah kode peran, bukan hitungan agent."
  },
  "sop_harian": {
   "sumber": "Sistem_Operasional_Harian_30_Agent_Bintang.docx (diunggah Cipta, 21 Nov 2026)",

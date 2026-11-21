@@ -172,7 +172,15 @@ class TestDataNyata(unittest.TestCase):
     def test_ringkasan_data_nyata(self):
         r = dashboard.ringkasan_dashboard()
         self.assertEqual(r["total_agent"], 30)
-        self.assertEqual(r["mesin_pasif"], 14)
+        # KOREKSI 22 Nov 2026 (perintah Cipta): agent lama no 1–6 aktif,
+        # diganti nama jadi A31–A36 — mesin pasif tinggal 8 (no 7–14).
+        self.assertEqual(r["mesin_pasif"], 8)
+        rows = {x["kode"]: x for x in dashboard.tabel_semua_agent()}
+        self.assertEqual(rows["1"]["status"],
+                         "Aktif — diganti nama jadi A31 Publish")
+        self.assertEqual(rows["6"]["status"],
+                         "Aktif — diganti nama jadi A36 Copywriter")
+        self.assertEqual(rows["7"]["status"], dashboard.STATUS_PASIF)
         # 21 Nov 2026: 11 penugasan harian 19 Nov diarsipkan (digantikan
         # jadwal mesin v2.0) -> handoff menunggu 0; draf toko 12 -> 9.
         self.assertEqual(r["handoff_menunggu"], 0)
