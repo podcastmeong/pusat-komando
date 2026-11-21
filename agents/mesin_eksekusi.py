@@ -436,6 +436,29 @@ _ALIH_KUNCI = {
     "ringkasan": {"teks": "ringkasan", "nama": "ringkasan", "topik": "ringkasan",
                   "judul": "ringkasan", "pesan": "ringkasan"},
 }
+# ---------------------------------------------------------------------------
+# Dispatch MESIN (bukan agent): Mesin Penjualan + Mesin Pemasaran.
+# Dicatat jujur: FUNGSI_JALAN di atas HANYA memetakan kode agent A01–A30
+# (satu fungsi per agent) — CRM pun TIDAK ada di FUNGSI_JALAN, CRM hanya
+# lewat Tool Registry (baca_crm/simpan_crm). Mesin bukan agent (tidak ada
+# di data/agents.json), jadi tidak bisa dipaksakan masuk FUNGSI_JALAN:
+# jalankan_agent() menolak kode yang bukan agent sebelum dispatch.
+# Karena itu mesin memakai tabel paralel ini + jalankan_mesin(), dengan
+# pola dispatch yang SAMA persis (bangun argumen, cek signature,
+# fallback contoh(), catat run ke log mesin, status "menunggu
+# persetujuan"). Hanya fungsi BACA/RINGKASAN yang dipetakan di sini;
+# fungsi tulis DRAFT (catat_transaksi, buat_kampanye, catat_hasil)
+# tetap lewat Tool Registry (simpan_penjualan/simpan_pemasaran) —
+# sama seperti CRM. Tidak ada pemetaan ke fungsi kirim/bayar
+# (tidak ada juga di kedua mesin).
+# ---------------------------------------------------------------------------
+FUNGSI_MESIN = {
+    "penjualan": ("laporan_pemasukan", ["dari", "sampai"], []),
+    "pemasaran": ("laporan_kampanye", ["kampanye_id"], []),
+}
+_MESIN_MODUL = {"penjualan": "penjualan", "pemasaran": "pemasaran"}
+_MESIN_JUDUL = {"penjualan": "Mesin Penjualan",
+                "pemasaran": "Mesin Pemasaran"}
 
 
 # Nilai default untuk kunci argumen OPSIONAL (bukan wajib). Kunci wajib
@@ -527,6 +550,125 @@ def _panggil_fungsi_jalan(modul, kode, tugas):
         except Exception as e:  # noqa: BLE001
             return None, "gagal", "{}: {}".format(type(e).__name__, e)
     return None, "gagal", "Modul {} tidak punya fungsi jalan maupun contoh().".format(kode)
+
+
+# ---------------------------------------------------------------------------
+# Dispatch MESIN — cermin _bangun_argumen/_panggil_fungsi_jalan di atas,
+# tapi memakai FUNGSI_MESIN (nama mesin, bukan kode agent).
+# ---------------------------------------------------------------------------
+def _bangun_argumen_mesin(nama, tugas):
+    """Bangun daftar argumen posisional untuk fungsi jalan mesin dari
+    dict tugas. Kembalikan None bila kunci wajib tidak tersedia."""
+    if nama not in FUNGSI_MESIN:
+        return None
+    _nama_fungsi, kunci, wajib = FUNGSI_MESIN[nama]
+    isi = dict(tugas or {})
+    for kunci_arg, asal in _ALIH_KUNCI.get("ringkasan", {}).items():
+        if kunci_arg not in isi and isi.get("ringkasan"):
+            isi[kunci_arg] = isi.get("ringkasan")
+    for k in wajib:
+        if isi.get(k) in (None, "", [], {}):
+            return None
+    return [isi.get(k, _DEFAULT_ARG.get(k)) for k in kunci]
+
+
+def _panggil_fungsi_mesin(modul, nama, tugas):
+    """Panggil fungsi jalan mesin. Kembalikan (draf, mode, alasan).
+    mode: 'tugas' atau 'contoh' (fallback — tugas tidak membawa
+    argumen yang cukup)."""
+    nama_fungsi, _kunci, _wajib = FUNGSI_MESIN.get(nama, (None, [], []))
+    if nama_fungsi and hasattr(modul, nama_fungsi):
+        argumen = _bangun_argumen_mesin(nama, tugas)
+        if argumen is not None:
+            fungsi = getattr(modul, nama_fungsi)
+            try:
+                sig = inspect.signature(fungsi)
+                params = [p for p in sig.parameters.values()
+                          if p.kind in (p.POSITIONAL_ONLY,
+                                        p.POSITIONAL_OR_KEYWORD)]
+                wajib_jumlah = sum(1 for p in params
+                                   if p.default is inspect.Parameter.empty)
+                if len(argumen) >= wajib_jumlah:
+                    draf = fungsi(*argumen[:len(params)]) if params else fungsi()
+                    return draf, "tugas", ""
+            except Exception as e:  # noqa: BLE001 — jatuh ke contoh()
+                return None, "gagal", "{}: {}".format(type(e).__name__, e)
+    if hasattr(modul, "contoh"):
+        try:
+            return modul.contoh(), "contoh", (
+                "Tugas tidak membawa argumen yang cukup untuk fungsi {} — "
+                "dijalankan contoh() modul.".format(nama_fungsi or "?"))
+        except Exception as e:  # noqa: BLE001
+            return None, "gagal", "{}: {}".format(type(e).__name__, e)
+    return None, "gagal", "Modul {} tidak punya fungsi jalan maupun contoh().".format(nama)
+
+
+def muat_modul_mesin(nama):
+    """Impor modul agents/<nama>.py (penjualan/pemasaran).
+    Kembalikan (modul, pesan_error)."""
+    if nama not in _MESIN_MODUL:
+        return None, "Mesin {} tidak dikenal.".format(nama)
+    try:
+        return importlib.import_module(_MESIN_MODUL[nama]), None
+    except Exception as e:  # noqa: BLE001
+        return None, "{}: {}".format(type(e).__name__, e)
+
+
+def jalankan_mesin(nama, tugas=None, base=None):
+    """Jalankan SATU mesin (penjualan/pemasaran): panggil fungsi
+    jalan baca/ringkasannya. tugas: dict argumen (boleh None).
+    Kembalikan dict hasil dan catat run ke log mesin + activity log.
+    Output selalu DRAF; mesin TIDAK PERNAH mengirim/membayar."""
+    folder = Path(base) if base else DATA_DIR
+    nama = (nama or "").lower()
+    if nama not in FUNGSI_MESIN:
+        return {"ok": False, "mesin": nama,
+                "alasan": "Mesin {} tidak dikenal (pilih: {}).".format(
+                    nama, ", ".join(sorted(FUNGSI_MESIN)))}
+    kode_log = "MESIN-" + nama
+    modul, err = muat_modul_mesin(nama)
+    if modul is None:
+        _catat_run({"kode_agent": kode_log,
+                    "nama_agent": _MESIN_JUDUL.get(nama, nama),
+                    "tugas": tugas or {}, "mode": "gagal",
+                    "status": "terkendala",
+                    "penyebab": "Modul gagal dimuat: {}".format(err),
+                    "dibutuhkan_dari_cipta": "Perbaiki modul agents/{}.py.".format(
+                        _MESIN_MODUL[nama]),
+                    "draf": None}, base)
+        return {"ok": False, "mesin": nama,
+                "alasan": "Modul gagal dimuat: {}".format(err)}
+    mulai = _waktu_sekarang()
+    draf, mode, alasan = _panggil_fungsi_mesin(modul, nama, tugas)
+    selesai = _waktu_sekarang()
+    if draf is None:
+        _catat_run({"kode_agent": kode_log,
+                    "nama_agent": _MESIN_JUDUL.get(nama, nama),
+                    "tugas": tugas or {}, "mode": mode,
+                    "status": "terkendala",
+                    "penyebab": "Fungsi jalan gagal: {}".format(alasan or "?"),
+                    "dibutuhkan_dari_cipta": "Periksa modul agents/{}.py.".format(
+                        _MESIN_MODUL[nama]),
+                    "draf": None,
+                    "waktu_mulai": mulai, "waktu_selesai": selesai}, base)
+        return {"ok": False, "mesin": nama, "mode": mode, "alasan": alasan}
+    log = _baca_log_mesin(folder)
+    run_id = _id_run_baru(log, kode_log)
+    hasil = _ringkas_draf(draf)
+    _catat_run({"id": run_id, "kode_agent": kode_log,
+                "nama_agent": _MESIN_JUDUL.get(nama, nama),
+                "tugas": tugas or {}, "mode": mode,
+                "status": "menunggu persetujuan",
+                "keputusan": None, "oleh": None,
+                "draf": draf, "hasil": hasil,
+                "waktu_mulai": mulai, "waktu_selesai": selesai}, base)
+    _log_activity(kode_log,
+                  "mesin eksekusi: " + (_MESIN_JUDUL.get(nama, nama) or ""),
+                  hasil,
+                  detail="mode={}; run {}".format(mode, run_id), base=folder)
+    return {"ok": True, "id": run_id, "mesin": nama, "mode": mode,
+            "status": "menunggu persetujuan", "draf": draf,
+            "alasan": alasan}
 
 
 # ---------------------------------------------------------------------------
@@ -882,7 +1024,7 @@ def platform_per_agent(base=None):
 
 
 # ---------------------------------------------------------------------------
-# CLI — python -m agents.mesin_eksekusi [KODE | --antrean | --kpi | --slot [JAM] | --jadwal | --target | --daftar]
+# CLI — python -m agents.mesin_eksekusi [KODE | --mesin NAMA [TUGAS-JSON] | --antrean | --kpi | --slot [JAM] | --jadwal | --target | --daftar]
 # Tanpa argumen: jalankan antrean menunggu (maks 5).
 # ---------------------------------------------------------------------------
 def main(argv=None):
@@ -912,6 +1054,23 @@ def main(argv=None):
         jam = int(args[1]) if len(args) > 1 else None
         print(json.dumps(jalankan_slot(jam, base), ensure_ascii=False, indent=2))
         return 0
+    if args[0] == "--mesin":
+        if len(args) < 2:
+            print(json.dumps(
+                {"ok": False,
+                 "alasan": "Pilih mesin: {}.".format(
+                     ", ".join(sorted(FUNGSI_MESIN)))},
+                ensure_ascii=False, indent=2))
+            return 1
+        tugas_mesin = None
+        if len(args) > 2:
+            try:
+                tugas_mesin = json.loads(" ".join(args[2:]))
+            except ValueError:
+                tugas_mesin = {"ringkasan": " ".join(args[2:])}
+        hasil = jalankan_mesin(args[1], tugas=tugas_mesin, base=base)
+        print(json.dumps(hasil, ensure_ascii=False, indent=2))
+        return 0 if hasil.get("ok") else 1
     kode = args[0].upper()
     tugas = None
     if len(args) > 1:

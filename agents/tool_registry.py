@@ -126,6 +126,19 @@ ALAT_BAWAAN = {
         "kemampuan": ["SAVE"],
         "agen_boleh": ["A25", "A29", "A01", "A02", "A30"],
     },
+    "baca_akuntansi": {
+        "deskripsi": "Baca catatan akuntansi (data/akuntansi.json) — "
+        "entri pemasukan/pengeluaran, laporan keuangan, saldo berjalan "
+        "(READ).",
+        "kemampuan": ["READ"],
+        "agen_boleh": "semua",
+    },
+    "simpan_akuntansi": {
+        "deskripsi": "Catat entri pemasukan/pengeluaran dan ubah status "
+        "entri (SAVE). Hanya mencatat arus kas — tidak memproses uang.",
+        "kemampuan": ["SAVE"],
+        "agen_boleh": ["A29", "A01", "A02", "A30"],
+    },
     "baca_pemasaran": {
         "deskripsi": "Baca kampanye pemasaran (data/pemasaran.json) — "
         "tema, jadwal, hasil like/view/follow (READ).",
@@ -409,6 +422,47 @@ def jalankan_alat(agen, alat, **kwargs):
                         "pesan": pesan}
             return {"ok": False, "agen": agen, "alat": alat,
                     "error": f"aksi simpan_penjualan tidak dikenal: {aksi!r}"}
+        if alat == "baca_akuntansi":
+            import akuntansi
+
+            if kwargs.get("id"):
+                hasil = [x for x in akuntansi.daftar_entri()
+                         if x.get("id") == kwargs["id"]]
+                return {"ok": True, "agen": agen, "alat": alat,
+                        "data": hasil}
+            if kwargs.get("laporan"):
+                return {"ok": True, "agen": agen, "alat": alat,
+                        "data": akuntansi.laporan_keuangan(
+                            dari=kwargs.get("dari"),
+                            sampai=kwargs.get("sampai"))}
+            if kwargs.get("saldo_berjalan"):
+                return {"ok": True, "agen": agen, "alat": alat,
+                        "data": akuntansi.saldo_berjalan(
+                            sampai=kwargs.get("sampai"))}
+            return {"ok": True, "agen": agen, "alat": alat,
+                    "data": akuntansi.daftar_entri(
+                        jenis=kwargs.get("jenis"),
+                        kategori=kwargs.get("kategori"),
+                        dari=kwargs.get("dari"),
+                        sampai=kwargs.get("sampai"),
+                        status=kwargs.get("status"))}
+        if alat == "simpan_akuntansi":
+            import akuntansi
+
+            aksi = kwargs.get("aksi", "catat")
+            if aksi == "catat":
+                ok, pesan = akuntansi.catat_entri(
+                    kwargs.get("entri", {}))
+                return {"ok": bool(ok), "agen": agen, "alat": alat,
+                        "pesan": pesan}
+            if aksi == "ubah_status":
+                ok, pesan = akuntansi.ubah_status_entri(
+                    kwargs["id"], kwargs["status"],
+                    kwargs.get("catatan", ""))
+                return {"ok": bool(ok), "agen": agen, "alat": alat,
+                        "pesan": pesan}
+            return {"ok": False, "agen": agen, "alat": alat,
+                    "error": f"aksi simpan_akuntansi tidak dikenal: {aksi!r}"}
         if alat == "baca_pemasaran":
             import pemasaran
 
