@@ -20,10 +20,12 @@ Publish ada **DUA sifat**:
 
 1. **UMUM (seperti produk): persetujuan ada di Muse.** Selama bagus, OK
    saja, boleh publish. Contoh: produk toko, aplikasi/game demo, katalog,
-   halaman riset/panduan yang sifatnya umum dan bukan rahasia.
+   halaman panduan yang sifatnya umum dan bukan rahasia.
 2. **TIDAK BOLEH dipublish: dapur (cara kerja internal) atau rahasia
    perusahaan.** Contoh: cara kerja mesin/agent, kredensial, data
    pelanggan, harga beli/modal internal, strategi yang belum diputuskan.
+   **Keputusan Cipta 21 Nov 2026 20:09: laporan riset dan laporan
+   strategi adalah RAHASIA — TIDAK BOLEH dipublish.**
 
 **Pengecualian yang TETAP berlaku (lebih ketat dari sifat UMUM):**
 video/sosmed tetap butuh persetujuan Cipta atas isi persisnya
