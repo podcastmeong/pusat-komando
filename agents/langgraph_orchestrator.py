@@ -25,6 +25,12 @@
 #     dicatat ke memori bersama) — TIDAK diam, TIDAK mengarang hasil.
 #   - Semua langkah dicatat ke memori_bersama (riwayat_tugas) + hasil
 #     akhir disimpan (jenis "langgraph_hasil").
+#   - MODE BACA-SAja (default, aktivasi 21 Nov 2026): LLM hanya boleh
+#     memakai alat BACA (READ_ONLY_ALAT). Alat tulis (tulis_file,
+#     tulis_json, simpan_*, catat_tugas) TIDAK ditawarkan ke LLM —
+#     pencatatan tetap dilakukan orchestrator sendiri. Mode penuh
+#     (--no-read-only) hanya untuk agen yang sudah lolos bukti
+#     baca-saja, dan tetap DRAF-only + DAFTAR_TERLARANG.
 #
 # CARA PAKAI:
 #   from agents.langgraph_orchestrator import jalankan_tugas_agen
@@ -65,6 +71,38 @@ import tool_registry as REGISTRY
 MAKS_LANGKAH = 10
 VERSI = "4.0-langgraph"
 
+# MODE BACA-SAja (aktivasi 21 Nov 2026, perintah Cipta "1234 eksekusi"):
+# alat yang BOLEH ditawarkan ke LLM bila read_only=True. Hanya alat
+# baca + handoff (meneruskan data, bukan mengeksekusi). simpan_memori,
+# catat_tugas, dan semua tulis_*/simpan_* TIDAK termasuk — pencatatan
+# dilakukan orchestrator sendiri, bukan oleh LLM.
+READ_ONLY_ALAT = {
+    "baca_file", "baca_json", "baca_memori", "baca_crm",
+    "baca_penjualan", "baca_akuntansi", "baca_pemasaran",
+    "baca_harga_kompetitor", "handoff",
+}
+
+# Tugas aktivasi read-only, urutan A06 -> A10 -> A07 -> A25
+# (rencana lama; dieksekusi 21 Nov 2026). Semua tugas HANYA baca +
+# susun ringkasan DRAF; "belum cukup data" bila data kurang.
+TUGAS_AKTIVASI_READONLY = [
+    ("A06", "Riset pasar (BACA SAJA): baca memori riset pasar + file "
+            "riset yang ada, lalu susun ringkasan DRAF: segmen pelanggan, "
+            "kebutuhan, dan masalah yang paling sering muncul. Bila data "
+            "kurang, tulis 'belum cukup data' — jangan mengarang."),
+    ("A10", "Validasi produk (BACA SAJA): baca memori produk + katalog "
+            "yang ada, lalu susun ringkasan DRAF: produk mana yang paling "
+            "siap dijual dan apa yang masih kurang. Bila data kurang, "
+            "tulis 'belum cukup data' — jangan mengarang."),
+    ("A07", "Pantau tren (BACA SAJA): baca memori tren + riset yang ada, "
+            "lalu susun ringkasan DRAF: tren minggu ini yang relevan "
+            "dengan produk toko. Bila data kurang, tulis 'belum cukup "
+            "data' — jangan mengarang."),
+    ("A25", "Baca CRM saja (BACA SAJA — jangan ubah apa pun): baca data "
+            "CRM penjualan, lalu susun ringkasan DRAF: jumlah kontak per "
+            "status dan siapa yang perlu follow-up. Hanya baca."),
+]
+
 # Alat yang TIDAK ditawarkan ke LLM di dalam graf (dipakai orchestrator
 # sendiri, atau akan membuat panggilan LLM bersarang yang mubazir):
 #   - panggil_llm: node "pikir" SUDAH memanggil LLM lewat gateway.
@@ -100,6 +138,7 @@ class StateGraf(TypedDict):
     error: str
     status: str
     keputusan: dict
+    read_only: bool
 
 
 def _kategori_harga_kompetitor():
@@ -123,12 +162,15 @@ def _kategori_harga_kompetitor():
         return []
 
 
-def _alat_diizinkan(agen):
+def _alat_diizinkan(agen, read_only=False):
     """Daftar alat yang BOLEH dipakai agen ini (registry, fail-closed),
-    minus alat internal orchestrator. Kembalikan list dict nama+deskripsi."""
+    minus alat internal orchestrator. Bila read_only=True, hanya alat
+    di READ_ONLY_ALAT yang ditawarkan (tulis/simpan tidak ada)."""
     hasil = []
     for nama, info in REGISTRY.daftar_alat().items():
         if nama in ALAT_INTERNAL:
+            continue
+        if read_only and nama not in READ_ONLY_ALAT:
             continue
         if REGISTRY.cek_izin(agen, nama):
             argumen = ARGUMEN_ALAT.get(nama, "argumen: {}")
@@ -174,13 +216,22 @@ def _riwayat_teks(langkah):
     return "\n".join(baris)
 
 
-def _prompt_pikir(agen, tugas, alat, langkah):
+def _prompt_pikir(agen, tugas, alat, langkah, read_only=False):
     """Prompt ReAct untuk node pikir: putuskan SATU aksi berikutnya
     atau nyatakan tugas selesai. Jawaban WAJIB JSON saja."""
+    mode = (
+        "MODE BACA-SAja: kamu HANYA boleh membaca data dan menyusun "
+        "ringkasan DRAF. Kamu TIDAK BISA menulis file, menyimpan, "
+        "mengirim, membayar, atau mempublikasi apa pun.\n\n"
+        if read_only else
+        "MODE PENUH (DRAF-only): hasil tetap DRAF untuk persetujuan "
+        "Cipta — jangan janjikan sudah dikirim/dipublikasikan.\n\n"
+    )
     return (
         "Kamu adalah agen {agen} di Pusat Komando (BINTANG COMMAND "
         "CENTER 4.0). Kerjakan tugas ini sendiri, selangkah demi "
         "selangkah, memakai alat yang diizinkan.\n\n"
+        "{mode}"
         "TUGAS: {tugas}\n\n"
         "ALAT YANG BOLEH DIPAKAI (hanya ini — jangan pakai alat lain):\n"
         "{daftar_alat}\n\n"
@@ -200,8 +251,12 @@ def _prompt_pikir(agen, tugas, alat, langkah):
         "atau dipublikasikan (kamu TIDAK BISA mengirim/mempublikasi).\n"
         "6. Jangan minta alat kirim/bayar/publikasi/submit/upload/hapus "
         "— alat itu tidak ada dan akan DITOLAK.\n"
+        "7. JANGAN ulangi alat + argumen yang sudah dipakai di langkah "
+        "sebelumnya — bila sudah dibaca, pakai hasilnya atau nyatakan "
+        "selesai. Pengulangan akan DITOLAK.\n"
     ).format(
         agen=agen,
+        mode=mode,
         tugas=tugas,
         daftar_alat=_teks_alat(alat),
         riwayat=_riwayat_teks(langkah),
@@ -237,8 +292,9 @@ def _node_pikir(state):
     if state["langkah_ke"] >= MAKS_LANGKAH:
         return {"selesai": True, "status": "batas_langkah",
                 "error": "Batas langkah ({}) tercapai.".format(MAKS_LANGKAH)}
-    alat = _alat_diizinkan(agen)
-    prompt = _prompt_pikir(agen, state["tugas"], alat, state["langkah"])
+    alat = _alat_diizinkan(agen, read_only=state.get("read_only", True))
+    prompt = _prompt_pikir(agen, state["tugas"], alat, state["langkah"],
+                           read_only=state.get("read_only", True))
     # Coba maks 2x: jawaban LLM kadang bukan JSON (teks penjelasan) —
     # percobaan ke-2 diingatkan lebih tegas. Bila tetap bukan JSON,
     # gagal terstruktur (bukan mengarang keputusan).
@@ -299,9 +355,29 @@ def _node_aksi(state):
         argumen = {}
     alasan = str(keputusan.get("alasan", ""))[:300]
 
+    # Lapis 0 — penjaga pengulangan (masalah panduan #4): alat +
+    # argumen yang sama sudah dipakai di langkah sebelumnya -> tolak
+    # supaya LLM tidak mengulang baca yang sama sampai batas langkah.
+    sudah_dipakai = any(
+        lg.get("aksi") == alat
+        and json.dumps(lg.get("argumen") or {}, sort_keys=True,
+                       ensure_ascii=False)
+        == json.dumps(argumen, sort_keys=True, ensure_ascii=False)
+        for lg in state.get("langkah", [])
+    )
+    if sudah_dipakai:
+        hasil_alat = {
+            "ok": False,
+            "error": "DITOLAK oleh orchestrator: alat {!r} dengan argumen "
+                     "yang sama sudah dipakai di langkah sebelumnya. "
+                     "Pakai hasil yang sudah ada, pakai alat lain, atau "
+                     "nyatakan selesai.".format(alat),
+        }
     # Lapis 1 — pra-cek kata terlarang + alat tidak dikenal.
     rendah = alat.lower()
-    if any(k in rendah for k in REGISTRY.DAFTAR_TERLARANG):
+    if sudah_dipakai:
+        pass  # hasil_alat sudah berisi penolakan pengulangan di atas
+    elif any(k in rendah for k in REGISTRY.DAFTAR_TERLARANG):
         hasil_alat = {
             "ok": False,
             "error": "DITOLAK oleh orchestrator: alat {!r} mengandung "
@@ -385,9 +461,10 @@ def _bangun_graf():
 # Runner
 # ----------------------------------------------------------------------
 def jalankan_tugas_agen(agen, tugas, maks_langkah=MAKS_LANGKAH,
-                        catat=True):
+                        catat=True, read_only=True):
     """Jalankan SATU tugas untuk SATU agen lewat graf LangGraph.
 
+    read_only=True (default): LLM hanya boleh memakai alat BACA.
     Kembalikan dict hasil akhir (ok/status/langkah/hasil_akhir/error).
     Hasil akhir + status dicatat ke memori_bersama bila catat=True.
     """
@@ -406,6 +483,7 @@ def jalankan_tugas_agen(agen, tugas, maks_langkah=MAKS_LANGKAH,
             "error": "",
             "status": "berjalan",
             "keputusan": {},
+            "read_only": bool(read_only),
         }
         akhir = graf.invoke(awal)
     finally:
@@ -424,6 +502,7 @@ def jalankan_tugas_agen(agen, tugas, maks_langkah=MAKS_LANGKAH,
         "status": status,
         "agen": akhir["agen"],
         "tugas": akhir["tugas"],
+        "mode": "read-only" if read_only else "penuh",
         "langkah": akhir["langkah"],
         "jumlah_langkah": akhir["langkah_ke"],
         "hasil_akhir": akhir.get("hasil_akhir", ""),
@@ -438,6 +517,7 @@ def jalankan_tugas_agen(agen, tugas, maks_langkah=MAKS_LANGKAH,
                     akhir["agen"],
                     akhir["tugas"][:60].lower().replace(" ", "-")),
                 {"tugas": akhir["tugas"], "status": status,
+                 "mode": hasil["mode"],
                  "jumlah_langkah": akhir["langkah_ke"],
                  "hasil_akhir": hasil["hasil_akhir"],
                  "error": hasil["error"],
@@ -469,6 +549,31 @@ def jalankan_contoh_a09():
     )
 
 
+def jalankan_aktivasi_readonly():
+    """Aktivasi LangGraph read-only untuk A06 -> A10 -> A07 -> A25.
+
+    Perintah Cipta 21 Nov 2026 ("1234 eksekusi"). Satu tugas baca-saja
+    per agen, berurutan; berhenti di agen pertama yang gagal (ok=False)
+    supaya kegagalan terlihat, bukan ditutup-tutupi. Kembalikan dict
+    ringkasan per agen + status keseluruhan."""
+    ringkasan = {"ok": True, "mode": "read-only", "agen": []}
+    for kode, tugas in TUGAS_AKTIVASI_READONLY:
+        hasil = jalankan_tugas_agen(kode, tugas, read_only=True)
+        ringkasan["agen"].append({
+            "kode": kode,
+            "ok": hasil["ok"],
+            "status": hasil["status"],
+            "jumlah_langkah": hasil["jumlah_langkah"],
+            "hasil_akhir": hasil["hasil_akhir"][:500],
+            "error": hasil["error"][:300],
+        })
+        if not hasil["ok"]:
+            ringkasan["ok"] = False
+            ringkasan["berhenti_di"] = kode
+            break
+    return ringkasan
+
+
 def info():
     """Metadata modul (untuk tes + tab Pusat Komando)."""
     try:
@@ -496,20 +601,43 @@ def main(argv=None):
     parser.add_argument("--maks-langkah", type=int, default=MAKS_LANGKAH)
     parser.add_argument("--contoh-a09", action="store_true",
                         help="jalankan bukti A09 (riset 3 harga kompetitor)")
+    parser.add_argument("--aktivasi-readonly", action="store_true",
+                        help="jalankan aktivasi read-only A06->A10->A07->A25")
+    parser.add_argument("--read-only", dest="read_only",
+                        action="store_true", default=True,
+                        help="mode baca-saja (default)")
+    parser.add_argument("--no-read-only", dest="read_only",
+                        action="store_false",
+                        help="mode penuh (DRAF-only; hanya bila sudah "
+                             "lolos bukti baca-saja)")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args(argv)
 
+    if args.aktivasi_readonly:
+        ringkasan = jalankan_aktivasi_readonly()
+        if args.json:
+            print(json.dumps(ringkasan, ensure_ascii=False, indent=2))
+        else:
+            print("Aktivasi read-only A06->A10->A07->A25: "
+                  "{}".format("OK" if ringkasan["ok"] else "BERHENTI"))
+            for a in ringkasan["agen"]:
+                print("  {}: {} | langkah {} | {}".format(
+                    a["kode"], a["status"], a["jumlah_langkah"],
+                    (a["hasil_akhir"] or a["error"] or "-")[:200]))
+        return 0 if ringkasan["ok"] else 1
     if args.contoh_a09:
         hasil = jalankan_contoh_a09()
     else:
         if not args.tugas.strip():
             parser.error("--tugas wajib diisi (atau pakai --contoh-a09)")
         hasil = jalankan_tugas_agen(args.agen, args.tugas,
-                                    maks_langkah=args.maks_langkah)
+                                    maks_langkah=args.maks_langkah,
+                                    read_only=args.read_only)
     if args.json:
         print(json.dumps(hasil, ensure_ascii=False, indent=2))
     else:
-        print("Agen: {} | Tugas: {}".format(hasil["agen"], hasil["tugas"]))
+        print("Agen: {} | Tugas: {} | Mode: {}".format(
+            hasil["agen"], hasil["tugas"], hasil["mode"]))
         print("Status: {} | Langkah: {}".format(
             hasil["status"], hasil["jumlah_langkah"]))
         for lg in hasil["langkah"]:
