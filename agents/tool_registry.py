@@ -114,6 +114,31 @@ ALAT_BAWAAN = {
         "kemampuan": ["SAVE"],
         "agen_boleh": ["A25", "A26", "A01", "A02", "A05", "A30"],
     },
+    "baca_penjualan": {
+        "deskripsi": "Baca catatan penjualan (data/penjualan.json) — "
+        "transaksi, target, laporan pemasukan (READ).",
+        "kemampuan": ["READ"],
+        "agen_boleh": "semua",
+    },
+    "simpan_penjualan": {
+        "deskripsi": "Catat transaksi dan target penjualan (SAVE). "
+        "Hanya mencatat pemasukan — tidak memproses uang.",
+        "kemampuan": ["SAVE"],
+        "agen_boleh": ["A25", "A29", "A01", "A02", "A30"],
+    },
+    "baca_pemasaran": {
+        "deskripsi": "Baca kampanye pemasaran (data/pemasaran.json) — "
+        "tema, jadwal, hasil like/view/follow (READ).",
+        "kemampuan": ["READ"],
+        "agen_boleh": "semua",
+    },
+    "simpan_pemasaran": {
+        "deskripsi": "Buat kampanye dan catat hasil pemasaran (SAVE). "
+        "Hanya mencatat rencana dan hasil — tidak menayangkan apa pun.",
+        "kemampuan": ["SAVE"],
+        "agen_boleh": ["A20", "A21", "A22", "A23", "A24", "A01", "A02",
+                       "A30"],
+    },
     "handoff": {
         "deskripsi": "Teruskan hasil tugas ke agen berikutnya "
         "(HANDOFF). Hanya meneruskan data, bukan mengeksekusi.",
@@ -342,6 +367,86 @@ def jalankan_alat(agen, alat, **kwargs):
                         "pesan": pesan}
             return {"ok": False, "agen": agen, "alat": alat,
                     "error": f"aksi simpan_crm tidak dikenal: {aksi!r}"}
+        if alat == "baca_penjualan":
+            import penjualan
+
+            if kwargs.get("id"):
+                hasil = [t for t in penjualan.daftar_transaksi()
+                         if t.get("id") == kwargs["id"]]
+                return {"ok": True, "agen": agen, "alat": alat,
+                        "data": hasil}
+            if kwargs.get("laporan"):
+                return {"ok": True, "agen": agen, "alat": alat,
+                        "data": penjualan.laporan_pemasukan(
+                            dari=kwargs.get("dari"),
+                            sampai=kwargs.get("sampai"))}
+            return {"ok": True, "agen": agen, "alat": alat,
+                    "data": penjualan.daftar_transaksi(
+                        produk=kwargs.get("produk"),
+                        platform=kwargs.get("platform"),
+                        dari=kwargs.get("dari"),
+                        sampai=kwargs.get("sampai"),
+                        status=kwargs.get("status"))}
+        if alat == "simpan_penjualan":
+            import penjualan
+
+            aksi = kwargs.get("aksi", "catat")
+            if aksi == "catat":
+                ok, pesan = penjualan.catat_transaksi(
+                    kwargs.get("transaksi", {}))
+                return {"ok": bool(ok), "agen": agen, "alat": alat,
+                        "pesan": pesan}
+            if aksi == "ubah_status":
+                ok, pesan = penjualan.ubah_status_transaksi(
+                    kwargs["id"], kwargs["status"],
+                    kwargs.get("catatan", ""))
+                return {"ok": bool(ok), "agen": agen, "alat": alat,
+                        "pesan": pesan}
+            if aksi == "target":
+                ok, pesan = penjualan.atur_target(
+                    kwargs.get("target", {}))
+                return {"ok": bool(ok), "agen": agen, "alat": alat,
+                        "pesan": pesan}
+            return {"ok": False, "agen": agen, "alat": alat,
+                    "error": f"aksi simpan_penjualan tidak dikenal: {aksi!r}"}
+        if alat == "baca_pemasaran":
+            import pemasaran
+
+            if kwargs.get("id"):
+                hasil = [k for k in pemasaran.daftar_kampanye()
+                         if k.get("id") == kwargs["id"]]
+                return {"ok": True, "agen": agen, "alat": alat,
+                        "data": hasil}
+            if kwargs.get("laporan"):
+                return {"ok": True, "agen": agen, "alat": alat,
+                        "data": pemasaran.laporan_kampanye(
+                            kampanye_id=kwargs.get("kampanye_id"))}
+            return {"ok": True, "agen": agen, "alat": alat,
+                    "data": pemasaran.daftar_kampanye(
+                        status=kwargs.get("status"),
+                        agen=kwargs.get("agen"))}
+        if alat == "simpan_pemasaran":
+            import pemasaran
+
+            aksi = kwargs.get("aksi", "buat")
+            if aksi == "buat":
+                ok, pesan = pemasaran.buat_kampanye(
+                    kwargs.get("kampanye", {}))
+                return {"ok": bool(ok), "agen": agen, "alat": alat,
+                        "pesan": pesan}
+            if aksi == "ubah_status":
+                ok, pesan = pemasaran.ubah_status_kampanye(
+                    kwargs["id"], kwargs["status"],
+                    kwargs.get("catatan", ""))
+                return {"ok": bool(ok), "agen": agen, "alat": alat,
+                        "pesan": pesan}
+            if aksi == "hasil":
+                ok, pesan = pemasaran.catat_hasil(
+                    kwargs.get("hasil", {}))
+                return {"ok": bool(ok), "agen": agen, "alat": alat,
+                        "pesan": pesan}
+            return {"ok": False, "agen": agen, "alat": alat,
+                    "error": f"aksi simpan_pemasaran tidak dikenal: {aksi!r}"}
         if alat == "handoff":
             return {"ok": True, "agen": agen, "alat": alat,
                     "lanjut_ke": kwargs.get("lanjut_ke"),
