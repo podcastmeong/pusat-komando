@@ -8,7 +8,7 @@
 #   FUNGSI INTI tiap modul b01–b30 (bukan sekadar contoh()) — setiap
 #   eksekusi memanggil fungsi kerja nyata sesuai job description agent
 #   (mis. A06 buat_brief_riset, A11 buat_naskah_video, A25
-#   buat_draf_penawaran, A28 nilai_peluang_draf), dengan argumen dari
+#   buat_draf_penawaran, A28 jalankan), dengan argumen dari
 #   tugas antrean. Bila tugas tidak membawa argumen yang cukup, mesin
 #   memanggil contoh() modul itu dan MENCATAT mode="contoh" di log —
 #   tidak pernah mengaku sudah mengerjakan isi tugas.
@@ -427,7 +427,7 @@ FUNGSI_JALAN = {
     "A25": ("buat_draf_penawaran", ["nama_toko", "produk", "observasi"], ["nama_toko"]),
     "A26": ("buat_draf_balasan", ["pesan", "topik"], ["pesan"]),
     "A27": ("buat_draf_triase", ["email"], ["email"]),
-    "A28": ("nilai_peluang_draf", ["teks", "nama"], ["teks"]),
+    "A28": ("jalankan", [], []),
     "A29": ("format_laporan", ["pendapatan", "pengeluaran"], ["pendapatan", "pengeluaran"]),
     "A30": ("buat_kerangka_sop", ["judul", "langkah"], ["judul"]),
 }
@@ -511,9 +511,6 @@ def _bangun_argumen(kode, tugas):
     if kode == "A02" and "jadwal" not in isi and isi.get("ringkasan"):
         isi["jadwal"] = [{"judul": str(isi["ringkasan"])[:100],
                           "penanggung_jawab": isi.get("penanggung_jawab", kode)}]
-    # A28: "nama" peluang dari jenis tugas bila tidak disebut.
-    if kode == "A28" and not isi.get("nama"):
-        isi["nama"] = str(isi.get("jenis") or "Peluang")[:80]
     for k in wajib:
         if isi.get(k) in (None, "", [], {}):
             return None
