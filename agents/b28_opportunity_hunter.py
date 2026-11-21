@@ -27,6 +27,14 @@ SKILL BARU 21 Nov 2026 (perintah Cipta "Semuanya"):
   "dukungan" (lihat DUKUNGAN_PER_JENIS); semua draf tersimpan di
   data/draf_sribu.json + memori bersama (jenis "sribu_draf") sehingga agen
   mana pun bisa membaca + membantu. A26 (Customer Service) bila perlu.
+- INFO DULU (perintah Cipta 21 Nov 2026 19:41: "Klo ada lowongan iya info
+  dulu"): setiap lowongan COCOK yang baru dibuat drafnya DITANDAI
+  info_cipta=True dan DITONJOLKAN di awal ringkasan jalankan() — Muse yang
+  menjalankan engine WAJIB mengabari Cipta di chat SEBELUM langkah lain,
+  lalu tandai_diinfo(). Bila Cipta menerima lowongan itu, tandai_diterima().
+  Telegram/n8n BELUM AKTIF (21 Nov) — untuk sekarang info lewat hasil run
+  engine + memori, BUKAN Telegram; alihkan ke Telegram setelah n8n aktif
+  (langkah lanjutan, bukan bagian alur ini).
 
 SKILL BARU 21 Nov 2026 — lanjutan (tinjauan peninjau skill):
 - Tarif pasar riset 2026 untuk 3 jasa baru (lihat TARIF_PASAR_RISET_2026):
@@ -663,6 +671,7 @@ def _simpan_draf(draf):
     draf = dict(draf)
     draf.setdefault("status", "draf")
     draf.setdefault("butuh_persetujuan", True)
+    draf.setdefault("info_cipta", False)
     draf.setdefault("tanggal", date.today().isoformat())
     draf.setdefault("dukungan",
                     DUKUNGAN_PER_JENIS.get(draf.get("jenis"), DUKUNGAN_UMUM))
@@ -727,19 +736,21 @@ def draf_dari_lowongan(lowongan):
             "lowongan_tautan": tautan, "jenis": jenis, "teks": teks,
             "evaluasi": "cocok", "tanggal": date.today().isoformat(),
             "status": "draf", "butuh_persetujuan": True,
+            "info_cipta": True,
             "skor": penilaian["skor"],
             "dukungan": DUKUNGAN_PER_JENIS.get(jenis, DUKUNGAN_UMUM),
-            "catatan": "DRAF — wajib diperiksa dan disetujui Cipta sebelum dipakai/dikirim."}
+            "catatan": "DRAF — wajib diperiksa dan disetujui Cipta sebelum dipakai/dikirim. INFO DULU: kabari Cipta tentang lowongan ini sebelum langkah lain."}
     _simpan_draf(draf)
     return {"status": "draf", "draf": draf, "penilaian": penilaian}
 
 
-def daftar_draf():
+def daftar_draf(status=None):
     """Daftar semua draf Sribu yang tersimpan (data/draf_sribu.json + memori).
 
     Gabung keduanya berdasarkan id; bila satu sumber hilang, sumber lain
     tetap dipakai supaya draf tidak hilang/lupa. Kembalikan list dict
-    (diurutkan berdasarkan id)."""
+    (diurutkan berdasarkan id). status: bila diisi (mis. "draf" atau
+    "diterima"), hanya draf dengan status itu yang dikembalikan."""
     gabung = {}
     for d in _muat_json(_file_draf_sribu(), []):
         if isinstance(d, dict) and d.get("id"):
@@ -752,7 +763,65 @@ def daftar_draf():
                     gabung.setdefault(nilai["id"], nilai)
         except Exception:
             pass
-    return [gabung[k] for k in sorted(gabung)]
+    semua = [gabung[k] for k in sorted(gabung)]
+    if status is not None:
+        semua = [d for d in semua if d.get("status") == status]
+    return semua
+
+
+def daftar_perlu_info():
+    """Draf lowongan COCOK yang baru dan BELUM diinfo ke Cipta.
+
+    Yaitu draf dengan info_cipta=True. Muse yang menjalankan engine WAJIB
+    mengabari Cipta tentang draf ini di chat SEBELUM langkah lain, lalu
+    tandai_diinfo(). Draf lama (tanpa field info_cipta) dianggap sudah
+    diinfo — tidak masuk daftar ini."""
+    return [d for d in daftar_draf() if d.get("info_cipta") is True]
+
+
+def daftar_diterima():
+    """Draf lowongan yang sudah DITERIMA Cipta (status 'diterima')."""
+    return daftar_draf(status="diterima")
+
+
+def tandai_diinfo(draf_id):
+    """Tandai draf sudah diinfo ke Cipta (info_cipta=False).
+
+    Dipanggil Muse SETELAH mengabari Cipta di chat tentang lowongan itu.
+    Kembalikan {"ok": True, "draf": ...} atau {"ok": False, "alasan": ...}.
+    Hanya mencatat — tidak mengirim apa pun."""
+    for d in daftar_draf():
+        if d.get("id") == draf_id:
+            d = dict(d)
+            d["info_cipta"] = False
+            d["diinfo_tanggal"] = date.today().isoformat()
+            _simpan_draf(d)
+            return {"ok": True, "draf": d}
+    return {"ok": False, "alasan": "Draf {} tidak ditemukan.".format(draf_id)}
+
+
+def tandai_diterima(draf_id, catatan=""):
+    """Tandai lowongan DITERIMA Cipta (status draf menjadi 'diterima').
+
+    Dipanggil HANYA setelah Cipta menyetujui/menerima lowongan itu.
+    Draf arsip (evaluasi bukan 'cocok') TIDAK bisa ditandai diterima.
+    Hanya mencatat — tidak mengirim, tidak membayar, tidak menghubungi
+    siapa pun. Kembalikan {"ok": True, "draf": ...} atau
+    {"ok": False, "alasan": ...}."""
+    for d in daftar_draf():
+        if d.get("id") == draf_id:
+            if d.get("evaluasi") != "cocok":
+                return {"ok": False,
+                        "alasan": "Draf {} arsip (evaluasi: {}) — bukan lowongan cocok, jangan ditandai diterima.".format(
+                            draf_id, d.get("evaluasi"))}
+            d = dict(d)
+            d["status"] = "diterima"
+            d["info_cipta"] = False
+            d["diterima_tanggal"] = date.today().isoformat()
+            d["diterima_catatan"] = str(catatan or "")
+            _simpan_draf(d)
+            return {"ok": True, "draf": d}
+    return {"ok": False, "alasan": "Draf {} tidak ditemukan.".format(draf_id)}
 
 
 def daftarkan_draf_5():
@@ -782,10 +851,32 @@ def jalankan():
     except Exception:
         drafs = []
     try:
+        perlu_info = daftar_perlu_info()
+    except Exception:
+        perlu_info = []
+    try:
+        diterima = daftar_diterima()
+    except Exception:
+        diterima = []
+    try:
         simpan_status_sribu(status)
     except Exception:
         pass
-    ringkasan = ("A28 Sribu {}: login {}; profil {}% (Step 2 gig {}; Step 3 pembayaran {}; kurasi {}); "
+    # INFO DULU (perintah Cipta 21 Nov 2026 19:41): peringatan di AWAL
+    # ringkasan supaya terlihat juga di hasil ringkas engine (120 karakter
+    # pertama) dan di memori. Muse yang menjalankan engine WAJIB mengabari
+    # Cipta tentang draf ini di chat SEBELUM langkah lain.
+    peringatan = ""
+    if perlu_info:
+        peringatan = ("PERLU INFO KE CIPTA: {} lowongan cocok baru ({}) — "
+                      "kabari Cipta dulu sebelum langkah lain. ".format(
+                          len(perlu_info),
+                          ", ".join(d.get("id", "?") for d in perlu_info)))
+    if diterima:
+        peringatan += ("DITERIMA: {} ({}). ".format(
+            len(diterima), ", ".join(d.get("id", "?") for d in diterima)))
+    ringkasan = (peringatan +
+                 "A28 Sribu {}: login {}; profil {}% (Step 2 gig {}; Step 3 pembayaran {}; kurasi {}); "
                  "lowongan buka hari ini {}; draf tersimpan {} ({} cocok, {} arsip tidak cocok). "
                  "Semua draf menunggu persetujuan Cipta — tidak ada yang dikirim.".format(
                      date.today().isoformat(),
@@ -798,8 +889,16 @@ def jalankan():
                      len(drafs),
                      sum(1 for d in drafs if d.get("evaluasi") == "cocok"),
                      sum(1 for d in drafs if d.get("evaluasi") != "cocok")))
+    if perlu_info:
+        ringkasan += (" Lowongan baru yang perlu diinfo ke Cipta: " +
+                      "; ".join("{} — {} (dukungan: {})".format(
+                          d.get("id", "?"), d.get("judul", "?"),
+                          ", ".join(d.get("dukungan") or []))
+                          for d in perlu_info))
     log = {"tanggal": date.today().isoformat(), "agent": KODE,
            "ringkasan": ringkasan, "jumlah_draf": len(drafs),
+           "perlu_info_ke_cipta": [d.get("id") for d in perlu_info],
+           "diterima": [d.get("id") for d in diterima],
            "profil_persen": status.get("profil_persen"),
            "lowongan_buka_hari_ini": status.get("lowongan_buka_hari_ini")}
     try:
