@@ -235,7 +235,7 @@ SEED_TASKS = [
     ("TASK-0014", "PROJECT-001", "A03", "Command Controller",
      "Otomasi agen: cron eksekusi + watchdog + log hasil", "HIGH", "IN_PROGRESS",
      "2026-11-22", None, None, None, 0, None,
-     "Solusi dari tukar pikiran 5 AI (data/otomasi-agen-5-ai.md): ChatGPT + DeepSeek + Gemini sepakat — cron harus kontrak eksekusi dengan DoD + bukti; watchdog terpisah periksa log; log terstruktur per tugas. Claude gagal (akun belum terverifikasi, hanya Cipta bisa); Copilot tertunda (kode Microsoft, digit dari Cipta). Prioritas 1 SELESAI 22 Nov: cron penawaran-baru-0900 dibuat (jalan pertama 23 Nov 09.00). Berikutnya: watchdog + log terpusat (prioritas 2), perluasan ke 40 agen (prioritas 3). Cek chat WA TETAP NONAKTIF — perintah Cipta 19 Nov 'Saat ini belum. Nanti.'"),
+     "Solusi dari tukar pikiran 5 AI (data/otomasi-agen-5-ai.md): ChatGPT + DeepSeek + Gemini sepakat — cron harus kontrak eksekusi dengan DoD + bukti; watchdog terpisah periksa log; log terstruktur per tugas. Claude gagal (akun belum terverifikasi, hanya Cipta bisa); Copilot tertunda (kode Microsoft, digit dari Cipta). Prioritas 1 SELESAI 22 Nov: cron penawaran-baru-0900 dibuat (jalan pertama 23 Nov 09.00). Prioritas 2 SELESAI 22 Nov 13:57: PEMICU dibuat — cron watchdog-tugas-harian (tiap 1 jam, bertindak 08.00-21.00; periksa bukti per tugas, picu ulang maks 2x/hari, eskalasi bila tetap gagal) + data/watchdog-checks.md (17 tugas + tenggat) + data/log-eksekusi-PANDUAN.md (format JSONL per tugas). Berikutnya prioritas 3: perluasan ke 40 agen + dashboard status. Cek chat WA TETAP NONAKTIF — perintah Cipta 19 Nov 'Saat ini belum. Nanti.'"),
 ]
 
 SEED_WORKFLOWS = [
