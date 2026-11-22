@@ -228,6 +228,10 @@ SEED_TASKS = [
      "Closing & pemasukan pertama bulan Nov 2026", "HIGH", "IN_PROGRESS",
      "2026-11-22", None, None, None, 0, None,
      "Mandat Cipta 22 Nov 13:44 (WAJIB): semua agent.ai harus aktif, kontribusi, inisiatif, kreatif, visioner, inovatif bulan ini. Bulan ini HARUS ADA closing dan pemasukan. Posisi awal: pemasukan Rp0/$0, penjualan 0, closing 0."),
+    ("TASK-0013", "PROJECT-001", "A01", "Direksi",
+     "Eksekusi strategi viral/FYP, penjualan, pemasaran & komunikasi customer", "HIGH", "IN_PROGRESS",
+     "2026-11-22", None, None, None, 0, None,
+     "Strategi di data/strategi-viral-fyp.md (riset 4 grup selesai 22 Nov 13:45). WAJIB untuk penjualan (A25-A27), pemasaran (A20-A24), support (A26-A27), build (A32, A13-A14). Template DM A25 diperbaiki 22 Nov (harga ke pesan 2, USD, follow-up H3-4-7-14). Target 30 hari: TikTok 1.000, IG 500-1.000, YT 500, Threads 500-1.000, 1 video 10.000+ views, penjualan pertama."),
 ]
 
 SEED_WORKFLOWS = [
