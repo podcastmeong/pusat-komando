@@ -938,7 +938,7 @@ def build_app():
                 gr.Markdown(
                     "30 Agent Bintang A01–A30 (Bintang Command Center) — rancangan Share "
                     "ChatGPT #18/#19 + Share Gemini #1, dipetakan ke 14 mesin lama "
-                    "(no 1–10 aktif A31–A40, no 11–14 pasif non-job) + Muse + Pusat Komando. **Agent pasif** (dijalankan "
+                    "(10 aktif A31–A40 · 4 pasif non-job) + Muse + Pusat Komando. **Agent pasif** (dijalankan "
                     "Muse/mesin eksekusi lewat pemicu jadwal (cron), kerja 24 jam nonstop; bukan layanan otonom mandiri); semua output "
                     "DRAF untuk persetujuan Cipta. Konfigurasi di "
                     "`data/agents.json` (key `agent_30`).")
@@ -962,8 +962,8 @@ def build_app():
                 gr.Markdown(
                     "Pergerakan **30 Agent Bintang** dari data NYATA di "
                     "folder `data/` — bukan angka karangan. Bila kosong tertulis "
-                    "\"belum ada aktivitas\". Mesin lama tampil terpisah: no 1–10 aktif "
-                    "(A31–A40), no 11–14 \"Pasif — non job\". Umpan aktivitas dibaca dari "
+                    "\"belum ada aktivitas\". Mesin lama tampil terpisah: 10 aktif "
+                    "(A31–A40) · 4 pasif — non job. Umpan aktivitas dibaca dari "
                     "`data/activity_log.json`; modul b01–b30 menulis ke sana tiap kali "
                     "menghasilkan draf.")
                 dash_ringkas = gr.Markdown(_ringkasan_dashboard_md())
