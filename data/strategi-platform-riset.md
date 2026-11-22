@@ -312,6 +312,24 @@ Marketplace jasa/freelance Indonesia (PT Sribu Digital Kreatif, didirikan Sep 20
 | Whop | Keanggotaan (bukan file satuan) | $15/bulan | 15 member | $225 |
 | **Total** | | | | **~$4.980** |
 
+### Metode ATM — Amati, Tiru, Modifikasi (Cipta, 22 Nov 2026 13:06)
+
+Metode kerja strategi ini: **amati** penjual sukses di tiap platform, **tiru** cara mainnya, **modifikasi** dengan produk & karakter kita (Oyen & Momo, eBook nabi, aplikasi, skill Pusat Komando).
+
+| Platform | Amati (yang sukses) | Tiru | Modifikasi (versi SatuKiki) |
+|---|---|---|---|
+| PromptBase | Prompt foto produk & copy iklan paling laku; bundel mengalahkan satuan | Format listing + bundel 10–20 prompt | Prompt gaya Oyen/Momo + niche kita (video kucing, cerita anak) |
+| Gumroad | Vassallo: pre-order + build in public | Pre-order sebelum produk jadi | Pre-order eBook/aplikasi SatuKiki; umumkan di medsos |
+| Payhip | Moeller: Coupon of the Week + rilisan duluan di toko sendiri | Kupon mingguan 25% + rilisan baru duluan | Kupon mingguan eBook nabi; bundel 3/9 via cross-sell |
+| Fiverr | Pocek: niche sempit + naik harga bertahap | Gig niche + harga naik seiring review | Gig AI (setup agent/prompt) + video promo; mulai $20 lalu naik |
+| Whop | GOAT Sports: akses instan + komunitas | Keanggotaan + akses otomatis | Keanggotaan SatuKiki (bukan file satuan); affiliate 30% |
+| YouTube | Thomas Frank: template gratis → berbayar $64–$139 | Umpan gratis → versi berbayar | Aplikasi/template gratis → berbayar $29–$99; tutorial panjang |
+| Pinterest | Ivanka: satu produk, banyak pin, harga $10–$19 | 3–5 pin per produk, link ke checkout | Pin cover eBook nabi + desain POD + screenshot aplikasi |
+| KBM | Bunga BTP: struktur Bab 1–7–10 | Gratis 7 bab → kunci bab 8–10 → premium bab 11+ | Jalur A "Suamiku Menikah Lagi Diam-Diam" pakai struktur ini |
+| KaryaKarsa | Nyne Comics: tier dukungan Rp10rb/50rb/200rb | Tier dukungan + bundel hemat | Tier cerbung + paket 7 cerita |
+| TikTok | Krebs: volume 10–20 video/hari + afiliasi dulu | Demo produk harian | Demo video promo & POD Oyen/Momo setiap hari |
+| Instagram | Lucky: 500 follower, 90% konversi — spesifik, bukan besar | Satu produk, banyak pintu masuk | Satu penawaran eBook/aplikasi lewat Reels, Story, Live, DM |
+
 ### Prioritas eksekusi (dari riset)
 
 1. **Fiverr dulu — jasa AI + video promo.** Layanan AI tumbuh tercepat (+18.347% YoY); Gig 1 video promo sudah aktif. Tambah gig: setup AI agent/chatbot ($150–$600), prompt engineering ($50–$300). SEO gig + Buyer Requests untuk order pertama.
