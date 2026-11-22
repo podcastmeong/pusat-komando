@@ -1,6 +1,6 @@
 # Strategi Viral/FYP, Penjualan, Pemasaran & Komunikasi Customer
 
-Sumber: `~/workspace/research_notes/strategi-viral-fyp-penjualan/STRATEGI.md` (riset 4 grup, selesai 22 Nov 2026 13:45). Masuk Komando 22 Nov 2026 13:45. DOKUMEN RAHASIA PERUSAHAAN — tidak dipublikasikan.
+Sumber: `~/workspace/research_notes/strategi-viral-fyp-penjualan/STRATEGI.md` (riset 4 grup, selesai 22 Nov 2026 13:45; 5 pertanyaan terbuka diputuskan Muse 22 Nov 13:51 atas perintah Cipta). Masuk Komando 22 Nov 2026 13:45, diperbarui 13:54. DOKUMEN RAHASIA PERUSAHAAN — tidak dipublikasikan.
 
 
 **Tanggal:** 22 Nov 2026 | **Status:** strategi (siap dieksekusi) | **Riset:** `riset-01-toko-sukses-monetisasi.md`, `riset-02-viral-fyp.md`, `riset-03-penjualan-pemasaran.md`, `riset-04-komunikasi-customer.md` (folder ini, 4 grup, selesai 22 Nov 13:45)
@@ -91,10 +91,10 @@ Strategi ini **WAJIB** dipakai oleh:
 
 **Target 30 hari (tidak diubah):** TikTok 78 → 1.000 follower; IG 2 → 500–1.000; YT 79 → 500 subs; Threads 0 → 500–1.000; 1 video 10.000+ views; penjualan pertama dari sosial; 1 klien jasa pertama dari sosial.
 
-## Pertanyaan terbuka (untuk Cipta, tanya sekali)
+## Diputuskan — 5 pertanyaan terbuka (Cipta 22 Nov 2026 13:51: "Ini kamu yang putuskan muse. Patokannya ikuti pasar disitu. Bila lokal. Lokal. Bila global. Global. Ikuti harga pasar yang wajar")
 
-1. Harga IDR langsung untuk pasar lokal — tetap atau ganti USD semua?
-2. Besaran & jadwal kupon mingguan?
-3. Bundel aplikasi (Kasir + Faktur + Arsip) — setelah 10 penjualan satuan?
-4. Giveaway kemitraan — setelah penjualan pertama?
-5. Format live selling tanpa wajah Cipta — live demo layar vs video Oyen + host jawab komentar?
+1. **Harga IDR vs USD — DIPUTUSKAN:** lokal = IDR, global = USD, ikuti harga pasar yang wajar. Pasar lokal (jual langsung, DM/WA) = IDR (video promo Rp75.000/150.000/250.000; aplikasi Rp499.000 dst.; eBook Rp29.000; Rindu Rp19.000). Pasar global/platform = USD yang sudah diputuskan (eBook $4,99; aplikasi $29/$59/$99; demo web $29/$49/$79; jasa web $99/$299/$599; video promo $19/$39/$69).
+2. **Kupon mingguan — DIPUTUSKAN:** 25% untuk eBook, 10% untuk aplikasi & demo web; ganti tiap Senin; mulai minggu ini. (Patokan pasar: Payhip Coupon of the Week, Moeller +300%.)
+3. **Bundel aplikasi (Kasir + Faktur + Arsip) — DIPUTUSKAN:** dibuat setelah 10 penjualan satuan; harga bundel = total harga satuan − 20% (sama polanya dengan bundel eBook 3 = $11,99).
+4. **Giveaway kemitraan — DIPUTUSKAN:** YA, setelah penjualan pertama; hadiah produk sendiri (bukan iPhone/barang tak nyambung); mitra 1–2 brand UMKM; syarat follow + email; peserta yang kalah ditawari kupon 25%.
+5. **Live selling tanpa wajah Cipta — DIPUTUSKAN:** live demo layar (tampilkan aplikasi langsung) + host jawab komentar; Oyen sebagai pembuka/penutup video.

@@ -232,6 +232,10 @@ SEED_TASKS = [
      "Eksekusi strategi viral/FYP, penjualan, pemasaran & komunikasi customer", "HIGH", "IN_PROGRESS",
      "2026-11-22", None, None, None, 0, None,
      "Strategi di data/strategi-viral-fyp.md (riset 4 grup selesai 22 Nov 13:45). WAJIB untuk penjualan (A25-A27), pemasaran (A20-A24), support (A26-A27), build (A32, A13-A14). Template DM A25 diperbaiki 22 Nov (harga ke pesan 2, USD, follow-up H3-4-7-14). Target 30 hari: TikTok 1.000, IG 500-1.000, YT 500, Threads 500-1.000, 1 video 10.000+ views, penjualan pertama."),
+    ("TASK-0014", "PROJECT-001", "A03", "Command Controller",
+     "Otomasi agen: cron eksekusi + watchdog + log hasil", "HIGH", "IN_PROGRESS",
+     "2026-11-22", None, None, None, 0, None,
+     "Solusi dari tukar pikiran 5 AI (data/otomasi-agen-5-ai.md): ChatGPT + DeepSeek + Gemini sepakat — cron harus kontrak eksekusi dengan DoD + bukti; watchdog terpisah periksa log; log terstruktur per tugas. Claude gagal (akun belum terverifikasi, hanya Cipta bisa); Copilot tertunda (kode Microsoft, digit dari Cipta). Prioritas 1 SELESAI 22 Nov: cron penawaran-baru-0900 dibuat (jalan pertama 23 Nov 09.00). Berikutnya: watchdog + log terpusat (prioritas 2), perluasan ke 40 agen (prioritas 3). Cek chat WA TETAP NONAKTIF — perintah Cipta 19 Nov 'Saat ini belum. Nanti.'"),
 ]
 
 SEED_WORKFLOWS = [
