@@ -19,10 +19,9 @@
 | laporan-malam-2000 | A01 | Laporan malam 20.00 (PPT + ringkasan) terkirim | 21.00 |
 | produksi-video-2100 | A11 | Video hari ini selesai (cek mulut per klip) | 22.00 |
 | cek-dm-toko | A26 | Cek DM 2×/hari jalan (balasan penawaran) | 21.00 |
-| cek-chat-customer-wa | A26 (pemilik A27) | `wa-customer-replies-log.md` ada baris hari ini bila ada chat customer baru (bila tidak ada chat baru, log boleh kosong — watchdog TIDAK memicu ulang karena kosong saja) | 21.00 |
 | cek-pesan-masuk-sosial | A20/A21/A22/A23/A27 | `log-pesan-masuk-sosial.md` ada baris hari ini bila ada pesan masuk baru (bila tidak ada pesan baru, log boleh kosong — watchdog TIDAK memicu ulang karena kosong saja) | 21.00 |
 | cek-email-customer-cepat | A27 | Cek tiap 30 menit jalan (draf balasan bila ada email customer) | 21.00 |
 | upload-foto-harian | A12 | Foto batch hari ini ter-upload (ledger diperbarui) | 21.00 |
 | cari-lowongan-freelance-0800 | A28 | Draf lowongan hari ini (draf saja, info ke Cipta) | 09.00 |
 
-**Catatan:** `cek-chat-customer-wa` DIAKTIFKAN 22 Nov 2026 15:32 (perintah Cipta "Bila ada pasangkan" + "Jangan sampai terulang lagi", menggantikan "Saat ini belum. Nanti" 19 Nov) — harga di bodinya sudah diperbarui ke USD. `cek-pesan-masuk-sosial` (baru 22 Nov 15:32) cek IG/TikTok/Threads/YouTube/Facebook tiap 2 jam. `cek-email-a27-0530/1930` dan `cek-hibah-harian` hanya info — buktinya laporan ke chat bila ada temuan.
+**Catatan:** `cek-chat-customer-wa` NONAKTIF lagi (perintah Cipta 22 Nov 16:03: WA tidak usah — penjualan/pemasaran/promo/penawaran via email + DM, sudah disepakati). `cek-pesan-masuk-sosial` (baru 22 Nov 15:32) cek IG/TikTok/Threads/YouTube/Facebook tiap 2 jam. `cek-email-a27-0530/1930` dan `cek-hibah-harian` hanya info — buktinya laporan ke chat bila ada temuan.
