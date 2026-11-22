@@ -25,7 +25,7 @@ Perintah Cipta, 22 Nov 2026 08:50–08:57: eksekusi SEMUA 20 marketplace, satu-s
 | 17 | Payhip | eBook, game, aplikasi, demo website, video promo, POD, musik | — | LIVE (6/10 produk fase 1; 4 tertahan kartu persetujuan) |
 | 18 | Whop | Video promo, aplikasi, eBook | — | Akun JADI 12:41 — Cipta daftar dari HP-nya (whop.com/home/, akun Pribadi, saldo US$0,00). Verifikasi sisi Muse masih jalan (browser masuk lewat email); produk belum dibuat |
 | 19 | Fiverr | Jasa: video promo, poster, aplikasi | $20/$40/$70 video | Akun @ciptabintangles, verifikasi identitas LULUS 12:22, Gig 1 TERBIT + AKTIF. PayPal bisa ditautkan ~24 Nov 05:24 (48 jam setelah ganti nomor) |
-| 20 | Udemy | Kursus (4 modul belajar AI) | — | Pendaftaran ERROR 12:38, jendela hilang — tidak selesai. Kartu sign-in tidak pernah sampai ke Cipta; jalan lain: Cipta daftar langsung dari HP-nya |
+| 20 | Udemy | Kursus (4 modul belajar AI) | — | Akun JADI 12:44 — Cipta daftar dari HP-nya (login Google 12:41; email Google 12:42 + 2 kode verifikasi 12:42). Akun instructor + kursus belum dibuat |
 
 ## Pemilik produk (agent) — sesuai kebutuhan tiap lini
 

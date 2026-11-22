@@ -216,6 +216,10 @@ SEED_TASKS = [
      "Akun Whop + buat produk", "HIGH", "IN_PROGRESS",
      "2026-11-22", None, None, None, 1, None,
      "Akun JADI 12:41 — Cipta daftar dari HP-nya, screenshot whop.com/home/ (akun Pribadi, saldo US$0,00). Verifikasi sisi Muse masih jalan (browser masuk lewat email); produk (video promo, aplikasi, eBook) belum dibuat."),
+    ("TASK-0010", "PROJECT-001", "A37", "Eksekusi marketplace",
+     "Akun Udemy + buat kursus AI", "HIGH", "IN_PROGRESS",
+     "2026-11-22", None, None, None, 1, None,
+     "Akun JADI 12:44 — Cipta daftar dari HP-nya (login Google 12:41; email Google 12:42 + 2 kode verifikasi Udemy 12:42). Profil instructor + kursus belum dibuat; kursus dari 4 modul AI (video kuliah wajib Udemy)."),
 ]
 
 SEED_WORKFLOWS = [
