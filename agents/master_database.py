@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS INTELLIGENCE (
 );
 CREATE TABLE IF NOT EXISTS PRODUCTS (
     id TEXT PRIMARY KEY, name TEXT NOT NULL, marketplace TEXT NOT NULL,
-    price_usd REAL NOT NULL, status TEXT NOT NULL, url TEXT
+    price_usd REAL, status TEXT NOT NULL, url TEXT, price_note TEXT
 );
 CREATE TABLE IF NOT EXISTS CUSTOMERS (
     id TEXT PRIMARY KEY, name TEXT NOT NULL, channel TEXT,
@@ -137,23 +137,34 @@ SEED_DIVISIONS = [
 # Produk terverifikasi live/draf (harga + status sesuai catatan 22 Nov 2026).
 SEED_PRODUCTS = [
     ("SWARMS-001", "Skill Pusat Komando", "Swarms", 12.00, "PUBLISHED",
-     "https://swarms.world/prompt/c8542bab-4ebb-4dc3-85c2-ecdb8f059af4"),
+     "https://swarms.world/prompt/c8542bab-4ebb-4dc3-85c2-ecdb8f059af4", None),
     ("PAYHIP-001", "Rindu di Ujung Senja (eBook)", "Payhip", 5.00, "PUBLISHED",
-     "https://payhip.com/b/wgT2k"),
+     "https://payhip.com/b/wgT2k", None),
     ("PAYHIP-002", "eBook Nabi Yunus", "Payhip", 4.99, "PUBLISHED",
-     "https://payhip.com/b/naSAH"),
+     "https://payhip.com/b/naSAH", None),
     ("PAYHIP-003", "eBook Nabi Nuh", "Payhip", 4.99, "PUBLISHED",
-     "https://payhip.com/b/Um5zX"),
+     "https://payhip.com/b/Um5zX", None),
     ("PAYHIP-004", "eBook Nabi Yusuf", "Payhip", 4.99, "PUBLISHED",
-     "https://payhip.com/b/pjoQi"),
+     "https://payhip.com/b/pjoQi", None),
     ("PAYHIP-005", "eBook Nabi Musa", "Payhip", 4.99, "PUBLISHED",
-     "https://payhip.com/b/sRoN9"),
+     "https://payhip.com/b/sRoN9", None),
     ("PAYHIP-006", "eBook Nabi Ibrahim", "Payhip", 4.99, "PUBLISHED",
-     "https://payhip.com/b/QUk9F"),
+     "https://payhip.com/b/QUk9F", None),
     ("CODESTER-001", "Faktur & Invoice Manager", "Codester", 29.00, "DRAFT",
-     "https://podcastmeong.github.io/aplikasi-faktur-invoice/"),
-    ("ENVATO-001", "Kasir Toko", "Envato", 59.00, "DRAFT", None),
-    ("CODECANYON-001", "Kasir Toko", "CodeCanyon", 59.00, "DRAFT", None),
+     "https://podcastmeong.github.io/aplikasi-faktur-invoice/", None),
+    ("ENVATO-001", "Kasir Toko", "Envato", 59.00, "DRAFT", None, None),
+    ("CODECANYON-001", "Kasir Toko", "CodeCanyon", 59.00, "DRAFT", None, None),
+    # 4 produk web (keputusan Cipta 22 Nov 2026 17:02; rincian: data/produk-web.md).
+    # price_usd = harga mulai; price_note = rentang lengkap / harga non-USD.
+    ("WEB-001", "Demo web (15 template)", "Toko", 29.00, "DRAFT",
+     "https://podcastmeong.github.io/demo-website/",
+     "Harga mulai; $29 / $49 / $79 per website, sekali bayar"),
+    ("WEB-002", "Pembuatan web (tanpa domain+hosting)", "Toko", 99.00, "DRAFT",
+     None, "Harga mulai; $99 / $299 / $599, sekali bayar; domain+hosting di luar harga"),
+    ("WEB-003", "Pembuatan web + free hosting", "Toko", 99.00, "DRAFT",
+     None, "Harga mulai; $99 / $299 / $599, sekali bayar; hosting gratis termasuk"),
+    ("WEB-004", "Penyewaan web + hosting (WaaS)", "Toko", None, "DRAFT",
+     None, "Rp29.000 / Rp39.000 / Rp49.000 per bulan — DRAFT (rentang Cipta Rp29-50 ribu)"),
 ]
 
 # Persetujuan Cipta yang tercatat (keputusan.md, 22 Nov 2026).
@@ -236,6 +247,10 @@ SEED_TASKS = [
      "Otomasi agen: cron eksekusi + watchdog + log hasil", "HIGH", "IN_PROGRESS",
      "2026-11-22", None, None, None, 0, None,
      "Solusi dari tukar pikiran 5 AI (data/otomasi-agen-5-ai.md): ChatGPT + DeepSeek + Gemini sepakat — cron harus kontrak eksekusi dengan DoD + bukti; watchdog terpisah periksa log; log terstruktur per tugas. Claude gagal (akun belum terverifikasi, hanya Cipta bisa); Copilot tertunda (kode Microsoft, digit dari Cipta). Prioritas 1 SELESAI 22 Nov: cron penawaran-baru-0900 dibuat (jalan pertama 23 Nov 09.00). Prioritas 2 SELESAI 22 Nov 13:57: PEMICU dibuat — cron watchdog-tugas-harian (tiap 1 jam, bertindak 08.00-21.00; periksa bukti per tugas, picu ulang maks 2x/hari, eskalasi bila tetap gagal) + data/watchdog-checks.md (17 tugas + tenggat) + data/log-eksekusi-PANDUAN.md (format JSONL per tugas). Berikutnya prioritas 3: perluasan ke 40 agen + dashboard status. Cek chat WA TETAP NONAKTIF — perintah Cipta 19 Nov 'Saat ini belum. Nanti.'"),
+    ("TASK-0015", "PROJECT-001", "A14", "Produksi Produk",
+     "Racik 4 produk web + price list (demo, pembuatan, pembuatan+hosting, sewa)", "HIGH", "APPROVED",
+     "2026-11-22", None, "data/produk-web.md", None, 1, "Cipta",
+     "Keputusan Cipta 22 Nov 17:02 (4 produk web). Dokumen data/produk-web.md: price list + termasuk/tidak termasuk + kontrak sewa + caveat Cloudflare §2.2.1(a) + 7 pertanyaan terbuka. Produk WEB-001 s.d. WEB-004 terdaftar di tabel PRODUCTS; tier sewa Rp29/39/49 ribu masih DRAFT (rentang Cipta Rp29-50 ribu). Harga lain tidak diubah."),
 ]
 
 SEED_WORKFLOWS = [
@@ -312,7 +327,9 @@ def build(db_path=DB_PATH, fresh=True):
         conn.executemany("INSERT OR REPLACE INTO DIVISIONS VALUES (?,?,?)", SEED_DIVISIONS)
         conn.executemany("INSERT OR REPLACE INTO INTELLIGENCE VALUES (?,?,?,?,?)",
                          [(c, n, g, "RENCANA", "") for c, n, g in SEED_INTELLIGENCE])
-        conn.executemany("INSERT OR REPLACE INTO PRODUCTS VALUES (?,?,?,?,?,?)", SEED_PRODUCTS)
+        conn.executemany("INSERT OR REPLACE INTO PRODUCTS "
+                         "(id, name, marketplace, price_usd, status, url, price_note) "
+                         "VALUES (?,?,?,?,?,?,?)", SEED_PRODUCTS)
         conn.executemany("INSERT OR REPLACE INTO APPROVALS VALUES (?,?,?,?,?,?)", SEED_APPROVALS)
         conn.executemany("INSERT OR REPLACE INTO PROJECTS VALUES (?,?,?,?,?,?)", SEED_PROJECTS)
         conn.executemany("INSERT OR REPLACE INTO TASKS VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)", SEED_TASKS)
@@ -439,9 +456,12 @@ def dashboard_markdown(db_path=DB_PATH):
         out.append("| ID | Produk | Marketplace | Harga | Status |")
         out.append("|---|---|---|---|---|")
         for row in conn.execute(
-                "SELECT id, name, marketplace, price_usd, status FROM PRODUCTS "
-                "ORDER BY status DESC, id"):
-            out.append("| {} | {} | {} | ${:,.2f} | {} |".format(*row))
+                "SELECT id, name, marketplace, price_usd, price_note, status "
+                "FROM PRODUCTS ORDER BY status DESC, id"):
+            harga = ("${:,.2f}".format(row[3]) if row[3] is not None
+                     else (row[4] or "-"))
+            out.append("| {} | {} | {} | {} | {} |".format(
+                row[0], row[1], row[2], harga, row[5]))
         out.append("\n### ✅ Persetujuan Terakhir\n")
         for row in conn.execute(
                 "SELECT id, item, decided_by, decided_at FROM APPROVALS "

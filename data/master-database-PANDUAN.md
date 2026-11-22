@@ -30,11 +30,11 @@ punya proyek.
 |---|---|---|
 | AGENTS | Identitas 40 agent (kode, jabatan, divisi, jobdesk, skill) | 40 |
 | DIVISIONS | 6 divisi + 1 kelompok Pendukung | 7 |
-| TASKS | Daftar pekerjaan (lihat §3) | 8 |
+| TASKS | Daftar pekerjaan (lihat §3) | 15 |
 | PROJECTS | Daftar proyek | 3 |
 | WORKFLOWS | Alur otomatisasi / cron | 9 |
 | INTELLIGENCE | 15 sistem Intelligence (I01–I15) | 15 |
-| PRODUCTS | Produk yang dibuat / dijual | 10 |
+| PRODUCTS | Produk yang dibuat / dijual | 14 |
 | CUSTOMERS | Prospek dan pelanggan (dari CRM) | 48 |
 | FINANCE | Pemasukan dan pengeluaran | 0 (belum ada transaksi) |
 | APPROVALS | Riwayat persetujuan Cipta | 7 |
