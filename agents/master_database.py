@@ -220,6 +220,10 @@ SEED_TASKS = [
      "Akun Udemy + buat kursus AI", "HIGH", "IN_PROGRESS",
      "2026-11-22", None, None, None, 1, None,
      "Akun JADI 12:44 — Cipta daftar dari HP-nya (login Google 12:41; email Google 12:42 + 2 kode verifikasi Udemy 12:42). Profil instructor + kursus belum dibuat; kursus dari 4 modul AI (video kuliah wajib Udemy)."),
+    ("TASK-0011", "PROJECT-001", "A37", "Riset pasar",
+     "Riset sukses per platform + strategi eksekusi", "HIGH", "IN_PROGRESS",
+     "2026-11-22", None, None, None, 1, None,
+     "Riset 7 grup jalan 22 Nov 13:00 (Swarms+Agensi; Gumroad+Payhip; PromptBase+Whop; Fiverr+Udemy; Zazzle+Etsy+CM+Adobe+Dreamstime; KaryaKarsa+Lynk+KBM+Sribu; Pinterest+YT+TikTok+IG). Hasil masuk ke data/strategi-platform-riset.md; strategi + eksekusi menyusul begitu hasil lengkap."),
 ]
 
 SEED_WORKFLOWS = [
