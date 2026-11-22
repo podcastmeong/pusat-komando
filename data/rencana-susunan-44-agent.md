@@ -151,7 +151,7 @@ Perhatikan: tugas riset prospek TIDAK otomatis memberi izin mengirim pesan — p
 | Cadangan | 1 | Gagal/retry |
 | **Total** | **20** | |
 
-Aturan hemat (ketiganya sepakat): 1 panggilan per tugas, retry maks 1×; tugas rutin/lookup pakai aturan+file, bukan LLM; simpan hasil riset di Qdrant agar tidak mengulang pertanyaan sama; jangan panggil AI untuk menghitung penjualan atau mengubah status; pemakaian tercatat di `data/log-penggunaan-model.jsonl`; peringatan di ≥15 panggilan.
+Aturan hemat (ketiganya sepakat): 1 panggilan per tugas, retry maks 1×; tugas rutin/lookup pakai aturan+file, bukan LLM; simpan hasil riset di Qdrant agar tidak mengulang pertanyaan sama; jangan panggil AI untuk menghitung penjualan atau mengubah status; pemakaian tercatat di `data/log-penggunaan-model.jsonl`; peringatan di ≥15 panggilan. **Satuan hitung (perintah Cipta 22 Nov 16:39): 1 perintah = 1 panggilan — mis. 1 kali perintah standby cek keluar-masuk surat = 1 panggilan, berapa pun surat yang dicek dalam perintah itu.**
 
 ### 6.5 Rotasi akun bila kuota habis (perintah Cipta 22 Nov 16:33)
 Bila akun utama mencapai 20 panggilan atau menerima 429, runner beralih ke proyek API akun berikutnya: **masduki1189 → ciptabintanglestari → lawaklucu182** (masing-masing 20 panggilan/hari, total maks 60/hari). Setiap peralihan dicatat di `data/log-penggunaan-model.jsonl` (akun, jam, alasan). Bila ketiga akun habis → tugas Hydrogen ditunda besok; jangan pakai model berbayar sebagai jalan pintas. Implementasi di runner (`agents/hydrogen-momo.py`) adalah tindak lanjut minggu pertama (§h).
