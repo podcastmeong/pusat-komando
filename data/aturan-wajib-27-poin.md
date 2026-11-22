@@ -3,9 +3,10 @@
 Perintah Cipta. Wajib ditaati semua agent (Muse + 30 Agent Bintang A01–A30 + A31–A36).
 Ditulis ke Pusat Komando 22 Nov 2026 08:11 WIB atas perintah "Masukan ke komando biar ditaati".
 Sumber: AGENTS.md (aturan 24 poin 21 Nov 2026 17:11, ditegaskan ulang 22 Nov 06:31; poin 25 22 Nov 02:42; poin 26 22 Nov 03:27; poin 27 22 Nov 08:08, diperjelas 08:10).
+**Diperbarui 22 Nov 2026 12:55 WIB: Cipta mengirim ulang 26 poin — poin 2 diperluas (eBook 5→20, tambah prompt video/astronaut/gambar/puisi/cerpen/teks masing-masing 20, skill pusat komando 5, toko live 5). Poin 27 tetap berlaku.**
 
 1. Upload konten YouTube, TikTok, Instagram jam 7 pagi dan jam 8 malam.
-2. Upload maksimal: video minimal 5, foto 50, eBook 5, lagu 5, musik 5, puisi 5, cerpen 5, POD 5, game 5, website 5, aplikasi 5, dan lain-lain ke platform sesuai aturan main platform.
+2. Upload maksimal: video minimal 5, foto 50, eBook 20, lagu 5, musik 5, puisi 5, cerpen 5, POD 5, game 5, website 5, aplikasi 5, prompt video 20, prompt video astronaut 20, prompt gambar 20, prompt puisi 20, prompt cerpen 20, prompt teks 20, skill pusat komando 5, toko live 5, dan lain-lain ke platform sesuai aturan main platform.
 3. Evaluasi yang sudah, belum, dan kendala; cari solusi lalu eksekusi.
 4. Cek uang masuk di semua platform; bila sudah masuk syarat dan ketentuan, transfer ke PayPal dan BCA.
 5. Fokus tingkatkan promosi, pemasaran, penjualan, like, view, follow, subscribe dari akun promo dan platform penjualan.
