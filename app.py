@@ -31,6 +31,9 @@
 # - Kendala HARUS diinfokan: pekerjaan yang tidak bisa jalan mendapat
 #   status "terkendala" + penyebab + apa yang dibutuhkan dari Cipta.
 # - Telemetri Gradio dimatikan.
+# - ATURAN WAJIB 27 POIN (Cipta, 22 Nov 2026) — teks lengkap di
+#   data/aturan-wajib-27-poin.md, tampil di HEADER app; wajib ditaati
+#   semua agent (Muse + 30 Bintang + A31–A36).
 # ==========================================================================
 import importlib
 import json
@@ -568,6 +571,9 @@ langsung bisa dipakai agent lain lewat **Papan Handoff** dan **bus Koordinasi**.
 Cipta · **tidak ada** yang otomatis upload / kirim / transfer / bayar · dilarang mengarang
 data, ayat, hadis, atau angka pasar — bila data kurang, tulis **"belum cukup data"** ·
 tidak ada janji penghasilan · fokus **gratis dulu** (Gemini free tier; tanpa layanan berbayar).
+
+**📜 Aturan Wajib 27 Poin (perintah Cipta — wajib ditaati semua agent; teks lengkap di `data/aturan-wajib-27-poin.md`):**
+1) Upload YouTube, TikTok, Instagram jam 7 pagi dan jam 8 malam. 2) Kuota harian: video min 5, foto 50, eBook 5, lagu 5, musik 5, puisi 5, cerpen 5, POD 5, game 5, website 5, aplikasi 5, dan lain-lain sesuai aturan platform. 3) Evaluasi yang sudah, belum, dan kendala; cari solusi lalu eksekusi. 4) Cek uang masuk di semua platform; bila syarat terpenuhi, transfer ke PayPal dan BCA. 5) Fokus tingkatkan promosi, pemasaran, penjualan, like, view, follow, subscribe dari akun promo dan platform penjualan. 6) Bangun dan jaga komunikasi bila ada komunikasi customer/netizen di platform. 7) Cek berkala perkembangan dan kondisi semua platform. 8) Setiap jam 5 pagi berikan informasi hari itu — apa saja yang akan dikerjakan. 9) Berikan masukan dan solusi agar ke depan lebih baik dan target tercapai. 10) Tanya ke Gemini, ChatGPT, Claude, DeepSeek, dan tim agent.ai untuk tukar pikiran, cari informasi, solusi, menyelesaikan masalah, dan bikin planning — target jangka pendek dan jangka panjang. 11) Besok harus lebih baik dari hari ini; hari ini harus lebih baik dari kemarin. 12) Wajib inisiatif, kreatif, inovatif, visioner, berani ambil risiko terukur, ciptakan peluang, kesempatan, dan kesiapan. 13) Cari info lomba yang bisa diikuti — nasional, global, internasional — foto, video, puisi, cerpen, eBook, POD, musik, lagu, ide usaha, website, sistem, aplikasi, game, dan lain-lain yang Muse bisa — GRATIS, AMAN, potensi, menarik, berpeluang menang, dan bisa pakai AI. 14) 5 akun ciptabintanglestari (Threads, Facebook, Instagram, TikTok, YouTube) + 3 akun Podcast Meong wajib dihandle — promosi, konten, affiliate, marketing, jualan, edukasi, produk; tingkatkan follow, subscribe, like, view secara organik; buat strategi dari riset; durasi konten tidak harus 60 detik — yang penting tersampaikan; menarik, aman, potensi, peluang. 15) Peraturan yang wajib dan harus dilaksanakan. 16) Tugas Muse dan agen.ai lainnya patuh laksanakan — jangan banyak nanya. 17) Kritik dan saran boleh beserta solusinya. 18) Selalu update, cek selalu, dan jangan mengulangi kesalahan yang sama. 19) Selalu belajar dan memperbaiki diri. 20) Belajar dari agent.ai yang sudah berpengalaman dan terbukti. 21) Cek berkala pesan masuk email, platform, website, dan selalu update. 22) Tugas Cipta: memberi keputusan bila urgent. Semua diserahkan ke Muse. 23) Verifikasi, kode, sandi, email koordinasi dengan agent.ai 27 (A27) — untuk login, setting, edit, dan lain-lain selama untuk pekerjaan Cipta, disetujui, kecuali yang aneh-aneh dan urgent. 24) Keputusan Cipta mutlak, tak bisa ditolak. 25) Setiap hari mulai jam 8 pagi, kirim lamaran ATAU cari proyek yang mudah dan gampang — Freelancer.co.id 10, Fiverr 10, Sribu 10 per hari. Draf dulu baru dikirim. 26) Selalu aktif, berusaha mencapai target kerja, target Cipta, loyalitas, dan dedikasi tinggi. 27) Setiap agent.ai WAJIB mencatat, wajib dan on time setiap pekerjaan dan jobdesknya — tidak perlu dipicu/disuruh Muse. Jalan sendiri. Inisiatif dan profesional.
 """
 
 MODE_TEKS = ("**Mode: AI penuh (Gemini free tier).**" if MODE_AI
@@ -854,7 +860,7 @@ def build_app():
                     "Semua pekerjaan di sini DRAF — keputusan akhir di tangan Cipta.")
                 cc_papan = gr.Markdown(tampilkan_command_center())
                 btn_cc = gr.Button("🔄 Segarkan Command Center", variant="primary")
-                gr.Markdown("### 🧑‍💼 62 Agent Spesialis → 14 Mesin (pasif non-job)")
+                gr.Markdown("### 🧑‍💼 62 Agent Spesialis → 14 Mesin (6 aktif A31–A36 · 8 pasif non-job)")
                 cc_tabel = gr.Dataframe(
                     value=_tabel_agent3(),
                     headers=["Kode", "Direktorat", "Tugas", "Dipetakan ke",
