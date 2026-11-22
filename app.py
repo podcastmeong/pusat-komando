@@ -858,6 +858,20 @@ def build_app():
                     "Konfigurasi di `data/agents.json` (pemetaan AI Business "
                     "Autonomous Agent 3.0, Share ChatGPT #16/#17). "
                     "Semua pekerjaan di sini DRAF — keputusan akhir di tangan Cipta.")
+                gr.Markdown(
+                    "### 🎯 Target & Strategi $5.000/bulan (revisi 21 Nov 2026 — teks lengkap di `data/target-dan-strategi.md`)\n\n"
+                    "**Target (tidak berubah):** $5.000/bulan untuk seluruh tim · $5.000 sebelum 30 Nov 2026 · "
+                    "$10.000 sebelum 31 Des 2026. Posisi awal: pemasukan semua platform Rp0.\n\n"
+                    "**Strategi:** BERHENTI tambah produk (171 cukup) — SATU niche (rekomendasi: aplikasi & sistem bisnis UMKM), "
+                    "kurasi 5–10 produk jadi tangga $0 → $19–$29 → $49 → $97–$149. Etsy duluan, Gumroad kedua. "
+                    "Mesin trafik: Pinterest + video pendek → lead magnet gratis → email list target ±2.000 subscriber. "
+                    "UGC jembatan uang tercepat (median ±$175/video — butuh tampil kamera, keputusan Cipta). "
+                    "Konten = funnel, bukan sumber uang. Timeline jujur 6–12 bulan. "
+                    "Batas upload: maks 3 video/hari/platform, jeda 2–4 jam. 70% jam kerja untuk pemasaran.\n\n"
+                    "**Minggu 1 (22–28 Nov):** 1 niche + tangga harga · toko Etsy + Gumroad LIVE · lead magnet + 5 email sambutan · "
+                    "NEXTALE 20 episode · Basabasi terkirim · uang masuk pertama (target ≥Rp500.000). "
+                    "**Minggu 2:** peluncuran pertama, 50–100 subscriber, 1–10 penjualan. "
+                    "**Minggu 3:** diagnosis funnel + produk #2. **Minggu 4:** laporan keuangan bulanan pertama + gandakan pemenang.")
                 cc_papan = gr.Markdown(tampilkan_command_center())
                 btn_cc = gr.Button("🔄 Segarkan Command Center", variant="primary")
                 gr.Markdown("### 🧑‍💼 62 Agent Spesialis → 14 Mesin (6 aktif A31–A36 · 8 pasif non-job)")
