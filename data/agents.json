@@ -29,7 +29,7 @@
   },
   "command": {
     "ceo": "Muse (koordinator) — agents/koordinasi.py + SOP Kerja Sama Agent",
-    "note": "Agent bersifat pasif: Muse menjalankannya lewat perintah/jadwal; output berupa DRAF; pengiriman/publikasi/pembayaran selalu butuh persetujuan Cipta. Bukan layanan otonom 24 jam.",
+    "note": "Agent bersifat pasif: Muse menjalankannya lewat perintah/jadwal; output berupa DRAF; pengiriman/publikasi/pembayaran selalu butuh persetujuan Cipta. Bukan layanan otonom mandiri — agent bekerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim (keputusan Cipta 22 Nov 2026).",
     "owner": "Cipta (Human Approval Center — keputusan tertinggi)"
   },
   "decisions": {
@@ -636,7 +636,7 @@
   "honest_notes": [
     "Spesifikasi menyebut '32 AI Agent spesialis', tetapi daftar direktorat bila dijumlahkan berisi 62 baris agent (8+9+7+6+7+11+7+7). Pemetaan ini memakai daftar 62.",
     "Spesifikasi menyebut '8 kanal media', tetapi rincian akunnya 7 akun media (2 IG + 2 TikTok + 2 YT + 1 Threads) + website + toko = 9 aset.",
-    "Sistem TIDAK berjalan otonom 24 jam: 14 agen bersifat pasif dan dijalankan Muse lewat perintah/jadwal; tidak ada layanan independen 24 jam (keputusan: framework CrewAI/LangGraph/AutoGen DITOLAK).",
+    "Agent bekerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim (keputusan Cipta 22 Nov 2026); bukan layanan otonom mandiri — 14 agen bersifat pasif dan dijalankan Muse lewat perintah/jadwal (keputusan: framework CrewAI/LangGraph/AutoGen DITOLAK).",
     "Integrasi medsos belum penuh: WA Web rusak; Instagram Messages + Threads Messages TERHUBUNG (verifikasi live 21 Nov 03:33); TikTok @meongcast butuh login Cipta sendiri.",
     "14 cron dijeda 21 Nov 02:49 atas perintah STOP Cipta — status 'aktif-sebagian' di atas mencerminkan kondisi itu.",
     "Share #17 menyebut '71 Agent Roles' padahal 8 + 62 = 70 — angka 71 tidak cocok dengan rinciannya.",
@@ -739,7 +739,7 @@
   "agent_30": {
     "source": "Share ChatGPT #18 + #19 dan Share Gemini #1 — Bintang Command Center",
     "applied_date": "2026-11-21",
-    "note": "30 agent A01–A30 (Bintang) dipetakan ke 14 agen nyata + Muse + Pusat Komando. Agent bersifat PASIF — dijalankan Muse, bukan layanan otonom 24 jam. Semua output DRAF untuk persetujuan Cipta.",
+    "note": "30 agent A01–A30 (Bintang) dipetakan ke 14 agen nyata + Muse + Pusat Komando. Agent bersifat PASIF — dijalankan Muse lewat pemicu jadwal (cron), kerja 24 jam nonstop (keputusan Cipta 22 Nov 2026); bukan layanan otonom mandiri. Semua output DRAF untuk persetujuan Cipta.",
     "agents": [
       {
         "code": "A01",
@@ -1655,7 +1655,8 @@
         "sumber_data": "penjualan_toko",
         "status": "Aktif — diganti nama jadi A34 Penerjemah",
         "kode_baru": "A34",
-        "nama_baru": "Penerjemah"
+        "nama_baru": "Penerjemah",
+        "tugas": "Penerjemah — pekerjaan terjemahan (saat ini DITUNDA). Kerja 24 jam nonstop."
       },
       {
         "kode": "5",
@@ -1664,7 +1665,8 @@
         "sumber_data": "produksi_game",
         "status": "Aktif — diganti nama jadi A35 Ngetik",
         "kode_baru": "A35",
-        "nama_baru": "Ngetik"
+        "nama_baru": "Ngetik",
+        "tugas": "Ngetik — mengetik draf, naskah, dan dokumen. Kerja 24 jam nonstop."
       },
       {
         "kode": "6",
@@ -1673,7 +1675,8 @@
         "sumber_data": "lomba",
         "status": "Aktif — diganti nama jadi A36 Copywriter",
         "kode_baru": "A36",
-        "nama_baru": "Copywriter"
+        "nama_baru": "Copywriter",
+        "tugas": "Copywriter — menulis teks pemasaran dan penjualan. Kerja 24 jam nonstop."
       },
       {
         "kode": "7",

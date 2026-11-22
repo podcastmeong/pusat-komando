@@ -666,7 +666,7 @@ def _detail_agent30(kode):
                 baris.append("\n{}".format(j.get("catatan_jujur", "")))
             except Exception:  # noqa: BLE001
                 pass
-    baris.append("\n_Agent pasif — dijalankan Muse, bukan layanan otonom 24 jam. "
+    baris.append("\n_Agent bekerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim; bukan layanan otonom mandiri. "
                  "Semua output DRAF untuk persetujuan Cipta._")
     return "\n".join(baris)
 
@@ -678,6 +678,36 @@ def _segarkan_b30():
 # ---------------------------------------------------------------------------
 # Tab C — Dashboard Pergerakan Agent (modul agents/dashboard.py)
 # ---------------------------------------------------------------------------
+def _mesin_lama_md():
+    """Tabel job Mesin Lama A31–A36, dibaca dari data/agents.json (agent_lama).
+
+    Dibuat karena job A31–A33 sebelumnya hanya tersimpan di agents.json dan
+    tidak tampil di UI — yang tampil di Dashboard justru log aktivitas lama
+    (19 Nov) sehingga job terlihat salah. Tabel ini selalu mengikuti data.
+    """
+    try:
+        with open(DATA_DIR / "agents.json", encoding="utf-8") as fh:
+            data = json.load(fh)
+        agents = data.get("agent_lama", {}).get("agents", [])
+        aktif = [a for a in agents if a.get("kode_baru") in
+                 ("A31", "A32", "A33", "A34", "A35", "A36")]
+        if not aktif:
+            return ""
+        baris = ["### 🔧 Mesin Lama A31–A36 — Job (dari `data/agents.json`)",
+                 "",
+                 "| Kode | Nama | Tugas | Status |",
+                 "|---|---|---|---|"]
+        for a in aktif:
+            baris.append("| {} | {} | {} | {} |".format(
+                a.get("kode_baru", "—"), a.get("nama_baru", "—"),
+                a.get("tugas", "—"), a.get("status", "—")))
+        baris.append("")
+        baris.append("_Semua agent A31–A36 bekerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim (keputusan Cipta 22 Nov 2026)._")
+        return "\n".join(baris)
+    except Exception:  # noqa: BLE001 — tabel job tidak boleh merusak dashboard
+        return ""
+
+
 def _ringkasan_dashboard_md():
     if DASH is None:
         return "⚠️ Modul dashboard gagal dimuat: {}".format(E_DASH)
@@ -908,7 +938,7 @@ def build_app():
                     "30 Agent Bintang A01–A30 (Bintang Command Center) — rancangan Share "
                     "ChatGPT #18/#19 + Share Gemini #1, dipetakan ke 14 mesin lama "
                     "(no 1–6 aktif A31–A36, no 7–14 pasif non-job) + Muse + Pusat Komando. **Agent pasif** (dijalankan "
-                    "Muse/mesin eksekusi, bukan layanan otonom 24 jam); semua output "
+                    "Muse/mesin eksekusi lewat pemicu jadwal (cron), kerja 24 jam nonstop; bukan layanan otonom mandiri); semua output "
                     "DRAF untuk persetujuan Cipta. Konfigurasi di "
                     "`data/agents.json` (key `agent_30`).")
                 b30_tabel = gr.Dataframe(
@@ -936,6 +966,7 @@ def build_app():
                     "`data/activity_log.json`; modul b01–b30 menulis ke sana tiap kali "
                     "menghasilkan draf.")
                 dash_ringkas = gr.Markdown(_ringkasan_dashboard_md())
+                gr.Markdown(_mesin_lama_md())
                 with gr.Row():
                     dash_divisi = gr.Dropdown(
                         choices=["Semua"] + (DASH.daftar_divisi() if DASH else []),
