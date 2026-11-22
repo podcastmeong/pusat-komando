@@ -1,6 +1,21 @@
 {
   "blok": [
     {
+      "jam": "05:00–07:00",
+      "kegiatan": "Pemantauan dan tindak lanjut — email/pesan baru, komentar dan pertanyaan, status proposal freelance, performa konten, hasil penjualan.",
+      "pemilik": "A27 + A26 + Muse"
+    },
+    {
+      "jam": "07:00",
+      "kegiatan": "Upload pagi: YouTube, TikTok, Instagram",
+      "pemilik": "A31"
+    },
+    {
+      "jam": "07:00–08:00",
+      "kegiatan": "Laporan dan persiapan siklus berikutnya — A04 QC, A05 analisis, A29 keuangan, Muse laporan 24 jam, pembelajaran ke Memory Manager, prioritas besok.",
+      "pemilik": "Muse + A04 + A05 + A29"
+    },
+    {
       "jam": "08:00–09:00",
       "kegiatan": "Pembukaan — Briefing CEO dan pemeriksaan seluruh sistem (status 48 AI, pekerjaan tertunda, pesan/email, Master Knowledge, prioritas, laporan pembukaan).",
       "pemilik": "Muse + Central Brain + A27 + A20–A23 + A29"
@@ -54,21 +69,6 @@
       "jam": "02:00–05:00",
       "kegiatan": "Pembangunan dan penyempurnaan — bangun website dan aplikasi, perbaiki produk belum lulus QA, kembangkan game dan sistem, optimasi SEO.",
       "pemilik": "A13 + A14 + A18"
-    },
-    {
-      "jam": "05:00–07:00",
-      "kegiatan": "Pemantauan dan tindak lanjut — email/pesan baru, komentar dan pertanyaan, status proposal freelance, performa konten, hasil penjualan.",
-      "pemilik": "A27 + A26 + Muse"
-    },
-    {
-      "jam": "07:00",
-      "kegiatan": "Upload pagi: YouTube, TikTok, Instagram",
-      "pemilik": "A31"
-    },
-    {
-      "jam": "07:00–08:00",
-      "kegiatan": "Laporan dan persiapan siklus berikutnya — A04 QC, A05 analisis, A29 keuangan, Muse laporan 24 jam, pembelajaran ke Memory Manager, prioritas besok.",
-      "pemilik": "Muse + A04 + A05 + A29"
     }
   ],
   "catatan": "Upload jam 07:00 + 20:00 WIB (aturan 27 poin no. 1) — tetap jalan. Sumber: ChatGPT share #30 (Jadwal Operasional 24 Jam) + #31 (Panduan memasang jadwal), diterapkan 23 Nov 2026 atas perintah Cipta ('Terapkan di ChatGPT dan masukkan ke Pusat Komando'). Jadwal lama (dari omongan Cipta) DIHAPUS dan diganti jadwal ini (perintah Cipta 23 Nov 05:55). Situs/platform Agent.ai sudah tutup (agent.ai dialihkan permanen ke builderpack.com; app/docs tidak merespons) — 12 trigger DG diadaptasi ke cron Muse, BUKAN ke Agent.ai. Agent AI (Muse, Gemini Hydrogen, 54 agent, Dify) tetap hidup semua. Semua output agent = DRAF untuk persetujuan Cipta. Bayar/kirim uang + keputusan urgent = Cipta. Target: $5.000 s.d. 30 Nov 2026, $10.000 s.d. 31 Des 2026, $5.000/bulan.",
