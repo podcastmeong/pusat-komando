@@ -16,13 +16,13 @@ Semua komponen versi pintar HARUS gratis. Yang BOLEH: Hydrogen lewat API free ti
 Yang JANGAN: Google AI Pro/Ultra, Claude API berbayar, layanan apa pun yang minta kartu atau bayar. JANGAN beli/langganan apa pun.
 Bila suatu bagian upgrade ternyata HANYA bisa jalan dengan yang berbayar, laporkan bagian itu sebagai TERBLOKIR (butuh keputusan Cipta) dan lanjutkan bagian gratisnya.
 
-## RENCANA KOMBINASI HYDROGEN + CARBON (nanti — belum aktif, Cipta 16:05–16:06)
+## DIBUANG (perintah Cipta 22 Nov 16:25 — BATAL, JANGAN DIUNGKIT)
 
-- **Hydrogen (gratis, ~20 panggilan/hari):** tugas sehari-hari (riset, draf). **Carbon (berbayar):** OTAK STANDBY — menilai pesan masuk (email + DM) secara berkala, mana yang penting/urgent, lalu bertindak/meneruskan. Standby itu kerja sistem (cron + watchdog); Carbon hanya otaknya — dan karena berbayar per token, standby terus-menerus = biaya jalan terus. Carbon TERKUNCI di runner (butuh file `data/persetujuan-carbon.md` + env `SATUKIKI_CARBON_APPROVED=1`); bila Cipta menyetujui biayanya nanti, yang diganti hanya `--model hydrogen` → `--model carbon` di cron standby. Detail: `data/rencana-kombinasi-hydrogen-carbon.md`.
+8 item AI ini DIBUANG — jangan dikerjakan/dikejar lagi tanpa perintah baru Cipta: **Gemini 4 Carbon, OpenAI Dots, Claude Duet, Google Gemini Agent/Tasks, Claude Haiku 5.5, GPT-6.1 Terra, Kimi K3.1 Pro, Muse Spark Open.** Akibatnya: **rencana kombinasi Hydrogen + Carbon BATAL** dan **peran Carbon sebagai otak standby (cek email/DM) BATAL** — Carbon dibuang karena berbayar. Fokus HANYA yang gratis: Hydrogen untuk SEMUA agent (~20 panggilan/hari, hemat kuota), Cloudflare staging, SaaS, Godot, dan ganti 44 agent. Runner tetap menolak Carbon (guard: butuh `data/persetujuan-carbon.md` + env `SATUKIKI_CARBON_APPROVED=1` — file persetujuan itu TIDAK akan dibuat). Dokumen rencana kombinasi (`data/rencana-kombinasi-hydrogen-carbon.md`) dinyatakan BATAL dan disimpan sebagai arsip saja.
 
 ## HYDROGEN DULU, SEMUA (perintah Cipta 22 Nov 2026 16:07 — WAJIB)
 
-Hydrogen (gratis, free tier ~20 panggilan/hari) dipakai DULU untuk SEMUA agent — bukan cuma pilot A27. Carbon menyusul nanti (kombinasi, setelah Cipta setuju biayanya).
+Hydrogen (gratis, free tier ~20 panggilan/hari) dipakai untuk SEMUA agent — bukan cuma pilot A27. Hanya Hydrogen — Carbon DIBUANG 22 Nov 16:25, tidak ada kombinasi nanti.
 
 **Disiplin kuota 20/hari (dipakai BERSAMA semua agent — hemat!):**
 1. Prioritas panggilan Hydrogen: (1) triase pesan masuk A27 (penting/urgent), (2) hook/naskah video Oyen/A11/A17, (3) riset/draf penting lainnya.
@@ -51,7 +51,7 @@ Perintah Cipta: agent TIDAK menunggu disuruh — agent menilai, memutuskan, meng
 - JANGAN ubah harga/aturan yang sudah disetujui tanpa persetujuan Cipta.
 - JANGAN laporkan "selesai" sebelum verifikasi (A38 QA: cek live dari sisi Cipta; cek curl/grep saja TIDAK cukup).
 - **GRATIS SAJA (perintah Cipta 22 Nov 15:48):** semua komponen harus gratis — Hydrogen free-tier API, Qdrant self-host, watchdog/cron, Antigravity paket gratis. JANGAN Google AI Pro/Ultra, JANGAN Claude API berbayar, JANGAN layanan apa pun yang minta kartu/bayar. Bila suatu bagian hanya bisa jalan dengan yang berbayar, laporkan sebagai TERBLOKIR (butuh keputusan Cipta) dan lanjutkan bagian gratisnya.
-- **Rencana nanti (belum aktif):** kombinasi Hydrogen (gratis, ~20 panggilan/hari, tugas sehari-hari) + Carbon (berbayar, otak standby cek email/DM) — Carbon BELUM aktif, butuh persetujuan biaya Cipta; runner sudah bisa pilih model.
+- **DIBUANG — JANGAN DIUNGKIT (perintah Cipta 22 Nov 16:25):** Gemini 4 Carbon (berbayar — rencana kombinasi Hydrogen+Carbon dan peran Carbon sebagai otak standby **BATAL**), OpenAI Dots, Claude Duet, Google Gemini Agent/Tasks, Claude Haiku 5.5, GPT-6.1 Terra, Kimi K3.1 Pro, Muse Spark Open. Fokus HANYA yang gratis (Hydrogen). Jangan kerjakan/kejar item-item itu lagi tanpa perintah baru Cipta.
 - **Hydrogen dulu, semua (Cipta 16:07) + hemat kuota 20/hari (dipakai bersama semua agent):** Hydrogen hanya untuk tugas penting (triase pesan, hook/naskah, riset/draf); tugas rutin pakai aturan/file; 1 panggilan per tugas, retry maks 1x; pemakaian tercatat di `data/log-penggunaan-model.jsonl`.
 
 **Memori (wajib):**

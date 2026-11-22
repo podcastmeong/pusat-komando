@@ -1,4 +1,8 @@
-# Rencana Kombinasi Hydrogen + Carbon (untuk NANTI — belum aktif)
+**⛔ STATUS: BATAL — DIBUANG perintah Cipta 22 Nov 2026 16:25 ("Yang lain buang"). Jangan dilaksanakan, jangan diungkit tanpa perintah baru Cipta. Isi di bawah ini ARSIP saja. Alasan: Carbon berbayar; fokus hanya yang gratis (Hydrogen).**
+
+---
+
+# Rencana Kombinasi Hydrogen + Carbon — ⛔ BATAL
 
 **Status: RENCANA SAJA (22 Nov 2026). Carbon BELUM aktif. Keputusan saat ini: yang FREE saja (15:48) + Hydrogen dulu untuk SEMUA agent (16:07).**
 
