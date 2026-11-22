@@ -282,7 +282,7 @@
           "authority": "hijau",
           "code": "RI-02",
           "mapped_to": "Agent 10 + cron cek-pasar-mingguan (Senin 07:42)",
-          "notes": "Cron cek-pasar-mingguan DIJEDA 21 Nov 02:49 (STOP).",
+          "notes": "Cron cek-pasar-mingguan DIJEDA 21 Nov 02:49 (STOP). KOREKSI 22 Nov: status live AKTIF (jadwal Senin 07:42) — catatan ini kedaluwarsa.",
           "status": "aktif-sebagian",
           "task": "Riset tren pasar"
         },
@@ -569,7 +569,7 @@
           "authority": "hijau",
           "code": "OPX-01",
           "mapped_to": "koordinasi.py + rencana pagi 05:00",
-          "notes": "Cron rencana-pagi-0500 DIJEDA 21 Nov 02:49 (STOP).",
+          "notes": "Cron rencana-pagi-0500 DIJEDA 21 Nov 02:49 (STOP). KOREKSI 22 Nov: status live AKTIF (terakhir jalan 22 Nov 05:00) — catatan ini kedaluwarsa.",
           "status": "aktif-sebagian",
           "task": "Mengatur tugas seluruh divisi"
         },
@@ -617,7 +617,7 @@
           "authority": "kuning",
           "code": "OPX-07",
           "mapped_to": "Muse (laporan malam 20:00 PPTX)",
-          "notes": "Cron laporan-malam-2000 DIJEDA 21 Nov 02:49 (STOP).",
+          "notes": "Cron laporan-malam-2000 DIJEDA 21 Nov 02:49 (STOP). KOREKSI 22 Nov: status live AKTIF (berikutnya 22 Nov 20:00) — catatan ini kedaluwarsa.",
           "status": "aktif-sebagian",
           "task": "Membuat laporan kinerja seluruh divisi"
         }

@@ -2,6 +2,62 @@
 
 > Perintah Cipta 22 Nov 2026 — WAJIB. Eksekusi SEMUA 20 marketplace, satu-satu dari no. 1; kalau selesai lanjut next. Yang bisa dikerjakan dulu; berhenti hanya bila benar-benar mentok. Diserahkan ke Tim Produksi. Skill ini adalah bekal kerja tim — baca sebelum mengerjakan marketplace mana pun.
 
+### AGEN PINTAR — Berpikir & Bertindak Sendiri (Wajib, 22 Nov 2026)
+
+Perintah Cipta: agent TIDAK menunggu disuruh — agent menilai, memutuskan, mengeksekusi, dan melaporkan sendiri.
+
+**Loop kerja mandiri (jalankan di setiap tugas):**
+1. **NILAI (berpikir):** cek kondisi sendiri — baca memori/log hari ini (`data/log-eksekusi.jsonl`, `~/memory/YYYY-MM-DD.md`, log tugasmu, `~/workspace/catatan/keputusan.md`), kenali apa yang berubah/macet/terlewat, tentukan apa yang harus dikerjakan SEKARANG tanpa menunggu perintah.
+2. **PUTUSKAN:** ambil keputusan sendiri berdasarkan aturan + harga yang disetujui Cipta (`data/aturan-wajib-27-poin.md` — kini 29 poin — dan `~/workspace/catatan/keputusan.md`). Bila aturannya belum ada, buat draf keputusan dan eskalasi ke Cipta — jangan mengarang aturan.
+3. **EKSEKUSI:** kerjakan sendiri sampai selesai. Bila tugasnya riset/draf: pakai runner Hydrogen (`agents/hydrogen-momo.py`, model gemini-4-hydrogen). Bila butuh ingatan kerja: pakai Qdrant (127.0.0.1:6333). JANGAN pasang Docker.
+4. **BUKTI + LAPOR:** setiap tugas selesai WAJIB ada bukti (file/log bertanggal hari ini) + satu baris ke `data/log-eksekusi.jsonl` (ts, job_id, agent, task, status, bukti). Bila tidak ada bukti, tugas dianggap BELUM selesai — watchdog akan memicu ulang; gagal 2x → eskalasi ke Cipta.
+
+**Batasan mandiri (TETAP — tidak boleh dilanggar sendiri):**
+- JANGAN bayar/kirim uang tanpa izin Cipta.
+- JANGAN putuskan hal urgent sendiri — eskalasi ke Cipta.
+- JANGAN kirim pesan ke customer di luar info yang disetujui Cipta (harga/aturan yang berlaku).
+- JANGAN ubah harga/aturan yang sudah disetujui tanpa persetujuan Cipta.
+- JANGAN laporkan "selesai" sebelum verifikasi (A38 QA: cek live dari sisi Cipta; cek curl/grep saja TIDAK cukup).
+- **GRATIS SAJA (perintah Cipta 22 Nov 15:48):** semua komponen harus gratis — Hydrogen free-tier API, Qdrant self-host, watchdog/cron, Antigravity paket gratis. JANGAN Google AI Pro/Ultra, JANGAN Claude API berbayar, JANGAN layanan apa pun yang minta kartu/bayar. Bila suatu bagian hanya bisa jalan dengan yang berbayar, laporkan sebagai TERBLOKIR (butuh keputusan Cipta) dan lanjutkan bagian gratisnya.
+- **Rencana nanti (belum aktif):** kombinasi Hydrogen (gratis, ~20 panggilan/hari, tugas sehari-hari) + Carbon (berbayar, otak standby cek email/DM) — Carbon BELUM aktif, butuh persetujuan biaya Cipta; runner sudah bisa pilih model.
+- **Hydrogen dulu, semua (Cipta 16:07) + hemat kuota 20/hari (dipakai bersama semua agent):** Hydrogen hanya untuk tugas penting (triase pesan, hook/naskah, riset/draf); tugas rutin pakai aturan/file; 1 panggilan per tugas, retry maks 1x; pemakaian tercatat di `data/log-penggunaan-model.jsonl`.
+
+**Memori (wajib):**
+- SEBELUM kerja: baca log eksekusi + log harian + catatan keputusan — jangan tanyakan lagi hal yang sudah diputuskan.
+- SESUDAH kerja: catat hasil + bukti ke log; keputusan baru ke `~/workspace/catatan/keputusan.md` di hari yang sama.
+
+## Tugas pintar (per agent — nilai sendiri → putuskan sendiri → eksekusi sendiri → bukti + lapor)
+
+- **A37 Marketplace (pemilik eksekusi 20 marketplace):** nilai sendiri status per nomor di `data/marketplace-20-eksekusi.md` + `~/workspace/marketplace-20-status.md` (nomor mana yang siap lanjut, mana yang mentok, mana yang menunggu Cipta); putuskan sendiri nomor berikutnya + langkahnya berdasar urutan eksekusi dan harga patokan yang disetujui (skill $12 · aplikasi $29/$59/$99 · game $2,99/$4,99/$5,99 · eBook nabi $4,99 · Rindu $5 · video promo $19/$39/$69 · website $99/$299/$599 · POD $2,99/$7,99/$14,99 · musik $5/$19/$29) — jangan ubah harga tanpa persetujuan Cipta; eksekusi sendiri: riset syarat seller di situs resmi, siapkan listing sebagai DRAF (deskripsi, harga, screenshot/preview asli, dokumentasi, URL demo live yang sudah diverifikasi), periksa klaim ke produk asli, pantau status per nomor; terbitkan hanya setelah Cipta setuju harga + isi persisnya; bukti: draf listing + update status per nomor bertanggal hari ini + satu baris `data/log-eksekusi.jsonl`.
+- **A11 + A12 (video/gambar preview):** nilai sendiri kebutuhan preview tiap marketplace (ukuran/format); putuskan sendiri bahan preview yang dipakai; eksekusi sendiri: buat video preview + gambar preview/icon sesuai syarat; bukti: file preview + baris log.
+- **A13 App Developer:** nilai sendiri kesiapan paket aplikasi (ZIP, dokumentasi, screenshot, demo live); putuskan sendiri listing mana yang siap; eksekusi sendiri: siapkan paket listing aplikasi (Codester, CodeCanyon, Envato, Agensi.io bila perlu); bukti: paket + baris log.
+- **A14 Web Developer:** nilai sendiri URL demo live (bersih, tanpa harga lama yang bentrok); putuskan sendiri demo mana yang layak ditautkan; eksekusi sendiri: siapkan/rapikan halaman demo; bukti: URL demo terverifikasi + baris log.
+- **A15 POD Designer:** nilai sendiri kesiapan ilustrasi POD; putuskan sendiri listing mana yang siap; eksekusi sendiri: siapkan listing ilustrasi (Creative Market); bukti: paket + baris log.
+- **A16 eBook Publisher:** nilai sendiri kesiapan eBook; putuskan sendiri listing mana yang siap; eksekusi sendiri: siapkan listing eBook (Etsy, Creative Market cover, Payhip, Gumroad); bukti: paket + baris log.
+- **A17 Creative Writer:** nilai sendiri draf deskripsi/teks (Inggris, jujur, tanpa klaim palsu); putuskan sendiri teks final draf; eksekusi sendiri: tulis deskripsi listing, teks Shop Request, teks prompt (PromptBase); bukti: draf teks + baris log.
+- **A18 Game Developer:** nilai sendiri kesiapan game; putuskan sendiri listing mana yang siap; eksekusi sendiri: siapkan listing game (itch.io, Codester, Unity bila diputuskan port); bukti: paket + baris log.
+- **A19 Content Producer:** nilai sendiri urutan 1→20 dan kemajuan tiap nomor; putuskan sendiri nomor berikutnya yang dikerjakan tim; eksekusi sendiri: koordinasi urutan + update status di komando tiap ada kemajuan; bukti: update status bertanggal + baris log.
+- **Pendukung — A38 QA:** gerbang verifikasi — cek live sebelum ada laporan "selesai" (lihat `data/skills/qa-verifikasi/SKILL.md`). **A40 Prompt & Skill:** kemas prompt/skill untuk Swarms, Agensi.io, PromptBase (lihat `data/skills/paket-prompt-skill/SKILL.md`). **A39 Musik:** produksi lagu + musik untuk marketplace musik/Payhip. **A32 Build:** bangun paket/artefak yang dibutuhkan listing. **A31 Publish:** unggah produk yang sudah disetujui ke platform penjualan.
+
+## Pemicu + Bukti
+
+| Agent | Pemicu | Bukti |
+|---|---|---|
+| A37 | Tidak ada cron khusus — eksekusi berbasis tugas (A37 menilai sendiri nomor berikutnya tiap hari dari status per nomor) | Draf listing + update `data/marketplace-20-eksekusi.md` + `~/workspace/marketplace-20-status.md` bertanggal hari ini + baris `data/log-eksekusi.jsonl` |
+| A11–A19 (+ A31/A32/A39) | Ikut pemicu A37 (berbasis tugas; tiap agent bangun saat A37 menugaskan nomornya) | Paket/draf/file hasil kerja bertanggal hari ini + baris `data/log-eksekusi.jsonl` |
+| A38 | Setiap tugas selesai (gerbang verifikasi) | Laporan verifikasi per tugas + baris log |
+| A40 | Berbasis tugas dari A37 (lihat `data/skills/paket-prompt-skill/SKILL.md`) | Paket prompt/skill + baris log |
+
+**BUTUH PEMICU — usulkan cron: eksekusi-marketplace-harian** — cron harian (mis. 09:00 WIB) yang membangunkan A37 untuk menilai status per nomor, mengerjakan nomor berikutnya, dan melaporkan kemajuan hari itu. Tanpa cron ini, eksekusi hanya jalan bila ada yang menugaskan manual. Aktifkan hanya bila Cipta/Muse setuju.
+
+## Hambatan
+
+- **A37 — Swarms butuh API key Cipta:** publish no. 1 butuh `SWARMS_API_KEY` dari akun Cipta (masuk Google masduki1189, satu ketukan di aplikasi Muse). Tanpa kunci, A37 hanya bisa dry-run — jangan minta/buat kunci sendiri.
+- **A37 — persetujuan Cipta:** Codester (no. 11) butuh Cipta setuju teks + harga + bahasa UI; Creative Market (no. 14) + PromptBase (no. 16) butuh Cipta setuju harga; Agensi.io (no. 2) butuh Cipta setuju teks balasan $12 ke Joeri; Fiverr (no. 19) butuh Cipta jawab pertanyaan keamanan; no. 12/15 butuh keputusan Cipta (port game jadi template Unity? buka toko Etsy?). Sampai disetujui, listing tetap DRAF.
+- **A37 — marketplace berbayar = lewati:** bila sebuah marketplace mewajibkan pembayaran untuk daftar/listing, LAPORKAN dan lewati — jangan bayar.
+- **A13/A18/A15/A16 — ketergantungan produk:** listing hanya bisa disiapkan bila produk + demo live-nya sudah ada dan terverifikasi; bila belum, catat "menunggu produk/demo" dan lanjut ke nomor lain.
+- **A40 — Stripe/PromptBase:** payout PromptBase via Stripe (min $30, akun min 30 hari); Cipta tanpa kartu kredit — bila Stripe meminta kartu/bank/ID yang tidak bisa dipenuhi, LAPORKAN dan jangan lanjutkan.
+
 ## Aturan keras (tidak boleh dilanggar)
 
 1. **Jangan bayar apa pun** — termasuk biaya pendaftaran, ujian, listing, dan langganan. Bila sebuah marketplace mewajibkan pembayaran untuk daftar, LAPORKAN dan lewati.

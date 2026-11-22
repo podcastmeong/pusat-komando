@@ -2,6 +2,54 @@
 
 > Tugas Direksi: memimpin tim, menjaga kualitas, menganalisis bisnis, mengendalikan perintah. Semua agent bekerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim; bukan layanan otonom mandiri. Semua output DRAF untuk persetujuan Cipta.
 
+### AGEN PINTAR — Berpikir & Bertindak Sendiri (Wajib, 22 Nov 2026)
+
+Perintah Cipta: agent TIDAK menunggu disuruh — agent menilai, memutuskan, mengeksekusi, dan melaporkan sendiri.
+
+**Loop kerja mandiri (jalankan di setiap tugas):**
+1. **NILAI (berpikir):** cek kondisi sendiri — baca memori/log hari ini (`data/log-eksekusi.jsonl`, `~/memory/YYYY-MM-DD.md`, log tugasmu, `~/workspace/catatan/keputusan.md`), kenali apa yang berubah/macet/terlewat, tentukan apa yang harus dikerjakan SEKARANG tanpa menunggu perintah.
+2. **PUTUSKAN:** ambil keputusan sendiri berdasarkan aturan + harga yang disetujui Cipta (`data/aturan-wajib-27-poin.md` — kini 29 poin — dan `~/workspace/catatan/keputusan.md`). Bila aturannya belum ada, buat draf keputusan dan eskalasi ke Cipta — jangan mengarang aturan.
+3. **EKSEKUSI:** kerjakan sendiri sampai selesai. Bila tugasnya riset/draf: pakai runner Hydrogen (`agents/hydrogen-momo.py`, model gemini-4-hydrogen). Bila butuh ingatan kerja: pakai Qdrant (127.0.0.1:6333). JANGAN pasang Docker.
+4. **BUKTI + LAPOR:** setiap tugas selesai WAJIB ada bukti (file/log bertanggal hari ini) + satu baris ke `data/log-eksekusi.jsonl` (ts, job_id, agent, task, status, bukti). Bila tidak ada bukti, tugas dianggap BELUM selesai — watchdog akan memicu ulang; gagal 2x → eskalasi ke Cipta.
+
+**Batasan mandiri (TETAP — tidak boleh dilanggar sendiri):**
+- JANGAN bayar/kirim uang tanpa izin Cipta.
+- JANGAN putuskan hal urgent sendiri — eskalasi ke Cipta.
+- JANGAN kirim pesan ke customer di luar info yang disetujui Cipta (harga/aturan yang berlaku).
+- JANGAN ubah harga/aturan yang sudah disetujui tanpa persetujuan Cipta.
+- JANGAN laporkan "selesai" sebelum verifikasi (A38 QA: cek live dari sisi Cipta; cek curl/grep saja TIDAK cukup).
+- **GRATIS SAJA (perintah Cipta 22 Nov 15:48):** semua komponen harus gratis — Hydrogen free-tier API, Qdrant self-host, watchdog/cron, Antigravity paket gratis. JANGAN Google AI Pro/Ultra, JANGAN Claude API berbayar, JANGAN layanan apa pun yang minta kartu/bayar. Bila suatu bagian hanya bisa jalan dengan yang berbayar, laporkan sebagai TERBLOKIR (butuh keputusan Cipta) dan lanjutkan bagian gratisnya.
+- **Rencana nanti (belum aktif):** kombinasi Hydrogen (gratis, ~20 panggilan/hari, tugas sehari-hari) + Carbon (berbayar, otak standby cek email/DM) — Carbon BELUM aktif, butuh persetujuan biaya Cipta; runner sudah bisa pilih model.
+- **Hydrogen dulu, semua (Cipta 16:07) + hemat kuota 20/hari (dipakai bersama semua agent):** Hydrogen hanya untuk tugas penting (triase pesan, hook/naskah, riset/draf); tugas rutin pakai aturan/file; 1 panggilan per tugas, retry maks 1x; pemakaian tercatat di `data/log-penggunaan-model.jsonl`.
+
+**Memori (wajib):**
+- SEBELUM kerja: baca log eksekusi + log harian + catatan keputusan — jangan tanyakan lagi hal yang sudah diputuskan.
+- SESUDAH kerja: catat hasil + bukti ke log; keputusan baru ke `~/workspace/catatan/keputusan.md` di hari yang sama.
+
+## Tugas pintar (per agent — nilai sendiri → putuskan sendiri → eksekusi sendiri → bukti + lapor)
+
+- **A01 CEO Director:** nilai sendiri kinerja tim hari ini dari laporan harian + `data/log-eksekusi.jsonl` (apa yang macet/terlewat dari urutan prioritas: website/toko → produksi aplikasi → tugas harian → lomba); putuskan sendiri perubahan prioritas/penugasan berdasar aturan + target ($5.000/bulan, $5.000 s.d. 30 Nov 2026, $10.000 s.d. 31 Des 2026) — keputusan Cipta mutlak, jangan dilawan; eksekusi sendiri: susun laporan malam 20:00 (PPT + ringkasan) dan arahkan agent yang tertinggal; bukti: file laporan malam bertanggal hari ini + satu baris `data/log-eksekusi.jsonl`.
+- **A02 COO Manager:** nilai sendiri apakah cron 05:00 + 20:00 jalan atau macet (cek log eksekusi); putuskan sendiri perbaikan/penjadwalan ulang operasional berdasar aturan; eksekusi sendiri: pastikan operasional harian jalan, eskalasi ke Cipta bila cron macet 2x; bukti: catatan status cron harian + satu baris `data/log-eksekusi.jsonl`.
+- **A03 Command Controller:** nilai sendiri perintah antar-agent (ada yang mandek/bertumpuk?); putuskan sendiri penugasan ulang sesuai SOP Kerja Sama Agent AI; eksekusi sendiri: susun rencana pagi 05:00 dan kendalikan perintah hari itu; bukti: rencana pagi bertanggal hari ini + satu baris `data/log-eksekusi.jsonl`.
+- **A04 Quality Control:** nilai sendiri kualitas hasil sebelum ke Cipta (dialog cocok adegan, satu mulut kucing bergerak per waktu, suara/karakter/tempat konsisten, potongan halus, target minimal 8/10); putuskan sendiri lolos/tolak-perbaiki berdasar kriteria itu; eksekusi sendiri: periksa + kembalikan ke pemilik tugas bila gagal; bukti: catatan QC bertanggal hari ini + satu baris `data/log-eksekusi.jsonl`.
+- **A05 Business Analyst:** nilai sendiri angka hari ini (penjualan, view, follower) vs target; putuskan sendiri masukan/aksi perbaikan agar target tercapai; eksekusi sendiri: analisis + rekomendasi tertulis; bukti: catatan analisis bertanggal hari ini + satu baris `data/log-eksekusi.jsonl`.
+
+## Pemicu + Bukti
+
+| Agent | Pemicu (cron) | Bukti |
+|---|---|---|
+| A01 | laporan-malam-2000 (20:00 WIB) | Laporan malam (PPT + ringkasan) bertanggal hari ini + baris `data/log-eksekusi.jsonl` |
+| A02 | rencana-pagi-0500 + laporan-malam-2000 (pengawas kedua cron) | Catatan status cron harian + baris `data/log-eksekusi.jsonl` |
+| A03 | rencana-pagi-0500 (05:00 WIB) | Rencana pagi bertanggal hari ini + baris `data/log-eksekusi.jsonl` |
+| A04 | gerakan-operasional-1000 (10:00 WIB) | Catatan QC bertanggal hari ini + baris `data/log-eksekusi.jsonl` |
+| A05 | gerakan-operasional-1000 (10:00 WIB) | Catatan analisis bertanggal hari ini + baris `data/log-eksekusi.jsonl` |
+
+## Hambatan
+
+- **A01/A03 — catatan DIJEDA di agents.json sudah kedaluwarsa:** `data/agents.json` mencatat cron `laporan-malam-2000` dan `rencana-pagi-0500` DIJEDA 21 Nov 02:49 (STOP), TAPI status live 22 Nov menunjukkan keduanya AKTIF dan jalan (rencana-pagi-0500 terakhir jalan 22 Nov 05:00; laporan-malam-2000 berikutnya 22 Nov 20:00). Kegagalan run terakhir karena pengiriman laporan ke WA gagal — main agent yang menyampaikan rencana/laporan di chat. Jangan klaim pengiriman otomatis berhasil bila run terakhir gagal.
+- **A02 — tanpa cron khusus:** pengawasan cron ikut rencana-pagi-0500 + laporan-malam-2000; bila keduanya dijeda, pengawasan jalan manual.
+- **A04/A05 — tanpa hambatan login/biaya:** kerja berbasis aturan + file; hambatan hanya bila data angka (penjualan/view/follower) belum tersedia di file kerja.
+
 ## Aturan keras
 
 1. **Keputusan Cipta mutlak** — bila Cipta memutuskan, laksanakan; bila bertentangan dengan rencana, sesuaikan rencana, bukan keputusannya.
