@@ -224,6 +224,10 @@ SEED_TASKS = [
      "Riset sukses per platform + strategi eksekusi", "HIGH", "IN_PROGRESS",
      "2026-11-22", None, None, None, 1, None,
      "Riset 7 grup SELESAI semua 22 Nov 13:04 (Swarms+Agensi; Gumroad+Payhip; PromptBase+Whop; Fiverr+Udemy; Zazzle+Etsy+CM+Adobe+Dreamstime; KaryaKarsa+Lynk+KBM+Sribu; Pinterest+YT+TikTok+IG). Semua hasil di data/strategi-platform-riset.md; strategi eksekusi target $5.000/bulan sudah disusun."),
+    ("TASK-0012", "PROJECT-001", "A25", "Penjualan",
+     "Closing & pemasukan pertama bulan Nov 2026", "HIGH", "IN_PROGRESS",
+     "2026-11-22", None, None, None, 0, None,
+     "Mandat Cipta 22 Nov 13:44 (WAJIB): semua agent.ai harus aktif, kontribusi, inisiatif, kreatif, visioner, inovatif bulan ini. Bulan ini HARUS ADA closing dan pemasukan. Posisi awal: pemasukan Rp0/$0, penjualan 0, closing 0."),
 ]
 
 SEED_WORKFLOWS = [

@@ -11,6 +11,7 @@ Ditulis ke komando 22 Nov 2026 08:13 WIB atas perintah Cipta.
 - **$5.000/bulan** (≈ Rp82.500.000/bulan) untuk seluruh tim (30 Agen Bintang + A34/A35/A36, dipimpin Muse).
 - **$5.000 sebelum 30 Nov 2026** dan **$10.000 sebelum 31 Des 2026**.
 - Posisi awal 21 Nov 2026: pemasukan total semua platform **Rp0**, penjualan **0**, deal dari 13 toko **0**.
+- **MANDAT BULAN INI — WAJIB (Cipta, 22 Nov 2026 13:44):** semua agent.ai harus AKTIF, KONTRIBUSI, INISIATIF, KREATIF, VISIONER, INOVATIF bulan ini. Bulan ini **HARUS ADA closing dan pemasukan**. Dilacak sebagai TASK-0012 di Master Database.
 
 ## Strategi (revisi 21 Nov 2026) — intinya
 
