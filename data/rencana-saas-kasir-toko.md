@@ -1,7 +1,8 @@
 # Rencana SaaS — Kasir Toko (aplikasi SaaS pertama)
 
-**Status:** RENCANA — dibuat 22 Nov 2026 14:55 atas perintah Cipta "Pasang SaaS dulu". Dieksekusi SETELAH Cloudflare staging selesai (login Cloudflare masih berjalan di browser).
+**Status:** KODE V1 SELESAI dibangun 22 Nov 2026 15:03 (28/28 uji end-to-end lolos, termasuk modul logistik) — deploy menunggu Cloudflare staging selesai (login Cloudflare masih berjalan di browser).
 **Produk:** Kasir Toko — saat ini dijual sebagai demo statis $59 (sekali bayar). Versi SaaS = aplikasi kasir sungguhan yang jalan di server, pelanggan login dan pakai lewat browser.
+**Model (Cipta, 22 Nov 2026 15:09): SaaS ini PER TOKO — aplikasi dan web.** Satu toko = satu akun/workspace sendiri (data terpisah per toko). v1 jalan di web (mobile-friendly, bisa dipakai seperti aplikasi di HP); aplikasi native menyusul bila dibutuhkan.
 
 ## Kenapa Kasir Toko dulu
 
@@ -21,7 +22,7 @@
 - Frontend: Cloudflare Pages (sudah staging).
 - Backend: Cloudflare Workers (fungsi server, gratis 100 ribu request/hari).
 - Database: Cloudflare D1 (gratis, untuk akun + produk + transaksi).
-- Dibangun oleh: agent Antigravity (managed agent, model Gemini 4 Hydrogen via Gemini API — sudah terbukti jalan di API key kita).
+- Dibangun oleh: subagent Muse — kode v1 selesai 22 Nov 2026 15:03 (Worker + D1 + SPA 7 tab, 28/28 uji lolos). Rencana awal pakai Antigravity tidak jadi dipakai untuk v1.
 
 ## Harga (USULAN, belum diputuskan)
 
