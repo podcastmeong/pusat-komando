@@ -1608,7 +1608,8 @@
         "sumber_data": "leads",
         "status": "Aktif — diganti nama jadi A32 Build",
         "kode_baru": "A32",
-        "nama_baru": "Build"
+        "nama_baru": "Build",
+        "tugas": "Kerja 24 jam, fokus membangun (build) — membangun aplikasi, website, dan produk."
       },
       {
         "kode": "3",
