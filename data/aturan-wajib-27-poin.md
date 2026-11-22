@@ -1,5 +1,7 @@
 # Aturan Wajib 29 Poin — Pusat Komando Podcast Meong
 
+**Baca juga:** `data/catatan-wajib-2-hari-terakhir.md` — semua omongan wajib Cipta 21–22 Nov 2026 (bernomor + tanpa nomor + masukan + fakta). Baca sebelum bertanya ke Cipta, biar tidak mengulang.
+
 Perintah Cipta. Wajib ditaati semua agent (Muse + 30 Agent Bintang A01–A30 + A31–A36).
 Ditulis ke Pusat Komando 22 Nov 2026 08:11 WIB atas perintah "Masukan ke komando biar ditaati".
 Sumber: AGENTS.md (aturan 24 poin 21 Nov 2026 17:11, ditegaskan ulang 22 Nov 06:31; poin 25 22 Nov 02:42; poin 26 22 Nov 03:27; poin 27 22 Nov 08:08, diperjelas 08:10).
