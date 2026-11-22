@@ -161,8 +161,8 @@ SEED_PRODUCTS = [
      "Harga mulai; $29 / $49 / $79 per website, sekali bayar"),
     ("WEB-002", "Pembuatan web (tanpa domain+hosting)", "Toko", 99.00, "DRAFT",
      None, "Harga mulai; $99 / $299 / $599, sekali bayar; domain+hosting di luar harga"),
-    ("WEB-003", "Pembuatan web + free hosting", "Toko", 99.00, "DRAFT",
-     None, "Harga mulai; $99 / $299 / $599, sekali bayar; hosting gratis termasuk"),
+    ("WEB-003", "Pembuatan web + free hosting", "Toko", 119.00, "DRAFT",
+     None, "Harga mulai; $119 / $319 / $619, sekali bayar; hosting gratis termasuk"),
     ("WEB-004", "Penyewaan web + hosting (WaaS)", "Toko", None, "DRAFT",
      None, "Rp29.000 / Rp39.000 / Rp49.000 per bulan — DRAFT (rentang Cipta Rp29-50 ribu)"),
 ]

@@ -1,7 +1,7 @@
 # Produk Web — 4 Produk (Keputusan Cipta 22 Nov 2026 17:02)
 
 > Keputusan Cipta (WA 17:02, dicatat di `~/workspace/catatan/keputusan.md`):
-> 1. Demo web · 2. Pembuatan web di luar harga domain dan hosting ·
+> 1. Demo web · 2. Pembuatan web (belum termasuk hosting dan domain) ·
 > 3. Pembuatan web + free hosting · 4. Penyewaan web + hosting.
 > Dokumen ini sumber racikan produk + price list-nya di Pusat Komando.
 > Harga lain yang sudah disetujui TIDAK diubah di sini
@@ -13,8 +13,8 @@
 | # | Produk | Harga | Satuan |
 |---|---|---|---|
 | 1 | Demo web (website jadi, dijual apa adanya) | **$29 / $49 / $79** | sekali bayar, per website |
-| 2 | Pembuatan web (custom, DI LUAR domain + hosting) | **$99 / $299 / $599** | sekali bayar, per website |
-| 3 | Pembuatan web + free hosting | **$99 / $299 / $599** | sekali bayar, per website |
+| 2 | Pembuatan web (custom, belum termasuk hosting dan domain) | **$99 / $299 / $599** | sekali bayar, per website |
+| 3 | Pembuatan web + free hosting | **$119 / $319 / $619** | sekali bayar, per website |
 | 4 | Penyewaan web + hosting (WaaS / sewa website) | **Rp29.000 / Rp39.000 / Rp49.000** | per bulan — **DRAFT**, lihat §4 |
 
 Aturan harga (Cipta 22 Nov 13:33): **nama dan angka tingkat TIDAK PERNAH ditulis
@@ -60,8 +60,8 @@ premium $59–$99 (ThemeForest terlaris $59–$89).
 
 ## 2. Pembuatan web — $99 / $299 / $599 (sekali bayar)
 
-Jasa pembuatan website custom sesuai pesanan. **Harga DI LUAR domain dan hosting:**
-domain + hosting TIDAK termasuk — pelanggan bayar sendiri atau bawa sendiri.
+Jasa pembuatan website custom sesuai pesanan. **Belum termasuk hosting dan domain:**
+hosting + domain TIDAK termasuk — pelanggan bayar sendiri atau bawa sendiri.
 
 **Termasuk:** website custom sesuai pesanan; 2 muka website (customer + admin,
 rincian di `data/target-dan-strategi.md` § "Keputusan harga & hak pembeli");
@@ -76,7 +76,7 @@ $400–$950, ~10 halaman $1.000–$2.500.
 
 ---
 
-## 3. Pembuatan web + free hosting — $99 / $299 / $599 (sekali bayar)
+## 3. Pembuatan web + free hosting — $119 / $319 / $619 (sekali bayar)
 
 Sama seperti produk 2 (custom, 7 hari kalender, 1 revisi kecil, garansi bug
 30/60 hari, 2 muka website, akun admin khusus pembeli), **ditambah hosting
@@ -208,8 +208,10 @@ halaman website itu sendiri.
 2. Harga **buyout** produk 4 (pelanggan membeli website jadi miliknya)?
 3. Harga per permintaan update konten di luar jatah tier sewa?
 4. Minimum masa langganan produk 4 (pasar umumnya 12 bulan)?
-5. Produk 3 (pembuatan + free hosting) harganya sama persis dengan produk 2
-   ($99/$299/$599) atau ada selisih karena hosting termasuk?
+5. ~~Produk 3 (pembuatan + free hosting) harganya sama persis dengan produk 2
+   ($99/$299/$599) atau ada selisih karena hosting termasuk?~~ — **DIPUTUSKAN
+   22 Nov 17:11: produk 3 = $119/$319/$619 (naik $20/tier dari produk 2,
+   karena kita juga mengeluarkan jasa hosting/pengelolaan).**
 6. Kapan pindah dari satu akun Cloudflare ke pola akun per klien
    (ambang jumlah pelanggan)?
 7. Apakah produk 4 mulai ditawarkan sekarang, atau menunggu staging
