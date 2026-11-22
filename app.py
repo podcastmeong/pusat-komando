@@ -564,16 +564,37 @@ def _jalankan_siklus_koord():
 # Jadwal Harian (23 Nov 2026 — perintah Cipta: jadwal harian harus ada di app)
 # ---------------------------------------------------------------------------
 def _jadwal_harian_md():
-    """Render jadwal harian dari data/jadwal-harian.json sebagai Markdown."""
+    """Render jadwal operasional dari data/jadwal-harian.json sebagai Markdown.
+    Struktur baru (23 Nov 2026): trigger DG-01..DG-12 (adaptasi ChatGPT ke cron Muse)
+    + blok kerja 24 jam + kuota harian. Struktur lama ('jadwal') tetap didukung."""
     data = _baca_json(DATA_DIR / "jadwal-harian.json", {})
     if not data:
         return "⚠️ data/jadwal-harian.json tidak ditemukan."
-    baris = ["# 📅 Jadwal Harian (WIB — Asia/Jakarta)\n"]
-    baris.append("### 🕐 Jadwal\n")
-    baris.append("| Jam | Kegiatan | Pemilik |")
-    baris.append("| --- | --- | --- |")
-    for j in data.get("jadwal", []):
-        baris.append("| {} | {} | {} |".format(j.get("jam", ""), j.get("kegiatan", ""), j.get("pemilik", "")))
+    judul = data.get("judul", "Jadwal Operasional (WIB — Asia/Jakarta)")
+    baris = ["# 📅 {}\n".format(judul)]
+    if data.get("trigger"):
+        baris.append("### ⚙️ Trigger DG-01..DG-12 → Cron Muse\n")
+        baris.append("| Kode | Jam | Nama | Agent | Tugas | Cron | Status |")
+        baris.append("| --- | --- | --- | --- | --- | --- | --- |")
+        for t in data["trigger"]:
+            baris.append("| {} | {} | {} | {} | {} | {} | {} |".format(
+                t.get("kode", ""), t.get("jam", ""), t.get("nama", ""),
+                t.get("agent", ""), t.get("tugas", ""), t.get("cron", ""),
+                t.get("status", "")))
+            if t.get("catatan"):
+                baris.append("| | | | | *{}* | | |".format(t["catatan"]))
+    if data.get("blok"):
+        baris.append("\n### 🕐 Blok Kerja 24 Jam\n")
+        baris.append("| Jam | Kegiatan | Pemilik |")
+        baris.append("| --- | --- | --- |")
+        for b in data["blok"]:
+            baris.append("| {} | {} | {} |".format(b.get("jam", ""), b.get("kegiatan", ""), b.get("pemilik", "")))
+    if data.get("jadwal"):
+        baris.append("\n### 🕐 Jadwal\n")
+        baris.append("| Jam | Kegiatan | Pemilik |")
+        baris.append("| --- | --- | --- |")
+        for j in data["jadwal"]:
+            baris.append("| {} | {} | {} |".format(j.get("jam", ""), j.get("kegiatan", ""), j.get("pemilik", "")))
     baris.append("\n### 🎯 Kuota Harian\n")
     baris.append("| Produk | Jumlah |")
     baris.append("| --- | --- |")

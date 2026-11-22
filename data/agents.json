@@ -924,7 +924,7 @@
         "tugas_harian": "Periksa fakta, ejaan, hak cipta, tautan, klaim dan konsistensi",
         "target_harian": "100% output penting diperiksa",
         "skills": [
-          "data/skills/kepemimpinan-koordinasi/SKILL.md"
+          "data/skills/qa-verifikasi/SKILL.md"
         ]
       },
       {
@@ -955,7 +955,7 @@
         "tugas_harian": "Hitung performa konten, biaya, pemasukan, risiko",
         "target_harian": "1 ringkasan harian",
         "skills": [
-          "data/skills/kepemimpinan-koordinasi/SKILL.md"
+          "data/skills/analisis-bisnis/SKILL.md"
         ]
       },
       {
@@ -1130,8 +1130,7 @@
         "tugas_harian": "Naskah, storyboard, prompt, video pendek | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 video utama atau storyboard siap produksi",
         "skills": [
-          "data/skills/produksi-video/SKILL.md",
-          "data/skills/eksekusi-marketplace/SKILL.md"
+          "data/skills/produksi-video/SKILL.md"
         ]
       },
       {
@@ -1163,8 +1162,7 @@
         "tugas_harian": "Buat visual utama dan variasinya | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "3–5 visual siap QC",
         "skills": [
-          "data/skills/desain-gambar/SKILL.md",
-          "data/skills/eksekusi-marketplace/SKILL.md"
+          "data/skills/desain-gambar/SKILL.md"
         ]
       },
       {
@@ -1195,8 +1193,7 @@
         "tugas_harian": "Kerjakan backlog aplikasi/tool | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 tugas kecil; rilis mingguan",
         "skills": [
-          "data/skills/pengembangan-aplikasi/SKILL.md",
-          "data/skills/eksekusi-marketplace/SKILL.md"
+          "data/skills/pengembangan-aplikasi/SKILL.md"
         ]
       },
       {
@@ -1227,8 +1224,7 @@
         "tugas_harian": "Perbaiki landing page/katalog/SEO teknis | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 perbaikan; rilis mingguan",
         "skills": [
-          "data/skills/pengembangan-website/SKILL.md",
-          "data/skills/eksekusi-marketplace/SKILL.md"
+          "data/skills/pengembangan-website/SKILL.md"
         ]
       },
       {
@@ -1258,8 +1254,7 @@
         "tugas_harian": "Buat desain print-on-demand | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "2–3 desain konsep",
         "skills": [
-          "data/skills/desain-pod/SKILL.md",
-          "data/skills/eksekusi-marketplace/SKILL.md"
+          "data/skills/desain-pod/SKILL.md"
         ]
       },
       {
@@ -1291,8 +1286,7 @@
         "tugas_harian": "Susun/edit naskah eBook | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 bagian/bab draf",
         "skills": [
-          "data/skills/penerbitan-ebook/SKILL.md",
-          "data/skills/eksekusi-marketplace/SKILL.md"
+          "data/skills/penerbitan-ebook/SKILL.md"
         ]
       },
       {
@@ -1323,8 +1317,7 @@
         "tugas_harian": "Tulis cerita, puisi atau naskah | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 karya/bagian draf",
         "skills": [
-          "data/skills/penulisan-kreatif/SKILL.md",
-          "data/skills/eksekusi-marketplace/SKILL.md"
+          "data/skills/penulisan-kreatif/SKILL.md"
         ]
       },
       {
@@ -1355,8 +1348,7 @@
         "tugas_harian": "Bangun fitur game sesuai backlog | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 fitur kecil; rilis mingguan",
         "skills": [
-          "data/skills/pengembangan-game/SKILL.md",
-          "data/skills/eksekusi-marketplace/SKILL.md"
+          "data/skills/pengembangan-game/SKILL.md"
         ]
       },
       {
@@ -1387,8 +1379,7 @@
         "tugas_harian": "Pecah satu ide menjadi format konten | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 ide → 7 format draf",
         "skills": [
-          "data/skills/produksi-konten/SKILL.md",
-          "data/skills/eksekusi-marketplace/SKILL.md"
+          "data/skills/produksi-konten/SKILL.md"
         ]
       },
       {
@@ -1750,7 +1741,7 @@
         "tugas_harian": "Rapikan SOP, dokumen, jadwal dan arsip",
         "target_harian": "Dokumen dan status tugas diperbarui",
         "skills": [
-          "data/skills/peluang-keuangan/SKILL.md"
+          "data/skills/operasional-admin/SKILL.md"
         ]
       }
     ]
@@ -2254,7 +2245,117 @@
         "status": "Dibangun 23 Nov 2026 (tugas browser berjalan); tes Save/Look Up/List menyusul setelah jadi",
         "tugas_harian": "Simpan keputusan resmi, progres, kesalahan + solusi, preferensi Owner, tugas belum selesai (JANGAN simpan kata sandi/API key/OTP/data sensitif)",
         "target_harian": "3/3 fungsi memori (Save/Look Up/List) berfungsi dan tersambung ke Central Brain",
-        "skills": []
+        "skills": [
+          "data/skills/manajer-memori/SKILL.md"
+        ]
+      },
+      {
+        "code": "DIFY-03",
+        "name": "Website Manager",
+        "platform": "Dify Cloud (cloud.dify.ai)",
+        "type": "Workflow",
+        "division": "Operasional",
+        "boss": "Central Brain",
+        "job_desc": "Membangun dan mengelola website Digistore Oyen: Website Management, UX/UI, SEO, Website QA",
+        "url": null,
+        "knowledge_base": "Digistore Oyen — Master Knowledge",
+        "mapped_to": "Muse (browser) + Dify",
+        "status": "Rencana — belum dibangun; menunggu kuota Dify terisi kembali (kuota 0 sejak 22 Nov 2026)",
+        "tugas_harian": "Bangun/kelola website; uji tautan, tampilan mobile, formulir, dan kesalahan halaman; tidak mengubah website produksi tanpa persetujuan Owner",
+        "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
+        "skills": [
+          "data/skills/website-manager/SKILL.md"
+        ]
+      },
+      {
+        "code": "DIFY-04",
+        "name": "Product & Seller Manager",
+        "platform": "Dify Cloud (cloud.dify.ai)",
+        "type": "Workflow",
+        "division": "Operasional",
+        "boss": "Central Brain",
+        "job_desc": "Mengelola katalog produk digital dan proses seller: Product Management, Seller Onboarding, Catalog Management, Quality Review",
+        "url": null,
+        "knowledge_base": "Digistore Oyen — Master Knowledge",
+        "mapped_to": "Muse (browser) + Dify",
+        "status": "Rencana — belum dibangun; menunggu kuota Dify terisi kembali (kuota 0 sejak 22 Nov 2026)",
+        "tugas_harian": "Periksa kelengkapan produk (deskripsi, kategori, harga, format, file); deteksi duplikasi; tandai produk yang butuh pemeriksaan manusia",
+        "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
+        "skills": [
+          "data/skills/product-seller-manager/SKILL.md"
+        ]
+      },
+      {
+        "code": "DIFY-05",
+        "name": "Marketing & Research",
+        "platform": "Dify Cloud (cloud.dify.ai)",
+        "type": "Workflow",
+        "division": "Operasional",
+        "boss": "Central Brain",
+        "job_desc": "Meneliti pasar dan mengembangkan strategi pemasaran Digistore Oyen: Market Research, Competitor Analysis, SEO, Content Marketing, Campaign Planning",
+        "url": null,
+        "knowledge_base": "Digistore Oyen — Master Knowledge",
+        "mapped_to": "Muse (browser) + Dify",
+        "status": "Rencana — belum dibangun; menunggu kuota Dify terisi kembali (kuota 0 sejak 22 Nov 2026)",
+        "tugas_harian": "Riset tren/kompetitor/peluang; susun strategi SEO dan konten; buat ide kampanye — dengan sumber + tanggal, tanpa mengarang statistik",
+        "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
+        "skills": [
+          "data/skills/marketing-research/SKILL.md"
+        ]
+      },
+      {
+        "code": "DIFY-06",
+        "name": "Customer Support",
+        "platform": "Dify Cloud (cloud.dify.ai)",
+        "type": "Workflow",
+        "division": "Operasional",
+        "boss": "Central Brain",
+        "job_desc": "Membantu pembeli dan seller Digistore Oyen: Customer Service, FAQ, Complaint Handling, Ticket Classification, Escalation",
+        "url": null,
+        "knowledge_base": "Digistore Oyen — Master Knowledge",
+        "mapped_to": "Muse (browser) + Dify",
+        "status": "Rencana — belum dibangun; menunggu kuota Dify terisi kembali (kuota 0 sejak 22 Nov 2026)",
+        "tugas_harian": "Jawab pembeli/seller dari kebijakan resmi Knowledge Base; kelompokkan keluhan per urgensi; eskalasi pembayaran/refund/penipuan/keamanan ke Cipta",
+        "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
+        "skills": [
+          "data/skills/customer-support/SKILL.md"
+        ]
+      },
+      {
+        "code": "DIFY-07",
+        "name": "Finance & Reporting",
+        "platform": "Dify Cloud (cloud.dify.ai)",
+        "type": "Workflow",
+        "division": "Operasional",
+        "boss": "Central Brain",
+        "job_desc": "Membantu analisis keuangan dan membuat laporan Digistore Oyen: Revenue Analysis, Commission Calculation, Financial Reporting, Transaction Reconciliation",
+        "url": null,
+        "knowledge_base": "Digistore Oyen — Master Knowledge",
+        "mapped_to": "Muse (browser) + Dify",
+        "status": "Rencana — belum dibangun; menunggu kuota Dify terisi kembali (kuota 0 sejak 22 Nov 2026)",
+        "tugas_harian": "Hitung pendapatan/komisi dari data transaksi; pisahkan omzet, biaya, komisi, refund, pendapatan bersih; tampilkan rumus + asumsi",
+        "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
+        "skills": [
+          "data/skills/finance-reporting/SKILL.md"
+        ]
+      },
+      {
+        "code": "DIFY-08",
+        "name": "Quality Control",
+        "platform": "Dify Cloud (cloud.dify.ai)",
+        "type": "Workflow",
+        "division": "Operasional",
+        "boss": "Central Brain",
+        "job_desc": "Memeriksa kualitas pekerjaan seluruh agent Digistore Oyen: Error Detection, Testing, Risk Assessment, Self-Evaluation, Compliance Checks",
+        "url": null,
+        "knowledge_base": "Digistore Oyen — Master Knowledge",
+        "mapped_to": "Muse (browser) + Dify",
+        "status": "Rencana — belum dibangun; menunggu kuota Dify terisi kembali (kuota 0 sejak 22 Nov 2026)",
+        "tugas_harian": "Periksa hasil semua agent vs instruksi Owner + Knowledge Base; beri tingkat risiko dan status LULUS / PERLU PERBAIKAN / GAGAL",
+        "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
+        "skills": [
+          "data/skills/quality-control-dify/SKILL.md"
+        ]
       }
     ]
   }
