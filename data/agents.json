@@ -1598,7 +1598,8 @@
         "sumber_data": "handoff",
         "status": "Aktif — diganti nama jadi A31 Publish",
         "kode_baru": "A31",
-        "nama_baru": "Publish"
+        "nama_baru": "Publish",
+        "tugas": "Upload/publish ke SEMUA platform penjualan (Payhip, Gumroad, KaryaKarsa, KBM, Etsy, dll) — hanya konten/produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis."
       },
       {
         "kode": "2",
@@ -1702,7 +1703,7 @@
         "status": "Pasif — non job"
       }
     ],
-    "catatan": "A31–A33 belum punya modul; A34 (terjemahan) DITUNDA perintah Cipta; A35/A36 punya modul (b35_ngetik.py, b36_copywriter.py). Koreksi 21 Nov 14:23: yang dihitung agent hanya 30 Bintang (A01–A30); A31–A36 adalah kode peran, bukan hitungan agent. KOREKSI 22 Nov 08:21 (Cipta: kembaliin semua jobnya): A31–A33 kembali ke job asli — A31 Asisten/Publish, A32 Penjualan/Build, A33 Pertumbuhan (riset konten + naikkan follower/subs/view/like + strategi monetisasi). Catatan 08:18 soal A31/A32 handle mengetik & copywriter SALAH dan dicabut; mengetik tetap A35, copywriter tetap A36. A31 Publish = upload/publish (menerbitkan konten/produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis)."
+    "catatan": "A31–A33 belum punya modul; A34 (terjemahan) DITUNDA perintah Cipta; A35/A36 punya modul (b35_ngetik.py, b36_copywriter.py). Koreksi 21 Nov 14:23: yang dihitung agent hanya 30 Bintang (A01–A30); A31–A36 adalah kode peran, bukan hitungan agent. KOREKSI 22 Nov 08:21 (Cipta: kembaliin semua jobnya): A31–A33 kembali ke job asli — A31 Asisten/Publish, A32 Penjualan/Build, A33 Pertumbuhan (riset konten + naikkan follower/subs/view/like + strategi monetisasi). Catatan 08:18 soal A31/A32 handle mengetik & copywriter SALAH dan dicabut; mengetik tetap A35, copywriter tetap A36. A31 Publish = upload/publish (menerbitkan konten/produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis). A31 = upload ke SEMUA platform penjualan (bukan hanya Payhip)."
   },
   "sop_harian": {
     "sumber": "Sistem_Operasional_Harian_30_Agent_Bintang.docx (diunggah Cipta, 21 Nov 2026)",
