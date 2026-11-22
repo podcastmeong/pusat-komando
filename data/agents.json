@@ -1626,7 +1626,8 @@
         "status": "Aktif — diganti nama jadi A31 Publish",
         "kode_baru": "A31",
         "nama_baru": "Publish",
-        "tugas": "Upload SEMUA PRODUK ke semua platform penjualan (Payhip, Gumroad, KaryaKarsa, KBM, Etsy, dll) — hanya produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis."
+        "tugas": "Upload SEMUA PRODUK ke semua platform penjualan (Payhip, Gumroad, KaryaKarsa, KBM, Etsy, dll) — hanya produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis.",
+        "skills": ["data/skills/eksekusi-marketplace/SKILL.md"]
       },
       {
         "kode": "2",

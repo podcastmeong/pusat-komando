@@ -27,6 +27,25 @@ Perintah Cipta, 22 Nov 2026 08:50–08:57: eksekusi SEMUA 20 marketplace, satu-s
 | 19 | Fiverr | Jasa: video promo, poster, aplikasi | $19/$39/$69 video | Profil 25%, Gig 1 DRAF. TERHALANG pertanyaan keamanan (hanya Cipta bisa jawab) |
 | 20 | Udemy | Kursus (4 modul belajar AI) | — | Belum dieksekusi — riset syarat kursus dulu |
 
+## Pemilik produk (agent) — sesuai kebutuhan tiap lini
+
+| Lini produk | Pemilik | Pendukung |
+|---|---|---|
+| Skill Pusat Komando ($12) | **A40 Prompt & Skill** (kemas) | A37 Marketplace (listing), A38 QA, A31 Publish |
+| 9 paket prompt PromptBase ($2,99–$12) | **A40 Prompt & Skill** (kemas) | A37, A38 |
+| Aplikasi Kasir Toko $59, Faktur $29, aplikasi lain $29/$59/$99 | A13 App Developer | A37, A38, A31 |
+| Game $2,99–$5,99 | A18 Game Developer | A37, A38, A31 |
+| eBook ($4,99, Rindu $5, bundle) | A16 eBook Publisher | A37, A38, A31 |
+| 8 ilustrasi POD + 3 cover eBook + 3 paket foto | A15 POD Designer (ilustrasi), A12 AI Image Designer (foto/cover) | A37, A38, A31 |
+| Video promo $19/$39/$69 | A11 AI Video Producer | A37, A38, A31 |
+| Demo website $99/$299/$599 | A14 Web Developer | A37, A38, A31 |
+| Musik $5/$19/$29 + lagu 5/hari | **A39 Musik** | A37, A38, A31 |
+| Jasa (video/poster/aplikasi) | A25 Sales + A26 Customer Service | A37, A38 |
+| Kursus AI 4 modul | A17 Creative Writer + A19 Content Producer | A37, A38 |
+| Workflow otomatisasi (Neura Market) | A06 Market Researcher + A13 | A37, A38 |
+
+QA (A38) memeriksa SEMUA lini sebelum ada laporan "selesai". A31 Publish mengunggah semua produk yang sudah disetujui Cipta ke platform penjualan.
+
 ## Urutan kerja (satu-satu)
 
 1 → 11 → 14/16 → 2 → 4, 5, 18, 20 (riset) → 9, 10 (pantau pembukaan) → 3, 6, 7, 8, 12, 15, 19 (butuh keputusan/berkas Cipta).

@@ -17,6 +17,36 @@
 4. Daftarkan ke katalog toko bila sudah disetujui Cipta; harga patokan musik $5/$19/$29 (jangan diubah tanpa persetujuan).
 5. Bila alat gratis habis/bermasalah: laporkan + pakai cadangan — jangan berhenti diam-diam dan jangan beli tanpa izin.
 
+## Alat gratis yang dipakai (lengkap)
+
+| Alat | Lisensi | Pakai untuk | Catatan |
+|---|---|---|---|
+| Stable Audio (free) | Komersial (terverifikasi) | Musik film + musik toko | Pilihan utama; sudah dipakai untuk film Artefact |
+| ACE-Step 1.5 | MIT (open source) | Cadangan bila Stable Audio bermasalah | Butuh jalankan lokal |
+| MusicGen | CC-BY-NC | DITOLAK — jangan dipakai | Lisensi non-komersial |
+
+Bila muncul alat gratis baru: cek lisensinya dulu (boleh komersial atau tidak) SEBELUM memakai — catat hasil ceknya.
+
+## Jenis produk + harga (patokan, jangan diubah tanpa persetujuan Cipta)
+
+| Produk | Harga | Isi |
+|---|---|---|
+| Musik pendek / latar | $5 | 1 trek, durasi pendek |
+| Musik paket standar | $19 | Beberapa trek / durasi lebih panjang |
+| Musik paket premium | $29 | Paket lengkap (tema + variasi) |
+| Lagu (dengan lirik/vokal AI) | Sesuai paket musik di atas | Lirik asli, tema bebas |
+
+## Penamaan + penyimpanan file
+
+- Nama file: `musik-<tema>-<nomor>.mp3` / `lagu-<judul>-<nomor>.mp3` (huruf kecil, tanpa spasi).
+- Simpan di folder kerja harian + catat di log: judul, tema, alat, durasi, ukuran, tanggal.
+- Format: MP3 (utama) + WAV bila diminta; pastikan file bisa diputar penuh sebelum didaftarkan.
+
+## Cara jual
+
+- Payhip (musik $5/$19/$29) + toko (tautan ke Payhip). A31 Publish yang mengunggah setelah Cipta setuju isi persisnya.
+- Bila ada platform musik baru (Spotify/DistroKid/dll): riset dulu syarat + biayanya — jangan daftar bila berbayar tanpa persetujuan Cipta.
+
 ## File kerja
 
 - Katalog + harga: `data/marketplace-20-eksekusi.md` (musik $5/$19/$29).
