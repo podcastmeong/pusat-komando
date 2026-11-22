@@ -11,8 +11,17 @@ adalah aturan KERJA, bukan saran.
 |---|---|
 | **TIDAK BOLEH tanpa izin Cipta** | **Bayar apa pun** (= SALAH bila tanpa izin) · **kirim duit / transfer** (izin dulu) · hapus data/produk/akun · ganti kata sandi/kode · publish dapur/rahasia perusahaan (lihat § Publish) |
 | **BOLEH jalan sendiri** | Riset · buat draf · produksi konten/produk (sebagai DRAF) · **kirim penawaran** (template yang sudah disetujui) · kerjaan yang OK jalan saja (tugas rutin berpola SOP: jadwal harian, kuota produksi, riset, draf) |
-| **Butuh persetujuan Cipta** | Video/sosmed: isi persis (video + judul + caption) · eBook: "Setuju" per buku · kirim proposal freelance: per lowongan · keputusan harga/DP/syarat baru · semua yang TIDAK BOLEH di atas |
-| **DRAF-only** | Semua output agen adalah DRAF untuk persetujuan Cipta sampai ada aturan lain di tabel bawah. Tidak ada agen yang boleh mengklaim sesuatu "sudah dikirim/dipublikasikan/terjual" bila belum. |
+| **Butuh persetujuan Cipta** | Video/sosmed: isi persis (video + judul + caption) · eBook: "Setuju" per buku · kirim proposal freelance: per lowongan · keputusan harga/DP/syarat baru · bayar/kirim uang · kata sandi/kode verifikasi · keputusan urgent · semua yang TIDAK BOLEH di atas. **Persetujuan UMUM (isi listing, draf produk, publish produk umum yang bagus) diserahkan ke Muse — lihat § Perubahan 22 Nov 2026 10:20.** |
+| **DRAF-only** | Semua output agen adalah DRAF untuk persetujuan — **Muse untuk hal umum, Cipta untuk hal khusus** (lihat § Perubahan 22 Nov 2026 10:20). Tidak ada agen yang boleh mengklaim sesuatu "sudah dikirim/dipublikasikan/terjual" bila belum. |
+
+## Perubahan 22 Nov 2026 10:20 — Persetujuan umum diserahkan ke Muse (perintah, WAJIB)
+
+Perintah Cipta: "Untuk semua persetujuan secara umum ku serahkan ke muse ini perintah. Catat. Dan wajib."
+
+- **Persetujuan Muse saja SUDAH CUKUP untuk publish produk UMUM** (produk toko, aplikasi/game demo, katalog, listing marketplace, skill/prompt) selama bagus dan bukan rahasia.
+- **Agent pelaksana tetap TIDAK BOLEH menyetujui pekerjaannya sendiri.** Yang menyetujui adalah Muse (hal umum) atau Cipta (hal khusus). Contoh: A31 menyiapkan eBook — A31 menandai "menunggu persetujuan", Muse/Cipta yang mengubah jadi "disetujui", baru diterbitkan.
+- **Yang TETAP butuh Cipta:** bayar/kirim uang · video + judul + caption persis · eBook per buku · kata sandi/kode verifikasi · keputusan urgent.
+- Keputusan ini tercatat juga di Master Database (`APPROVALS` id APR-2026-11-22-08) dan `data/master-database-PANDUAN.md`.
 
 ## Publish — keputusan Cipta 21 Nov 2026 20:00 (BUKAN TBD lagi)
 
@@ -107,15 +116,20 @@ Keterangan kolom: **Mandiri** = boleh jalan sendiri tanpa tanya per tugas.
 
 | Agen | Tugas | Mandiri | Butuh Cipta |
 |---|---|---|---|
+| A31 Publish | Upload SEMUA PRODUK ke semua platform penjualan | Siapkan produk + listing (DRAF) | Terbitkan produk UMUM: persetujuan Muse bila bagus; eBook per buku + video persis tetap Cipta |
+| A32 Build | Bangun aplikasi, website, produk (24 jam) | Build + perbaiki bug (DRAF) | Publish produk: ikut aturan Publish (UMUM → Muse) |
+| A33 Pertumbuhan | Riset konten, naikkan follower/subscribe/view/like, strategi monetisasi (24 jam) | Riset + strategi (DRAF) | Upload/posting: persetujuan isi persis |
 | A34 Penerjemah | Terjemahan | — | **Pekerjaan translate DITUNDA (perintah Cipta)** — tidak ada pekerjaan translate sampai Cipta bilang jalan. Glosarium produk boleh disiapkan (referensi saja) |
+| A37 Marketplace | Eksekusi 20 marketplace satu-satu | Riset syarat seller + siapkan listing (DRAF); pantau status | Buat akun/daftar listing: persetujuan Muse (umum); bayar/fee: TIDAK BOLEH tanpa Cipta |
+| A38 QA | Verifikasi live sebelum lapor selesai | Cek live + laporkan jujur apa yang terlihat | — (QA memverifikasi, bukan menyetujui kirim) |
+| A39 Musik | Produksi lagu 5/hari + musik 5/hari | Produksi musik/lagu (DRAF) | Publish ke platform musik/toko: persetujuan Muse (umum) |
+| A40 Prompt & Skill | Kemas prompt & skill (Swarms/Agensi.io/PromptBase) | Kemas SKILL.md + payload publish (DRAF) | Publish listing skill: persetujuan Muse (umum); harga baru butuh Cipta |
 | A35 Ngetik | Jasa pengetikan | Buat paket layanan + kerjakan tugas ketik (DRAF/hasil kerja); dukung A28/A17/A25 | Kirim hasil ke pelanggan: ikut aturan agen yang meminta (A25/A28); harga baru butuh Cipta |
 | A36 Copywriter | Penulisan copy | Tulis draf copy/DM/naskah (DRAF); dukung semua tahap | Kirim/publish copy: ikut aturan agen yang memakai copy itu |
 
 ## Catatan
 
-- **A31–A33 (Publish, Build, Pertumbuhan): belum ada modul** — aturan
-  menyusul saat modul dibuat. Sementara, pekerjaan publish/build
-  ditangani Muse + A13/A14/A19 sesuai tabel di atas.
+- **A31–A40 sudah punya tugas + skill (22 Nov 2026)** — lihat tabel Pendukung di atas. Modul khusus A31–A40 belum ada; pekerjaan dijalankan Muse lewat engine yang ada + pemicu jadwal (cron).
 - **DAFTAR_TERLARANG tetap berlaku penuh** (tool_registry.py):
   kirim, send, bayar, pay, beli, purchase, publikasi, publish, upload,
   submit, daftar_lomba, hapus, delete, transfer, password, kata_sandi,
