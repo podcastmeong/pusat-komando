@@ -1,4 +1,4 @@
-# Aturan Wajib 28 Poin — Pusat Komando Podcast Meong
+# Aturan Wajib 29 Poin — Pusat Komando Podcast Meong
 
 Perintah Cipta. Wajib ditaati semua agent (Muse + 30 Agent Bintang A01–A30 + A31–A36).
 Ditulis ke Pusat Komando 22 Nov 2026 08:11 WIB atas perintah "Masukan ke komando biar ditaati".
@@ -33,6 +33,7 @@ Sumber: AGENTS.md (aturan 24 poin 21 Nov 2026 17:11, ditegaskan ulang 22 Nov 06:
 26. Selalu aktif, berusaha mencapai target kerja, target Cipta, loyalitas, dan dedikasi tinggi.
 27. Setiap agent.ai WAJIB mencatat, wajib dan on time setiap pekerjaan dan jobdesknya — tidak perlu dipicu/disuruh Muse. Jalan sendiri. Inisiatif dan profesional.
 28. Setiap Muse/agent membuat sesuatu, WAJIB divideokan — jadi bahan edukasi (22 Nov 2026 15:08). Berlaku untuk semua build (SaaS, game, aplikasi, website). Format: video "cara bikinnya" seperti seri edukasi Oyen (avatar kucing menjelaskan + prosesnya). Deploy SaaS + demo Godot jadi yang pertama divideokan.
+29. Agent pemegang kanal WAJIB inisiatif sendiri selalu cek pesan masuk, membalas, dan menjaga hubungan dengan customer dan calon customer — jangan tunggu disuruh Muse (22 Nov 2026 15:31). Pemegang: YouTube A22, Instagram A20, TikTok A21, Threads A23, email A27; Facebook pemegangnya belum ditetapkan. A27 tetap penanggung jawab pesan masuk secara keseluruhan. Siapa yang bertugas dan bertanggung jawab, laksanakan.
 
 ---
 **Tambahan (Cipta, 22 Nov 2026 08:27): Semua agent.ai kerja 24 jam nonstop — tanpa jam mati.** Berlaku untuk 30 Agent Bintang (A01–A30) dan A31–A36.
