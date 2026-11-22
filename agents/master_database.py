@@ -189,9 +189,9 @@ SEED_TASKS = [
      "2026-11-22", None, None, None, 1, None,
      "Turnstile gagal 5x; tab t3 masih terbuka di halaman verifikasi."),
     ("TASK-0003", "PROJECT-001", "A37", "Eksekusi marketplace",
-     "Registrasi PromptBase + Creative Market", "MEDIUM", "READY",
+     "Registrasi PromptBase + Creative Market", "MEDIUM", "IN_PROGRESS",
      "2026-11-22", None, None, None, 1, None,
-     "Menunggu persetujuan Cipta atas harga usulan."),
+     "PromptBase akun @bintangzilla JADI 11:34; submit 0/9 (V1-V4 butuh klip mentah, I1/I2/T1/T2 butuh Share Link); S1 draf lengkap, tertahan Enable Payouts (pilih PayPal + Indonesia). Creative Market DILEWATI Cipta 12:08."),
     ("TASK-0004", "PROJECT-003", "A11", "Produksi",
      "Produksi video detektif Oyen (slot 21:00)", "HIGH", "IN_PROGRESS",
      "2026-11-22", None, None, None, 1, "Cipta",
@@ -212,6 +212,10 @@ SEED_TASKS = [
      "Lengkapi profil Freelancer.co.id (nama belakang + foto)", "HIGH", "PENDING_APPROVAL",
      "2026-11-22", "2026-11-23 05:00", None, None, 0, None,
      "Bidding proyek $60 tutup ~23 Nov 05:00; menunggu jawaban Cipta."),
+    ("TASK-0009", "PROJECT-001", "A37", "Eksekusi marketplace",
+     "Akun Whop + buat produk", "HIGH", "IN_PROGRESS",
+     "2026-11-22", None, None, None, 1, None,
+     "Akun JADI 12:41 — Cipta daftar dari HP-nya, screenshot whop.com/home/ (akun Pribadi, saldo US$0,00). Verifikasi sisi Muse masih jalan (browser masuk lewat email); produk (video promo, aplikasi, eBook) belum dibuat."),
 ]
 
 SEED_WORKFLOWS = [

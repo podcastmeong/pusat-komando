@@ -21,11 +21,11 @@ Perintah Cipta, 22 Nov 2026 08:50–08:57: eksekusi SEMUA 20 marketplace, satu-s
 | 13 | Gumroad | eBook, aplikasi, produk digital | — | LIVE (satukiki.gumroad.com; Payments BCA tersimpan) — isi produk |
 | 14 | Creative Market | 8 ilustrasi POD, 3 cover eBook, 3 paket foto | $12–$29/item (usulan) | Draf 14 item + harga usulan siap (total $222 bila terjual 1×). Butuh: portofolio Behance (belum ada) + persetujuan harga + nama toko |
 | 15 | Etsy | eBook cerita nabi (Inggris) + POD | — | Akun saja, belum ada toko. Kata kunci + 10 draf listing siap. Biaya setup $19 DILEWATI |
-| 16 | PromptBase | 9 paket prompt + skill Pusat Komando | $2,99–$12 (usulan) | Draf 9 listing + harga usulan siap (total $50,96 bila terjual 1×). Butuh persetujuan harga + akun belum dibuat; risiko payout Stripe belum jelas |
+| 16 | PromptBase | 9 paket prompt + skill Pusat Komando | $2,99–$12 | Akun @bintangzilla JADI 11:34. Submit 0/9: V1–V4 butuh 4 klip mentah, I1/I2/T1/T2 butuh Share Link asli; S1 draf lengkap, tertahan Enable Payouts (pilih PayPal + Indonesia) |
 | 17 | Payhip | eBook, game, aplikasi, demo website, video promo, POD, musik | — | LIVE (6/10 produk fase 1; 4 tertahan kartu persetujuan) |
-| 18 | Whop | Software + membership | — | Belum dieksekusi — riset syarat seller dulu |
-| 19 | Fiverr | Jasa: video promo, poster, aplikasi | $19/$39/$69 video | Profil 25%, Gig 1 DRAF. TERHALANG pertanyaan keamanan (hanya Cipta bisa jawab) |
-| 20 | Udemy | Kursus (4 modul belajar AI) | — | Belum dieksekusi — riset syarat kursus dulu |
+| 18 | Whop | Video promo, aplikasi, eBook | — | Akun JADI 12:41 — Cipta daftar dari HP-nya (whop.com/home/, akun Pribadi, saldo US$0,00). Verifikasi sisi Muse masih jalan (browser masuk lewat email); produk belum dibuat |
+| 19 | Fiverr | Jasa: video promo, poster, aplikasi | $20/$40/$70 video | Akun @ciptabintangles, verifikasi identitas LULUS 12:22, Gig 1 TERBIT + AKTIF. PayPal bisa ditautkan ~24 Nov 05:24 (48 jam setelah ganti nomor) |
+| 20 | Udemy | Kursus (4 modul belajar AI) | — | Pendaftaran ERROR 12:38, jendela hilang — tidak selesai. Kartu sign-in tidak pernah sampai ke Cipta; jalan lain: Cipta daftar langsung dari HP-nya |
 
 ## Pemilik produk (agent) — sesuai kebutuhan tiap lini
 
