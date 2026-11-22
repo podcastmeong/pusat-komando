@@ -18,6 +18,7 @@ Perintah Cipta: agent TIDAK menunggu disuruh — agent menilai, memutuskan, meng
 - JANGAN kirim pesan ke customer di luar info yang disetujui Cipta (harga/aturan yang berlaku).
 - JANGAN ubah harga/aturan yang sudah disetujui tanpa persetujuan Cipta.
 - JANGAN laporkan "selesai" sebelum verifikasi (A38 QA: cek live dari sisi Cipta; cek curl/grep saja TIDAK cukup).
+- **GRATIS SAJA (perintah Cipta 22 Nov 15:48):** semua komponen harus gratis — Hydrogen free-tier API, Qdrant self-host, watchdog/cron, Antigravity paket gratis. JANGAN Google AI Pro/Ultra, JANGAN Claude API berbayar, JANGAN layanan apa pun yang minta kartu/bayar. Bila suatu bagian hanya bisa jalan dengan yang berbayar, laporkan sebagai TERBLOKIR (butuh keputusan Cipta) dan lanjutkan bagian gratisnya.
 - **Momo TIDAK BISA mengakses workspace atau mengeksekusi sendiri** — Muse yang mengeksekusi. Batas ini jujur ditulis di instruksi Momo (Gem/Proyek/Dify) dan tetap berlaku.
 
 **Memori (wajib):**

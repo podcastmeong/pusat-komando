@@ -10,6 +10,12 @@ Perintah Cipta 22 Nov 2026 15:36: (1) semua agent.ai diganti dengan versi pintar
 
 **Docker DILARANG dipasang di VM ini** (bisa bentrok dengan runtime). Qdrant sudah terpasang tanpa Docker.
 
+## GRATIS SAJA (perintah Cipta 22 Nov 2026 15:48 — WAJIB)
+
+Semua komponen versi pintar HARUS gratis. Yang BOLEH: Hydrogen lewat API free tier (API key kita sudah terbukti jalan), Qdrant self-host gratis, watchdog/cron gratis, Antigravity paket gratis Individual (termasuk Gemini 3.8 Flash, Claude Sonnet/Opus 4.6 thinking, GPT-OSS-120b), Gemini Gem gratis, ChatGPT Project gratis, Dify free.
+Yang JANGAN: Google AI Pro/Ultra, Claude API berbayar, layanan apa pun yang minta kartu atau bayar. JANGAN beli/langganan apa pun.
+Bila suatu bagian upgrade ternyata HANYA bisa jalan dengan yang berbayar, laporkan bagian itu sebagai TERBLOKIR (butuh keputusan Cipta) dan lanjutkan bagian gratisnya.
+
 ---
 
 ## Bagian yang ditempel ke SETIAP SKILL.md (verbatim, sesuaikan nama agent)
