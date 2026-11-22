@@ -191,7 +191,7 @@ SEED_TASKS = [
     ("TASK-0003", "PROJECT-001", "A37", "Eksekusi marketplace",
      "Registrasi PromptBase + Creative Market", "MEDIUM", "IN_PROGRESS",
      "2026-11-22", None, None, None, 1, None,
-     "PromptBase akun @bintangzilla JADI 11:34; submit 0/9 (V1-V4 butuh klip mentah, I1/I2/T1/T2 butuh Share Link); S1 draf lengkap, tertahan Enable Payouts (pilih PayPal + Indonesia). Creative Market DILEWATI Cipta 12:08."),
+     "PromptBase akun @bintangzilla JADI 11:34; S1 TERKIRIM 12:51, sedang direview (15 mnt-36 jam); payout Zoneless USDC ke Solflare terverifikasi, tanpa foto KTP. 8 listing lain terblokir (klip mentah + Share Link). Creative Market DILEWATI Cipta 12:08."),
     ("TASK-0004", "PROJECT-003", "A11", "Produksi",
      "Produksi video detektif Oyen (slot 21:00)", "HIGH", "IN_PROGRESS",
      "2026-11-22", None, None, None, 1, "Cipta",
