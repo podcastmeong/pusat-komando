@@ -71,7 +71,7 @@
       "pemilik": "A13 + A14 + A18"
     }
   ],
-  "catatan": "Upload jam 07:00 + 20:00 WIB (aturan 27 poin no. 1) — tetap jalan. Sumber: ChatGPT share #30 (Jadwal Operasional 24 Jam) + #31 (Panduan memasang jadwal), diterapkan 23 Nov 2026 atas perintah Cipta ('Terapkan di ChatGPT dan masukkan ke Pusat Komando'). Jadwal lama (dari omongan Cipta) DIHAPUS dan diganti jadwal ini (perintah Cipta 23 Nov 05:55). Situs/platform Agent.ai sudah tutup (agent.ai dialihkan permanen ke builderpack.com; app/docs tidak merespons) — 12 trigger DG diadaptasi ke cron Muse, BUKAN ke Agent.ai. Agent AI (Muse, Gemini Hydrogen, 54 agent, Dify) tetap hidup semua. Semua output agent = DRAF untuk persetujuan Cipta. Bayar/kirim uang + keputusan urgent = Cipta. Target: $5.000 s.d. 30 Nov 2026, $10.000 s.d. 31 Des 2026, $5.000/bulan.",
+  "catatan": "Upload jam 07:00 + 20:00 WIB (aturan 27 poin no. 1) — tetap jalan. Sumber: ChatGPT share #30 (Jadwal Operasional 24 Jam) + #31 (Panduan memasang jadwal), diterapkan 23 Nov 2026 atas perintah Cipta ('Terapkan di ChatGPT dan masukkan ke Pusat Komando'). Jadwal lama (dari omongan Cipta) DIHAPUS dan diganti jadwal ini (perintah Cipta 23 Nov 05:55). Situs/platform Agent.ai sudah tutup (agent.ai dialihkan permanen ke builderpack.com; app/docs tidak merespons) — 12 trigger DG diadaptasi ke cron Muse, BUKAN ke Agent.ai. Agent AI (Muse, Gemini Hydrogen, 54 agent, Dify) tetap hidup semua. Semua output agent = DRAF untuk persetujuan Cipta. Bayar/kirim uang + keputusan urgent = Cipta. Target: $5.000 s.d. 30 Nov 2026, $10.000 s.d. 31 Des 2026, $5.000/bulan. PERUBAHAN 23 Nov 2026 06:19 (poin 30): kuota diubah — POD 5->10, Game 5->2 (level 4-10), Website 5->2 (level 4-7), Cerbung 1->5 bab, Prompt jadi 10; Aplikasi level 4-10 (jumlah/hari belum disebut). Target monetisasi 8 akun: 4.000 jam tayang, 500 follower, 1.000 subscribe, tercapai dalam 2 bulan.",
   "judul": "Jadwal Operasional 24 Jam — DigiStore Global / SatuKiki / Digicat (WIB, Asia/Jakarta)",
   "kuota": [
     {
@@ -88,11 +88,11 @@
     },
     {
       "jumlah": "5",
-      "produk": "Lagu"
+      "produk": "Lagu (tetap — tidak disebut 23 Nov 06:19)"
     },
     {
       "jumlah": "5",
-      "produk": "Musik"
+      "produk": "Musik (tetap — tidak disebut 23 Nov 06:19)"
     },
     {
       "jumlah": "5",
@@ -103,48 +103,28 @@
       "produk": "Cerpen"
     },
     {
-      "jumlah": "5",
-      "produk": "POD"
+      "jumlah": "10",
+      "produk": "POD (naik dari 5)"
     },
     {
       "jumlah": "10",
-      "produk": "Artikel (edukasi, sejarah, agama, dll.)"
+      "produk": "Artikel — edukasi, sejarah, agama, dll. (tetap — tidak disebut 23 Nov 06:19)"
     },
     {
-      "jumlah": "5",
-      "produk": "Game"
+      "jumlah": "2",
+      "produk": "Game (level 4, 5, 6, 7, 8, 9, 10) — turun dari 5"
     },
     {
-      "jumlah": "5",
-      "produk": "Website"
+      "jumlah": "2",
+      "produk": "Website (level 4, 5, 6, 7) — turun dari 5"
     },
     {
-      "jumlah": "5",
-      "produk": "Aplikasi"
+      "jumlah": "—",
+      "produk": "Aplikasi (level 4, 5, 6, 7, 8, 9, 10 — jumlah/hari belum disebut)"
     },
     {
-      "jumlah": "20",
-      "produk": "Prompt video"
-    },
-    {
-      "jumlah": "20",
-      "produk": "Prompt video astronaut"
-    },
-    {
-      "jumlah": "20",
-      "produk": "Prompt gambar"
-    },
-    {
-      "jumlah": "20",
-      "produk": "Prompt puisi"
-    },
-    {
-      "jumlah": "20",
-      "produk": "Prompt cerpen"
-    },
-    {
-      "jumlah": "20",
-      "produk": "Prompt teks"
+      "jumlah": "10",
+      "produk": "Prompt (sebelumnya 20 per jenis x 6; 10 total atau per jenis — perlu konfirmasi Cipta)"
     },
     {
       "jumlah": "5",
@@ -152,11 +132,11 @@
     },
     {
       "jumlah": "5",
-      "produk": "Toko live"
+      "produk": "Toko live (tetap — tidak disebut 23 Nov 06:19)"
     },
     {
-      "jumlah": "1 bab",
-      "produk": "Cerbung"
+      "jumlah": "5",
+      "produk": "Cerbung (naik dari 1 bab)"
     }
   ],
   "trigger": [
@@ -279,6 +259,41 @@
       "nama": "Daily Report",
       "status": "cron ada",
       "tugas": "Laporan harian: pekerjaan selesai/belum, produk dibuat/terjual, pendapatan aktual, pengeluaran, peluang freelance, lomba ditemukan, pertumbuhan 8 kanal, kesalahan dan perbaikan, keputusan yang diperlukan dari Cipta, rencana 24 jam berikutnya."
+    }
+  ],
+  "target_monetisasi": {
+    "jam_tayang": "4.000 jam",
+    "follower": "500",
+    "subscribe": "1.000",
+    "tenggat": "2 bulan (target tercapai s.d. ~23 Jan 2027)",
+    "akun": "8 akun — 5 ciptabintanglestari + 3 Podcast Meong"
+  },
+  "akun": [
+    {
+      "nama": "ciptabintanglestari",
+      "platform": "Threads, Facebook, Instagram, TikTok, YouTube"
+    },
+    {
+      "nama": "Podcast Meong",
+      "platform": "YouTube, Instagram, TikTok"
+    }
+  ],
+  "tugas_rutin": [
+    {
+      "tugas": "Cari info lomba yang bisa diikuti — nasional, global, internasional: foto, video, puisi, cerpen, eBook, POD, musik, lagu, ide usaha, website, system, aplikasi, game, dll. (hanya yang AMAN, GRATIS, peluang menang nyata, AI diizinkan)",
+      "pemilik": "A06/A07/A09/A28"
+    },
+    {
+      "tugas": "Cari dana hibah, bantuan, sosial, pembinaan untuk usaha",
+      "pemilik": "A06/A07/A09/A28"
+    },
+    {
+      "tugas": "Kirim lamaran / cari proyek yang mudah & gampang — Freelancer.co.id 10, Fiverr 10, Sribu 10 per hari (DRAF dulu baru dikirim)",
+      "pemilik": "A28"
+    },
+    {
+      "tugas": "Upload konten jam 07:00 + 20:00 di semua akun",
+      "pemilik": "A31"
     }
   ]
 }
