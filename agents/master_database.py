@@ -223,7 +223,7 @@ SEED_TASKS = [
     ("TASK-0011", "PROJECT-001", "A37", "Riset pasar",
      "Riset sukses per platform + strategi eksekusi", "HIGH", "IN_PROGRESS",
      "2026-11-22", None, None, None, 1, None,
-     "Riset 7 grup jalan 22 Nov 13:00 (Swarms+Agensi; Gumroad+Payhip; PromptBase+Whop; Fiverr+Udemy; Zazzle+Etsy+CM+Adobe+Dreamstime; KaryaKarsa+Lynk+KBM+Sribu; Pinterest+YT+TikTok+IG). 5/7 SELESAI + masuk data/strategi-platform-riset.md 13:02-13:03; strategi eksekusi target $5.000/bulan sudah disusun. Sisa: grup 6 (platform Indonesia) masih jalan."),
+     "Riset 7 grup SELESAI semua 22 Nov 13:04 (Swarms+Agensi; Gumroad+Payhip; PromptBase+Whop; Fiverr+Udemy; Zazzle+Etsy+CM+Adobe+Dreamstime; KaryaKarsa+Lynk+KBM+Sribu; Pinterest+YT+TikTok+IG). Semua hasil di data/strategi-platform-riset.md; strategi eksekusi target $5.000/bulan sudah disusun."),
 ]
 
 SEED_WORKFLOWS = [
