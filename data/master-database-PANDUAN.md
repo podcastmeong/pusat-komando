@@ -59,8 +59,13 @@ punya proyek.
 | PUBLISHED | Sudah diterbitkan |
 | FAILED | Gagal dan perlu ditangani |
 
-**Aturan keras:** agent TIDAK BOLEH mengubah status jadi APPROVED atau
-PUBLISHED sendiri. Persetujuan hanya dari Cipta (`approved_by`).
+**Aturan keras (diperbarui 22 Nov 2026 10:20, perintah Cipta — wajib):**
+persetujuan UMUM diserahkan ke Muse. Agent pelaksana TIDAK BOLEH mengubah
+status jadi APPROVED atau PUBLISHED sendiri — yang menyetujui adalah Muse
+(hal umum: isi listing, draf produk, penyelesaian tugas, publish produk
+umum yang bagus) atau Cipta (hal khusus: bayar/kirim uang, video + judul +
+caption persis, eBook per buku, sandi/kode verifikasi, keputusan urgent).
+Kolom `approved_by` mencatat siapa yang menyetujui: "Muse" atau "Cipta".
 
 ## 4. Cara pakai (contoh query)
 

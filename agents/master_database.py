@@ -12,7 +12,10 @@ Aturan:
 - Status tugas seragam 9: BACKLOG, READY, IN_PROGRESS, REVIEW, REVISION,
   PENDING_APPROVAL, APPROVED, PUBLISHED, FAILED (CHECK constraint).
 - Agent TIDAK BOLEH mengubah status jadi APPROVED/PUBLISHED sendiri;
-  hanya Cipta (approved_by) yang menyetujui.
+  persetujuan umum diserahkan Cipta ke Muse (perintah 22 Nov 2026, wajib).
+  Yang menyetujui adalah Muse (hal umum) atau Cipta (hal khusus:
+  bayar/kirim uang, video+judul+caption persis, eBook per buku,
+  sandi/kode verifikasi, keputusan urgent).
 - ID tugas: TASK-0001 dst; ID proyek: PROJECT-001 dst.
 - File database TIDAK di-commit (lihat .gitignore: data/memori_bersama.db
   juga tidak di-commit). Bangun ulang kapan saja dengan:
@@ -156,6 +159,7 @@ SEED_APPROVALS = [
     ("APR-2026-11-22-05", "Kirim balasan $12 ke Joeri (Agensi.io)", "Cipta", "SETUJU", "2026-11-22 09:30", ""),
     ("APR-2026-11-22-06", "Naskah video detektif Oyen untuk produksi 21:00", "Cipta", "SETUJU", "2026-11-22 10:05", ""),
     ("APR-2026-11-22-07", "Mulai Tahap 1 Master Database Pusat Komando 10.0", "Cipta", "SETUJU", "2026-11-22 10:15", ""),
+    ("APR-2026-11-22-08", "Semua persetujuan umum diserahkan ke Muse (perintah, wajib)", "Cipta", "SETUJU", "2026-11-22 10:20", "Pengecualian tetap: bayar/kirim uang, video+judul+caption persis, eBook per buku, sandi/kode verifikasi, keputusan urgent."),
 ]
 
 SEED_PROJECTS = [
