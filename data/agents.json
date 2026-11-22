@@ -2216,5 +2216,46 @@
       }
     ],
     "prompt_komando_harian": "Bertindak sebagai COO dan Command Controller Bintang Command Center. Gunakan hanya data yang tersedia di papan kerja dan dokumen sumber. \n1) Baca target perusahaan dan semua tugas yang belum selesai.\n2) Tetapkan maksimal 3 prioritas utama hari ini.\n3) Tugaskan pekerjaan kepada agent sesuai job description A01–A30, lengkap dengan PIC, input, output, tenggat, dan kriteria selesai.\n4) Jalankan urutan riset → validasi → brief → produksi → QC → persetujuan → distribusi → penjualan → keuangan → laporan.\n5) Semua konten, proposal, email, balasan pelanggan, dan tindakan eksternal berstatus DRAF sampai Cipta menyetujui.\n6) Jangan mengaku telah memublikasikan, mengirim, menghubungkan akun, atau melakukan transaksi tanpa bukti eksekusi.\n7) Tandai data yang tidak tersedia sebagai BELUM DIKETAHUI. Sertakan sumber dan tanggal untuk temuan riset.\n8) Akhiri dengan dashboard: target, aktual, selisih, hambatan, keputusan yang dibutuhkan, dan 3 prioritas besok.\nMulai dengan membuat brief operasional hari ini."
+  },
+  "dify_agents": {
+    "source": "Perintah Cipta 23 Nov 2026 02:22-02:34 (\"Cari Dan pasang ini\", \"Buat 2 agent AI lagi buat ngurus ini\", \"Upgrade agent.ai semua\")",
+    "applied_date": "2026-11-23",
+    "note": "Agent.ai sebagai platform mandiri SUDAH MATI (terverifikasi browser 23 Nov 02:24-02:25: app.agent.ai + docs.agent.ai DNS tidak ditemukan; agent.ai dialihkan ke builderpack.com / BuilderPack HubSpot, butuh portal HubSpot Professional/Enterprise BERBAYAR). Semua sistem Agent.ai dari link ChatGPT (#18-#24) dibangun ULANG di DIFY (gratis) dengan arsitektur sama: Central Brain + Knowledge Base + Memory Manager. Muse = pemimpin tim, Agent.ai/Dify = pendukung, BUKAN otak utama pengganti Muse. Keputusan bayar/kirim uang tetap di Cipta.",
+    "agents": [
+      {
+        "code": "DIFY-01",
+        "name": "Digistore Oyen — Central Brain",
+        "platform": "Dify Cloud (cloud.dify.ai)",
+        "type": "Agent",
+        "division": "Operasional",
+        "boss": "Muse",
+        "job_desc": "Autonomous AI Business Manager untuk Digistore Oyen: pusat kendali, Knowledge Agent + Knowledge Base (Master Knowledge 16 bagian), koordinasi agent spesialis",
+        "url": "https://cloud.dify.ai/app/12a6ad45-c295-4aae-b83e-39f4852e2f94/configuration",
+        "knowledge_base": "Digistore Oyen — Master Knowledge (https://cloud.dify.ai/datasets/3515e3aa-8a94-440c-aa40-cffb68477256/documents, 1 dokumen DG_MASTER_KNOWLEDGE_V1.txt, indeks Ekonomis + Indeks Terbalik)",
+        "mapped_to": "Muse (browser) + Dify",
+        "status": "Aktif — dibuat + DITERBITKAN 23 Nov 2026 02:39; 5 tes Knowledge Base TERBLOKIR kuota Dify habis (0 kredit, cek ulang 23 Nov 08:00)",
+        "tugas_harian": "Jawab pertanyaan bisnis dari Knowledge Base dulu (KNOWLEDGE BASE FIRST PROTOCOL); laporkan dengan format TASK/OBJECTIVE/PLAN/ACTIONS/RESULT/VERIFICATION/ERRORS/LESSONS/NEXT ACTION/OWNER APPROVAL REQUIRED",
+        "target_harian": "5/5 tes Knowledge Base lulus setelah kuota terisi",
+        "skills": [
+          "DG_MASTER_KNOWLEDGE_V1.docx (~/workspace/digistore-oyen/)"
+        ]
+      },
+      {
+        "code": "DIFY-02",
+        "name": "Digistore Oyen — Memory Manager",
+        "platform": "Dify Cloud (cloud.dify.ai)",
+        "type": "Workflow",
+        "division": "Operasional",
+        "boss": "Muse",
+        "job_desc": "Persistent memory Digistore Oyen: Save Agent Memory, Look Up Agent Memories, List Agent Memories — satu workflow, tanpa node LLM (tetap bisa jalan saat kuota model habis)",
+        "url": null,
+        "knowledge_base": "Digistore Oyen — Memory Log (dataset baru, dibuat saat pembangunan)",
+        "mapped_to": "Muse (browser) + Dify",
+        "status": "Dibangun 23 Nov 2026 (tugas browser berjalan); tes Save/Look Up/List menyusul setelah jadi",
+        "tugas_harian": "Simpan keputusan resmi, progres, kesalahan + solusi, preferensi Owner, tugas belum selesai (JANGAN simpan kata sandi/API key/OTP/data sensitif)",
+        "target_harian": "3/3 fungsi memori (Save/Look Up/List) berfungsi dan tersambung ke Central Brain",
+        "skills": []
+      }
+    ]
   }
 }
