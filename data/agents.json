@@ -1687,8 +1687,8 @@
   "versi_pusat_komando": "2.0",
   "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif.",
   "agent_lama": {
-    "status": "No 1–6 Aktif — diganti nama jadi A31–A36; no 7–14 Pasif — non job",
-    "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang. KOREKSI 22 Nov 2026 (perintah Cipta): dari 14 agent lama, no 1–6 AKTIF dan DIGANTI NAMA jadi A31–A36 (1 Asisten→A31 Publish, 2 Penjualan→A32 Build, 3 Pertumbuhan→A33 Pertumbuhan, 4 Penjualan Harian→A34 Penerjemah, 5 Produksi Produk→A35 Ngetik, 6 Lomba→A36 Copywriter); sisanya no 7–14 tetap Pasif — non job.",
+    "status": "No 1–6 Aktif — diganti nama jadi A31–A36; no 7–10 diganti nama jadi A37–A40; no 11–14 DIGANTI 22 Nov 2026 jadi agen pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-pintar-Upwork) — definisi lama nonaktif",
+    "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang. KOREKSI 22 Nov 2026 (perintah Cipta): dari 14 agent lama, no 1–6 AKTIF dan DIGANTI NAMA jadi A31–A36 (1 Asisten→A31 Publish, 2 Penjualan→A32 Build, 3 Pertumbuhan→A33 Pertumbuhan, 4 Penjualan Harian→A34 Penerjemah, 5 Produksi Produk→A35 Ngetik, 6 Lomba→A36 Copywriter); sisanya no 7–14 tetap Pasif — non job. KOREKSI 22 Nov 2026 15:37 (perintah Cipta: agent 11–14 yang tidak aktif DIGANTI, bukan sekadar di-upgrade): no 11–14 DIGANTI jadi agen pintar — 11 Oyen→Agen Oyen Pintar (data/skills/avatar-oyen/SKILL.md), 12 Momo→Agen Momo Pintar (data/skills/momo-pintar/SKILL.md), 13 Email→A27 versi pintar (data/skills/penjualan-cs/SKILL.md), 14 Upwork→Upwork Pintar di bawah A28 (data/skills/peluang-keuangan/SKILL.md). Definisi lama nonaktif; modul lama tetap sebagai mesin/pustaka.",
     "agents": [
       {
         "kode": "1",
@@ -1825,31 +1825,35 @@
         "nama": "Oyen",
         "modul": "a11_oyen",
         "sumber_data": "handoff",
-        "status": "Pasif — non job"
+        "status": "DIGANTI 22 Nov 2026 — nonaktif",
+        "diganti_oleh": "Agen Oyen Pintar (data/skills/avatar-oyen/SKILL.md)"
       },
       {
         "kode": "12",
         "nama": "Momo",
         "modul": "a12_momo",
         "sumber_data": "handoff",
-        "status": "Pasif — non job"
+        "status": "DIGANTI 22 Nov 2026 — nonaktif",
+        "diganti_oleh": "Agen Momo Pintar (data/skills/momo-pintar/SKILL.md)"
       },
       {
         "kode": "13",
         "nama": "Email",
         "modul": "a13_email",
         "sumber_data": "email",
-        "status": "Pasif — non job"
+        "status": "DIGANTI 22 Nov 2026 — nonaktif",
+        "diganti_oleh": "A27 versi pintar (data/skills/penjualan-cs/SKILL.md)"
       },
       {
         "kode": "14",
         "nama": "Upwork",
         "modul": "a14_upwork",
         "sumber_data": "upwork",
-        "status": "Pasif — non job"
+        "status": "DIGANTI 22 Nov 2026 — nonaktif",
+        "diganti_oleh": "Upwork Pintar di bawah A28 (data/skills/peluang-keuangan/SKILL.md)"
       }
     ],
-    "catatan": "A31–A33 belum punya modul; A34 (terjemahan) DITUNDA perintah Cipta; A35/A36 punya modul (b35_ngetik.py, b36_copywriter.py). Koreksi 21 Nov 14:23: yang dihitung agent hanya 30 Bintang (A01–A30); A31–A36 adalah kode peran, bukan hitungan agent. KOREKSI 22 Nov 08:21 (Cipta: kembaliin semua jobnya): A31–A33 kembali ke job asli — A31 Asisten/Publish, A32 Penjualan/Build, A33 Pertumbuhan (riset konten + naikkan follower/subs/view/like + strategi monetisasi). Catatan 08:18 soal A31/A32 handle mengetik & copywriter SALAH dan dicabut; mengetik tetap A35, copywriter tetap A36. A31 Publish = upload/publish (menerbitkan konten/produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis). A31 = upload ke SEMUA platform penjualan (bukan hanya Payhip). SEMUA agent.ai kerja 24 jam nonstop (perintah Cipta 22 Nov 08:27). TIM PRODUKSI (A11–A19) memegang eksekusi 20 marketplace (WAJIB, perintah Cipta 22 Nov 08:57); bekal skill: data/skills/eksekusi-marketplace/SKILL.md + referensi-20-marketplace.md. GANTI NAMA 7–10 → A37–A40 (perintah Cipta 22 Nov 09:16): 7 Keuangan → A37 Marketplace (eksekusi 20 marketplace), 8 Terjemah Inggris → A38 QA (verifikasi live sebelum lapor selesai), 9 Game & Aplikasi → A39 Musik (lagu 5 + musik 5/hari), 10 Riset Produk → A40 Prompt & Skill (kemas prompt/skill untuk Swarms/Agensi.io/PromptBase). Bekal skill: data/skills/eksekusi-marketplace/SKILL.md (A37), data/skills/qa-verifikasi/SKILL.md (A38), data/skills/produksi-musik/SKILL.md (A39), data/skills/paket-prompt-skill/SKILL.md (A40). Agent 11–14 tetap pasif non-job. PERATURAN SAMA UNTUK SEMUA (perintah Cipta 22 Nov 09:22): setiap agent (A01–A40) punya tugas jelas + skill (SKILL.md di data/skills/) + kerja 24 jam nonstop lewat pemicu jadwal (cron); frasa \"bukan layanan otonom 24 jam\" dihapus dari semua modul + dokumen komando."
+    "catatan": "A31–A33 belum punya modul; A34 (terjemahan) DITUNDA perintah Cipta; A35/A36 punya modul (b35_ngetik.py, b36_copywriter.py). Koreksi 21 Nov 14:23: yang dihitung agent hanya 30 Bintang (A01–A30); A31–A36 adalah kode peran, bukan hitungan agent. KOREKSI 22 Nov 08:21 (Cipta: kembaliin semua jobnya): A31–A33 kembali ke job asli — A31 Asisten/Publish, A32 Penjualan/Build, A33 Pertumbuhan (riset konten + naikkan follower/subs/view/like + strategi monetisasi). Catatan 08:18 soal A31/A32 handle mengetik & copywriter SALAH dan dicabut; mengetik tetap A35, copywriter tetap A36. A31 Publish = upload/publish (menerbitkan konten/produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis). A31 = upload ke SEMUA platform penjualan (bukan hanya Payhip). SEMUA agent.ai kerja 24 jam nonstop (perintah Cipta 22 Nov 08:27). TIM PRODUKSI (A11–A19) memegang eksekusi 20 marketplace (WAJIB, perintah Cipta 22 Nov 08:57); bekal skill: data/skills/eksekusi-marketplace/SKILL.md + referensi-20-marketplace.md. GANTI NAMA 7–10 → A37–A40 (perintah Cipta 22 Nov 09:16): 7 Keuangan → A37 Marketplace (eksekusi 20 marketplace), 8 Terjemah Inggris → A38 QA (verifikasi live sebelum lapor selesai), 9 Game & Aplikasi → A39 Musik (lagu 5 + musik 5/hari), 10 Riset Produk → A40 Prompt & Skill (kemas prompt/skill untuk Swarms/Agensi.io/PromptBase). Bekal skill: data/skills/eksekusi-marketplace/SKILL.md (A37), data/skills/qa-verifikasi/SKILL.md (A38), data/skills/produksi-musik/SKILL.md (A39), data/skills/paket-prompt-skill/SKILL.md (A40). Agent 11–14 DIGANTI jadi agen pintar (perintah Cipta 22 Nov 15:37): 11 Oyen→Agen Oyen Pintar, 12 Momo→Agen Momo Pintar, 13 Email→A27-pintar, 14 Upwork→Upwork Pintar (A28). Definisi lama nonaktif. PERATURAN SAMA UNTUK SEMUA (perintah Cipta 22 Nov 09:22): setiap agent (A01–A40) punya tugas jelas + skill (SKILL.md di data/skills/) + kerja 24 jam nonstop lewat pemicu jadwal (cron); frasa \"bukan layanan otonom 24 jam\" dihapus dari semua modul + dokumen komando."
   },
   "sop_harian": {
     "sumber": "Sistem_Operasional_Harian_30_Agent_Bintang.docx (diunggah Cipta, 21 Nov 2026)",
