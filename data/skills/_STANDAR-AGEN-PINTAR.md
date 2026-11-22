@@ -16,6 +16,20 @@ Semua komponen versi pintar HARUS gratis. Yang BOLEH: Hydrogen lewat API free ti
 Yang JANGAN: Google AI Pro/Ultra, Claude API berbayar, layanan apa pun yang minta kartu atau bayar. JANGAN beli/langganan apa pun.
 Bila suatu bagian upgrade ternyata HANYA bisa jalan dengan yang berbayar, laporkan bagian itu sebagai TERBLOKIR (butuh keputusan Cipta) dan lanjutkan bagian gratisnya.
 
+## RENCANA KOMBINASI HYDROGEN + CARBON (nanti — belum aktif, Cipta 16:05–16:06)
+
+- **Hydrogen (gratis, ~20 panggilan/hari):** tugas sehari-hari (riset, draf). **Carbon (berbayar):** OTAK STANDBY — menilai pesan masuk (email + DM) secara berkala, mana yang penting/urgent, lalu bertindak/meneruskan. Standby itu kerja sistem (cron + watchdog); Carbon hanya otaknya — dan karena berbayar per token, standby terus-menerus = biaya jalan terus. Carbon TERKUNCI di runner (butuh file `data/persetujuan-carbon.md` + env `SATUKIKI_CARBON_APPROVED=1`); bila Cipta menyetujui biayanya nanti, yang diganti hanya `--model hydrogen` → `--model carbon` di cron standby. Detail: `data/rencana-kombinasi-hydrogen-carbon.md`.
+
+## HYDROGEN DULU, SEMUA (perintah Cipta 22 Nov 2026 16:07 — WAJIB)
+
+Hydrogen (gratis, free tier ~20 panggilan/hari) dipakai DULU untuk SEMUA agent — bukan cuma pilot A27. Carbon menyusul nanti (kombinasi, setelah Cipta setuju biayanya).
+
+**Disiplin kuota 20/hari (dipakai BERSAMA semua agent — hemat!):**
+1. Prioritas panggilan Hydrogen: (1) triase pesan masuk A27 (penting/urgent), (2) hook/naskah video Oyen/A11/A17, (3) riset/draf penting lainnya.
+2. Tugas rutin/lookup pakai aturan + file, BUKAN Hydrogen (baca `data/`, `~/workspace/catatan/keputusan.md`, log — jangan panggil model untuk hal yang sudah tertulis).
+3. Satu panggilan per tugas; bila gagal, coba lagi MAKSIMAL 1x; bila tetap gagal, kerjakan langsung dan catat kegagalannya.
+4. Pemakaian tercatat otomatis di `data/log-penggunaan-model.jsonl` (runner mencatat tiap panggilan); runner memberi peringatan bila hari ini sudah ≥15 panggilan. Watchdog memeriksa hitungan ini — bila kuota habis di tengah hari, tugas Hydrogen ditunda ke besok (jangan pakai model berbayar sebagai jalan pintas).
+
 ---
 
 ## Bagian yang ditempel ke SETIAP SKILL.md (verbatim, sesuaikan nama agent)
