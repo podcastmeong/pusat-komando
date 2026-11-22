@@ -1,4 +1,75 @@
 {
+  "agent_41_44": {
+    "source": "Perintah Cipta 22 Nov 2026 16:14, disetujui \"Done, eksekusi\" 16:16",
+    "applied_date": "2026-11-22",
+    "note": "4 agent BARU A41–A44 — TIDAK ADA di data Komando sebelumnya (verifikasi grep 22 Nov 2026: repo Komando + data/agents.json + data/koordinasi.json kosong untuk A41–A44; hanya ~/workspace/catatan/keputusan.md baris 250–251 yang mencatat penugasan ini). Roster menjadi A01–A44 = 44 agent. Penugasan divisi/boss di bawah adalah struktur kerja yang disusun saat pembuatan, bukan keputusan Cipta kata-per-kata.",
+    "agents": [
+      {
+        "code": "A41",
+        "name": "Rename Komando",
+        "division": "Operasional",
+        "boss": "A30",
+        "job_desc": "Menjaga konsistensi nama + jumlah agent Pusat Komando (30 -> 40) di paket skill, app.py, dan listing live",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi/draf saja (22 Nov 2026)",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 22 Nov 2026 atas perintah Cipta",
+        "tugas_harian": "Cek grep jumlah lama yang masih tampil; perbarui salinan Komando yang berubah",
+        "target_harian": "0 penyebutan jumlah lama di luar pengecualian (Tab B + subset A01–A30)",
+        "skills": [
+          "data/skills/a41-rename-komando/SKILL.md"
+        ]
+      },
+      {
+        "code": "A42",
+        "name": "Harga Toko",
+        "division": "Penjualan",
+        "boss": "A30",
+        "job_desc": "Menjaga satu harga per aplikasi di toko (hapus tier Basic/Professional/Business; $29/$59/$99 + $25 APK)",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi/draf saja (22 Nov 2026)",
+        "mapped_to": "Muse (subagent) + parent (artifact toko-aplikasi)",
+        "status": "Aktif — dibuat 22 Nov 2026 atas perintah Cipta",
+        "tugas_harian": "Cek blok tier lama di toko; siapkan spesifikasi harga per aplikasi",
+        "target_harian": "Semua aplikasi toko 1 harga, tanpa tier Basic/Pro/Business",
+        "skills": [
+          "data/skills/a42-harga-toko/SKILL.md"
+        ]
+      },
+      {
+        "code": "A43",
+        "name": "Upload Marketplace",
+        "division": "Penjualan",
+        "boss": "A37",
+        "job_desc": "Mengunggah 61 aplikasi + 15 demo website ke Gumroad/Payhip",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi/draf saja (22 Nov 2026)",
+        "mapped_to": "Muse (subagent) + parent (browser)",
+        "status": "Aktif — dibuat 22 Nov 2026 atas perintah Cipta",
+        "tugas_harian": "Siapkan manifest + paket ZIP per produk; antre batch upload berikutnya",
+        "target_harian": "1 batch upload per hari bila disetujui Cipta",
+        "skills": [
+          "data/skills/a43-marketplace-upload/SKILL.md"
+        ]
+      },
+      {
+        "code": "A44",
+        "name": "Persiapan Video",
+        "division": "Produksi",
+        "boss": "A11",
+        "job_desc": "Menyiapkan prompt Flow per klip untuk produksi video 21:00 dari naskah yang sudah disetujui",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi/draf saja (22 Nov 2026)",
+        "mapped_to": "Muse (subagent) + cron produksi-video-2100",
+        "status": "Aktif — dibuat 22 Nov 2026 atas perintah Cipta",
+        "tugas_harian": "Tulis prompt produksi dari naskah disetujui hari itu; cek hitung kata dialog",
+        "target_harian": "12 prompt klip/malam (22 Nov) + cek mulut per klip",
+        "skills": [
+          "data/skills/a44-persiapan-video/SKILL.md"
+        ]
+      }
+    ]
+  },
   "applied_date": "2026-11-21",
   "applied_to": "Pusat Komando v2.0 + 30 Agent Bintang + 14 mesin pasif (SatuKiki / Podcast Meong)",
   "authority_levels": {

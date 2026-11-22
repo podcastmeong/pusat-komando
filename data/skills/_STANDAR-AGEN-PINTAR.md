@@ -50,6 +50,9 @@ Perintah Cipta: agent TIDAK menunggu disuruh — agent menilai, memutuskan, meng
 - JANGAN kirim pesan ke customer di luar info yang disetujui Cipta (harga/aturan yang berlaku).
 - JANGAN ubah harga/aturan yang sudah disetujui tanpa persetujuan Cipta.
 - JANGAN laporkan "selesai" sebelum verifikasi (A38 QA: cek live dari sisi Cipta; cek curl/grep saja TIDAK cukup).
+- **GRATIS SAJA (perintah Cipta 22 Nov 15:48):** semua komponen harus gratis — Hydrogen free-tier API, Qdrant self-host, watchdog/cron, Antigravity paket gratis. JANGAN Google AI Pro/Ultra, JANGAN Claude API berbayar, JANGAN layanan apa pun yang minta kartu/bayar. Bila suatu bagian hanya bisa jalan dengan yang berbayar, laporkan sebagai TERBLOKIR (butuh keputusan Cipta) dan lanjutkan bagian gratisnya.
+- **Rencana nanti (belum aktif):** kombinasi Hydrogen (gratis, ~20 panggilan/hari, tugas sehari-hari) + Carbon (berbayar, otak standby cek email/DM) — Carbon BELUM aktif, butuh persetujuan biaya Cipta; runner sudah bisa pilih model.
+- **Hydrogen dulu, semua (Cipta 16:07) + hemat kuota 20/hari (dipakai bersama semua agent):** Hydrogen hanya untuk tugas penting (triase pesan, hook/naskah, riset/draf); tugas rutin pakai aturan/file; 1 panggilan per tugas, retry maks 1x; pemakaian tercatat di `data/log-penggunaan-model.jsonl`.
 
 **Memori (wajib):**
 - SEBELUM kerja: baca log eksekusi + log harian + catatan keputusan — jangan tanyakan lagi hal yang sudah diputuskan.

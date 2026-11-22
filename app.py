@@ -565,7 +565,7 @@ def _jalankan_siklus_koord():
 # ---------------------------------------------------------------------------
 HEADER = """# 🎛️ Pusat Komando Podcast Meong — v2.0
 
-**30 Agent Bintang** (A01–A30) + **Mesin Eksekusi** + **Dashboard Agent** + Command Center + Papan Handoff + bus Koordinasi — berbagi satu folder `data/`, jadi output satu agent
+**40 Agent** (A01–A40: 30 Bintang + 10 support A31–A40) + **Mesin Eksekusi** + **Dashboard Agent** + Command Center + Papan Handoff + bus Koordinasi — berbagi satu folder `data/`, jadi output satu agent
 langsung bisa dipakai agent lain lewat **Papan Handoff** dan **bus Koordinasi**. Mesin lama (a01–a14): **10 aktif (A31–A40)** — Publish, Build, Pertumbuhan, Penerjemah, Ngetik, Copywriter, Marketplace, QA, Musik, Prompt & Skill; **4 pasif — non job** (no 11–14): modul + datanya tetap utuh sebagai engine yang dipakai 30 Bintang, tab UI-nya dihapus.
 
 **Aturan keras (SOP, berlaku 18 Nov 2026):** semua hasil adalah **DRAF** untuk persetujuan
@@ -1209,7 +1209,7 @@ def build_app():
                     btn_log.click(fn=lambda: KOORD.teks_log(), outputs=log_koord)
 
         gr.Markdown(
-            "---\n*Pusat Komando Podcast Meong v2.0 — 30 Agent Bintang + Mesin Eksekusi + Dashboard Agent + Command Center + Papan Handoff + bus Koordinasi, 1 Space, 1 folder data. "
+            "---\n*Pusat Komando Podcast Meong v2.0 — 40 Agent (A01–A40) + Mesin Eksekusi + Dashboard Agent + Command Center + Papan Handoff + bus Koordinasi, 1 Space, 1 folder data. "
             "Mesin lama (a01–a14): 10 aktif (A31–A40) · 4 pasif — non job: modul + data tetap, dipakai sebagai engine oleh 30 Bintang. "
             "Data di `data/` hilang bila Space di-rebuild — unduh berkala. "
             "SOP Kerja Sama Agent AI berlaku (18 Nov 2026).*")
