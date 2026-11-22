@@ -1,1998 +1,1998 @@
 {
- "applied_date": "2026-11-21",
- "applied_to": "Pusat Komando v2.0 + 30 Agent Bintang + 14 mesin pasif (SatuKiki / Podcast Meong)",
- "authority_levels": {
-  "hijau": "AI boleh mengerjakan otomatis sesuai aturan (riset, draft, pencatatan, klasifikasi, laporan, pemantauan). Hasil berupa draf/laporan.",
-  "kuning": "AI menyiapkan pekerjaan untuk diperiksa pemilik (draf siap kirim, konten siap upload, usulan harga, laporan harian).",
-  "merah": "WAJIB persetujuan pemilik: upload ke TikTok/YouTube/Instagram, kirim penawaran/pesan keluar, kirim proposal freelance, ikut/daftar lomba, ubah harga, transfer uang (TIDAK PERNAH dilakukan AI), hapus akun/data, pembayaran, tanda tangan."
- },
- "channels": {
-  "instagram": [
-   "podcast_meong",
-   "@meongcast"
-  ],
-  "notes": "7 akun media + website + toko = 9 aset. Spesifikasi menyebut '8 kanal media' — rincian akunnya 2+2+2+1 = 7 akun media.",
-  "store": "https://podcastmeong.github.io/toko.html",
-  "threads": [
-   "@ciptabintanglestari"
-  ],
-  "tiktok": [
-   "@podcast_kucing",
-   "@meongcast"
-  ],
-  "total_assets": 9,
-  "website": "https://podcastmeong.github.io/",
-  "youtube": [
-   "Podcast meong",
-   "@meongcast"
-  ]
- },
- "command": {
-  "ceo": "Muse (koordinator) — agents/koordinasi.py + SOP Kerja Sama Agent",
-  "note": "Agent bersifat pasif: Muse menjalankannya lewat perintah/jadwal; output berupa DRAF; pengiriman/publikasi/pembayaran selalu butuh persetujuan Cipta. Bukan layanan otonom 24 jam.",
-  "owner": "Cipta (Human Approval Center — keputusan tertinggi)"
- },
- "decisions": {
-  "automation_model": "Hybrid — pekerjaan rutin otomatis, tindakan penting disetujui pemilik",
-  "budget": "Rp0 — prioritaskan layanan gratis",
-  "owner_approval": "Hanya tindakan penting dan berisiko",
-  "priority": "Penjualan dan pendapatan"
- },
- "directorates": [
-  {
-   "agents": [
-    {
-     "authority": "kuning",
-     "code": "SM-01",
-     "mapped_to": "Agent 3 — akun podcast_meong",
-     "notes": "Posting butuh persetujuan Cipta (merah); login IG podcast_meong lewat browser.",
-     "status": "aktif-sebagian",
-     "task": "Mengelola Instagram 1"
-    },
-    {
-     "authority": "kuning",
-     "code": "SM-02",
-     "mapped_to": "Agent 3 — akun @meongcast",
-     "notes": "Konektor IG terhubung ke @meongcast; rename ke Dunia Kiki ditunda s.d. 20 Des 2026.",
-     "status": "aktif-sebagian",
-     "task": "Mengelola Instagram 2"
-    },
-    {
-     "authority": "kuning",
-     "code": "SM-03",
-     "mapped_to": "Agent 3 — akun @podcast_kucing",
-     "notes": "Login tersimpan bekerja; upload butuh persetujuan (merah).",
-     "status": "aktif",
-     "task": "Mengelola TikTok 1"
-    },
-    {
-     "authority": "kuning",
-     "code": "SM-04",
-     "mapped_to": "Agent 3 — akun @meongcast",
-     "notes": "Upload butuh Cipta login sendiri.",
-     "status": "aktif-sebagian",
-     "task": "Mengelola TikTok 2"
-    },
-    {
-     "authority": "kuning",
-     "code": "SM-05",
-     "mapped_to": "Agent 3 — kanal Podcast meong (lawaklucu182@gmail.com)",
-     "notes": "80 subscriber; upload butuh persetujuan (merah).",
-     "status": "aktif",
-     "task": "Mengelola YouTube 1"
-    },
-    {
-     "authority": "kuning",
-     "code": "SM-06",
-     "mapped_to": "Agent 3 — kanal @meongcast (ciptabintanglestari@gmail.com)",
-     "notes": "Verifikasi ID diajukan; kata sandi tersimpan pernah ditolak — jangan coba lagi tanpa kata sandi benar dari Cipta.",
-     "status": "aktif-sebagian",
-     "task": "Mengelola YouTube 2"
-    },
-    {
-     "authority": "kuning",
-     "code": "SM-07",
-     "mapped_to": "Agent 3 — @ciptabintanglestari (belum sinkron ke @meongcast)",
-     "notes": "Threads Messages belum terhubung.",
-     "status": "aktif-sebagian",
-     "task": "Mengelola Threads"
-    },
-    {
-     "authority": "kuning",
-     "code": "SM-08",
-     "mapped_to": "Agent 2 + Agent 4",
-     "notes": "Pengumuman toko tayang di 4 akun promo 20 Nov 2026.",
-     "status": "aktif",
-     "task": "Mengelola promosi website dan toko"
-    }
-   ],
-   "chief": "Chief Marketing Agent",
-   "id": "A",
-   "mapped_to": [
-    "a03_pertumbuhan.py (Agent 3 Pertumbuhan)",
-    "a02_penjualan.py (Agent 2 Penjualan)"
-   ],
-   "name": "Marketing & Social Media Growth",
-   "status": "aktif-sebagian"
-  },
-  {
-   "agents": [
-    {
-     "authority": "hijau",
-     "code": "PF-01",
-     "mapped_to": "Agent 5 + pipeline Flow (Muse)",
-     "notes": "Flow alat utama; 5 video/hari; wajib lulus cek pitch sebelum ke Cipta.",
-     "status": "aktif",
-     "task": "AI Video — memproduksi video AI"
-    },
-    {
-     "authority": "hijau",
-     "code": "PF-02",
-     "mapped_to": "Agent 5 + pipeline foto AI (Dreamstime/Adobe)",
-     "notes": "50 foto/hari; batch-5 upload Dreamstime DIHENTIKAN 21 Nov 02:49 (STOP).",
-     "status": "aktif",
-     "task": "AI Image — memproduksi foto dan gambar AI"
-    },
-    {
-     "authority": "hijau",
-     "code": "PF-03",
-     "mapped_to": "Muse (pembangun demo website)",
-     "notes": "Website 2.0 live; demo website L3 butuh pilihan jenis dari Cipta.",
-     "status": "aktif",
-     "task": "Website — membuat website dan landing page"
-    },
-    {
-     "authority": "hijau",
-     "code": "PF-04",
-     "mapped_to": "Agent 9 (a09_game.py, a09a-f)",
-     "notes": "Antrean 73 demo SELESAI 21 Nov 00:39; min 1 aplikasi/game per hari.",
-     "status": "aktif",
-     "task": "Application — membuat aplikasi"
-    },
-    {
-     "authority": "hijau",
-     "code": "PF-05",
-     "mapped_to": "Agent 9",
-     "notes": "Oyen Tangkap Ikan, Susun Balok, Spookify, Oyen Benang live.",
-     "status": "aktif",
-     "task": "Game — membuat game"
-    },
-    {
-     "authority": "hijau",
-     "code": "PF-06",
-     "mapped_to": "Agent 5",
-     "notes": "Zazzle toko Podcast_Meong live; 14 kaos di /pod/.",
-     "status": "aktif",
-     "task": "POD — desain Print on Demand"
-    },
-    {
-     "authority": "hijau",
-     "code": "PF-07",
-     "mapped_to": "Agent 5",
-     "notes": "Seri Cerita Nabi 6/6 + Orang Sholeh 4/4; 9 PDF menunggu persetujuan Cipta.",
-     "status": "aktif",
-     "task": "eBook — menulis dan menerbitkan eBook"
-    },
-    {
-     "authority": "hijau",
-     "code": "PF-08",
-     "mapped_to": "Agent 5",
-     "notes": "5 puisi + 5 cerpen/hari; cerbung 'Misteri Ikan yang Hilang' di /cerbung/.",
-     "status": "aktif",
-     "task": "Literary — puisi, cerpen, cerita bersambung"
-    },
-    {
-     "authority": "hijau",
-     "code": "PF-09",
-     "mapped_to": "Agent 5 + Agent 10 Riset",
-     "notes": "Artikel di /artikel/; Dunia Kiki = Artikel + Video Edukasi.",
-     "status": "aktif",
-     "task": "Content — artikel, konten edukasi dan hiburan"
-    }
-   ],
-   "chief": "Chief Product Creation Agent",
-   "id": "B",
-   "mapped_to": [
-    "a05_produksi.py (Agent 5 Produksi)",
-    "a09_game.py + a09a-f (Agent 9 Game & Aplikasi)",
-    "a11_oyen.py + a12_momo.py (Agent 11/12 penjaga suara)"
-   ],
-   "name": "AI Product Factory",
-   "status": "aktif"
-  },
-  {
-   "agents": [
-    {
-     "authority": "hijau",
-     "code": "SA-01",
-     "mapped_to": "Agent 2 + Agent 4",
-     "notes": "15 lead belum terverifikasi; draf saja.",
-     "status": "aktif",
-     "task": "Mencari calon customer"
-    },
-    {
-     "authority": "merah",
-     "code": "SA-02",
-     "mapped_to": "Agent 4 (DM TikTok/IG/Threads)",
-     "notes": "Isi persis harus disetujui Cipta dulu; TANPA WhatsApp untuk penawaran; Facebook ditahan.",
-     "status": "aktif",
-     "task": "Menawarkan produk secara online"
-    },
-    {
-     "authority": "merah",
-     "code": "SA-03",
-     "mapped_to": "Cipta (manusia)",
-     "notes": "AI menyiapkan daftar prospek, materi, jadwal; manusia kunjungan/pertemuan fisik.",
-     "status": "aktif",
-     "task": "Menawarkan produk secara langsung"
-    },
-    {
-     "authority": "kuning",
-     "code": "SA-04",
-     "mapped_to": "Agent 2 + Muse",
-     "notes": "Strategi 1 Juta Dolar + Strategi Cuan Maksimal (target, bukan janji).",
-     "status": "aktif",
-     "task": "Membuat strategi penjualan"
-    },
-    {
-     "authority": "merah",
-     "code": "SA-05",
-     "mapped_to": "Agent 2 + Muse",
-     "notes": "Ubah harga WAJIB persetujuan Cipta; katalog PDF v2 live.",
-     "status": "aktif",
-     "task": "Mengelola katalog dan harga"
-    },
-    {
-     "authority": "merah",
-     "code": "SA-06",
-     "mapped_to": "Agent 4",
-     "notes": "Follow-up keluar butuh persetujuan isi persis.",
-     "status": "aktif",
-     "task": "Follow-up calon pembeli"
-    },
-    {
-     "authority": "kuning",
-     "code": "SA-07",
-     "mapped_to": "Agent 4 + data/penjualan_toko.json",
-     "notes": "2 DM terkirim (Paws & Claws, Deku), 0 balasan per 20 Nov.",
-     "status": "aktif",
-     "task": "Mengelola pesanan dan konversi"
-    }
-   ],
-   "chief": "Chief Sales Agent",
-   "id": "C",
-   "mapped_to": [
-    "a02_penjualan.py (Agent 2 Penjualan)",
-    "a04_penjualan_harian.py (Agent 4 Penjualan Harian)"
-   ],
-   "name": "Sales & Customer Acquisition",
-   "status": "aktif"
-  },
-  {
-   "agents": [
-    {
-     "authority": "hijau",
-     "code": "RI-01",
-     "mapped_to": "Agent 10",
-     "notes": "Output: 20 ide kebutuhan pasar/minggu (target).",
-     "status": "aktif",
-     "task": "Riset kebutuhan customer"
-    },
-    {
-     "authority": "hijau",
-     "code": "RI-02",
-     "mapped_to": "Agent 10 + cron cek-pasar-mingguan (Senin 07:42)",
-     "notes": "Cron cek-pasar-mingguan DIJEDA 21 Nov 02:49 (STOP).",
-     "status": "aktif-sebagian",
-     "task": "Riset tren pasar"
-    },
-    {
-     "authority": "hijau",
-     "code": "RI-03",
-     "mapped_to": "Agent 10",
-     "notes": "Riset kompetitor jasa website selesai 20 Nov.",
-     "status": "aktif",
-     "task": "Riset kompetitor"
-    },
-    {
-     "authority": "hijau",
-     "code": "RI-04",
-     "mapped_to": "Agent 10",
-     "notes": "Riset aplikasi ronde 1 + 2 selesai.",
-     "status": "aktif",
-     "task": "Riset produk unik"
-    },
-    {
-     "authority": "hijau",
-     "code": "RI-05",
-     "mapped_to": "Agent 10",
-     "notes": "Matriks riset harga per level selesai.",
-     "status": "aktif",
-     "task": "Riset harga dan peluang"
-    },
-    {
-     "authority": "hijau",
-     "code": "RI-06",
-     "mapped_to": "Agent 10 + Agent 5",
-     "notes": "Daftar bahan cerita + 30 judul Ramadan-Lebaran 2027.",
-     "status": "aktif",
-     "task": "Riset ide konten"
-    }
-   ],
-   "chief": "Chief Research Agent",
-   "id": "D",
-   "mapped_to": [
-    "a10_riset.py (Agent 10 Riset — HARIAN)",
-    "a03_pertumbuhan.py (Agent 3)"
-   ],
-   "name": "Market Research & Product Intelligence",
-   "status": "aktif"
-  },
-  {
-   "agents": [
-    {
-     "authority": "hijau",
-     "code": "CS-01",
-     "mapped_to": "Agent 13 (cek 05:00 + 20:00; triase 12 aturan)",
-     "notes": "Gmail TIDAK terhubung (mode demo via browser); draf saja, kirim butuh persetujuan.",
-     "status": "aktif",
-     "task": "Memeriksa email masuk dan keluar"
-    },
-    {
-     "authority": "kuning",
-     "code": "CS-02",
-     "mapped_to": "Agent 1 (lingkup disepakati)",
-     "notes": "Instagram Messages @meongcast TERHUBUNG (terverifikasi live 21 Nov 03:33); balasan hanya info yang disetujui; kirim butuh persetujuan Cipta.",
-     "status": "aktif",
-     "task": "Menjawab pertanyaan Instagram 1 dan 2"
-    },
-    {
-     "authority": "kuning",
-     "code": "CS-03",
-     "mapped_to": "Agent 1",
-     "notes": "Hanya info disetujui; negosiasi/custom/pembayaran/keluhan diteruskan ke Cipta.",
-     "status": "aktif-sebagian",
-     "task": "Menjawab komentar dan DM TikTok 1 dan 2"
-    },
-    {
-     "authority": "kuning",
-     "code": "CS-04",
-     "mapped_to": "Agent 1",
-     "notes": "Sama seperti CS-02/CS-03.",
-     "status": "aktif-sebagian",
-     "task": "Menjawab komentar YouTube 1 dan 2"
-    },
-    {
-     "authority": "kuning",
-     "code": "CS-05",
-     "mapped_to": "Agent 1",
-     "notes": "Threads Messages @ciptabintanglestari TERHUBUNG (terverifikasi live 21 Nov 03:33, inbox kosong); kirim butuh persetujuan Cipta.",
-     "status": "aktif",
-     "task": "Menjawab Threads"
-    },
-    {
-     "authority": "merah",
-     "code": "CS-06",
-     "mapped_to": "Agent 1 → diteruskan ke Cipta",
-     "notes": "Komplain serius, refund, negosiasi khusus, masalah hukum WAJIB persetujuan manusia.",
-     "status": "aktif",
-     "task": "Menangani komplain dan pengembalian"
-    },
-    {
-     "authority": "hijau",
-     "code": "CS-07",
-     "mapped_to": "Agent 1 + Agent 13",
-     "notes": "Log di wa-customer-replies-log.md; sesi WA Web RUSAK sejak 19 Nov.",
-     "status": "aktif",
-     "task": "Mengumpulkan masukan customer"
-    }
-   ],
-   "chief": "Chief Customer Experience Agent",
-   "id": "E",
-   "mapped_to": [
-    "a01_asisten.py (Agent 1 Asisten)",
-    "a13_email.py (Agent 13 Email)"
-   ],
-   "name": "Customer Service & Communication",
-   "status": "aktif-sebagian"
-  },
-  {
-   "agents": [
-    {
-     "authority": "hijau",
-     "code": "OP-01",
-     "mapped_to": "Agent 6 (database 28 lomba)",
-     "notes": "Hanya lomba GRATIS, AMAN, AI diizinkan.",
-     "status": "aktif",
-     "task": "Mencari lomba tingkat lokal"
-    },
-    {
-     "authority": "hijau",
-     "code": "OP-02",
-     "mapped_to": "Agent 6",
-     "notes": "Lomba Puisi Nasional #2 DILEWATI (keputusan Cipta 19 Nov).",
-     "status": "aktif",
-     "task": "Mencari lomba nasional"
-    },
-    {
-     "authority": "hijau",
-     "code": "OP-03",
-     "mapped_to": "Agent 6",
-     "notes": "Chroma, AdArena, Guardio, Reichman, Kiroween, BuildHybridAI.",
-     "status": "aktif",
-     "task": "Mencari lomba global/internasional"
-    },
-    {
-     "authority": "hijau",
-     "code": "OP-04",
-     "mapped_to": "Agent 6",
-     "notes": "Tenggat dicatat; setelah tutup cek hasil; menang dikawal sampai hadiah CAIR.",
-     "status": "aktif",
-     "task": "Memeriksa syarat dan deadline"
-    },
-    {
-     "authority": "merah",
-     "code": "OP-05",
-     "mapped_to": "Agent 6 + Muse",
-     "notes": "Daftar/kirim lomba HANYA setelah Cipta setuju.",
-     "status": "aktif",
-     "task": "Menyiapkan karya dan dokumen lomba"
-    },
-    {
-     "authority": "hijau",
-     "code": "OP-06",
-     "mapped_to": "Agent 14 (MODE PERSIAPAN; tab '14 · Upwork' live di Faable)",
-     "notes": "Akun Upwork BELUM ADA — tertahan cek Cloudflare (butuh Cipta klik sendiri).",
-     "status": "aktif-sebagian",
-     "task": "Mencari pekerjaan di Upwork"
-    },
-    {
-     "authority": "hijau",
-     "code": "OP-07",
-     "mapped_to": "Agent 14 (antre setelah Upwork)",
-     "notes": "Fiverr, Freelancer.com, Sribulancer, Projects.co.id, Fastwork antre.",
-     "status": "belum",
-     "task": "Mencari pekerjaan di Fiverr"
-    },
-    {
-     "authority": "hijau",
-     "code": "OP-08",
-     "mapped_to": "Agent 14",
-     "notes": "Sama seperti OP-07.",
-     "status": "belum",
-     "task": "Mencari proyek freelance lainnya"
-    },
-    {
-     "authority": "hijau",
-     "code": "OP-09",
-     "mapped_to": "Agent 14 (saringan: pembayaran terverifikasi, fixed ≥$50, hourly ≥$10/jam)",
-     "notes": "Tolak unpaid test/crypto.",
-     "status": "aktif",
-     "task": "Menganalisis kesesuaian proyek"
-    },
-    {
-     "authority": "kuning",
-     "code": "OP-10",
-     "mapped_to": "Agent 14 (template-proposal-upwork.md)",
-     "notes": "Semua output DRAF; pengiriman diputuskan Cipta.",
-     "status": "aktif",
-     "task": "Menyiapkan proposal penawaran"
-    },
-    {
-     "authority": "merah",
-     "code": "OP-11",
-     "mapped_to": "Agent 14 + Agent 7",
-     "notes": "Blokir Connects: Cipta tidak punya kartu kredit; jalan dengan 10 Connects gratis/bulan.",
-     "status": "aktif-sebagian",
-     "task": "Memantau status pekerjaan dan pembayaran"
-    }
-   ],
-   "chief": "Chief Opportunity Agent",
-   "id": "F",
-   "mapped_to": [
-    "a06_lomba.py (Agent 6 Lomba)",
-    "a14_upwork.py (Agent 14 Upwork)"
-   ],
-   "name": "Opportunity, Competition & Freelance",
-   "status": "aktif"
-  },
-  {
-   "agents": [
-    {
-     "authority": "hijau",
-     "code": "FN-01",
-     "mapped_to": "Agent 7 — data/keuangan_data.json",
-     "notes": "Baseline Rp0/$0 per 18 Nov.",
-     "status": "aktif",
-     "task": "Mencatat pendapatan"
-    },
-    {
-     "authority": "hijau",
-     "code": "FN-02",
-     "mapped_to": "Agent 7",
-     "notes": "Kurs Rp16.500/USD.",
-     "status": "aktif",
-     "task": "Mencatat pengeluaran"
-    },
-    {
-     "authority": "hijau",
-     "code": "FN-03",
-     "mapped_to": "Agent 7",
-     "notes": "Laporan harian/mingguan/bulanan.",
-     "status": "aktif",
-     "task": "Menghitung laba dan rugi"
-    },
-    {
-     "authority": "hijau",
-     "code": "FN-04",
-     "mapped_to": "Agent 7",
-     "notes": "Fokus gratis dulu; token ekstra hanya bila gratis habis.",
-     "status": "aktif",
-     "task": "Mengatur anggaran operasional"
-    },
-    {
-     "authority": "kuning",
-     "code": "FN-05",
-     "mapped_to": "Agent 7",
-     "notes": "Transfer HANYA bila syarat terpenuhi DAN Cipta setuju.",
-     "status": "aktif",
-     "task": "Mengawasi tagihan dan pembayaran"
-    },
-    {
-     "authority": "hijau",
-     "code": "FN-06",
-     "mapped_to": "Agent 7",
-     "notes": "Masuk laporan malam 20:00.",
-     "status": "aktif",
-     "task": "Membuat laporan keuangan"
-    },
-    {
-     "authority": "hijau",
-     "code": "FN-07",
-     "mapped_to": "Agent 7 + Agent 10",
-     "notes": "Video buku Kolam = performa terbaik (203 views).",
-     "status": "aktif",
-     "task": "Menganalisis produk paling menguntungkan"
-    }
-   ],
-   "chief": "Chief Financial Agent",
-   "id": "G",
-   "mapped_to": [
-    "a07_keuangan.py (Agent 7 Keuangan)"
-   ],
-   "name": "Finance & Asset Management",
-   "status": "aktif"
-  },
-  {
-   "agents": [
-    {
-     "authority": "hijau",
-     "code": "OPX-01",
-     "mapped_to": "koordinasi.py + rencana pagi 05:00",
-     "notes": "Cron rencana-pagi-0500 DIJEDA 21 Nov 02:49 (STOP).",
-     "status": "aktif-sebagian",
-     "task": "Mengatur tugas seluruh divisi"
-    },
-    {
-     "authority": "hijau",
-     "code": "OPX-02",
-     "mapped_to": "koordinasi.py + data/progres.json",
-     "notes": "Tenggat lomba + BuildHybridAI 1 Des 05:00 WIB.",
-     "status": "aktif",
-     "task": "Mengawasi deadline"
-    },
-    {
-     "authority": "hijau",
-     "code": "OPX-03",
-     "mapped_to": "data/ (JSON, bukan SQL)",
-     "notes": "Database tetap JSON (katalog-lengkap-aplikasi.md, worklist-73.json, produksi_game.json).",
-     "status": "aktif",
-     "task": "Mengelola database produk"
-    },
-    {
-     "authority": "hijau",
-     "code": "OPX-04",
-     "mapped_to": "Agent 11/12 (cek pitch) + skill verify_before_claiming_done",
-     "notes": "Setiap video wajib lulus cek pitch sebelum ke Cipta; setiap demo diverifikasi live sebelum dilaporkan selesai.",
-     "status": "aktif",
-     "task": "Quality Control produk"
-    },
-    {
-     "authority": "hijau",
-     "code": "OPX-05",
-     "mapped_to": "Muse",
-     "notes": "Kunci Firebase bocor sudah dirotasi 20 Nov 06:55.",
-     "status": "aktif",
-     "task": "Memeriksa keamanan sistem"
-    },
-    {
-     "authority": "hijau",
-     "code": "OPX-06",
-     "mapped_to": "Muse (SOP Operasional + SOP Kerja Sama Agent v1.3)",
-     "notes": "Aturan/keputusan dicatat di MEMORY.md + log harian.",
-     "status": "aktif",
-     "task": "Mengelola dokumentasi dan SOP"
-    },
-    {
-     "authority": "kuning",
-     "code": "OPX-07",
-     "mapped_to": "Muse (laporan malam 20:00 PPTX)",
-     "notes": "Cron laporan-malam-2000 DIJEDA 21 Nov 02:49 (STOP).",
-     "status": "aktif-sebagian",
-     "task": "Membuat laporan kinerja seluruh divisi"
-    }
-   ],
-   "chief": "Chief Operations Agent",
-   "id": "H",
-   "mapped_to": [
-    "koordinasi.py (Muse)",
-    "Pusat Komando (Faable, 23 tab)",
-    "a11_oyen.py + a12_momo.py (QC suara)"
-   ],
-   "name": "Operations, Administration & Quality Control",
-   "status": "aktif"
-  }
- ],
- "honest_notes": [
-  "Spesifikasi menyebut '32 AI Agent spesialis', tetapi daftar direktorat bila dijumlahkan berisi 62 baris agent (8+9+7+6+7+11+7+7). Pemetaan ini memakai daftar 62.",
-  "Spesifikasi menyebut '8 kanal media', tetapi rincian akunnya 7 akun media (2 IG + 2 TikTok + 2 YT + 1 Threads) + website + toko = 9 aset.",
-  "Sistem TIDAK berjalan otonom 24 jam: 14 agen bersifat pasif dan dijalankan Muse lewat perintah/jadwal; tidak ada layanan independen 24 jam (keputusan: framework CrewAI/LangGraph/AutoGen DITOLAK).",
-  "Integrasi medsos belum penuh: WA Web rusak; Instagram Messages + Threads Messages TERHUBUNG (verifikasi live 21 Nov 03:33); TikTok @meongcast butuh login Cipta sendiri.",
-  "14 cron dijeda 21 Nov 02:49 atas perintah STOP Cipta — status 'aktif-sebagian' di atas mencerminkan kondisi itu.",
-  "Share #17 menyebut '71 Agent Roles' padahal 8 + 62 = 70 — angka 71 tidak cocok dengan rinciannya.",
-  "Paket starter kit (ZIP) yang diklaim ChatGPT TIDAK ada file-nya di sini — yang ada adalah pemetaan ini (agents.json + dokumen + workflows.json + TESTING.md)."
- ],
- "source": "Share ChatGPT #16 + #17 — AI BUSINESS AUTONOMOUS AGENT 3.0",
- "system": "AI Business Autonomous Agent 3.0",
- "tech_stack": {
-  "automation": "n8n 2.48.5 (lokal, webhook tanpa auth) + Activepieces (terverifikasi, 1.000 kredit)",
-  "backend": "Python (agents/) + Google Apps Script (belum dipakai)",
-  "brain": "Gemini API (free tier via env) + Muse",
-  "dashboard": "Pusat Komando — Faable, 24 tab (incl. 0 · Command Center), https://pusat-komando-972u7.faable.link/",
-  "database": "JSON files (data/) — spesifikasi menyarankan Google Sheets + SQL; belum dipakai"
- },
- "starter_kit": {
-  "spec_isi": [
-   "Konfigurasi seluruh Agent",
-   "Database PostgreSQL",
-   "3 workflow n8n",
-   "Dashboard responsif",
-   "Google Apps Script",
-   "SOP dan job description",
-   "Checklist pengujian"
-  ],
-  "adapted": [
-   {
-    "item": "Konfigurasi seluruh Agent",
-    "status": "sudah",
-    "file": "data/agents.json"
-   },
-   {
-    "item": "Database PostgreSQL",
-    "status": "disesuaikan",
-    "file": "data/ (JSON) — tetap JSON: gratis, tanpa server, sudah jalan"
-   },
-   {
-    "item": "3 workflow n8n",
-    "status": "template",
-    "file": "workflows.json — impor ke n8n belum diuji"
-   },
-   {
-    "item": "Dashboard responsif",
-    "status": "sudah",
-    "file": "Pusat Komando (Faable, 24 tab incl. 0 · Command Center)"
-   },
-   {
-    "item": "Google Apps Script",
-    "status": "tidak-dipakai",
-    "file": "Digantikan cron + Muse + Python"
-   },
-   {
-    "item": "SOP dan job description",
-    "status": "sudah",
-    "file": "SOP Operasional + SOP Kerja Sama Agent v1.3 + pemetaan-agen-3.0.md + daftar-agent-ai.md"
-   },
-   {
-    "item": "Checklist pengujian",
-    "status": "sudah",
-    "file": "TESTING.md"
-   }
-  ]
- },
- "next_steps_adapted": [
-  {
-   "spec": "1. Instalasi dashboard dan database",
-   "status": "sudah",
-   "us": "Pusat Komando live di Faable (24 tab) + data/ JSON"
-  },
-  {
-   "spec": "2. Hubungkan Google Sheets dan Apps Script",
-   "status": "disesuaikan",
-   "us": "TIDAK dipakai — data tetap JSON (gratis, tanpa server, sudah jalan)"
-  },
-  {
-   "spec": "3. Instalasi n8n dan impor workflow",
-   "status": "belum-diuji",
-   "us": "n8n 2.48.5 lokal sudah ada; workflows.json (3 alur) perlu diimpor + diuji end-to-end"
-  },
-  {
-   "spec": "4. Hubungkan Gemini API",
-   "status": "sudah",
-   "us": "Gemini free tier via env GEMINI_API_KEY; tanpa key jalan mode template"
-  },
-  {
-   "spec": "5. Aktifkan CEO Agent dan 8 direktorat",
-   "status": "sudah",
-   "us": "Muse = CEO; 14 agen = 8 direktorat; tab '0 · Command Center' di Pusat Komando"
-  },
-  {
-   "spec": "6. Uji Approval Center",
-   "status": "sudah",
-   "us": "Approval Center = antrean handoff (status 'diperiksa') + aturan persetujuan Cipta; uji = cek antrean terbuka di tab 0"
-  },
-  {
-   "spec": "7. Hubungkan akun IG/TikTok/YT/Threads/email/website/toko",
-   "status": "sebagian",
-   "us": "Lihat status per agent di atas; IG Messages + Threads Messages TERHUBUNG (21 Nov 03:33); WA Web rusak, TikTok @meongcast butuh login Cipta"
-  }
- ],
- "agent_30": {
-  "source": "Share ChatGPT #18 + #19 dan Share Gemini #1 — Bintang Command Center",
   "applied_date": "2026-11-21",
-  "note": "30 agent A01–A30 (Bintang) dipetakan ke 14 agen nyata + Muse + Pusat Komando. Agent bersifat PASIF — dijalankan Muse, bukan layanan otonom 24 jam. Semua output DRAF untuk persetujuan Cipta.",
-  "agents": [
-   {
-    "code": "A01",
-    "name": "CEO Director",
-    "division": "Direksi",
-    "boss": "Pemilik",
-    "job_desc": "Menentukan arah, target, prioritas dan keputusan perusahaan",
-    "file": "agents/b01_ceo_director.py",
-    "mapped_to": "Muse (koordinator / CEO)",
-    "status": "Aktif",
-    "gemini_division": "Agent 0 — Chief Orchestrator",
-    "gemini_role": "0 — Chief Orchestrator",
-    "gemini_kpi": [
-     "Semua agen aktif setiap hari (target rancangan)",
-     "1 produk baru dirilis setiap hari (target rancangan)",
-     "Laporan harian tepat waktu (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Gemini Advanced / ChatGPT",
-     "Notion",
-     "Google Sheets"
-    ],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Tetapkan sasaran, pilih satu prioritas utama, putuskan eskalasi",
-    "target_harian": "1 brief harian; maksimal 3 prioritas"
-   },
-   {
-    "code": "A02",
-    "name": "COO Manager",
-    "division": "Direksi",
-    "boss": "A01",
-    "job_desc": "Mengatur operasi, kapasitas, jadwal dan koordinasi divisi",
-    "file": "agents/b02_coo_manager.py",
-    "mapped_to": "Muse + koordinasi.py",
-    "status": "Aktif sebagian",
-    "gemini_division": "Agent 0 — Chief Orchestrator",
-    "gemini_role": "0 — Chief Orchestrator (dukungan operasional)",
-    "gemini_kpi": [
-     "Semua agen aktif setiap hari (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Gemini Advanced / ChatGPT",
-     "Notion",
-     "Google Sheets"
-    ],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Cek kapasitas, jadwal, dependensi dan hambatan",
-    "target_harian": "100% tugas punya PIC dan tenggat"
-   },
-   {
-    "code": "A03",
-    "name": "Command Controller",
-    "division": "Direksi",
-    "boss": "A02",
-    "job_desc": "Membagi tugas, melacak status dan mengonsolidasikan laporan",
-    "file": "agents/b03_command_controller.py",
-    "mapped_to": "Pusat Komando (Faable) + koordinasi.py",
-    "status": "Aktif",
-    "gemini_division": "Agent 0 — Chief Orchestrator",
-    "gemini_role": "0 — Chief Orchestrator (pembagian tugas)",
-    "gemini_kpi": [
-     "Semua agen aktif setiap hari (target rancangan)",
-     "Laporan harian tepat waktu (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Gemini Advanced / ChatGPT",
-     "Notion",
-     "Google Sheets"
-    ],
-    "platform": {
-     "terhubung": [
-      "Faable — Pusat Komando"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Bagi tugas, perbarui status, kumpulkan laporan",
-    "target_harian": "Semua tugas berstatus"
-   },
-   {
-    "code": "A04",
-    "name": "Quality Control",
-    "division": "Direksi",
-    "boss": "A02",
-    "job_desc": "Memeriksa akurasi, kualitas dan kepatuhan hasil",
-    "file": "agents/b04_quality_control.py",
-    "mapped_to": "Muse + A9F verifikasi",
-    "status": "Aktif",
-    "gemini_division": "Agent 0 — Chief Orchestrator",
-    "gemini_role": "Bagian dari Agent 0 — QC melekat pada orchestrator",
-    "gemini_kpi": [],
-    "gemini_tools": [],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Periksa fakta, ejaan, hak cipta, tautan, klaim dan konsistensi",
-    "target_harian": "100% output penting diperiksa"
-   },
-   {
-    "code": "A05",
-    "name": "Business Analyst",
-    "division": "Direksi",
-    "boss": "A02",
-    "job_desc": "Menganalisis KPI, hasil, risiko dan profitabilitas",
-    "file": "agents/b05_business_analyst.py",
-    "mapped_to": "A7 Keuangan + Muse",
-    "status": "Aktif",
-    "gemini_division": "Divisi 5 — Freelance & Finance",
-    "gemini_role": "5B — Finance & Operational Controller (analisis)",
-    "gemini_kpi": [
-     "Laporan pembukuan harian/mingguan (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Google Sheets",
-     "Notion"
-    ],
-    "platform": {
-     "terhubung": [
-      "PayPal (analisis data pemasukan)",
-      "BCA (analisis data pemasukan)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Hitung performa konten, biaya, pemasukan, risiko",
-    "target_harian": "1 ringkasan harian"
-   },
-   {
-    "code": "A06",
-    "name": "Market Researcher",
-    "division": "Riset",
-    "boss": "A03",
-    "job_desc": "Meneliti kebutuhan, masalah dan segmen pelanggan",
-    "file": "agents/b06_market_researcher.py",
-    "mapped_to": "A10 Riset",
-    "status": "Aktif",
-    "gemini_division": "Divisi 1 — R&D",
-    "gemini_role": "1A — Market Researcher",
-    "gemini_kpi": [
-     "5 ide produk valid/hari (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Google Trends",
-     "Perplexity.ai",
-     "Gemini Deep Research"
-    ],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Cari masalah pelanggan dan peluang pasar",
-    "target_harian": "5 ide; 1 rekomendasi"
-   },
-   {
-    "code": "A07",
-    "name": "Trend Hunter",
-    "division": "Riset",
-    "boss": "A03",
-    "job_desc": "Memantau tren, topik dan permintaan pasar",
-    "file": "agents/b07_trend_hunter.py",
-    "mapped_to": "A10 Riset",
-    "status": "Aktif",
-    "gemini_division": "Divisi 1 — R&D",
-    "gemini_role": "1A — Market Researcher (tren)",
-    "gemini_kpi": [
-     "5 tren produk/hari (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Google Trends",
-     "Perplexity.ai",
-     "Gemini Deep Research"
-    ],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Pantau tren dan kata kunci",
-    "target_harian": "5 tren dengan bukti/sumber"
-   },
-   {
-    "code": "A08",
-    "name": "Product Developer",
-    "division": "Riset",
-    "boss": "A03",
-    "job_desc": "Mengubah kebutuhan tervalidasi menjadi konsep dan produk",
-    "file": "agents/b08_product_developer.py",
-    "mapped_to": "A5 Produksi + A9",
-    "status": "Aktif",
-    "gemini_division": "Divisi 1 — R&D",
-    "gemini_role": "1A — Market Researcher (pengembangan konsep)",
-    "gemini_kpi": [
-     "5 ide produk valid/hari (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Google Trends",
-     "Perplexity.ai",
-     "Gemini Deep Research"
-    ],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Ubah masalah tervalidasi menjadi konsep",
-    "target_harian": "1 brief produk/konten"
-   },
-   {
-    "code": "A09",
-    "name": "Competitor Analyst",
-    "division": "Riset",
-    "boss": "A06",
-    "job_desc": "Menganalisis pesaing, penawaran, harga dan celah pasar",
-    "file": "agents/b09_competitor_analyst.py",
-    "mapped_to": "A10 Riset",
-    "status": "Aktif",
-    "gemini_division": "Divisi 1 — R&D",
-    "gemini_role": "1B — Competition & Grant Scout",
-    "gemini_kpi": [
-     "3 info lomba baru/hari (target rancangan)",
-     "5–10 lomba diikuti/bulan (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Google Search",
-     "Gemini Deep Research",
-     "Email Alerts"
-    ],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Bandingkan pesaing, harga, penawaran dan celah",
-    "target_harian": "3 pesaing/penawaran dibandingkan"
-   },
-   {
-    "code": "A10",
-    "name": "Product Validator",
-    "division": "Riset",
-    "boss": "A08",
-    "job_desc": "Menguji manfaat, kelayakan, permintaan dan kesiapan produk",
-    "file": "agents/b10_product_validator.py",
-    "mapped_to": "A9F verifikasi + Muse",
-    "status": "Aktif",
-    "gemini_division": "Divisi 1 — R&D",
-    "gemini_role": "1A — Market Researcher (validasi)",
-    "gemini_kpi": [
-     "5 ide produk valid/hari (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Google Trends",
-     "Perplexity.ai",
-     "Gemini Deep Research"
-    ],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Nilai permintaan, manfaat, kelayakan dan risiko",
-    "target_harian": "1 ide diberi skor dan keputusan"
-   },
-   {
-    "code": "A11",
-    "name": "AI Video Producer",
-    "division": "Produksi",
-    "boss": "A08",
-    "job_desc": "Membuat naskah, storyboard dan video AI",
-    "file": "agents/b11_ai_video_producer.py",
-    "mapped_to": "A5 Produksi + A11/A12 pitch",
-    "status": "Aktif",
-    "gemini_division": "Divisi 2 — Creative Studio",
-    "gemini_role": "2B — Visual & AI Media Producer (video)",
-    "gemini_kpi": [
-     "5–10 aset visual/hari, termasuk video AI (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Kling AI",
-     "Hailuo AI",
-     "CapCut Desktop"
-    ],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Naskah, storyboard, prompt, video pendek",
-    "target_harian": "1 video utama atau storyboard siap produksi"
-   },
-   {
-    "code": "A12",
-    "name": "AI Image Designer",
-    "division": "Produksi",
-    "boss": "A08",
-    "job_desc": "Membuat visual, foto, ilustrasi dan aset desain AI",
-    "file": "agents/b12_ai_image_designer.py",
-    "mapped_to": "A5 Produksi",
-    "status": "Aktif",
-    "gemini_division": "Divisi 2 — Creative Studio",
-    "gemini_role": "2B — Visual & AI Media Producer",
-    "gemini_kpi": [
-     "5–10 aset visual/hari (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Bing Image Creator",
-     "Leonardo.ai",
-     "Flux (HuggingFace)"
-    ],
-    "platform": {
-     "terhubung": [
-      "Adobe Stock (foto AI)",
-      "Dreamstime (foto AI)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Buat visual utama dan variasinya",
-    "target_harian": "3–5 visual siap QC"
-   },
-   {
-    "code": "A13",
-    "name": "App Developer",
-    "division": "Produksi",
-    "boss": "A08",
-    "job_desc": "Membuat prototipe dan aplikasi",
-    "file": "agents/b13_app_developer.py",
-    "mapped_to": "A9 + tim 9A–9F",
-    "status": "Aktif",
-    "gemini_division": "Divisi 2 — Creative Studio",
-    "gemini_role": "2C — Web, App & Micro-Game Developer",
-    "gemini_kpi": [
-     "1 tools/game/landing page per minggu (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Gemini / ChatGPT / Claude",
-     "VS Code",
-     "GitHub"
-    ],
-    "platform": {
-     "terhubung": [
-      "GitHub Pages (demo aplikasi)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Kerjakan backlog aplikasi/tool",
-    "target_harian": "1 tugas kecil; rilis mingguan"
-   },
-   {
-    "code": "A14",
-    "name": "Web Developer",
-    "division": "Produksi",
-    "boss": "A08",
-    "job_desc": "Membuat website, landing page dan katalog",
-    "file": "agents/b14_web_developer.py",
-    "mapped_to": "A9 + Muse",
-    "status": "Aktif",
-    "gemini_division": "Divisi 2 — Creative Studio",
-    "gemini_role": "2C — Web, App & Micro-Game Developer",
-    "gemini_kpi": [
-     "1 tools/game/landing page per minggu (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Gemini / ChatGPT / Claude",
-     "VS Code",
-     "GitHub"
-    ],
-    "platform": {
-     "terhubung": [
-      "GitHub Pages (website demo)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Perbaiki landing page/katalog/SEO teknis",
-    "target_harian": "1 perbaikan; rilis mingguan"
-   },
-   {
-    "code": "A15",
-    "name": "POD Designer",
-    "division": "Produksi",
-    "boss": "A08",
-    "job_desc": "Membuat desain produk print-on-demand",
-    "file": "agents/b15_pod_designer.py",
-    "mapped_to": "A5 Produksi",
-    "status": "Aktif",
-    "gemini_division": "Divisi 2 — Creative Studio",
-    "gemini_role": "2B — Visual & AI Media Producer (POD)",
-    "gemini_kpi": [
-     "5–10 aset visual/hari (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Bing Image Creator",
-     "Leonardo.ai"
-    ],
-    "platform": {
-     "terhubung": [
-      "Zazzle (terbit desain POD)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Buat desain print-on-demand",
-    "target_harian": "2–3 desain konsep"
-   },
-   {
-    "code": "A16",
-    "name": "eBook Publisher",
-    "division": "Produksi",
-    "boss": "A08",
-    "job_desc": "Menulis, menyunting dan menyiapkan eBook",
-    "file": "agents/b16_ebook_publisher.py",
-    "mapped_to": "A5 Produksi",
-    "status": "Aktif",
-    "gemini_division": "Divisi 2 — Creative Studio",
-    "gemini_role": "2A — Literary & Content Writer",
-    "gemini_kpi": [
-     "1 bab cerbung / 1 puisi-cerpen / 1 draf eBook per hari (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Gemini / ChatGPT",
-     "Google Docs"
-    ],
-    "platform": {
-     "terhubung": [
-      "KaryaKarsa (terbit eBook)",
-      "Lynk.id (terbit eBook)",
-      "KBM (terbit eBook)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Susun/edit naskah eBook",
-    "target_harian": "1 bagian/bab draf"
-   },
-   {
-    "code": "A17",
-    "name": "Creative Writer",
-    "division": "Produksi",
-    "boss": "A08",
-    "job_desc": "Membuat puisi, cerpen dan cerita bersambung",
-    "file": "agents/b17_creative_writer.py",
-    "mapped_to": "A5 Produksi",
-    "status": "Aktif",
-    "gemini_division": "Divisi 2 — Creative Studio",
-    "gemini_role": "2A — Literary & Content Writer",
-    "gemini_kpi": [
-     "1 bab cerbung / 1 puisi-cerpen / 1 draf eBook per hari (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Gemini / ChatGPT",
-     "Google Docs"
-    ],
-    "platform": {
-     "terhubung": [
-      "KaryaKarsa (terbit tulisan)",
-      "KBM (terbit tulisan)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Tulis cerita, puisi atau naskah",
-    "target_harian": "1 karya/bagian draf"
-   },
-   {
-    "code": "A18",
-    "name": "Game Developer",
-    "division": "Produksi",
-    "boss": "A08",
-    "job_desc": "Merancang dan mengembangkan game",
-    "file": "agents/b18_game_developer.py",
-    "mapped_to": "A9 Produksi Game",
-    "status": "Aktif",
-    "gemini_division": "Divisi 2 — Creative Studio",
-    "gemini_role": "2C — Web, App & Micro-Game Developer",
-    "gemini_kpi": [
-     "1 tools/game/landing page per minggu (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Gemini / ChatGPT / Claude",
-     "VS Code",
-     "GitHub"
-    ],
-    "platform": {
-     "terhubung": [
-      "GitHub Pages (demo game)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Bangun fitur game sesuai backlog",
-    "target_harian": "1 fitur kecil; rilis mingguan"
-   },
-   {
-    "code": "A19",
-    "name": "Content Producer",
-    "division": "Produksi",
-    "boss": "A08",
-    "job_desc": "Mengubah produk dan riset menjadi materi konten",
-    "file": "agents/b19_content_producer.py",
-    "mapped_to": "A5 Produksi + A3",
-    "status": "Aktif",
-    "gemini_division": "Divisi 2 — Creative Studio",
-    "gemini_role": "2A/2B + Divisi 3 (content producer)",
-    "gemini_kpi": [
-     "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
-     "1 produk → 7 format konten (strategi rancangan)"
-    ],
-    "gemini_tools": [
-     "Gemini / ChatGPT",
-     "CapCut"
-    ],
-    "platform": {
-     "terhubung": [
-      "Facebook \"Masduki Kiki\" (tanpa Page) — distribusi konten"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Pecah satu ide menjadi format konten",
-    "target_harian": "1 ide → 7 format draf"
-   },
-   {
-    "code": "A20",
-    "name": "Instagram Manager",
-    "division": "Marketing",
-    "boss": "A03",
-    "job_desc": "Mengelola dua akun Instagram, konten dan interaksi",
-    "file": "agents/b20_instagram_manager.py",
-    "mapped_to": "A3 Pertumbuhan (IG @meongcast terhubung; @podcast_meong login ditolak)",
-    "status": "Aktif",
-    "gemini_division": "Divisi 3 — Social Growth",
-    "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
-    "gemini_kpi": [
-     "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
-     "Target +20% followers/bulan (target rancangan)",
-     "1 produk → 7 format konten (strategi rancangan)",
-     "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
-    ],
-    "gemini_tools": [
-     "Gemini / ChatGPT",
-     "CapCut"
-    ],
-    "platform": {
-     "terhubung": [
-      "Instagram posting @meongcast",
-      "Instagram Messages @meongcast"
-     ],
-     "belum_terhubung": [
-      "Instagram @podcast_meong (login ditolak)"
-     ]
-    },
-    "tugas_harian": "Siapkan caption, visual, jadwal dan interaksi",
-    "target_harian": "1 draf konten; cek inbox"
-   },
-   {
-    "code": "A21",
-    "name": "TikTok Manager",
-    "division": "Marketing",
-    "boss": "A03",
-    "job_desc": "Mengelola dua akun TikTok dan analitik",
-    "file": "agents/b21_tiktok_manager.py",
-    "mapped_to": "A3 Pertumbuhan (TikTok @podcast_kucing jalan; @meongcast butuh login Cipta)",
-    "status": "Aktif sebagian",
-    "gemini_division": "Divisi 3 — Social Growth",
-    "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
-    "gemini_kpi": [
-     "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
-     "Target +20% followers/bulan (target rancangan)",
-     "1 produk → 7 format konten (strategi rancangan)",
-     "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
-    ],
-    "gemini_tools": [
-     "Gemini / ChatGPT",
-     "CapCut"
-    ],
-    "platform": {
-     "terhubung": [
-      "TikTok @podcast_kucing (via browser)"
-     ],
-     "belum_terhubung": [
-      "TikTok @meongcast (butuh login Cipta)"
-     ]
-    },
-    "tugas_harian": "Siapkan video, hook, caption dan analitik",
-    "target_harian": "1 draf video; cek performa"
-   },
-   {
-    "code": "A22",
-    "name": "YouTube Manager",
-    "division": "Marketing",
-    "boss": "A03",
-    "job_desc": "Mengelola dua channel YouTube dan analitik",
-    "file": "agents/b22_youtube_manager.py",
-    "mapped_to": "A3 Pertumbuhan (YT Podcast meong jalan; @meongcast tertahan verifikasi)",
-    "status": "Aktif sebagian",
-    "gemini_division": "Divisi 3 — Social Growth",
-    "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
-    "gemini_kpi": [
-     "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
-     "Target +20% followers/bulan (target rancangan)",
-     "1 produk → 7 format konten (strategi rancangan)",
-     "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
-    ],
-    "gemini_tools": [
-     "Gemini / ChatGPT",
-     "CapCut"
-    ],
-    "platform": {
-     "terhubung": [
-      "YouTube Podcast meong (via browser)"
-     ],
-     "belum_terhubung": [
-      "YouTube @meongcast (tertahan verifikasi)"
-     ]
-    },
-    "tugas_harian": "Siapkan Shorts/video, judul, deskripsi",
-    "target_harian": "1 draf Shorts atau 1 paket video"
-   },
-   {
-    "code": "A23",
-    "name": "Threads Manager",
-    "division": "Marketing",
-    "boss": "A03",
-    "job_desc": "Mengelola satu akun Threads dan percakapan",
-    "file": "agents/b23_threads_manager.py",
-    "mapped_to": "A3 Pertumbuhan (Threads @ciptabintanglestari terhubung)",
-    "status": "Aktif",
-    "gemini_division": "Divisi 3 — Social Growth",
-    "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
-    "gemini_kpi": [
-     "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
-     "Target +20% followers/bulan (target rancangan)",
-     "1 produk → 7 format konten (strategi rancangan)",
-     "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
-    ],
-    "gemini_tools": [
-     "Gemini / ChatGPT",
-     "CapCut"
-    ],
-    "platform": {
-     "terhubung": [
-      "Threads posting @ciptabintanglestari",
-      "Threads Messages @ciptabintanglestari"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Buat percakapan, utas dan respons",
-    "target_harian": "1–2 draf posting; cek balasan"
-   },
-   {
-    "code": "A24",
-    "name": "SEO & Growth",
-    "division": "Marketing",
-    "boss": "A03",
-    "job_desc": "SEO, optimasi distribusi dan pertumbuhan organik",
-    "file": "agents/b24_seo_growth.py",
-    "mapped_to": "A3 Pertumbuhan",
-    "status": "Aktif",
-    "gemini_division": "Divisi 3 — Social Growth",
-    "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker (SEO)",
-    "gemini_kpi": [
-     "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
-     "Target +20% followers/bulan (target rancangan)"
-    ],
-    "gemini_tools": [
-     "Google Trends",
-     "Perplexity.ai"
-    ],
-    "platform": {
-     "terhubung": [
-      "GitHub Pages (SEO website)",
-      "Impact.com (affiliate)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Riset keyword, optimasi dan distribusi organik",
-    "target_harian": "1 optimasi; 3 keyword"
-   },
-   {
-    "code": "A25",
-    "name": "Sales Manager",
-    "division": "Penjualan",
-    "boss": "A02",
-    "job_desc": "Mengelola pipeline, penawaran dan target penjualan",
-    "file": "agents/b25_sales_manager.py",
-    "mapped_to": "A2 + A4 Penjualan",
-    "status": "Aktif",
-    "gemini_division": "Divisi 4 — CS & Closer",
-    "gemini_role": "4 — Omnichannel CS & Closer",
-    "gemini_kpi": [
-     "Respons < 1 jam (target rancangan)",
-     "1–3 penjualan langsung (closing)/hari (target rancangan)",
-     "Pembayaran hanya ke BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai"
-    ],
-    "gemini_tools": [],
-    "platform": {
-     "terhubung": [
-      "KaryaKarsa (jualan)",
-      "Lynk.id (jualan)",
-      "Zazzle (jualan)",
-      "KBM (jualan)",
-      "Saweria (jualan)",
-      "Trakteer (jualan)",
-      "PayPal (pembayaran)",
-      "BCA (pembayaran)"
-     ],
-     "belum_terhubung": [
-      "Mayar (KYC belum selesai)"
-     ]
-    },
-    "tugas_harian": "Kelola lead, penawaran, follow-up dan closing; fokus kebutuhan customer — bila customer bercerita, dengarkan masalahnya dan cari solusinya",
-    "target_harian": "Harian: 20 toko dihubungi + target 1 balasan; mingguan: 1 closing; bulanan (Des 2026): Rp10.000.000"
-   },
-   {
-    "code": "A26",
-    "name": "Customer Service",
-    "division": "Penjualan",
-    "boss": "A25",
-    "job_desc": "Menjawab pertanyaan, komentar dan keluhan pelanggan",
-    "file": "agents/b26_customer_service.py",
-    "mapped_to": "A1 + A13 (WA Web rusak; IG/Threads Messages terhubung)",
-    "status": "Aktif",
-    "gemini_division": "Divisi 4 — CS & Closer",
-    "gemini_role": "4 — Omnichannel CS & Closer",
-    "gemini_kpi": [
-     "Respons < 1 jam (target rancangan)"
-    ],
-    "gemini_tools": [],
-    "platform": {
-     "terhubung": [
-      "KaryaKarsa (CS)",
-      "Lynk.id (CS)",
-      "Zazzle (CS)",
-      "KBM (CS)",
-      "Saweria (CS)",
-      "Trakteer (CS)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Kelompokkan dan siapkan respons pertanyaan/keluhan",
-    "target_harian": "Inbox dipantau; respons draf <1 jam selama jam layanan"
-   },
-   {
-    "code": "A27",
-    "name": "Email Administrator",
-    "division": "Penjualan",
-    "boss": "A02",
-    "job_desc": "Memilah email, membuat draft dan menindaklanjuti",
-    "file": "agents/b27_email_administrator.py",
-    "mapped_to": "A13 Email (Gmail TIDAK terhubung — baca via browser)",
-    "status": "Aktif sebagian",
-    "gemini_division": "Divisi 4 — CS & Closer",
-    "gemini_role": "4 — Omnichannel CS & Closer (email)",
-    "gemini_kpi": [
-     "Respons < 1 jam (target rancangan)",
-     "Email diperiksa 2–3 kali/hari (target rancangan)"
-    ],
-    "gemini_tools": [],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": [
-      "Gmail (tidak terhubung — kerja via browser, draf saja)"
-     ]
-    },
-    "tugas_harian": "Sortir email, ringkas, siapkan balasan",
-    "target_harian": "2–3 pemeriksaan; semua tindak lanjut tercatat"
-   },
-   {
-    "code": "A28",
-    "name": "Opportunity Hunter",
-    "division": "Peluang & Keuangan",
-    "boss": "A02",
-    "job_desc": "Mencari lomba, freelance, hibah dan kemitraan",
-    "file": "agents/b28_opportunity_hunter.py",
-    "mapped_to": "A6 + A14",
-    "status": "Aktif",
-    "gemini_division": "Divisi 5 — Freelance & Finance",
-    "gemini_role": "5A — Freelance & Gig Bidder",
-    "gemini_kpi": [
-     "5 proposal/hari — DRAF saja, kirim hanya setelah Cipta setuju (target rancangan)",
-     "Target 1–2 proyek didapat/bulan (target rancangan)"
-    ],
-    "gemini_tools": [],
-    "platform": {
-     "terhubung": [],
-     "belum_terhubung": [
-      "Upwork (belum ada akun)"
-     ]
-    },
-    "tugas_harian": "Cari lomba, freelance, hibah, kemitraan",
-    "target_harian": "Hingga 5 draf proposal berkualitas"
-   },
-   {
-    "code": "A29",
-    "name": "Finance Manager",
-    "division": "Peluang & Keuangan",
-    "boss": "A02",
-    "job_desc": "Mencatat pendapatan, biaya, saldo dan laporan",
-    "file": "agents/b29_finance_manager.py",
-    "mapped_to": "A7 Keuangan (baseline Rp0)",
-    "status": "Aktif",
-    "gemini_division": "Divisi 5 — Freelance & Finance",
-    "gemini_role": "5B — Finance & Operational Controller",
-    "gemini_kpi": [
-     "Laporan pembukuan harian/mingguan (target rancangan)",
-     "Pantau status KYC Mayar"
-    ],
-    "gemini_tools": [
-     "Google Sheets",
-     "Notion"
-    ],
-    "platform": {
-     "terhubung": [
-      "PayPal (pencatatan)",
-      "BCA (pencatatan)",
-      "Saweria (pencatatan)",
-      "Trakteer (pencatatan)",
-      "KaryaKarsa (pencatatan)",
-      "Lynk.id (pencatatan)"
-     ],
-     "belum_terhubung": [
-      "Mayar (KYC belum selesai)"
-     ]
-    },
-    "tugas_harian": "Catat pemasukan, biaya, saldo dan status pembayaran",
-    "target_harian": "Rekonsiliasi harian; tidak ada transaksi tanpa bukti"
-   },
-   {
-    "code": "A30",
-    "name": "Operations Manager",
-    "division": "Peluang & Keuangan",
-    "boss": "A02",
-    "job_desc": "Mengelola dokumen, SOP, jadwal dan administrasi",
-    "file": "agents/b30_operations_manager.py",
-    "mapped_to": "koordinasi.py + Pusat Komando",
-    "status": "Aktif",
-    "gemini_division": "Agent 0 — Chief Orchestrator",
-    "gemini_role": "Agent 0 — Chief Orchestrator (dukungan operasional; Gemini #1 tidak punya divisi operasional terpisah)",
-    "gemini_kpi": [],
-    "gemini_tools": [],
-    "platform": {
-     "terhubung": [
-      "DeployVera (papan status cadangan)",
-      "GitHub Pages (repo)"
-     ],
-     "belum_terhubung": []
-    },
-    "tugas_harian": "Rapikan SOP, dokumen, jadwal dan arsip",
-    "target_harian": "Dokumen dan status tugas diperbarui"
-   }
-  ]
- },
- "versi_pusat_komando": "2.0",
- "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif.",
- "agent_lama": {
-  "status": "No 1–6 Aktif — diganti nama jadi A31–A36; no 7–14 Pasif — non job",
-  "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang. KOREKSI 22 Nov 2026 (perintah Cipta): dari 14 agent lama, no 1–6 AKTIF dan DIGANTI NAMA jadi A31–A36 (1 Asisten→A31 Publish, 2 Penjualan→A32 Build, 3 Pertumbuhan→A33 Pertumbuhan, 4 Penjualan Harian→A34 Penerjemah, 5 Produksi Produk→A35 Ngetik, 6 Lomba→A36 Copywriter); sisanya no 7–14 tetap Pasif — non job.",
-  "agents": [
-   {
-    "kode": "1",
-    "nama": "Asisten",
-    "modul": "a01_asisten",
-    "sumber_data": "handoff",
-    "status": "Aktif — diganti nama jadi A31 Publish",
-    "kode_baru": "A31",
-    "nama_baru": "Publish"
-   },
-   {
-    "kode": "2",
-    "nama": "Penjualan",
-    "modul": "a02_penjualan",
-    "sumber_data": "leads",
-    "status": "Aktif — diganti nama jadi A32 Build",
-    "kode_baru": "A32",
-    "nama_baru": "Build"
-   },
-   {
-    "kode": "3",
-    "nama": "Pertumbuhan",
-    "modul": "a03_pertumbuhan",
-    "sumber_data": "handoff",
-    "status": "Aktif — diganti nama jadi A33 Pertumbuhan",
-    "kode_baru": "A33",
-    "nama_baru": "Pertumbuhan"
-   },
-   {
-    "kode": "4",
-    "nama": "Penjualan Harian",
-    "modul": "a04_penjualan_harian",
-    "sumber_data": "penjualan_toko",
-    "status": "Aktif — diganti nama jadi A34 Penerjemah",
-    "kode_baru": "A34",
-    "nama_baru": "Penerjemah"
-   },
-   {
-    "kode": "5",
-    "nama": "Produksi Produk",
-    "modul": "a05_produksi",
-    "sumber_data": "produksi_game",
-    "status": "Aktif — diganti nama jadi A35 Ngetik",
-    "kode_baru": "A35",
-    "nama_baru": "Ngetik"
-   },
-   {
-    "kode": "6",
-    "nama": "Lomba",
-    "modul": "a06_lomba",
-    "sumber_data": "lomba",
-    "status": "Aktif — diganti nama jadi A36 Copywriter",
-    "kode_baru": "A36",
-    "nama_baru": "Copywriter"
-   },
-   {
-    "kode": "7",
-    "nama": "Keuangan",
-    "modul": "a07_keuangan",
-    "sumber_data": "keuangan",
-    "status": "Pasif — non job"
-   },
-   {
-    "kode": "8",
-    "nama": "Terjemah Inggris",
-    "modul": "a08_terjemah",
-    "sumber_data": "terjemahan",
-    "status": "Pasif — non job"
-   },
-   {
-    "kode": "9",
-    "nama": "Game & Aplikasi",
-    "modul": "a09_game",
-    "sumber_data": "worklist",
-    "status": "Pasif — non job"
-   },
-   {
-    "kode": "10",
-    "nama": "Riset Produk",
-    "modul": "a10_riset",
-    "sumber_data": "riset",
-    "status": "Pasif — non job"
-   },
-   {
-    "kode": "11",
-    "nama": "Oyen",
-    "modul": "a11_oyen",
-    "sumber_data": "handoff",
-    "status": "Pasif — non job"
-   },
-   {
-    "kode": "12",
-    "nama": "Momo",
-    "modul": "a12_momo",
-    "sumber_data": "handoff",
-    "status": "Pasif — non job"
-   },
-   {
-    "kode": "13",
-    "nama": "Email",
-    "modul": "a13_email",
-    "sumber_data": "email",
-    "status": "Pasif — non job"
-   },
-   {
-    "kode": "14",
-    "nama": "Upwork",
-    "modul": "a14_upwork",
-    "sumber_data": "upwork",
-    "status": "Pasif — non job"
-   }
-  ],
-  "catatan": "A31–A33 belum punya modul; A34 (terjemahan) DITUNDA perintah Cipta; A35/A36 punya modul (b35_ngetik.py, b36_copywriter.py). Koreksi 21 Nov 14:23: yang dihitung agent hanya 30 Bintang (A01–A30); A31–A36 adalah kode peran, bukan hitungan agent."
- },
- "sop_harian": {
-  "sumber": "Sistem_Operasional_Harian_30_Agent_Bintang.docx (diunggah Cipta, 21 Nov 2026)",
-  "tanggal": "2026-11-21",
-  "catatan": "Target di SOP ini adalah target awal — dievaluasi setelah 14 hari. KPI Gemini di agent_30 tetap sebagai target rancangan. Siklus SOP (07.00-16.30, 9 tahap) BERBEDA dari jadwal mesin saat ini (slot Gemini 06.00/08.00/11/15/19/21.00) — keputusan Cipta diperlukan sebelum mesin mengikuti siklus SOP.",
-  "siklus_harian": [
-   {
-    "tahap": "Briefing & prioritas",
-    "jam": "07.00–07.20",
-    "penanggung_jawab": "A01, A02, A03",
-    "hasil_wajib": "3 prioritas hari ini, kapasitas, tugas dan tenggat"
-   },
-   {
-    "tahap": "Riset pasar",
-    "jam": "07.20–08.30",
-    "penanggung_jawab": "A06–A10",
-    "hasil_wajib": "5 ide awal, 5 tren, 3 pesaing, 1 ide terpilih"
-   },
-   {
-    "tahap": "Perencanaan produk",
-    "jam": "08.30–09.00",
-    "penanggung_jawab": "A08, A10, A05",
-    "hasil_wajib": "Skor validasi dan brief produk/konten"
-   },
-   {
-    "tahap": "Produksi utama",
-    "jam": "09.00–11.30",
-    "penanggung_jawab": "A11–A19",
-    "hasil_wajib": "1 aset utama + variasi konten; draf produk"
-   },
-   {
-    "tahap": "QC & persetujuan",
-    "jam": "11.30–12.00",
-    "penanggung_jawab": "A04, A10, Cipta",
-    "hasil_wajib": "Checklist lolos/gagal; daftar yang perlu persetujuan"
-   },
-   {
-    "tahap": "Distribusi konten",
-    "jam": "13.00–14.00",
-    "penanggung_jawab": "A19–A24",
-    "hasil_wajib": "3–5 konten lintas kanal dalam bentuk draf/jadwal"
-   },
-   {
-    "tahap": "Penjualan & layanan",
-    "jam": "09.00–11.00 & 19.00–21.00",
-    "penanggung_jawab": "A25–A27",
-    "hasil_wajib": "Pagi 09.00–11.00: 20 penawaran baru ke toko (fokus kebutuhan customer); malam 19.00–21.00: follow-up H+1/H+3/H+7 + balas toko (dengarkan cerita/masalahnya, cari solusinya)"
-   },
-   {
-    "tahap": "Peluang & keuangan",
-    "jam": "15.00–16.00",
-    "penanggung_jawab": "A28–A29",
-    "hasil_wajib": "5 draf proposal yang relevan; pembukuan diperbarui"
-   },
-   {
-    "tahap": "Rekonsiliasi & laporan",
-    "jam": "16.00–16.30",
-    "penanggung_jawab": "A03, A04, A05, A30",
-    "hasil_wajib": "Dashboard, hambatan, keputusan besok"
-   }
-  ],
-  "target_perusahaan": [
-   {
-    "area": "Riset",
-    "target_harian_awal": "5 ide → 1 ide prioritas",
-    "definisi_selesai": "Ada masalah pelanggan, segmen, bukti tren, pesaing, dan alasan memilih"
-   },
-   {
-    "area": "Produk",
-    "target_harian_awal": "1 brief tervalidasi",
-    "definisi_selesai": "Skor manfaat, permintaan, biaya/waktu, risiko dan langkah berikut"
-   },
-   {
-    "area": "Konten",
-    "target_harian_awal": "1 aset utama → 7 format draf",
-    "definisi_selesai": "Format dapat berupa video pendek, carousel, gambar, caption, Threads, Shorts, dan artikel; bukan 7 unggahan wajib"
-   },
-   {
-    "area": "Publikasi",
-    "target_harian_awal": "3–5 konten total lintas kanal",
-    "definisi_selesai": "Hanya konten yang lolos QC dan disetujui; jangan menggandakan spam"
-   },
-   {
-    "area": "Penjualan",
-    "target_harian_awal": "Harian: 20 toko dihubungi + target 1 balasan; mingguan: 1 closing; bulanan (Des 2026): Rp10.000.000",
-    "definisi_selesai": "Ada sumber lead, kebutuhan, status, nilai, tindak lanjut dan bukti pembayaran"
-   },
-   {
-    "area": "Peluang",
-    "target_harian_awal": "Maksimal 5 draf proposal relevan",
-    "definisi_selesai": "Kualitas dan kecocokan lebih penting daripada jumlah; kirim setelah persetujuan"
-   },
-   {
-    "area": "Keuangan",
-    "target_harian_awal": "1 rekonsiliasi harian",
-    "definisi_selesai": "Pemasukan, biaya, saldo dan bukti cocok"
-   },
-   {
-    "area": "Produk digital",
-    "target_harian_awal": "1 rilis kecil per minggu sebagai target awal",
-    "definisi_selesai": "Produk lolos uji, halaman penjualan dan instruksi penggunaan siap"
-   }
-  ],
-  "status_tugas": [
-   {
-    "status": "BACKLOG",
-    "arti": "Belum dijadwalkan",
-    "aturan": "Belum dikerjakan"
-   },
-   {
-    "status": "READY",
-    "arti": "Brief, PIC dan tenggat lengkap",
-    "aturan": "Siap dieksekusi"
-   },
-   {
-    "status": "DOING",
-    "arti": "Sedang dikerjakan",
-    "aturan": "PIC wajib memberi pembaruan"
-   },
-   {
-    "status": "QC",
-    "arti": "Menunggu pemeriksaan",
-    "aturan": "Belum boleh dipublikasikan/dikirim"
-   },
-   {
-    "status": "APPROVAL",
-    "arti": "Menunggu keputusan Cipta",
-    "aturan": "Tampilkan pilihan dan konsekuensi"
-   },
-   {
-    "status": "APPROVED",
-    "arti": "Disetujui",
-    "aturan": "Boleh dieksekusi sesuai ruang lingkup izin"
-   },
-   {
-    "status": "PUBLISHED / SENT",
-    "arti": "Sudah terbit/terkirim",
-    "aturan": "Simpan URL, waktu, bukti"
-   },
-   {
-    "status": "BLOCKED",
-    "arti": "Terhambat",
-    "aturan": "Catat alasan dan siapa yang perlu bertindak"
-   },
-   {
-    "status": "DONE",
-    "arti": "Selesai",
-    "aturan": "Lampirkan hasil dan metrik"
-   }
-  ],
-  "pemicu_otomatis": [
-   {
-    "pemicu": "Setiap hari 07.00",
-    "aksi_otomatis": "Buat brief, tarik tugas tertunda, susun prioritas dan tenggat",
-    "batas_aman": "Jangan mengarang data yang belum tersedia"
-   },
-   {
-    "pemicu": "Setelah riset selesai",
-    "aksi_otomatis": "Buat kartu ide dan skor validasi; kirim ke Product Developer",
-    "batas_aman": "Sertakan sumber dan tanggal data"
-   },
-   {
-    "pemicu": "Setelah aset dibuat",
-    "aksi_otomatis": "Buat turunan format 7 kanal dan checklist QC",
-    "batas_aman": "Semua tetap draf"
-   },
-   {
-    "pemicu": "Saat QC lolos",
-    "aksi_otomatis": "Pindahkan ke antrean persetujuan Cipta",
-    "batas_aman": "QC bukan persetujuan publikasi"
-   },
-   {
-    "pemicu": "Setelah persetujuan",
-    "aksi_otomatis": "Jadwalkan/terbitkan jika koneksi platform benar-benar tersedia",
-    "batas_aman": "Catat akun, konten, waktu dan URL"
-   },
-   {
-    "pemicu": "Setiap 2 jam pada jam layanan",
-    "aksi_otomatis": "Periksa inbox/lead yang terhubung dan tandai prioritas",
-    "batas_aman": "Jangan menjanjikan respons 24/7"
-   },
-   {
-    "pemicu": "Setiap hari 16.00",
-    "aksi_otomatis": "Rekap konten, lead, penjualan, biaya, hambatan",
-    "batas_aman": "Pisahkan angka aktual dari target"
-   },
-   {
-    "pemicu": "Setiap Senin",
-    "aksi_otomatis": "Review mingguan dan pilih eksperimen minggu berikutnya",
-    "batas_aman": "Hentikan pekerjaan yang tidak menghasilkan nilai"
-   }
-  ],
-  "dashboard_harian": [
-   {
-    "indikator": "Ide riset tervalidasi",
-    "target_awal": "1"
-   },
-   {
-    "indikator": "Brief produk/konten",
-    "target_awal": "1"
-   },
-   {
-    "indikator": "Aset utama",
-    "target_awal": "1"
-   },
-   {
-    "indikator": "Turunan konten",
-    "target_awal": "7 draf"
-   },
-   {
-    "indikator": "Konten terbit",
-    "target_awal": "3–5 total, setelah izin"
-   },
-   {
-    "indikator": "Lead baru / ditindaklanjuti",
-    "target_awal": "Semua tercatat"
-   },
-   {
-    "indikator": "Penjualan / omzet",
-    "target_awal": "Catat aktual; target aspirasi 1–3 closing"
-   },
-   {
-    "indikator": "Proposal peluang",
-    "target_awal": "Hingga 5 draf"
-   },
-   {
-    "indikator": "Pemasukan / biaya / saldo",
-    "target_awal": "Rekonsiliasi"
-   },
-   {
-    "indikator": "Tugas selesai / tertunda",
-    "target_awal": "Ukur dari daftar tugas"
-   },
-   {
-    "indikator": "Hambatan utama",
-    "target_awal": "Maksimal 3 prioritas eskalasi"
-   }
-  ],
-  "skor_prioritas": {
-   "kriteria": [
-    {
-     "kriteria": "Permintaan",
-     "pertanyaan": "Apakah ada bukti orang mencari/membutuhkan ini?"
-    },
-    {
-     "kriteria": "Potensi pendapatan",
-     "pertanyaan": "Apakah ada jalur monetisasi dan pembeli yang jelas?"
-    },
-    {
-     "kriteria": "Kecepatan produksi",
-     "pertanyaan": "Bisakah dibuat dengan kemampuan dan waktu yang tersedia?"
-    },
-    {
-     "kriteria": "Keunggulan",
-     "pertanyaan": "Apakah ada pembeda dari pesaing?"
-    },
-    {
-     "kriteria": "Risiko rendah",
-     "pertanyaan": "Apakah aman dari masalah hak cipta, klaim, biaya dan kebijakan platform?"
-    }
-   ],
-   "aturan": "Beri nilai 1-5 untuk setiap kriteria. Total maksimal 25. 20-25 = kerjakan; 15-19 = uji kecil; 10-14 = simpan untuk riset; di bawah 10 = jangan dikerjakan dulu. Skor adalah alat bantu, bukan pengganti penilaian pemilik."
+  "applied_to": "Pusat Komando v2.0 + 30 Agent Bintang + 14 mesin pasif (SatuKiki / Podcast Meong)",
+  "authority_levels": {
+    "hijau": "AI boleh mengerjakan otomatis sesuai aturan (riset, draft, pencatatan, klasifikasi, laporan, pemantauan). Hasil berupa draf/laporan.",
+    "kuning": "AI menyiapkan pekerjaan untuk diperiksa pemilik (draf siap kirim, konten siap upload, usulan harga, laporan harian).",
+    "merah": "WAJIB persetujuan pemilik: upload ke TikTok/YouTube/Instagram, kirim penawaran/pesan keluar, kirim proposal freelance, ikut/daftar lomba, ubah harga, transfer uang (TIDAK PERNAH dilakukan AI), hapus akun/data, pembayaran, tanda tangan."
   },
-  "rencana_14_hari": [
-   {
-    "periode": "Hari 1–2",
-    "fokus": "Bangun papan tugas, daftar produk, kalender konten, tabel keuangan dan folder bukti",
-    "hasil": "Satu sumber data operasional"
-   },
-   {
-    "periode": "Hari 3–4",
-    "fokus": "Jalankan alur riset → brief → produksi → QC",
-    "hasil": "Satu siklus produksi terukur"
-   },
-   {
-    "periode": "Hari 5–7",
-    "fokus": "Jalankan distribusi dan pencatatan lead dengan persetujuan manual",
-    "hasil": "Konten dan pipeline mulai terukur"
-   },
-   {
-    "periode": "Hari 8–10",
-    "fokus": "Tambahkan pemantauan inbox, proposal peluang dan laporan otomatis",
-    "hasil": "Mengurangi tugas administratif berulang"
-   },
-   {
-    "periode": "Hari 11–14",
-    "fokus": "Audit waktu, kualitas, konversi, biaya dan hambatan",
-    "hasil": "Tetapkan target versi 2 berdasarkan data"
-   }
+  "channels": {
+    "instagram": [
+      "podcast_meong",
+      "@meongcast"
+    ],
+    "notes": "7 akun media + website + toko = 9 aset. Spesifikasi menyebut '8 kanal media' — rincian akunnya 2+2+2+1 = 7 akun media.",
+    "store": "https://podcastmeong.github.io/toko.html",
+    "threads": [
+      "@ciptabintanglestari"
+    ],
+    "tiktok": [
+      "@podcast_kucing",
+      "@meongcast"
+    ],
+    "total_assets": 9,
+    "website": "https://podcastmeong.github.io/",
+    "youtube": [
+      "Podcast meong",
+      "@meongcast"
+    ]
+  },
+  "command": {
+    "ceo": "Muse (koordinator) — agents/koordinasi.py + SOP Kerja Sama Agent",
+    "note": "Agent bersifat pasif: Muse menjalankannya lewat perintah/jadwal; output berupa DRAF; pengiriman/publikasi/pembayaran selalu butuh persetujuan Cipta. Bukan layanan otonom 24 jam.",
+    "owner": "Cipta (Human Approval Center — keputusan tertinggi)"
+  },
+  "decisions": {
+    "automation_model": "Hybrid — pekerjaan rutin otomatis, tindakan penting disetujui pemilik",
+    "budget": "Rp0 — prioritaskan layanan gratis",
+    "owner_approval": "Hanya tindakan penting dan berisiko",
+    "priority": "Penjualan dan pendapatan"
+  },
+  "directorates": [
+    {
+      "agents": [
+        {
+          "authority": "kuning",
+          "code": "SM-01",
+          "mapped_to": "Agent 3 — akun podcast_meong",
+          "notes": "Posting butuh persetujuan Cipta (merah); login IG podcast_meong lewat browser.",
+          "status": "aktif-sebagian",
+          "task": "Mengelola Instagram 1"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-02",
+          "mapped_to": "Agent 3 — akun @meongcast",
+          "notes": "Konektor IG terhubung ke @meongcast; rename ke Dunia Kiki ditunda s.d. 20 Des 2026.",
+          "status": "aktif-sebagian",
+          "task": "Mengelola Instagram 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-03",
+          "mapped_to": "Agent 3 — akun @podcast_kucing",
+          "notes": "Login tersimpan bekerja; upload butuh persetujuan (merah).",
+          "status": "aktif",
+          "task": "Mengelola TikTok 1"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-04",
+          "mapped_to": "Agent 3 — akun @meongcast",
+          "notes": "Upload butuh Cipta login sendiri.",
+          "status": "aktif-sebagian",
+          "task": "Mengelola TikTok 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-05",
+          "mapped_to": "Agent 3 — kanal Podcast meong (lawaklucu182@gmail.com)",
+          "notes": "80 subscriber; upload butuh persetujuan (merah).",
+          "status": "aktif",
+          "task": "Mengelola YouTube 1"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-06",
+          "mapped_to": "Agent 3 — kanal @meongcast (ciptabintanglestari@gmail.com)",
+          "notes": "Verifikasi ID diajukan; kata sandi tersimpan pernah ditolak — jangan coba lagi tanpa kata sandi benar dari Cipta.",
+          "status": "aktif-sebagian",
+          "task": "Mengelola YouTube 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-07",
+          "mapped_to": "Agent 3 — @ciptabintanglestari (belum sinkron ke @meongcast)",
+          "notes": "Threads Messages belum terhubung.",
+          "status": "aktif-sebagian",
+          "task": "Mengelola Threads"
+        },
+        {
+          "authority": "kuning",
+          "code": "SM-08",
+          "mapped_to": "Agent 2 + Agent 4",
+          "notes": "Pengumuman toko tayang di 4 akun promo 20 Nov 2026.",
+          "status": "aktif",
+          "task": "Mengelola promosi website dan toko"
+        }
+      ],
+      "chief": "Chief Marketing Agent",
+      "id": "A",
+      "mapped_to": [
+        "a03_pertumbuhan.py (Agent 3 Pertumbuhan)",
+        "a02_penjualan.py (Agent 2 Penjualan)"
+      ],
+      "name": "Marketing & Social Media Growth",
+      "status": "aktif-sebagian"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "PF-01",
+          "mapped_to": "Agent 5 + pipeline Flow (Muse)",
+          "notes": "Flow alat utama; 5 video/hari; wajib lulus cek pitch sebelum ke Cipta.",
+          "status": "aktif",
+          "task": "AI Video — memproduksi video AI"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-02",
+          "mapped_to": "Agent 5 + pipeline foto AI (Dreamstime/Adobe)",
+          "notes": "50 foto/hari; batch-5 upload Dreamstime DIHENTIKAN 21 Nov 02:49 (STOP).",
+          "status": "aktif",
+          "task": "AI Image — memproduksi foto dan gambar AI"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-03",
+          "mapped_to": "Muse (pembangun demo website)",
+          "notes": "Website 2.0 live; demo website L3 butuh pilihan jenis dari Cipta.",
+          "status": "aktif",
+          "task": "Website — membuat website dan landing page"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-04",
+          "mapped_to": "Agent 9 (a09_game.py, a09a-f)",
+          "notes": "Antrean 73 demo SELESAI 21 Nov 00:39; min 1 aplikasi/game per hari.",
+          "status": "aktif",
+          "task": "Application — membuat aplikasi"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-05",
+          "mapped_to": "Agent 9",
+          "notes": "Oyen Tangkap Ikan, Susun Balok, Spookify, Oyen Benang live.",
+          "status": "aktif",
+          "task": "Game — membuat game"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-06",
+          "mapped_to": "Agent 5",
+          "notes": "Zazzle toko Podcast_Meong live; 14 kaos di /pod/.",
+          "status": "aktif",
+          "task": "POD — desain Print on Demand"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-07",
+          "mapped_to": "Agent 5",
+          "notes": "Seri Cerita Nabi 6/6 + Orang Sholeh 4/4; 9 PDF menunggu persetujuan Cipta.",
+          "status": "aktif",
+          "task": "eBook — menulis dan menerbitkan eBook"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-08",
+          "mapped_to": "Agent 5",
+          "notes": "5 puisi + 5 cerpen/hari; cerbung 'Misteri Ikan yang Hilang' di /cerbung/.",
+          "status": "aktif",
+          "task": "Literary — puisi, cerpen, cerita bersambung"
+        },
+        {
+          "authority": "hijau",
+          "code": "PF-09",
+          "mapped_to": "Agent 5 + Agent 10 Riset",
+          "notes": "Artikel di /artikel/; Dunia Kiki = Artikel + Video Edukasi.",
+          "status": "aktif",
+          "task": "Content — artikel, konten edukasi dan hiburan"
+        }
+      ],
+      "chief": "Chief Product Creation Agent",
+      "id": "B",
+      "mapped_to": [
+        "a05_produksi.py (Agent 5 Produksi)",
+        "a09_game.py + a09a-f (Agent 9 Game & Aplikasi)",
+        "a11_oyen.py + a12_momo.py (Agent 11/12 penjaga suara)"
+      ],
+      "name": "AI Product Factory",
+      "status": "aktif"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "SA-01",
+          "mapped_to": "Agent 2 + Agent 4",
+          "notes": "15 lead belum terverifikasi; draf saja.",
+          "status": "aktif",
+          "task": "Mencari calon customer"
+        },
+        {
+          "authority": "merah",
+          "code": "SA-02",
+          "mapped_to": "Agent 4 (DM TikTok/IG/Threads)",
+          "notes": "Isi persis harus disetujui Cipta dulu; TANPA WhatsApp untuk penawaran; Facebook ditahan.",
+          "status": "aktif",
+          "task": "Menawarkan produk secara online"
+        },
+        {
+          "authority": "merah",
+          "code": "SA-03",
+          "mapped_to": "Cipta (manusia)",
+          "notes": "AI menyiapkan daftar prospek, materi, jadwal; manusia kunjungan/pertemuan fisik.",
+          "status": "aktif",
+          "task": "Menawarkan produk secara langsung"
+        },
+        {
+          "authority": "kuning",
+          "code": "SA-04",
+          "mapped_to": "Agent 2 + Muse",
+          "notes": "Strategi 1 Juta Dolar + Strategi Cuan Maksimal (target, bukan janji).",
+          "status": "aktif",
+          "task": "Membuat strategi penjualan"
+        },
+        {
+          "authority": "merah",
+          "code": "SA-05",
+          "mapped_to": "Agent 2 + Muse",
+          "notes": "Ubah harga WAJIB persetujuan Cipta; katalog PDF v2 live.",
+          "status": "aktif",
+          "task": "Mengelola katalog dan harga"
+        },
+        {
+          "authority": "merah",
+          "code": "SA-06",
+          "mapped_to": "Agent 4",
+          "notes": "Follow-up keluar butuh persetujuan isi persis.",
+          "status": "aktif",
+          "task": "Follow-up calon pembeli"
+        },
+        {
+          "authority": "kuning",
+          "code": "SA-07",
+          "mapped_to": "Agent 4 + data/penjualan_toko.json",
+          "notes": "2 DM terkirim (Paws & Claws, Deku), 0 balasan per 20 Nov.",
+          "status": "aktif",
+          "task": "Mengelola pesanan dan konversi"
+        }
+      ],
+      "chief": "Chief Sales Agent",
+      "id": "C",
+      "mapped_to": [
+        "a02_penjualan.py (Agent 2 Penjualan)",
+        "a04_penjualan_harian.py (Agent 4 Penjualan Harian)"
+      ],
+      "name": "Sales & Customer Acquisition",
+      "status": "aktif"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "RI-01",
+          "mapped_to": "Agent 10",
+          "notes": "Output: 20 ide kebutuhan pasar/minggu (target).",
+          "status": "aktif",
+          "task": "Riset kebutuhan customer"
+        },
+        {
+          "authority": "hijau",
+          "code": "RI-02",
+          "mapped_to": "Agent 10 + cron cek-pasar-mingguan (Senin 07:42)",
+          "notes": "Cron cek-pasar-mingguan DIJEDA 21 Nov 02:49 (STOP).",
+          "status": "aktif-sebagian",
+          "task": "Riset tren pasar"
+        },
+        {
+          "authority": "hijau",
+          "code": "RI-03",
+          "mapped_to": "Agent 10",
+          "notes": "Riset kompetitor jasa website selesai 20 Nov.",
+          "status": "aktif",
+          "task": "Riset kompetitor"
+        },
+        {
+          "authority": "hijau",
+          "code": "RI-04",
+          "mapped_to": "Agent 10",
+          "notes": "Riset aplikasi ronde 1 + 2 selesai.",
+          "status": "aktif",
+          "task": "Riset produk unik"
+        },
+        {
+          "authority": "hijau",
+          "code": "RI-05",
+          "mapped_to": "Agent 10",
+          "notes": "Matriks riset harga per level selesai.",
+          "status": "aktif",
+          "task": "Riset harga dan peluang"
+        },
+        {
+          "authority": "hijau",
+          "code": "RI-06",
+          "mapped_to": "Agent 10 + Agent 5",
+          "notes": "Daftar bahan cerita + 30 judul Ramadan-Lebaran 2027.",
+          "status": "aktif",
+          "task": "Riset ide konten"
+        }
+      ],
+      "chief": "Chief Research Agent",
+      "id": "D",
+      "mapped_to": [
+        "a10_riset.py (Agent 10 Riset — HARIAN)",
+        "a03_pertumbuhan.py (Agent 3)"
+      ],
+      "name": "Market Research & Product Intelligence",
+      "status": "aktif"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "CS-01",
+          "mapped_to": "Agent 13 (cek 05:00 + 20:00; triase 12 aturan)",
+          "notes": "Gmail TIDAK terhubung (mode demo via browser); draf saja, kirim butuh persetujuan.",
+          "status": "aktif",
+          "task": "Memeriksa email masuk dan keluar"
+        },
+        {
+          "authority": "kuning",
+          "code": "CS-02",
+          "mapped_to": "Agent 1 (lingkup disepakati)",
+          "notes": "Instagram Messages @meongcast TERHUBUNG (terverifikasi live 21 Nov 03:33); balasan hanya info yang disetujui; kirim butuh persetujuan Cipta.",
+          "status": "aktif",
+          "task": "Menjawab pertanyaan Instagram 1 dan 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "CS-03",
+          "mapped_to": "Agent 1",
+          "notes": "Hanya info disetujui; negosiasi/custom/pembayaran/keluhan diteruskan ke Cipta.",
+          "status": "aktif-sebagian",
+          "task": "Menjawab komentar dan DM TikTok 1 dan 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "CS-04",
+          "mapped_to": "Agent 1",
+          "notes": "Sama seperti CS-02/CS-03.",
+          "status": "aktif-sebagian",
+          "task": "Menjawab komentar YouTube 1 dan 2"
+        },
+        {
+          "authority": "kuning",
+          "code": "CS-05",
+          "mapped_to": "Agent 1",
+          "notes": "Threads Messages @ciptabintanglestari TERHUBUNG (terverifikasi live 21 Nov 03:33, inbox kosong); kirim butuh persetujuan Cipta.",
+          "status": "aktif",
+          "task": "Menjawab Threads"
+        },
+        {
+          "authority": "merah",
+          "code": "CS-06",
+          "mapped_to": "Agent 1 → diteruskan ke Cipta",
+          "notes": "Komplain serius, refund, negosiasi khusus, masalah hukum WAJIB persetujuan manusia.",
+          "status": "aktif",
+          "task": "Menangani komplain dan pengembalian"
+        },
+        {
+          "authority": "hijau",
+          "code": "CS-07",
+          "mapped_to": "Agent 1 + Agent 13",
+          "notes": "Log di wa-customer-replies-log.md; sesi WA Web RUSAK sejak 19 Nov.",
+          "status": "aktif",
+          "task": "Mengumpulkan masukan customer"
+        }
+      ],
+      "chief": "Chief Customer Experience Agent",
+      "id": "E",
+      "mapped_to": [
+        "a01_asisten.py (Agent 1 Asisten)",
+        "a13_email.py (Agent 13 Email)"
+      ],
+      "name": "Customer Service & Communication",
+      "status": "aktif-sebagian"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "OP-01",
+          "mapped_to": "Agent 6 (database 28 lomba)",
+          "notes": "Hanya lomba GRATIS, AMAN, AI diizinkan.",
+          "status": "aktif",
+          "task": "Mencari lomba tingkat lokal"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-02",
+          "mapped_to": "Agent 6",
+          "notes": "Lomba Puisi Nasional #2 DILEWATI (keputusan Cipta 19 Nov).",
+          "status": "aktif",
+          "task": "Mencari lomba nasional"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-03",
+          "mapped_to": "Agent 6",
+          "notes": "Chroma, AdArena, Guardio, Reichman, Kiroween, BuildHybridAI.",
+          "status": "aktif",
+          "task": "Mencari lomba global/internasional"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-04",
+          "mapped_to": "Agent 6",
+          "notes": "Tenggat dicatat; setelah tutup cek hasil; menang dikawal sampai hadiah CAIR.",
+          "status": "aktif",
+          "task": "Memeriksa syarat dan deadline"
+        },
+        {
+          "authority": "merah",
+          "code": "OP-05",
+          "mapped_to": "Agent 6 + Muse",
+          "notes": "Daftar/kirim lomba HANYA setelah Cipta setuju.",
+          "status": "aktif",
+          "task": "Menyiapkan karya dan dokumen lomba"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-06",
+          "mapped_to": "Agent 14 (MODE PERSIAPAN; tab '14 · Upwork' live di Faable)",
+          "notes": "Akun Upwork BELUM ADA — tertahan cek Cloudflare (butuh Cipta klik sendiri).",
+          "status": "aktif-sebagian",
+          "task": "Mencari pekerjaan di Upwork"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-07",
+          "mapped_to": "Agent 14 (antre setelah Upwork)",
+          "notes": "Fiverr, Freelancer.com, Sribulancer, Projects.co.id, Fastwork antre.",
+          "status": "belum",
+          "task": "Mencari pekerjaan di Fiverr"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-08",
+          "mapped_to": "Agent 14",
+          "notes": "Sama seperti OP-07.",
+          "status": "belum",
+          "task": "Mencari proyek freelance lainnya"
+        },
+        {
+          "authority": "hijau",
+          "code": "OP-09",
+          "mapped_to": "Agent 14 (saringan: pembayaran terverifikasi, fixed ≥$50, hourly ≥$10/jam)",
+          "notes": "Tolak unpaid test/crypto.",
+          "status": "aktif",
+          "task": "Menganalisis kesesuaian proyek"
+        },
+        {
+          "authority": "kuning",
+          "code": "OP-10",
+          "mapped_to": "Agent 14 (template-proposal-upwork.md)",
+          "notes": "Semua output DRAF; pengiriman diputuskan Cipta.",
+          "status": "aktif",
+          "task": "Menyiapkan proposal penawaran"
+        },
+        {
+          "authority": "merah",
+          "code": "OP-11",
+          "mapped_to": "Agent 14 + Agent 7",
+          "notes": "Blokir Connects: Cipta tidak punya kartu kredit; jalan dengan 10 Connects gratis/bulan.",
+          "status": "aktif-sebagian",
+          "task": "Memantau status pekerjaan dan pembayaran"
+        }
+      ],
+      "chief": "Chief Opportunity Agent",
+      "id": "F",
+      "mapped_to": [
+        "a06_lomba.py (Agent 6 Lomba)",
+        "a14_upwork.py (Agent 14 Upwork)"
+      ],
+      "name": "Opportunity, Competition & Freelance",
+      "status": "aktif"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "FN-01",
+          "mapped_to": "Agent 7 — data/keuangan_data.json",
+          "notes": "Baseline Rp0/$0 per 18 Nov.",
+          "status": "aktif",
+          "task": "Mencatat pendapatan"
+        },
+        {
+          "authority": "hijau",
+          "code": "FN-02",
+          "mapped_to": "Agent 7",
+          "notes": "Kurs Rp16.500/USD.",
+          "status": "aktif",
+          "task": "Mencatat pengeluaran"
+        },
+        {
+          "authority": "hijau",
+          "code": "FN-03",
+          "mapped_to": "Agent 7",
+          "notes": "Laporan harian/mingguan/bulanan.",
+          "status": "aktif",
+          "task": "Menghitung laba dan rugi"
+        },
+        {
+          "authority": "hijau",
+          "code": "FN-04",
+          "mapped_to": "Agent 7",
+          "notes": "Fokus gratis dulu; token ekstra hanya bila gratis habis.",
+          "status": "aktif",
+          "task": "Mengatur anggaran operasional"
+        },
+        {
+          "authority": "kuning",
+          "code": "FN-05",
+          "mapped_to": "Agent 7",
+          "notes": "Transfer HANYA bila syarat terpenuhi DAN Cipta setuju.",
+          "status": "aktif",
+          "task": "Mengawasi tagihan dan pembayaran"
+        },
+        {
+          "authority": "hijau",
+          "code": "FN-06",
+          "mapped_to": "Agent 7",
+          "notes": "Masuk laporan malam 20:00.",
+          "status": "aktif",
+          "task": "Membuat laporan keuangan"
+        },
+        {
+          "authority": "hijau",
+          "code": "FN-07",
+          "mapped_to": "Agent 7 + Agent 10",
+          "notes": "Video buku Kolam = performa terbaik (203 views).",
+          "status": "aktif",
+          "task": "Menganalisis produk paling menguntungkan"
+        }
+      ],
+      "chief": "Chief Financial Agent",
+      "id": "G",
+      "mapped_to": [
+        "a07_keuangan.py (Agent 7 Keuangan)"
+      ],
+      "name": "Finance & Asset Management",
+      "status": "aktif"
+    },
+    {
+      "agents": [
+        {
+          "authority": "hijau",
+          "code": "OPX-01",
+          "mapped_to": "koordinasi.py + rencana pagi 05:00",
+          "notes": "Cron rencana-pagi-0500 DIJEDA 21 Nov 02:49 (STOP).",
+          "status": "aktif-sebagian",
+          "task": "Mengatur tugas seluruh divisi"
+        },
+        {
+          "authority": "hijau",
+          "code": "OPX-02",
+          "mapped_to": "koordinasi.py + data/progres.json",
+          "notes": "Tenggat lomba + BuildHybridAI 1 Des 05:00 WIB.",
+          "status": "aktif",
+          "task": "Mengawasi deadline"
+        },
+        {
+          "authority": "hijau",
+          "code": "OPX-03",
+          "mapped_to": "data/ (JSON, bukan SQL)",
+          "notes": "Database tetap JSON (katalog-lengkap-aplikasi.md, worklist-73.json, produksi_game.json).",
+          "status": "aktif",
+          "task": "Mengelola database produk"
+        },
+        {
+          "authority": "hijau",
+          "code": "OPX-04",
+          "mapped_to": "Agent 11/12 (cek pitch) + skill verify_before_claiming_done",
+          "notes": "Setiap video wajib lulus cek pitch sebelum ke Cipta; setiap demo diverifikasi live sebelum dilaporkan selesai.",
+          "status": "aktif",
+          "task": "Quality Control produk"
+        },
+        {
+          "authority": "hijau",
+          "code": "OPX-05",
+          "mapped_to": "Muse",
+          "notes": "Kunci Firebase bocor sudah dirotasi 20 Nov 06:55.",
+          "status": "aktif",
+          "task": "Memeriksa keamanan sistem"
+        },
+        {
+          "authority": "hijau",
+          "code": "OPX-06",
+          "mapped_to": "Muse (SOP Operasional + SOP Kerja Sama Agent v1.3)",
+          "notes": "Aturan/keputusan dicatat di MEMORY.md + log harian.",
+          "status": "aktif",
+          "task": "Mengelola dokumentasi dan SOP"
+        },
+        {
+          "authority": "kuning",
+          "code": "OPX-07",
+          "mapped_to": "Muse (laporan malam 20:00 PPTX)",
+          "notes": "Cron laporan-malam-2000 DIJEDA 21 Nov 02:49 (STOP).",
+          "status": "aktif-sebagian",
+          "task": "Membuat laporan kinerja seluruh divisi"
+        }
+      ],
+      "chief": "Chief Operations Agent",
+      "id": "H",
+      "mapped_to": [
+        "koordinasi.py (Muse)",
+        "Pusat Komando (Faable, 23 tab)",
+        "a11_oyen.py + a12_momo.py (QC suara)"
+      ],
+      "name": "Operations, Administration & Quality Control",
+      "status": "aktif"
+    }
   ],
-  "prompt_komando_harian": "Bertindak sebagai COO dan Command Controller Bintang Command Center. Gunakan hanya data yang tersedia di papan kerja dan dokumen sumber. \n1) Baca target perusahaan dan semua tugas yang belum selesai.\n2) Tetapkan maksimal 3 prioritas utama hari ini.\n3) Tugaskan pekerjaan kepada agent sesuai job description A01–A30, lengkap dengan PIC, input, output, tenggat, dan kriteria selesai.\n4) Jalankan urutan riset → validasi → brief → produksi → QC → persetujuan → distribusi → penjualan → keuangan → laporan.\n5) Semua konten, proposal, email, balasan pelanggan, dan tindakan eksternal berstatus DRAF sampai Cipta menyetujui.\n6) Jangan mengaku telah memublikasikan, mengirim, menghubungkan akun, atau melakukan transaksi tanpa bukti eksekusi.\n7) Tandai data yang tidak tersedia sebagai BELUM DIKETAHUI. Sertakan sumber dan tanggal untuk temuan riset.\n8) Akhiri dengan dashboard: target, aktual, selisih, hambatan, keputusan yang dibutuhkan, dan 3 prioritas besok.\nMulai dengan membuat brief operasional hari ini."
- }
+  "honest_notes": [
+    "Spesifikasi menyebut '32 AI Agent spesialis', tetapi daftar direktorat bila dijumlahkan berisi 62 baris agent (8+9+7+6+7+11+7+7). Pemetaan ini memakai daftar 62.",
+    "Spesifikasi menyebut '8 kanal media', tetapi rincian akunnya 7 akun media (2 IG + 2 TikTok + 2 YT + 1 Threads) + website + toko = 9 aset.",
+    "Sistem TIDAK berjalan otonom 24 jam: 14 agen bersifat pasif dan dijalankan Muse lewat perintah/jadwal; tidak ada layanan independen 24 jam (keputusan: framework CrewAI/LangGraph/AutoGen DITOLAK).",
+    "Integrasi medsos belum penuh: WA Web rusak; Instagram Messages + Threads Messages TERHUBUNG (verifikasi live 21 Nov 03:33); TikTok @meongcast butuh login Cipta sendiri.",
+    "14 cron dijeda 21 Nov 02:49 atas perintah STOP Cipta — status 'aktif-sebagian' di atas mencerminkan kondisi itu.",
+    "Share #17 menyebut '71 Agent Roles' padahal 8 + 62 = 70 — angka 71 tidak cocok dengan rinciannya.",
+    "Paket starter kit (ZIP) yang diklaim ChatGPT TIDAK ada file-nya di sini — yang ada adalah pemetaan ini (agents.json + dokumen + workflows.json + TESTING.md)."
+  ],
+  "source": "Share ChatGPT #16 + #17 — AI BUSINESS AUTONOMOUS AGENT 3.0",
+  "system": "AI Business Autonomous Agent 3.0",
+  "tech_stack": {
+    "automation": "n8n 2.48.5 (lokal, webhook tanpa auth) + Activepieces (terverifikasi, 1.000 kredit)",
+    "backend": "Python (agents/) + Google Apps Script (belum dipakai)",
+    "brain": "Gemini API (free tier via env) + Muse",
+    "dashboard": "Pusat Komando — Faable, 24 tab (incl. 0 · Command Center), https://pusat-komando-972u7.faable.link/",
+    "database": "JSON files (data/) — spesifikasi menyarankan Google Sheets + SQL; belum dipakai"
+  },
+  "starter_kit": {
+    "spec_isi": [
+      "Konfigurasi seluruh Agent",
+      "Database PostgreSQL",
+      "3 workflow n8n",
+      "Dashboard responsif",
+      "Google Apps Script",
+      "SOP dan job description",
+      "Checklist pengujian"
+    ],
+    "adapted": [
+      {
+        "item": "Konfigurasi seluruh Agent",
+        "status": "sudah",
+        "file": "data/agents.json"
+      },
+      {
+        "item": "Database PostgreSQL",
+        "status": "disesuaikan",
+        "file": "data/ (JSON) — tetap JSON: gratis, tanpa server, sudah jalan"
+      },
+      {
+        "item": "3 workflow n8n",
+        "status": "template",
+        "file": "workflows.json — impor ke n8n belum diuji"
+      },
+      {
+        "item": "Dashboard responsif",
+        "status": "sudah",
+        "file": "Pusat Komando (Faable, 24 tab incl. 0 · Command Center)"
+      },
+      {
+        "item": "Google Apps Script",
+        "status": "tidak-dipakai",
+        "file": "Digantikan cron + Muse + Python"
+      },
+      {
+        "item": "SOP dan job description",
+        "status": "sudah",
+        "file": "SOP Operasional + SOP Kerja Sama Agent v1.3 + pemetaan-agen-3.0.md + daftar-agent-ai.md"
+      },
+      {
+        "item": "Checklist pengujian",
+        "status": "sudah",
+        "file": "TESTING.md"
+      }
+    ]
+  },
+  "next_steps_adapted": [
+    {
+      "spec": "1. Instalasi dashboard dan database",
+      "status": "sudah",
+      "us": "Pusat Komando live di Faable (24 tab) + data/ JSON"
+    },
+    {
+      "spec": "2. Hubungkan Google Sheets dan Apps Script",
+      "status": "disesuaikan",
+      "us": "TIDAK dipakai — data tetap JSON (gratis, tanpa server, sudah jalan)"
+    },
+    {
+      "spec": "3. Instalasi n8n dan impor workflow",
+      "status": "belum-diuji",
+      "us": "n8n 2.48.5 lokal sudah ada; workflows.json (3 alur) perlu diimpor + diuji end-to-end"
+    },
+    {
+      "spec": "4. Hubungkan Gemini API",
+      "status": "sudah",
+      "us": "Gemini free tier via env GEMINI_API_KEY; tanpa key jalan mode template"
+    },
+    {
+      "spec": "5. Aktifkan CEO Agent dan 8 direktorat",
+      "status": "sudah",
+      "us": "Muse = CEO; 14 agen = 8 direktorat; tab '0 · Command Center' di Pusat Komando"
+    },
+    {
+      "spec": "6. Uji Approval Center",
+      "status": "sudah",
+      "us": "Approval Center = antrean handoff (status 'diperiksa') + aturan persetujuan Cipta; uji = cek antrean terbuka di tab 0"
+    },
+    {
+      "spec": "7. Hubungkan akun IG/TikTok/YT/Threads/email/website/toko",
+      "status": "sebagian",
+      "us": "Lihat status per agent di atas; IG Messages + Threads Messages TERHUBUNG (21 Nov 03:33); WA Web rusak, TikTok @meongcast butuh login Cipta"
+    }
+  ],
+  "agent_30": {
+    "source": "Share ChatGPT #18 + #19 dan Share Gemini #1 — Bintang Command Center",
+    "applied_date": "2026-11-21",
+    "note": "30 agent A01–A30 (Bintang) dipetakan ke 14 agen nyata + Muse + Pusat Komando. Agent bersifat PASIF — dijalankan Muse, bukan layanan otonom 24 jam. Semua output DRAF untuk persetujuan Cipta.",
+    "agents": [
+      {
+        "code": "A01",
+        "name": "CEO Director",
+        "division": "Direksi",
+        "boss": "Pemilik",
+        "job_desc": "Menentukan arah, target, prioritas dan keputusan perusahaan",
+        "file": "agents/b01_ceo_director.py",
+        "mapped_to": "Muse (koordinator / CEO)",
+        "status": "Aktif",
+        "gemini_division": "Agent 0 — Chief Orchestrator",
+        "gemini_role": "0 — Chief Orchestrator",
+        "gemini_kpi": [
+          "Semua agen aktif setiap hari (target rancangan)",
+          "1 produk baru dirilis setiap hari (target rancangan)",
+          "Laporan harian tepat waktu (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini Advanced / ChatGPT",
+          "Notion",
+          "Google Sheets"
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Tetapkan sasaran, pilih satu prioritas utama, putuskan eskalasi",
+        "target_harian": "1 brief harian; maksimal 3 prioritas"
+      },
+      {
+        "code": "A02",
+        "name": "COO Manager",
+        "division": "Direksi",
+        "boss": "A01",
+        "job_desc": "Mengatur operasi, kapasitas, jadwal dan koordinasi divisi",
+        "file": "agents/b02_coo_manager.py",
+        "mapped_to": "Muse + koordinasi.py",
+        "status": "Aktif sebagian",
+        "gemini_division": "Agent 0 — Chief Orchestrator",
+        "gemini_role": "0 — Chief Orchestrator (dukungan operasional)",
+        "gemini_kpi": [
+          "Semua agen aktif setiap hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini Advanced / ChatGPT",
+          "Notion",
+          "Google Sheets"
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Cek kapasitas, jadwal, dependensi dan hambatan",
+        "target_harian": "100% tugas punya PIC dan tenggat"
+      },
+      {
+        "code": "A03",
+        "name": "Command Controller",
+        "division": "Direksi",
+        "boss": "A02",
+        "job_desc": "Membagi tugas, melacak status dan mengonsolidasikan laporan",
+        "file": "agents/b03_command_controller.py",
+        "mapped_to": "Pusat Komando (Faable) + koordinasi.py",
+        "status": "Aktif",
+        "gemini_division": "Agent 0 — Chief Orchestrator",
+        "gemini_role": "0 — Chief Orchestrator (pembagian tugas)",
+        "gemini_kpi": [
+          "Semua agen aktif setiap hari (target rancangan)",
+          "Laporan harian tepat waktu (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini Advanced / ChatGPT",
+          "Notion",
+          "Google Sheets"
+        ],
+        "platform": {
+          "terhubung": [
+            "Faable — Pusat Komando"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Bagi tugas, perbarui status, kumpulkan laporan",
+        "target_harian": "Semua tugas berstatus"
+      },
+      {
+        "code": "A04",
+        "name": "Quality Control",
+        "division": "Direksi",
+        "boss": "A02",
+        "job_desc": "Memeriksa akurasi, kualitas dan kepatuhan hasil",
+        "file": "agents/b04_quality_control.py",
+        "mapped_to": "Muse + A9F verifikasi",
+        "status": "Aktif",
+        "gemini_division": "Agent 0 — Chief Orchestrator",
+        "gemini_role": "Bagian dari Agent 0 — QC melekat pada orchestrator",
+        "gemini_kpi": [],
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Periksa fakta, ejaan, hak cipta, tautan, klaim dan konsistensi",
+        "target_harian": "100% output penting diperiksa"
+      },
+      {
+        "code": "A05",
+        "name": "Business Analyst",
+        "division": "Direksi",
+        "boss": "A02",
+        "job_desc": "Menganalisis KPI, hasil, risiko dan profitabilitas",
+        "file": "agents/b05_business_analyst.py",
+        "mapped_to": "A7 Keuangan + Muse",
+        "status": "Aktif",
+        "gemini_division": "Divisi 5 — Freelance & Finance",
+        "gemini_role": "5B — Finance & Operational Controller (analisis)",
+        "gemini_kpi": [
+          "Laporan pembukuan harian/mingguan (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Sheets",
+          "Notion"
+        ],
+        "platform": {
+          "terhubung": [
+            "PayPal (analisis data pemasukan)",
+            "BCA (analisis data pemasukan)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Hitung performa konten, biaya, pemasukan, risiko",
+        "target_harian": "1 ringkasan harian"
+      },
+      {
+        "code": "A06",
+        "name": "Market Researcher",
+        "division": "Riset",
+        "boss": "A03",
+        "job_desc": "Meneliti kebutuhan, masalah dan segmen pelanggan",
+        "file": "agents/b06_market_researcher.py",
+        "mapped_to": "A10 Riset",
+        "status": "Aktif",
+        "gemini_division": "Divisi 1 — R&D",
+        "gemini_role": "1A — Market Researcher",
+        "gemini_kpi": [
+          "5 ide produk valid/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Trends",
+          "Perplexity.ai",
+          "Gemini Deep Research"
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Cari masalah pelanggan dan peluang pasar",
+        "target_harian": "5 ide; 1 rekomendasi"
+      },
+      {
+        "code": "A07",
+        "name": "Trend Hunter",
+        "division": "Riset",
+        "boss": "A03",
+        "job_desc": "Memantau tren, topik dan permintaan pasar",
+        "file": "agents/b07_trend_hunter.py",
+        "mapped_to": "A10 Riset",
+        "status": "Aktif",
+        "gemini_division": "Divisi 1 — R&D",
+        "gemini_role": "1A — Market Researcher (tren)",
+        "gemini_kpi": [
+          "5 tren produk/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Trends",
+          "Perplexity.ai",
+          "Gemini Deep Research"
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Pantau tren dan kata kunci",
+        "target_harian": "5 tren dengan bukti/sumber"
+      },
+      {
+        "code": "A08",
+        "name": "Product Developer",
+        "division": "Riset",
+        "boss": "A03",
+        "job_desc": "Mengubah kebutuhan tervalidasi menjadi konsep dan produk",
+        "file": "agents/b08_product_developer.py",
+        "mapped_to": "A5 Produksi + A9",
+        "status": "Aktif",
+        "gemini_division": "Divisi 1 — R&D",
+        "gemini_role": "1A — Market Researcher (pengembangan konsep)",
+        "gemini_kpi": [
+          "5 ide produk valid/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Trends",
+          "Perplexity.ai",
+          "Gemini Deep Research"
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Ubah masalah tervalidasi menjadi konsep",
+        "target_harian": "1 brief produk/konten"
+      },
+      {
+        "code": "A09",
+        "name": "Competitor Analyst",
+        "division": "Riset",
+        "boss": "A06",
+        "job_desc": "Menganalisis pesaing, penawaran, harga dan celah pasar",
+        "file": "agents/b09_competitor_analyst.py",
+        "mapped_to": "A10 Riset",
+        "status": "Aktif",
+        "gemini_division": "Divisi 1 — R&D",
+        "gemini_role": "1B — Competition & Grant Scout",
+        "gemini_kpi": [
+          "3 info lomba baru/hari (target rancangan)",
+          "5–10 lomba diikuti/bulan (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Search",
+          "Gemini Deep Research",
+          "Email Alerts"
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Bandingkan pesaing, harga, penawaran dan celah",
+        "target_harian": "3 pesaing/penawaran dibandingkan"
+      },
+      {
+        "code": "A10",
+        "name": "Product Validator",
+        "division": "Riset",
+        "boss": "A08",
+        "job_desc": "Menguji manfaat, kelayakan, permintaan dan kesiapan produk",
+        "file": "agents/b10_product_validator.py",
+        "mapped_to": "A9F verifikasi + Muse",
+        "status": "Aktif",
+        "gemini_division": "Divisi 1 — R&D",
+        "gemini_role": "1A — Market Researcher (validasi)",
+        "gemini_kpi": [
+          "5 ide produk valid/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Trends",
+          "Perplexity.ai",
+          "Gemini Deep Research"
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Nilai permintaan, manfaat, kelayakan dan risiko",
+        "target_harian": "1 ide diberi skor dan keputusan"
+      },
+      {
+        "code": "A11",
+        "name": "AI Video Producer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat naskah, storyboard dan video AI",
+        "file": "agents/b11_ai_video_producer.py",
+        "mapped_to": "A5 Produksi + A11/A12 pitch",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2B — Visual & AI Media Producer (video)",
+        "gemini_kpi": [
+          "5–10 aset visual/hari, termasuk video AI (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Kling AI",
+          "Hailuo AI",
+          "CapCut Desktop"
+        ],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Naskah, storyboard, prompt, video pendek",
+        "target_harian": "1 video utama atau storyboard siap produksi"
+      },
+      {
+        "code": "A12",
+        "name": "AI Image Designer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat visual, foto, ilustrasi dan aset desain AI",
+        "file": "agents/b12_ai_image_designer.py",
+        "mapped_to": "A5 Produksi",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2B — Visual & AI Media Producer",
+        "gemini_kpi": [
+          "5–10 aset visual/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Bing Image Creator",
+          "Leonardo.ai",
+          "Flux (HuggingFace)"
+        ],
+        "platform": {
+          "terhubung": [
+            "Adobe Stock (foto AI)",
+            "Dreamstime (foto AI)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Buat visual utama dan variasinya",
+        "target_harian": "3–5 visual siap QC"
+      },
+      {
+        "code": "A13",
+        "name": "App Developer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat prototipe dan aplikasi",
+        "file": "agents/b13_app_developer.py",
+        "mapped_to": "A9 + tim 9A–9F",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2C — Web, App & Micro-Game Developer",
+        "gemini_kpi": [
+          "1 tools/game/landing page per minggu (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT / Claude",
+          "VS Code",
+          "GitHub"
+        ],
+        "platform": {
+          "terhubung": [
+            "GitHub Pages (demo aplikasi)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Kerjakan backlog aplikasi/tool",
+        "target_harian": "1 tugas kecil; rilis mingguan"
+      },
+      {
+        "code": "A14",
+        "name": "Web Developer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat website, landing page dan katalog",
+        "file": "agents/b14_web_developer.py",
+        "mapped_to": "A9 + Muse",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2C — Web, App & Micro-Game Developer",
+        "gemini_kpi": [
+          "1 tools/game/landing page per minggu (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT / Claude",
+          "VS Code",
+          "GitHub"
+        ],
+        "platform": {
+          "terhubung": [
+            "GitHub Pages (website demo)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Perbaiki landing page/katalog/SEO teknis",
+        "target_harian": "1 perbaikan; rilis mingguan"
+      },
+      {
+        "code": "A15",
+        "name": "POD Designer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat desain produk print-on-demand",
+        "file": "agents/b15_pod_designer.py",
+        "mapped_to": "A5 Produksi",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2B — Visual & AI Media Producer (POD)",
+        "gemini_kpi": [
+          "5–10 aset visual/hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Bing Image Creator",
+          "Leonardo.ai"
+        ],
+        "platform": {
+          "terhubung": [
+            "Zazzle (terbit desain POD)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Buat desain print-on-demand",
+        "target_harian": "2–3 desain konsep"
+      },
+      {
+        "code": "A16",
+        "name": "eBook Publisher",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Menulis, menyunting dan menyiapkan eBook",
+        "file": "agents/b16_ebook_publisher.py",
+        "mapped_to": "A5 Produksi",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2A — Literary & Content Writer",
+        "gemini_kpi": [
+          "1 bab cerbung / 1 puisi-cerpen / 1 draf eBook per hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "Google Docs"
+        ],
+        "platform": {
+          "terhubung": [
+            "KaryaKarsa (terbit eBook)",
+            "Lynk.id (terbit eBook)",
+            "KBM (terbit eBook)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Susun/edit naskah eBook",
+        "target_harian": "1 bagian/bab draf"
+      },
+      {
+        "code": "A17",
+        "name": "Creative Writer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Membuat puisi, cerpen dan cerita bersambung",
+        "file": "agents/b17_creative_writer.py",
+        "mapped_to": "A5 Produksi",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2A — Literary & Content Writer",
+        "gemini_kpi": [
+          "1 bab cerbung / 1 puisi-cerpen / 1 draf eBook per hari (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "Google Docs"
+        ],
+        "platform": {
+          "terhubung": [
+            "KaryaKarsa (terbit tulisan)",
+            "KBM (terbit tulisan)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Tulis cerita, puisi atau naskah",
+        "target_harian": "1 karya/bagian draf"
+      },
+      {
+        "code": "A18",
+        "name": "Game Developer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Merancang dan mengembangkan game",
+        "file": "agents/b18_game_developer.py",
+        "mapped_to": "A9 Produksi Game",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2C — Web, App & Micro-Game Developer",
+        "gemini_kpi": [
+          "1 tools/game/landing page per minggu (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT / Claude",
+          "VS Code",
+          "GitHub"
+        ],
+        "platform": {
+          "terhubung": [
+            "GitHub Pages (demo game)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Bangun fitur game sesuai backlog",
+        "target_harian": "1 fitur kecil; rilis mingguan"
+      },
+      {
+        "code": "A19",
+        "name": "Content Producer",
+        "division": "Produksi",
+        "boss": "A08",
+        "job_desc": "Mengubah produk dan riset menjadi materi konten",
+        "file": "agents/b19_content_producer.py",
+        "mapped_to": "A5 Produksi + A3",
+        "status": "Aktif",
+        "gemini_division": "Divisi 2 — Creative Studio",
+        "gemini_role": "2A/2B + Divisi 3 (content producer)",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "1 produk → 7 format konten (strategi rancangan)"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "CapCut"
+        ],
+        "platform": {
+          "terhubung": [
+            "Facebook \"Masduki Kiki\" (tanpa Page) — distribusi konten"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Pecah satu ide menjadi format konten",
+        "target_harian": "1 ide → 7 format draf"
+      },
+      {
+        "code": "A20",
+        "name": "Instagram Manager",
+        "division": "Marketing",
+        "boss": "A03",
+        "job_desc": "Mengelola dua akun Instagram, konten dan interaksi",
+        "file": "agents/b20_instagram_manager.py",
+        "mapped_to": "A3 Pertumbuhan (IG @meongcast terhubung; @podcast_meong login ditolak)",
+        "status": "Aktif",
+        "gemini_division": "Divisi 3 — Social Growth",
+        "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "Target +20% followers/bulan (target rancangan)",
+          "1 produk → 7 format konten (strategi rancangan)",
+          "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "CapCut"
+        ],
+        "platform": {
+          "terhubung": [
+            "Instagram posting @meongcast",
+            "Instagram Messages @meongcast"
+          ],
+          "belum_terhubung": [
+            "Instagram @podcast_meong (login ditolak)"
+          ]
+        },
+        "tugas_harian": "Siapkan caption, visual, jadwal dan interaksi",
+        "target_harian": "1 draf konten; cek inbox"
+      },
+      {
+        "code": "A21",
+        "name": "TikTok Manager",
+        "division": "Marketing",
+        "boss": "A03",
+        "job_desc": "Mengelola dua akun TikTok dan analitik",
+        "file": "agents/b21_tiktok_manager.py",
+        "mapped_to": "A3 Pertumbuhan (TikTok @podcast_kucing jalan; @meongcast butuh login Cipta)",
+        "status": "Aktif sebagian",
+        "gemini_division": "Divisi 3 — Social Growth",
+        "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "Target +20% followers/bulan (target rancangan)",
+          "1 produk → 7 format konten (strategi rancangan)",
+          "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "CapCut"
+        ],
+        "platform": {
+          "terhubung": [
+            "TikTok @podcast_kucing (via browser)"
+          ],
+          "belum_terhubung": [
+            "TikTok @meongcast (butuh login Cipta)"
+          ]
+        },
+        "tugas_harian": "Siapkan video, hook, caption dan analitik",
+        "target_harian": "1 draf video; cek performa"
+      },
+      {
+        "code": "A22",
+        "name": "YouTube Manager",
+        "division": "Marketing",
+        "boss": "A03",
+        "job_desc": "Mengelola dua channel YouTube dan analitik",
+        "file": "agents/b22_youtube_manager.py",
+        "mapped_to": "A3 Pertumbuhan (YT Podcast meong jalan; @meongcast tertahan verifikasi)",
+        "status": "Aktif sebagian",
+        "gemini_division": "Divisi 3 — Social Growth",
+        "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "Target +20% followers/bulan (target rancangan)",
+          "1 produk → 7 format konten (strategi rancangan)",
+          "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "CapCut"
+        ],
+        "platform": {
+          "terhubung": [
+            "YouTube Podcast meong (via browser)"
+          ],
+          "belum_terhubung": [
+            "YouTube @meongcast (tertahan verifikasi)"
+          ]
+        },
+        "tugas_harian": "Siapkan Shorts/video, judul, deskripsi",
+        "target_harian": "1 draf Shorts atau 1 paket video"
+      },
+      {
+        "code": "A23",
+        "name": "Threads Manager",
+        "division": "Marketing",
+        "boss": "A03",
+        "job_desc": "Mengelola satu akun Threads dan percakapan",
+        "file": "agents/b23_threads_manager.py",
+        "mapped_to": "A3 Pertumbuhan (Threads @ciptabintanglestari terhubung)",
+        "status": "Aktif",
+        "gemini_division": "Divisi 3 — Social Growth",
+        "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "Target +20% followers/bulan (target rancangan)",
+          "1 produk → 7 format konten (strategi rancangan)",
+          "CTA ke Lynk.id / KaryaKarsa / Saweria / Trakteer"
+        ],
+        "gemini_tools": [
+          "Gemini / ChatGPT",
+          "CapCut"
+        ],
+        "platform": {
+          "terhubung": [
+            "Threads posting @ciptabintanglestari",
+            "Threads Messages @ciptabintanglestari"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Buat percakapan, utas dan respons",
+        "target_harian": "1–2 draf posting; cek balasan"
+      },
+      {
+        "code": "A24",
+        "name": "SEO & Growth",
+        "division": "Marketing",
+        "boss": "A03",
+        "job_desc": "SEO, optimasi distribusi dan pertumbuhan organik",
+        "file": "agents/b24_seo_growth.py",
+        "mapped_to": "A3 Pertumbuhan",
+        "status": "Aktif",
+        "gemini_division": "Divisi 3 — Social Growth",
+        "gemini_role": "3 — Multi-Channel Publisher & Growth Hacker (SEO)",
+        "gemini_kpi": [
+          "3–5 konten terbit/hari di seluruh kanal (target rancangan)",
+          "Target +20% followers/bulan (target rancangan)"
+        ],
+        "gemini_tools": [
+          "Google Trends",
+          "Perplexity.ai"
+        ],
+        "platform": {
+          "terhubung": [
+            "GitHub Pages (SEO website)",
+            "Impact.com (affiliate)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Riset keyword, optimasi dan distribusi organik",
+        "target_harian": "1 optimasi; 3 keyword"
+      },
+      {
+        "code": "A25",
+        "name": "Sales Manager",
+        "division": "Penjualan",
+        "boss": "A02",
+        "job_desc": "Mengelola pipeline, penawaran dan target penjualan",
+        "file": "agents/b25_sales_manager.py",
+        "mapped_to": "A2 + A4 Penjualan",
+        "status": "Aktif",
+        "gemini_division": "Divisi 4 — CS & Closer",
+        "gemini_role": "4 — Omnichannel CS & Closer",
+        "gemini_kpi": [
+          "Respons < 1 jam (target rancangan)",
+          "1–3 penjualan langsung (closing)/hari (target rancangan)",
+          "Pembayaran hanya ke BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer — JANGAN ke Mayar sampai KYC selesai"
+        ],
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [
+            "KaryaKarsa (jualan)",
+            "Lynk.id (jualan)",
+            "Zazzle (jualan)",
+            "KBM (jualan)",
+            "Saweria (jualan)",
+            "Trakteer (jualan)",
+            "PayPal (pembayaran)",
+            "BCA (pembayaran)"
+          ],
+          "belum_terhubung": [
+            "Mayar (KYC belum selesai)"
+          ]
+        },
+        "tugas_harian": "Kelola lead, penawaran, follow-up dan closing; fokus kebutuhan customer — bila customer bercerita, dengarkan masalahnya dan cari solusinya",
+        "target_harian": "Harian: 20 toko dihubungi + target 1 balasan; mingguan: 1 closing; bulanan (Des 2026): Rp10.000.000"
+      },
+      {
+        "code": "A26",
+        "name": "Customer Service",
+        "division": "Penjualan",
+        "boss": "A25",
+        "job_desc": "Menjawab pertanyaan, komentar dan keluhan pelanggan",
+        "file": "agents/b26_customer_service.py",
+        "mapped_to": "A1 + A13 (WA Web rusak; IG/Threads Messages terhubung)",
+        "status": "Aktif",
+        "gemini_division": "Divisi 4 — CS & Closer",
+        "gemini_role": "4 — Omnichannel CS & Closer",
+        "gemini_kpi": [
+          "Respons < 1 jam (target rancangan)"
+        ],
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [
+            "KaryaKarsa (CS)",
+            "Lynk.id (CS)",
+            "Zazzle (CS)",
+            "KBM (CS)",
+            "Saweria (CS)",
+            "Trakteer (CS)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Kelompokkan dan siapkan respons pertanyaan/keluhan",
+        "target_harian": "Inbox dipantau; respons draf <1 jam selama jam layanan"
+      },
+      {
+        "code": "A27",
+        "name": "Email Administrator",
+        "division": "Penjualan",
+        "boss": "A02",
+        "job_desc": "Memilah email, membuat draft dan menindaklanjuti",
+        "file": "agents/b27_email_administrator.py",
+        "mapped_to": "A13 Email (Gmail TIDAK terhubung — baca via browser)",
+        "status": "Aktif sebagian",
+        "gemini_division": "Divisi 4 — CS & Closer",
+        "gemini_role": "4 — Omnichannel CS & Closer (email)",
+        "gemini_kpi": [
+          "Respons < 1 jam (target rancangan)",
+          "Email diperiksa 2–3 kali/hari (target rancangan)"
+        ],
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": [
+            "Gmail (tidak terhubung — kerja via browser, draf saja)"
+          ]
+        },
+        "tugas_harian": "Sortir email, ringkas, siapkan balasan",
+        "target_harian": "2–3 pemeriksaan; semua tindak lanjut tercatat"
+      },
+      {
+        "code": "A28",
+        "name": "Opportunity Hunter",
+        "division": "Peluang & Keuangan",
+        "boss": "A02",
+        "job_desc": "Mencari lomba, freelance, hibah dan kemitraan",
+        "file": "agents/b28_opportunity_hunter.py",
+        "mapped_to": "A6 + A14",
+        "status": "Aktif",
+        "gemini_division": "Divisi 5 — Freelance & Finance",
+        "gemini_role": "5A — Freelance & Gig Bidder",
+        "gemini_kpi": [
+          "5 proposal/hari — DRAF saja, kirim hanya setelah Cipta setuju (target rancangan)",
+          "Target 1–2 proyek didapat/bulan (target rancangan)"
+        ],
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [],
+          "belum_terhubung": [
+            "Upwork (belum ada akun)"
+          ]
+        },
+        "tugas_harian": "Cari lomba, freelance, hibah, kemitraan",
+        "target_harian": "Hingga 5 draf proposal berkualitas"
+      },
+      {
+        "code": "A29",
+        "name": "Finance Manager",
+        "division": "Peluang & Keuangan",
+        "boss": "A02",
+        "job_desc": "Mencatat pendapatan, biaya, saldo dan laporan",
+        "file": "agents/b29_finance_manager.py",
+        "mapped_to": "A7 Keuangan (baseline Rp0)",
+        "status": "Aktif",
+        "gemini_division": "Divisi 5 — Freelance & Finance",
+        "gemini_role": "5B — Finance & Operational Controller",
+        "gemini_kpi": [
+          "Laporan pembukuan harian/mingguan (target rancangan)",
+          "Pantau status KYC Mayar"
+        ],
+        "gemini_tools": [
+          "Google Sheets",
+          "Notion"
+        ],
+        "platform": {
+          "terhubung": [
+            "PayPal (pencatatan)",
+            "BCA (pencatatan)",
+            "Saweria (pencatatan)",
+            "Trakteer (pencatatan)",
+            "KaryaKarsa (pencatatan)",
+            "Lynk.id (pencatatan)"
+          ],
+          "belum_terhubung": [
+            "Mayar (KYC belum selesai)"
+          ]
+        },
+        "tugas_harian": "Catat pemasukan, biaya, saldo dan status pembayaran",
+        "target_harian": "Rekonsiliasi harian; tidak ada transaksi tanpa bukti"
+      },
+      {
+        "code": "A30",
+        "name": "Operations Manager",
+        "division": "Peluang & Keuangan",
+        "boss": "A02",
+        "job_desc": "Mengelola dokumen, SOP, jadwal dan administrasi",
+        "file": "agents/b30_operations_manager.py",
+        "mapped_to": "koordinasi.py + Pusat Komando",
+        "status": "Aktif",
+        "gemini_division": "Agent 0 — Chief Orchestrator",
+        "gemini_role": "Agent 0 — Chief Orchestrator (dukungan operasional; Gemini #1 tidak punya divisi operasional terpisah)",
+        "gemini_kpi": [],
+        "gemini_tools": [],
+        "platform": {
+          "terhubung": [
+            "DeployVera (papan status cadangan)",
+            "GitHub Pages (repo)"
+          ],
+          "belum_terhubung": []
+        },
+        "tugas_harian": "Rapikan SOP, dokumen, jadwal dan arsip",
+        "target_harian": "Dokumen dan status tugas diperbarui"
+      }
+    ]
+  },
+  "versi_pusat_komando": "2.0",
+  "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif.",
+  "agent_lama": {
+    "status": "No 1–6 Aktif — diganti nama jadi A31–A36; no 7–14 Pasif — non job",
+    "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang. KOREKSI 22 Nov 2026 (perintah Cipta): dari 14 agent lama, no 1–6 AKTIF dan DIGANTI NAMA jadi A31–A36 (1 Asisten→A31 Publish, 2 Penjualan→A32 Build, 3 Pertumbuhan→A33 Pertumbuhan, 4 Penjualan Harian→A34 Penerjemah, 5 Produksi Produk→A35 Ngetik, 6 Lomba→A36 Copywriter); sisanya no 7–14 tetap Pasif — non job.",
+    "agents": [
+      {
+        "kode": "1",
+        "nama": "Asisten",
+        "modul": "a01_asisten",
+        "sumber_data": "handoff",
+        "status": "Aktif — diganti nama jadi A31 Publish",
+        "kode_baru": "A31",
+        "nama_baru": "Publish"
+      },
+      {
+        "kode": "2",
+        "nama": "Penjualan",
+        "modul": "a02_penjualan",
+        "sumber_data": "leads",
+        "status": "Aktif — diganti nama jadi A32 Build",
+        "kode_baru": "A32",
+        "nama_baru": "Build"
+      },
+      {
+        "kode": "3",
+        "nama": "Pertumbuhan",
+        "modul": "a03_pertumbuhan",
+        "sumber_data": "handoff",
+        "status": "Aktif — diganti nama jadi A33 Pertumbuhan",
+        "kode_baru": "A33",
+        "nama_baru": "Pertumbuhan"
+      },
+      {
+        "kode": "4",
+        "nama": "Penjualan Harian",
+        "modul": "a04_penjualan_harian",
+        "sumber_data": "penjualan_toko",
+        "status": "Aktif — diganti nama jadi A34 Penerjemah",
+        "kode_baru": "A34",
+        "nama_baru": "Penerjemah"
+      },
+      {
+        "kode": "5",
+        "nama": "Produksi Produk",
+        "modul": "a05_produksi",
+        "sumber_data": "produksi_game",
+        "status": "Aktif — diganti nama jadi A35 Ngetik",
+        "kode_baru": "A35",
+        "nama_baru": "Ngetik"
+      },
+      {
+        "kode": "6",
+        "nama": "Lomba",
+        "modul": "a06_lomba",
+        "sumber_data": "lomba",
+        "status": "Aktif — diganti nama jadi A36 Copywriter",
+        "kode_baru": "A36",
+        "nama_baru": "Copywriter"
+      },
+      {
+        "kode": "7",
+        "nama": "Keuangan",
+        "modul": "a07_keuangan",
+        "sumber_data": "keuangan",
+        "status": "Pasif — non job"
+      },
+      {
+        "kode": "8",
+        "nama": "Terjemah Inggris",
+        "modul": "a08_terjemah",
+        "sumber_data": "terjemahan",
+        "status": "Pasif — non job"
+      },
+      {
+        "kode": "9",
+        "nama": "Game & Aplikasi",
+        "modul": "a09_game",
+        "sumber_data": "worklist",
+        "status": "Pasif — non job"
+      },
+      {
+        "kode": "10",
+        "nama": "Riset Produk",
+        "modul": "a10_riset",
+        "sumber_data": "riset",
+        "status": "Pasif — non job"
+      },
+      {
+        "kode": "11",
+        "nama": "Oyen",
+        "modul": "a11_oyen",
+        "sumber_data": "handoff",
+        "status": "Pasif — non job"
+      },
+      {
+        "kode": "12",
+        "nama": "Momo",
+        "modul": "a12_momo",
+        "sumber_data": "handoff",
+        "status": "Pasif — non job"
+      },
+      {
+        "kode": "13",
+        "nama": "Email",
+        "modul": "a13_email",
+        "sumber_data": "email",
+        "status": "Pasif — non job"
+      },
+      {
+        "kode": "14",
+        "nama": "Upwork",
+        "modul": "a14_upwork",
+        "sumber_data": "upwork",
+        "status": "Pasif — non job"
+      }
+    ],
+    "catatan": "A31–A33 belum punya modul; A34 (terjemahan) DITUNDA perintah Cipta; A35/A36 punya modul (b35_ngetik.py, b36_copywriter.py). Koreksi 21 Nov 14:23: yang dihitung agent hanya 30 Bintang (A01–A30); A31–A36 adalah kode peran, bukan hitungan agent. KOREKSI 22 Nov 08:21 (Cipta: kembaliin semua jobnya): A31–A33 kembali ke job asli — A31 Asisten/Publish, A32 Penjualan/Build, A33 Pertumbuhan (riset konten + naikkan follower/subs/view/like + strategi monetisasi). Catatan 08:18 soal A31/A32 handle mengetik & copywriter SALAH dan dicabut; mengetik tetap A35, copywriter tetap A36."
+  },
+  "sop_harian": {
+    "sumber": "Sistem_Operasional_Harian_30_Agent_Bintang.docx (diunggah Cipta, 21 Nov 2026)",
+    "tanggal": "2026-11-21",
+    "catatan": "Target di SOP ini adalah target awal — dievaluasi setelah 14 hari. KPI Gemini di agent_30 tetap sebagai target rancangan. Siklus SOP (07.00-16.30, 9 tahap) BERBEDA dari jadwal mesin saat ini (slot Gemini 06.00/08.00/11/15/19/21.00) — keputusan Cipta diperlukan sebelum mesin mengikuti siklus SOP.",
+    "siklus_harian": [
+      {
+        "tahap": "Briefing & prioritas",
+        "jam": "07.00–07.20",
+        "penanggung_jawab": "A01, A02, A03",
+        "hasil_wajib": "3 prioritas hari ini, kapasitas, tugas dan tenggat"
+      },
+      {
+        "tahap": "Riset pasar",
+        "jam": "07.20–08.30",
+        "penanggung_jawab": "A06–A10",
+        "hasil_wajib": "5 ide awal, 5 tren, 3 pesaing, 1 ide terpilih"
+      },
+      {
+        "tahap": "Perencanaan produk",
+        "jam": "08.30–09.00",
+        "penanggung_jawab": "A08, A10, A05",
+        "hasil_wajib": "Skor validasi dan brief produk/konten"
+      },
+      {
+        "tahap": "Produksi utama",
+        "jam": "09.00–11.30",
+        "penanggung_jawab": "A11–A19",
+        "hasil_wajib": "1 aset utama + variasi konten; draf produk"
+      },
+      {
+        "tahap": "QC & persetujuan",
+        "jam": "11.30–12.00",
+        "penanggung_jawab": "A04, A10, Cipta",
+        "hasil_wajib": "Checklist lolos/gagal; daftar yang perlu persetujuan"
+      },
+      {
+        "tahap": "Distribusi konten",
+        "jam": "13.00–14.00",
+        "penanggung_jawab": "A19–A24",
+        "hasil_wajib": "3–5 konten lintas kanal dalam bentuk draf/jadwal"
+      },
+      {
+        "tahap": "Penjualan & layanan",
+        "jam": "09.00–11.00 & 19.00–21.00",
+        "penanggung_jawab": "A25–A27",
+        "hasil_wajib": "Pagi 09.00–11.00: 20 penawaran baru ke toko (fokus kebutuhan customer); malam 19.00–21.00: follow-up H+1/H+3/H+7 + balas toko (dengarkan cerita/masalahnya, cari solusinya)"
+      },
+      {
+        "tahap": "Peluang & keuangan",
+        "jam": "15.00–16.00",
+        "penanggung_jawab": "A28–A29",
+        "hasil_wajib": "5 draf proposal yang relevan; pembukuan diperbarui"
+      },
+      {
+        "tahap": "Rekonsiliasi & laporan",
+        "jam": "16.00–16.30",
+        "penanggung_jawab": "A03, A04, A05, A30",
+        "hasil_wajib": "Dashboard, hambatan, keputusan besok"
+      }
+    ],
+    "target_perusahaan": [
+      {
+        "area": "Riset",
+        "target_harian_awal": "5 ide → 1 ide prioritas",
+        "definisi_selesai": "Ada masalah pelanggan, segmen, bukti tren, pesaing, dan alasan memilih"
+      },
+      {
+        "area": "Produk",
+        "target_harian_awal": "1 brief tervalidasi",
+        "definisi_selesai": "Skor manfaat, permintaan, biaya/waktu, risiko dan langkah berikut"
+      },
+      {
+        "area": "Konten",
+        "target_harian_awal": "1 aset utama → 7 format draf",
+        "definisi_selesai": "Format dapat berupa video pendek, carousel, gambar, caption, Threads, Shorts, dan artikel; bukan 7 unggahan wajib"
+      },
+      {
+        "area": "Publikasi",
+        "target_harian_awal": "3–5 konten total lintas kanal",
+        "definisi_selesai": "Hanya konten yang lolos QC dan disetujui; jangan menggandakan spam"
+      },
+      {
+        "area": "Penjualan",
+        "target_harian_awal": "Harian: 20 toko dihubungi + target 1 balasan; mingguan: 1 closing; bulanan (Des 2026): Rp10.000.000",
+        "definisi_selesai": "Ada sumber lead, kebutuhan, status, nilai, tindak lanjut dan bukti pembayaran"
+      },
+      {
+        "area": "Peluang",
+        "target_harian_awal": "Maksimal 5 draf proposal relevan",
+        "definisi_selesai": "Kualitas dan kecocokan lebih penting daripada jumlah; kirim setelah persetujuan"
+      },
+      {
+        "area": "Keuangan",
+        "target_harian_awal": "1 rekonsiliasi harian",
+        "definisi_selesai": "Pemasukan, biaya, saldo dan bukti cocok"
+      },
+      {
+        "area": "Produk digital",
+        "target_harian_awal": "1 rilis kecil per minggu sebagai target awal",
+        "definisi_selesai": "Produk lolos uji, halaman penjualan dan instruksi penggunaan siap"
+      }
+    ],
+    "status_tugas": [
+      {
+        "status": "BACKLOG",
+        "arti": "Belum dijadwalkan",
+        "aturan": "Belum dikerjakan"
+      },
+      {
+        "status": "READY",
+        "arti": "Brief, PIC dan tenggat lengkap",
+        "aturan": "Siap dieksekusi"
+      },
+      {
+        "status": "DOING",
+        "arti": "Sedang dikerjakan",
+        "aturan": "PIC wajib memberi pembaruan"
+      },
+      {
+        "status": "QC",
+        "arti": "Menunggu pemeriksaan",
+        "aturan": "Belum boleh dipublikasikan/dikirim"
+      },
+      {
+        "status": "APPROVAL",
+        "arti": "Menunggu keputusan Cipta",
+        "aturan": "Tampilkan pilihan dan konsekuensi"
+      },
+      {
+        "status": "APPROVED",
+        "arti": "Disetujui",
+        "aturan": "Boleh dieksekusi sesuai ruang lingkup izin"
+      },
+      {
+        "status": "PUBLISHED / SENT",
+        "arti": "Sudah terbit/terkirim",
+        "aturan": "Simpan URL, waktu, bukti"
+      },
+      {
+        "status": "BLOCKED",
+        "arti": "Terhambat",
+        "aturan": "Catat alasan dan siapa yang perlu bertindak"
+      },
+      {
+        "status": "DONE",
+        "arti": "Selesai",
+        "aturan": "Lampirkan hasil dan metrik"
+      }
+    ],
+    "pemicu_otomatis": [
+      {
+        "pemicu": "Setiap hari 07.00",
+        "aksi_otomatis": "Buat brief, tarik tugas tertunda, susun prioritas dan tenggat",
+        "batas_aman": "Jangan mengarang data yang belum tersedia"
+      },
+      {
+        "pemicu": "Setelah riset selesai",
+        "aksi_otomatis": "Buat kartu ide dan skor validasi; kirim ke Product Developer",
+        "batas_aman": "Sertakan sumber dan tanggal data"
+      },
+      {
+        "pemicu": "Setelah aset dibuat",
+        "aksi_otomatis": "Buat turunan format 7 kanal dan checklist QC",
+        "batas_aman": "Semua tetap draf"
+      },
+      {
+        "pemicu": "Saat QC lolos",
+        "aksi_otomatis": "Pindahkan ke antrean persetujuan Cipta",
+        "batas_aman": "QC bukan persetujuan publikasi"
+      },
+      {
+        "pemicu": "Setelah persetujuan",
+        "aksi_otomatis": "Jadwalkan/terbitkan jika koneksi platform benar-benar tersedia",
+        "batas_aman": "Catat akun, konten, waktu dan URL"
+      },
+      {
+        "pemicu": "Setiap 2 jam pada jam layanan",
+        "aksi_otomatis": "Periksa inbox/lead yang terhubung dan tandai prioritas",
+        "batas_aman": "Jangan menjanjikan respons 24/7"
+      },
+      {
+        "pemicu": "Setiap hari 16.00",
+        "aksi_otomatis": "Rekap konten, lead, penjualan, biaya, hambatan",
+        "batas_aman": "Pisahkan angka aktual dari target"
+      },
+      {
+        "pemicu": "Setiap Senin",
+        "aksi_otomatis": "Review mingguan dan pilih eksperimen minggu berikutnya",
+        "batas_aman": "Hentikan pekerjaan yang tidak menghasilkan nilai"
+      }
+    ],
+    "dashboard_harian": [
+      {
+        "indikator": "Ide riset tervalidasi",
+        "target_awal": "1"
+      },
+      {
+        "indikator": "Brief produk/konten",
+        "target_awal": "1"
+      },
+      {
+        "indikator": "Aset utama",
+        "target_awal": "1"
+      },
+      {
+        "indikator": "Turunan konten",
+        "target_awal": "7 draf"
+      },
+      {
+        "indikator": "Konten terbit",
+        "target_awal": "3–5 total, setelah izin"
+      },
+      {
+        "indikator": "Lead baru / ditindaklanjuti",
+        "target_awal": "Semua tercatat"
+      },
+      {
+        "indikator": "Penjualan / omzet",
+        "target_awal": "Catat aktual; target aspirasi 1–3 closing"
+      },
+      {
+        "indikator": "Proposal peluang",
+        "target_awal": "Hingga 5 draf"
+      },
+      {
+        "indikator": "Pemasukan / biaya / saldo",
+        "target_awal": "Rekonsiliasi"
+      },
+      {
+        "indikator": "Tugas selesai / tertunda",
+        "target_awal": "Ukur dari daftar tugas"
+      },
+      {
+        "indikator": "Hambatan utama",
+        "target_awal": "Maksimal 3 prioritas eskalasi"
+      }
+    ],
+    "skor_prioritas": {
+      "kriteria": [
+        {
+          "kriteria": "Permintaan",
+          "pertanyaan": "Apakah ada bukti orang mencari/membutuhkan ini?"
+        },
+        {
+          "kriteria": "Potensi pendapatan",
+          "pertanyaan": "Apakah ada jalur monetisasi dan pembeli yang jelas?"
+        },
+        {
+          "kriteria": "Kecepatan produksi",
+          "pertanyaan": "Bisakah dibuat dengan kemampuan dan waktu yang tersedia?"
+        },
+        {
+          "kriteria": "Keunggulan",
+          "pertanyaan": "Apakah ada pembeda dari pesaing?"
+        },
+        {
+          "kriteria": "Risiko rendah",
+          "pertanyaan": "Apakah aman dari masalah hak cipta, klaim, biaya dan kebijakan platform?"
+        }
+      ],
+      "aturan": "Beri nilai 1-5 untuk setiap kriteria. Total maksimal 25. 20-25 = kerjakan; 15-19 = uji kecil; 10-14 = simpan untuk riset; di bawah 10 = jangan dikerjakan dulu. Skor adalah alat bantu, bukan pengganti penilaian pemilik."
+    },
+    "rencana_14_hari": [
+      {
+        "periode": "Hari 1–2",
+        "fokus": "Bangun papan tugas, daftar produk, kalender konten, tabel keuangan dan folder bukti",
+        "hasil": "Satu sumber data operasional"
+      },
+      {
+        "periode": "Hari 3–4",
+        "fokus": "Jalankan alur riset → brief → produksi → QC",
+        "hasil": "Satu siklus produksi terukur"
+      },
+      {
+        "periode": "Hari 5–7",
+        "fokus": "Jalankan distribusi dan pencatatan lead dengan persetujuan manual",
+        "hasil": "Konten dan pipeline mulai terukur"
+      },
+      {
+        "periode": "Hari 8–10",
+        "fokus": "Tambahkan pemantauan inbox, proposal peluang dan laporan otomatis",
+        "hasil": "Mengurangi tugas administratif berulang"
+      },
+      {
+        "periode": "Hari 11–14",
+        "fokus": "Audit waktu, kualitas, konversi, biaya dan hambatan",
+        "hasil": "Tetapkan target versi 2 berdasarkan data"
+      }
+    ],
+    "prompt_komando_harian": "Bertindak sebagai COO dan Command Controller Bintang Command Center. Gunakan hanya data yang tersedia di papan kerja dan dokumen sumber. \n1) Baca target perusahaan dan semua tugas yang belum selesai.\n2) Tetapkan maksimal 3 prioritas utama hari ini.\n3) Tugaskan pekerjaan kepada agent sesuai job description A01–A30, lengkap dengan PIC, input, output, tenggat, dan kriteria selesai.\n4) Jalankan urutan riset → validasi → brief → produksi → QC → persetujuan → distribusi → penjualan → keuangan → laporan.\n5) Semua konten, proposal, email, balasan pelanggan, dan tindakan eksternal berstatus DRAF sampai Cipta menyetujui.\n6) Jangan mengaku telah memublikasikan, mengirim, menghubungkan akun, atau melakukan transaksi tanpa bukti eksekusi.\n7) Tandai data yang tidak tersedia sebagai BELUM DIKETAHUI. Sertakan sumber dan tanggal untuk temuan riset.\n8) Akhiri dengan dashboard: target, aktual, selisih, hambatan, keputusan yang dibutuhkan, dan 3 prioritas besok.\nMulai dengan membuat brief operasional hari ini."
+  }
 }
