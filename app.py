@@ -872,6 +872,18 @@ def build_app():
                     "NEXTALE 20 episode · Basabasi terkirim · uang masuk pertama (target ≥Rp500.000). "
                     "**Minggu 2:** peluncuran pertama, 50–100 subscriber, 1–10 penjualan. "
                     "**Minggu 3:** diagnosis funnel + produk #2. **Minggu 4:** laporan keuangan bulanan pertama + gandakan pemenang.")
+                gr.Markdown(
+                    "### 🛒 Eksekusi 20 Marketplace — WAJIB, Tim Produksi (teks lengkap di `data/marketplace-20-eksekusi.md`)\n\n"
+                    "**Perintah Cipta 22 Nov 2026:** eksekusi semua 20 marketplace, satu-satu dari no. 1, selesai → next. "
+                    "Yang bisa dulu; berhenti hanya bila benar-benar mentok. Diserahkan ke **Tim Produksi (A11–A19)** — WAJIB.\n\n"
+                    "**Produk:** 1 Swarms skill $12 · 2 Agensi.io skill $12 · 3 MCP Market (bukan toko — verifikasi) · "
+                    "4 Neura Market workflow+prompt · 5 Apify (belum cocok) · 6 Salesforce (enterprise) · 7 AWS (enterprise) · "
+                    "8 Microsoft (enterprise) · 9 Envato Kasir Toko $59 · 10 CodeCanyon Kasir Toko $59 · 11 Codester Faktur & Invoice $29 · "
+                    "12 Unity (tidak cocok) · 13 Gumroad LIVE · 14 Creative Market 14 item · 15 Etsy eBook · 16 PromptBase 9 prompt · "
+                    "17 Payhip LIVE · 18 Whop · 19 Fiverr jasa · 20 Udemy kursus.\n\n"
+                    "**Status:** no. 1 paket skill SIAP, menunggu masuk Google Cipta (masduki1189) → API key → publish. "
+                    "No. 11 paket Codester SIAP, menunggu setuju teks+$29+bahasa UI. No. 14/16 draf + harga usulan siap, menunggu persetujuan harga. "
+                    "No. 9/10 pendaftaran tutup/dijeda. No. 13/17 sudah LIVE.")
                 cc_papan = gr.Markdown(tampilkan_command_center())
                 btn_cc = gr.Button("🔄 Segarkan Command Center", variant="primary")
                 gr.Markdown("### 🧑‍💼 62 Agent Spesialis → 14 Mesin (6 aktif A31–A36 · 8 pasif non-job)")
