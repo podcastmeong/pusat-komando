@@ -91,6 +91,7 @@ def _muat(nama_modul):
 KOORD, EKOORD = _muat("koordinasi")
 DASH, E_DASH = _muat("dashboard")
 MESIN, E_MESIN = _muat("mesin_eksekusi")
+MDB, E_MDB = _muat("master_database")
 
 
 # ---------------------------------------------------------------------------
@@ -875,6 +876,19 @@ def _segarkan_dashboard(f_divisi="Semua", f_agent="Semua"):
             _target_30_hari_md(), _tabel_platform())
 
 
+def _master_db_md():
+    if MDB is None:
+        return "⚠️ Modul master_database gagal dimuat: {}".format(E_MDB)
+    try:
+        return MDB.dashboard_markdown()
+    except Exception as e:  # noqa: BLE001
+        return "⚠️ Gagal membaca Master Database: {}: {}".format(type(e).__name__, e)
+
+
+def _segarkan_master_db():
+    return _master_db_md()
+
+
 def build_app():
     with gr.Blocks(title="Pusat Komando Podcast Meong v2.0",
                    analytics_enabled=False) as demo:
@@ -1021,6 +1035,21 @@ def build_app():
                                 outputs=[hasil_mesin, dash_ringkas, dash_tabel,
                                          dash_feed, dash_antrean, dash_terkendala],
                                 api_name="jalankan_mesin_eksekusi")
+
+            # ============================ MASTER DATABASE 2.0 ============================
+            with gr.Tab("D · Master Database"):
+                gr.Markdown(
+                    "Master Database Pusat Komando 10.0 (v2.0) — satu sumber data: "
+                    "12 tabel (agent, tugas, proyek, produk, pelanggan, keuangan, "
+                    "persetujuan, KPI, audit). Dibangun ulang dengan "
+                    "`python agents/master_database.py` bila file belum ada. "
+                    "Status tugas 9 nilai; persetujuan umum di tangan Muse, khusus "
+                    "(bayar/kirim uang, keputusan urgent) di tangan Cipta. "
+                    "Nilai KPI yang kosong berarti belum diukur — bukan 0.")
+                mdb_teks = gr.Markdown(_master_db_md())
+                btn_mdb = gr.Button("🔄 Segarkan Master Database", variant="primary")
+                btn_mdb.click(fn=_segarkan_master_db, outputs=mdb_teks,
+                              api_name="segarkan_master_db")
 
             # ============================ PAPAN HANDOFF ============================
             with gr.Tab("🏠 Papan Handoff"):

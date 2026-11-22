@@ -145,13 +145,24 @@ memformalkan mereka jadi sistem.
 
 ## 7. Langkah berikut (Tahap 1 lanjutan)
 
-1. Tab dashboard "Master Database" di `app.py` (baca langsung dari
-   database ini) — supaya Cipta bisa melihat tugas/produk/keuangan
-   tanpa membuka file.
-2. Isi PERFORMANCE dengan KPI nyata per agent (pengukuran dimulai
-   dari laporan harian yang sudah ada).
+1. ~~Tab dashboard "Master Database" di `app.py`~~ — **SELESAI di v2.0 (22 Nov 2026):**
+   tab **"D · Master Database"** di aplikasi menampilkan ringkasan ini
+   secara live (tugas terbuka, produk, persetujuan, keuangan, KPI).
+2. ~~Isi PERFORMANCE dengan KPI nyata per agent~~ — **SELESAI sebagian di v2.0:**
+   5 KPI nyata terverifikasi (A04 skor QC 8, A25 toko dihubungi 7,
+   A31 produk live 7, A37 marketplace terbit 1, A29 transaksi 0);
+   35 sisanya masih NULL = belum diukur. Isi KPI baru dengan
+   `set_kpi(db, kode, nama_kpi, nilai, sumber)` dari
+   `agents/master_database.py` — hanya nilai terverifikasi.
 3. Salinan Google Sheets (opsional, bila Cipta mau melihat dari HP
    tanpa membuka dashboard) — bukan pengganti database ini.
+
+## 9. Versi 2.0 (22 Nov 2026)
+
+- `agents/master_database.py`: + `dashboard_markdown()` (dipakai tab D),
+  `ensure_db()`, `set_kpi()`; seed KPI nyata 5 agent.
+- `app.py`: modul `master_database` dimuat defensif + tab baru
+  **"D · Master Database"** (tombol Segarkan). Total tab jadi 6.
 
 ## 8. Aturan keamanan
 
