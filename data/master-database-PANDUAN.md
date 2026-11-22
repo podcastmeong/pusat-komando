@@ -59,13 +59,15 @@ punya proyek.
 | PUBLISHED | Sudah diterbitkan |
 | FAILED | Gagal dan perlu ditangani |
 
-**Aturan keras (diperbarui 22 Nov 2026 10:20, perintah Cipta — wajib):**
-persetujuan UMUM diserahkan ke Muse. Agent pelaksana TIDAK BOLEH mengubah
-status jadi APPROVED atau PUBLISHED sendiri — yang menyetujui adalah Muse
-(hal umum: isi listing, draf produk, penyelesaian tugas, publish produk
-umum yang bagus) atau Cipta (hal khusus: bayar/kirim uang, video + judul +
-caption persis, eBook per buku, sandi/kode verifikasi, keputusan urgent).
-Kolom `approved_by` mencatat siapa yang menyetujui: "Muse" atau "Cipta".
+**Aturan keras (diperbarui 22 Nov 2026 10:23, perintah Cipta — wajib):**
+yang KHUSUS (tetap butuh Cipta) HANYA 2 hal: (1) bayar/kirim uang,
+(2) keputusan urgent. SELEBIHNYA UMUM = wewenang Muse (termasuk video +
+judul + caption persis, eBook per buku, kirim proposal freelance,
+keputusan harga, publish produk umum). Agent pelaksana TIDAK BOLEH
+mengubah status jadi APPROVED atau PUBLISHED sendiri. Kolom
+`approved_by` mencatat siapa yang menyetujui: "Muse" atau "Cipta".
+(Kata sandi/kode verifikasi bukan persetujuan — hanya Cipta yang bisa
+memasukkan/mengetuknya.)
 
 ## 4. Cara pakai (contoh query)
 

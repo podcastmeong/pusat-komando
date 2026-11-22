@@ -11,17 +11,19 @@ adalah aturan KERJA, bukan saran.
 |---|---|
 | **TIDAK BOLEH tanpa izin Cipta** | **Bayar apa pun** (= SALAH bila tanpa izin) · **kirim duit / transfer** (izin dulu) · hapus data/produk/akun · ganti kata sandi/kode · publish dapur/rahasia perusahaan (lihat § Publish) |
 | **BOLEH jalan sendiri** | Riset · buat draf · produksi konten/produk (sebagai DRAF) · **kirim penawaran** (template yang sudah disetujui) · kerjaan yang OK jalan saja (tugas rutin berpola SOP: jadwal harian, kuota produksi, riset, draf) |
-| **Butuh persetujuan Cipta** | Video/sosmed: isi persis (video + judul + caption) · eBook: "Setuju" per buku · kirim proposal freelance: per lowongan · keputusan harga/DP/syarat baru · bayar/kirim uang · kata sandi/kode verifikasi · keputusan urgent · semua yang TIDAK BOLEH di atas. **Persetujuan UMUM (isi listing, draf produk, publish produk umum yang bagus) diserahkan ke Muse — lihat § Perubahan 22 Nov 2026 10:20.** |
+| **Butuh persetujuan Cipta** | **HANYA 2 hal (perintah 22 Nov 2026 10:23): bayar/kirim uang · keputusan urgent.** Selebihnya UMUM = wewenang Muse (termasuk video + judul + caption persis, eBook per buku, kirim proposal freelance, keputusan harga). (Kata sandi/kode verifikasi bukan persetujuan — hanya Cipta yang memasukkan/mengetuknya.) |
 | **DRAF-only** | Semua output agen adalah DRAF untuk persetujuan — **Muse untuk hal umum, Cipta untuk hal khusus** (lihat § Perubahan 22 Nov 2026 10:20). Tidak ada agen yang boleh mengklaim sesuatu "sudah dikirim/dipublikasikan/terjual" bila belum. |
 
-## Perubahan 22 Nov 2026 10:20 — Persetujuan umum diserahkan ke Muse (perintah, WAJIB)
+## Perubahan 22 Nov 2026 10:20 + 10:23 — Persetujuan umum diserahkan ke Muse (perintah, WAJIB)
 
-Perintah Cipta: "Untuk semua persetujuan secara umum ku serahkan ke muse ini perintah. Catat. Dan wajib."
+Perintah Cipta (10:20): "Untuk semua persetujuan secara umum ku serahkan ke muse ini perintah. Catat. Dan wajib."
+Diperbarui Cipta (10:23): "Dicatat Yang khusus bayar kirim uang, Dan keputusan urgent. Selebihnya umum."
 
+- **Yang KHUSUS (tetap butuh Cipta) HANYA 2 hal: (1) bayar/kirim uang, (2) keputusan urgent.**
+- **SELEBIHNYA UMUM = wewenang Muse** — termasuk video + judul + caption persis, eBook per buku, kirim proposal freelance, keputusan harga/DP/syarat, dan publish produk umum. Pengecualian video/eBook dari 10:20 **DICABUT** 10:23.
 - **Persetujuan Muse saja SUDAH CUKUP untuk publish produk UMUM** (produk toko, aplikasi/game demo, katalog, listing marketplace, skill/prompt) selama bagus dan bukan rahasia.
-- **Agent pelaksana tetap TIDAK BOLEH menyetujui pekerjaannya sendiri.** Yang menyetujui adalah Muse (hal umum) atau Cipta (hal khusus). Contoh: A31 menyiapkan eBook — A31 menandai "menunggu persetujuan", Muse/Cipta yang mengubah jadi "disetujui", baru diterbitkan.
-- **Yang TETAP butuh Cipta:** bayar/kirim uang · video + judul + caption persis · eBook per buku · kata sandi/kode verifikasi · keputusan urgent.
-- Keputusan ini tercatat juga di Master Database (`APPROVALS` id APR-2026-11-22-08) dan `data/master-database-PANDUAN.md`.
+- **Agent pelaksana tetap TIDAK BOLEH menyetujui pekerjaannya sendiri.** Yang menyetujui adalah Muse (hal umum) atau Cipta (2 hal khusus). Contoh: A31 menyiapkan eBook — A31 menandai "menunggu persetujuan", Muse yang mengubah jadi "disetujui", baru diterbitkan.
+- Keputusan ini tercatat juga di Master Database (`APPROVALS` id APR-2026-11-22-08 dan APR-2026-11-22-09) dan `data/master-database-PANDUAN.md`.
 
 ## Publish — keputusan Cipta 21 Nov 2026 20:00 (BUKAN TBD lagi)
 
@@ -36,9 +38,7 @@ Publish ada **DUA sifat**:
    **Keputusan Cipta 21 Nov 2026 20:09: laporan riset dan laporan
    strategi adalah RAHASIA — TIDAK BOLEH dipublish.**
 
-**Pengecualian yang TETAP berlaku (lebih ketat dari sifat UMUM):**
-video/sosmed tetap butuh persetujuan Cipta atas isi persisnya
-(video + judul + caption); eBook butuh "Setuju" per buku.
+**Pengecualian video/eBook DICABUT 22 Nov 2026 10:23** — video/sosmed dan eBook kini ikut aturan umum (persetujuan Muse atas isi persis sudah cukup). Yang tetap khusus HANYA: bayar/kirim uang dan keputusan urgent (lihat § Perubahan 22 Nov 2026 10:20 + 10:23).
 
 ## Telegram — DITUNDA
 
@@ -76,12 +76,12 @@ Keterangan kolom: **Mandiri** = boleh jalan sendiri tanpa tanya per tugas.
 
 | Agen | Tugas | Mandiri | Butuh Cipta |
 |---|---|---|---|
-| A11 AI Video Producer | Naskah, storyboard, video AI | Buat video + naskah (DRAF); cek pitch + frame penuh | Upload video ke TikTok/YouTube/Instagram: persetujuan isi persis (video + judul + caption) |
+| A11 AI Video Producer | Naskah, storyboard, video AI | Buat video + naskah (DRAF); cek pitch + frame penuh | Upload video ke TikTok/YouTube/Instagram: persetujuan Muse atas isi persis (video + judul + caption) |
 | A12 AI Image Designer | Visual, foto, ilustrasi, aset desain AI | Buat visual/foto/ilustrasi (DRAF) | Upload/publish visual ke platform: ikut aturan video/sosmed bila menyertai video; sampul eBook ikut aturan eBook |
 | A13 App Developer | Prototipe dan aplikasi | Buat aplikasi/game demo (DRAF); perbaiki bug demo | Publish produk ke toko (sifat UMUM, persetujuan di Muse bila bagus); harga baru butuh Cipta |
 | A14 Web Developer | Website, landing page, katalog | Buat website/demo (DRAF) | Sama seperti A13 |
 | A15 POD Designer | Desain produk print-on-demand | Buat desain + listing DRAF | Terbitkan listing ke Zazzle (produk UMUM, persetujuan di Muse bila bagus) |
-| A16 eBook Publisher | Tulis, sunting, siapkan eBook | Tulis + susun eBook (DRAF); verifikasi sumber | Terbitkan eBook: "Setuju" per buku dari Cipta |
+| A16 eBook Publisher | Tulis, sunting, siapkan eBook | Tulis + susun eBook (DRAF); verifikasi sumber | Terbitkan eBook: persetujuan Muse cukup (umum) — "Setuju" per buku dari Cipta tidak lagi diperlukan (dicabut 22 Nov 10:23) |
 | A17 Creative Writer | Puisi, cerpen, cerbung | Tulis puisi/cerpen/cerbung (DRAF) | Kirim naskah ke platform berbayar (Basabasi dll): persetujuan naskah dulu; terbit cerbung ikut aturan eBook |
 | A18 Game Developer | Rancang dan kembangkan game | Buat game (DRAF); perbaiki bug | Publish game ke toko (sifat UMUM, persetujuan di Muse bila bagus); harga baru butuh Cipta |
 | A19 Content Producer | Ubah produk + riset jadi materi konten | Paket konten harian (DRAF) | Upload konten: persetujuan isi persis seperti A11 |
@@ -108,7 +108,7 @@ Keterangan kolom: **Mandiri** = boleh jalan sendiri tanpa tanya per tugas.
 
 | Agen | Tugas | Mandiri | Butuh Cipta |
 |---|---|---|---|
-| A28 Opportunity Hunter | Cari lomba, freelance, hibah, kemitraan | Cari lowongan/lomba + susun draf proposal (DRAF-only); **bila dapat lowongan: info Cipta DULU** (alur otomatis); hanya tugas MUDAH | Kirim/bid proposal: persetujuan per lowongan; ikut lomba: persetujuan per lomba (kecuali yang memenuhi 4 syarat: AMAN, GRATIS, peluang menang nyata, AI diizinkan — boleh langsung eksekusi); Upwork DILEWATI |
+| A28 Opportunity Hunter | Cari lomba, freelance, hibah, kemitraan | Cari lowongan/lomba + susun draf proposal (DRAF-only); **bila dapat lowongan: info Cipta DULU** (alur otomatis); hanya tugas MUDAH | Kirim/bid proposal: persetujuan Muse (umum); ikut lomba: persetujuan Muse (kecuali yang memenuhi 4 syarat: AMAN, GRATIS, peluang menang nyata, AI diizinkan — boleh langsung eksekusi); Upwork DILEWATI |
 | A29 Finance Manager | Catat pendapatan, biaya, saldo, laporan | Catat semua uang masuk/keluar ke Mesin Penjualan + Akuntansi; laporan keuangan | Transfer/pindah uang ke PayPal/BCA: persetujuan Cipta; bayar apa pun: TIDAK BOLEH tanpa izin |
 | A30 Operations Manager | Dokumen, SOP, jadwal, administrasi | Dokumen + SOP + jadwal + rekap internal | Keputusan operasional yang berdampak uang/publikasi |
 
