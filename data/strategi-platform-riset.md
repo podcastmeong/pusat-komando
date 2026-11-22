@@ -330,6 +330,12 @@ Metode kerja strategi ini: **amati** penjual sukses di tiap platform, **tiru** c
 | TikTok | Krebs: volume 10–20 video/hari + afiliasi dulu | Demo produk harian | Demo video promo & POD Oyen/Momo setiap hari |
 | Instagram | Lucky: 500 follower, 90% konversi — spesifik, bukan besar | Satu produk, banyak pintu masuk | Satu penawaran eBook/aplikasi lewat Reels, Story, Live, DM |
 
+### Keputusan harga 22 Nov 2026 13:15–13:22 (masuk Komando atas perintah Cipta)
+
+- Demo web dan jasa web DIPISAH — demo web **$29 / $49 / $79**, jasa web **$99 / $299 / $599**, aplikasi **$29 / $59 / $99** (semua sesuai harga pasar; nama dan angka tingkat tidak pernah ditulis).
+- Website punya 2 muka: customer dan admin.
+- Hak pembeli disepakati (lihat `data/target-dan-strategi.md` § Keputusan harga & hak pembeli). Refund DILEWATI. Lisensi masih usulan (menunggu keputusan Cipta).
+
 ### Prioritas eksekusi (dari riset)
 
 1. **Fiverr dulu — jasa AI + video promo.** Layanan AI tumbuh tercepat (+18.347% YoY); Gig 1 video promo sudah aktif. Tambah gig: setup AI agent/chatbot ($150–$600), prompt engineering ($50–$300). SEO gig + Buyer Requests untuk order pertama.

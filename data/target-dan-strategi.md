@@ -27,6 +27,18 @@ Ditulis ke komando 22 Nov 2026 08:13 WIB atas perintah Cipta.
 11. **70% jam kerja tim untuk pemasaran, 30% untuk produksi.** Produk baru hanya bila ada permintaan terbukti.
 12. **Telegram DITUNDA** (perintah Cipta 19:54) — tidak ada di rencana ini.
 
+## Keputusan harga & hak pembeli (22 Nov 2026 13:15–13:22, Cipta)
+
+- **Demo web dan jasa web DIPISAH** — dua produk berbeda, harga masing-masing sendiri, sesuai harga pasar.
+  - Demo web (website jadi, dijual apa adanya): **$29 / $49 / $79** — pasar template HTML dasar $9–$29, standar $29–$59, premium $59–$99 (ThemeForest terlaris $59–$89).
+  - Jasa web (custom sesuai pesanan): **$99 / $299 / $599** — pasar Fiverr Pro: landing page $150–$300, situs 5–7 halaman $400–$950, ~10 halaman $1.000–$2.500.
+  - Aplikasi: **$29 / $59 / $99** (tetap). Harga mengikuti tingkat produk masing-masing; **nama dan angka tingkat TIDAK PERNAH ditulis di mana pun** (toko, catatan, Komando).
+- **Website punya 2 muka: customer dan admin.** Setiap website punya tampilan customer dan tampilan admin (dashboard admin/pengguna).
+- **Hak pembeli (disepakati):** saat lihat demo — lihat tampilan, coba fitur demo, cek di HP/tablet/komputer, info lengkap produk. Setelah beli — terima produk sesuai pesanan, fitur sesuai deskripsi, akses/akun, panduan instalasi, dokumentasi, update, dukungan, bukti pembelian (invoice + riwayat), komplain. Garansi perbaikan bug 30–90 hari (aplikasi), 30–60 hari (website). Beli aplikasi/website TIDAK otomatis berarti punya hak cipta, source code, atau hak jual ulang — tergantung lisensi. Batasan demo: tidak boleh klaim milik, salin source code, ubah konfigurasi, transaksi nyata.
+- **Yang didapat pembeli aplikasi:** dashboard, menu login, pengaturan nama toko, warna, logo, dan pilih pengguna.
+- **Refund DILEWATI (22 Nov 13:22)** — kebijakan refund tidak dibahas/ditetapkan.
+- **Lisensi (usulan, menunggu keputusan Cipta):** eBook = Pribadi; demo web = Komersial 1 situs; aplikasi = 1 perangkat; jasa web = website jadi milik pembeli untuk dipakai (bukan dijual ulang); Reseller TIDAK ditawarkan. Riset: `~/workspace/research_notes/platform-kdp-printful/kebijakan-refund-dan-lisensi.md`.
+
 ## Rencana mingguan 22 Nov – 19 Des 2026
 
 - **Minggu 1 (22–28 Nov) — "Pilih niche + kurasi + buka toko":** 1 niche + tangga harga; toko Etsy LIVE + Gumroad LIVE; lead magnet + 5 email sambutan; NEXTALE 20 episode; Basabasi terkirim; uang masuk pertama (target ≥Rp500.000).

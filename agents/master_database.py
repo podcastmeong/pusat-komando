@@ -199,7 +199,7 @@ SEED_TASKS = [
     ("TASK-0005", "PROJECT-002", "A32", "Pendukung lintas divisi",
      "Hapus harga paket aplikasi di toko, ganti harga per aplikasi", "HIGH", "BACKLOG",
      "2026-11-22", None, None, None, 0, None,
-     "Edit lewat artifact toko-aplikasi, lalu export + push + verifikasi live."),
+     "Edit lewat artifact toko-aplikasi, lalu export + push + verifikasi live. Keputusan harga 22 Nov 13:15-13:22: demo web $29/$49/$79 dan jasa web $99/$299/$599 DIPISAH (bukan satu harga); website punya 2 muka (customer + admin); nama/angka tingkat tidak pernah ditulis."),
     ("TASK-0006", "PROJECT-002", "A38", "Pendukung lintas divisi",
      "Verifikasi live demo Faktur & Invoice (harga lama harus hilang)", "MEDIUM", "APPROVED",
      "2026-11-22", None, None, None, 0, None,
