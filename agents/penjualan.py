@@ -8,7 +8,7 @@ Dibangun di atas CRM (agents/crm.py) dan A25 Sales Manager — modul ini
 TIDAK menggantikan CRM, hanya mencatat hasil penjualannya.
 
 KEJUJURAN WAJIB — BACA DULU:
-- Modul ini PASIF: dijalankan Muse, BUKAN layanan otonom 24 jam.
+- Modul ini PASIF: dijalankan Muse, kerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim; bukan layanan otonom mandiri.
 - Modul ini TIDAK PUNYA fungsi kirim / bayar / publikasi / submit /
   upload / hapus / transfer apa pun, sengaja. Modul ini hanya
   MENCATAT transaksi yang SUDAH terjadi (uang masuk yang sudah

@@ -50,7 +50,7 @@
 # - Dilarang mengarang data pasar, angka, atau janji. Bila data kurang,
 #   tulis "belum cukup data" / "—".
 # - Mode Hybrid + anggaran Rp0. Mesin hanya jalan saat dipicu (tombol
-#   "Jalankan" di Dashboard / CLI) — BUKAN layanan otonom 24 jam.
+#   "Jalankan" di Dashboard / CLI) — kerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim; bukan layanan otonom mandiri.
 # ======================================================================
 import importlib
 import inspect

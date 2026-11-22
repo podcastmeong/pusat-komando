@@ -9,7 +9,7 @@ yang terlibat, dan hasil like/view/follow per kampanye per
 platform + laporan kampanye.
 
 KEJUJURAN WAJIB — BACA DULU:
-- Modul ini PASIF: dijalankan Muse, BUKAN layanan otonom 24 jam.
+- Modul ini PASIF: dijalankan Muse, kerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim; bukan layanan otonom mandiri.
 - Modul ini TIDAK PUNYA fungsi kirim / bayar / publikasi / submit /
   upload / hapus apa pun, sengaja. Modul ini hanya MENCATAT
   rencana kampanye (DRAF) dan hasil yang SUDAH terjadi. Jadwal di

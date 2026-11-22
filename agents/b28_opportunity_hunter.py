@@ -42,7 +42,7 @@ SKILL BARU 21 Nov 2026 — lanjutan (tinjauan peninjau skill):
   jual kita dan bukan janji penghasilan.
 
 KEJUJURAN WAJIB — BACA DULU:
-- Agent ini PASIF: dijalankan Muse, BUKAN layanan otonom 24 jam.
+- Agent ini PASIF: dijalankan Muse, kerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim; bukan layanan otonom mandiri.
   A01 CEO = Muse sebagai koordinator (bukan agent yang berjalan sendiri).
 - Semua output adalah DRAF untuk persetujuan Cipta. Modul ini TIDAK PUNYA
   fungsi kirim / bayar / publikasi / submit apa pun, sengaja.
@@ -350,7 +350,7 @@ def ringkasan():
     """Ringkasan status agent."""
     d = info()
     d["mode"] = mode_ai()
-    d["catatan"] = ("Agent pasif — dijalankan Muse, bukan layanan otonom 24 jam. "
+    d["catatan"] = ("Agent pasif — dijalankan Muse, kerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim; bukan layanan otonom mandiri. "
                     "Semua output DRAF untuk persetujuan Cipta.")
     return d
 

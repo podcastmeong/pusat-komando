@@ -767,7 +767,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Tetapkan sasaran, pilih satu prioritas utama, putuskan eskalasi",
-        "target_harian": "1 brief harian; maksimal 3 prioritas"
+        "target_harian": "1 brief harian; maksimal 3 prioritas",
+        "skills": [
+          "data/skills/kepemimpinan-koordinasi/SKILL.md"
+        ]
       },
       {
         "code": "A02",
@@ -793,7 +796,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Cek kapasitas, jadwal, dependensi dan hambatan",
-        "target_harian": "100% tugas punya PIC dan tenggat"
+        "target_harian": "100% tugas punya PIC dan tenggat",
+        "skills": [
+          "data/skills/kepemimpinan-koordinasi/SKILL.md"
+        ]
       },
       {
         "code": "A03",
@@ -822,7 +828,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Bagi tugas, perbarui status, kumpulkan laporan",
-        "target_harian": "Semua tugas berstatus"
+        "target_harian": "Semua tugas berstatus",
+        "skills": [
+          "data/skills/kepemimpinan-koordinasi/SKILL.md"
+        ]
       },
       {
         "code": "A04",
@@ -842,7 +851,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Periksa fakta, ejaan, hak cipta, tautan, klaim dan konsistensi",
-        "target_harian": "100% output penting diperiksa"
+        "target_harian": "100% output penting diperiksa",
+        "skills": [
+          "data/skills/kepemimpinan-koordinasi/SKILL.md"
+        ]
       },
       {
         "code": "A05",
@@ -870,7 +882,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Hitung performa konten, biaya, pemasukan, risiko",
-        "target_harian": "1 ringkasan harian"
+        "target_harian": "1 ringkasan harian",
+        "skills": [
+          "data/skills/kepemimpinan-koordinasi/SKILL.md"
+        ]
       },
       {
         "code": "A06",
@@ -896,7 +911,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Cari masalah pelanggan dan peluang pasar",
-        "target_harian": "5 ide; 1 rekomendasi"
+        "target_harian": "5 ide; 1 rekomendasi",
+        "skills": [
+          "data/skills/riset-pasar/SKILL.md"
+        ]
       },
       {
         "code": "A07",
@@ -922,7 +940,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Pantau tren dan kata kunci",
-        "target_harian": "5 tren dengan bukti/sumber"
+        "target_harian": "5 tren dengan bukti/sumber",
+        "skills": [
+          "data/skills/riset-pasar/SKILL.md"
+        ]
       },
       {
         "code": "A08",
@@ -948,7 +969,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Ubah masalah tervalidasi menjadi konsep",
-        "target_harian": "1 brief produk/konten"
+        "target_harian": "1 brief produk/konten",
+        "skills": [
+          "data/skills/riset-pasar/SKILL.md"
+        ]
       },
       {
         "code": "A09",
@@ -975,7 +999,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Bandingkan pesaing, harga, penawaran dan celah",
-        "target_harian": "3 pesaing/penawaran dibandingkan"
+        "target_harian": "3 pesaing/penawaran dibandingkan",
+        "skills": [
+          "data/skills/riset-pasar/SKILL.md"
+        ]
       },
       {
         "code": "A10",
@@ -1001,7 +1028,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Nilai permintaan, manfaat, kelayakan dan risiko",
-        "target_harian": "1 ide diberi skor dan keputusan"
+        "target_harian": "1 ide diberi skor dan keputusan",
+        "skills": [
+          "data/skills/riset-pasar/SKILL.md"
+        ]
       },
       {
         "code": "A11",
@@ -1029,6 +1059,7 @@
         "tugas_harian": "Naskah, storyboard, prompt, video pendek | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 video utama atau storyboard siap produksi",
         "skills": [
+          "data/skills/produksi-video/SKILL.md",
           "data/skills/eksekusi-marketplace/SKILL.md"
         ]
       },
@@ -1061,6 +1092,7 @@
         "tugas_harian": "Buat visual utama dan variasinya | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "3–5 visual siap QC",
         "skills": [
+          "data/skills/desain-gambar/SKILL.md",
           "data/skills/eksekusi-marketplace/SKILL.md"
         ]
       },
@@ -1092,6 +1124,7 @@
         "tugas_harian": "Kerjakan backlog aplikasi/tool | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 tugas kecil; rilis mingguan",
         "skills": [
+          "data/skills/pengembangan-aplikasi/SKILL.md",
           "data/skills/eksekusi-marketplace/SKILL.md"
         ]
       },
@@ -1123,6 +1156,7 @@
         "tugas_harian": "Perbaiki landing page/katalog/SEO teknis | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 perbaikan; rilis mingguan",
         "skills": [
+          "data/skills/pengembangan-website/SKILL.md",
           "data/skills/eksekusi-marketplace/SKILL.md"
         ]
       },
@@ -1153,6 +1187,7 @@
         "tugas_harian": "Buat desain print-on-demand | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "2–3 desain konsep",
         "skills": [
+          "data/skills/desain-pod/SKILL.md",
           "data/skills/eksekusi-marketplace/SKILL.md"
         ]
       },
@@ -1185,6 +1220,7 @@
         "tugas_harian": "Susun/edit naskah eBook | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 bagian/bab draf",
         "skills": [
+          "data/skills/penerbitan-ebook/SKILL.md",
           "data/skills/eksekusi-marketplace/SKILL.md"
         ]
       },
@@ -1216,6 +1252,7 @@
         "tugas_harian": "Tulis cerita, puisi atau naskah | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 karya/bagian draf",
         "skills": [
+          "data/skills/penulisan-kreatif/SKILL.md",
           "data/skills/eksekusi-marketplace/SKILL.md"
         ]
       },
@@ -1247,6 +1284,7 @@
         "tugas_harian": "Bangun fitur game sesuai backlog | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 fitur kecil; rilis mingguan",
         "skills": [
+          "data/skills/pengembangan-game/SKILL.md",
           "data/skills/eksekusi-marketplace/SKILL.md"
         ]
       },
@@ -1278,6 +1316,7 @@
         "tugas_harian": "Pecah satu ide menjadi format konten | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
         "target_harian": "1 ide → 7 format draf",
         "skills": [
+          "data/skills/produksi-konten/SKILL.md",
           "data/skills/eksekusi-marketplace/SKILL.md"
         ]
       },
@@ -1312,7 +1351,10 @@
           ]
         },
         "tugas_harian": "Siapkan caption, visual, jadwal dan interaksi",
-        "target_harian": "1 draf konten; cek inbox"
+        "target_harian": "1 draf konten; cek inbox",
+        "skills": [
+          "data/skills/pemasaran-organik/SKILL.md"
+        ]
       },
       {
         "code": "A21",
@@ -1344,7 +1386,10 @@
           ]
         },
         "tugas_harian": "Siapkan video, hook, caption dan analitik",
-        "target_harian": "1 draf video; cek performa"
+        "target_harian": "1 draf video; cek performa",
+        "skills": [
+          "data/skills/pemasaran-organik/SKILL.md"
+        ]
       },
       {
         "code": "A22",
@@ -1376,7 +1421,10 @@
           ]
         },
         "tugas_harian": "Siapkan Shorts/video, judul, deskripsi",
-        "target_harian": "1 draf Shorts atau 1 paket video"
+        "target_harian": "1 draf Shorts atau 1 paket video",
+        "skills": [
+          "data/skills/pemasaran-organik/SKILL.md"
+        ]
       },
       {
         "code": "A23",
@@ -1407,7 +1455,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Buat percakapan, utas dan respons",
-        "target_harian": "1–2 draf posting; cek balasan"
+        "target_harian": "1–2 draf posting; cek balasan",
+        "skills": [
+          "data/skills/pemasaran-organik/SKILL.md"
+        ]
       },
       {
         "code": "A24",
@@ -1436,7 +1487,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Riset keyword, optimasi dan distribusi organik",
-        "target_harian": "1 optimasi; 3 keyword"
+        "target_harian": "1 optimasi; 3 keyword",
+        "skills": [
+          "data/skills/pemasaran-organik/SKILL.md"
+        ]
       },
       {
         "code": "A25",
@@ -1471,7 +1525,10 @@
           ]
         },
         "tugas_harian": "Kelola lead, penawaran, follow-up dan closing; fokus kebutuhan customer — bila customer bercerita, dengarkan masalahnya dan cari solusinya",
-        "target_harian": "Harian: 20 toko dihubungi + target 1 balasan; mingguan: 1 closing; bulanan (Des 2026): Rp10.000.000"
+        "target_harian": "Harian: 20 toko dihubungi + target 1 balasan; mingguan: 1 closing; bulanan (Des 2026): Rp10.000.000",
+        "skills": [
+          "data/skills/penjualan-cs/SKILL.md"
+        ]
       },
       {
         "code": "A26",
@@ -1500,7 +1557,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Kelompokkan dan siapkan respons pertanyaan/keluhan",
-        "target_harian": "Inbox dipantau; respons draf <1 jam selama jam layanan"
+        "target_harian": "Inbox dipantau; respons draf <1 jam selama jam layanan",
+        "skills": [
+          "data/skills/penjualan-cs/SKILL.md"
+        ]
       },
       {
         "code": "A27",
@@ -1525,7 +1585,10 @@
           ]
         },
         "tugas_harian": "Sortir email, ringkas, siapkan balasan",
-        "target_harian": "2–3 pemeriksaan; semua tindak lanjut tercatat"
+        "target_harian": "2–3 pemeriksaan; semua tindak lanjut tercatat",
+        "skills": [
+          "data/skills/penjualan-cs/SKILL.md"
+        ]
       },
       {
         "code": "A28",
@@ -1550,7 +1613,10 @@
           ]
         },
         "tugas_harian": "Cari lomba, freelance, hibah, kemitraan",
-        "target_harian": "Hingga 5 draf proposal berkualitas"
+        "target_harian": "Hingga 5 draf proposal berkualitas",
+        "skills": [
+          "data/skills/peluang-keuangan/SKILL.md"
+        ]
       },
       {
         "code": "A29",
@@ -1585,7 +1651,10 @@
           ]
         },
         "tugas_harian": "Catat pemasukan, biaya, saldo dan status pembayaran",
-        "target_harian": "Rekonsiliasi harian; tidak ada transaksi tanpa bukti"
+        "target_harian": "Rekonsiliasi harian; tidak ada transaksi tanpa bukti",
+        "skills": [
+          "data/skills/peluang-keuangan/SKILL.md"
+        ]
       },
       {
         "code": "A30",
@@ -1608,7 +1677,10 @@
           "belum_terhubung": []
         },
         "tugas_harian": "Rapikan SOP, dokumen, jadwal dan arsip",
-        "target_harian": "Dokumen dan status tugas diperbarui"
+        "target_harian": "Dokumen dan status tugas diperbarui",
+        "skills": [
+          "data/skills/peluang-keuangan/SKILL.md"
+        ]
       }
     ]
   },
@@ -1627,7 +1699,9 @@
         "kode_baru": "A31",
         "nama_baru": "Publish",
         "tugas": "Upload SEMUA PRODUK ke semua platform penjualan (Payhip, Gumroad, KaryaKarsa, KBM, Etsy, dll) — hanya produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis.",
-        "skills": ["data/skills/eksekusi-marketplace/SKILL.md"]
+        "skills": [
+          "data/skills/eksekusi-marketplace/SKILL.md"
+        ]
       },
       {
         "kode": "2",
@@ -1637,7 +1711,10 @@
         "status": "Aktif — diganti nama jadi A32 Build",
         "kode_baru": "A32",
         "nama_baru": "Build",
-        "tugas": "Kerja 24 jam, fokus membangun (build) — membangun aplikasi, website, dan produk."
+        "tugas": "Kerja 24 jam, fokus membangun (build) — membangun aplikasi, website, dan produk.",
+        "skills": [
+          "data/skills/membangun-produk/SKILL.md"
+        ]
       },
       {
         "kode": "3",
@@ -1647,7 +1724,10 @@
         "status": "Aktif — diganti nama jadi A33 Pertumbuhan",
         "kode_baru": "A33",
         "nama_baru": "Pertumbuhan",
-        "tugas": "Kerja 24 jam, fokus pertumbuhan — riset konten, naikkan follower/subscribe/view/like, atur strategi supaya cepat monetisasi."
+        "tugas": "Kerja 24 jam, fokus pertumbuhan — riset konten, naikkan follower/subscribe/view/like, atur strategi supaya cepat monetisasi.",
+        "skills": [
+          "data/skills/pertumbuhan-organik/SKILL.md"
+        ]
       },
       {
         "kode": "4",
@@ -1657,7 +1737,10 @@
         "status": "Aktif — diganti nama jadi A34 Penerjemah",
         "kode_baru": "A34",
         "nama_baru": "Penerjemah",
-        "tugas": "Penerjemah — pekerjaan terjemahan (saat ini DITUNDA). Kerja 24 jam nonstop."
+        "tugas": "Penerjemah — pekerjaan terjemahan (saat ini DITUNDA). Kerja 24 jam nonstop.",
+        "skills": [
+          "data/skills/terjemahan/SKILL.md"
+        ]
       },
       {
         "kode": "5",
@@ -1667,7 +1750,10 @@
         "status": "Aktif — diganti nama jadi A35 Ngetik",
         "kode_baru": "A35",
         "nama_baru": "Ngetik",
-        "tugas": "Ngetik — mengetik draf, naskah, dan dokumen. Kerja 24 jam nonstop."
+        "tugas": "Ngetik — mengetik draf, naskah, dan dokumen. Kerja 24 jam nonstop.",
+        "skills": [
+          "data/skills/mengetik/SKILL.md"
+        ]
       },
       {
         "kode": "6",
@@ -1677,7 +1763,10 @@
         "status": "Aktif — diganti nama jadi A36 Copywriter",
         "kode_baru": "A36",
         "nama_baru": "Copywriter",
-        "tugas": "Copywriter — menulis teks pemasaran dan penjualan. Kerja 24 jam nonstop."
+        "tugas": "Copywriter — menulis teks pemasaran dan penjualan. Kerja 24 jam nonstop.",
+        "skills": [
+          "data/skills/copywriting/SKILL.md"
+        ]
       },
       {
         "kode": "7",
@@ -1760,7 +1849,7 @@
         "status": "Pasif — non job"
       }
     ],
-    "catatan": "A31–A33 belum punya modul; A34 (terjemahan) DITUNDA perintah Cipta; A35/A36 punya modul (b35_ngetik.py, b36_copywriter.py). Koreksi 21 Nov 14:23: yang dihitung agent hanya 30 Bintang (A01–A30); A31–A36 adalah kode peran, bukan hitungan agent. KOREKSI 22 Nov 08:21 (Cipta: kembaliin semua jobnya): A31–A33 kembali ke job asli — A31 Asisten/Publish, A32 Penjualan/Build, A33 Pertumbuhan (riset konten + naikkan follower/subs/view/like + strategi monetisasi). Catatan 08:18 soal A31/A32 handle mengetik & copywriter SALAH dan dicabut; mengetik tetap A35, copywriter tetap A36. A31 Publish = upload/publish (menerbitkan konten/produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis). A31 = upload ke SEMUA platform penjualan (bukan hanya Payhip). SEMUA agent.ai kerja 24 jam nonstop (perintah Cipta 22 Nov 08:27). TIM PRODUKSI (A11–A19) memegang eksekusi 20 marketplace (WAJIB, perintah Cipta 22 Nov 08:57); bekal skill: data/skills/eksekusi-marketplace/SKILL.md + referensi-20-marketplace.md. GANTI NAMA 7–10 → A37–A40 (perintah Cipta 22 Nov 09:16): 7 Keuangan → A37 Marketplace (eksekusi 20 marketplace), 8 Terjemah Inggris → A38 QA (verifikasi live sebelum lapor selesai), 9 Game & Aplikasi → A39 Musik (lagu 5 + musik 5/hari), 10 Riset Produk → A40 Prompt & Skill (kemas prompt/skill untuk Swarms/Agensi.io/PromptBase). Bekal skill: data/skills/eksekusi-marketplace/SKILL.md (A37), data/skills/qa-verifikasi/SKILL.md (A38), data/skills/produksi-musik/SKILL.md (A39), data/skills/paket-prompt-skill/SKILL.md (A40). Agent 11–14 tetap pasif non-job."
+    "catatan": "A31–A33 belum punya modul; A34 (terjemahan) DITUNDA perintah Cipta; A35/A36 punya modul (b35_ngetik.py, b36_copywriter.py). Koreksi 21 Nov 14:23: yang dihitung agent hanya 30 Bintang (A01–A30); A31–A36 adalah kode peran, bukan hitungan agent. KOREKSI 22 Nov 08:21 (Cipta: kembaliin semua jobnya): A31–A33 kembali ke job asli — A31 Asisten/Publish, A32 Penjualan/Build, A33 Pertumbuhan (riset konten + naikkan follower/subs/view/like + strategi monetisasi). Catatan 08:18 soal A31/A32 handle mengetik & copywriter SALAH dan dicabut; mengetik tetap A35, copywriter tetap A36. A31 Publish = upload/publish (menerbitkan konten/produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis). A31 = upload ke SEMUA platform penjualan (bukan hanya Payhip). SEMUA agent.ai kerja 24 jam nonstop (perintah Cipta 22 Nov 08:27). TIM PRODUKSI (A11–A19) memegang eksekusi 20 marketplace (WAJIB, perintah Cipta 22 Nov 08:57); bekal skill: data/skills/eksekusi-marketplace/SKILL.md + referensi-20-marketplace.md. GANTI NAMA 7–10 → A37–A40 (perintah Cipta 22 Nov 09:16): 7 Keuangan → A37 Marketplace (eksekusi 20 marketplace), 8 Terjemah Inggris → A38 QA (verifikasi live sebelum lapor selesai), 9 Game & Aplikasi → A39 Musik (lagu 5 + musik 5/hari), 10 Riset Produk → A40 Prompt & Skill (kemas prompt/skill untuk Swarms/Agensi.io/PromptBase). Bekal skill: data/skills/eksekusi-marketplace/SKILL.md (A37), data/skills/qa-verifikasi/SKILL.md (A38), data/skills/produksi-musik/SKILL.md (A39), data/skills/paket-prompt-skill/SKILL.md (A40). Agent 11–14 tetap pasif non-job. PERATURAN SAMA UNTUK SEMUA (perintah Cipta 22 Nov 09:22): setiap agent (A01–A40) punya tugas jelas + skill (SKILL.md di data/skills/) + kerja 24 jam nonstop lewat pemicu jadwal (cron); frasa \"bukan layanan otonom 24 jam\" dihapus dari semua modul + dokumen komando."
   },
   "sop_harian": {
     "sumber": "Sistem_Operasional_Harian_30_Agent_Bintang.docx (diunggah Cipta, 21 Nov 2026)",

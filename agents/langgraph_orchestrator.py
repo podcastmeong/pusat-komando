@@ -10,7 +10,7 @@
 # via helper secure storage) — TIDAK ADA API berbayar baru.
 #
 # SIFAT: modul PASIF seperti agen lain — hanya jalan bila dipanggil
-# (oleh Muse / cron / mesin eksekusi). TIDAK ADA layanan otonom 24 jam.
+# (oleh Muse / cron / mesin eksekusi). TIDAK ADA layanan otonom mandiri — kerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim; bukan layanan otonom mandiri.
 #
 # PAGAR PENGAMAN (TIDAK BOLEH DILANGGAR):
 #   - Semua aksi HANYA lewat Tool Registry (tool_registry.jalankan_alat).

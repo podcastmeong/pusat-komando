@@ -44,7 +44,7 @@ Instagram 2 akun (podcast_meong, @meongcast), TikTok 2 (@podcast_kucing, @meongc
 
 ## Yang BELUM sesuai spesifikasi (jujur)
 
-1. **Tidak berjalan otonom 24 jam.** 14 agen bersifat pasif — dijalankan Muse lewat perintah/jadwal. Framework CrewAI/LangGraph/AutoGen sudah DITOLAK. Yang 24 jam baru rencana.
+1. **Bukan layanan otonom mandiri.** 14 agen bersifat pasif — dijalankan Muse lewat perintah/jadwal (pemicu cron), kerja 24 jam nonstop (keputusan Cipta 22 Nov 2026). Framework CrewAI/LangGraph/AutoGen sudah DITOLAK.
 2. **Integrasi medsos belum penuh.** WA Web rusak (sejak 19 Nov), Instagram Messages dan Threads Messages belum terhubung, TikTok @meongcast butuh login Cipta sendiri.
 3. **Database masih JSON, bukan SQL/Google Sheets.** File di `data/` (leads, keuangan, lomba, worklist, produksi_game). Sheets/SQL belum dipakai.
 4. **n8n ada tapi bukan mesin produksi.** n8n 2.48.5 lokal + Activepieces terverifikasi; alur kerja harian jalan lewat cron + Muse.

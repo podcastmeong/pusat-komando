@@ -8,7 +8,7 @@ JSON, info(), contoh()) — dan seperti penjualan.py, modul ini TIDAK
 mengimpor memori_bersama.
 
 KEJUJURAN WAJIB — BACA DULU:
-- Modul ini PASIF: dijalankan Muse, BUKAN layanan otonom 24 jam.
+- Modul ini PASIF: dijalankan Muse, kerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim; bukan layanan otonom mandiri.
 - Modul ini TIDAK PUNYA fungsi kirim / bayar / publikasi / submit /
   upload / hapus / transfer apa pun, sengaja. Modul ini hanya
   MENCATAT pemasukan dan pengeluaran yang SUDAH terjadi (uang masuk/

@@ -9,7 +9,7 @@ A26 Customer Service, di bawah A02). Satu sumber kebenaran untuk:
 - jadwal follow-up (H+1/H+3/H+7, pola A25).
 
 KEJUJURAN WAJIB — BACA DULU:
-- Modul ini PASIF: dijalankan Muse, BUKAN layanan otonom 24 jam.
+- Modul ini PASIF: dijalankan Muse, kerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim; bukan layanan otonom mandiri.
 - Modul ini TIDAK PUNYA fungsi kirim / bayar / publikasi / submit / upload /
   hapus apa pun, sengaja. CRM hanya MENCATAT dan MENYIAPKAN DRAF.
   Penawaran dikirim oleh A25 (atau Cipta) HANYA setelah Cipta setuju isi

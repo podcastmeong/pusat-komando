@@ -1,7 +1,7 @@
 {
   "source": "Share ChatGPT #18 + #19 dan Share Gemini #1 — Bintang Command Center",
   "applied_date": "2026-11-21",
-  "note": "30 agent A01–A30 (Bintang) dipetakan ke 14 agen nyata + Muse + Pusat Komando. Agent bersifat PASIF — dijalankan Muse, bukan layanan otonom 24 jam. Semua output DRAF untuk persetujuan Cipta.",
+  "note": "30 agent A01–A30 (Bintang) dipetakan ke 14 agen nyata + Muse + Pusat Komando. Agent bersifat PASIF — dijalankan Muse lewat pemicu jadwal (cron), kerja 24 jam nonstop (keputusan Cipta 22 Nov 2026); bukan layanan otonom mandiri. Semua output DRAF untuk persetujuan Cipta.",
   "agents": [
     {
       "code": "A01",
