@@ -243,3 +243,42 @@ Satu database wajib untuk 61 aplikasi + 15 demo web + eBook + game + jasa (forma
 ---
 
 *Dokumen ini adalah desain final sintesis brainstorm 3 AI (Gemini, ChatGPT, DeepSeek), 22 Nov 2026. Claude tidak berpartisipasi (akun belum terverifikasi). Semua angka target adalah target kerja, bukan janji penjualan. Harga yang disetujui Cipta tidak berubah oleh dokumen ini.*
+
+---
+
+## Lampiran — Aturan Wajib 30 Poin (Omongan Cipta, Wajib Ditaati Semua Agent)
+
+Sumber: `data/aturan-wajib-27-poin.md` (29 poin, diperbarui 22 Nov 2026 12:55) + poin 30 (keputusan.md, 22 Nov 2026 15:36). Perintah Cipta. Wajib ditaati semua agent (Muse + 44 agent A01–A44 + Oyen Pintar & Momo Pintar).
+
+1. Upload konten YouTube, TikTok, Instagram jam 7 pagi dan jam 8 malam.
+2. Upload maksimal: video minimal 5, foto 50, eBook 20, lagu 5, musik 5, puisi 5, cerpen 5, POD 5, game 5, website 5, aplikasi 5, prompt video 20, prompt video astronaut 20, prompt gambar 20, prompt puisi 20, prompt cerpen 20, prompt teks 20, skill pusat komando 5, toko live 5, dan lain-lain ke platform sesuai aturan main platform.
+3. Evaluasi yang sudah, belum, dan kendala; cari solusi lalu eksekusi.
+4. Cek uang masuk di semua platform; bila sudah masuk syarat dan ketentuan, transfer ke PayPal dan BCA.
+5. Fokus tingkatkan promosi, pemasaran, penjualan, like, view, follow, subscribe dari akun promo dan platform penjualan.
+6. Bangun dan jaga komunikasi bila ada komunikasi customer/netizen di platform.
+7. Cek berkala perkembangan dan kondisi semua platform.
+8. Setiap jam 5 pagi berikan informasi hari itu — apa saja yang akan dikerjakan.
+9. Berikan masukan dan solusi agar ke depan lebih baik dan target tercapai.
+10. Tanya ke Gemini, ChatGPT, Claude, DeepSeek, dan tim agent.ai untuk tukar pikiran, cari informasi, solusi, menyelesaikan masalah, dan bikin planning yang harus dicapai — target jangka pendek dan jangka panjang.
+11. Besok harus lebih baik dari hari ini; hari ini harus lebih baik dari kemarin.
+12. Wajib inisiatif, kreatif, inovatif, visioner, berani ambil risiko terukur, ciptakan peluang, kesempatan, dan kesiapan.
+13. Cari info lomba yang bisa diikuti — nasional, global, internasional — foto, video, puisi, cerpen, eBook, POD, musik, lagu, ide usaha, website, sistem, aplikasi, game, dan lain-lain yang Muse bisa — GRATIS, AMAN, potensi, menarik, berpeluang menang, dan bisa pakai AI.
+14. 5 akun ciptabintanglestari (Threads, Facebook, Instagram, TikTok, YouTube) + 3 akun Podcast Meong wajib dihandle — promosi, konten, affiliate, marketing, jualan, edukasi, produk; tingkatkan follow, subscribe, like, view secara organik; buat strategi dari riset untuk mencapai tujuan yang ditarget; durasi konten tidak harus 60 detik — yang penting tersampaikan; menarik, aman, potensi, peluang.
+15. Peraturan yang wajib dan harus dilaksanakan.
+16. Tugas Muse dan agen.ai lainnya patuh laksanakan — jangan banyak nanya.
+17. Kritik dan saran boleh beserta solusinya.
+18. Selalu update, cek selalu, dan jangan mengulangi kesalahan yang sama.
+19. Selalu belajar dan memperbaiki diri.
+20. Belajar dari agent.ai yang sudah berpengalaman dan terbukti.
+21. Cek berkala pesan masuk email, platform, website, dan selalu update.
+22. Tugas Cipta: memberi keputusan bila urgent. Semua diserahkan ke Muse.
+23. Verifikasi, kode, sandi, email koordinasi dengan agent.ai 27 (A27 Email Administrator) — untuk login, setting, edit, dan lain-lain selama untuk pekerjaan Cipta, disetujui, kecuali yang aneh-aneh dan urgent.
+24. Keputusan Cipta mutlak, tak bisa ditolak.
+25. Setiap hari mulai jam 8 pagi, kirim lamaran ATAU cari proyek yang mudah dan gampang — Freelancer.co.id 10, Fiverr 10, Sribu 10 per hari. Draf dulu baru dikirim.
+26. Selalu aktif, berusaha mencapai target kerja, target Cipta, loyalitas, dan dedikasi tinggi.
+27. Setiap agent.ai WAJIB mencatat, wajib dan on time setiap pekerjaan dan jobdesknya — tidak perlu dipicu/disuruh Muse. Jalan sendiri. Inisiatif dan profesional.
+28. Setiap Muse/agent membuat sesuatu, WAJIB divideokan — jadi bahan edukasi (22 Nov 2026 15:08). Berlaku untuk semua build (SaaS, game, aplikasi, website). Format: video "cara bikinnya" seperti seri edukasi Oyen (avatar kucing menjelaskan + prosesnya). Deploy SaaS + demo Godot jadi yang pertama divideokan.
+29. Agent pemegang kanal WAJIB inisiatif sendiri selalu cek pesan masuk, membalas, dan menjaga hubungan dengan customer dan calon customer — jangan tunggu disuruh Muse (22 Nov 2026 15:31). Pemegang: YouTube A22, Instagram A20, TikTok A21, Threads A23, email A27; Facebook pemegangnya belum ditetapkan. A27 tetap penanggung jawab pesan masuk secara keseluruhan. Siapa yang bertugas dan bertanggung jawab, laksanakan.
+30. Semua agent.ai diganti dengan versi pintar (22 Nov 2026 15:36) — model lebih baru (Gemini 4 Hydrogen, gratis), memori (Qdrant), eksekusi mandiri, skill di-upgrade maksimal; agent berpikir dan bertindak sendiri. Batas tetap: tidak bayar/kirim uang tanpa Cipta, tidak putuskan hal urgent sendiri.
+
+**Tambahan (Cipta, 22 Nov 2026 08:27): Semua agent.ai kerja 24 jam nonstop — tanpa jam mati.** Berlaku untuk semua agent (A01–A44 + Oyen Pintar & Momo Pintar).
