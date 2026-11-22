@@ -1,163 +1,233 @@
 [
-  {
-    "waktu": "2026-11-21 04:12",
-    "kode_agent": "B01–B30",
-    "aksi": "30 modul dibuat",
-    "hasil": "30 modul b01–b30 ter-generate + terimpor; tes 23/23 lolos",
-    "detail": "generator ~/workspace/tmp/gen_b_agents.py"
-  },
-  {
-    "waktu": "2026-11-21 04:14",
-    "kode_agent": "A01–A30",
-    "aksi": "agents.json digabung",
-    "hasil": "key agent_30: 30 agent (0 escape unicode)",
-    "detail": "data/agents.json"
-  },
-  {
-    "waktu": "2026-11-21 04:16",
-    "kode_agent": "C · Dashboard",
-    "aksi": "dashboard dibuat",
-    "hasil": "agents/dashboard.py + activity_log.json dibuat",
-    "detail": "tab C menyusul"
-  },
-  {
-    "waktu": "2026-11-21 04:17",
-    "kode_agent": "A01",
-    "aksi": "buat draf: arahan_harian",
-    "hasil": "Arahan harian CEO — 2026-11-20",
-    "detail": ""
-  },
-  {
-    "waktu": "2026-11-21 04:18",
-    "kode_agent": "A01",
-    "aksi": "buat draf: arahan_harian",
-    "hasil": "Arahan harian CEO — 2026-11-20",
-    "detail": ""
-  },
-  {
-    "waktu": "2026-11-21 04:19",
-    "kode_agent": "Pusat Komando",
-    "aksi": "deploy Faable",
-    "hasil": "commit 6ce0f03 — 30 Agent + tab B + tab C live, Faable HTTP 200",
-    "detail": "37 file"
-  },
-  {
-    "waktu": "2026-11-21 04:54",
-    "kode_agent": "A12",
-    "aksi": "buat draf: brief_visual",
-    "hasil": "Brief visual: ilustrasi eBook — Nabi Yunus dan Ikan Paus",
-    "detail": ""
-  },
-  {
-    "waktu": "2026-11-21 04:54",
-    "kode_agent": "A12",
-    "aksi": "mesin eksekusi: Membuat visual, foto, ilustrasi dan aset desain AI",
-    "hasil": "Brief visual: ilustrasi eBook — Nabi Yunus dan Ikan Paus",
-    "detail": "mode=tugas; run ME-20261121045453-A12-001"
-  },
-  {
-    "waktu": "2026-11-21 04:54",
-    "kode_agent": "A25",
-    "aksi": "buat draf: draf_penawaran",
-    "hasil": "Draf penawaran: Balini Petshop",
-    "detail": ""
-  },
-  {
-    "waktu": "2026-11-21 04:54",
-    "kode_agent": "A25",
-    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
-    "hasil": "Draf penawaran: Balini Petshop",
-    "detail": "mode=tugas; run ME-20261121045454-A25-001"
-  },
-  {
-    "waktu": "2026-11-21 05:17",
-    "kode_agent": "A12",
-    "aksi": "persetujuan: disetujui",
-    "hasil": "ME-20261121045453-A12-001 — Brief visual: ilustrasi eBook — Nabi Yunus dan Ikan Paus",
-    "detail": "oleh Cipta"
-  },
-  {
-    "waktu": "2026-11-21 05:19",
-    "kode_agent": "A25",
-    "aksi": "buat draf: draf_penawaran",
-    "hasil": "Draf penawaran: Michelle Petshop",
-    "detail": ""
-  },
-  {
-    "waktu": "2026-11-21 05:19",
-    "kode_agent": "A25",
-    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
-    "hasil": "Draf penawaran: Michelle Petshop",
-    "detail": "mode=tugas; run ME-20261121051949-A25-001"
-  },
-  {
-    "waktu": "2026-11-21 05:19",
-    "kode_agent": "A25",
-    "aksi": "buat draf: draf_penawaran",
-    "hasil": "Draf penawaran: Gentoo Petshop",
-    "detail": ""
-  },
-  {
-    "waktu": "2026-11-21 05:19",
-    "kode_agent": "A25",
-    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
-    "hasil": "Draf penawaran: Gentoo Petshop",
-    "detail": "mode=tugas; run ME-20261121051949-A25-002"
-  },
-  {
-    "waktu": "2026-11-21 05:19",
-    "kode_agent": "A25",
-    "aksi": "buat draf: draf_penawaran",
-    "hasil": "Draf penawaran: Jangki Petshop Cilandak",
-    "detail": ""
-  },
-  {
-    "waktu": "2026-11-21 05:19",
-    "kode_agent": "A25",
-    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
-    "hasil": "Draf penawaran: Jangki Petshop Cilandak",
-    "detail": "mode=tugas; run ME-20261121051949-A25-003"
-  },
-  {
-    "waktu": "2026-11-21 05:19",
-    "kode_agent": "A25",
-    "aksi": "buat draf: draf_penawaran",
-    "hasil": "Draf penawaran: BB Petshop",
-    "detail": ""
-  },
-  {
-    "waktu": "2026-11-21 05:19",
-    "kode_agent": "A25",
-    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
-    "hasil": "Draf penawaran: BB Petshop",
-    "detail": "mode=tugas; run ME-20261121051949-A25-004"
-  },
-  {
-    "waktu": "2026-11-21 05:19",
-    "kode_agent": "A25",
-    "aksi": "buat draf: draf_penawaran",
-    "hasil": "Draf penawaran: Faunafella Care",
-    "detail": ""
-  },
-  {
-    "waktu": "2026-11-21 05:19",
-    "kode_agent": "A25",
-    "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
-    "hasil": "Draf penawaran: Faunafella Care",
-    "detail": "mode=tugas; run ME-20261121051949-A25-005"
-  },
-  {
-    "waktu": "2026-11-21 19:39",
-    "kode_agent": "A28",
-    "aksi": "mesin eksekusi: Mencari lomba, freelance, hibah dan kemitraan",
-    "hasil": "A28 Sribu 2026-11-21: login ya; profil 33% (Step 2 gig belum; Step 3 pembayaran belum; kurasi belum terkonfirmasi); lowo",
-    "detail": "mode=tugas; run ME-20261121193930-A28-001"
-  },
-  {
-    "waktu": "2026-11-21 19:45",
-    "kode_agent": "A28",
-    "aksi": "mesin eksekusi: Mencari lomba, freelance, hibah dan kemitraan",
-    "hasil": "A28 Sribu 2026-11-21: login ya; profil 33% (Step 2 gig belum; Step 3 pembayaran belum; kurasi belum terkonfirmasi); lowo",
-    "detail": "mode=tugas; run ME-20261121194502-A28-001"
-  }
+ {
+  "waktu": "2026-11-21 04:12",
+  "kode_agent": "B01–B30",
+  "aksi": "30 modul dibuat",
+  "hasil": "30 modul b01–b30 ter-generate + terimpor; tes 23/23 lolos",
+  "detail": "generator ~/workspace/tmp/gen_b_agents.py"
+ },
+ {
+  "waktu": "2026-11-21 04:14",
+  "kode_agent": "A01–A30",
+  "aksi": "agents.json digabung",
+  "hasil": "key agent_30: 30 agent (0 escape unicode)",
+  "detail": "data/agents.json"
+ },
+ {
+  "waktu": "2026-11-21 04:16",
+  "kode_agent": "C · Dashboard",
+  "aksi": "dashboard dibuat",
+  "hasil": "agents/dashboard.py + activity_log.json dibuat",
+  "detail": "tab C menyusul"
+ },
+ {
+  "waktu": "2026-11-21 04:17",
+  "kode_agent": "A01",
+  "aksi": "buat draf: arahan_harian",
+  "hasil": "Arahan harian CEO — 2026-11-20",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-21 04:18",
+  "kode_agent": "A01",
+  "aksi": "buat draf: arahan_harian",
+  "hasil": "Arahan harian CEO — 2026-11-20",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-21 04:19",
+  "kode_agent": "Pusat Komando",
+  "aksi": "deploy Faable",
+  "hasil": "commit 6ce0f03 — 30 Agent + tab B + tab C live, Faable HTTP 200",
+  "detail": "37 file"
+ },
+ {
+  "waktu": "2026-11-21 04:54",
+  "kode_agent": "A12",
+  "aksi": "buat draf: brief_visual",
+  "hasil": "Brief visual: ilustrasi eBook — Nabi Yunus dan Ikan Paus",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-21 04:54",
+  "kode_agent": "A12",
+  "aksi": "mesin eksekusi: Membuat visual, foto, ilustrasi dan aset desain AI",
+  "hasil": "Brief visual: ilustrasi eBook — Nabi Yunus dan Ikan Paus",
+  "detail": "mode=tugas; run ME-20261121045453-A12-001"
+ },
+ {
+  "waktu": "2026-11-21 04:54",
+  "kode_agent": "A25",
+  "aksi": "buat draf: draf_penawaran",
+  "hasil": "Draf penawaran: Balini Petshop",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-21 04:54",
+  "kode_agent": "A25",
+  "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+  "hasil": "Draf penawaran: Balini Petshop",
+  "detail": "mode=tugas; run ME-20261121045454-A25-001"
+ },
+ {
+  "waktu": "2026-11-21 05:17",
+  "kode_agent": "A12",
+  "aksi": "persetujuan: disetujui",
+  "hasil": "ME-20261121045453-A12-001 — Brief visual: ilustrasi eBook — Nabi Yunus dan Ikan Paus",
+  "detail": "oleh Cipta"
+ },
+ {
+  "waktu": "2026-11-21 05:19",
+  "kode_agent": "A25",
+  "aksi": "buat draf: draf_penawaran",
+  "hasil": "Draf penawaran: Michelle Petshop",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-21 05:19",
+  "kode_agent": "A25",
+  "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+  "hasil": "Draf penawaran: Michelle Petshop",
+  "detail": "mode=tugas; run ME-20261121051949-A25-001"
+ },
+ {
+  "waktu": "2026-11-21 05:19",
+  "kode_agent": "A25",
+  "aksi": "buat draf: draf_penawaran",
+  "hasil": "Draf penawaran: Gentoo Petshop",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-21 05:19",
+  "kode_agent": "A25",
+  "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+  "hasil": "Draf penawaran: Gentoo Petshop",
+  "detail": "mode=tugas; run ME-20261121051949-A25-002"
+ },
+ {
+  "waktu": "2026-11-21 05:19",
+  "kode_agent": "A25",
+  "aksi": "buat draf: draf_penawaran",
+  "hasil": "Draf penawaran: Jangki Petshop Cilandak",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-21 05:19",
+  "kode_agent": "A25",
+  "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+  "hasil": "Draf penawaran: Jangki Petshop Cilandak",
+  "detail": "mode=tugas; run ME-20261121051949-A25-003"
+ },
+ {
+  "waktu": "2026-11-21 05:19",
+  "kode_agent": "A25",
+  "aksi": "buat draf: draf_penawaran",
+  "hasil": "Draf penawaran: BB Petshop",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-21 05:19",
+  "kode_agent": "A25",
+  "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+  "hasil": "Draf penawaran: BB Petshop",
+  "detail": "mode=tugas; run ME-20261121051949-A25-004"
+ },
+ {
+  "waktu": "2026-11-21 05:19",
+  "kode_agent": "A25",
+  "aksi": "buat draf: draf_penawaran",
+  "hasil": "Draf penawaran: Faunafella Care",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-21 05:19",
+  "kode_agent": "A25",
+  "aksi": "mesin eksekusi: Mengelola pipeline, penawaran dan target penjualan",
+  "hasil": "Draf penawaran: Faunafella Care",
+  "detail": "mode=tugas; run ME-20261121051949-A25-005"
+ },
+ {
+  "waktu": "2026-11-21 19:39",
+  "kode_agent": "A28",
+  "aksi": "mesin eksekusi: Mencari lomba, freelance, hibah dan kemitraan",
+  "hasil": "A28 Sribu 2026-11-21: login ya; profil 33% (Step 2 gig belum; Step 3 pembayaran belum; kurasi belum terkonfirmasi); lowo",
+  "detail": "mode=tugas; run ME-20261121193930-A28-001"
+ },
+ {
+  "waktu": "2026-11-21 19:45",
+  "kode_agent": "A28",
+  "aksi": "mesin eksekusi: Mencari lomba, freelance, hibah dan kemitraan",
+  "hasil": "A28 Sribu 2026-11-21: login ya; profil 33% (Step 2 gig belum; Step 3 pembayaran belum; kurasi belum terkonfirmasi); lowo",
+  "detail": "mode=tugas; run ME-20261121194502-A28-001"
+ },
+ {
+  "waktu": "2026-11-22 10:01",
+  "kode_agent": "A04",
+  "aksi": "buat draf: laporan_qc",
+  "hasil": "Laporan QC — 2026-11-22",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-22 10:01",
+  "kode_agent": "A05",
+  "aksi": "buat draf: analisis_kpi",
+  "hasil": "Analisis KPI — 2026-11-22",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-22 10:01",
+  "kode_agent": "A05",
+  "aksi": "buat draf: hitung_laba",
+  "hasil": "Laba bersih — 2026-11-22",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-22 10:01",
+  "kode_agent": "A08",
+  "aksi": "buat draf: konsep_produk",
+  "hasil": "Konsep produk: Aplikasi Faktur & Invoice (Codester $29)",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-22 10:01",
+  "kode_agent": "A30",
+  "aksi": "buat draf: kerangka_sop",
+  "hasil": "Kerangka SOP: Rekonsiliasi harian operasional",
+  "detail": ""
+ },
+ {
+  "waktu": "2026-11-22 10:00",
+  "kode_agent": "A04",
+  "aksi": "gerakan operasional 10:00: QC output 21 Nov",
+  "hasil": "Video POD v1 8/10 LOLOS; eBook 9 nabi LOLOS isi; Foto 7/10 perlu perbaikan (A12); Tanya Oyen 6/10 kemarin, sudah diperbaiki 22 Nov 02:13; POD pod-17/18/19 belum cukup data (menunggu persetujuan Cipta).",
+  "detail": "DRAF — gerakan-operasional-1000"
+ },
+ {
+  "waktu": "2026-11-22 10:00",
+  "kode_agent": "A05",
+  "aksi": "gerakan operasional 10:00: analisis bisnis hari ini",
+  "hasil": "Uang masuk Rp0/$0, penjualan 0, laba Rp0; YT 79 subs (+6), TikTok 78, IG 2; views kemarin YT 19 / TikTok 681; Payhip 6 produk live. Kesimpulan: kanal jualan baru jalan, penjualan macet (Rp0), Sribu ditolak, Fiverr/KBM/Codester tertahan.",
+  "detail": "DRAF — gerakan-operasional-1000"
+ },
+ {
+  "waktu": "2026-11-22 10:00",
+  "kode_agent": "A08",
+  "aksi": "gerakan operasional 10:00: validasi produk Faktur & Invoice $29",
+  "hasil": "LAYAK — niche UMKM Indonesia jelas (PPN 11%); harga $29 wajar vs pasar aplikasi lengkap $20-$107; tidak bisa ditiru AI 60 detik sebagai produk teruji + dokumentasi + demo live. Antrean worklist-73 habis (61/61).",
+  "detail": "DRAF — gerakan-operasional-1000"
+ },
+ {
+  "waktu": "2026-11-22 10:00",
+  "kode_agent": "A29",
+  "aksi": "gerakan operasional 10:00: pencatatan keuangan hari ini",
+  "hasil": "Uang masuk Rp0, keluar Rp0; 0 entri akuntansi baru (tidak ada pergerakan uang + bukti). Saldo per platform: semua Rp0/$0; KBM/Saweria/Impact.com belum bisa dicek; Etsy belum ada toko; Trakteer dilewati.",
+  "detail": "DRAF — gerakan-operasional-1000"
+ },
+ {
+  "waktu": "2026-11-22 10:00",
+  "kode_agent": "A30",
+  "aksi": "gerakan operasional 10:00: rekonsiliasi operasional",
+  "hasil": "Menggantung: edit harga aplikasi toko (A32), foto batch-6 0/50 (A12), penawaran 20 toko (A25, belum ada laporan). Terlambat: video 07:00, KBM terbit, Fiverr verifikasi, NIB, Codester, 4 eBook Payhip. Selesai hari ini: Swarms LIVE $12, Gumroad penuh.",
+  "detail": "DRAF — gerakan-operasional-1000"
+ }
 ]

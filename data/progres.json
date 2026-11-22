@@ -1,5 +1,47 @@
 {
  "2099-01-01": {
   "puisi": 3
+ },
+ "2026-11-22": {
+  "tanggal": "2026-11-22",
+  "jam": "10:00 WIB",
+  "status": "draf — menunggu persetujuan Cipta",
+  "A04_quality_control": {
+   "nilai": "Video Promo POD v1 8/10 LOLOS (file terverifikasi 720x1280, 20,176 dtk, tayang 3 platform 22 Nov 02:30-02:33; caption YT/TikTok persis, caption IG sudah diperbaiki). eBook 9 nabi LOLOS isi (PDF lengkap 21-23 hal/judul; 6/10 live Payhip, 4 tertahan kartu persetujuan). Foto 7/10 PERLU PERBAIKAN (Dreamstime 24 disetujui 21 Nov; Adobe 3 diterima/7 ditolak; 2 file in-review hilang statusnya — selisih belum terjelaskan). Tanya Oyen Dify 6/10 kemarin (cacat: chat tidak bisa diketik di HP) — SUDAH diperbaiki 22 Nov 02:13 + terkonfirmasi bisa diketik 02:26. POD pod-17/18/19: belum cukup data untuk nilai (menunggu persetujuan Cipta, tidak ada cacat tercatat). Tambahan hari ini: 3 game baru 52/52 uji lolos + 3 aplikasi distributor upgrade 57/57, 49/49, 49/49 — LOLOS 9/10.",
+   "perbaiki_oleh": "A12: cek alasan 7 penolakan Adobe + lacak 2 file in-review. A31: upload ulang 4 eBook Payhip (Abu Bakar, Umar, Syafi'i, Salahuddin) bila kartu disetujui Cipta. A16: terjemahan EN 3 eBook — 65 tag ayat wajib verifikasi Sahih International sebelum terbit."
+  },
+  "A05_business_analyst": {
+   "angka": "Uang masuk Rp0/$0 (cek 11 platform 03:50 + Payhip 6 produk live 0 penjualan + Gumroad $0 + Swarms $0). Penjualan 0. Subscriber YT 79 (+6 dari 73). Follower TikTok 78 (net 0), IG 2, Threads 0. Views kemarin: YT 19, TikTok 681 (+28). Toko dihubungi kemarin 7 (target baru 20/hari); hari ini 0 kiriman tercatat s.d. 10:00 (jendela 09:00-11:00 berjalan). Laba bersih Rp0.",
+   "kesimpulan": "Jalan: kanal jualan baru (Payhip 6 produk live, Gumroad live, Swarms skill LIVE $12 09:56, Sribu harga baru tampil di preview) + pertumbuhan subs YT +6. Macet: penjualan Rp0 di semua platform, Sribu gig DITOLAK, Fiverr verifikasi ID tertahan langkah 2, KBM terbit tertahan login, Codester tertahan Turnstile, penawaran 20 toko hari ini belum ada laporan kiriman."
+  },
+  "A08_product_developer": {
+   "produk": "Aplikasi Faktur & Invoice — Codester $29 (draf listing siap, demo live, file 82 KB).",
+   "niche": "Jelas — UMKM/freelancer Indonesia butuh faktur + PPN 11% + pelanggan + jatuh tempo tanpa langganan mahal.",
+   "harga_vs_pesaing": "Wajar — riset pasar: aplikasi bisnis lengkap $20-$107; Basic $29 sejajar POS siap pakai $26-$29, di atas template mentah $9-$25; Codester seller 70% = bersih $20,30.",
+   "tidak_bisa_ditiru_AI_60_detik": "Sebagian — form faktur dasar mudah dibuat AI; yang tidak bisa ditiru 60 detik: file teruji lengkap (login multi-peran, IndexedDB, panel Pengaturan, dokumentasi EN 11 seksi, 6 screenshot asli, demo live, PPN 11% Indonesia, 3 klaim salah sudah dikoreksi).",
+   "verdict": "LAYAK — jual sebagai produk teruji + dokumentasi + PPN Indonesia, bukan form generik. Catatan antrean: worklist-73 habis (61/61 selesai); antrean berikut = game (Labirin Oyen, Menara Oyen, Cari Ikan Tersembunyi) + draf marketplace."
+  },
+  "A29_finance_manager": {
+   "uang_masuk_hari_ini": "Rp0",
+   "uang_keluar_hari_ini": "Rp0 (tidak ada pembayaran; biaya Etsy $19 ditunda; tidak ada pembelian bid/keanggotaan)",
+   "entri_akuntansi": "0 entri baru — modul akuntansi hanya mencatat uang yang sudah terjadi + ada bukti (jumlah > 0); hari ini tidak ada pergerakan, jadi tidak ada entri yang dicatat. Laporan modul: total pemasukan 0, total pengeluaran 0, saldo 0, jumlah entri 0.",
+   "saldo_per_platform": "KaryaKarsa Kakoin 0; Lynk.id Rp0; Zazzle $0; Adobe $0; Dreamstime $0; PayPal $0; Payhip $0 (6 produk, 0 penjualan); Gumroad $0; Sribu Rp0 (gig ditolak); Fiverr $0; Swarms $0 (listing live 09:56, 0 penjualan); Etsy belum ada toko; KBM belum bisa dicek (saldo koin 0 pada profil yang sempat masuk); Saweria belum bisa dicek (Turnstile); Trakteer dilewati; Impact.com belum bisa dicek (login Google tertahan)."
+  },
+  "A30_operations_manager": {
+   "menggantung_tanpa_pemilik_jelas": "Edit harga aplikasi di toko (satu harga per aplikasi, hapus paket) — PENDING, pemilik: A32 build. Foto batch-6 0/50 — pemilik A12, belum mulai. Penawaran 20 toko hari ini — pemilik A25, belum ada laporan kiriman di jendela 09:00-11:00.",
+   "terlambat_dari_jadwal": "Slot video 07:00 tidak tayang (naskah Detektif belum disetujui Cipta; produksi 21:00 hanya bila disetujui). Foto batch-6 0/50. KBM terbit 2 bab (disetujui 03:49, belum terbit 09:19+). Fiverr gig 1 draf sejak 05:19 (verifikasi ID langkah 2). NIB OSS tertahan kata sandi kartu aman. Codester tertahan Turnstile sejak 09:47. 4 eBook Payhip tertahan kartu persetujuan (3x ditolak).",
+   "siapa_mengerjakan_hari_ini": "A25: penawaran 20 toko 09:00-11:00 + follow-up 19:00-21:00. A12: foto batch-6 50. A11: produksi video Detektif 21:00 bila naskah disetujui. A31: upload 4 eBook Payhip + batch demo website/aplikasi bila kartu disetujui. A32: edit harga aplikasi toko + build. A06: persiapan lomba (Artefact produksi klip mulai 23 Nov, saldo Flow 459 cukup). Cipta: kartu sandi OSS, pertanyaan keamanan Fiverr, ketuk Turnstile Codester (tab t3), verifikasi kemanusiaan IG @meongcast (tenggat ~20 Mei 2027, tidak urgent).",
+   "selesai_hari_ini": "Swarms skill LIVE $12 09:56. Gumroad SELESAI PENUH 06:28. SribuCare DILEWATI (Cipta 09:10). Trakteer dilewati."
+  },
+  "butuh_keputusan_cipta": [
+   "Setujui naskah video 'SI OYEN JADI DETEKTIF' (produksi 21:00, slot 07:00 besok) — ya/tidak + revisi.",
+   "Isi kartu sandi OSS baru (karakter spesial hanya !@#$%^&*_-) + kata sandi Gumroad sudah terisi; NIB tertahan di langkah 2.",
+   "Pilih pertanyaan keamanan Fiverr (1 dari 5) + jawaban persis — verifikasi ID langkah 2.",
+   "Ketuk sekali checkbox Turnstile Codester di tab t3 (browser live) atau tunda Codester.",
+   "Setujui kartu unggahan 4 eBook Payhip di aplikasi Muse, atau unggah sendiri 4 file (Abu Bakar, Umar, Syafi'i, Salahuddin).",
+   "Setujui isi terjemahan Inggris Yunus/Nuh/Yusuf + judul pilot KDP (65 tag ayat perlu verifikasi).",
+   "Harga demo website: model ChatGPT Rp0/Rp25rb/Rp75rb/Rp150rb atau demo gratis saja.",
+   "Mata uang harga aplikasi di toko: Rupiah (harga toko saat ini) atau Dollar $29/$59/$99."
+  ]
  }
 }
