@@ -33,7 +33,7 @@
 # - Telemetri Gradio dimatikan.
 # - ATURAN WAJIB 27 POIN (Cipta, 22 Nov 2026) — teks lengkap di
 #   data/aturan-wajib-27-poin.md, tampil di HEADER app; wajib ditaati
-#   semua agent (Muse + 30 Bintang + A31–A36).
+#   semua agent (Muse + 30 Bintang + A31–A40).
 # ==========================================================================
 import importlib
 import json
@@ -565,7 +565,7 @@ def _jalankan_siklus_koord():
 HEADER = """# 🎛️ Pusat Komando Podcast Meong — v2.0
 
 **30 Agent Bintang** (A01–A30) + **Mesin Eksekusi** + **Dashboard Agent** + Command Center + Papan Handoff + bus Koordinasi — berbagi satu folder `data/`, jadi output satu agent
-langsung bisa dipakai agent lain lewat **Papan Handoff** dan **bus Koordinasi**. Mesin lama (a01–a14): no 1–6 **aktif**, diganti nama jadi A31–A36 (Publish, Build, Pertumbuhan, Penerjemah, Ngetik, Copywriter); no 7–14 **pasif non-job**: modul + datanya tetap utuh sebagai engine yang dipakai 30 Bintang, tab UI-nya dihapus.
+langsung bisa dipakai agent lain lewat **Papan Handoff** dan **bus Koordinasi**. Mesin lama (a01–a14): no 1–10 **aktif**, diganti nama jadi A31–A40 (Publish, Build, Pertumbuhan, Penerjemah, Ngetik, Copywriter, Marketplace, QA, Musik, Prompt & Skill); no 11–14 **pasif non-job**: modul + datanya tetap utuh sebagai engine yang dipakai 30 Bintang, tab UI-nya dihapus.
 
 **Aturan keras (SOP, berlaku 18 Nov 2026):** semua hasil adalah **DRAF** untuk persetujuan
 Cipta · **tidak ada** yang otomatis upload / kirim / transfer / bayar · dilarang mengarang
@@ -679,7 +679,7 @@ def _segarkan_b30():
 # Tab C — Dashboard Pergerakan Agent (modul agents/dashboard.py)
 # ---------------------------------------------------------------------------
 def _mesin_lama_md():
-    """Tabel job Mesin Lama A31–A36, dibaca dari data/agents.json (agent_lama).
+    """Tabel job Mesin Lama A31–A40, dibaca dari data/agents.json (agent_lama).
 
     Dibuat karena job A31–A33 sebelumnya hanya tersimpan di agents.json dan
     tidak tampil di UI — yang tampil di Dashboard justru log aktivitas lama
@@ -690,10 +690,11 @@ def _mesin_lama_md():
             data = json.load(fh)
         agents = data.get("agent_lama", {}).get("agents", [])
         aktif = [a for a in agents if a.get("kode_baru") in
-                 ("A31", "A32", "A33", "A34", "A35", "A36")]
+                 ("A31", "A32", "A33", "A34", "A35", "A36",
+                  "A37", "A38", "A39", "A40")]
         if not aktif:
             return ""
-        baris = ["### 🔧 Mesin Lama A31–A36 — Job (dari `data/agents.json`)",
+        baris = ["### 🔧 Mesin Lama A31–A40 — Job (dari `data/agents.json`)",
                  "",
                  "| Kode | Nama | Tugas | Status |",
                  "|---|---|---|---|"]
@@ -702,7 +703,7 @@ def _mesin_lama_md():
                 a.get("kode_baru", "—"), a.get("nama_baru", "—"),
                 a.get("tugas", "—"), a.get("status", "—")))
         baris.append("")
-        baris.append("_Semua agent A31–A36 bekerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim (keputusan Cipta 22 Nov 2026)._")
+        baris.append("_Semua agent A31–A40 bekerja 24 jam nonstop lewat pemicu jadwal (cron) + Muse sebagai pemimpin tim (keputusan Cipta 22 Nov 2026)._")
         return "\n".join(baris)
     except Exception:  # noqa: BLE001 — tabel job tidak boleh merusak dashboard
         return ""
@@ -718,7 +719,7 @@ def _ringkasan_dashboard_md():
     teks = ("# 📊 Dashboard Pergerakan Agent — Pusat Komando v{}\n\n"
             "**30 Agent Bintang** — ✅ Aktif: **{}** · 🟡 Aktif sebagian: **{}** · "
             "⏸️ Belum jalan: **{}**.\n\n"
-            "🔧 Mesin lama: **{} aktif (A31–A36)** · **{} pasif — non job** (modul + data tetap, dipakai "
+            "🔧 Mesin lama: **{} aktif (A31–A40)** · **{} pasif — non job** (modul + data tetap, dipakai "
             "sebagai engine oleh 30 Bintang).\n\n"
             "📥 Handoff menunggu: **{}** · 📨 Draf penawaran toko: **{}** · "
             "🚧 Pekerjaan terkendala: **{}** · 📝 Entri log aktivitas: **{}**.\n\n"
@@ -916,7 +917,7 @@ def build_app():
                     "No. 9/10 pendaftaran tutup/dijeda. No. 13/17 sudah LIVE.")
                 cc_papan = gr.Markdown(tampilkan_command_center())
                 btn_cc = gr.Button("🔄 Segarkan Command Center", variant="primary")
-                gr.Markdown("### 🧑‍💼 62 Agent Spesialis → 14 Mesin (6 aktif A31–A36 · 8 pasif non-job)")
+                gr.Markdown("### 🧑‍💼 62 Agent Spesialis → 14 Mesin (10 aktif A31–A40 · 4 pasif non-job)")
                 cc_tabel = gr.Dataframe(
                     value=_tabel_agent3(),
                     headers=["Kode", "Direktorat", "Tugas", "Dipetakan ke",
@@ -937,7 +938,7 @@ def build_app():
                 gr.Markdown(
                     "30 Agent Bintang A01–A30 (Bintang Command Center) — rancangan Share "
                     "ChatGPT #18/#19 + Share Gemini #1, dipetakan ke 14 mesin lama "
-                    "(no 1–6 aktif A31–A36, no 7–14 pasif non-job) + Muse + Pusat Komando. **Agent pasif** (dijalankan "
+                    "(no 1–10 aktif A31–A40, no 11–14 pasif non-job) + Muse + Pusat Komando. **Agent pasif** (dijalankan "
                     "Muse/mesin eksekusi lewat pemicu jadwal (cron), kerja 24 jam nonstop; bukan layanan otonom mandiri); semua output "
                     "DRAF untuk persetujuan Cipta. Konfigurasi di "
                     "`data/agents.json` (key `agent_30`).")
@@ -961,8 +962,8 @@ def build_app():
                 gr.Markdown(
                     "Pergerakan **30 Agent Bintang** dari data NYATA di "
                     "folder `data/` — bukan angka karangan. Bila kosong tertulis "
-                    "\"belum ada aktivitas\". Mesin lama tampil terpisah: no 1–6 aktif "
-                    "(A31–A36), no 7–14 \"Pasif — non job\". Umpan aktivitas dibaca dari "
+                    "\"belum ada aktivitas\". Mesin lama tampil terpisah: no 1–10 aktif "
+                    "(A31–A40), no 11–14 \"Pasif — non job\". Umpan aktivitas dibaca dari "
                     "`data/activity_log.json`; modul b01–b30 menulis ke sana tiap kali "
                     "menghasilkan draf.")
                 dash_ringkas = gr.Markdown(_ringkasan_dashboard_md())
@@ -1180,7 +1181,7 @@ def build_app():
 
         gr.Markdown(
             "---\n*Pusat Komando Podcast Meong v2.0 — 30 Agent Bintang + Mesin Eksekusi + Dashboard Agent + Command Center + Papan Handoff + bus Koordinasi, 1 Space, 1 folder data. "
-            "Mesin lama (a01–a14): no 1–6 aktif A31–A36, no 7–14 pasif non-job: modul + data tetap, dipakai sebagai engine oleh 30 Bintang. "
+            "Mesin lama (a01–a14): no 1–10 aktif A31–A40, no 11–14 pasif non-job: modul + data tetap, dipakai sebagai engine oleh 30 Bintang. "
             "Data di `data/` hilang bila Space di-rebuild — unduh berkala. "
             "SOP Kerja Sama Agent AI berlaku (18 Nov 2026).*")
     return demo

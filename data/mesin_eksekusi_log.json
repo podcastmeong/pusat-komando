@@ -270,5 +270,33 @@
     "waktu_mulai": "2026-11-21 05:19:49",
     "waktu_selesai": "2026-11-21 05:19:49",
     "id_antrean": "TK-toko-09"
+  },
+  {
+    "id": "ME-20261121193930-A28-001",
+    "kode_agent": "A28",
+    "nama_agent": "Opportunity Hunter",
+    "tugas": {},
+    "mode": "tugas",
+    "status": "menunggu persetujuan",
+    "keputusan": null,
+    "oleh": null,
+    "draf": "A28 Sribu 2026-11-21: login ya; profil 33% (Step 2 gig belum; Step 3 pembayaran belum; kurasi belum terkonfirmasi); lowongan buka hari ini 0; draf tersimpan 0 (0 cocok, 0 arsip tidak cocok). Semua draf menunggu persetujuan Cipta — tidak ada yang dikirim.",
+    "hasil": "A28 Sribu 2026-11-21: login ya; profil 33% (Step 2 gig belum; Step 3 pembayaran belum; kurasi belum terkonfirmasi); lowo",
+    "waktu_mulai": "2026-11-21 19:39:30",
+    "waktu_selesai": "2026-11-21 19:39:30"
+  },
+  {
+    "id": "ME-20261121194502-A28-001",
+    "kode_agent": "A28",
+    "nama_agent": "Opportunity Hunter",
+    "tugas": {},
+    "mode": "tugas",
+    "status": "menunggu persetujuan",
+    "keputusan": null,
+    "oleh": null,
+    "draf": "A28 Sribu 2026-11-21: login ya; profil 33% (Step 2 gig belum; Step 3 pembayaran belum; kurasi belum terkonfirmasi); lowongan buka hari ini 0; draf tersimpan 0 (0 cocok, 0 arsip tidak cocok). Semua draf menunggu persetujuan Cipta — tidak ada yang dikirim.",
+    "hasil": "A28 Sribu 2026-11-21: login ya; profil 33% (Step 2 gig belum; Step 3 pembayaran belum; kurasi belum terkonfirmasi); lowo",
+    "waktu_mulai": "2026-11-21 19:45:02",
+    "waktu_selesai": "2026-11-21 19:45:02"
   }
 ]

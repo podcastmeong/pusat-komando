@@ -1,6 +1,6 @@
 # Eksekusi 20 Marketplace — WAJIB, Tim Produksi
 
-Perintah Cipta, 22 Nov 2026 08:50–08:57: eksekusi SEMUA 20 marketplace, satu-satu dari no. 1; kalau selesai lanjut next. Yang bisa dikerjakan dulu; berhenti hanya bila benar-benar mentok. **Diserahkan ke Tim Produksi (A11–A19) — WAJIB.** Bekal skill tim: `data/skills/eksekusi-marketplace/SKILL.md` (+ `referensi-20-marketplace.md`) — dibaca sebelum mengerjakan marketplace mana pun. Aturan Cipta yang berlaku: "Aku g ngerti, biar cepet. Seperti yang kita bicarakan kemarin." — Muse + tim yang mengerjakan, Cipta hanya keputusan urgent.
+Perintah Cipta, 22 Nov 2026 08:50–08:57: eksekusi SEMUA 20 marketplace, satu-satu dari no. 1; kalau selesai lanjut next. Yang bisa dikerjakan dulu; berhenti hanya bila benar-benar mentok. **Diserahkan ke Tim Produksi (A11–A19), dipimpin A37 Marketplace — WAJIB.** Bekal skill tim: `data/skills/eksekusi-marketplace/SKILL.md` (+ `referensi-20-marketplace.md`) — dibaca sebelum mengerjakan marketplace mana pun. A38 QA memeriksa live sebelum lapor selesai; A40 Prompt & Skill mengemas produk prompt/skill. Aturan Cipta yang berlaku: "Aku g ngerti, biar cepet. Seperti yang kita bicarakan kemarin." — Muse + tim yang mengerjakan, Cipta hanya keputusan urgent.
 
 ## Produk per marketplace
 

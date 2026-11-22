@@ -42,6 +42,10 @@
 
 ## Pembagian tugas dalam Tim Produksi
 
+- **A37 Marketplace** — pemilik eksekusi 20 marketplace: riset syarat seller, siapkan listing, pantau status per nomor, laporkan kemajuan. Bekal: skill ini.
+- **A38 QA** — memeriksa live sebelum ada laporan "selesai" (harga, tautan, screenshot, demo, teks listing). Bekal: `data/skills/qa-verifikasi/SKILL.md`.
+- **A40 Prompt & Skill** — mengemas prompt dan skill AI (SKILL.md + modul + payload publish) untuk Swarms, Agensi.io, PromptBase. Bekal: `data/skills/paket-prompt-skill/SKILL.md`.
+- **A39 Musik** — produksi lagu + musik untuk dijual di marketplace musik/Payhip. Bekal: `data/skills/produksi-musik/SKILL.md`.
 - **A13 App Developer** — listing aplikasi (Codester, CodeCanyon, Envato, Agensi.io bila perlu): paket ZIP, dokumentasi, screenshot, demo live.
 - **A18 Game Developer** — listing game (itch.io, Codester, Unity bila diputuskan port).
 - **A15 POD Designer** — listing ilustrasi POD (Creative Market).

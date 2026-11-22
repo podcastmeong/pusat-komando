@@ -34,7 +34,8 @@ WIB = timezone(timedelta(hours=7))
 # 21 Nov 2026 (perintah Cipta): modul + data tetap utuh sebagai mesin
 # (engine/pustaka) yang dipakai 30 Agent Bintang. KOREKSI 22 Nov 2026
 # (perintah Cipta): no 1–6 AKTIF, diganti nama jadi A31–A36; no 7–14
-# tetap "Pasif — non job". Status tiap baris dibaca dari agents.json
+# tetap "Pasif — non job". KOREKSI 22 Nov 2026 (perintah Cipta):
+# no 7–10 AKTIF, diganti nama jadi A37–A40; no 11–14 tetap pasif.
 # (agent_lama[].status); bila tidak ada, jatuh ke STATUS_PASIF.
 # Tim 9A–9F tercakup dalam baris Mesin 9 (sumber kerja: worklist-73.json).
 STATUS_PASIF = "Pasif — non job"
@@ -223,8 +224,8 @@ def _aktivitas_mesin(folder, kode, sumber):
 
 
 # ---------------------------------------------------------------------------
-# Tabel gabungan: 30 Agent Bintang + 14 mesin lama (6 aktif A31–A36 +
-# 8 pasif) = 44 baris
+# Tabel gabungan: 30 Agent Bintang + 14 mesin lama (10 aktif A31–A40 +
+# 4 pasif) = 44 baris
 # ---------------------------------------------------------------------------
 def _aktivitas_b30(folder, kode):
     log = _baca_json(folder / LOG_FILE_NAMA, [])
@@ -240,8 +241,8 @@ def _aktivitas_b30(folder, kode):
 def tabel_semua_agent(base=None):
     """Satu baris per agent/mesin: kode, nama, kelompok, dipetakan_ke,
     status, aktivitas_terakhir, output_terakhir. Sumber: agents.json +
-    data nyata. Urutan: 30 Bintang dulu, lalu 14 mesin lama (no 1–6
-    aktif A31–A36, no 7–14 pasif)."""
+    data nyata. Urutan: 30 Bintang dulu, lalu 14 mesin lama (no 1–10
+    aktif A31–A40, no 11–14 pasif)."""
     folder = Path(base) if base else BASE
     data = _baca_json(folder / "agents.json", {})
     b30 = (data.get("agent_30") or {}).get("agents", [])
@@ -286,8 +287,8 @@ def daftar_divisi(base=None):
 
 def ringkasan_dashboard(base=None):
     """Hitungan ringkas (Pusat Komando v2.0): hitungan utama 30 Agent
-    Bintang (Aktif / Aktif sebagian / Belum jalan) + 8 mesin pasif
-    terpisah + 6 agent lama aktif (A31–A36) + antrean. 'total_agent' = 30
+    Bintang (Aktif / Aktif sebagian / Belum jalan) + 4 mesin pasif
+    terpisah + 10 agent lama aktif (A31–A40) + antrean. 'total_agent' = 30
     (Bintang); 'total_baris' = 44 (30 Bintang + 14 mesin lama)."""
     folder = Path(base) if base else BASE
     rows = tabel_semua_agent(folder)
