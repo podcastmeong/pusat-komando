@@ -181,7 +181,7 @@ Spaces masalah ini tidak ada.
   dipakai 30 Bintang; 21 tab UI lama dihapus; aplikasi kini **5 tab**
   (0 Command Center, B 30 Agent, C Dashboard Agent, Papan Handoff,
   Koordinasi). Dashboard menampilkan hitungan utama 30 Bintang + 14 mesin
-  pasif terpisah (bukan 44 agent).
+  pasif terpisah (bukan 44 agent). KOREKSI 22 Nov 2026: no 1–10 sudah jadi A31–A40; no 11–14 DIGANTI agen pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar) — hitungan roster tetap 40 agent (A01–A40), bukan 44.
 - **Kendala harus diinfokan:** pekerjaan yang tidak bisa jalan (platform
   belum terhubung, data tidak ada, butuh login/keputusan Cipta, error)
   berstatus "terkendala" di antrean + audit log, lengkap dengan penyebab
