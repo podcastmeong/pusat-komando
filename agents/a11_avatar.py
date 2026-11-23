@@ -38,7 +38,7 @@ Cara kerja:
 - Di Hugging Face Spaces (tanpa tts CLI), aplikasi mengeluarkan spesifikasi
   suara terkunci + script TTS yang bisa dijalankan Muse lewat CLI.
 
-Model: Google Gemini free tier (gemini-2.0-flash), API key HANYA dari env var
+Model: Google Gemini free tier (gemini-4-hydrogen), API key HANYA dari env var
 GEMINI_API_KEY. Tanpa key, aplikasi tetap jalan mode template. Tidak ada
 layanan berbayar. Telemetri Gradio dimatikan.
 """
@@ -512,7 +512,7 @@ def poles_dialog(teks):
         try:
             import google.generativeai as genai
             genai.configure(api_key=kunci)
-            model = genai.GenerativeModel("gemini-2.0-flash")
+            model = genai.GenerativeModel("gemini-4-hydrogen")
             r = model.generate_content(
                 "Kamu membantu menulis dialog podcast kucing Podcast Meong "
                 "(Oyen = oren, ceria, tinggi; Momo = abu-abu, tenang, datar). "

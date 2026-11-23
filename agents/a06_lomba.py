@@ -18,7 +18,7 @@ ATURAN KERAS (tidak boleh dilanggar):
 - Syarat ikut: GRATIS, AMAN (resmi/legit, Indonesia boleh ikut), AI DIIZINKAN.
 - Bila kebijakan AI belum terverifikasi, agent TIDAK BOLEH menyarankan kirim.
 
-Model: Google Gemini free tier (gemini-2.0-flash), API key HANYA dari env var
+Model: Google Gemini free tier (gemini-4-hydrogen), API key HANYA dari env var
 GEMINI_API_KEY. Tanpa key, agent tetap jalan dalam mode template + database lokal.
 Tidak ada layanan berbayar yang dipakai. Telemetri Gradio dimatikan.
 """
@@ -342,7 +342,7 @@ def _nilai_gemini(teks):
     try:
         import google.generativeai as genai
         genai.configure(api_key=key)
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        model = genai.GenerativeModel("gemini-4-hydrogen")
         prompt = (
             "Kamu penilai lomba untuk kreator Indonesia yang karyanya dibuat dengan AI.\n"
             "Nilai teks aturan lomba berikut dan jawab dalam Bahasa Indonesia dengan format persis ini:\n"
@@ -370,7 +370,7 @@ def nilai_lomba(teks, nama_lomba=""):
     tambahan = ""
     gemini = _nilai_gemini(teks)
     if gemini:
-        mode = "Gemini (gemini-2.0-flash)"
+        mode = "Gemini (gemini-4-hydrogen)"
         tambahan = "\n\n---\n**Penilaian Gemini:**\n\n" + gemini
     judul = f"## Penilaian: {nama_lomba.strip() or '(tanpa nama)'}\n\n"
     baris = [f"- **Biaya:** {hasil['biaya'][0]} — {hasil['biaya'][1]}",

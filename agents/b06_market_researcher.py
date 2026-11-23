@@ -33,7 +33,7 @@ from datetime import date
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent / "data"
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-4-hydrogen"
 
 KODE = "A06"
 NAMA = "Market Researcher"

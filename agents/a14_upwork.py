@@ -46,7 +46,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent / "data"  # folder data bersama
 DATA_FILE = BASE / "lamaran_upwork.json"
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-4-hydrogen"
 
 TARGET_HARIAN = 5  # job diteliti per hari (Upwork: kualitas > kuantitas)
 TARIF_PER_JAM_USD = 10  # placeholder (perintah Cipta 20 Nov 2026)

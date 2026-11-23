@@ -74,7 +74,7 @@ except Exception:
     MEMORI = None
 
 BASE = Path(__file__).resolve().parent.parent / "data"
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-4-hydrogen"
 
 KODE = "A28"
 NAMA = "Opportunity Hunter"

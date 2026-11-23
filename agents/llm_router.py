@@ -66,6 +66,8 @@
 #     thinkingBudget=0, prompt "Reply only OK"):
 #       gemini-3.5-flash-lite (0,89 dtk) -> gemini-3.5-flash (5,34 dtk)
 #       -> gemini-3.8-flash (sering 503 high demand).
+#     24 Nov 2026: gemini-4-hydrogen ditambah paling depan (prioritas
+#     Cipta, gratis saja); rantai 3.5 di atas tetap sebagai fallback.
 #     Rantai lama MATI: gemini-2.5-flash-lite / gemini-2.5-flash /
 #     gemini-2.0-flash semuanya 404 "no longer available to new users"
 #     (Google menyarankan 3.5-flash-lite / 3.8-flash sebagai ganti).
@@ -227,7 +229,13 @@ GEMINI_RONDE_MAKS = 2
 #   gemini-3.8-flash sering 503 high demand (cadangan terakhir).
 # Model 2.5-flash-lite / 2.5-flash / 2.0-flash: 404 pensiun — JANGAN
 # dipakai lagi. Env GEMINI_MODEL (bila disetel) ditaruh paling depan.
+# 24 Nov 2026 (perintah Cipta "Prioritas Hydrogen, yang gratis"):
+#   gemini-4-hydrogen ditaruh PALING DEPAN — free tier, diverifikasi
+#   ADA + bisa diakses kunci gratis (22 Nov: 1x berhasil; 24 Nov:
+#   2x 503 overload — free tier tidak stabil saat beban tinggi).
+#   Bila Hydrogen gagal, rantai otomatis jatuh ke 3.5 (terbukti live).
 GEMINI_MODEL_CHAIN = [
+    "gemini-4-hydrogen",
     "gemini-3.5-flash-lite",
     "gemini-3.5-flash",
     "gemini-3.8-flash",
@@ -250,7 +258,7 @@ RUTE = {
 # Model default gratis per provider. Bisa diubah lewat env var
 # <PROVIDER>_MODEL tanpa mengubah file ini.
 MODEL_DEFAULT = {
-    "gemini": "gemini-3.5-flash-lite",
+    "gemini": "gemini-4-hydrogen",
     "openrouter": "meta-llama/llama-3.3-70b-instruct:free",
     "groq": "llama-3.3-70b-versatile",
     "cerebras": "llama-3.3-70b",

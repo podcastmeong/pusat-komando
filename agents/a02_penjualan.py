@@ -22,7 +22,7 @@ from pydantic import BaseModel
 
 BASE = Path(__file__).resolve().parent.parent / "data"  # PUSAT KOMANDO: folder data bersama
 LEADS_FILE = BASE / "leads.json"
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-4-hydrogen"
 PORT = int(os.environ.get("PORT", "8000"))
 
 # ---------------------------------------------------------------- knowledge base

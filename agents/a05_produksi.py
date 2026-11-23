@@ -49,7 +49,7 @@ PROGRES_FILE = DATA_DIR / "progres.json"
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 MODE_AI = bool(GEMINI_API_KEY)
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-4-hydrogen"
 
 # ---------------------------------------------------------------------------
 # Target produksi harian (keputusan Cipta).

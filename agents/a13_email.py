@@ -534,7 +534,7 @@ def _draf_gemini(email, template_key, catatan=""):
         import google.generativeai as genai
 
         genai.configure(api_key=kunci)
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        model = genai.GenerativeModel("gemini-4-hydrogen")
         prompt = (
             "Tulis draf balasan email berbahasa Indonesia, sopan, singkat, "
             "dari Masduki Kiki (Podcast Meong). Jenis balasan: "
@@ -553,7 +553,7 @@ def _draf_gemini(email, template_key, catatan=""):
             return None, "Gemini mengembalikan teks kosong"
         return {"template": template_key,
                 "subjek_balasan": "Re: {}".format(email.get("subjek", "")),
-                "isi": teks}, "Gemini (gemini-2.0-flash)"
+                "isi": teks}, "Gemini (gemini-4-hydrogen)"
     except Exception as e:  # noqa: BLE001
         return None, "Gemini gagal: {}".format(e)
 

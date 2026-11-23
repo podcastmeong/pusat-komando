@@ -6,6 +6,8 @@
   "agents": [
    {
     "code": "A41",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill: runner Hydrogen agents/hydrogen-momo.py (riset/draf, kuota 20/hari bersama)",
     "name": "Rename Komando",
     "division": "Operasional",
     "boss": "A30",
@@ -22,6 +24,8 @@
    },
    {
     "code": "A42",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill: runner Hydrogen agents/hydrogen-momo.py (riset/draf, kuota 20/hari bersama)",
     "name": "Penanggung Jawab Toko Digicat",
     "division": "Penjualan",
     "boss": "A30",
@@ -47,6 +51,8 @@
    },
    {
     "code": "A43",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill: runner Hydrogen agents/hydrogen-momo.py (riset/draf, kuota 20/hari bersama)",
     "name": "Upload Marketplace",
     "division": "Penjualan",
     "boss": "A37",
@@ -63,6 +69,8 @@
    },
    {
     "code": "A44",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill: runner Hydrogen agents/hydrogen-momo.py (riset/draf, kuota 20/hari bersama)",
     "name": "Persiapan Video",
     "division": "Produksi",
     "boss": "A11",
@@ -88,6 +96,8 @@
   "agents": [
    {
     "code": "A45",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill: runner Hydrogen agents/hydrogen-momo.py (riset/draf, kuota 20/hari bersama)",
     "name": "Penawaran Email",
     "division": "Penjualan",
     "boss": "A25",
@@ -106,6 +116,8 @@
    },
    {
     "code": "A46",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill: runner Hydrogen agents/hydrogen-momo.py (riset/draf, kuota 20/hari bersama)",
     "name": "Penawaran IG-2",
     "division": "Penjualan",
     "boss": "A25",
@@ -123,6 +135,8 @@
    },
    {
     "code": "A47",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill: runner Hydrogen agents/hydrogen-momo.py (riset/draf, kuota 20/hari bersama)",
     "name": "Penawaran TikTok-2",
     "division": "Penjualan",
     "boss": "A25",
@@ -140,6 +154,8 @@
    },
    {
     "code": "A48",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill: runner Hydrogen agents/hydrogen-momo.py (riset/draf, kuota 20/hari bersama)",
     "name": "Pencari Target",
     "division": "Penjualan",
     "boss": "A25",
@@ -157,6 +173,8 @@
    },
    {
     "code": "A49",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill: runner Hydrogen agents/hydrogen-momo.py (riset/draf, kuota 20/hari bersama)",
     "name": "Closer",
     "division": "Penjualan",
     "boss": "A25",
@@ -919,6 +937,8 @@
   "agents": [
    {
     "code": "A01",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "CEO Director",
     "division": "Direksi",
     "boss": "Pemilik",
@@ -950,6 +970,8 @@
    },
    {
     "code": "A02",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "COO Manager",
     "division": "Direksi",
     "boss": "A01",
@@ -979,6 +1001,8 @@
    },
    {
     "code": "A03",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Command Controller",
     "division": "Direksi",
     "boss": "A02",
@@ -1011,6 +1035,8 @@
    },
    {
     "code": "A04",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Quality Control",
     "division": "Direksi",
     "boss": "A02",
@@ -1038,6 +1064,8 @@
    },
    {
     "code": "A05",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Business Analyst",
     "division": "Direksi",
     "boss": "A02",
@@ -1069,6 +1097,8 @@
    },
    {
     "code": "A06",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Market Researcher",
     "division": "Riset",
     "boss": "A03",
@@ -1098,6 +1128,8 @@
    },
    {
     "code": "A07",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Trend Hunter",
     "division": "Riset",
     "boss": "A03",
@@ -1127,6 +1159,8 @@
    },
    {
     "code": "A08",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Product Developer",
     "division": "Riset",
     "boss": "A03",
@@ -1156,6 +1190,8 @@
    },
    {
     "code": "A09",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Competitor Analyst",
     "division": "Riset",
     "boss": "A06",
@@ -1186,6 +1222,8 @@
    },
    {
     "code": "A10",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Product Validator",
     "division": "Riset",
     "boss": "A08",
@@ -1215,6 +1253,8 @@
    },
    {
     "code": "A11",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "AI Video Producer",
     "division": "Produksi",
     "boss": "A08",
@@ -1247,6 +1287,8 @@
    },
    {
     "code": "A12",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "AI Image Designer",
     "division": "Produksi",
     "boss": "A08",
@@ -1279,6 +1321,8 @@
    },
    {
     "code": "A13",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "App Developer",
     "division": "Produksi",
     "boss": "A08",
@@ -1310,6 +1354,8 @@
    },
    {
     "code": "A14",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Web Developer",
     "division": "Produksi",
     "boss": "A08",
@@ -1341,6 +1387,8 @@
    },
    {
     "code": "A15",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "POD Designer",
     "division": "Produksi",
     "boss": "A08",
@@ -1371,6 +1419,8 @@
    },
    {
     "code": "A16",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "eBook Publisher",
     "division": "Produksi",
     "boss": "A08",
@@ -1404,6 +1454,8 @@
    },
    {
     "code": "A17",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Creative Writer",
     "division": "Produksi",
     "boss": "A08",
@@ -1435,6 +1487,8 @@
    },
    {
     "code": "A18",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Game Developer",
     "division": "Produksi",
     "boss": "A08",
@@ -1466,6 +1520,8 @@
    },
    {
     "code": "A19",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Content Producer",
     "division": "Produksi",
     "boss": "A08",
@@ -1497,6 +1553,8 @@
    },
    {
     "code": "A20",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Instagram Manager",
     "division": "Marketing",
     "boss": "A03",
@@ -1533,6 +1591,8 @@
    },
    {
     "code": "A21",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "TikTok Manager",
     "division": "Marketing",
     "boss": "A03",
@@ -1568,6 +1628,8 @@
    },
    {
     "code": "A22",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "YouTube Manager",
     "division": "Marketing",
     "boss": "A03",
@@ -1603,6 +1665,8 @@
    },
    {
     "code": "A23",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Threads Manager",
     "division": "Marketing",
     "boss": "A03",
@@ -1637,6 +1701,8 @@
    },
    {
     "code": "A24",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "SEO & Growth",
     "division": "Marketing",
     "boss": "A03",
@@ -1669,6 +1735,8 @@
    },
    {
     "code": "A25",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Sales Manager",
     "division": "Penjualan",
     "boss": "A02",
@@ -1708,6 +1776,8 @@
    },
    {
     "code": "A26",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Customer Service",
     "division": "Penjualan",
     "boss": "A25",
@@ -1740,6 +1810,8 @@
    },
    {
     "code": "A27",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Email Administrator",
     "division": "Penjualan",
     "boss": "A02",
@@ -1768,6 +1840,8 @@
    },
    {
     "code": "A28",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Opportunity Hunter",
     "division": "Peluang & Keuangan",
     "boss": "A02",
@@ -1796,6 +1870,8 @@
    },
    {
     "code": "A29",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Finance Manager",
     "division": "Peluang & Keuangan",
     "boss": "A02",
@@ -1835,6 +1911,8 @@
    },
    {
     "code": "A30",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "kode agents/b01-b30 + llm_router.py (Hydrogen dulu, fallback 3.5-flash-lite/3.5-flash/3.8-flash)",
     "name": "Operations Manager",
     "division": "Peluang & Keuangan",
     "boss": "A02",
@@ -2484,6 +2562,8 @@
   "agents": [
    {
     "code": "A51",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Pemburu Bug Bounty",
     "division": "Keamanan",
     "boss": "Muse",
@@ -2710,6 +2790,8 @@
   "agents": [
    {
     "code": "A52",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Generator Varian",
     "division": "Keamanan",
     "boss": "Muse",
@@ -2937,6 +3019,8 @@
   "agents": [
    {
     "code": "A53",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Recon Program",
     "division": "Keamanan",
     "boss": "Muse",
@@ -3164,6 +3248,8 @@
   "agents": [
    {
     "code": "A54",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Penguji Live",
     "division": "Keamanan",
     "boss": "Muse",
@@ -3391,6 +3477,8 @@
   "agents": [
    {
     "code": "A55",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Analis Rantai & Pelapor",
     "division": "Keamanan",
     "boss": "Muse",
@@ -3619,6 +3707,8 @@
   "agents": [
    {
     "code": "A56",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Red Team",
     "division": "Keamanan",
     "boss": "Muse",
@@ -3845,6 +3935,8 @@
   "agents": [
    {
     "code": "A57",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Penetration Tester",
     "division": "Keamanan",
     "boss": "Muse",
@@ -4071,6 +4163,8 @@
   "agents": [
    {
     "code": "A58",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Vulnerability Researcher",
     "division": "Keamanan",
     "boss": "Muse",
@@ -4297,6 +4391,8 @@
   "agents": [
    {
     "code": "A59",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Threat Hunter",
     "division": "Keamanan",
     "boss": "Muse",
@@ -4524,6 +4620,8 @@
   "agents": [
    {
     "code": "A60",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Security Auditor",
     "division": "Keamanan",
     "boss": "Muse",
@@ -4750,6 +4848,8 @@
   "agents": [
    {
     "code": "A61",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Triage & Severity Analyst",
     "division": "Keamanan",
     "boss": "Muse",
@@ -4977,6 +5077,8 @@
   "agents": [
    {
     "code": "A62",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Exploit Developer",
     "division": "Keamanan",
     "boss": "Muse",
@@ -5203,6 +5305,8 @@
   "agents": [
    {
     "code": "A63",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Format Analyst",
     "division": "Keamanan",
     "boss": "Muse",
@@ -5429,6 +5533,8 @@
   "agents": [
    {
     "code": "A64",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Web Application Tester",
     "division": "Keamanan",
     "boss": "Muse",
@@ -5656,6 +5762,8 @@
   "agents": [
    {
     "code": "A65",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Mobile Security Tester",
     "division": "Keamanan",
     "boss": "Muse",
@@ -5883,6 +5991,8 @@
   "agents": [
    {
     "code": "A66",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "API Security Tester",
     "division": "Keamanan",
     "boss": "Muse",
@@ -6110,6 +6220,8 @@
   "agents": [
    {
     "code": "A67",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Report Writer",
     "division": "Keamanan",
     "boss": "Muse",
@@ -6338,6 +6450,8 @@
   "agents": [
    {
     "code": "A68",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Duplicate & Prior-Art Checker",
     "division": "Keamanan",
     "boss": "Muse",
@@ -6566,6 +6680,8 @@
   "agents": [
    {
     "code": "A69",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Payout & Submission Tracker",
     "division": "Keamanan",
     "boss": "Muse",
@@ -6793,6 +6909,8 @@
   "agents": [
    {
     "code": "A70",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
     "name": "Automation Engineer",
     "division": "Keamanan",
     "boss": "Muse",

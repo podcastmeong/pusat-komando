@@ -34,7 +34,7 @@ Fitur:
 2) Penjaga Konsistensi — periksa draf (dialog / prompt / deskripsi adegan /
    hasil cek pitch) terhadap kartu terkunci. Verdict LULUS / PERLU
    PERBAIKAN / BELUM CUKUP DATA + daftar penyimpangan + saran perbaikan.
-   Mode Gemini (bila env var GEMINI_API_KEY ada, model gemini-2.0-flash)
+   Mode Gemini (bila env var GEMINI_API_KEY ada, model gemini-4-hydrogen)
    dengan verifikasi aturan dasar di kode; tanpa kunci, mode template.
 3) Buat Baris Dialog — 1 baris dialog bahasa Inggris 17-25 kata (jumlah
    kata dihitung dan ditampilkan), voice lock yang dipakai, script TTS,
@@ -306,7 +306,7 @@ def _cek_gemini(draf, judul):
     try:
         import google.generativeai as genai
         genai.configure(api_key=kunci)
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        model = genai.GenerativeModel("gemini-4-hydrogen")
         prompt = (
             "Kamu adalah penjaga konsistensi tokoh Oyen (Podcast Meong). "
             "Kartu tokoh Oyen yang TERKUNCI:\n"
@@ -364,7 +364,7 @@ def periksa_konsistensi(draf, judul=""):
         if gemini_teks.startswith("__GEMINI_GAGAL__"):
             mode = "template (aturan kartu terkunci) — Gemini gagal: " + gemini_teks[len("__GEMINI_GAGAL__: "):][:150]
         else:
-            mode = "Gemini (gemini-2.0-flash) + verifikasi aturan dasar di kode"
+            mode = "Gemini (gemini-4-hydrogen) + verifikasi aturan dasar di kode"
             # Ambil verdict Gemini, tapi aturan dasar di kode tetap berlaku.
             if "PERLU PERBAIKAN" in gemini_teks.upper():
                 pass  # verdict akhir ditentukan gabungan di bawah
@@ -504,7 +504,7 @@ def _baris_dari_gemini(judul, latar_nama, baris_sebelumnya):
     try:
         import google.generativeai as genai
         genai.configure(api_key=kunci)
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        model = genai.GenerativeModel("gemini-4-hydrogen")
         konteks = (
             f"Baris Momo sebelumnya: \"{baris_sebelumnya}\"\n"
             "Balas baris itu sebagai Oyen." if (baris_sebelumnya or "").strip()
@@ -523,7 +523,7 @@ def _baris_dari_gemini(judul, latar_nama, baris_sebelumnya):
         )
         r = model.generate_content(prompt)
         teks = (r.text or "").strip().strip('"').strip()
-        return teks, "Gemini (gemini-2.0-flash)"
+        return teks, "Gemini (gemini-4-hydrogen)"
     except Exception as e:  # noqa: BLE001 — Gemini gagal: jatuh ke template
         return None, f"Gemini gagal ({e}) — pakai template."
 
@@ -730,7 +730,7 @@ lengkap Oyen + Momo).
    `data/log-penjagaan.json` (tanggal, jenis, ringkasan, verdict, pitch).
 
 ## Mode Gemini vs template
-- Bila env var `GEMINI_API_KEY` ada: Gemini `gemini-2.0-flash` ikut
+- Bila env var `GEMINI_API_KEY` ada: Gemini `gemini-4-hydrogen` ikut
   menilai/menulis, TAPI aturan dasar di kode tetap diverifikasi dan
   menang bila bertentangan.
 - Tanpa key: mode template (aturan kartu terkunci saja). Aplikasi tetap

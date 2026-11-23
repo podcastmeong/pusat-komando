@@ -36,7 +36,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent / "data"  # folder data bersama
 DATA_FILE = BASE / "penjualan_toko.json"
-MODEL = "gemini-2.0-flash"
+MODEL = "gemini-4-hydrogen"
 
 TARGET_HARIAN = 15  # toko per hari (perintah Cipta 20 Nov 2026)
 

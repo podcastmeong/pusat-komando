@@ -38,6 +38,13 @@
 5. **Dokumentasikan bukti** (log/output, langkah reproduksi persis) + tulis DRAF laporan (judul, kategori, langkah reproduksi, dampak, bukti, saran perbaikan).
 6. **Lapor ke Muse** bila ada temuan terkonfirmasi; bila semua gagal, laporkan apa yang sudah diuji + kenapa gagal.
 
+## Model: Gemini 4 Hydrogen (gratis) — perintah Cipta 24 Nov 2026 04:49 (prioritas Hydrogen, yang gratis)
+
+- **Model tim ini: gemini-4-hydrogen (free tier)** — dipakai lewat runner `agents/hydrogen-momo.py` (default `--model hydrogen`).
+- **Hanya untuk riset/draf:** merumuskan hipotesis, draf laporan, ringkasan recon. Uji live + analisis target tetap jalan di Muse (tugas utama berburu tidak dialihkan ke Hydrogen).
+- **Hemat kuota 20/hari (dipakai BERSAMA semua agent):** 1 panggilan per tugas, retry maks 1x; bila Hydrogen gagal (503 overload — free tier tidak stabil saat beban tinggi, terverifikasi 22 Nov + 24 Nov), kerjakan langsung dan catat kegagalannya. Pemakaian tercatat di `data/log-penggunaan-model.jsonl`.
+- **GRATIS SAJA:** Hydrogen free-tier API saja. JANGAN layanan berbayar, JANGAN kartu, JANGAN aktifkan billing. Bila suatu bagian hanya bisa jalan dengan yang berbayar, laporkan sebagai TERBLOKIR (butuh keputusan Cipta).
+
 ## Teknik yang bisa bikin jebol (library — terus ditingkatkan)
 
 - **Lewati kontrol keamanan:** agen menyetujui permintaannya sendiri; ubah izin connector ask→allow; panggil API langsung melewati approval; self-approving egress (lewat destinasi allowlisted, konten render, tunnelling, channel, spaces, scheduled job); baca plaintext kredensial yang dipegang platform.

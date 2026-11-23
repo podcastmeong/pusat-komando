@@ -31,7 +31,7 @@ Fitur:
 2) Penjaga Konsistensi — periksa draf (dialog / prompt / deskripsi adegan /
    hasil cek pitch) terhadap kartu terkunci. Verdict LULUS / PERLU
    PERBAIKAN / BELUM CUKUP DATA + daftar penyimpangan + saran perbaikan.
-   Mode Gemini (bila env var GEMINI_API_KEY ada, model gemini-2.0-flash),
+   Mode Gemini (bila env var GEMINI_API_KEY ada, model gemini-4-hydrogen),
    tapi aturan dasar tetap diverifikasi di kode. Tanpa key: mode template.
 3) Buat Baris Dialog — 1 baris dialog bahasa Inggris 17–25 kata (dihitung
    dan ditampilkan jumlah katanya), voice lock, script TTS, perintah tts
@@ -281,7 +281,7 @@ def _cek_gemini(draf, judul=""):
         import google.generativeai as genai
 
         genai.configure(api_key=kunci)
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        model = genai.GenerativeModel("gemini-4-hydrogen")
         prompt = (
             "Kamu penjaga konsistensi tokoh Momo (Podcast Meong). Kartu terkunci Momo:\n"
             f"- Nama: {TOKOH['nama']}; {TOKOH['deskripsi']}; peran: {TOKOH['peran']}.\n"
@@ -323,7 +323,7 @@ def cek_konsistensi(draf, judul=""):
     mode = "template (tanpa API key Gemini)"
     penilaian_gemini = _cek_gemini(draf, judul)
     if penilaian_gemini is not None:
-        mode = "Gemini (gemini-2.0-flash) + verifikasi aturan dasar di kode"
+        mode = "Gemini (gemini-4-hydrogen) + verifikasi aturan dasar di kode"
 
     if menyimpang:
         verdict_status = "PERLU PERBAIKAN"
@@ -428,7 +428,7 @@ def _baris_gemini(judul, latar_nama, baris_sebelumnya):
         import google.generativeai as genai
 
         genai.configure(api_key=kunci)
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        model = genai.GenerativeModel("gemini-4-hydrogen")
         prompt = (
             "Tulis SATU baris dialog bahasa Inggris untuk Momo, kucing "
             "abu-abu besar British Shorthair yang skeptis, datar, sinis tapi "
@@ -446,7 +446,7 @@ def _baris_gemini(judul, latar_nama, baris_sebelumnya):
             r = model.generate_content(prompt)
             teks = (r.text or "").strip().strip('"').strip()
             if teks and 17 <= hitung_kata(teks) <= 25:
-                return teks, "Gemini (gemini-2.0-flash)"
+                return teks, "Gemini (gemini-4-hydrogen)"
         return None, "Gemini mengembalikan baris di luar 17–25 kata (2x coba)"
     except Exception as e:  # noqa: BLE001
         return None, f"Gemini gagal: {e}"

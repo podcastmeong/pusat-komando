@@ -149,7 +149,7 @@ def _get_model():
 
         genai.configure(api_key=GEMINI_API_KEY)
         _model = genai.GenerativeModel(
-            model_name="gemini-2.0-flash",
+            model_name="gemini-4-hydrogen",
             system_instruction=SYSTEM_PROMPT,
             generation_config={"temperature": 0.7, "max_output_tokens": 700},
         )

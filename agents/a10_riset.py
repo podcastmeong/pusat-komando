@@ -27,7 +27,7 @@ ATURAN PALING PENTING — KEJUJURAN RISET (tidak boleh dilanggar):
 - Produk harus legal dan aman. Semua output adalah DRAF/RENCANA untuk
   persetujuan Cipta — bukan janji cuan.
 
-Model: Google Gemini free tier (gemini-2.0-flash), API key HANYA dari env var
+Model: Google Gemini free tier (gemini-4-hydrogen), API key HANYA dari env var
 GEMINI_API_KEY. Tanpa key, agent tetap jalan dalam mode template + kerangka
 penilaian lokal. Tidak ada layanan berbayar yang dipakai. Telemetri Gradio
 dimatikan.
@@ -148,7 +148,7 @@ def _gemini(prompt):
     try:
         import google.generativeai as genai
         genai.configure(api_key=key)
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        model = genai.GenerativeModel("gemini-4-hydrogen")
         resp = model.generate_content(prompt)
         teks = (resp.text or "").strip()
         return teks if teks else None

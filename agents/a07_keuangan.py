@@ -18,7 +18,7 @@ ATURAN KERAS (tidak boleh dilanggar):
 - Semua angka dimasukkan manual oleh pengguna/Muse dari laporan platform.
 - Target adalah TARGET, bukan janji — tampilkan dengan jujur.
 
-Teknis: Python + Gradio + Gemini free tier (gemini-2.0-flash).
+Teknis: Python + Gradio + Gemini free tier (gemini-4-hydrogen).
 API key HANYA dari environment variable GEMINI_API_KEY — tidak pernah
 tertulis di file. Tanpa key, agent tetap jalan dalam mode data lokal
 (template + knowledge base), tanpa jawaban AI.
@@ -396,7 +396,7 @@ def _model_gemini():
         import google.generativeai as genai
         genai.configure(api_key=kunci)
         return genai.GenerativeModel(
-            "gemini-2.0-flash",
+            "gemini-4-hydrogen",
             system_instruction=(
                 "Kamu Agent Keuangan Podcast Meong. Jawab Bahasa Indonesia, singkat dan jujur. "
                 "Kamu hanya mencatat dan melaporkan uang — kamu TIDAK BISA mentransfer, menarik, "

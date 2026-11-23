@@ -28,7 +28,7 @@ if GEMINI_API_KEY:
         import google.generativeai as genai
 
         genai.configure(api_key=GEMINI_API_KEY)
-        _model = genai.GenerativeModel("gemini-2.0-flash")
+        _model = genai.GenerativeModel("gemini-4-hydrogen")
     except Exception:
         _model = None
 
