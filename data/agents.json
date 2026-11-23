@@ -2596,7 +2596,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": true
@@ -2723,7 +2724,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -2850,7 +2852,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -2977,7 +2980,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -3105,7 +3109,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": true
@@ -3231,7 +3236,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": false
@@ -3357,7 +3363,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": false
@@ -3483,7 +3490,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": false
@@ -3610,7 +3618,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "tim": "Tim 3 - 0din",
     "ketua_tim": true
@@ -3736,7 +3745,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "tim": "Tim 3 - 0din",
     "ketua_tim": false
@@ -3864,7 +3874,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -3990,7 +4001,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4116,7 +4128,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "ketua_tim": true
    }
@@ -4243,7 +4256,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4370,7 +4384,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4497,7 +4512,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4625,7 +4641,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "ketua_tim": true
    }
@@ -4753,7 +4770,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4880,7 +4898,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -5007,7 +5026,8 @@
      "data/skills/ssrf-oast/SKILL.md",
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
-     "data/skills/verifikasi-xss/SKILL.md"
+     "data/skills/verifikasi-xss/SKILL.md",
+     "data/skills/audit-rag-llm/SKILL.md"
     ],
     "ketua_tim": false
    }
