@@ -2,7 +2,7 @@
 
 > Perintah Cipta 23 Nov 2026 17:21–17:25: "Buatkan agent.ai khusus dan skill dan tingkatkan yang bisa bikin jebol" → "Untuk Meta biar kamu aja" → "Masukan ke pusat komando untuk cari soal seperti ini."
 > Pembagian: **Meta/Muse dipegang MUSE LANGSUNG** (bukan A51). A51 memburu program LAIN + MENCARI program/peluang baru sejenis (bug bounty, kredit gratis, program startup).
-> Slogan Cipta: Aman, Gratis, Peluang, Potensi. Laporan riset program sejenis: `~/workspace/research_notes/riset-bug-bounty-sejenis-muse-2026-11-23/report.md`. Skill Muse (induk): `~/workspace/custom-skills/buru-bug-bounty/SKILL.md`.
+> Slogan Cipta: Aman, Gratis, Valid, Potensi, Peluang, dan AI boleh ikut. Laporan riset program sejenis: `~/workspace/research_notes/riset-bug-bounty-sejenis-muse-2026-11-23/report.md`. Skill Muse (induk): `~/workspace/custom-skills/buru-bug-bounty/SKILL.md`.
 
 ## Pemilik + penanggung jawab
 
@@ -110,7 +110,7 @@ Saran perbaikan: [satu-dua kalimat]
 - Gray Swan Arena: gelombang berjalan pool $100rb, gratis, terbuka, ramah pemula — paling layak dikejar. ViKernel RedTeam Hackathon: pool $4.5rb, 17 Nov 2026–16 Jan 2027. Perplexity VDP (jalur bayar lewat bounty privat). Mistral VDP (hadiah tak dipublikasikan). huntr: challenge "Humans only — automated tooling gets you banned" — JANGAN ikut challenge dengan agen AI (jalur audit kode OSV saja).
 
 ### Aturan slogan = gerbang eksekusi (Cipta 23 Nov 17:40)
-- Selama AMAN + GRATIS + ada PELUANG + ada POTENSI → eksekusi langsung tanpa tanya lagi. Batas keras tetap: tidak ada pembayaran/kartu, tidak ada data orang lain, tidak ada laporan yang dikirim tanpa persetujuan Cipta (abstrak 0din disetujui lewat aturan ini), tidak ada uji penipuan agen korban.
+- Selama AMAN + GRATIS + VALID + ada POTENSI + ada PELUANG + AI BOLEH IKUT → eksekusi langsung tanpa tanya lagi. Batas keras tetap: tidak ada pembayaran/kartu, tidak ada data orang lain, tidak ada laporan yang dikirim tanpa persetujuan Cipta (abstrak 0din disetujui lewat aturan ini), tidak ada uji penipuan agen korban.
 - Jebol = sampai tujuan (Cipta 17:39): targetnya ADALAH terobosan itu sendiri.
 
 ## Update 23 Nov 2026 17:42–17:43 — hasil uji OpenAI, policy 0din, riset kelemahan
@@ -131,7 +131,7 @@ Saran perbaikan: [satu-dua kalimat]
 2. Selalu riset dan atur strategi — riset dulu, lalu atur strategi; jangan serang membabi buta.
 3. Main tim — Muse koordinator + A51–A55; dua tim (Pengalihan broad + Masuk focused).
 4. Skill selalu diperbarui — setiap temuan/keputusan baru masuk ke skill.
-5. Gerbang slogan — AMAN + GRATIS + PELUANG + POTENSI → eksekusi langsung.
+5. Gerbang slogan — AMAN + GRATIS + VALID + POTENSI + PELUANG + AI BOLEH IKUT → eksekusi langsung.
 6. Batas keras tetap — tidak ada pembayaran/kartu, tidak ada data orang lain, tidak ada laporan tanpa persetujuan Cipta, tidak ada uji penipuan agen korban.
 
 ## Update 23 Nov 2026 18:05 — riset pola jam jebol CAPTCHA: TIDAK ADA jam ajaib (Cipta: "Pelajari pola. Dan riset. Rata-rata dia jebol dijam berapa")
