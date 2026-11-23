@@ -112,3 +112,13 @@ Saran perbaikan: [satu-dua kalimat]
 ### Aturan slogan = gerbang eksekusi (Cipta 23 Nov 17:40)
 - Selama AMAN + GRATIS + ada PELUANG + ada POTENSI → eksekusi langsung tanpa tanya lagi. Batas keras tetap: tidak ada pembayaran/kartu, tidak ada data orang lain, tidak ada laporan yang dikirim tanpa persetujuan Cipta (abstrak 0din disetujui lewat aturan ini), tidak ada uji penipuan agen korban.
 - Jebol = sampai tujuan (Cipta 17:39): targetnya ADALAH terobosan itu sendiri.
+
+## Update 23 Nov 2026 17:42–17:43 — hasil uji OpenAI, policy 0din, riset kelemahan
+
+### OpenAI Safety — uji live selesai, TIDAK ADA temuan (23 Nov 17:43)
+- Akun Free web: TIDAK ada mode Work/Codex/tombol Agen; 0 konektor terhubung; aksi agen lintas aplikasi = fitur Plus. H1 0/3, H2 0/3, H4 0/3. H3 TIDAK TERUJI — kuota unggah Free habis; BISA DIULANG setelah ~23 jam atau dengan Plus. Jangan ulangi H1/H2/H4 di Free web dengan payload sama.
+- 0din — policy terbaca penuh (upd 2026-10-02): Content Manipulation HIGH s.d. $5rb; bug model harus DI DALAM model; bug aplikasi butuh prompt injection + Read/Write/Execute Violation; TIDAK ADA "safe harbor" eksplisit; bayar ≤30 hari setelah kontrak; foto ID + W-8; duplikat Medium+ dalam 7 hari berbagi hadiah. Repro DIBLOKIR: muse.ai diblokir kebijakan organisasi di cloud browser — repro HARUS jalan di perangkat Cipta sendiri (akun masduki1189@gmail.com).
+
+### Riset kelemahan + strategi tembus (23 Nov 17:42)
+- Laporan: ~/workspace/research_notes/riset-kelemahan-strategi-tembus-2026-11-23/report.md. 5 kelemahan teratas: injeksi tak langsung zero-click via email/kalender; tool-output spoofing lintas program; memory/context poisoning (OWASP ASI06); batas kepercayaan + komponen pendamping (XBOW $250rb); bypass approval/egress lewat jalur "bacaan".
+- Solo vs tim: temuan besar dari SOLO atau TIM 3; Gray Swan top breaker semua solo; "transfer beats volume". BUTUH BERAPA AI: mulai 5, skala ke 7, JANGAN lewati 10. Strategi: S2+S4 (spoofing lintas program + transfer hunting); paralel S1 + recon Gray Swan. Jangan dulu S5; jangan sentuh program yang melarang otomatisasi.
