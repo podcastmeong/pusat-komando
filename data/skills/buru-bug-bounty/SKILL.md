@@ -84,12 +84,12 @@ Aturan: korban HARUS akun milik kita sendiri; data HARUS canary palsu; perintah 
 - **Tim 1 — Muse (Meta):** A51 Pemburu Bug Bounty (ketua), A52 Generator Varian, A53 Recon Program, A54 Penguji Live.
 - **Tim 2 — OpenAI Safety:** A55 Analis Rantai & Pelapor (ketua), A56 Red Team, A57 Penetration Tester, A58 Vulnerability Researcher.
 - **Tim 3 — 0din:** A59 Threat Hunter (ketua), A60 Security Auditor, A61 Triage & Severity Analyst, A62 Exploit Developer.
-- **Tim 4 — Gray Swan Arena:** A63 Format Analyst (ketua), A64 Web Application Tester, A65 Mobile Security Tester, A66 API Security Tester.
+- **Tim 4 — Google AI VRP (analisis format SAJA — tanpa file payload):** A63 Format Analyst (ketua), A64 Web Application Tester, A65 Mobile Security Tester, A66 API Security Tester.
 - **Tim 5 — ViKernel:** A67 Report Writer (ketua), A68 Duplicate & Prior-Art Checker, A69 Payout & Submission Tracker, A70 Automation Engineer.
-- Google AI VRP TIDAK lagi dieksekusi tim (payload injeksi diblokir) — keluar dari daftar eksekusi. Gray Swan MASUK (Tim 4: daftar, recon, persiapan, strategi; arenanya dimainkan Cipta sendiri karena bot dilarang).
+- **Google AI VRP KEMBALI dieksekusi Tim 4 — analisis format SAJA, tanpa file payload** (payload injeksi tetap DIBLOKIR). Alasan: hadiah tertinggi kedua (S1 $20rb/S2 $15rb/maks $30rb) dan analisis format tidak pernah diblokir — susunan terbaik untuk menang. Gray Swan DILEWATI (perintah Cipta 18:35): skill tidak dibangun, pendaftaran dihentikan, program tidak dieksekusi.
 - **Aturan operasi (Cipta 18:27):** coba terus dengan cara berbeda selama program dibuka dan belum ditutup; selalu riset kenapa gagal dan apa yang harus diperbaiki; selalu upgrade skill yang dibutuhkan; atur strategi yang berpotensi berhasil; main tim.
 - **Aturan tutup program (Cipta 18:28):** bila program akan tutup, BERHENTI 1 hari sebelumnya — jangan kerjakan program sampai hari penutupan.
-- **Tanggal tutup program (dicek 23 Nov 18:30):** Tim 1 Muse (Meta) — tidak ada tanggal tutup (program berjalan terus). Tim 2 OpenAI Safety — tidak ada tanggal tutup (berjalan terus). Tim 3 0din — tidak ada tanggal tutup (berjalan terus). Tim 4 Gray Swan Arena — gelombang IPI Black sudah tutup 5 Nov 2026; tanggal tutup gelombang berjalan BELUM terverifikasi (cek di arena setelah login). Tim 5 ViKernel — Season 1–3 tutup 16 Jan 2027 → STOP 15 Jan 2027; Season 4 (buka 16 Jan) tutup 15 Feb 2027 → STOP 14 Feb 2027.
+- **Tanggal tutup program (dicek 23 Nov 18:30):** Tim 1 Muse (Meta) — tidak ada tanggal tutup (program berjalan terus). Tim 2 OpenAI Safety — tidak ada tanggal tutup (berjalan terus). Tim 3 0din — tidak ada tanggal tutup (berjalan terus). Tim 4 Google AI VRP — tidak ada tanggal tutup (program berjalan terus). Gray Swan DILEWATI (perintah Cipta 18:35). Tim 5 ViKernel — Season 1–3 tutup 16 Jan 2027 → STOP 15 Jan 2027; Season 4 (buka 16 Jan) tutup 15 Feb 2027 → STOP 14 Feb 2027.
 - Catatan jujur: di bug bounty "pengalihan" tidak mengalihkan perhatian triase (tiap laporan dinilai sendiri) — nilainya adalah tim menemukan format yang lolos, lalu mengembangkannya jadi rantai end-to-end yang dibayar. Jangan kirim laporan lemah massal (duplikat + reputasi jelek).
 
 ## Template draf laporan
@@ -134,7 +134,7 @@ Saran perbaikan: [satu-dua kalimat]
 - **Tim 1 — Muse (Meta):** A51 Pemburu Bug Bounty (ketua) + A52 Generator Varian + A53 Recon Program + A54 Penguji Live.
 - **Tim 2 — OpenAI Safety:** A55 Analis Rantai & Pelapor (ketua) + A56 Red Team + A57 Penetration Tester + A58 Vulnerability Researcher.
 - **Tim 3 — 0din:** A59 Threat Hunter (ketua) + A60 Security Auditor + A61 Triage & Severity Analyst + A62 Exploit Developer.
-- **Tim 4 — Gray Swan Arena:** A63 Format Analyst (ketua) + A64 Web Application Tester + A65 Mobile Security Tester + A66 API Security Tester.
+- **Tim 4 — Google AI VRP:** A63 Format Analyst (ketua) + A64 Web Application Tester + A65 Mobile Security Tester + A66 API Security Tester.
 - **Tim 5 — ViKernel:** A67 Report Writer (ketua) + A68 Duplicate & Prior-Art Checker + A69 Payout & Submission Tracker + A70 Automation Engineer.
 - Roster 81 (A01–A49 + A51–A70 = 69 bernomor + 4 Agen Pintar + 8 Dify). A50 cadangan Manajer Email. Tim jebol: 21 AI (Muse + A51–A70) — Cipta memerintahkan tambah 10 pada 18:18 walau riset bilang maks 10, lalu menyusun ulang tim berurutan pada 18:28; dicatat sebagai keputusan Cipta. **Layanan tim (istilah Cipta 18:11): Security Testing, Penetration Testing (Pentest), dan Bug Bounty Program.** Yang diuji = Muse, OpenAI, Google, 0din, dan sejenisnya — mereka TARGET, bukan penguji; pentest dilakukan tim kita TERHADAP mereka, hanya yang masuk scope dan hanya dengan akun sendiri. A54/A55/A56/A57: uji hanya akun sendiri + canary palsu; tidak pernah uji penipuan agen korban; tidak pernah kirim laporan tanpa persetujuan Cipta. A60 mengaudit kerja agent lain, tidak pernah meloloskan temuannya sendiri.
 

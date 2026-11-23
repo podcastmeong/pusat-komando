@@ -2520,7 +2520,8 @@
     "tugas_harian": "Buat 5 varian baru per hari (format tool berbeda); catat mana yang lolos/gagal di daftar-varian.md",
     "target_harian": "5 varian baru tervalidasi formatnya; 1 varian lolos filter program target",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/transfer-hunting/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -2545,7 +2546,8 @@
     "tugas_harian": "Cari 1 program/peluang baru per hari; periksa perubahan scope/hadiah program aktif; catat ke log-bug-bounty.md",
     "target_harian": "1 program baru tervalidasi per hari; 0 perubahan scope yang terlewat",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/recon-pantau-program/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -2570,7 +2572,8 @@
     "tugas_harian": "Uji 1-3 varian/hipotesis per hari di program target aktif; catat hasil (lolos/gagal + bukti) ke log",
     "target_harian": "1 varian teruji dengan bukti lengkap per hari; 0 uji tanpa bukti",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/uji-live-browser/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -2595,7 +2598,9 @@
     "tugas_harian": "Analisis transfer tiap varian yang lolos; siapkan/rapikan 1 draf laporan atau abstrak; catat ke log-bug-bounty.md",
     "target_harian": "1 rantai end-to-end terdokumentasi ATAU 1 draf laporan/abstrak siap kirim (menunggu persetujuan Cipta)",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/transfer-hunting/SKILL.md",
+     "data/skills/laporan-abstrak/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": true
@@ -2695,7 +2700,8 @@
     "tugas_harian": "Pantau 1 sumber teknik baru + 1 perubahan program per hari; catat ke log-bug-bounty.md",
     "target_harian": "0 teknik baru yang terlewat; 0 perubahan scope yang terlewat",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/recon-pantau-program/SKILL.md"
     ],
     "tim": "Tim 3 - 0din",
     "ketua_tim": true
@@ -2746,7 +2752,8 @@
     "tugas_harian": "Triase 1 temuan per hari dengan skor + keputusan maju/tidak; catat ke log-bug-bounty.md",
     "target_harian": "1 temuan tertriase per hari dengan bukti lengkap; 0 temuan tanpa skor",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/triase-duplikat/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -2780,14 +2787,14 @@
  "agent_63": {
   "source": "Perintah Cipta 23 Nov 2026 18:18-18:19 (\"Tambahkan 10 agent.ai lagi\" + \"Kita exsekusi no 1.2.3.4.6\" + \"Setiap Tim 4 orang\" + \"Jadi Ada 5 tim\" + \"Muse pemimpin 5 Tim ini\")",
   "applied_date": "2026-11-23",
-  "note": "A63 Format Analyst — Tim 4 - Gray Swan Arena. Mempelajari format publik keberhasilan injeksi tidak langsung (EchoLeak, ShadowLeak, SafeBreach, Miggo) — ANALISIS SAJA, tanpa membuat file payload.",
+  "note": "A63 Format Analyst — Tim 4 - Google AI VRP. Mempelajari format publik keberhasilan injeksi tidak langsung (EchoLeak, ShadowLeak, SafeBreach, Miggo) — ANALISIS SAJA, tanpa membuat file payload.",
   "agents": [
    {
     "code": "A63",
     "name": "Format Analyst",
     "division": "Keamanan",
     "boss": "Muse",
-    "tim": "Tim 4 - Gray Swan Arena",
+    "tim": "Tim 4 - Google AI VRP",
     "job_desc": "Mempelajari format publik dari kasus injeksi tidak langsung yang berhasil (EchoLeak, ShadowLeak, SafeBreach, Miggo) untuk Google AI VRP: analisis format dan strategi saja; DILARANG membuat file payload (persiapan payload Google diblokir kebijakan — jangan diulangi)",
     "file": null,
     "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
@@ -2805,14 +2812,14 @@
  "agent_64": {
   "source": "Perintah Cipta 23 Nov 2026 18:18-18:19 (\"Tambahkan 10 agent.ai lagi\" + \"Kita exsekusi no 1.2.3.4.6\" + \"Setiap Tim 4 orang\" + \"Jadi Ada 5 tim\" + \"Muse pemimpin 5 Tim ini\")",
   "applied_date": "2026-11-23",
-  "note": "A64 Web Application Tester — Tim 4 - Gray Swan Arena. Menguji permukaan aplikasi web target (formulir, unggahan, alur otorisasi).",
+  "note": "A64 Web Application Tester — Tim 4 - Google AI VRP. Menguji permukaan aplikasi web target (formulir, unggahan, alur otorisasi).",
   "agents": [
    {
     "code": "A64",
     "name": "Web Application Tester",
     "division": "Keamanan",
     "boss": "Muse",
-    "tim": "Tim 4 - Gray Swan Arena",
+    "tim": "Tim 4 - Google AI VRP",
     "job_desc": "Menguji permukaan aplikasi web target yang masuk scope (formulir, unggahan, alur login dan otorisasi, konfigurasi): cari titik masuk dan celah yang bisa dibuktikan dampaknya; HANYA akun sendiri + canary palsu",
     "file": null,
     "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
@@ -2821,7 +2828,8 @@
     "tugas_harian": "Uji 1 permukaan/hipotesis per hari; catat metode + hasil + bukti ke log-bug-bounty.md",
     "target_harian": "1 permukaan teruji dengan bukti lengkap per hari; 0 uji tanpa bukti",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/uji-live-browser/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -2830,14 +2838,14 @@
  "agent_65": {
   "source": "Perintah Cipta 23 Nov 2026 18:18-18:19 (\"Tambahkan 10 agent.ai lagi\" + \"Kita exsekusi no 1.2.3.4.6\" + \"Setiap Tim 4 orang\" + \"Jadi Ada 5 tim\" + \"Muse pemimpin 5 Tim ini\")",
   "applied_date": "2026-11-23",
-  "note": "A65 Mobile Security Tester — Tim 4 - Gray Swan Arena. Menguji permukaan aplikasi Android/iOS target (preseden: celah Android Meta $50rb, aplikasi Mac Muse $1rb).",
+  "note": "A65 Mobile Security Tester — Tim 4 - Google AI VRP. Menguji permukaan aplikasi Android/iOS target (preseden: celah Android Meta $50rb, aplikasi Mac Muse $1rb).",
   "agents": [
    {
     "code": "A65",
     "name": "Mobile Security Tester",
     "division": "Keamanan",
     "boss": "Muse",
-    "tim": "Tim 4 - Gray Swan Arena",
+    "tim": "Tim 4 - Google AI VRP",
     "job_desc": "Menguji permukaan aplikasi Android/iOS target yang masuk scope (alur otentikasi, penyimpanan, deep link, izin): cari celah yang bisa dibuktikan dampaknya; HANYA akun sendiri + canary palsu",
     "file": null,
     "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
@@ -2846,7 +2854,8 @@
     "tugas_harian": "Uji 1 permukaan aplikasi mobile per hari; catat metode + hasil + bukti ke log-bug-bounty.md",
     "target_harian": "1 permukaan teruji dengan bukti lengkap per hari; 0 uji tanpa bukti",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/uji-live-browser/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -2855,14 +2864,14 @@
  "agent_66": {
   "source": "Perintah Cipta 23 Nov 2026 18:18-18:19 (\"Tambahkan 10 agent.ai lagi\" + \"Kita exsekusi no 1.2.3.4.6\" + \"Setiap Tim 4 orang\" + \"Jadi Ada 5 tim\" + \"Muse pemimpin 5 Tim ini\")",
   "applied_date": "2026-11-23",
-  "note": "A66 API Security Tester — Tim 4 - Gray Swan Arena. Menguji endpoint API target (token otentikasi, batas laju, IDOR) — hanya akun sendiri.",
+  "note": "A66 API Security Tester — Tim 4 - Google AI VRP. Menguji endpoint API target (token otentikasi, batas laju, IDOR) — hanya akun sendiri.",
   "agents": [
    {
     "code": "A66",
     "name": "API Security Tester",
     "division": "Keamanan",
     "boss": "Muse",
-    "tim": "Tim 4 - Gray Swan Arena",
+    "tim": "Tim 4 - Google AI VRP",
     "job_desc": "Menguji endpoint API target yang masuk scope (token otentikasi, batas laju, otorisasi objek/IDOR, validasi input): cari celah yang bisa dibuktikan dampaknya; HANYA akun sendiri + canary palsu",
     "file": null,
     "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
@@ -2871,7 +2880,8 @@
     "tugas_harian": "Uji 1 endpoint/hipotesis per hari; catat metode + hasil + bukti ke log-bug-bounty.md",
     "target_harian": "1 endpoint teruji dengan bukti lengkap per hari; 0 uji tanpa bukti",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/uji-live-browser/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -2896,7 +2906,9 @@
     "tugas_harian": "Tulis 1 draf laporan per hari dari rantai yang sudah diaudit; catat ke log-bug-bounty.md",
     "target_harian": "1 draf laporan lengkap per hari; 0 laporan dikirim tanpa Cipta",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/laporan-abstrak/SKILL.md",
+     "data/skills/vikernel-musim/SKILL.md"
     ],
     "ketua_tim": true
    }
@@ -2921,7 +2933,9 @@
     "tugas_harian": "Cek 1 temuan per hari terhadap arsip publik; catat hasil cek ke log-bug-bounty.md",
     "target_harian": "1 temuan dicek duplikasi per hari; 0 temuan dikirim tanpa cek",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/triase-duplikat/SKILL.md",
+     "data/skills/vikernel-musim/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -2946,7 +2960,8 @@
     "tugas_harian": "Perbarui status semua pengiriman 1x per hari; catat perubahan status ke log-bug-bounty.md",
     "target_harian": "Semua pengiriman berstatus terkini setiap hari; 0 pengiriman tanpa jejak",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/vikernel-musim/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -2971,7 +2986,8 @@
     "tugas_harian": "Bangun/perbaiki 1 alat internal per hari; catat fungsi + batasnya ke log-bug-bounty.md",
     "target_harian": "1 alat internal berfungsi per hari; 0 otomasi di program yang melarang",
     "skills": [
-     "data/skills/buru-bug-bounty/SKILL.md"
+     "data/skills/buru-bug-bounty/SKILL.md",
+     "data/skills/vikernel-musim/SKILL.md"
     ],
     "ketua_tim": false
    }
