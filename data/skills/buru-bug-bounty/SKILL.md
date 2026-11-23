@@ -54,6 +54,17 @@
 5. **Metode kerja hunter top.** Briefing harian 1–2 jam; pilih 1–2 program; recon 70%; pahami aplikasi sebagai pengguna asli; uji kontrol akses dengan dua akun; rangkai celah kecil jadi dampak besar; bunuh temuan lemah cepat; cluster hunting; laporan 5 bagian dengan screenshot tiap langkah.
 - Kesalahan umum yang harus dihindari: duplikat (pemula 50–80% laporan ditolak/diduplikasi), endpoint di luar scope, langkah reproduksi tidak jelas, severity dibesar-besarkan, tanpa PoC, menguji akun pengguna asli, submit sebelum terkonfirmasi penuh.
 
+## Studi kasus temuan yang pernah dibayar (pola yang harus ditiru)
+
+- **$300rb — proxy-header auth (pra-peluncuran).** Migrasi menambah lapisan proxy kedua; sistem mempercayai header dari lingkungan yang bisa dipengaruhi. Pelajaran: audit batas kepercayaan, uji ulang tiap ada perubahan/migrasi.
+- **$90rb — tool-output spoofing.** Halaman web jahat meniru pesan status browsing tool; agen mengira teks halaman sebagai status tool dan bertindak. Pelajaran: pola paling bisa diulang — generik, murah diuji, variasinya hampir tak habis.
+- **$90rb kedua, $50rb (celah Android), $1rb (Mac, bypass auto-update).** Pelajaran: satu kelas celah bisa dibayar berkali-kali dengan varian berbeda; komponen pendamping (aplikasi mobile, auto-update) bisa jadi jalan masuk.
+- Catatan jujur: sumber publik menjelaskan APA celahnya, bukan langkah penemuan langkah-demi-langkah — "bagaimana menemukannya" adalah rekonstruksi (TAFSIRAN), sudah dilabeli begitu di laporan riset.
+
+## Cluster hunting dengan pasukan (perintah Cipta 17:32–17:33)
+
+Serang dengan pasukan AI: worker paralel — (1) 20 varian dokumen tool-output spoofing + indirect prompt injection (10 OpenAI, 10 Google) di ~/workspace/bug-bounty-varian/; (2) persiapan 0din (draf abstrak, JANGAN dikirim); (3) recon 3–5 program bounty baru yang ramah pemula. Prinsip: satu format yang lolos → uji ke semua filter; variasi + riset dulu, bukan serang membabi buta. Aturan pasukan: hanya akun sendiri, hanya canary palsu, tidak ada yang publik, tidak ada laporan yang dikirim, tidak ada uji live via browser (uji live lewat browser task parent), dan TIDAK BOLEH uji penipuan agen korban (langkah itu DIBLOKIR — jangan dicoba dalam bentuk apa pun).
+
 ## Hasil perburuan Muse 23 Nov 2026 — jalur yang SUDAH diuji dan MATI (jangan ulangi)
 
 Perburuan sandbox Muse oleh Muse selesai 17:28, TIDAK ADA temuan. Yang sudah diuji dan gagal:
