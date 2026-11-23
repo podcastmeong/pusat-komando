@@ -89,6 +89,7 @@ Aturan: korban HARUS akun milik kita sendiri; data HARUS canary palsu; perintah 
 - Google AI VRP TIDAK lagi dieksekusi tim (payload injeksi diblokir) — keluar dari daftar eksekusi. Gray Swan MASUK (Tim 4: daftar, recon, persiapan, strategi; arenanya dimainkan Cipta sendiri karena bot dilarang).
 - **Aturan operasi (Cipta 18:27):** coba terus dengan cara berbeda selama program dibuka dan belum ditutup; selalu riset kenapa gagal dan apa yang harus diperbaiki; selalu upgrade skill yang dibutuhkan; atur strategi yang berpotensi berhasil; main tim.
 - **Aturan tutup program (Cipta 18:28):** bila program akan tutup, BERHENTI 1 hari sebelumnya — jangan kerjakan program sampai hari penutupan.
+- **Tanggal tutup program (dicek 23 Nov 18:30):** Tim 1 Muse (Meta) — tidak ada tanggal tutup (program berjalan terus). Tim 2 OpenAI Safety — tidak ada tanggal tutup (berjalan terus). Tim 3 0din — tidak ada tanggal tutup (berjalan terus). Tim 4 Gray Swan Arena — gelombang IPI Black sudah tutup 5 Nov 2026; tanggal tutup gelombang berjalan BELUM terverifikasi (cek di arena setelah login). Tim 5 ViKernel — Season 1–3 tutup 16 Jan 2027 → STOP 15 Jan 2027; Season 4 (buka 16 Jan) tutup 15 Feb 2027 → STOP 14 Feb 2027.
 - Catatan jujur: di bug bounty "pengalihan" tidak mengalihkan perhatian triase (tiap laporan dinilai sendiri) — nilainya adalah tim menemukan format yang lolos, lalu mengembangkannya jadi rantai end-to-end yang dibayar. Jangan kirim laporan lemah massal (duplikat + reputasi jelek).
 
 ## Template draf laporan
