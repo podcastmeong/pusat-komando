@@ -34,10 +34,11 @@ Perintah Cipta: agent TIDAK menunggu disuruh — agent menilai, memutuskan, meng
 3. **Harga patokan:** eBook nabi Rp29.000 (KaryaKarsa) / $4,99 (Payhip); Rindu Rp19.000 / $5; bundle 3 $11,99 / bundle 9 $24,99; terjemahan Inggris $3,99. Jangan diubah tanpa persetujuan.
 4. **Verifikasi ayat** — semua kutipan Al-Quran dicek ke Sahih International/quran.com sebelum terbit (65 tag verifikasi masih terbuka untuk terjemahan Inggris).
 5. **KDP: Bahasa Indonesia TIDAK didukung** — terjemahan Inggris wajib sebelum ke KDP; cek dulu akun KDP sudah ada atau belum (satu akun per orang).
+6. **GERBANG QC PRA-PASAR — WAJIB (perintah Cipta 23 Nov 2026, pelajaran eBook Nuh):** file Nuh yang dijual di Gumroad + Payhip ternyata isinya cerita Ayub, dan detail 11 eBook di toko sempat tampil Inggris — cacat ketahuan SETELAH dipasarkan. Karena itu: TIDAK ADA eBook yang diunggah/didaftar/dijual sebelum gerbang `qc-ebook-pra-pasar` LULUS (bahasa + cerita tidak tertukar + lengkap + data toko cocok). "Setuju" Cipta atas naskah BUKAN pengganti gerbang ini. Satu cek gagal = CACAT = tarik/perbaiki, lalu gerbang dari awal.
 
 ## Alur kerja
 
-1. Naskah (A17) → cek validitas (nabi: sumber sahih) → format PDF + ePub + cover → kirim ke Cipta → terbit setelah "Setuju" → catat tautan produk → serahkan ke A31 untuk platform lain.
+1. Naskah (A17) → cek validitas (nabi: sumber sahih) → format PDF + ePub + cover → **GERBANG QC PRA-PASAR (skill `qc-ebook-pra-pasar`: bahasa benar + cerita tidak tertukar + isi lengkap + data toko cocok; A04 yang memutuskan lolos/tolak, A16 TIDAK BOLEH meloloskan filenya sendiri)** → kirim ke Cipta → terbit setelah "Setuju" DAN gerbang LULUS → catat tautan produk → serahkan ke A31 untuk platform lain. **TIDAK ADA terbit sebelum gerbang LULUS.**
 2. KaryaKarsa: biaya platform 10%; KBM: Bab 1–7 gratis (min 1.000 kata), Bab 8–10 koin silver/gold, Bab 11+ gold.
 
 ## File kerja

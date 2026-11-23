@@ -41,7 +41,8 @@
      "data/skills/riset-pasar/SKILL.md",
      "data/skills/analisis-bisnis/SKILL.md",
      "data/skills/penjualan-cs/SKILL.md",
-     "data/skills/operasional-admin/SKILL.md"
+     "data/skills/operasional-admin/SKILL.md",
+     "data/skills/cek-konsistensi-toko/SKILL.md"
     ]
    },
    {
@@ -73,7 +74,8 @@
     "tugas_harian": "Tulis prompt produksi dari naskah disetujui hari itu; cek hitung kata dialog",
     "target_harian": "12 prompt klip/malam (22 Nov) + cek mulut per klip",
     "skills": [
-     "data/skills/a44-persiapan-video/SKILL.md"
+     "data/skills/a44-persiapan-video/SKILL.md",
+     "data/skills/video-mulut-bergerak/SKILL.md"
     ]
    }
   ]
@@ -932,7 +934,9 @@
     "tugas_harian": "Periksa fakta, ejaan, hak cipta, tautan, klaim dan konsistensi",
     "target_harian": "100% output penting diperiksa",
     "skills": [
-     "data/skills/qa-verifikasi/SKILL.md"
+     "data/skills/qa-verifikasi/SKILL.md",
+     "data/skills/qc-ebook-pra-pasar/SKILL.md",
+     "data/skills/video-mulut-bergerak/SKILL.md"
     ]
    },
    {
@@ -1138,7 +1142,8 @@
     "tugas_harian": "Naskah, storyboard, prompt, video pendek | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
     "target_harian": "1 video utama atau storyboard siap produksi",
     "skills": [
-     "data/skills/produksi-video/SKILL.md"
+     "data/skills/produksi-video/SKILL.md",
+     "data/skills/video-mulut-bergerak/SKILL.md"
     ]
    },
    {
@@ -1294,7 +1299,8 @@
     "tugas_harian": "Susun/edit naskah eBook | Eksekusi 20 Marketplace (WAJIB, perintah Cipta 22 Nov 2026): bekal skill di data/skills/eksekusi-marketplace/SKILL.md.",
     "target_harian": "1 bagian/bab draf",
     "skills": [
-     "data/skills/penerbitan-ebook/SKILL.md"
+     "data/skills/penerbitan-ebook/SKILL.md",
+     "data/skills/qc-ebook-pra-pasar/SKILL.md"
     ]
    },
    {
@@ -1783,7 +1789,8 @@
     "nama_baru": "Build",
     "tugas": "Kerja 24 jam, fokus membangun (build) — membangun aplikasi, website, dan produk.",
     "skills": [
-     "data/skills/membangun-produk/SKILL.md"
+     "data/skills/membangun-produk/SKILL.md",
+     "data/skills/cek-konsistensi-toko/SKILL.md"
     ]
    },
    {
@@ -1861,7 +1868,9 @@
     "nama_baru": "QA",
     "tugas": "QA / Verifikator — cek live sebelum lapor selesai (harga, tautan, screenshot, demo, teks listing); laporkan jujur apa yang terlihat dan apa yang belum. Kerja 24 jam nonstop.",
     "skills": [
-     "data/skills/qa-verifikasi/SKILL.md"
+     "data/skills/qa-verifikasi/SKILL.md",
+     "data/skills/qc-ebook-pra-pasar/SKILL.md",
+     "data/skills/cek-konsistensi-toko/SKILL.md"
     ]
    },
    {

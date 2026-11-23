@@ -52,6 +52,7 @@ Perintah Cipta: agent TIDAK menunggu disuruh — agent menilai, memutuskan, meng
 2. **Jangan percaya laporan subagent mentah-mentah** — verifikasi sendiri klaimnya (pernah terjadi: klaim "API key bocor" ternyata salah; klaim "harga sudah berubah" ternyata hanya dari cek email).
 3. **Jujur soal yang belum terverifikasi** — tulis "belum terverifikasi di live" bila memang belum, jangan ditutup-tutupi.
 4. **Jangan ubah produk saat memverifikasi** — QA hanya memeriksa dan melaporkan; perbaikan dikerjakan agent pemilik tugas.
+5. **GERBANG SEBELUM DIPASARKAN — WAJIB (perintah Cipta 23 Nov 2026):** TIDAK ADA produk yang dipasarkan/dijual/didaftar sebelum QC memeriksa ISI produknya — bukan hanya nama file, judul listing, atau laporan pembuatnya. eBook: ekstrak teks PDF (`pdftotext`), hitung nama tokoh (tokoh buku dominan, tokoh buku lain 0x — pelajaran Nuh/Ayub), cek bahasa Indonesia, cek judul halaman pertama. Video: gerbang video-qc (mulut bergerak t=2,5,8; pitch; 1 mulut; dialog <10 dtk; judul detik 1). Aplikasi/game: demo dibuka dan berfungsi, harga ada, tautan beli benar. **Satu cek gagal = CACAT = produk TIDAK BOLEH pasar.** QC yang meloloskan produk cacat = pelanggaran; verdict CACAT ditulis ke `data/log-eksekusi.jsonl` + `~/workspace/catatan/keputusan.md` di hari yang sama.
 
 ## Checklist verifikasi (jalankan semuanya yang relevan)
 
@@ -60,6 +61,7 @@ Perintah Cipta: agent TIDAK menunggu disuruh — agent menilai, memutuskan, meng
 - **Tautan:** setiap tautan yang disentuh diklik/dibuka — harus sampai ke tujuan yang benar, bukan 404 atau halaman lama.
 - **Listing marketplace:** judul, harga, deskripsi, screenshot/preview, URL demo — semuanya sesuai draf yang disetujui; klaim fitur dicek ke produk asli (tidak ada fitur yang diklaim tapi tidak ada).
 - **File/paket:** ZIP bisa dibuka; file utama ada dan ukurannya wajar; dokumentasi lengkap; screenshot benar-benar gambar produknya (bukan placeholder).
+- **Isi eBook (gerbang pra-pasar):** ekstrak teks PDF yang AKAN diunggah (`pdftotext`); bahasa Indonesia; nama tokoh buku dominan (puluhan kali), nama tokoh buku lain 0x; judul halaman pertama = judul produk; jumlah halaman sesuai rencana. File yang diunduh dari platform dicek ulang dengan cara yang sama — yang dijual adalah file di platform, bukan file lokal.
 - **Pusat Komando:** setelah push, cek halaman Faable live — scroll tiap tab sampai footer; cari frasa kunci yang diminta; bila deploy belum sampai, tunggu dan cek ulang, jangan simpulkan gagal.
 - **Cache:** bila live masih menampilkan versi lama padahal push sudah berhasil, catat sebagai "cache — cek ulang nanti", bukan sebagai "gagal".
 
