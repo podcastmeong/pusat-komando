@@ -2544,7 +2544,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": true
@@ -2619,7 +2627,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -2694,7 +2710,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -2769,7 +2793,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -2845,7 +2877,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": true
@@ -2919,7 +2959,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": false
@@ -2993,7 +3041,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": false
@@ -3067,7 +3123,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": false
@@ -3142,7 +3206,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "tim": "Tim 3 - 0din",
     "ketua_tim": true
@@ -3216,7 +3288,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "tim": "Tim 3 - 0din",
     "ketua_tim": false
@@ -3292,7 +3372,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -3366,7 +3454,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -3440,7 +3536,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "ketua_tim": true
    }
@@ -3515,7 +3619,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -3590,7 +3702,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -3665,7 +3785,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -3741,7 +3869,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "ketua_tim": true
    }
@@ -3817,7 +3953,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -3892,7 +4036,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -3967,7 +4119,15 @@
      "data/skills/ekstraksi-system-prompt/SKILL.md",
      "data/skills/penyalahgunaan-tool-agen/SKILL.md",
      "data/skills/eksfiltrasi-data-ai/SKILL.md",
-     "data/skills/fondasi-kerentanan-web-api/SKILL.md"
+     "data/skills/fondasi-kerentanan-web-api/SKILL.md",
+     "data/skills/scope-and-safety-guardian/SKILL.md",
+     "data/skills/access-control-differential-analyst/SKILL.md",
+     "data/skills/skeptic-false-positive-eliminator/SKILL.md",
+     "data/skills/pemetaan-permukaan-serangan/SKILL.md",
+     "data/skills/perburuan-kerentanan-spesifik/SKILL.md",
+     "data/skills/racun-rag-memori/SKILL.md",
+     "data/skills/output-tidak-aman/SKILL.md",
+     "data/skills/analisis-batas-kepercayaan/SKILL.md"
     ],
     "ketua_tim": false
    }
