@@ -2591,5 +2591,120 @@
     ]
    }
   ]
+ },
+ "agent_56": {
+  "source": "Perintah Cipta 23 Nov 2026 18:09-18:10 (\"Buatkan 5 agent.ai lagi\" + \"Ini istilah buat perusahaan nguji keamanan cybernya\" + \"Kamu tau istilahnya\") — istilah perusahaan penguji keamanan siber",
+  "applied_date": "2026-11-23",
+  "note": "A56 Red Team — Tim Masuk. Mensimulasikan penyerang sungguhan end-to-end di target in-scope; merangkai celah kecil jadi dampak nyata.",
+  "agents": [
+   {
+    "code": "A56",
+    "name": "Red Team",
+    "division": "Keamanan",
+    "boss": "Muse",
+    "job_desc": "Mensimulasikan penyerang sungguhan (red team) secara end-to-end di target yang masuk scope program: merangkai celah-celah kecil menjadi rantai serangan berdampak nyata; HANYA akun sendiri + canary palsu, tidak ada data orang lain, tidak ada uji penipuan agen korban",
+    "file": null,
+    "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
+    "mapped_to": "Muse (subagent)",
+    "status": "Aktif — dibuat 23 Nov 2026 atas perintah Cipta",
+    "tugas_harian": "Rangkai 1 rantai serangan end-to-end per hari dari varian/temuan yang ada; catat tiap langkah + bukti ke log-bug-bounty.md",
+    "target_harian": "1 rantai end-to-end terdokumentasi dengan bukti lengkap per hari; 0 langkah di luar scope",
+    "skills": [
+     "data/skills/buru-bug-bounty/SKILL.md"
+    ]
+   }
+  ]
+ },
+ "agent_57": {
+  "source": "Perintah Cipta 23 Nov 2026 18:09-18:10 (\"Buatkan 5 agent.ai lagi\" + \"Ini istilah buat perusahaan nguji keamanan cybernya\" + \"Kamu tau istilahnya\") — istilah perusahaan penguji keamanan siber",
+  "applied_date": "2026-11-23",
+  "note": "A57 Penetration Tester — Tim Pengalihan. Uji penetrasi sistematis ke permukaan target in-scope (aplikasi web, API, alur login/otorisasi).",
+  "agents": [
+   {
+    "code": "A57",
+    "name": "Penetration Tester",
+    "division": "Keamanan",
+    "boss": "A51",
+    "job_desc": "Melakukan penetration testing sistematis pada permukaan target yang masuk scope (aplikasi web, API, alur login dan otorisasi, konfigurasi): cari titik masuk dan celah yang bisa dibuktikan dampaknya; HANYA akun sendiri + canary palsu",
+    "file": null,
+    "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
+    "mapped_to": "Muse (subagent)",
+    "status": "Aktif — dibuat 23 Nov 2026 atas perintah Cipta",
+    "tugas_harian": "Uji 1 permukaan/hipotesis per hari; catat metode + hasil + bukti ke log-bug-bounty.md",
+    "target_harian": "1 permukaan teruji dengan bukti lengkap per hari; 0 uji tanpa bukti",
+    "skills": [
+     "data/skills/buru-bug-bounty/SKILL.md"
+    ]
+   }
+  ]
+ },
+ "agent_58": {
+  "source": "Perintah Cipta 23 Nov 2026 18:09-18:10 (\"Buatkan 5 agent.ai lagi\" + \"Ini istilah buat perusahaan nguji keamanan cybernya\" + \"Kamu tau istilahnya\") — istilah perusahaan penguji keamanan siber",
+  "applied_date": "2026-11-23",
+  "note": "A58 Vulnerability Researcher — Tim Pengalihan. Meneliti kelas kerentanan/teknik baru (CVE, writeup, riset) lalu mengubahnya jadi hipotesis yang bisa diuji di target kita.",
+  "agents": [
+   {
+    "code": "A58",
+    "name": "Vulnerability Researcher",
+    "division": "Keamanan",
+    "boss": "A51",
+    "job_desc": "Meneliti kelas kerentanan dan teknik serangan baru dari CVE, writeup, dan riset publik, lalu mengubahnya menjadi hipotesis yang bisa diuji pada target kita (Muse, OpenAI, Google, 0din); tidak menguji di luar scope",
+    "file": null,
+    "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
+    "mapped_to": "Muse (subagent)",
+    "status": "Aktif — dibuat 23 Nov 2026 atas perintah Cipta",
+    "tugas_harian": "Teliti 1 teknik/kelas kerentanan baru per hari; tulis hipotesis + cara uji ke log-bug-bounty.md",
+    "target_harian": "1 hipotesis baru yang bisa diuji per hari, dengan sumber tertulis",
+    "skills": [
+     "data/skills/buru-bug-bounty/SKILL.md"
+    ]
+   }
+  ]
+ },
+ "agent_59": {
+  "source": "Perintah Cipta 23 Nov 2026 18:09-18:10 (\"Buatkan 5 agent.ai lagi\" + \"Ini istilah buat perusahaan nguji keamanan cybernya\" + \"Kamu tau istilahnya\") — istilah perusahaan penguji keamanan siber",
+  "applied_date": "2026-11-23",
+  "note": "A59 Threat Hunter — Tim Pengalihan. Memburu teknik serangan baru + memantau perubahan scope, hadiah, dan aturan program aktif.",
+  "agents": [
+   {
+    "code": "A59",
+    "name": "Threat Hunter",
+    "division": "Keamanan",
+    "boss": "A51",
+    "job_desc": "Memburu (threat hunting) teknik serangan dan pola bypass terbaru yang dipakai di dunia nyata, serta memantau perubahan scope, hadiah, dan aturan program bounty aktif; memberi sinyal dini ke Tim Pengalihan dan Tim Masuk",
+    "file": null,
+    "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
+    "mapped_to": "Muse (subagent)",
+    "status": "Aktif — dibuat 23 Nov 2026 atas perintah Cipta",
+    "tugas_harian": "Pantau 1 sumber teknik baru + 1 perubahan program per hari; catat ke log-bug-bounty.md",
+    "target_harian": "0 teknik baru yang terlewat; 0 perubahan scope yang terlewat",
+    "skills": [
+     "data/skills/buru-bug-bounty/SKILL.md"
+    ]
+   }
+  ]
+ },
+ "agent_60": {
+  "source": "Perintah Cipta 23 Nov 2026 18:09-18:10 (\"Buatkan 5 agent.ai lagi\" + \"Ini istilah buat perusahaan nguji keamanan cybernya\" + \"Kamu tau istilahnya\") — istilah perusahaan penguji keamanan siber",
+  "applied_date": "2026-11-23",
+  "note": "A60 Security Auditor — Tim Masuk. Memvalidasi temuan dari sisi pertahanan sebelum draf laporan ke Cipta: uji ulang, cek kriteria berbayar program, cek kepatuhan scope/aturan.",
+  "agents": [
+   {
+    "code": "A60",
+    "name": "Security Auditor",
+    "division": "Keamanan",
+    "boss": "Muse",
+    "job_desc": "Meng-audit dan memvalidasi temuan dari sisi pertahanan (security audit) sebelum draf laporan diteruskan ke Cipta: uji ulang temuan, cek apakah dampaknya cocok dengan kategori berbayar program, cek kepatuhan scope dan aturan keras; TIDAK PERNAH meloloskan temuannya sendiri — audit dilakukan atas kerja agent lain",
+    "file": null,
+    "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
+    "mapped_to": "Muse (subagent)",
+    "status": "Aktif — dibuat 23 Nov 2026 atas perintah Cipta",
+    "tugas_harian": "Audit 1 temuan/draf per hari; tulis verdict LOLOS/CACAT + bukti ke log-bug-bounty.md",
+    "target_harian": "1 temuan tervalidasi dengan verdict tertulis per hari; 0 laporan lemah lolos ke Cipta",
+    "skills": [
+     "data/skills/buru-bug-bounty/SKILL.md"
+    ]
+   }
+  ]
  }
 }
