@@ -16,7 +16,7 @@
 3. **Kanal:** Instagram, TikTok, Threads (DM) + email. **WhatsApp TIDAK dipakai** untuk penjualan/pemasaran/promo/penawaran. Facebook NANTI.
 4. **Batas per kanal:** maks ~10 DM/hari/akun, jeda ≥3 menit antar DM. Jangan tembak sekaligus — akun kena batasi.
 5. **Akun yang JANGAN dipakai DM:** @meongcast (dibatasi sejak 21 Nov), @meongcast.id (cadangan, masih pemanasan — JANGAN DM dulu).
-6. **Isi pesan:** Pesan 1 TANPA harga; Pesan 2 harga USD + https://digistore-ai.pages.dev/ (tanpa `?v=`). Fokus kebutuhan customer — bila customer bercerita, dengarkan masalahnya, cari solusinya, lalu tawarkan produk yang menjawab kebutuhan itu.
+6. **Isi pesan:** Pesan 1 TANPA harga; Pesan 2 harga USD + https://digicat.std.ai.id/ (tanpa `?v=`). Fokus kebutuhan customer — bila customer bercerita, dengarkan masalahnya, cari solusinya, lalu tawarkan produk yang menjawab kebutuhan itu.
 7. **Cipta hanya turun tangan bila URGENT.** A25 yang MENGIRIM penawaran (aturan 21 Nov 11:43).
 
 ## Cek pra-penerbangan — WAJIB sebelum jam 09:00
