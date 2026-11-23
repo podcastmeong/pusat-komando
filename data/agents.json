@@ -2597,7 +2597,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": true
@@ -2725,7 +2736,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -2853,7 +2875,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -2981,7 +3014,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "tim": "Tim 1 - Muse (Meta)",
     "ketua_tim": false
@@ -3110,7 +3154,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": true
@@ -3237,7 +3292,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": false
@@ -3364,7 +3430,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": false
@@ -3491,7 +3568,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "tim": "Tim 2 - OpenAI Safety",
     "ketua_tim": false
@@ -3619,7 +3707,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "tim": "Tim 3 - 0din",
     "ketua_tim": true
@@ -3746,7 +3845,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "tim": "Tim 3 - 0din",
     "ketua_tim": false
@@ -3875,7 +3985,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4002,7 +4123,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4129,7 +4261,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": true
    }
@@ -4257,7 +4400,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4385,7 +4539,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4513,7 +4678,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4642,7 +4818,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": true
    }
@@ -4771,7 +4958,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -4899,7 +5097,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": false
    }
@@ -5027,7 +5236,18 @@
      "data/skills/traversal-jalur-lfi/SKILL.md",
      "data/skills/verifikasi-poc-aman/SKILL.md",
      "data/skills/verifikasi-xss/SKILL.md",
-     "data/skills/audit-rag-llm/SKILL.md"
+     "data/skills/audit-rag-llm/SKILL.md",
+     "data/skills/eskalasi-dampak-otomatis/SKILL.md",
+     "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+     "data/skills/kebersihan-bukti/SKILL.md",
+     "data/skills/kondisi-luar-biasa/SKILL.md",
+     "data/skills/perburuan-grpc/SKILL.md",
+     "data/skills/perburuan-llm-ai/SKILL.md",
+     "data/skills/perburuan-rag-vektor/SKILL.md",
+     "data/skills/perburuan-shadow-api-spa/SKILL.md",
+     "data/skills/recon-rantai-pasok-cicd/SKILL.md",
+     "data/skills/serangan-cloud-iam-entra/SKILL.md",
+     "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": false
    }
