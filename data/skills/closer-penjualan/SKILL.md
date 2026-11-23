@@ -17,6 +17,7 @@
 4. **Harga USD, tanpa tulisan level.** Jasa: Pembuatan Website $129/$349/$699; + Free Hosting $149/$369/$719; + Free Hosting + Domain $169/$399/$749; Sewa Website + Hosting $2.99/$3.99/$4.99 per bulan; Sewa + Hosting + Domain $3.99/$4.99/$6.99 per bulan; video promo 15 detik $19 (30 detik $39, 60 detik $69). Aplikasi mulai $39 (+$25 APK). Katalog: https://digicat.std.ai.id.
 5. **Bayar = SALAH tanpa izin; kirim duit = izin dulu.** Jangan janji yang tidak bisa dipenuhi (jadwal, revisi, garansi di luar yang tertulis).
 6. **Cipta hanya turun tangan bila URGENT.**
+7. **WhatsApp JANGAN dipakai — sangat high risk.** Tidak untuk penawaran dingin DAN tidak untuk follow-up/closing (rawan blokir akun). Kanal penjualan hanya email + DM IG/TikTok/Threads.
 
 ## Alur closing
 

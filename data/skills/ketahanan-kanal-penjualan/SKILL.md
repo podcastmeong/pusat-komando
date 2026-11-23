@@ -13,7 +13,7 @@
 
 1. **Target harian:** 20 toko valid + 1 balasan; mingguan 1 closing; bulanan (Des 2026) Rp10.000.000.
 2. **Jam:** 09:00–11:00 penawaran baru; 19:00–21:00 follow-up + balas toko.
-3. **Kanal:** Instagram, TikTok, Threads (DM) + email. **WhatsApp TIDAK dipakai** untuk penjualan/pemasaran/promo/penawaran. Facebook NANTI.
+3. **Kanal:** Instagram, TikTok, Threads (DM) + email. **WhatsApp TIDAK dipakai** untuk penjualan/pemasaran/promo/penawaran — termasuk follow-up/closing (sangat high risk, rawan blokir). Facebook NANTI.
 4. **Batas per kanal:** maks ~10 DM/hari/akun, jeda ≥3 menit antar DM. Jangan tembak sekaligus — akun kena batasi.
 5. **Akun yang JANGAN dipakai DM:** @meongcast (dibatasi sejak 21 Nov), @meongcast.id (cadangan, masih pemanasan — JANGAN DM dulu).
 6. **Isi pesan:** Pesan 1 TANPA harga; Pesan 2 harga USD + https://digicat.std.ai.id/ (tanpa `?v=`). Fokus kebutuhan customer — bila customer bercerita, dengarkan masalahnya, cari solusinya, lalu tawarkan produk yang menjawab kebutuhan itu.
