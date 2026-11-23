@@ -75,7 +75,8 @@
     "target_harian": "12 prompt klip/malam (22 Nov) + cek mulut per klip",
     "skills": [
      "data/skills/a44-persiapan-video/SKILL.md",
-     "data/skills/video-mulut-bergerak/SKILL.md"
+     "data/skills/video-mulut-bergerak/SKILL.md",
+     "data/skills/continuity-bible/SKILL.md"
     ]
    }
   ]
@@ -936,7 +937,9 @@
     "skills": [
      "data/skills/qa-verifikasi/SKILL.md",
      "data/skills/qc-ebook-pra-pasar/SKILL.md",
-     "data/skills/video-mulut-bergerak/SKILL.md"
+     "data/skills/video-mulut-bergerak/SKILL.md",
+     "data/skills/continuity-bible/SKILL.md",
+     "data/skills/hapus-watermark/SKILL.md"
     ]
    },
    {
@@ -1143,7 +1146,9 @@
     "target_harian": "1 video utama atau storyboard siap produksi",
     "skills": [
      "data/skills/produksi-video/SKILL.md",
-     "data/skills/video-mulut-bergerak/SKILL.md"
+     "data/skills/video-mulut-bergerak/SKILL.md",
+     "data/skills/continuity-bible/SKILL.md",
+     "data/skills/hapus-watermark/SKILL.md"
     ]
    },
    {
