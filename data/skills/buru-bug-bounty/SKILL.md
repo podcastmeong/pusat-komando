@@ -96,3 +96,19 @@ Dampak: [apa yang bisa dilakukan penyerang dengan ini]
 Bukti: [log/output, file bukti]
 Saran perbaikan: [satu-dua kalimat]
 ```
+
+## Update 23 Nov 2026 17:36–17:41 — Google, 0din, Gray Swan, aturan slogan
+
+### Google AI VRP — aturan terverifikasi, payload DIBLOKIR (23 Nov 17:34)
+- S1 Rogue Actions $20rb, S2 Sensitive Data Exfiltration $15rb, A1 $5rb, A2 $5rb; maks $30rb/laporan. Scope flagship: Search, Gemini Apps, Workspace inti. NUANSA: yang dikecualikan = DIRECT injection; INDIRECT injection = mekanisme di balik S1/S2 yang dibayar.
+- Persiapan payload injeksi DIBLOKIR safety classifier — JANGAN diulang, diparafrasa, atau dicari jalan lain. Perburuan Google via payload injeksi BERHENTI. File payload Google sudah dihapus.
+
+### 0din — terverifikasi (23 Nov 17:35)
+- Muse Spark 1.3 masuk scope resmi. Content Manipulation $5rb (utama), Interpreter Jailbreak $2.5k (sekunder). Prompt Extraction = N/A untuk semua model Meta — JANGAN kerjakan. Abstrak dulu (jawaban ≤3 hari kerja) → laporan lengkap/PoC → validasi ≤2 minggu. Bayar ≤30 hari setelah kesepakatan kontraktual; wajib foto ID pemerintah + form IRS W-8 (non-AS). Duplikat Medium+ dalam 7 hari berbagi hadiah.
+
+### Program baru (recon 23 Nov 17:35)
+- Gray Swan Arena: gelombang berjalan pool $100rb, gratis, terbuka, ramah pemula — paling layak dikejar. ViKernel RedTeam Hackathon: pool $4.5rb, 17 Nov 2026–16 Jan 2027. Perplexity VDP (jalur bayar lewat bounty privat). Mistral VDP (hadiah tak dipublikasikan). huntr: challenge "Humans only — automated tooling gets you banned" — JANGAN ikut challenge dengan agen AI (jalur audit kode OSV saja).
+
+### Aturan slogan = gerbang eksekusi (Cipta 23 Nov 17:40)
+- Selama AMAN + GRATIS + ada PELUANG + ada POTENSI → eksekusi langsung tanpa tanya lagi. Batas keras tetap: tidak ada pembayaran/kartu, tidak ada data orang lain, tidak ada laporan yang dikirim tanpa persetujuan Cipta (abstrak 0din disetujui lewat aturan ini), tidak ada uji penipuan agen korban.
+- Jebol = sampai tujuan (Cipta 17:39): targetnya ADALAH terobosan itu sendiri.
