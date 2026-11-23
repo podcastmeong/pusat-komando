@@ -146,6 +146,7 @@ Saran perbaikan: [satu-dua kalimat]
 5. Gerbang slogan — AMAN + GRATIS + VALID + POTENSI + PELUANG + AI BOLEH IKUT → eksekusi langsung.
 6. Batas keras tetap — tidak ada pembayaran/kartu, tidak ada data orang lain, tidak ada laporan tanpa persetujuan Cipta, tidak ada uji penipuan agen korban.
 7. Bila program akan tutup, BERHENTI 1 hari sebelumnya (Cipta 18:28) — jangan kerjakan program sampai hari penutupan.
+8. **Aturan operasi DIPERLUAS (Cipta 23 Nov 2026 18:46 — WAJIB, PEGANG INI):** coba terus dengan cara berbeda selama program dibuka dan belum ditutup; tiap gagal selalu riset kenapa gagal dan apa yang harus diperbaiki; skill selalu di-upgrade dengan apa yang dibutuhkan dan apa yang bisa menciptakan peluang dan berpotensi berhasil; pakai strategi yang berpotensi berhasil; selalu menciptakan peluang; main kerja sama tim.
 
 ## Update 23 Nov 2026 18:05 — riset pola jam jebol CAPTCHA: TIDAK ADA jam ajaib (Cipta: "Pelajari pola. Dan riset. Rata-rata dia jebol dijam berapa")
 - Laporan: `~/workspace/research_notes/riset-pola-jam-jebol-captcha-2026-11-23/report.md` (37 sumber).
