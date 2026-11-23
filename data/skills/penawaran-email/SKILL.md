@@ -14,7 +14,7 @@
 
 1. **Target harian:** 20 email penawaran ke 20 toko berbeda. Jam: 09:00–11:00 penawaran baru; 19:00–21:00 follow-up + balas toko.
 2. **ANTI-SPAM (wajib):** satu email untuk satu toko; personalisasi nama toko + observasi spesifik tentang toko itu (jangan template mentah); JANGAN kirim massal/serentak — beri jeda antar kirim (minimal beberapa menit); JANGAN kirim ke alamat yang tidak jelas pemiliknya; bila alamat memantul (bounce), hapus dari antrean dan catat.
-3. **Alamat pengirim:** email toko (masduki1189@gmail.com). Subjek jelas + sopan, contoh: "Video promo untuk [Nama Toko] — Digicat".
+3. **Alamat pengirim:** email toko (masduki1189@gmail.com). **Nama pengirim: Digicat** (nama toko — semua email penawaran dikirim atas nama Digicat, bukan nama pribadi). Tanda tangan di semua email: "Salam, Tim Digicat — Belanja Digital Semudah Meong. https://digicat.std.ai.id". Subjek jelas + sopan, contoh: "Video promo untuk [Nama Toko] — Digicat".
 4. **Tautan katalog di semua penawaran: https://digicat.std.ai.id** (alamat berbagi — perintah Cipta 23 Nov 11:45). Jangan pakai alamat lain di penawaran.
 5. **Harga USD, tanpa tulisan level.** Jasa: video promo 15 detik $19 (30 detik $39, 60 detik $69); aplikasi mulai $39; website mulai $129 (Pembuatan Website $129/$349/$699).
 6. **Bayar = SALAH tanpa izin; kirim duit = izin dulu.** Kirim penawaran BOLEH. Jangan janji yang tidak bisa dipenuhi.
@@ -27,14 +27,20 @@
 > Subjek: Video promo untuk [Nama Toko]
 >
 > Halo Kak [Nama pemilik/toko]! Saya lihat toko Kakak [observasi spesifik — contoh: "koleksi pakaiannya rapi dan fotonya bagus"]. Boleh tanya, toko Kakak sudah punya video promosi atau belum? Kami dari Digicat (https://digicat.std.ai.id) — kami buatkan video promo 15 detik dan website toko. Kalau Kakak berkenan, saya kirim contohnya.
+>
+> Salam, Tim Digicat — Belanja Digital Semudah Meong.
 
 **Email 2 (bila dibalas/tertarik — BARU sebut harga):**
 
 > Video promo 15 detik $19, aplikasi mulai $39, website mulai $129. Katalog lengkap: https://digicat.std.ai.id — kalau Kakak mau, saya buatkan penawaran sesuai kebutuhan toko Kakak.
+>
+> Salam, Tim Digicat — Belanja Digital Semudah Meong.
 
 **Follow-up (H+2 bila belum dibalas, maks 1x per toko):**
 
 > Halo Kak, saya follow-up penawaran kemarin — apakah toko Kakak sudah punya video promosi? Kalau belum, saya bisa kirim contoh video 15 detiknya dulu, gratis lihat-lihat.
+>
+> Salam, Tim Digicat — Belanja Digital Semudah Meong.
 
 ## Balasan masuk
 
