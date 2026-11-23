@@ -125,3 +125,11 @@ Saran perbaikan: [satu-dua kalimat]
 
 ## Tim AI buru-bug-bounty (23 Nov 2026 17:45)
 - Muse (koordinator, Tim Masuk) + A51 Pemburu Bug Bounty (Tim Pengalihan) + A52 Generator Varian (Tim Pengalihan) + A53 Recon Program + A54 Penguji Live (Tim Masuk) + A55 Analis Rantai & Pelapor (Tim Masuk). Roster 66. A50 cadangan Manajer Email. Skala maks 7 AI — jangan lewati 10. A54/A55: uji hanya akun sendiri + canary palsu; tidak pernah uji penipuan agen korban; tidak pernah kirim laporan tanpa persetujuan Cipta.
+
+## Peraturan berdiri perburuan (Cipta 23 Nov 2026 17:46 — CATAT WAJIB DAN SIMPAN)
+1. Coba terus dengan cara berbeda — satu jalur gagal bukan berhenti; variasikan format, permukaan, program (transfer hunting).
+2. Selalu riset dan atur strategi — riset dulu, lalu atur strategi; jangan serang membabi buta.
+3. Main tim — Muse koordinator + A51–A55; dua tim (Pengalihan broad + Masuk focused).
+4. Skill selalu diperbarui — setiap temuan/keputusan baru masuk ke skill.
+5. Gerbang slogan — AMAN + GRATIS + PELUANG + POTENSI → eksekusi langsung.
+6. Batas keras tetap — tidak ada pembayaran/kartu, tidak ada data orang lain, tidak ada laporan tanpa persetujuan Cipta, tidak ada uji penipuan agen korban.
