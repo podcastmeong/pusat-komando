@@ -12,9 +12,22 @@
 ## Aturan keras
 
 1. **Bila kredit/saldo habis di platform mana pun, KABARI Cipta** (aturan 07:56) — jangan diam, jangan pakai layanan berbayar sebagai jalan pintas tanpa keputusan Cipta.
-2. **Cek harian SEBELUM jam kerja (05:00, ikut rencana pagi).** Peringatan datang sebelum produksi, bukan sesudah produksi macet.
+2. **Dicek TERUS (perintah Cipta 23 Nov 16:08):** empat platform kredit video — Manus, Flow, Kling, Higgsfield — dipantau terus-menerus, bukan hanya sekali sehari. Cek pagi 05:00 (ikut rencana pagi) + SEBELUM tiap batch produksi + SETELAH tiap pemakaian kredit. Peringatan datang sebelum produksi, bukan sesudah produksi macet.
 3. **Rotasi akun:** bila kredit satu akun habis, langsung lanjut ke akun berikutnya (aturan Cipta 16 Nov) — jangan berhenti. Catat sisa kredit tiap akun saat dipakai.
 4. **GRATIS SAJA** — bila suatu bagian hanya bisa jalan dengan yang berbayar, laporkan sebagai TERBLOKIR (butuh keputusan Cipta), jangan beli sendiri.
+
+## Empat platform kredit video — dicek terus (perintah Cipta 23 Nov 16:08)
+
+Tugas A29: selalu mengecek kredit 4 platform video ini, terus-menerus:
+
+| Platform | Peran | Saldo 23 Nov |
+|---|---|---|
+| Flow | Utama | 10 (Lawak Lucu); akun lain cek harian |
+| Kling | Klip spesial | cek harian |
+| Manus | Cadangan darurat | cek harian |
+| Higgsfield | Film kontes | 0 |
+
+Bila satu platform habis, langsung rotasi ke platform/akun berikutnya — jangan berhenti, jangan diam.
 
 ## Daftar yang dipantau (saldo 23 Nov 2026 — perbarui tiap cek)
 

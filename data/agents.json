@@ -1826,7 +1826,7 @@
       "Mayar (KYC belum selesai)"
      ]
     },
-    "tugas_harian": "Catat pemasukan, biaya, saldo dan status pembayaran",
+    "tugas_harian": "Catat pemasukan, biaya, saldo dan status pembayaran; cek kredit Manus, Flow, Kling, Higgsfield terus-menerus",
     "target_harian": "Rekonsiliasi harian; tidak ada transaksi tanpa bukti",
     "skills": [
      "data/skills/peluang-keuangan/SKILL.md",
