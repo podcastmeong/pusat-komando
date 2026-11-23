@@ -81,6 +81,100 @@
    }
   ]
  },
+ "agent_45_49": {
+  "source": "Perintah Cipta 23 Nov 2026 14:17-14:18, membatalkan keputusan 23 Nov 2026 10:39 \"agent tambahan TIDAK perlu\"",
+  "applied_date": "2026-11-23",
+  "note": "5 agent PENJUALAN BARU A45–A49 — perintah Cipta: \"Orangnya diperbanyak. Semakin banyak orangnya, semakin banyak kesempatan dan kemungkinan terjadi.\" Tujuan: kejar target $5.000 s.d. 30 Nov 2026 (butuh ~14 closing website Profesional $349 = 2 closing/hari). Roster menjadi A01–A49 = 49 agent (TOTAL 61: 49 + 4 Agen Pintar + 8 Dify). A46/A47 butuh akun IG/TikTok BARU (dibuat + dipanaskan dulu sebelum DM). Penugasan divisi/boss di bawah adalah struktur kerja yang disusun saat pembuatan, bukan keputusan Cipta kata-per-kata.",
+  "agents": [
+   {
+    "code": "A45",
+    "name": "Penawaran Email",
+    "division": "Penjualan",
+    "boss": "A25",
+    "job_desc": "Kirim penawaran jasa (website + video promo) lewat email ke toko/UMKM — tanpa batas DM seperti sosmed",
+    "file": null,
+    "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
+    "mapped_to": "Muse (subagent)",
+    "status": "Aktif — dibuat 23 Nov 2026 atas perintah Cipta",
+    "tugas_harian": "Kirim 20 email penawaran ke 20 toko berbeda (09:00-11:00); follow-up H+2 bila belum dibalas; balas balasan pekerjaan langsung",
+    "target_harian": "20 email/hari; 1 balasan/hari (bersama target tim)",
+    "skills": [
+     "data/skills/penawaran-email/SKILL.md",
+     "data/skills/penjualan-cs/SKILL.md",
+     "data/skills/ketahanan-kanal-penjualan/SKILL.md"
+    ]
+   },
+   {
+    "code": "A46",
+    "name": "Penawaran IG-2",
+    "division": "Penjualan",
+    "boss": "A25",
+    "job_desc": "Kirim penawaran lewat Instagram dari AKUN BARU (akun belum ada — dibuat + dipanaskan dulu sebelum DM)",
+    "file": null,
+    "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
+    "mapped_to": "Muse (subagent) + parent (browser)",
+    "status": "Aktif — dibuat 23 Nov 2026 atas perintah Cipta; AKUN BELUM ADA — sampai akun siap, bantu A25 dari akun yang ada tanpa melanggar batas 10 DM/hari/akun",
+    "tugas_harian": "Siapkan akun IG baru + pemanasan (like + komentar spesifik 24-48 jam sebelum DM); setelah siap: kirim penawaran maks 10 DM/hari, jeda ≥3 menit",
+    "target_harian": "Akun siap + 10 DM/hari setelah akun siap",
+    "skills": [
+     "data/skills/penjualan-cs/SKILL.md",
+     "data/skills/ketahanan-kanal-penjualan/SKILL.md"
+    ]
+   },
+   {
+    "code": "A47",
+    "name": "Penawaran TikTok-2",
+    "division": "Penjualan",
+    "boss": "A25",
+    "job_desc": "Kirim penawaran lewat TikTok dari AKUN BARU (akun belum ada — dibuat + dipanaskan dulu sebelum DM)",
+    "file": null,
+    "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
+    "mapped_to": "Muse (subagent) + parent (browser)",
+    "status": "Aktif — dibuat 23 Nov 2026 atas perintah Cipta; AKUN BELUM ADA — sampai akun siap, bantu A25 dari akun yang ada tanpa melanggar batas 10 DM/hari/akun",
+    "tugas_harian": "Siapkan akun TikTok baru + pemanasan (like + komentar spesifik 24-48 jam sebelum DM); setelah siap: kirim penawaran maks 10 DM/hari, jeda ≥3 menit",
+    "target_harian": "Akun siap + 10 DM/hari setelah akun siap",
+    "skills": [
+     "data/skills/penjualan-cs/SKILL.md",
+     "data/skills/ketahanan-kanal-penjualan/SKILL.md"
+    ]
+   },
+   {
+    "code": "A48",
+    "name": "Pencari Target",
+    "division": "Penjualan",
+    "boss": "A25",
+    "job_desc": "Riset + verifikasi toko target (UMKM/petshop/dll. AKTIF dan VALID) — jaga antrean target selalu ≥20 toko/hari",
+    "file": null,
+    "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
+    "mapped_to": "Muse (subagent)",
+    "status": "Aktif — dibuat 23 Nov 2026 atas perintah Cipta",
+    "tugas_harian": "Verifikasi toko baru (postingan terbaru ≤2 minggu, ada kontak, benar jualan); isi data/leads.json; tolak toko mati/tanpa kontak",
+    "target_harian": "Antrean selalu ≥20 toko valid untuk esok hari",
+    "skills": [
+     "data/skills/pencari-target/SKILL.md",
+     "data/skills/penjualan-cs/SKILL.md"
+    ]
+   },
+   {
+    "code": "A49",
+    "name": "Closer",
+    "division": "Penjualan",
+    "boss": "A25",
+    "job_desc": "Follow-up + balas cepat setiap balasan customer, buat proposal jasa, kejar closing website/video promo",
+    "file": null,
+    "modul": "belum dibuat — skill + spesifikasi/draf saja (23 Nov 2026)",
+    "mapped_to": "Muse (subagent)",
+    "status": "Aktif — dibuat 23 Nov 2026 atas perintah Cipta",
+    "tugas_harian": "Balas balasan customer dalam hitungan jam; buat proposal jasa (website $129/$349/$699, video promo $19/$39/$69); follow-up H+1/H+2; catat closing di CRM",
+    "target_harian": "2 closing/hari",
+    "skills": [
+     "data/skills/closer-penjualan/SKILL.md",
+     "data/skills/penjualan-cs/SKILL.md",
+     "data/skills/ketahanan-kanal-penjualan/SKILL.md"
+    ]
+   }
+  ]
+ },
  "applied_date": "2026-11-21",
  "applied_to": "Pusat Komando v2.0 + 30 Agent Bintang + 14 mesin pasif (SatuKiki / Podcast Meong)",
  "authority_levels": {
@@ -1768,7 +1862,7 @@
   ]
  },
  "versi_pusat_komando": "2.0",
- "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif. KOREKSI 23 Nov 2026 (validasi Muse dari agents.json): TOTAL 56 agent — A01-A44 (44: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan) + 4 Agen Pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar) + 8 Agent Dify (DIFY-01 s.d. DIFY-08; hanya DIFY-01 Central Brain live, DIFY-02 status belum pasti, DIFY-03-08 masih rencana). Angka 54 yang beredar sebelumnya menghitung hanya 2 Agen Pintar standalone. Catatan README 'roster tetap 40 (A01-A40), bukan 44' SUDAH KEDALUWARSA — A41-A44 punya job aktif (Rename Komando, Harga Toko, Upload Marketplace, Persiapan Video).",
+ "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif. KOREKSI 23 Nov 2026 (validasi Muse dari agents.json): TOTAL 56 agent — A01-A44 (44: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan) + 4 Agen Pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar) + 8 Agent Dify (DIFY-01 s.d. DIFY-08; hanya DIFY-01 Central Brain live, DIFY-02 status belum pasti, DIFY-03-08 masih rencana). Angka 54 yang beredar sebelumnya menghitung hanya 2 Agen Pintar standalone. Catatan README 'roster tetap 40 (A01-A40), bukan 44' SUDAH KEDALUWARSA — A41-A44 punya job aktif (Rename Komando, Harga Toko, Upload Marketplace, Persiapan Video). KOREKSI 23 Nov 2026 14:17 (perintah Cipta, membatalkan keputusan 10:39 'agent tambahan TIDAK perlu'): TOTAL 61 agent — A01-A49 (49: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan + A45-A49 penjualan baru: Penawaran Email, Penawaran IG-2, Penawaran TikTok-2, Pencari Target, Closer) + 4 Agen Pintar + 8 Agent Dify. A46/A47 butuh akun IG/TikTok BARU (dibuat + dipanaskan dulu sebelum DM).",
  "agent_lama": {
   "status": "No 1–6 Aktif — diganti nama jadi A31–A36; no 7–10 diganti nama jadi A37–A40; no 11–14 DIGANTI 22 Nov 2026 jadi agen pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-pintar-Upwork) — definisi lama nonaktif",
   "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang. KOREKSI 22 Nov 2026 (perintah Cipta): dari 14 agent lama, no 1–6 AKTIF dan DIGANTI NAMA jadi A31–A36 (1 Asisten→A31 Publish, 2 Penjualan→A32 Build, 3 Pertumbuhan→A33 Pertumbuhan, 4 Penjualan Harian→A34 Penerjemah, 5 Produksi Produk→A35 Ngetik, 6 Lomba→A36 Copywriter); sisanya no 7–14 tetap Pasif — non job. KOREKSI 22 Nov 2026 15:37 (perintah Cipta: agent 11–14 yang tidak aktif DIGANTI, bukan sekadar di-upgrade): no 11–14 DIGANTI jadi agen pintar — 11 Oyen→Agen Oyen Pintar (data/skills/avatar-oyen/SKILL.md), 12 Momo→Agen Momo Pintar (data/skills/momo-pintar/SKILL.md), 13 Email→A27 versi pintar (data/skills/penjualan-cs/SKILL.md), 14 Upwork→Upwork Pintar di bawah A28 (data/skills/peluang-keuangan/SKILL.md). Definisi lama nonaktif; modul lama tetap sebagai mesin/pustaka.",
