@@ -1940,7 +1940,7 @@
   ]
  },
  "versi_pusat_komando": "2.0",
- "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif. KOREKSI 23 Nov 2026 (validasi Muse dari agents.json): TOTAL 56 agent — A01-A44 (44: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan) + 4 Agen Pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar) + 8 Agent Dify (DIFY-01 s.d. DIFY-08; hanya DIFY-01 Central Brain live, DIFY-02 status belum pasti, DIFY-03-08 masih rencana). Angka 54 yang beredar sebelumnya menghitung hanya 2 Agen Pintar standalone. Catatan README 'roster tetap 40 (A01-A40), bukan 44' SUDAH KEDALUWARSA — A41-A44 punya job aktif (Rename Komando, Harga Toko, Upload Marketplace, Persiapan Video). KOREKSI 23 Nov 2026 14:17 (perintah Cipta, membatalkan keputusan 10:39 'agent tambahan TIDAK perlu'): TOTAL 61 agent — A01-A49 (49: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan + A45-A49 penjualan baru: Penawaran Email, Penawaran IG-2, Penawaran TikTok-2, Pencari Target, Closer) + 4 Agen Pintar + 8 Agent Dify. A46/A47 butuh akun IG/TikTok BARU (dibuat + dipanaskan dulu sebelum DM).",
+ "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif. KOREKSI 23 Nov 2026 (validasi Muse dari agents.json): TOTAL 56 agent — A01-A44 (44: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan) + 4 Agen Pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar) + 8 Agent Dify (DIFY-01 s.d. DIFY-08; hanya DIFY-01 Central Brain live, DIFY-02 status belum pasti, DIFY-03-08 masih rencana). Angka 54 yang beredar sebelumnya menghitung hanya 2 Agen Pintar standalone. Catatan README 'roster tetap 40 (A01-A40), bukan 44' SUDAH KEDALUWARSA — A41-A44 punya job aktif (Rename Komando, Harga Toko, Upload Marketplace, Persiapan Video). KOREKSI 23 Nov 2026 14:17 (perintah Cipta, membatalkan keputusan 10:39 'agent tambahan TIDAK perlu'): TOTAL 61 agent — A01-A49 (49: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan + A45-A49 penjualan baru: Penawaran Email, Penawaran IG-2, Penawaran TikTok-2, Pencari Target, Closer) + 4 Agen Pintar + 8 Agent Dify. A46/A47 butuh akun IG/TikTok BARU (dibuat + dipanaskan dulu sebelum DM). KOREKSI 24 Nov 2026 05:18 (perintah Cipta: pembuatan agent WAJIB Gemini 4 Hydrogen, gratis saja): model wajib semua Dify (DIFY-01 s.d. DIFY-08) = gemini-4-hydrogen, tercatat di bagian dify_agents (field model + model_sumber + model_status). Status jujur per 24 Nov 05:18: DIFY-01 Central Brain LIVE/diterbitkan 23 Nov, TAPI model di Dify masih 3.5 Flash — ganti via sesi terpandu 24 Nov; DIFY-02 Memory Manager dibangun ulang sebagai Agent di sesi terpandu 24 Nov (desain Workflow tanpa LLM dibatalkan), langkah Model (dropdown) belum dijawab Cipta; DIFY-03 Website Manager + DIFY-04 Product & Seller Manager dibangun 23 Nov, klaim chat 23 Nov pakai Gemini Hydrogen BELUM terverifikasi di Dify (cek dropdown saat sesi terpandu), status terbit/uji belum terverifikasi; DIFY-05 s.d. DIFY-08 masih rencana, model wajib Hydrogen saat dibangun.",
  "agent_lama": {
   "status": "No 1–6 Aktif — diganti nama jadi A31–A36; no 7–10 diganti nama jadi A37–A40; no 11–14 DIGANTI 22 Nov 2026 jadi agen pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-pintar-Upwork) — definisi lama nonaktif",
   "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang. KOREKSI 22 Nov 2026 (perintah Cipta): dari 14 agent lama, no 1–6 AKTIF dan DIGANTI NAMA jadi A31–A36 (1 Asisten→A31 Publish, 2 Penjualan→A32 Build, 3 Pertumbuhan→A33 Pertumbuhan, 4 Penjualan Harian→A34 Penerjemah, 5 Produksi Produk→A35 Ngetik, 6 Lomba→A36 Copywriter); sisanya no 7–14 tetap Pasif — non job. KOREKSI 22 Nov 2026 15:37 (perintah Cipta: agent 11–14 yang tidak aktif DIGANTI, bukan sekadar di-upgrade): no 11–14 DIGANTI jadi agen pintar — 11 Oyen→Agen Oyen Pintar (data/skills/avatar-oyen/SKILL.md), 12 Momo→Agen Momo Pintar (data/skills/momo-pintar/SKILL.md), 13 Email→A27 versi pintar (data/skills/penjualan-cs/SKILL.md), 14 Upwork→Upwork Pintar di bawah A28 (data/skills/peluang-keuangan/SKILL.md). Definisi lama nonaktif; modul lama tetap sebagai mesin/pustaka.",
@@ -2425,25 +2425,31 @@
     "target_harian": "5/5 tes Knowledge Base lulus setelah kuota terisi",
     "skills": [
      "DG_MASTER_KNOWLEDGE_V1.docx (~/workspace/digistore-oyen/)"
-    ]
+    ],
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
+    "model_status": "belum diganti di Dify — masih 3.5 Flash, ganti via sesi terpandu 24 Nov"
    },
    {
     "code": "DIFY-02",
     "name": "Digistore Oyen — Memory Manager",
     "platform": "Dify Cloud (cloud.dify.ai)",
-    "type": "Workflow",
+    "type": "Agent",
     "division": "Operasional",
     "boss": "Muse",
-    "job_desc": "Persistent memory Digistore Oyen: Save Agent Memory, Look Up Agent Memories, List Agent Memories — satu workflow, tanpa node LLM (tetap bisa jalan saat kuota model habis)",
+    "job_desc": "Persistent memory Digistore Oyen: Save Agent Memory, Look Up Agent Memories, List Agent Memories — dibangun ulang 24 Nov 2026 sebagai Agent, model wajib Gemini 4 Hydrogen (gratis saja)",
     "url": null,
     "knowledge_base": "Digistore Oyen — Memory Log (dataset baru, dibuat saat pembangunan)",
     "mapped_to": "Muse (browser) + Dify",
-    "status": "Dibangun 23 Nov 2026 (tugas browser berjalan); tes Save/Look Up/List menyusul setelah jadi",
+    "status": "Dibangun ulang sebagai Agent di sesi terpandu 24 Nov 2026 (desain Workflow tanpa LLM dibatalkan)",
     "tugas_harian": "Simpan keputusan resmi, progres, kesalahan + solusi, preferensi Owner, tugas belum selesai (JANGAN simpan kata sandi/API key/OTP/data sensitif)",
     "target_harian": "3/3 fungsi memori (Save/Look Up/List) berfungsi dan tersambung ke Central Brain",
     "skills": [
      "data/skills/manajer-memori/SKILL.md"
-    ]
+    ],
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
+    "model_status": "menunggu pilihan dropdown Model di sesi terpandu 24 Nov"
    },
    {
     "code": "DIFY-03",
@@ -2456,12 +2462,15 @@
     "url": null,
     "knowledge_base": "Digistore Oyen — Master Knowledge",
     "mapped_to": "Muse (browser) + Dify",
-    "status": "Rencana — belum dibangun; menunggu kuota Dify terisi kembali (kuota 0 sejak 22 Nov 2026)",
+    "status": "Dibangun 23 Nov 2026; status terbit/uji belum terverifikasi",
     "tugas_harian": "Bangun/kelola website; uji tautan, tampilan mobile, formulir, dan kesalahan halaman; tidak mengubah website produksi tanpa persetujuan Owner",
     "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
     "skills": [
      "data/skills/website-manager/SKILL.md"
-    ]
+    ],
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
+    "model_status": "klaim Hydrogen 23 Nov, belum terverifikasi di Dify — cek dropdown saat sesi terpandu"
    },
    {
     "code": "DIFY-04",
@@ -2474,12 +2483,15 @@
     "url": null,
     "knowledge_base": "Digistore Oyen — Master Knowledge",
     "mapped_to": "Muse (browser) + Dify",
-    "status": "Rencana — belum dibangun; menunggu kuota Dify terisi kembali (kuota 0 sejak 22 Nov 2026)",
+    "status": "Dibangun 23 Nov 2026; status terbit/uji belum terverifikasi",
     "tugas_harian": "Periksa kelengkapan produk (deskripsi, kategori, harga, format, file); deteksi duplikasi; tandai produk yang butuh pemeriksaan manusia",
     "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
     "skills": [
      "data/skills/product-seller-manager/SKILL.md"
-    ]
+    ],
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
+    "model_status": "klaim Hydrogen 23 Nov, belum terverifikasi di Dify — cek dropdown saat sesi terpandu"
    },
    {
     "code": "DIFY-05",
@@ -2497,7 +2509,10 @@
     "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
     "skills": [
      "data/skills/marketing-research/SKILL.md"
-    ]
+    ],
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
+    "model_status": "rencana — model wajib Hydrogen saat dibangun"
    },
    {
     "code": "DIFY-06",
@@ -2515,7 +2530,10 @@
     "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
     "skills": [
      "data/skills/customer-support/SKILL.md"
-    ]
+    ],
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
+    "model_status": "rencana — model wajib Hydrogen saat dibangun"
    },
    {
     "code": "DIFY-07",
@@ -2533,7 +2551,10 @@
     "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
     "skills": [
      "data/skills/finance-reporting/SKILL.md"
-    ]
+    ],
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
+    "model_status": "rencana — model wajib Hydrogen saat dibangun"
    },
    {
     "code": "DIFY-08",
@@ -2551,7 +2572,10 @@
     "target_harian": "Dibangun dan diterbitkan setelah kuota Dify terisi kembali; lalu diuji seperti Memory Manager",
     "skills": [
      "data/skills/quality-control-dify/SKILL.md"
-    ]
+    ],
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
+    "model_status": "rencana — model wajib Hydrogen saat dibangun"
    }
   ]
  },
