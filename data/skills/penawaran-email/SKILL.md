@@ -15,6 +15,7 @@
 1. **Target harian:** 20 email penawaran ke 20 toko berbeda. Jam: 09:00–11:00 penawaran baru; 19:00–21:00 follow-up + balas toko.
 2. **ANTI-SPAM (wajib):** satu email untuk satu toko; personalisasi nama toko + observasi spesifik tentang toko itu (jangan template mentah); JANGAN kirim massal/serentak — beri jeda antar kirim (minimal beberapa menit); JANGAN kirim ke alamat yang tidak jelas pemiliknya; bila alamat memantul (bounce), hapus dari antrean dan catat.
 3. **Alamat pengirim:** email toko (masduki1189@gmail.com). **Nama pengirim: Digicat** (nama toko — semua email penawaran dikirim atas nama Digicat, bukan nama pribadi). Tanda tangan di semua email: "Salam, Tim Digicat — Belanja Digital Semudah Meong. https://digicat.std.ai.id". Subjek jelas + sopan, contoh: "Video promo untuk [Nama Toko] — Digicat".
+4. **BAHASA (perintah Cipta 23 Nov 2026 — pasar global): target Indonesia → Bahasa Indonesia (template di bawah); target luar negeri → Bahasa Inggris (template English di bawah).** Jangan kirim Bahasa Indonesia ke toko luar negeri, dan jangan kirim Bahasa Inggris ke toko Indonesia.
 4. **Tautan katalog di semua penawaran: https://digicat.std.ai.id** (alamat berbagi — perintah Cipta 23 Nov 11:45). Jangan pakai alamat lain di penawaran.
 5. **Harga USD, tanpa tulisan level.** Jasa: video promo 15 detik $19 (30 detik $39, 60 detik $69); aplikasi mulai $39; website mulai $129 (Pembuatan Website $129/$349/$699).
 6. **Bayar = SALAH tanpa izin; kirim duit = izin dulu.** Kirim penawaran BOLEH. Jangan janji yang tidak bisa dipenuhi.
@@ -41,6 +42,28 @@
 > Halo Kak, saya follow-up penawaran kemarin — apakah toko Kakak sudah punya video promosi? Kalau belum, saya bisa kirim contoh video 15 detiknya dulu, gratis lihat-lihat.
 >
 > Salam, Tim Digicat — Belanja Digital Semudah Meong.
+
+## Template penawaran (email) — Bahasa Inggris (untuk target luar negeri)
+
+**Email 1 (NO price):**
+
+> Subject: Promo video for [Store Name]
+>
+> Hi! I came across your store [specific observation — e.g. "your collection is neat and your photos look great"]. May I ask — do you already have a promo video? We're Digicat (https://digicat.std.ai.id) — we make 15-second promo videos and store websites. If you'd like, I can send you an example.
+>
+> Best regards, Digicat Team — Digital Shopping, Easy as Meow.
+
+**Email 2 (only if they reply/are interested — THEN mention price):**
+
+> A 15-second promo video is $19, apps start at $39, websites start at $129. Full catalog: https://digicat.std.ai.id — if you'd like, I can prepare an offer tailored to your store.
+>
+> Best regards, Digicat Team — Digital Shopping, Easy as Meow.
+
+**Follow-up (day +2 if no reply, max 1x per store):**
+
+> Hi, I'm following up on my message from the other day — does your store have a promo video yet? If not, I can send you a 15-second example first, free to take a look.
+>
+> Best regards, Digicat Team — Digital Shopping, Easy as Meow.
 
 ## Balasan masuk
 
