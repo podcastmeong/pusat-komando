@@ -1,0 +1,50 @@
+[
+ {
+  "tanggal": "2026-11-23",
+  "platform": "Flow-LawakLucu",
+  "saldo": 10,
+  "satuan": "kredit",
+  "status": "WASPADA",
+  "catatan": "50 -> 10; 40 habis untuk 4 regenerasi Edukasi gagal"
+ },
+ {
+  "tanggal": "2026-11-23",
+  "platform": "Canva-AI",
+  "saldo": 0,
+  "satuan": "kredit",
+  "status": "HABIS",
+  "catatan": "Reset 1 Des 2026 07:00 WIB; 5 template tertunda"
+ },
+ {
+  "tanggal": "2026-11-23",
+  "platform": "Dify-CentralBrain",
+  "saldo": 200,
+  "satuan": "kredit",
+  "status": "AMAN",
+  "catatan": "Workspace SANDBOX 200/200; Momo (udify.app/chat/CoDt7ugLumQaHElZ) kuota 0"
+ },
+ {
+  "tanggal": "2026-11-23",
+  "platform": "Higgsfield",
+  "saldo": 0,
+  "satuan": "kredit",
+  "status": "HABIS",
+  "catatan": "Reward-review hanya proyek publik; film vertikal 9:16 terblokir"
+ },
+ {
+  "tanggal": "2026-11-23",
+  "platform": "Freelancer.co.id",
+  "saldo": 2,
+  "satuan": "bid gratis",
+  "status": "WASPADA",
+  "catatan": "6 bid gratis TOTAL (bukan per hari); 2 proyek terkunci saldo min $20"
+ },
+ {
+  "tanggal": "2026-11-23",
+  "platform": "Gumroad",
+  "saldo": 10,
+  "satuan": "produk/24 jam",
+  "status": "AMAN",
+  "catatan": "Slot berikut 23 Nov 13:11 WIB"
+ }
+]

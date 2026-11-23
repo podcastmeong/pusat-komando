@@ -1603,7 +1603,8 @@
     "tugas_harian": "Kelola lead, penawaran, follow-up dan closing; fokus kebutuhan customer — bila customer bercerita, dengarkan masalahnya dan cari solusinya",
     "target_harian": "Harian: 20 toko dihubungi + target 1 balasan; mingguan: 1 closing; bulanan (Des 2026): Rp10.000.000",
     "skills": [
-     "data/skills/penjualan-cs/SKILL.md"
+     "data/skills/penjualan-cs/SKILL.md",
+     "data/skills/ketahanan-kanal-penjualan/SKILL.md"
     ]
    },
    {
@@ -1729,7 +1730,8 @@
     "tugas_harian": "Catat pemasukan, biaya, saldo dan status pembayaran",
     "target_harian": "Rekonsiliasi harian; tidak ada transaksi tanpa bukti",
     "skills": [
-     "data/skills/peluang-keuangan/SKILL.md"
+     "data/skills/peluang-keuangan/SKILL.md",
+     "data/skills/pantau-kuota-kredit/SKILL.md"
     ]
    },
    {
