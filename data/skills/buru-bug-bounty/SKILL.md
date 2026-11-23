@@ -122,3 +122,6 @@ Saran perbaikan: [satu-dua kalimat]
 ### Riset kelemahan + strategi tembus (23 Nov 17:42)
 - Laporan: ~/workspace/research_notes/riset-kelemahan-strategi-tembus-2026-11-23/report.md. 5 kelemahan teratas: injeksi tak langsung zero-click via email/kalender; tool-output spoofing lintas program; memory/context poisoning (OWASP ASI06); batas kepercayaan + komponen pendamping (XBOW $250rb); bypass approval/egress lewat jalur "bacaan".
 - Solo vs tim: temuan besar dari SOLO atau TIM 3; Gray Swan top breaker semua solo; "transfer beats volume". BUTUH BERAPA AI: mulai 5, skala ke 7, JANGAN lewati 10. Strategi: S2+S4 (spoofing lintas program + transfer hunting); paralel S1 + recon Gray Swan. Jangan dulu S5; jangan sentuh program yang melarang otomatisasi.
+
+## Tim AI buru-bug-bounty (23 Nov 2026 17:45)
+- Muse (koordinator, Tim Masuk) + A51 Pemburu Bug Bounty (Tim Pengalihan) + A52 Generator Varian (Tim Pengalihan) + A53 Recon Program + A54 Penguji Live (Tim Masuk) + A55 Analis Rantai & Pelapor (Tim Masuk). Roster 66. A50 cadangan Manajer Email. Skala maks 7 AI — jangan lewati 10. A54/A55: uji hanya akun sendiri + canary palsu; tidak pernah uji penipuan agen korban; tidak pernah kirim laporan tanpa persetujuan Cipta.
