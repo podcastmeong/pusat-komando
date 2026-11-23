@@ -43,5 +43,48 @@
    "Harga demo website: model ChatGPT Rp0/Rp25rb/Rp75rb/Rp150rb atau demo gratis saja.",
    "Mata uang harga aplikasi di toko: Rupiah (harga toko saat ini) atau Dollar $29/$59/$99."
   ]
+ },
+ "2026-11-23": {
+  "tanggal": "2026-11-23",
+  "jam": "10:00 WIB",
+  "status": "draf — menunggu persetujuan Cipta",
+  "A04_quality_control": {
+   "nilai": "Video Edukasi Ep 1 GAGAL gerbang QC 5/10 (keputusan.md 09:17 + 09:55): klip 1,2,3 LOLOS; klip 4 DIPERBAIKI LOKAL pitch shift rubberband 247,0->162,5 Hz LOLOS; klip 5+6 regenerasi Flow 2x/klip GAGAL (mulut Oyen tetap tertutup/statis; klip 6 terpaku terbuka) — v2 BELUM bisa dirakit; pola: Frames-to-Video + frame awal statis = gambar nyaris diam. Video Detektif GAGAL 5/10: suara tertukar klip 3 (Oyen 178,8 Hz), klip 4 (Momo 266,9 Hz), klip 6 (Momo 216,2 Hz); klip 6 lama mulut tidak bergerak — BELUM dikerjakan (menunggu Edukasi, prioritas Cipta). Toko Digicat digistore-ai.pages.dev LOLOS 9/10 (HTTP 200 terverifikasi ulang hari ini; audit read-only pagi ini: demo rusak 0 (155/155 tautan 200), tautan beli mati 0, sampul hilang 0; browser task 7 poin LOLOS desktop) — catatan: HP BELUM diuji; 6 game tanpa harga tampil 'Harga via email'; URL Rindu live berbeda dari data bu/bx (Payhip b/PodcastMeong vs b/wgT2k; Gumroad podcastmeong vs satukiki) — data perlu diselaraskan. eBook 9 nabi LOLOS isi 8/10 (PDF lengkap; Gumroad 9 produk — koreksi: bukan 10; Payhip 6; 4 judul Abu Bakar/Umar/Syafi'i/Salahuddin TIDAK ada di Payhip, tertahan kartu persetujuan). Foto 7/10: Dreamstime 258 online (+7), 0 penjualan $0; Adobe 13 portfolio, 0 unduhan; batch-7 masih kosong 0/50; 8 kucing batch-3 tertahan limit mingguan. POD pod-17/18/19: belum cukup data (menunggu persetujuan Cipta). 16 template demo website baru: belum ada cek visual browser — belum bisa dinilai. Tambahan pagi ini: 5 template Canva jadi + 5 terblokir kuota AI Canva 100% (reset 1 Des 07:00); 10 video CapCut MP4 selesai; 2 spreadsheet selesai; listing Gumroad BELUM (slot 13:11), katalog Digicat BELUM. Saldo Flow akun Lawak Lucu live 50->10 (40 terpakai regenerasi gagal); catatan 289 TIDAK AKURAT.",
+   "perbaiki_oleh": "A11: Edukasi klip 5+6 pakai pendekatan BARU (Text-to-Video tanpa frame / prompt gerakan rahang / alat lain) — JANGAN ulang Frames-to-Video; lalu Detektif klip 3,4,6 regenerasi Flow. A12: foto batch-7 50 + cek alasan 7 penolakan Adobe. A31: upload 4 eBook Payhip bila kartu disetujui Cipta; upload video 20:00 hanya bila lolos QC + disetujui. A32: selaraskan data URL Rindu (bu/bx) dengan yang live. A16: verifikasi isi 50 soal Kuis Cerita Nabi sebelum dijual."
+  },
+  "A05_business_analyst": {
+   "angka": "Uang masuk Rp0/$0 semua platform (cek 05:00 + 08:00: Dreamstime $0 0 penjualan; Adobe $0 0 unduhan; Payhip/Gumroad/Swarms $0). Penjualan 0. Laba Rp0. Follower: YT 79 subs, TikTok 78, IG 2, Threads 0 — sama seperti cek kemarin 10:00 (net 0); views hari ini: belum cukup data (tidak ada angka views baru tercatat hari ini). Penawaran: kemarin 8/20; hari ini 0 kiriman terverifikasi s.d. 10:00 — 3 jalur macet (TikTok logout sendiri 09:37, Threads batas harian, IG hanya @meongcast dibatasi); sisa target lanjut besok. Freelance: 6 draf baru Freelancer.co.id 23 Nov (DRAF saja, belum dikirim); Sribu 0 job post; Fiverr gig AKTIF + ID terverifikasi, 0 impressions/klik/order 30 hari; 6 pesan inbox Fiverr belum dibaca (pola 'review the attached document', perlu dicek A26/A27 apakah order asli).",
+   "kesimpulan": "Jalan: toko Digicat live + audit 0 cacat, Fiverr gig aktif + ID terverifikasi, Gumroad 9 produk, template Canva/CapCut jalan (5+10+2 selesai). Macet: penjualan tetap Rp0 di semua platform; 2 video QC gagal (slot 07:00 tidak tayang); penawaran 20 toko hari ini 0 terkirim (3 jalur macet); Dify Momo kuota 0 (tes 07:58 gagal); Freelancer profil 41% — proyek URGENT $60 tutup tanpa bid."
+  },
+  "A08_product_developer": {
+   "produk": "Kuis Cerita Nabi — game (seed.json: status price-tbd, demo https://podcastmeong.github.io/kuis-cerita-nabi/ HTTP 200).",
+   "niche": "Jelas — kuis kisah nabi untuk anak & keluarga, 5 paket x 10 soal (Nuh, Yunus, Yusuf, Musa, Ibrahim); selaras dengan lini eBook nabi (9 judul) — pembeli eBook = calon pembeli game; konten Islami anak langka di antara 9 game toko yang umumnya arcade Oyen.",
+   "harga_vs_pesaing": "CodeCanyon (cek 23 Nov): kuis HTML5 $8-$99, mayoritas $16-$49 (Quiz Game $16/672 penjualan; Quiz Game 2 $25/481; Educational Quiz $8; ada preseden kuis agama: Bible Quiz) — ITU harga lisensi source-code untuk developer, bukan harga main. Harga toko kita untuk game $2.99-$5.99 (Oyen Benang $5.99) — jauh di bawah lisensi source-code; usulan $2.99 (tier dasar) karena konten kuis sederhana. Keputusan harga tetap di Cipta.",
+   "tidak_bisa_ditiru_AI_60_detik": "Sebagian — kerangka kuis pilihan ganda mudah dibuat AI; yang tidak bisa ditiru 60 detik: 50 soal terverifikasi kisah nabi (validitas Al-Quran/hadis sahih WAJIB dicek isinya dulu), 5 paket tematik, karakter Oyen/Momo, Bahasa Indonesia, demo live teruji.",
+   "verdict": "LAYAK BERSYARAT — layak dijual $2.99 (usulan) SETELAH verifikasi isi 50 soal + harga diputuskan Cipta. Catatan antrean: 6 game price-tbd lainnya (Oyen Lari, Memori Kartu Oyen, Oyen Tangkap Ikan 2, Tebak Kata Oyen, Masak Bersama Momo) menunggu jawaban Cipta atas pilihan $2.99/$4.99/$5.99; nama antrean kemarin (Labirin Oyen, Menara Oyen, Cari Ikan Tersembunyi) TIDAK ditemukan di seed.json — bukan produk yang ada."
+  },
+  "A29_finance_manager": {
+   "uang_masuk_hari_ini": "Rp0",
+   "uang_keluar_hari_ini": "Rp0 (tidak ada pembayaran/pembelian; tidak ada bid/keanggotaan dibeli; tidak ada kredit Flow/Dify dibeli)",
+   "entri_akuntansi": "0 entri baru — modul akuntansi hanya mencatat uang yang sudah terjadi + ada bukti (jumlah > 0); hari ini tidak ada pergerakan, jadi tidak ada entri yang dicatat. data/akuntansi.json tetap entri []; data/keuangan_data.json entries [].",
+   "saldo_per_platform": "KaryaKarsa Kakoin 0; Lynk.id Rp0; Zazzle $0; Adobe $0; Dreamstime $0; PayPal $0; Payhip $0 (6 produk, 0 penjualan); Gumroad $0 (9 produk, 0 penjualan); Sribu Rp0 (0 job post); Fiverr $0 (gig aktif, 0 order 30 hari); Swarms $0 (skill live $12, 0 penjualan); Etsy 0 penjualan (rekening bank belum ditambahkan); KBM belum bisa dicek (penerbitan Bab 1 menunggu login Google); Dify Momo kuota 0."
+  },
+  "A30_operations_manager": {
+   "menggantung_tanpa_pemilik_jelas": "Selaraskan data URL Rindu (bu/bx) dengan yang live — belum ada pemilik (usulan A32). Verifikasi isi 50 soal Kuis Cerita Nabi — belum ada pemilik (usulan A10). 6 pesan inbox Fiverr belum dibaca — pemilik A26/A27 (sudah ditugaskan di menunggu-persetujuan.md).",
+   "terlambat_dari_jadwal": "Slot video 07:00 tidak tayang (2 video QC gagal). Foto batch-7 0/50. Penawaran 20 toko 0 terkirim hari ini (3 jalur macet). KBM Bab 1 (menunggu login Google, browser task d31fef75). 4 eBook Payhip tertahan kartu persetujuan. 155 ZIP produk menunggu keputusan Gumroad vs Payhip. Template Canva 5/10 (kuota AI habis, reset 1 Des 07:00). Dify Momo kuota 0 (keputusan Cipta: tunggu atau pasang API key sendiri). Proyek Freelancer URGENT $60 tutup tanpa bid (profil 41%).",
+   "siapa_mengerjakan_hari_ini": "A11: pendekatan baru regenerasi Edukasi klip 5+6 (prioritas Cipta), lalu Detektif klip 3,4,6. A12: foto batch-7 50. A25: penawaran lanjut besok (3 jalur macet hari ini) + follow-up 19:00-21:00. A31: upload 20:00 hanya bila video lolos QC + disetujui Cipta. A28: 6 draf freelance menunggu pilihan Cipta per proyek. A26/A27: cek 6 pesan Fiverr. Cipta: login ulang TikTok, login Google KBM, kata sandi OSS, API key ElevenLabs/Dify, harga 6 game, Gumroad vs Payhip, 244 link demo, Zazzle 14 tombol, rekening bank Etsy.",
+   "selesai_hari_ini": "Fiverr gig AKTIF + ID terverifikasi. Template Canva 5 + CapCut 10 + spreadsheet 2 selesai. Audit produk 0 cacat (155/155 demo 200). Klip Edukasi 4 diperbaiki lokal (162,5 Hz). Rename Threads jadi Digicat. GSC properti digistore-ai.pages.dev dibuat (token diganti, sitemap 21 URL, verifikasi ulang jalan). Ganti alamat ke satukiki.pages.dev DITUNDA (tetap digistore-ai.pages.dev). Pinterest sudah ada di footer Akun Media Sosial toko."
+  },
+  "butuh_keputusan_cipta": [
+   "Edukasi klip 5+6: setuju pendekatan baru (Text-to-Video tanpa frame / alat lain)? Saldo Flow Lawak Lucu tinggal 10 — kabari bila habis (aturan 07:56).",
+   "Harga 6 game price-tbd ($2.99/$4.99/$5.99 per game) + harga Kuis Cerita Nabi (usulan $2.99).",
+   "Unggah 155 ZIP produk ke Gumroad dulu atau Payhip dulu (batch 10 dulu sebagai bukti)?",
+   "6 pesan inbox Fiverr (pola 'review the attached document') — Cipta cek inbox / beri arahan ke A26?",
+   "Login ulang TikTok @podcast_kucing (logout sendiri 09:37) — hanya Cipta bisa (Google login).",
+   "Dify Momo kuota 0 — tunggu atau pasang API key sendiri?",
+   "6 draf freelance 23 Nov — setuju/tolak per proyek (6 bid gratis total; 18 kandidat).",
+   "OSS NIB kata sandi kartu aman + login Dreamstime ditolak — masih menunggu tangan Cipta.",
+   "Rekening bank Etsy + Zazzle 14 tombol + 244 link demo — masih menunggu (dari kemarin)."
+  ]
  }
 }
