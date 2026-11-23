@@ -1965,7 +1965,7 @@
   ]
  },
  "versi_pusat_komando": "2.0",
- "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif. KOREKSI 23 Nov 2026 (validasi Muse dari agents.json): TOTAL 56 agent — A01-A44 (44: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan) + 4 Agen Pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar) + 8 Agent Dify (DIFY-01 s.d. DIFY-08; hanya DIFY-01 Central Brain live, DIFY-02 status belum pasti, DIFY-03-08 masih rencana). Angka 54 yang beredar sebelumnya menghitung hanya 2 Agen Pintar standalone. Catatan README 'roster tetap 40 (A01-A40), bukan 44' SUDAH KEDALUWARSA — A41-A44 punya job aktif (Rename Komando, Harga Toko, Upload Marketplace, Persiapan Video). KOREKSI 23 Nov 2026 14:17 (perintah Cipta, membatalkan keputusan 10:39 'agent tambahan TIDAK perlu'): TOTAL 61 agent — A01-A49 (49: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan + A45-A49 penjualan baru: Penawaran Email, Penawaran IG-2, Penawaran TikTok-2, Pencari Target, Closer) + 4 Agen Pintar + 8 Agent Dify. A46/A47 butuh akun IG/TikTok BARU (dibuat + dipanaskan dulu sebelum DM). KOREKSI 24 Nov 2026 05:18 (perintah Cipta: pembuatan agent WAJIB Gemini 4 Hydrogen, gratis saja): model wajib semua Dify (DIFY-01 s.d. DIFY-08) = gemini-4-hydrogen, tercatat di bagian dify_agents (field model + model_sumber + model_status). Status jujur per 24 Nov 05:18: DIFY-01 Central Brain LIVE/diterbitkan 23 Nov, TAPI model di Dify masih 3.5 Flash — ganti via sesi terpandu 24 Nov; DIFY-02 Memory Manager dibangun ulang sebagai Agent di sesi terpandu 24 Nov (desain Workflow tanpa LLM dibatalkan), langkah Model (dropdown) belum dijawab Cipta; DIFY-03 Website Manager + DIFY-04 Product & Seller Manager dibangun 23 Nov, klaim chat 23 Nov pakai Gemini Hydrogen BELUM terverifikasi di Dify (cek dropdown saat sesi terpandu), status terbit/uji belum terverifikasi; DIFY-05 s.d. DIFY-08 masih rencana, model wajib Hydrogen saat dibangun. KOREKSI 24 Nov 2026 05:24 (perintah Cipta 'Langsung ganti hydrogen'): A50 Manajer Email DIBUAT — bernomor kini 70 (A01–A49 + A50 + A51–A70); TOTAL 82 agent (70 bernomor + 4 Agen Pintar + 8 Dify). A50: Manajer Email, divisi Operasional, boss Muse, model gemini-4-hydrogen (langsung Hydrogen, aturan pembuatan wajib Hydrogen 05:18); tugas ngurus email Outlook (terima email verifikasi, kelola banyak akun Outlook, daftarkan ke web AI untuk kredit gratis); akun Outlook pertama dijadwalkan 27 Nov 2026 — kerja Outlook mulai setelah akun jadi; TIDAK mengambil alih tugas A27 (A27 tetap penanggung jawab pesan masuk semua kanal + kode verifikasi).",
+ "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif. KOREKSI 23 Nov 2026 (validasi Muse dari agents.json): TOTAL 56 agent — A01-A44 (44: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan) + 4 Agen Pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar) + 8 Agent Dify (DIFY-01 s.d. DIFY-08; hanya DIFY-01 Central Brain live, DIFY-02 status belum pasti, DIFY-03-08 masih rencana). Angka 54 yang beredar sebelumnya menghitung hanya 2 Agen Pintar standalone. Catatan README 'roster tetap 40 (A01-A40), bukan 44' SUDAH KEDALUWARSA — A41-A44 punya job aktif (Rename Komando, Harga Toko, Upload Marketplace, Persiapan Video). KOREKSI 23 Nov 2026 14:17 (perintah Cipta, membatalkan keputusan 10:39 'agent tambahan TIDAK perlu'): TOTAL 61 agent — A01-A49 (49: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan + A45-A49 penjualan baru: Penawaran Email, Penawaran IG-2, Penawaran TikTok-2, Pencari Target, Closer) + 4 Agen Pintar + 8 Agent Dify. A46/A47 butuh akun IG/TikTok BARU (dibuat + dipanaskan dulu sebelum DM). KOREKSI 24 Nov 2026 05:18 (perintah Cipta: pembuatan agent WAJIB Gemini 4 Hydrogen, gratis saja): model wajib semua Dify (DIFY-01 s.d. DIFY-08) = gemini-4-hydrogen, tercatat di bagian dify_agents (field model + model_sumber + model_status). Status jujur per 24 Nov 05:18: DIFY-01 Central Brain LIVE/diterbitkan 23 Nov, TAPI model di Dify masih 3.5 Flash — ganti via sesi terpandu 24 Nov; DIFY-02 Memory Manager dibangun ulang sebagai Agent di sesi terpandu 24 Nov (desain Workflow tanpa LLM dibatalkan), langkah Model (dropdown) belum dijawab Cipta; DIFY-03 Website Manager + DIFY-04 Product & Seller Manager dibangun 23 Nov, klaim chat 23 Nov pakai Gemini Hydrogen BELUM terverifikasi di Dify (cek dropdown saat sesi terpandu), status terbit/uji belum terverifikasi; DIFY-05 s.d. DIFY-08 masih rencana, model wajib Hydrogen saat dibangun. KOREKSI 24 Nov 2026 05:24 (perintah Cipta 'Langsung ganti hydrogen'): A50 Manajer Email DIBUAT — bernomor kini 70 (A01–A49 + A50 + A51–A70); TOTAL 82 agent (70 bernomor + 4 Agen Pintar + 8 Dify). A50: Manajer Email, divisi Operasional, boss Muse, model gemini-4-hydrogen (langsung Hydrogen, aturan pembuatan wajib Hydrogen 05:18); tugas ngurus email Outlook (terima email verifikasi, kelola banyak akun Outlook, daftarkan ke web AI untuk kredit gratis); akun Outlook pertama dijadwalkan 27 Nov 2026 — kerja Outlook mulai setelah akun jadi; TIDAK mengambil alih tugas A27 (A27 tetap penanggung jawab pesan masuk semua kanal + kode verifikasi). KOREKSI 24 Nov 2026 05:34 (perintah Cipta; bukti pesan 22 Nov 16:27 'Upgrade 44 agent SELESAI ... Hydrogen gratis untuk semua'): A31–A40 kini punya entri resmi (section agent_31_40) dengan model gemini-4-hydrogen — koreksi atas klaim lama 'A31–A40 tanpa entri, tidak terverifikasi'. Modul a01–a10 sudah diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov). A34 DITUNDA sesuai agent_lama. Entri Hydrogen di agents.json bertambah 10 (68 menjadi 78).",
  "agent_lama": {
   "status": "No 1–6 Aktif — diganti nama jadi A31–A36; no 7–10 diganti nama jadi A37–A40; no 11–14 DIGANTI 22 Nov 2026 jadi agen pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-pintar-Upwork) — definisi lama nonaktif",
   "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang. KOREKSI 22 Nov 2026 (perintah Cipta): dari 14 agent lama, no 1–6 AKTIF dan DIGANTI NAMA jadi A31–A36 (1 Asisten→A31 Publish, 2 Penjualan→A32 Build, 3 Pertumbuhan→A33 Pertumbuhan, 4 Penjualan Harian→A34 Penerjemah, 5 Produksi Produk→A35 Ngetik, 6 Lomba→A36 Copywriter); sisanya no 7–14 tetap Pasif — non job. KOREKSI 22 Nov 2026 15:37 (perintah Cipta: agent 11–14 yang tidak aktif DIGANTI, bukan sekadar di-upgrade): no 11–14 DIGANTI jadi agen pintar — 11 Oyen→Agen Oyen Pintar (data/skills/avatar-oyen/SKILL.md), 12 Momo→Agen Momo Pintar (data/skills/momo-pintar/SKILL.md), 13 Email→A27 versi pintar (data/skills/penjualan-cs/SKILL.md), 14 Upwork→Upwork Pintar di bawah A28 (data/skills/peluang-keuangan/SKILL.md). Definisi lama nonaktif; modul lama tetap sebagai mesin/pustaka.",
@@ -7177,6 +7177,156 @@
      "data/skills/serangan-vcenter-vpn-enterprise/SKILL.md"
     ],
     "ketua_tim": false
+   }
+  ]
+ },
+ "agent_31_40": {
+  "source": "Perintah Cipta 24 Nov 2026 05:34 (bukti pesan 22 Nov 16:27: 'Upgrade 44 agent SELESAI: pilot A27 lulus, A11–A14 diganti, total 44 agent + 2 standalone, semua batch ter-commit. 8 item dibuang (termasuk Carbon — kombinasi batal). Hydrogen gratis untuk semua.')",
+  "applied_date": "2026-11-24",
+  "note": "10 agent LAMA A31–A40 (dulu no 1–10, diganti nama 22 Nov 2026) — KOREKSI atas klaim lama 'A31–A40 tanpa entri, tidak terverifikasi': Cipta membuktikan dari pesan 22 Nov 16:27 bahwa upgrade 44 agent selesai dengan 'Hydrogen gratis untuk semua', dan modul a01–a10 sudah diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov 2026; 0 kemunculan gemini-2.0-flash tersisa di a01–a10, 10/10 modul mengandung gemini-4-hydrogen — diverifikasi 24 Nov). A34 Penerjemah DITUNDA sesuai agent_lama. No 11–14 BUKAN A31–A40 — diganti jadi Agen Pintar, tidak dimasukkan di sini.",
+  "agents": [
+   {
+    "code": "A31",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a01_asisten diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
+    "name": "Publish",
+    "division": "Operasional",
+    "boss": "Muse",
+    "job_desc": "Upload SEMUA PRODUK ke semua platform penjualan (Payhip, Gumroad, KaryaKarsa, KBM, Etsy, dll) — hanya produk yang sudah disetujui Cipta; upload hanya setelah persetujuan isi persis.",
+    "modul": "a01_asisten",
+    "status": "Aktif — diganti nama jadi A31 Publish",
+    "skills": [
+     "data/skills/eksekusi-marketplace/SKILL.md"
+    ]
+   },
+   {
+    "code": "A32",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a02_penjualan diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
+    "name": "Build",
+    "division": "Operasional",
+    "boss": "Muse",
+    "job_desc": "Kerja 24 jam, fokus membangun (build) — membangun aplikasi, website, dan produk.",
+    "modul": "a02_penjualan",
+    "status": "Aktif — diganti nama jadi A32 Build",
+    "skills": [
+     "data/skills/membangun-produk/SKILL.md",
+     "data/skills/cek-konsistensi-toko/SKILL.md"
+    ]
+   },
+   {
+    "code": "A33",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a03_pertumbuhan diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
+    "name": "Pertumbuhan",
+    "division": "Operasional",
+    "boss": "Muse",
+    "job_desc": "Kerja 24 jam, fokus pertumbuhan — riset konten, naikkan follower/subscribe/view/like, atur strategi supaya cepat monetisasi.",
+    "modul": "a03_pertumbuhan",
+    "status": "Aktif — diganti nama jadi A33 Pertumbuhan",
+    "skills": [
+     "data/skills/pertumbuhan-organik/SKILL.md"
+    ]
+   },
+   {
+    "code": "A34",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a04_penjualan_harian diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
+    "name": "Penerjemah",
+    "division": "Operasional",
+    "boss": "Muse",
+    "job_desc": "Penerjemah — pekerjaan terjemahan (saat ini DITUNDA). Kerja 24 jam nonstop.",
+    "modul": "a04_penjualan_harian",
+    "status": "DITUNDA — diganti nama jadi A34 Penerjemah (pekerjaan terjemahan saat ini DITUNDA, perintah Cipta)",
+    "skills": [
+     "data/skills/terjemahan/SKILL.md"
+    ]
+   },
+   {
+    "code": "A35",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a05_produksi diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
+    "name": "Ngetik",
+    "division": "Operasional",
+    "boss": "Muse",
+    "job_desc": "Ngetik — mengetik draf, naskah, dan dokumen. Kerja 24 jam nonstop.",
+    "modul": "a05_produksi",
+    "status": "Aktif — diganti nama jadi A35 Ngetik",
+    "skills": [
+     "data/skills/mengetik/SKILL.md"
+    ]
+   },
+   {
+    "code": "A36",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a06_lomba diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
+    "name": "Copywriter",
+    "division": "Operasional",
+    "boss": "Muse",
+    "job_desc": "Copywriter — menulis teks pemasaran dan penjualan. Kerja 24 jam nonstop.",
+    "modul": "a06_lomba",
+    "status": "Aktif — diganti nama jadi A36 Copywriter",
+    "skills": [
+     "data/skills/copywriting/SKILL.md"
+    ]
+   },
+   {
+    "code": "A37",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a07_keuangan diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
+    "name": "Marketplace",
+    "division": "Operasional",
+    "boss": "Muse",
+    "job_desc": "Marketplace — eksekusi 20 marketplace satu-satu dari no. 1 (riset syarat seller, siapkan listing, pantau status, laporkan per nomor). Kerja 24 jam nonstop.",
+    "modul": "a07_keuangan",
+    "status": "Aktif — diganti nama jadi A37 Marketplace",
+    "skills": [
+     "data/skills/eksekusi-marketplace/SKILL.md"
+    ]
+   },
+   {
+    "code": "A38",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a08_terjemah diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
+    "name": "QA",
+    "division": "Operasional",
+    "boss": "Muse",
+    "job_desc": "QA / Verifikator — cek live sebelum lapor selesai (harga, tautan, screenshot, demo, teks listing); laporkan jujur apa yang terlihat dan apa yang belum. Kerja 24 jam nonstop.",
+    "modul": "a08_terjemah",
+    "status": "Aktif — diganti nama jadi A38 QA",
+    "skills": [
+     "data/skills/qa-verifikasi/SKILL.md",
+     "data/skills/qc-ebook-pra-pasar/SKILL.md",
+     "data/skills/cek-konsistensi-toko/SKILL.md"
+    ]
+   },
+   {
+    "code": "A39",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a09_game diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
+    "name": "Musik",
+    "division": "Operasional",
+    "boss": "Muse",
+    "job_desc": "Musik — produksi lagu 5/hari + musik 5/hari (gratis dulu), siapkan untuk toko dan platform musik. Kerja 24 jam nonstop.",
+    "modul": "a09_game",
+    "status": "Aktif — diganti nama jadi A39 Musik",
+    "skills": [
+     "data/skills/produksi-musik/SKILL.md"
+    ]
+   },
+   {
+    "code": "A40",
+    "model": "gemini-4-hydrogen",
+    "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a10_riset diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
+    "name": "Prompt & Skill",
+    "division": "Operasional",
+    "boss": "Muse",
+    "job_desc": "Prompt & Skill — kemas prompt dan skill AI (SKILL.md + modul + payload publish) untuk Swarms, Agensi.io, dan PromptBase. Kerja 24 jam nonstop.",
+    "modul": "a10_riset",
+    "status": "Aktif — diganti nama jadi A40 Prompt & Skill",
+    "skills": [
+     "data/skills/paket-prompt-skill/SKILL.md"
+    ]
    }
   ]
  }
