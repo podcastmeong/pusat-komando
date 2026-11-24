@@ -2453,7 +2453,7 @@
         ],
         "model": "gemini-4-hydrogen",
         "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
-        "model_status": "TERVERIFIKASI 24 Nov 05:41-05:49 (browser): Hydrogen TIDAK ADA di dropdown Model Dify (hanya 3.5 Flash, 3.5 Flash-Lite, 3.1 Flash-Lite, 3 Flash Preview, 2.5 Flash; cari \"hydrogen\"/\"Gemini 4\" = No model found) — masih gemini-3.5-flash; ganti butuh own-key (pasang kunci API Gemini di Dify). Instruksi baru ditempel + diterbitkan 24 Nov 05:49 (3.288 karakter: kemandirian + inisiatif + larangan bayar/kirim uang)."
+        "model_status": "TERVERIFIKASI 24 Nov 05:41-05:49 (browser): Hydrogen TIDAK ADA di dropdown Model Dify (hanya 3.5 Flash, 3.5 Flash-Lite, 3.1 Flash-Lite, 3 Flash Preview, 2.5 Flash; cari \"hydrogen\"/\"Gemini 4\" = No model found) — masih gemini-3.5-flash; ganti butuh own-key (pasang kunci API Gemini di Dify). Instruksi baru ditempel + diterbitkan 24 Nov 05:49 (3.288 karakter: kemandirian + inisiatif + larangan bayar/kirim uang). Diverifikasi lagi 24 Nov 07:19: masih 3.5 Flash (tidak diubah), instruksi tetap versi upgrade (identik v2, 3.288 karakter)."
       },
       {
         "code": "DIFY-02",
@@ -2495,7 +2495,7 @@
         ],
         "model": "gemini-4-hydrogen",
         "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
-        "model_status": "TERVERIFIKASI 24 Nov 05:41-05:49 (browser): node LLM \"WEBSITE MANAGER\" masih gemini-2.5-flash; Hydrogen TIDAK ADA di dropdown (cari \"hydrogen\" = No model found); ganti butuh own-key. Instruksi baru (kolom SYSTEM node) ditempel + diterbitkan 24 Nov 05:49 (versi #4)."
+        "model_status": "TERVERIFIKASI 24 Nov 07:16 (browser, perintah Cipta 07:15 ganti ke model paling tinggi di daftar): node LLM \"WEBSITE MANAGER\" diganti gemini-2.5-flash → Gemini 3.5 Flash, diterbitkan versi #5; instruksi tetap versi upgrade (SYSTEM node identik v4, 3.186 karakter). Hydrogen TIDAK ADA di dropdown; ganti ke Hydrogen butuh own-key."
       },
       {
         "code": "DIFY-04",
@@ -2516,7 +2516,7 @@
         ],
         "model": "gemini-4-hydrogen",
         "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
-        "model_status": "TERVERIFIKASI 24 Nov 05:41-05:49 (browser): node LLM \"PRODUCT MANAGER\" masih Gemini 2.5 Flash; Hydrogen TIDAK ADA di dropdown (cari \"hydrogen\" = No model found); ganti butuh own-key. Instruksi baru (kolom SYSTEM node) ditempel + diterbitkan 24 Nov 05:49 (versi #3)."
+        "model_status": "TERVERIFIKASI 24 Nov 07:17 (browser, perintah Cipta 07:15 ganti ke model paling tinggi di daftar): node LLM \"PRODUCT MANAGER\" diganti Gemini 2.5 Flash → Gemini 3.5 Flash, diterbitkan versi #4; instruksi tetap versi upgrade (SYSTEM node identik v3, 3.254 karakter). Hydrogen TIDAK ADA di dropdown; ganti ke Hydrogen butuh own-key."
       },
       {
         "code": "DIFY-05",
