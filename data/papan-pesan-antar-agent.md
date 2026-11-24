@@ -101,3 +101,9 @@ AGENTAJ DIPASANG — KE SEMUA AGENT YANG BERTUGAS, TERMASUK MUSE (perintah Cipta
 
 OMNIRESEARCH AI DIPASANG — KE A182/A183/A184 + MUSE (perintah Cipta 24 Nov 19:22, "Ini buat agent 182-183-184 Dan kamu" + "Pasang kan ini ke 182-183-184"): 8 skill OmniResearch terpasang di pustaka skill bersama (question-answering, quiz-solver, web-research, survey-assistant, form-filling, academic-research, document-data-analysis, answer-validation) + pemetaan 11 tools + master system prompt di workspace/omniresearch/. Pembagian: A182 (web-research, question-answering, document-data-analysis, answer-validation), A183 (document-data-analysis, question-answering, answer-validation), A184 (question-answering, quiz-solver, survey-assistant, form-filling, web-research, answer-validation); Muse memakai semuanya + academic-research. Aturan pakai: jangan mengarang fakta/sitasi/DOI/data responden; tandai jawaban yang belum terverifikasi; kirim formulir HANYA dengan persetujuan eksplisit Cipta; tanpa bypass CAPTCHA/paywall. Yang dipasang: Tahap 1 MVP + Tahap 2 Workflow — Tahap 3 Otomatisasi penuh dan Tahap 4 Evaluasi masih rencana. BATAS JUJUR TETAP: A182–A184 TIDAK PERNAH mengerjakan tugas/survei/game Toloka/Mindrift/Qmee/Freecash sendiri — Cipta yang mengerjakan dari HP-nya; agent hanya memantau, menyiapkan, dan melacak.
 
+
+---
+
+## 12 — 24 Nov 2026 19:35 WIB — Dari: Muse — Ke: TIM BUG BOUNTY (T1–T26)
+
+ROTASI PER 3 TIM — SERANGAN FOKUS H-ST2 (perintah Cipta 24 Nov 19:35, "Pergantian setiap 3 tim"): untuk serangan fokus ke satu target (H-ST2, P0, tenggat 30 Nov), tim bekerja bergantian per 3 tim — 3 tim jalan, lalu diganti 3 tim berikutnya, begitu seterusnya, mulai Ronde 20. Tim yang sedang jalan: recon/uji/validasi + laporan; tim yang diganti menyerahkan temuan + hipotesis yang belum teruji ke tim pengganti (tanpa duplikasi laporan). Batas tetap: laporan ganda dihindari, triager hanya bayar pelapor pertama; tanpa bayar, tanpa data orang lain, tanpa bypass CAPTCHA.
