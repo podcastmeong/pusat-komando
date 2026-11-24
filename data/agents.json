@@ -12670,7 +12670,14 @@
         "skills": [
           "data/skills/pemantau-tugas-harian/SKILL.md",
           "data/skills/aturan-laporan-selalu-aktif/SKILL.md"
-        ]
+        ],
+        "omniresearch_skills": [
+          "custom-skills/omniresearch-web-research/SKILL.md",
+          "custom-skills/omniresearch-question-answering/SKILL.md",
+          "custom-skills/omniresearch-document-data-analysis/SKILL.md",
+          "custom-skills/omniresearch-answer-validation/SKILL.md"
+        ],
+        "omniresearch_dipasang": "2026-11-24 — perintah Cipta 19:22; skill OmniResearch (8) + pemetaan tools di workspace/omniresearch/; master prompt di workspace/omniresearch/master-system-prompt.md. Batas jujur tetap: agent TIDAK PERNAH mengerjakan tugas/survei/game sendiri."
       }
     ]
   },
@@ -12696,7 +12703,13 @@
         "skills": [
           "data/skills/pelacak-penghasilan-harian/SKILL.md",
           "data/skills/aturan-laporan-selalu-aktif/SKILL.md"
-        ]
+        ],
+        "omniresearch_skills": [
+          "custom-skills/omniresearch-document-data-analysis/SKILL.md",
+          "custom-skills/omniresearch-question-answering/SKILL.md",
+          "custom-skills/omniresearch-answer-validation/SKILL.md"
+        ],
+        "omniresearch_dipasang": "2026-11-24 — perintah Cipta 19:22; skill OmniResearch (8) + pemetaan tools di workspace/omniresearch/; master prompt di workspace/omniresearch/master-system-prompt.md. Batas jujur tetap: agent TIDAK PERNAH mengerjakan tugas/survei/game sendiri."
       }
     ]
   },
@@ -12722,7 +12735,16 @@
         "skills": [
           "data/skills/penyiap-tugas/SKILL.md",
           "data/skills/aturan-laporan-selalu-aktif/SKILL.md"
-        ]
+        ],
+        "omniresearch_skills": [
+          "custom-skills/omniresearch-question-answering/SKILL.md",
+          "custom-skills/omniresearch-quiz-solver/SKILL.md",
+          "custom-skills/omniresearch-survey-assistant/SKILL.md",
+          "custom-skills/omniresearch-form-filling/SKILL.md",
+          "custom-skills/omniresearch-web-research/SKILL.md",
+          "custom-skills/omniresearch-answer-validation/SKILL.md"
+        ],
+        "omniresearch_dipasang": "2026-11-24 — perintah Cipta 19:22; skill OmniResearch (8) + pemetaan tools di workspace/omniresearch/; master prompt di workspace/omniresearch/master-system-prompt.md. Batas jujur tetap: agent TIDAK PERNAH mengerjakan tugas/survei/game sendiri."
       }
     ]
   }
