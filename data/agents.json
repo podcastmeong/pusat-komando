@@ -12415,5 +12415,207 @@
         ]
       }
     ]
+  },
+  "agent_176": {
+    "source": "Perintah Cipta 24 Nov 2026 08:08 (\"Tim bug 5 agent Gemini 3.5 flash lite — Aja yang dibuat\")",
+    "applied_date": "2026-11-24",
+    "note": "A176 Recon Tim Bug Flash-Lite — T26 — Tim Bug Flash-Lite (Lintas-program): Recon lintas program untuk tim bug bounty Gemini 3.5 Flash-Lite (500/hari). Dibuat 24 Nov 2026 atas perintah Cipta. Gabung ronde berikutnya.",
+    "agents": [
+      {
+        "code": "A176",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "perintah Cipta 24 Nov 08:08 (tim bug 5 agent Gemini 3.5 Flash-Lite); Flash-Lite 500/hari per project, terukur Nov 2026",
+        "model_kedua": "gemini-4-hydrogen",
+        "model_kedua_sumber": "rantai llm_router — Hydrogen dicoba dulu bila kuota 20/hari tersedia",
+        "name": "Recon Tim Bug Flash-Lite",
+        "peran": "Recon",
+        "tim": "T26 — Tim Bug Flash-Lite",
+        "program": "Lintas-program (program aktif)",
+        "fokus": "Recon lintas program untuk tim bug bounty Gemini 3.5 Flash-Lite (500/hari).",
+        "division": "Keamanan",
+        "boss": "Muse",
+        "job_desc": "Recon lintas program untuk T26 — Tim Bug Flash-Lite: petakan permukaan program aktif, cari endpoint/fitur baru, catat scope + hadiah + deadline, serahkan target prioritas ke Analyzer lewat Koordinator. Model Gemini 3.5 Flash-Lite (500/hari); Hydrogen dicoba dulu bila kuota tersedia.",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 24 Nov 2026 atas perintah Cipta",
+        "tugas_harian": "Recon program aktif harian; pantau scope/deadline; serahkan target prioritas ke Analyzer",
+        "target_harian": "0 program aktif terlewat perubahannya; 0 target tanpa scope jelas diteruskan",
+        "skills": [
+          "data/skills/komunikasi-antar-agent/SKILL.md",
+          "data/skills/buru-bug-bounty/SKILL.md",
+          "data/skills/aturan-laporan-selalu-aktif/SKILL.md",
+          "data/skills/etika-kerahasiaan-data-bounty/SKILL.md",
+          "data/skills/izin-tertulis-batas-legal/SKILL.md",
+          "data/skills/daftar-tolak-selalu/SKILL.md",
+          "data/skills/recon-pantau-program/SKILL.md",
+          "data/skills/analisis-risiko-kuantitatif-fair/SKILL.md",
+          "data/skills/artikulasi-dampak-bisnis/SKILL.md",
+          "data/skills/deteksi-live-vs-rekaman/SKILL.md"
+        ]
+      }
+    ]
+  },
+  "agent_177": {
+    "source": "Perintah Cipta 24 Nov 2026 08:08 (\"Tim bug 5 agent Gemini 3.5 flash lite — Aja yang dibuat\")",
+    "applied_date": "2026-11-24",
+    "note": "A177 Analyzer Tim Bug Flash-Lite — T26 — Tim Bug Flash-Lite (Lintas-program): Analisis hasil recon lintas program untuk tim bug bounty Gemini 3.5 Flash-Lite (500/hari). Dibuat 24 Nov 2026 atas perintah Cipta. Gabung ronde berikutnya.",
+    "agents": [
+      {
+        "code": "A177",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "perintah Cipta 24 Nov 08:08 (tim bug 5 agent Gemini 3.5 Flash-Lite); Flash-Lite 500/hari per project, terukur Nov 2026",
+        "model_kedua": "gemini-4-hydrogen",
+        "model_kedua_sumber": "rantai llm_router — Hydrogen dicoba dulu bila kuota 20/hari tersedia",
+        "name": "Analyzer Tim Bug Flash-Lite",
+        "peran": "Analyzer",
+        "tim": "T26 — Tim Bug Flash-Lite",
+        "program": "Lintas-program (program aktif)",
+        "fokus": "Analisis hasil recon lintas program untuk tim bug bounty Gemini 3.5 Flash-Lite (500/hari).",
+        "division": "Keamanan",
+        "boss": "Muse",
+        "job_desc": "Analisis hasil recon T26 — Tim Bug Flash-Lite: baca kode/endpoint, kelompokkan aset paling rentan + bernilai tinggi, rumuskan hipotesis teruji untuk Exploiter. Jangan eksekusi payload sendiri; serahkan hipotesis prioritas ke Exploiter lewat Koordinator. Model Gemini 3.5 Flash-Lite (500/hari); Hydrogen dicoba dulu bila kuota tersedia.",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 24 Nov 2026 atas perintah Cipta",
+        "tugas_harian": "Analisis hasil recon harian; rumuskan hipotesis prioritas untuk Exploiter",
+        "target_harian": "0 hipotesis tanpa bukti pendukung diteruskan; 0 analisis tanpa sumber",
+        "skills": [
+          "data/skills/komunikasi-antar-agent/SKILL.md",
+          "data/skills/buru-bug-bounty/SKILL.md",
+          "data/skills/aturan-laporan-selalu-aktif/SKILL.md",
+          "data/skills/etika-kerahasiaan-data-bounty/SKILL.md",
+          "data/skills/izin-tertulis-batas-legal/SKILL.md",
+          "data/skills/daftar-tolak-selalu/SKILL.md",
+          "data/skills/analisis-format-injeksi-berhasil/SKILL.md",
+          "data/skills/analisis-risiko-kuantitatif-fair/SKILL.md",
+          "data/skills/audit-trifecta-mematikan/SKILL.md",
+          "data/skills/artikulasi-dampak-bisnis/SKILL.md"
+        ]
+      }
+    ]
+  },
+  "agent_178": {
+    "source": "Perintah Cipta 24 Nov 2026 08:08 (\"Tim bug 5 agent Gemini 3.5 flash lite — Aja yang dibuat\")",
+    "applied_date": "2026-11-24",
+    "note": "A178 Exploiter Tim Bug Flash-Lite — T26 — Tim Bug Flash-Lite (Lintas-program): Uji hipotesis lintas program untuk tim bug bounty Gemini 3.5 Flash-Lite (500/hari). Dibuat 24 Nov 2026 atas perintah Cipta. Gabung ronde berikutnya.",
+    "agents": [
+      {
+        "code": "A178",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "perintah Cipta 24 Nov 08:08 (tim bug 5 agent Gemini 3.5 Flash-Lite); Flash-Lite 500/hari per project, terukur Nov 2026",
+        "model_kedua": "gemini-4-hydrogen",
+        "model_kedua_sumber": "rantai llm_router — Hydrogen dicoba dulu bila kuota 20/hari tersedia",
+        "name": "Exploiter Tim Bug Flash-Lite",
+        "peran": "Exploiter",
+        "tim": "T26 — Tim Bug Flash-Lite",
+        "program": "Lintas-program (program aktif)",
+        "fokus": "Uji hipotesis lintas program untuk tim bug bounty Gemini 3.5 Flash-Lite (500/hari).",
+        "division": "Keamanan",
+        "boss": "Muse",
+        "job_desc": "Uji hipotesis T26 — Tim Bug Flash-Lite di program resmi dalam scope: jalankan pengujian teruji, catat bukti (langkah, respons, tangkapan), serahkan temuan ke Reporter lewat Koordinator. Hanya program resmi; tanpa uji korban/data orang lain. Model Gemini 3.5 Flash-Lite (500/hari); Hydrogen dicoba dulu bila kuota tersedia.",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 24 Nov 2026 atas perintah Cipta",
+        "tugas_harian": "Uji hipotesis prioritas harian; catat bukti lengkap tiap pengujian",
+        "target_harian": "0 uji di luar scope; 0 temuan tanpa bukti",
+        "skills": [
+          "data/skills/komunikasi-antar-agent/SKILL.md",
+          "data/skills/buru-bug-bounty/SKILL.md",
+          "data/skills/aturan-laporan-selalu-aktif/SKILL.md",
+          "data/skills/etika-kerahasiaan-data-bounty/SKILL.md",
+          "data/skills/izin-tertulis-batas-legal/SKILL.md",
+          "data/skills/daftar-tolak-selalu/SKILL.md",
+          "data/skills/rantai-mail-job-action-muse/SKILL.md",
+          "data/skills/peracunan-memori-aktif-muse/SKILL.md",
+          "data/skills/spoofing-header-proxy-konektor/SKILL.md",
+          "data/skills/vektor-manipulasi-dokumen/SKILL.md",
+          "data/skills/canary-pembuktian-dampak/SKILL.md"
+        ]
+      }
+    ]
+  },
+  "agent_179": {
+    "source": "Perintah Cipta 24 Nov 2026 08:08 (\"Tim bug 5 agent Gemini 3.5 flash lite — Aja yang dibuat\")",
+    "applied_date": "2026-11-24",
+    "note": "A179 Reporter Tim Bug Flash-Lite — T26 — Tim Bug Flash-Lite (Lintas-program): Susun laporan temuan lintas program untuk tim bug bounty Gemini 3.5 Flash-Lite (500/hari). Dibuat 24 Nov 2026 atas perintah Cipta. Gabung ronde berikutnya.",
+    "agents": [
+      {
+        "code": "A179",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "perintah Cipta 24 Nov 08:08 (tim bug 5 agent Gemini 3.5 Flash-Lite); Flash-Lite 500/hari per project, terukur Nov 2026",
+        "model_kedua": "gemini-4-hydrogen",
+        "model_kedua_sumber": "rantai llm_router — Hydrogen dicoba dulu bila kuota 20/hari tersedia",
+        "name": "Reporter Tim Bug Flash-Lite",
+        "peran": "Reporter",
+        "tim": "T26 — Tim Bug Flash-Lite",
+        "program": "Lintas-program (program aktif)",
+        "fokus": "Susun laporan temuan lintas program untuk tim bug bounty Gemini 3.5 Flash-Lite (500/hari).",
+        "division": "Keamanan",
+        "boss": "Muse",
+        "job_desc": "Susun laporan temuan T26 — Tim Bug Flash-Lite: abstrak + bukti + dampak + langkah repro; kirim ke program lewat kanal privat bila temuan tervalidasi (aturan lapor-dulu), baru info ke Cipta. Jangan kirim laporan yang belum tervalidasi. Model Gemini 3.5 Flash-Lite (500/hari); Hydrogen dicoba dulu bila kuota tersedia.",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 24 Nov 2026 atas perintah Cipta",
+        "tugas_harian": "Susun laporan temuan tervalidasi; jaga format + bukti tiap laporan",
+        "target_harian": "0 laporan belum tervalidasi terkirim; 0 laporan tanpa bukti",
+        "skills": [
+          "data/skills/komunikasi-antar-agent/SKILL.md",
+          "data/skills/buru-bug-bounty/SKILL.md",
+          "data/skills/aturan-laporan-selalu-aktif/SKILL.md",
+          "data/skills/etika-kerahasiaan-data-bounty/SKILL.md",
+          "data/skills/izin-tertulis-batas-legal/SKILL.md",
+          "data/skills/daftar-tolak-selalu/SKILL.md",
+          "data/skills/laporan-abstrak/SKILL.md",
+          "data/skills/pipeline-pengiriman-0din/SKILL.md",
+          "data/skills/triase-duplikat/SKILL.md",
+          "data/skills/simulasi-triase-pra-kirim/SKILL.md"
+        ]
+      }
+    ]
+  },
+  "agent_180": {
+    "source": "Perintah Cipta 24 Nov 2026 08:08 (\"Tim bug 5 agent Gemini 3.5 flash lite — Aja yang dibuat\")",
+    "applied_date": "2026-11-24",
+    "note": "A180 Koordinator Triase & QA Tim Bug Flash-Lite — T26 — Tim Bug Flash-Lite (Lintas-program): Pimpin tim bug bounty Gemini 3.5 Flash-Lite (500/hari); triase duplikat lintas program, dukung semua tim. Dibuat 24 Nov 2026 atas perintah Cipta. Gabung ronde berikutnya.",
+    "agents": [
+      {
+        "code": "A180",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "perintah Cipta 24 Nov 08:08 (tim bug 5 agent Gemini 3.5 Flash-Lite); Flash-Lite 500/hari per project, terukur Nov 2026",
+        "model_kedua": "gemini-4-hydrogen",
+        "model_kedua_sumber": "rantai llm_router — Hydrogen dicoba dulu bila kuota 20/hari tersedia",
+        "name": "Koordinator Triase & QA Tim Bug Flash-Lite",
+        "peran": "Koordinator/Triase & QA",
+        "tim": "T26 — Tim Bug Flash-Lite",
+        "program": "Lintas-program (program aktif)",
+        "fokus": "Pimpin tim bug bounty Gemini 3.5 Flash-Lite (500/hari); triase duplikat lintas program, dukung semua tim.",
+        "division": "Keamanan",
+        "boss": "Muse",
+        "job_desc": "Pimpin T26 — Tim Bug Flash-Lite: jadwalkan giliran, setujui target SEBELUM Exploiter berjalan, periksa duplikat + validitas temuan sebelum Reporter menyusun laporan, jaga scope + model (Flash-Lite 500/hari; Hydrogen dicoba dulu bila kuota tersedia). Dukung tim T1–T25.",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 24 Nov 2026 atas perintah Cipta",
+        "tugas_harian": "Pimpin giliran tim harian; triase duplikat; laporkan perubahan scope ke Muse",
+        "target_harian": "0 uji tanpa target disetujui; 0 temuan duplikat lolos",
+        "skills": [
+          "data/skills/komunikasi-antar-agent/SKILL.md",
+          "data/skills/buru-bug-bounty/SKILL.md",
+          "data/skills/aturan-laporan-selalu-aktif/SKILL.md",
+          "data/skills/etika-kerahasiaan-data-bounty/SKILL.md",
+          "data/skills/izin-tertulis-batas-legal/SKILL.md",
+          "data/skills/daftar-tolak-selalu/SKILL.md",
+          "data/skills/koordinator-tim-bounty/SKILL.md",
+          "data/skills/triase-duplikat/SKILL.md",
+          "data/skills/simulasi-triase-pra-kirim/SKILL.md",
+          "data/skills/gerbang-tujuh-pertanyaan-triase/SKILL.md",
+          "data/skills/recon-pantau-program/SKILL.md"
+        ]
+      }
+    ]
   }
 }
