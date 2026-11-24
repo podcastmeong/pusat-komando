@@ -2613,7 +2613,7 @@
         "url": null,
         "knowledge_base": "Digistore Oyen — Master Knowledge",
         "mapped_to": "Muse (browser) + Dify",
-        "status": "Dibuat 24 Nov 2026 atas perintah Cipta — instruksi ditulis (dify-09-pemicu-utama.md), menunggu dibuat di Dify via browser",
+        "status": "TERBLOKIR 24 Nov 2026 08:30 — kuota aplikasi Dify Sandbox penuh 5/5 (Chatbot Dify/Tanya Oyen live, Memory Manager DIFY-02, Central Brain DIFY-01, Product & Seller DIFY-04, Website Manager DIFY-03). Instruksi siap (dify-09-pemicu-utama.md); dibuat begitu ada slot (hapus salah satu — tidak ada yang aman dihapus) atau upgrade paket (keputusan Cipta, berbayar)",
         "tugas_harian": "Tiap jam: cek jadwal → perintahkan yang harus jalan → cek papan/log → ingatkan yang belum jalan (termasuk ingatkan Muse) → catat selesai; ulangi terus (looping)",
         "target_harian": "0 tugas terjadwal terlewat tanpa pengingat; 0 pengingat tanpa tindak lanjut",
         "skills": [
