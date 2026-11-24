@@ -2611,8 +2611,8 @@
     "agents": [
       {
         "code": "A51",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemburu Bug Bounty",
         "division": "Keamanan",
         "boss": "Muse",
@@ -2839,8 +2839,8 @@
     "agents": [
       {
         "code": "A52",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Generator Varian",
         "division": "Keamanan",
         "boss": "Muse",
@@ -3068,8 +3068,8 @@
     "agents": [
       {
         "code": "A53",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Recon Program",
         "division": "Keamanan",
         "boss": "Muse",
@@ -3297,8 +3297,8 @@
     "agents": [
       {
         "code": "A54",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penguji Live",
         "division": "Keamanan",
         "boss": "Muse",
@@ -3526,8 +3526,8 @@
     "agents": [
       {
         "code": "A55",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Analis Rantai & Pelapor",
         "division": "Keamanan",
         "boss": "Muse",
@@ -3756,8 +3756,8 @@
     "agents": [
       {
         "code": "A56",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Red Team",
         "division": "Keamanan",
         "boss": "Muse",
@@ -3984,8 +3984,8 @@
     "agents": [
       {
         "code": "A57",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penetration Tester",
         "division": "Keamanan",
         "boss": "Muse",
@@ -4212,8 +4212,8 @@
     "agents": [
       {
         "code": "A58",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Vulnerability Researcher",
         "division": "Keamanan",
         "boss": "Muse",
@@ -4440,8 +4440,8 @@
     "agents": [
       {
         "code": "A59",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Threat Hunter",
         "division": "Keamanan",
         "boss": "Muse",
@@ -4669,8 +4669,8 @@
     "agents": [
       {
         "code": "A60",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Security Auditor",
         "division": "Keamanan",
         "boss": "Muse",
@@ -4897,8 +4897,8 @@
     "agents": [
       {
         "code": "A61",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Triage & Severity Analyst",
         "division": "Keamanan",
         "boss": "Muse",
@@ -5126,8 +5126,8 @@
     "agents": [
       {
         "code": "A62",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Exploit Developer",
         "division": "Keamanan",
         "boss": "Muse",
@@ -5354,8 +5354,8 @@
     "agents": [
       {
         "code": "A63",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Format Analyst",
         "division": "Keamanan",
         "boss": "Muse",
@@ -5582,8 +5582,8 @@
     "agents": [
       {
         "code": "A64",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Web Application Tester",
         "division": "Keamanan",
         "boss": "Muse",
@@ -5811,8 +5811,8 @@
     "agents": [
       {
         "code": "A65",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Mobile Security Tester",
         "division": "Keamanan",
         "boss": "Muse",
@@ -6040,8 +6040,8 @@
     "agents": [
       {
         "code": "A66",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "API Security Tester",
         "division": "Keamanan",
         "boss": "Muse",
@@ -6269,8 +6269,8 @@
     "agents": [
       {
         "code": "A67",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Report Writer",
         "division": "Keamanan",
         "boss": "Muse",
@@ -6499,8 +6499,8 @@
     "agents": [
       {
         "code": "A68",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Duplicate & Prior-Art Checker",
         "division": "Keamanan",
         "boss": "Muse",
@@ -6729,8 +6729,8 @@
     "agents": [
       {
         "code": "A69",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Payout & Submission Tracker",
         "division": "Keamanan",
         "boss": "Muse",
@@ -6958,8 +6958,8 @@
     "agents": [
       {
         "code": "A70",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "skill buru-bug-bounty: runner Hydrogen (riset/draf, kuota 20/hari bersama)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Automation Engineer",
         "division": "Keamanan",
         "boss": "Muse",
@@ -7337,8 +7337,8 @@
     "agents": [
       {
         "code": "A71",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Tim Muse",
         "peran": "Koordinator/Triase & QA",
         "tim": "T1 — Muse",
@@ -7389,8 +7389,8 @@
     "agents": [
       {
         "code": "A72",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Tim OpenAI",
         "peran": "Koordinator/Triase & QA",
         "tim": "T2 — OpenAI Safety",
@@ -7441,8 +7441,8 @@
     "agents": [
       {
         "code": "A73",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Tim 0din",
         "peran": "Koordinator/Triase & QA",
         "tim": "T3 — 0din",
@@ -7492,8 +7492,8 @@
     "agents": [
       {
         "code": "A74",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Tim Google",
         "peran": "Koordinator/Triase & QA",
         "tim": "T4 — Google AI VRP",
@@ -7544,8 +7544,8 @@
     "agents": [
       {
         "code": "A75",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Tim ViKernel",
         "peran": "Koordinator/Triase & QA",
         "tim": "T5 — ViKernel",
@@ -7595,8 +7595,8 @@
     "agents": [
       {
         "code": "A76",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Muse Mail & Messaging",
         "peran": "Recon",
         "tim": "T6 — Muse Mail & Messaging",
@@ -7645,8 +7645,8 @@
     "agents": [
       {
         "code": "A77",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta & Penyaring Muse Mail & Messaging",
         "peran": "Analyzer",
         "tim": "T6 — Muse Mail & Messaging",
@@ -7694,8 +7694,8 @@
     "agents": [
       {
         "code": "A78",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penguji Kerentanan Muse Mail & Messaging",
         "peran": "Exploiter",
         "tim": "T6 — Muse Mail & Messaging",
@@ -7745,8 +7745,8 @@
     "agents": [
       {
         "code": "A79",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penyusun Laporan Muse Mail & Messaging",
         "peran": "Reporter",
         "tim": "T6 — Muse Mail & Messaging",
@@ -7790,8 +7790,8 @@
     "agents": [
       {
         "code": "A80",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Muse Mail & Messaging",
         "peran": "Koordinator/Triase & QA",
         "tim": "T6 — Muse Mail & Messaging",
@@ -7834,8 +7834,8 @@
     "agents": [
       {
         "code": "A81",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Muse Memory & Context",
         "peran": "Recon",
         "tim": "T7 — Muse Memory & Context",
@@ -7883,8 +7883,8 @@
     "agents": [
       {
         "code": "A82",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta & Penyaring Muse Memory & Context",
         "peran": "Analyzer",
         "tim": "T7 — Muse Memory & Context",
@@ -7931,8 +7931,8 @@
     "agents": [
       {
         "code": "A83",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penguji Kerentanan Muse Memory & Context",
         "peran": "Exploiter",
         "tim": "T7 — Muse Memory & Context",
@@ -7980,8 +7980,8 @@
     "agents": [
       {
         "code": "A84",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penyusun Laporan Muse Memory & Context",
         "peran": "Reporter",
         "tim": "T7 — Muse Memory & Context",
@@ -8024,8 +8024,8 @@
     "agents": [
       {
         "code": "A85",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Muse Memory & Context",
         "peran": "Koordinator/Triase & QA",
         "tim": "T7 — Muse Memory & Context",
@@ -8067,8 +8067,8 @@
     "agents": [
       {
         "code": "A86",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Muse Tool Output & Connectors",
         "peran": "Recon",
         "tim": "T8 — Muse Tool Output & Connectors",
@@ -8124,8 +8124,8 @@
     "agents": [
       {
         "code": "A87",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta & Penyaring Muse Tool Output & Connectors",
         "peran": "Analyzer",
         "tim": "T8 — Muse Tool Output & Connectors",
@@ -8180,8 +8180,8 @@
     "agents": [
       {
         "code": "A88",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penguji Kerentanan Muse Tool Output & Connectors",
         "peran": "Exploiter",
         "tim": "T8 — Muse Tool Output & Connectors",
@@ -8237,8 +8237,8 @@
     "agents": [
       {
         "code": "A89",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penyusun Laporan Muse Tool Output & Connectors",
         "peran": "Reporter",
         "tim": "T8 — Muse Tool Output & Connectors",
@@ -8289,8 +8289,8 @@
     "agents": [
       {
         "code": "A90",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Muse Tool Output & Connectors",
         "peran": "Koordinator/Triase & QA",
         "tim": "T8 — Muse Tool Output & Connectors",
@@ -8340,8 +8340,8 @@
     "agents": [
       {
         "code": "A91",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Muse Mobile & Platform",
         "peran": "Recon",
         "tim": "T9 — Muse Mobile & Platform",
@@ -8395,8 +8395,8 @@
     "agents": [
       {
         "code": "A92",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta & Penyaring Muse Mobile & Platform",
         "peran": "Analyzer",
         "tim": "T9 — Muse Mobile & Platform",
@@ -8449,8 +8449,8 @@
     "agents": [
       {
         "code": "A93",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penguji Kerentanan Muse Mobile & Platform",
         "peran": "Exploiter",
         "tim": "T9 — Muse Mobile & Platform",
@@ -8504,8 +8504,8 @@
     "agents": [
       {
         "code": "A94",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penyusun Laporan Muse Mobile & Platform",
         "peran": "Reporter",
         "tim": "T9 — Muse Mobile & Platform",
@@ -8554,8 +8554,8 @@
     "agents": [
       {
         "code": "A95",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Muse Mobile & Platform",
         "peran": "Koordinator/Triase & QA",
         "tim": "T9 — Muse Mobile & Platform",
@@ -8603,8 +8603,8 @@
     "agents": [
       {
         "code": "A96",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Connector & MCP",
         "peran": "Recon",
         "tim": "T10 — OpenAI Connectors & MCP",
@@ -8653,8 +8653,8 @@
     "agents": [
       {
         "code": "A97",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta Metadata Connector",
         "peran": "Analyzer",
         "tim": "T10 — OpenAI Connectors & MCP",
@@ -8703,8 +8703,8 @@
     "agents": [
       {
         "code": "A98",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penguji Kerentanan MCP",
         "peran": "Exploiter",
         "tim": "T10 — OpenAI Connectors & MCP",
@@ -8757,8 +8757,8 @@
     "agents": [
       {
         "code": "A99",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penyusun Laporan MCP",
         "peran": "Reporter",
         "tim": "T10 — OpenAI Connectors & MCP",
@@ -8805,8 +8805,8 @@
     "agents": [
       {
         "code": "A100",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Triase MCP",
         "peran": "Koordinator/Triase & QA",
         "tim": "T10 — OpenAI Connectors & MCP",
@@ -8857,8 +8857,8 @@
     "agents": [
       {
         "code": "A101",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Mobile & Deep Link",
         "peran": "Recon",
         "tim": "T11 — OpenAI Mobile & Deep Links",
@@ -8905,8 +8905,8 @@
     "agents": [
       {
         "code": "A102",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta Deep Link",
         "peran": "Analyzer",
         "tim": "T11 — OpenAI Mobile & Deep Links",
@@ -8954,8 +8954,8 @@
     "agents": [
       {
         "code": "A103",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penguji Deep Link",
         "peran": "Exploiter",
         "tim": "T11 — OpenAI Mobile & Deep Links",
@@ -9008,8 +9008,8 @@
     "agents": [
       {
         "code": "A104",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penyusun Laporan Mobile",
         "peran": "Reporter",
         "tim": "T11 — OpenAI Mobile & Deep Links",
@@ -9056,8 +9056,8 @@
     "agents": [
       {
         "code": "A105",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Triase Mobile",
         "peran": "Koordinator/Triase & QA",
         "tim": "T11 — OpenAI Mobile & Deep Links",
@@ -9104,8 +9104,8 @@
     "agents": [
       {
         "code": "A106",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Permukaan Agen",
         "peran": "Recon",
         "tim": "T12 — OpenAI Safety & Agent Surfaces",
@@ -9153,8 +9153,8 @@
     "agents": [
       {
         "code": "A107",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta Permukaan Agen",
         "peran": "Analyzer",
         "tim": "T12 — OpenAI Safety & Agent Surfaces",
@@ -9202,8 +9202,8 @@
     "agents": [
       {
         "code": "A108",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penguji Permukaan Agen",
         "peran": "Exploiter",
         "tim": "T12 — OpenAI Safety & Agent Surfaces",
@@ -9257,8 +9257,8 @@
     "agents": [
       {
         "code": "A109",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penyusun Laporan Safety",
         "peran": "Reporter",
         "tim": "T12 — OpenAI Safety & Agent Surfaces",
@@ -9304,8 +9304,8 @@
     "agents": [
       {
         "code": "A110",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Triase Safety",
         "peran": "Koordinator/Triase & QA",
         "tim": "T12 — OpenAI Safety & Agent Surfaces",
@@ -9353,8 +9353,8 @@
     "agents": [
       {
         "code": "A111",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Vektor Konten",
         "peran": "Recon",
         "tim": "T13 — 0din Content Manipulation",
@@ -9405,8 +9405,8 @@
     "agents": [
       {
         "code": "A112",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta Vektor Konten",
         "peran": "Analyzer",
         "tim": "T13 — 0din Content Manipulation",
@@ -9458,8 +9458,8 @@
     "agents": [
       {
         "code": "A113",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Perancang Paket Manipulasi",
         "peran": "Exploiter",
         "tim": "T13 — 0din Content Manipulation",
@@ -9511,8 +9511,8 @@
     "agents": [
       {
         "code": "A114",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pelapor Manipulasi Konten",
         "peran": "Reporter",
         "tim": "T13 — 0din Content Manipulation",
@@ -9559,8 +9559,8 @@
     "agents": [
       {
         "code": "A115",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator T13 0din",
         "peran": "Koordinator/Triase & QA",
         "tim": "T13 — 0din Content Manipulation",
@@ -9607,8 +9607,8 @@
     "agents": [
       {
         "code": "A116",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Repro 0din",
         "peran": "Recon",
         "tim": "T14 — 0din Repro & Submission",
@@ -9655,8 +9655,8 @@
     "agents": [
       {
         "code": "A117",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta Bukti Repro",
         "peran": "Analyzer",
         "tim": "T14 — 0din Repro & Submission",
@@ -9703,8 +9703,8 @@
     "agents": [
       {
         "code": "A118",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pendamping Repro",
         "peran": "Exploiter",
         "tim": "T14 — 0din Repro & Submission",
@@ -9751,8 +9751,8 @@
     "agents": [
       {
         "code": "A119",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pelapor 0din",
         "peran": "Reporter",
         "tim": "T14 — 0din Repro & Submission",
@@ -9799,8 +9799,8 @@
     "agents": [
       {
         "code": "A120",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator T14 0din",
         "peran": "Koordinator/Triase & QA",
         "tim": "T14 — 0din Repro & Submission",
@@ -9847,8 +9847,8 @@
     "agents": [
       {
         "code": "A121",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Agen Gemini",
         "peran": "Recon",
         "tim": "T15 — Google Gemini Agents & Triggers",
@@ -9895,8 +9895,8 @@
     "agents": [
       {
         "code": "A122",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta Pemicu Gemini",
         "peran": "Analyzer",
         "tim": "T15 — Google Gemini Agents & Triggers",
@@ -9943,8 +9943,8 @@
     "agents": [
       {
         "code": "A123",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penguji Pemicu Gemini",
         "peran": "Exploiter",
         "tim": "T15 — Google Gemini Agents & Triggers",
@@ -9996,8 +9996,8 @@
     "agents": [
       {
         "code": "A124",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pelapor Gemini",
         "peran": "Reporter",
         "tim": "T15 — Google Gemini Agents & Triggers",
@@ -10044,8 +10044,8 @@
     "agents": [
       {
         "code": "A125",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator T15 Google",
         "peran": "Koordinator/Triase & QA",
         "tim": "T15 — Google Gemini Agents & Triggers",
@@ -10092,8 +10092,8 @@
     "agents": [
       {
         "code": "A126",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pengintai Format Injeksi",
         "peran": "Recon",
         "tim": "T16 — Google Format & Scope Analysis",
@@ -10140,8 +10140,8 @@
     "agents": [
       {
         "code": "A127",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pemeta Format Injeksi",
         "peran": "Analyzer",
         "tim": "T16 — Google Format & Scope Analysis",
@@ -10188,8 +10188,8 @@
     "agents": [
       {
         "code": "A128",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Penguji Format Injeksi",
         "peran": "Exploiter",
         "tim": "T16 — Google Format & Scope Analysis",
@@ -10236,8 +10236,8 @@
     "agents": [
       {
         "code": "A129",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Pelapor Format & Scope",
         "peran": "Reporter",
         "tim": "T16 — Google Format & Scope Analysis",
@@ -10284,8 +10284,8 @@
     "agents": [
       {
         "code": "A130",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator T16 Google",
         "peran": "Koordinator/Triase & QA",
         "tim": "T16 — Google Format & Scope Analysis",
@@ -10338,8 +10338,8 @@
         "fokus": "S2 Data Exfiltration ($500) — petakan permukaan arena ViKernel",
         "job_desc": "Memetakan attack surface skenario S2 ViKernel (Data Exfiltration): subdomain enumeration, crawling URL, pemetaan endpoint dan alur data agen target. HANYA program resmi ViKernel; HANYA akun sendiri + canary palsu milik sendiri; tidak ada data orang lain, tidak ada eksfiltrasi data nyata, tidak ada DoS / EDR bypass / IoT-SCADA-OT / Gray Swan. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Pengintai Eksfiltrasi S2",
         "peran": "Recon",
@@ -10384,8 +10384,8 @@
         "fokus": "S2 Data Exfiltration ($500) — analisis alur data dan titik eksfiltrasi",
         "job_desc": "Menganalisis hasil mentah recon A131: baca kode JavaScript / endpoint API / dokumentasi endpoint, petakan alur data agen target, kelompokkan titik yang paling rentan dan bernilai tinggi untuk diuji. HANYA program resmi ViKernel; HANYA akun sendiri + canary palsu milik sendiri; tidak ada data orang lain, tidak ada eksfiltrasi data nyata. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Pemeta Alur Data S2",
         "peran": "Analyzer",
@@ -10432,8 +10432,8 @@
         "fokus": "S2 Data Exfiltration ($500) — validasi hipotesis eksfiltrasi",
         "job_desc": "Menguji hipotesis eksfiltrasi data pada skenario S2 ViKernel berdasarkan temuan Analyzer; validasi apakah celah benar-benar bisa dieksploitasi dan pahami dampaknya tanpa merusak layanan (hindari false positive). HANYA jalan setelah target disetujui Koordinator. HANYA akun sendiri + canary palsu milik sendiri; tidak ada data orang lain, tidak ada eksfiltrasi data nyata, tidak ada DoS. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Penguji Eksfiltrasi S2",
         "peran": "Exploiter",
@@ -10478,8 +10478,8 @@
         "fokus": "S2 Data Exfiltration ($500) — draf laporan temuan",
         "job_desc": "Mengumpulkan bukti eksploitasi dari Exploiter (HTTP request/response, langkah reproduksi, dampak) dan menyusun draf laporan rapi sesuai format yang diminta program ViKernel; tidak pernah mengirim laporan tanpa persetujuan Cipta (aturan: lapor dulu ke program, baru info ke Cipta — setelah temuan tervalidasi). HANYA bukti dari akun sendiri + canary palsu. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Penyusun Laporan S2",
         "peran": "Reporter",
@@ -10521,8 +10521,8 @@
         "fokus": "S2 Data Exfiltration ($500) — pimpin tim, triase, QA akhir",
         "job_desc": "Memimpin tim T17: menjadwalkan giliran bergantian, menyetujui target SEBELUM Exploiter berjalan, memeriksa duplikat + validitas temuan sebelum Reporter menyusun laporan (gerbang QA akhir). BATAS WAKTU: S2 tutup 16 Jan 2027 (KST) — BERHENTI 15 Jan 2027. HANYA program resmi ViKernel; tidak meloloskan temuannya sendiri. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Koordinator Triase S2",
         "peran": "Koordinator/Triase & QA",
@@ -10566,8 +10566,8 @@
         "fokus": "S3 Hidden Instruction ($500) — petakan permukaan arena ViKernel",
         "job_desc": "Memetakan attack surface skenario S3 ViKernel (Hidden Instruction): subdomain enumeration, crawling URL, pemetaan endpoint dan sumber data yang dibaca agen target. HANYA program resmi ViKernel; HANYA akun sendiri + canary palsu milik sendiri; tidak ada data orang lain, tidak ada eksfiltrasi data nyata, tidak ada DoS / EDR bypass / IoT-SCADA-OT / Gray Swan. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Pengintai Instruksi Tersembunyi S3",
         "peran": "Recon",
@@ -10612,8 +10612,8 @@
         "fokus": "S3 Hidden Instruction ($500) — analisis sumber data dan instruksi tersembunyi",
         "job_desc": "Menganalisis hasil mentah recon A136: baca kode JavaScript / endpoint API / sumber data yang dibaca agen, petakan di mana instruksi tersembunyi bisa disisipkan, kelompokkan titik yang paling rentan dan bernilai tinggi untuk diuji. HANYA program resmi ViKernel; HANYA akun sendiri + canary palsu milik sendiri; tidak ada data orang lain. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Pemeta Instruksi Tersembunyi S3",
         "peran": "Analyzer",
@@ -10660,8 +10660,8 @@
         "fokus": "S3 Hidden Instruction ($500) — validasi hipotesis instruksi tersembunyi",
         "job_desc": "Menguji hipotesis instruksi tersembunyi pada skenario S3 ViKernel berdasarkan temuan Analyzer; validasi apakah celah benar-benar bisa dieksploitasi dan pahami dampaknya tanpa merusak layanan (hindari false positive). HANYA jalan setelah target disetujui Koordinator. HANYA akun sendiri + canary palsu milik sendiri; tidak ada data orang lain, tidak ada eksfiltrasi data nyata, tidak ada DoS. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Penguji Instruksi Tersembunyi S3",
         "peran": "Exploiter",
@@ -10705,8 +10705,8 @@
         "fokus": "S3 Hidden Instruction ($500) — draf laporan temuan",
         "job_desc": "Mengumpulkan bukti eksploitasi dari Exploiter (HTTP request/response, langkah reproduksi, dampak) dan menyusun draf laporan rapi sesuai format yang diminta program ViKernel; tidak pernah mengirim laporan tanpa persetujuan Cipta (aturan: lapor dulu ke program, baru info ke Cipta — setelah temuan tervalidasi). HANYA bukti dari akun sendiri + canary palsu. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Penyusun Laporan S3",
         "peran": "Reporter",
@@ -10748,8 +10748,8 @@
         "fokus": "S3 Hidden Instruction ($500) — pimpin tim, triase, QA akhir",
         "job_desc": "Memimpin tim T18: menjadwalkan giliran bergantian, menyetujui target SEBELUM Exploiter berjalan, memeriksa duplikat + validitas temuan sebelum Reporter menyusun laporan (gerbang QA akhir). BATAS WAKTU: S3 tutup 16 Jan 2027 (KST) — BERHENTI 15 Jan 2027. HANYA program resmi ViKernel; tidak meloloskan temuannya sendiri. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Koordinator Triase S3",
         "peran": "Koordinator/Triase & QA",
@@ -10793,8 +10793,8 @@
         "fokus": "S4 & Live Detection — deteksi live-vs-rekaman D1–D12 sebelum uji",
         "job_desc": "Memeriksa sinyal D1–D12 (skill deteksi-live-vs-rekaman) pada target ViKernel SEBELUM uji apa pun: memastikan target benar-benar live, bukan rekaman; memasang canary palsu milik sendiri. Hasil rekaman dilabeli REKAMAN — BUKAN BUKTI dan tidak pernah dipakai sebagai bukti temuan. HANYA program resmi ViKernel; HANYA akun sendiri + canary palsu. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Pengintai Live Detection",
         "peran": "Recon",
@@ -10837,8 +10837,8 @@
         "fokus": "S4 Kernel Breach ($1.000) — analisis hasil deteksi live dan alur target",
         "job_desc": "Menilai hasil deteksi live-vs-rekaman A141 (sinyal D1–D12), mengelompokkan mana target yang live vs rekaman, lalu menganalisis hasil mentah recon pada target berverdict LIVE: baca kode JavaScript / endpoint API, kelompokkan aset paling rentan dan bernilai tinggi untuk S4. Target berverdict REKAMAN tidak diteruskan ke Exploiter. HANYA program resmi ViKernel; HANYA akun sendiri + canary palsu. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Pemeta & Penyaring S4",
         "peran": "Analyzer",
@@ -10885,8 +10885,8 @@
         "fokus": "S4 Kernel Breach ($1.000) — validasi hipotesis hanya pada target LIVE",
         "job_desc": "Menguji hipotesis S4 ViKernel (Kernel Breach) berdasarkan temuan Analyzer — HANYA pada target berverdict LIVE; ulangi di sesi live kedua untuk memenuhi syarat reproduksi (D10). Validasi apakah celah benar-benar bisa dieksploitasi dan pahami dampaknya tanpa merusak layanan (hindari false positive). HANYA jalan setelah target disetujui Koordinator. HANYA akun sendiri + canary palsu milik sendiri; tidak ada data orang lain, tidak ada eksfiltrasi data nyata, tidak ada DoS. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Penguji Kernel Breach",
         "peran": "Exploiter",
@@ -10929,8 +10929,8 @@
         "fokus": "S4 Kernel Breach ($1.000) — draf laporan temuan live",
         "job_desc": "Mengumpulkan bukti eksploitasi dari Exploiter (HTTP request/response, langkah reproduksi, dampak, bukti 2 sesi live) dan menyusun draf laporan rapi sesuai format yang diminta program ViKernel; tidak pernah mengirim laporan tanpa persetujuan Cipta (aturan: lapor dulu ke program, baru info ke Cipta — setelah temuan tervalidasi). HANYA bukti live dari akun sendiri + canary palsu; bukti rekaman tidak pernah dipakai. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Penyusun Laporan S4",
         "peran": "Reporter",
@@ -10971,8 +10971,8 @@
         "fokus": "S4 Kernel Breach ($1.000) — pimpin tim, triase, QA akhir, konfirmasi live",
         "job_desc": "Memimpin tim T19: menjadwalkan giliran bergantian, menyetujui target SEBELUM Exploiter berjalan, memeriksa duplikat + validitas temuan sebelum Reporter menyusun laporan (gerbang QA akhir), dan mengonfirmasi verdict live D12 — membatalkan temuan bila verdict REKAMAN; tidak meloloskan temuannya sendiri. BATAS WAKTU: S4 16 Jan–15 Feb 2027 — BERHENTI 14 Feb 2027. HANYA program resmi ViKernel. TIDAK ikut ronde 3 — gabung ronde berikutnya.",
         "mapped_to": "Muse (subagent)",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "modul": "belum dibuat — skill + spesifikasi/draf saja (24 Nov 2026)",
         "name": "Koordinator Triase S4",
         "peran": "Koordinator/Triase & QA",
@@ -11009,8 +11009,8 @@
     "agents": [
       {
         "code": "A146",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Recon Perplexity Automations",
         "peran": "Recon",
         "tim": "T20 — Perplexity Automations",
@@ -11059,8 +11059,8 @@
     "agents": [
       {
         "code": "A147",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Analyzer Perplexity Automations",
         "peran": "Analyzer",
         "tim": "T20 — Perplexity Automations",
@@ -11110,8 +11110,8 @@
     "agents": [
       {
         "code": "A148",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Exploiter Perplexity Automations",
         "peran": "Exploiter",
         "tim": "T20 — Perplexity Automations",
@@ -11164,8 +11164,8 @@
     "agents": [
       {
         "code": "A149",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Reporter Perplexity Automations",
         "peran": "Reporter",
         "tim": "T20 — Perplexity Automations",
@@ -11208,8 +11208,8 @@
     "agents": [
       {
         "code": "A150",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Triase & QA Perplexity Automations",
         "peran": "Koordinator/Triase & QA",
         "tim": "T20 — Perplexity Automations",
@@ -11251,8 +11251,8 @@
     "agents": [
       {
         "code": "A151",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Recon Mistral VDP",
         "peran": "Recon",
         "tim": "T21 — Mistral VDP",
@@ -11303,8 +11303,8 @@
     "agents": [
       {
         "code": "A152",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Analyzer Mistral VDP",
         "peran": "Analyzer",
         "tim": "T21 — Mistral VDP",
@@ -11353,8 +11353,8 @@
     "agents": [
       {
         "code": "A153",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Exploiter Mistral VDP",
         "peran": "Exploiter",
         "tim": "T21 — Mistral VDP",
@@ -11406,8 +11406,8 @@
     "agents": [
       {
         "code": "A154",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Reporter Mistral VDP",
         "peran": "Reporter",
         "tim": "T21 — Mistral VDP",
@@ -11451,8 +11451,8 @@
     "agents": [
       {
         "code": "A155",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Triase & QA Mistral VDP",
         "peran": "Koordinator/Triase & QA",
         "tim": "T21 — Mistral VDP",
@@ -11495,8 +11495,8 @@
     "agents": [
       {
         "code": "A156",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Recon Anthropic VDP Recon",
         "peran": "Recon",
         "tim": "T22 — Anthropic VDP Recon",
@@ -11545,8 +11545,8 @@
     "agents": [
       {
         "code": "A157",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Analyzer Anthropic VDP Recon",
         "peran": "Analyzer",
         "tim": "T22 — Anthropic VDP Recon",
@@ -11595,8 +11595,8 @@
     "agents": [
       {
         "code": "A158",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Exploiter Anthropic VDP Recon",
         "peran": "Exploiter",
         "tim": "T22 — Anthropic VDP Recon",
@@ -11648,8 +11648,8 @@
     "agents": [
       {
         "code": "A159",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Reporter Anthropic VDP Recon",
         "peran": "Reporter",
         "tim": "T22 — Anthropic VDP Recon",
@@ -11692,8 +11692,8 @@
     "agents": [
       {
         "code": "A160",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Triase & QA Anthropic VDP Recon",
         "peran": "Koordinator/Triase & QA",
         "tim": "T22 — Anthropic VDP Recon",
@@ -11735,8 +11735,8 @@
     "agents": [
       {
         "code": "A161",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Recon huntr OSV",
         "peran": "Recon",
         "tim": "T23 — huntr OSV",
@@ -11786,8 +11786,8 @@
     "agents": [
       {
         "code": "A162",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Analyzer huntr OSV",
         "peran": "Analyzer",
         "tim": "T23 — huntr OSV",
@@ -11837,8 +11837,8 @@
     "agents": [
       {
         "code": "A163",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Exploiter huntr OSV",
         "peran": "Exploiter",
         "tim": "T23 — huntr OSV",
@@ -11890,8 +11890,8 @@
     "agents": [
       {
         "code": "A164",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Reporter huntr OSV",
         "peran": "Reporter",
         "tim": "T23 — huntr OSV",
@@ -11934,8 +11934,8 @@
     "agents": [
       {
         "code": "A165",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Triase & QA huntr OSV",
         "peran": "Koordinator/Triase & QA",
         "tim": "T23 — huntr OSV",
@@ -11977,8 +11977,8 @@
     "agents": [
       {
         "code": "A166",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Recon Lintas-Program Recon & Triage",
         "peran": "Recon",
         "tim": "T24 — Lintas-Program Recon & Triage",
@@ -12029,8 +12029,8 @@
     "agents": [
       {
         "code": "A167",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Analyzer Lintas-Program Recon & Triage",
         "peran": "Analyzer",
         "tim": "T24 — Lintas-Program Recon & Triage",
@@ -12080,8 +12080,8 @@
     "agents": [
       {
         "code": "A168",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Exploiter Lintas-Program Recon & Triage",
         "peran": "Exploiter",
         "tim": "T24 — Lintas-Program Recon & Triage",
@@ -12133,8 +12133,8 @@
     "agents": [
       {
         "code": "A169",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Reporter Lintas-Program Recon & Triage",
         "peran": "Reporter",
         "tim": "T24 — Lintas-Program Recon & Triage",
@@ -12178,8 +12178,8 @@
     "agents": [
       {
         "code": "A170",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "name": "Koordinator Triase & QA Lintas-Program Recon & Triage",
         "peran": "Koordinator/Triase & QA",
         "tim": "T24 — Lintas-Program Recon & Triage",
@@ -12221,8 +12221,8 @@
     "agents": [
       {
         "code": "A171",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "model_kedua": "gemini-3.5-flash",
         "model_kedua_sumber": "perintah Cipta 24 Nov 07:59 (model Gemini 4 Hydrogen dan Gemini 3.5 Flash); 3.5 Flash 20/hari, Flash-Lite 500/hari — rantai fallback",
         "name": "Recon Tim Khusus Bug Bounty",
@@ -12261,8 +12261,8 @@
     "agents": [
       {
         "code": "A172",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "model_kedua": "gemini-3.5-flash",
         "model_kedua_sumber": "perintah Cipta 24 Nov 07:59 (model Gemini 4 Hydrogen dan Gemini 3.5 Flash); 3.5 Flash 20/hari, Flash-Lite 500/hari — rantai fallback",
         "name": "Analyzer Tim Khusus Bug Bounty",
@@ -12301,8 +12301,8 @@
     "agents": [
       {
         "code": "A173",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "model_kedua": "gemini-3.5-flash",
         "model_kedua_sumber": "perintah Cipta 24 Nov 07:59 (model Gemini 4 Hydrogen dan Gemini 3.5 Flash); 3.5 Flash 20/hari, Flash-Lite 500/hari — rantai fallback",
         "name": "Exploiter Tim Khusus Bug Bounty",
@@ -12342,8 +12342,8 @@
     "agents": [
       {
         "code": "A174",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "model_kedua": "gemini-3.5-flash",
         "model_kedua_sumber": "perintah Cipta 24 Nov 07:59 (model Gemini 4 Hydrogen dan Gemini 3.5 Flash); 3.5 Flash 20/hari, Flash-Lite 500/hari — rantai fallback",
         "name": "Reporter Tim Khusus Bug Bounty",
@@ -12382,8 +12382,8 @@
     "agents": [
       {
         "code": "A175",
-        "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Gemini 4 Hydrogen 24 Nov 05:18 (gratis saja)",
+        "model": "gemini-3.5-flash-lite",
+        "model_sumber": "pengecualian Cipta 24 Nov 2026 08:47 — pasukan bounty diganti ke Gemini 3.5 Flash-Lite (500/hari) supaya tidak pasif; Hydrogen 20/hari yang dipakai bounty membuat agent lain kehabisan kuota dan berhenti; looping jadi solusi hemat kuota",
         "model_kedua": "gemini-3.5-flash",
         "model_kedua_sumber": "perintah Cipta 24 Nov 07:59 (model Gemini 4 Hydrogen dan Gemini 3.5 Flash); 3.5 Flash 20/hari, Flash-Lite 500/hari — rantai fallback",
         "name": "Koordinator Triase & QA Tim Khusus Bug Bounty",
