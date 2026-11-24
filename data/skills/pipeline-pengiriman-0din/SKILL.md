@@ -2,7 +2,7 @@
 
 > **STATUS: BELUM DIUJI.** Skill baru 24 Nov 2026 (Blok D, T14). Belum pernah dipakai dalam pengiriman nyata — pakai dengan pengawasan Koordinator T14 (A120) dan catat hasil pertama di `~/workspace/catatan/log-bug-bounty.md`.
 >
-> **HANYA UNTUK BOUNTY** — hanya dipakai untuk pengiriman ke program bug bounty resmi 0din. **LARANGAN DESTRUKTIF:** dilarang mengirim laporan palsu/bohong, dilarang mengirim tanpa persetujuan Cipta, dilarang memakai identitas/KTP orang lain. Payout butuh KTP + form IRS W-8 — itu urusan Cipta, bukan agent.
+> **HANYA UNTUK BOUNTY** — hanya dipakai untuk pengiriman ke program bug bounty resmi 0din. **LARANGAN DESTRUKTIF:** dilarang mengirim laporan palsu/bohong, dilarang mengirim laporan yang belum tervalidasi, dilarang memakai identitas/KTP orang lain. Temuan VALID → lapor dulu ke program, baru info ke Cipta (aturan Cipta 24 Nov 00:34 + 06:34). Payout butuh KTP + form IRS W-8 — itu urusan Cipta, bukan agent.
 
 ## Pemilik + penanggung jawab
 
@@ -21,7 +21,7 @@
 
 ## Aturan keras
 
-1. **TIDAK PERNAH kirim tanpa persetujuan Cipta.** Draf boleh disiapkan; pengiriman (abstrak maupun laporan lengkap) hanya setelah Cipta setuju.
+1. **Temuan VALID → LAPOR DULU ke program, baru info ke Cipta** (aturan Cipta 24 Nov 00:34 + 06:34). Draf boleh disiapkan; yang dilarang adalah mengirim laporan yang BELUM tervalidasi.
 2. **Aturan duplikat 0din:** Medium+ yang diterima dalam 7 hari sejak pengiriman pertama BERBAGI hadiah. Low: ke-1 100%, ke-2 50%, ke-3 20%, sisanya kredit saja. Cek duplikat (publik/CVE/writeup) SEBELUM abstrak dikirim.
 3. **Struktur abstrak:** judul 1 baris (dampaknya jelas) → model terdampak → ringkasan 2–3 kalimat → scope yang kena. Struktur laporan lengkap: judul → ringkasan → langkah repro bernomor (bisa diulang) → bukti (tangkapan layar/transkrip) → scope → dampak.
 4. **Bahasa:** Inggris untuk portal 0din; simpan salinan Indonesia di log bila perlu.
