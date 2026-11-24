@@ -1,106 +1,106 @@
 [
- {
-  "tanggal": "2026-11-23",
-  "platform": "Canva-AI",
-  "saldo": 0,
-  "satuan": "kredit",
-  "status": "HABIS",
-  "catatan": "Reset 1 Des 2026 07:00 WIB; 5 template tertunda"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Dify-CentralBrain",
-  "saldo": 200,
-  "satuan": "kredit",
-  "status": "AMAN",
-  "catatan": "Workspace SANDBOX 200/200; Momo (udify.app/chat/CoDt7ugLumQaHElZ) kuota 0"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Higgsfield",
-  "saldo": 0,
-  "satuan": "kredit",
-  "status": "HABIS",
-  "catatan": "Reward-review hanya proyek publik; film vertikal 9:16 terblokir"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Freelancer.co.id",
-  "saldo": 2,
-  "satuan": "bid gratis",
-  "status": "WASPADA",
-  "catatan": "6 bid gratis TOTAL (bukan per hari); 2 proyek terkunci saldo min $20"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Gumroad",
-  "saldo": 10,
-  "satuan": "produk/24 jam",
-  "status": "AMAN",
-  "catatan": "Slot berikut 23 Nov 13:11 WIB"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Flow-elaazizah020185",
-  "saldo": 50,
-  "satuan": "kredit",
-  "status": "AMAN",
-  "catatan": "Cek live 16:07-16:11; refresh tiap hari 06.53; FOKUS Episode 1"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Flow-nmas8804",
-  "saldo": 50,
-  "satuan": "kredit",
-  "status": "AMAN",
-  "catatan": "Cek live 16:07-16:11; refresh tiap hari 02.58"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Flow-rr4050665",
-  "saldo": 50,
-  "satuan": "kredit",
-  "status": "AMAN",
-  "catatan": "Cek live 16:07-16:11; refresh tiap hari 06.49"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Flow-masduki1189",
-  "saldo": 20,
-  "satuan": "kredit",
-  "status": "WASPADA",
-  "catatan": "Cek live 16:07-16:11; refresh tiap hari 16.41"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Flow-kikikiki8950",
-  "saldo": 9,
-  "satuan": "kredit",
-  "status": "WASPADA",
-  "catatan": "Cek live 16:07-16:11; PLUS, reset 28 Nov 12.55"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Flow-LawakLucu",
-  "saldo": 0,
-  "satuan": "kredit",
-  "status": "HABIS",
-  "catatan": "Terlihat 0 di Flow 16:07 (tercatat 10 pagi ini — SELISIH, cek ulang); refresh tiap hari 02.39"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Flow-ciptabintanglestari",
-  "saldo": 0,
-  "satuan": "kredit",
-  "status": "HABIS",
-  "catatan": "Login gagal Sandi salah 16:08 — butuh Cipta"
- },
- {
-  "tanggal": "2026-11-23",
-  "platform": "Flow-jatiw2900",
-  "saldo": 0,
-  "satuan": "kredit",
-  "status": "HABIS",
-  "catatan": "Login gagal Sandi salah 16:11 — butuh Cipta"
- }
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Canva-AI",
+        "saldo": 0,
+        "satuan": "kredit",
+        "status": "HABIS",
+        "catatan": "Reset 1 Des 2026 07:00 WIB; 5 template tertunda"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Dify-CentralBrain",
+        "saldo": 200,
+        "satuan": "kredit",
+        "status": "AMAN",
+        "catatan": "Workspace SANDBOX 200/200; Momo (udify.app/chat/CoDt7ugLumQaHElZ) kuota 0"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Higgsfield",
+        "saldo": 0,
+        "satuan": "kredit",
+        "status": "HABIS",
+        "catatan": "Reward-review hanya proyek publik; film vertikal 9:16 terblokir"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Freelancer.co.id",
+        "saldo": 2,
+        "satuan": "bid gratis",
+        "status": "WASPADA",
+        "catatan": "6 bid gratis TOTAL (bukan per hari); 2 proyek terkunci saldo min $20"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Gumroad",
+        "saldo": 10,
+        "satuan": "produk/24 jam",
+        "status": "AMAN",
+        "catatan": "Slot berikut 23 Nov 13:11 WIB"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Flow-elaazizah020185",
+        "saldo": 5,
+        "satuan": "kredit",
+        "status": "HAMPIR HABIS",
+        "catatan": "50 awal; 45 terpakai Ep1 (3 klip); refresh tiap hari 06.53; tidak dipakai malam 23 Nov"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Flow-nmas8804",
+        "saldo": 5,
+        "satuan": "kredit",
+        "status": "HAMPIR HABIS",
+        "catatan": "50 awal; 45 terpakai (30 regen gagal + 15 klip 2 v3 LOLOS); refresh tiap hari 02.58; tidak dipakai malam 23 Nov"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Flow-rr4050665",
+        "saldo": 5,
+        "satuan": "kredit",
+        "status": "HAMPIR HABIS",
+        "catatan": "Cek live 23 Nov 21:10: 50 awal, 45 terpakai Pilot klip 1-3; refresh tiap hari 06.49"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Flow-masduki1189",
+        "saldo": 5,
+        "satuan": "kredit",
+        "status": "HAMPIR HABIS",
+        "catatan": "Cek live 23 Nov 21:25: 50 awal (refresh 16.41 menaikkan dari catatan 20), 45 terpakai Pilot klip 4-6; refresh tiap hari 16.41"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Flow-kikikiki8950",
+        "saldo": 14,
+        "satuan": "kredit",
+        "status": "WASPADA",
+        "catatan": "Cek live 23 Nov 21:38: 59 awal (catatan lama 9 SALAH), 45 terpakai Edukasi 5 v1+v2 + 6; PLUS, reset 28 Nov 12.55"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Flow-LawakLucu",
+        "saldo": 0,
+        "satuan": "kredit",
+        "status": "HABIS",
+        "catatan": "Cek live 23 Nov 21:10 (browser): 0 kredit; catatan 10 pagi SALAH"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Flow-ciptabintanglestari",
+        "saldo": 0,
+        "satuan": "kredit",
+        "status": "HABIS",
+        "catatan": "Login gagal Sandi salah 16:08 — butuh Cipta"
+    },
+    {
+        "tanggal": "2026-11-23",
+        "platform": "Flow-jatiw2900",
+        "saldo": 0,
+        "satuan": "kredit",
+        "status": "HABIS",
+        "catatan": "Login gagal Sandi salah 16:11 — butuh Cipta"
+    }
 ]
