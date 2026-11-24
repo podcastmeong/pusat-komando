@@ -1,0 +1,536 @@
+{
+  "nama": "Alat AI Gratis — Pusat Komando",
+  "diperbarui": "2026-11-24",
+  "sumber": "riset-web-ai-gratis-terbaru-2026-11-24.md/.xlsx (52 alat, 11 kategori) + video TikTok @Ai Shift aishift.id (5 AI gratis Google)",
+  "aturan": "Slogan gate: AMAN (situs resmi), GRATIS (free tier nyata, tanpa kartu kredit), VALID, POTENSI & PELUANG, AI boleh ikut. Mudah login = login Google/email tanpa verifikasi HP. Dipakai saat pembuatan produk: pilih alat sesuai kategori produk.",
+  "top5": [
+    {
+      "kategori": "Video AI",
+      "nama": "Google Flow",
+      "url": "flow.google.com",
+      "free_tier": "50 kredit/hari, Veo 3.1 Lite + audio",
+      "cara_login": "Login Google",
+      "alasan": "Video utama: kualitas terbaik gratis, sudah dipakai Cipta (13 akun)"
+    },
+    {
+      "kategori": "Video AI",
+      "nama": "Dreamina",
+      "url": "dreamina.capcut.com",
+      "free_tier": "120 kredit/hari, Seedance 2.0/2.5",
+      "cara_login": "Akun CapCut / email / Google",
+      "alasan": "Cadangan video terkuat, klip sampai 30 detik, refresh harian"
+    },
+    {
+      "kategori": "Gambar AI",
+      "nama": "Leonardo AI",
+      "url": "leonardo.ai",
+      "free_tier": "150 Fast Token/hari",
+      "cara_login": "Email/Google",
+      "alasan": "Gambar + video, boleh komersial, karakter konsisten"
+    },
+    {
+      "kategori": "Web AI",
+      "nama": "Lovable",
+      "url": "lovable.dev",
+      "free_tier": "5 kredit build/hari, maks 30/bulan",
+      "cara_login": "Email/Google",
+      "alasan": "Web AI terbaik: publish + sync GitHub, sudah dipakai Cipta"
+    },
+    {
+      "kategori": "POD AI",
+      "nama": "YupTees",
+      "url": "yuptees.com",
+      "free_tier": "100% gratis, tanpa batas disebut",
+      "cara_login": "TANPA DAFTAR",
+      "alasan": "Temuan baru: POD print-ready + lisensi komersial, tanpa daftar"
+    }
+  ],
+  "google5": [
+    {
+      "nama": "Pomelli",
+      "url": "labs.google/pomelli",
+      "fungsi": "Link website jadi konten promosi (Business DNA: tone, warna, font) — tempel digicat.std.ai.id",
+      "cara_login": "Login Google"
+    },
+    {
+      "nama": "Opal",
+      "url": "opal.google",
+      "fungsi": "Bikin app AI mini pakai bahasa biasa, tanpa kode",
+      "cara_login": "Login Google"
+    },
+    {
+      "nama": "NotebookLM (Gemini Notebook)",
+      "url": "notebooklm.google.com",
+      "fungsi": "Tanya jawab dari PDF & link — riset eBook/lomba",
+      "cara_login": "Login Google"
+    },
+    {
+      "nama": "Stitch",
+      "url": "stitch.withgoogle.com",
+      "fungsi": "Prompt jadi desain app/website — sudah jadi alur kerja (desain)",
+      "cara_login": "Login Google"
+    },
+    {
+      "nama": "Antigravity",
+      "url": "antigravity.google",
+      "fungsi": "Editor kode, agent AI yang ngerjain — sudah jadi alur kerja (eksekusi kode)",
+      "cara_login": "Login Google"
+    }
+  ],
+  "peringatan": [
+    "flowultra.in = SCAM, bukan Flow resmi. Flow resmi hanya flow.google.com.",
+    "Sora (OpenAI) DITUTUP April 2026. Pika free = 0 kredit. Luma tanpa free plan.",
+    "Higgsfield free plan = 0 kredit (hanya trial 100 kredit 3 hari). Akun Cipta 0 kredit.",
+    "Udio: unduhan dimatikan total sejak Okt 2025.",
+    "Kebanyakan free tier = watermark + NON-KOMERSIAL. Boleh komersial di free tier: Leonardo AI, Ideogram, YupTees, TTSMaker, Adobe Firefly, Canva."
+  ],
+  "strategi_pakai": [
+    "Video: Flow dulu (50 kredit/hari/akun), habis -> Dreamina (120/hari) -> Kling (66/hari) -> PixVerse (60/hari).",
+    "Gambar: Leonardo (150 token/hari) untuk volume, Ideogram untuk yang ada teksnya, YupTees khusus desain kaos.",
+    "Musik: Suno (10 lagu/hari) untuk draf, Mureka (4 lagu/hari) untuk yang perlu file MP3.",
+    "Suara: TTSMaker untuk narasi yang dipublikasikan (komersial gratis), ElevenLabs untuk kualitas terbaik.",
+    "Web: Lovable untuk aplikasi jadi (5 kredit/hari), Bolt.new bila butuh token besar (300 rb/hari).",
+    "eBook: Claude untuk draf panjang, ChatGPT untuk outline/judul, Canva untuk sampul + layout."
+  ],
+  "jumlah_alat": 52,
+  "kategori": {
+    "Video AI": [
+      {
+        "nama": "Google Flow",
+        "url": "flow.google.com",
+        "free_tier": "50 kredit/hari (~5 klip Veo 3.1 Lite 8 dtk 720p, audio)",
+        "cara_login": "Login Google",
+        "kelebihan": "Kualitas terbaik gratis, audio asli, tanpa watermark terlihat",
+        "kekurangan": "Akun Google 18+; kredit tidak rollover; model Quality berbayar"
+      },
+      {
+        "nama": "Kling AI",
+        "url": "kling.ai",
+        "free_tier": "~66 kredit/hari",
+        "cara_login": "Email/Google",
+        "kelebihan": "Gerakan manusia natural, image-to-video bagus",
+        "kekurangan": "Watermark, non-komersial di free"
+      },
+      {
+        "nama": "Dreamina",
+        "url": "dreamina.capcut.com",
+        "free_tier": "120 kredit/hari (60-225 tergantung wilayah)",
+        "cara_login": "Akun CapCut / email / Google",
+        "kelebihan": "Seedance 2.0/2.5, klip 4-30 dtk, refresh harian",
+        "kekurangan": "Watermark, non-komersial; jumlah kredit beda per wilayah"
+      },
+      {
+        "nama": "PixVerse",
+        "url": "pixverse.ai",
+        "free_tier": "60 kredit/hari (~10 video)",
+        "cara_login": "Email/Google",
+        "kelebihan": "Banyak efek/template siap pakai, cocok TikTok",
+        "kekurangan": "540p, watermark"
+      },
+      {
+        "nama": "Hailuo AI (MiniMax)",
+        "url": "hailuoai.video",
+        "free_tier": "~100 kredit/hari (~3 video/hari)",
+        "cara_login": "Email/Google",
+        "kelebihan": "Fisika/gerakan realistis",
+        "kekurangan": "Klip 6 dtk, 720p, watermark"
+      }
+    ],
+    "Drama/Film AI": [
+      {
+        "nama": "Vidu",
+        "url": "vidu.com",
+        "free_tier": "Kredit login harian + bonus daftar; Q4 540p gratis",
+        "cara_login": "Email/Google",
+        "kelebihan": "Storyboard multi-scene, audio+dialog tersinkron, konsistensi karakter",
+        "kekurangan": "Watermark, non-komersial; jumlah kredit free tidak dipublikasi jelas"
+      },
+      {
+        "nama": "LTX Studio",
+        "url": "ltx.studio",
+        "free_tier": "800 kredit sekali daftar",
+        "cara_login": "Email/Google",
+        "kelebihan": "Kontrol scene/kamera/storyboard penuh, seperti studio film",
+        "kekurangan": "Sekali saja (tidak refresh), hanya proyek personal, desktop saja"
+      },
+      {
+        "nama": "Higgsfield",
+        "url": "higgsfield.ai",
+        "free_tier": "Free plan 0 kredit (trial 100 kredit 3 hari via MCP)",
+        "cara_login": "Email/Google",
+        "kelebihan": "Banyak model (Kling, Veo, Seedance) dalam satu tempat",
+        "kekurangan": "Free plan praktis tidak bisa dipakai; akun Cipta 0 kredit"
+      },
+      {
+        "nama": "Runway",
+        "url": "runway.com",
+        "free_tier": "125 kredit sekali",
+        "cara_login": "Email/Google",
+        "kelebihan": "Gen-4.5 kualitas tinggi, editor lengkap",
+        "kekurangan": "Sekali saja; video baru butuh paket berbayar"
+      }
+    ],
+    "Avatar AI": [
+      {
+        "nama": "HeyGen",
+        "url": "heygen.com",
+        "free_tier": "1-3 video/bulan, maks 3 mnt, 720p",
+        "cara_login": "Email/Google",
+        "kelebihan": "1 slot Digital Twin wajah sendiri, 175+ bahasa, voice cloning",
+        "kekurangan": "Volume sangat kecil, watermark"
+      },
+      {
+        "nama": "Hedra",
+        "url": "hedra.com",
+        "free_tier": "100 kredit/bulan",
+        "cara_login": "Email/Google",
+        "kelebihan": "Foto apa pun bisa bicara, gerakan kepala ekspresif (Character-3)",
+        "kekurangan": "Watermark, non-komersial di free"
+      },
+      {
+        "nama": "Vidnoz",
+        "url": "vidnoz.com",
+        "free_tier": "Kredit harian refresh, video maks 3 mnt",
+        "cara_login": "Email/Google",
+        "kelebihan": "Volume free terbesar di kategori ini",
+        "kekurangan": "Watermark, 720p"
+      },
+      {
+        "nama": "Synthesia",
+        "url": "synthesia.io",
+        "free_tier": "10 menit/bulan, 9 avatar stok",
+        "cara_login": "Email/Google",
+        "kelebihan": "Presenter paling realistis untuk bisnis",
+        "kekurangan": "Tidak bisa unduh MP4 di free"
+      },
+      {
+        "nama": "Google Vids",
+        "url": "vids.google.com",
+        "free_tier": "10 generasi avatar/Veo per bulan",
+        "cara_login": "Akun Google",
+        "kelebihan": "Termudah bagi pengguna Google, dari Slides",
+        "kekurangan": "Hanya 10/bulan, ketersediaan wilayah terbatas"
+      }
+    ],
+    "Web AI": [
+      {
+        "nama": "Lovable",
+        "url": "lovable.dev",
+        "free_tier": "5 kredit build/hari, maks 30/bulan",
+        "cara_login": "Email/Google",
+        "kelebihan": "Publish ke lovable.app, sync GitHub, backend built-in",
+        "kekurangan": "Tanpa domain sendiri, badge Lovable"
+      },
+      {
+        "nama": "Bolt.new",
+        "url": "bolt.new",
+        "free_tier": "300.000 token/hari, 1 juta/bulan",
+        "cara_login": "Email/GitHub",
+        "kelebihan": "Jatah free terbesar, hosting + database included",
+        "kekurangan": "Branding Bolt, tanpa domain sendiri"
+      },
+      {
+        "nama": "Google AI Studio (Build)",
+        "url": "ai.google.dev/aistudio",
+        "free_tier": "Gratis, publish 2 aplikasi",
+        "cara_login": "Login Google",
+        "kelebihan": "Bangun web + Android, tanpa kartu",
+        "kekurangan": "App memakai API key sendiri; wilayah tertentu butuh layanan berbayar"
+      },
+      {
+        "nama": "Framer",
+        "url": "framer.com",
+        "free_tier": "500 kredit AI/bulan, domain Framer gratis",
+        "cara_login": "Email/Google",
+        "kelebihan": "Desain paling polished, hosting included",
+        "kekurangan": "Banner 'Made in Framer', bandwidth 1 GB"
+      },
+      {
+        "nama": "v0",
+        "url": "v0.app",
+        "free_tier": "$5 kredit sekali + 7 pesan/hari",
+        "cara_login": "Email/GitHub",
+        "kelebihan": "Antarmuka Next.js paling rapi, deploy Vercel",
+        "kekurangan": "Kredit sekali saja, tidak refresh"
+      }
+    ],
+    "Gambar AI": [
+      {
+        "nama": "Leonardo AI",
+        "url": "leonardo.ai",
+        "free_tier": "150 Fast Token/hari",
+        "cara_login": "Email/Google",
+        "kelebihan": "Gambar + video, karakter konsisten, komersial (dengan syarat)",
+        "kekurangan": "Hasil publik by default"
+      },
+      {
+        "nama": "Ideogram",
+        "url": "ideogram.ai",
+        "free_tier": "~10 prompt/hari (laporan lain ~25/hari)",
+        "cara_login": "Email/Google",
+        "kelebihan": "Teks dalam gambar paling akurat, PNG transparan, komersial di free",
+        "kekurangan": "Antrean lambat, kuota kecil"
+      },
+      {
+        "nama": "Microsoft Designer",
+        "url": "designer.microsoft.com",
+        "free_tier": "15 gambar cepat/hari + lambat tanpa batas",
+        "cara_login": "Akun Microsoft",
+        "kelebihan": "Paling mudah, DALL-E 3",
+        "kekurangan": "Watermark kecil Bing; personal use"
+      },
+      {
+        "nama": "Adobe Firefly",
+        "url": "firefly.adobe.com",
+        "free_tier": "Kredit bulanan gratis (terbatas)",
+        "cara_login": "Akun Adobe",
+        "kelebihan": "Aman komersial (data berlisensi), editing kuat",
+        "kekurangan": "Kuota bulanan kecil, angka tidak dipublikasi"
+      },
+      {
+        "nama": "Recraft",
+        "url": "recraft.ai",
+        "free_tier": "30-50 kredit/hari",
+        "cara_login": "Email/Google",
+        "kelebihan": "Vektor/SVG asli (untuk POD & logo)",
+        "kekurangan": "Free kurang hak komersial penuh"
+      }
+    ],
+    "Musik AI": [
+      {
+        "nama": "Suno",
+        "url": "suno.com",
+        "free_tier": "50 kredit/hari (~10 lagu) v6-mini",
+        "cara_login": "Email/Google",
+        "kelebihan": "Kualitas lagu+vokal terbaik",
+        "kekurangan": "Personal use saja; unduhan hanya trial (7x seumur hidup)"
+      },
+      {
+        "nama": "Mureka",
+        "url": "mureka.ai",
+        "free_tier": "4 lagu/hari",
+        "cara_login": "Email/Google",
+        "kelebihan": "Lirik-first, unduh MP3",
+        "kekurangan": "Free non-komersial; unduhan free terbatas"
+      },
+      {
+        "nama": "Google Flow Music",
+        "url": "flow.google.com",
+        "free_tier": "Kredit harian top-up",
+        "cara_login": "Login Google",
+        "kelebihan": "Lagu full (Lyria), bisa unduh",
+        "kekurangan": "Hak komersial tidak jelas di free"
+      },
+      {
+        "nama": "ElevenLabs Music",
+        "url": "elevenlabs.io",
+        "free_tier": "~11 menit/bulan (3-5 lagu)",
+        "cara_login": "Email/Google",
+        "kelebihan": "Lisensi jelas, kualitas tinggi",
+        "kekurangan": "Personal use di free, kuota kecil"
+      },
+      {
+        "nama": "Gemini (musik)",
+        "url": "gemini.google.com",
+        "free_tier": "Terbatas, lagu pendek 30 dtk",
+        "cara_login": "Login Google",
+        "kelebihan": "Mudah, bisa unduh MP3/MP4",
+        "kekurangan": "Hanya cuplikan pendek"
+      }
+    ],
+    "POD AI": [
+      {
+        "nama": "YupTees",
+        "url": "yuptees.com",
+        "free_tier": "100% gratis, tanpa batas disebut",
+        "cara_login": "TANPA DAFTAR",
+        "kelebihan": "Print-ready 4500x5400 PNG transparan, lisensi komersial, khusus kaos/POD",
+        "kekurangan": "Baru (Sep 2026), hanya desain apparel"
+      },
+      {
+        "nama": "Ideogram",
+        "url": "ideogram.ai",
+        "free_tier": "~10 prompt/hari",
+        "cara_login": "Email/Google",
+        "kelebihan": "Teks/slogan paling akurat, transparan, komersial",
+        "kekurangan": "Kuota kecil, antrean lambat"
+      },
+      {
+        "nama": "Recraft",
+        "url": "recraft.ai",
+        "free_tier": "30-50 kredit/hari",
+        "cara_login": "Email/Google",
+        "kelebihan": "SVG vektor siap cetak",
+        "kekurangan": "Hak komersial free terbatas"
+      },
+      {
+        "nama": "Kittl",
+        "url": "kittl.com",
+        "free_tier": "20 kredit AI sekali + 20 proyek",
+        "cara_login": "Email/Google",
+        "kelebihan": "Editor lengkap + mockup + ekspor print",
+        "kekurangan": "Free wajib atribusi (cantumkan Kittl); ekspor low-res"
+      },
+      {
+        "nama": "Leonardo AI",
+        "url": "leonardo.ai",
+        "free_tier": "150 token/hari",
+        "cara_login": "Email/Google",
+        "kelebihan": "Model custom per niche, gaya konsisten",
+        "kekurangan": "Publik by default"
+      }
+    ],
+    "eBook AI": [
+      {
+        "nama": "Claude",
+        "url": "claude.ai",
+        "free_tier": "Gratis, batas per 5 jam",
+        "cara_login": "Email/Google",
+        "kelebihan": "Prosa long-form paling natural, konteks s.d. 1 jt token",
+        "kekurangan": "Batas pemakaian; tanpa struktur buku/file"
+      },
+      {
+        "nama": "ChatGPT",
+        "url": "chatgpt.com",
+        "free_tier": "Chat teks tanpa batas (GPT-6), batas gambar/upload",
+        "cara_login": "Email/Google",
+        "kelebihan": "Paling serbaguna: outline, draf, judul, gambar",
+        "kekurangan": "Konteks free kecil (27K); gambar ~2-3/hari"
+      },
+      {
+        "nama": "Gemini + Google Docs",
+        "url": "gemini.google.com",
+        "free_tier": "Gratis, batas per 5 jam",
+        "cara_login": "Login Google",
+        "kelebihan": "Draf langsung di Docs, riset Deep Research",
+        "kekurangan": "Batas mingguan; model free ringan (Flash-Lite)"
+      },
+      {
+        "nama": "Canva (Magic Write)",
+        "url": "canva.com",
+        "free_tier": "Free tier",
+        "cara_login": "Email/Google",
+        "kelebihan": "Sampul + layout + Magic Write, ekspor PDF",
+        "kekurangan": "Untuk buku panjang tidak cocok (nyaman s.d. ~12 halaman)"
+      },
+      {
+        "nama": "EarnDraft",
+        "url": "earndraft.com",
+        "free_tier": "Trial AI terbatas",
+        "cara_login": "Email",
+        "kelebihan": "Draf + sampul + file jadi satu alur",
+        "kekurangan": "Trial terbatas; selebihnya berbayar"
+      }
+    ],
+    "Suara/TTS AI": [
+      {
+        "nama": "TTSMaker",
+        "url": "ttsmaker.com",
+        "free_tier": "20.000 karakter/minggu",
+        "cara_login": "TANPA DAFTAR",
+        "kelebihan": "Komersial YA tanpa atribusi, 600+ suara, 100+ bahasa, unduh MP3/WAV",
+        "kekurangan": "Kualitas suara bervariasi"
+      },
+      {
+        "nama": "ElevenLabs",
+        "url": "elevenlabs.io",
+        "free_tier": "10.000 kredit/bulan (~10 mnt)",
+        "cara_login": "Email/Google",
+        "kelebihan": "Suara paling realistis, emosi, voice design",
+        "kekurangan": "Personal use; wajib atribusi bila dibagikan"
+      },
+      {
+        "nama": "Gemini TTS",
+        "url": "ai.google.dev/aistudio",
+        "free_tier": "Gratis (Flash TTS free tier)",
+        "cara_login": "Login Google",
+        "kelebihan": "Paling murah hati, banyak suara",
+        "kekurangan": "Data free dipakai Google untuk training"
+      },
+      {
+        "nama": "Fish Audio",
+        "url": "fish.audio",
+        "free_tier": "8.000 kredit/bulan",
+        "cara_login": "Email/Google",
+        "kelebihan": "Banyak suara komunitas, kloning",
+        "kekurangan": "500 karakter per generasi"
+      },
+      {
+        "nama": "Murf",
+        "url": "murf.ai",
+        "free_tier": "10 menit + 2 proyek gratis",
+        "cara_login": "Email/Google",
+        "kelebihan": "Narasi bisnis rapi, 200+ suara",
+        "kekurangan": "Kuota sekali, kecil"
+      }
+    ],
+    "Asisten Chat & Agen AI": [
+      {
+        "nama": "ChatGPT",
+        "url": "chatgpt.com",
+        "free_tier": "Chat teks tanpa batas (GPT-6)",
+        "cara_login": "Email/Google",
+        "kelebihan": "Serbaguna + web search + gambar",
+        "kekurangan": "Batas upload/gambar/suara"
+      },
+      {
+        "nama": "Claude",
+        "url": "claude.ai",
+        "free_tier": "Batas per 5 jam",
+        "cara_login": "Email/Google",
+        "kelebihan": "Menulis & dokumen panjang terbaik",
+        "kekurangan": "Tanpa generasi gambar"
+      },
+      {
+        "nama": "Gemini",
+        "url": "gemini.google.com",
+        "free_tier": "Gratis, model Flash-Lite",
+        "cara_login": "Login Google",
+        "kelebihan": "Terhubung Gmail/Docs/Drive, riset",
+        "kekurangan": "Model free ringan; batas mingguan"
+      },
+      {
+        "nama": "DeepSeek",
+        "url": "chat.deepseek.com",
+        "free_tier": "Gratis, tanpa batas disebut",
+        "cara_login": "Email",
+        "kelebihan": "Coding & reasoning terbaik, tanpa paket berbayar",
+        "kekurangan": "Server di China; privasi perlu diperhatikan"
+      },
+      {
+        "nama": "Manus",
+        "url": "manus.im",
+        "free_tier": "1.000 kredit sekali + 300/hari (maks 1.500/bulan), Lite only",
+        "cara_login": "Email/Google",
+        "kelebihan": "Agen otonom multi-langkah, Chat Mode gratis",
+        "kekurangan": "Hanya model Lite; 1 tugas bersamaan"
+      }
+    ],
+    "Presentasi & Lain-lain": [
+      {
+        "nama": "Gamma",
+        "url": "gamma.app",
+        "free_tier": "400 kredit sekali daftar",
+        "cara_login": "Email/Google",
+        "kelebihan": "Deck dari prompt, ekspor PPTX/PDF",
+        "kekurangan": "Kredit tidak refresh"
+      },
+      {
+        "nama": "CapCut",
+        "url": "capcut.com",
+        "free_tier": "Gratis (editor desktop tanpa watermark)",
+        "cara_login": "Email/Google",
+        "kelebihan": "Edit video + template + AI, ekspor s.d. 4K",
+        "kekurangan": "Fitur AI canggih di Pro; Seedance regional"
+      },
+      {
+        "nama": "Google AI Studio",
+        "url": "ai.google.dev/aistudio",
+        "free_tier": "Free tier API (Gemini)",
+        "cara_login": "Login Google",
+        "kelebihan": "Bangun app, Veo, TTS, gambar - satu akun",
+        "kekurangan": "Antarmuka developer; rate limit"
+      }
+    ]
+  }
+}
