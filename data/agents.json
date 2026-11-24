@@ -12641,7 +12641,9 @@
         "tugas_harian": "Cek status 6 akun tiap jam (lewat cron yang sudah ada + perintah Muse); catat ke data/log-pemulihan-akun.jsonl + 1 baris ke ~/memory/YYYY-MM-DD.md; coba login yang bisa diotomatisasi; ingatkan Cipta 1x/hari untuk langkah yang hanya dia bisa; pengingat rename YouTube 20 Des 2026",
         "target_harian": "0 akun dibiarkan tanpa status terbaru; tiap akun pulih diverifikasi (bisa buka pesan/inbox) sebelum dilaporkan PULIH; 0 kata sandi/OTP dicatat",
         "skills": [
-          "data/skills/pemulih-akun-sosial/SKILL.md"
+          "data/skills/pemulih-akun-sosial/SKILL.md",
+          "data/skills/pemasaran-organik/SKILL.md",
+          "data/skills/qa-verifikasi/SKILL.md"
         ]
       }
     ]

@@ -64,6 +64,11 @@
 
 `{"waktu": "2026-11-24T08:00:00+07:00", "akun": "@meongcast", "platform": "instagram", "status": "terbatas", "aksi": "ingatkan Cipta (verifikasi manusia)", "hasil": "menunggu Cipta"}` — status: `pulih` / `terbatas` / `login-gagal` / `belum-login` / `belum-terverifikasi` / `terkunci`.
 
+## Skill pendamping (terdaftar di agents.json — baca bersama skill ini)
+
+- **pemasaran-organik** (A20–A23): inventaris 5 akun ciptabintanglestari + 3 akun Podcast Meong, status batasan tiap akun (@meongcast terbatas, rename YT s.d. 20 Des 2026), cara cek inbox per platform, batas DM aman.
+- **qa-verifikasi** (A38): gerbang verifikasi live — jangan laporkan PULIH sebelum benar-benar melihat inbox/pesan terbuka; cek dari sisi Cipta, bukan dari dugaan.
+
 ## Model
 
 Gemini 4 Hydrogen (gratis saja, kuota 20/hari bersama semua agent). Bila Hydrogen overload (503), tugas ditunda — jangan ganti model sendiri tanpa perintah Cipta.
