@@ -12724,7 +12724,7 @@
   "agent_184": {
     "source": "Perintah Cipta 24 Nov 2026 14:14 — platform uang harian Toloka/Mindrift, Freecash, Qmee",
     "applied_date": "2026-11-24",
-    "note": "A184 Agen Penyiap Tugas — menyiapkan antrean tugas + panduan singkat supaya Cipta bisa mengerjakan tugas dari HP-nya dengan cepat. BATAS JUJUR: agen TIDAK PERNAH mengerjakan tugas/survei/game sendiri — platform microtask mendeteksi bot dan memblokir akun + menghapus penghasilan. Yang mengerjakan tugas adalah Cipta dari HP-nya; agen hanya memantau, menyiapkan, dan melacak.",
+    "note": "A184 Agen Penyiap Tugas — DICOPOT 24 Nov 2026 20:14 (perintah Cipta: \"184 tugas nya copot\"). Tugasnya (menyusun antrean tugas + panduan singkat) dicabut; antrean tugas tidak lagi disusun. BATAS JUJUR tetap: agen TIDAK PERNAH mengerjakan tugas/survei/game sendiri.",
     "agents": [
       {
         "code": "A184",
@@ -12737,7 +12737,7 @@
         "file": null,
         "modul": "data/skills/penyiap-tugas/SKILL.md (dibuat 24 Nov 2026, perintah Cipta 14:20)",
         "mapped_to": "Muse (subagent)",
-        "status": "Aktif — dibuat 24 Nov 2026; skill sudah dibekali; menunggu akun platform aktif (pendaftaran Toloka/Mindrift, Freecash, Qmee sedang jalan pakai masduki1189@gmail.com)",
+        "status": "DICOPOT — tugas dicabut, perintah Cipta 24 Nov 2026 20:14 WIB. Tidak lagi menyusun antrean tugas / panduan.",
         "tugas_harian": "Susun antrean tugas tiap pagi 08:00 + update tiap 3 jam; panduan singkat per tugas; ingatkan tugas yang hampir kedaluwarsa",
         "target_harian": "0 panduan salah/ketinggalan; antrean selalu terbaru; 0 tugas dikerjakan agen",
         "skills": [
