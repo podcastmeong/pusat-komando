@@ -7235,12 +7235,13 @@
         "name": "Penerjemah",
         "division": "Operasional",
         "boss": "Muse",
-        "job_desc": "Penerjemah — pekerjaan terjemahan (saat ini DITUNDA). Kerja 24 jam nonstop.",
+        "job_desc": "Penerjemah — selalu menerjemahkan produk (eBook, toko Digicat) dan lain-lain. Kerja 24 jam nonstop.",
         "modul": "a04_penjualan_harian",
-        "status": "DITUNDA — diganti nama jadi A34 Penerjemah (pekerjaan terjemahan saat ini DITUNDA, perintah Cipta)",
+        "status": "Aktif — selalu menerjemahkan produk dan lain-lain (keputusan Cipta 24 Nov 09:32; penundaan 21 Nov 11:37 dicabut)",
         "skills": [
           "data/skills/terjemahan/SKILL.md"
-        ]
+        ],
+        "tugas_harian": "Terjemahkan produk (eBook, toko Digicat) dan lain-lain setiap hari"
       },
       {
         "code": "A35",
