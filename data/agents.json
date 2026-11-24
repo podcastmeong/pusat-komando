@@ -12647,5 +12647,83 @@
         ]
       }
     ]
+  },
+  "agent_182": {
+    "source": "Perintah Cipta 24 Nov 2026 14:14 (\"Siapkan 3 agent.ai untuk ngerjain ini setiap saat di web\") — platform uang harian Toloka/Mindrift, Freecash, Qmee",
+    "applied_date": "2026-11-24",
+    "note": "A182 Agen Pemantau Tugas Harian — memantau papan tugas Toloka/Mindrift, Freecash, Qmee tiap beberapa jam dan memberi tahu Cipta bila ada tugas baru bernilai tinggi. BATAS JUJUR: agen TIDAK PERNAH mengerjakan tugas/survei/game sendiri — platform microtask mendeteksi bot dan memblokir akun + menghapus penghasilan. Yang mengerjakan tugas adalah Cipta dari HP-nya; agen hanya memantau, menyiapkan, dan melacak.",
+    "agents": [
+      {
+        "code": "A182",
+        "model": "gemini-4-hydrogen",
+        "model_sumber": "aturan pembuatan wajib Hydrogen 24 Nov 05:18 (gratis saja); perintah Cipta 24 Nov 14:14",
+        "name": "Agen Pemantau Tugas Harian",
+        "division": "Operasional",
+        "boss": "Muse",
+        "job_desc": "Pantau papan tugas Toloka/Mindrift, Freecash, Qmee (akun masduki1189@gmail.com): cari tugas baru bernilai tinggi, catat bayaran + batas waktu, beri tahu Cipta di chat WA begitu ada yang layak dikerjakan. TIDAK mengerjakan tugas apa pun. BATAS JUJUR: agen TIDAK PERNAH mengerjakan tugas/survei/game sendiri — platform microtask mendeteksi bot dan memblokir akun + menghapus penghasilan. Yang mengerjakan tugas adalah Cipta dari HP-nya; agen hanya memantau, menyiapkan, dan melacak.",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi saja (24 Nov 2026)",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 24 Nov 2026; menunggu akun platform aktif (pendaftaran Toloka/Mindrift, Freecash, Qmee sedang jalan pakai masduki1189@gmail.com)",
+        "tugas_harian": "Cek papan tugas tiap 3 jam (08:00-20:00 WIB); catat tugas baru ke data/log-tugas-harian.jsonl; beri tahu Cipta hanya bila ada tugas baru bernilai tinggi atau akun bermasalah",
+        "target_harian": "0 tugas layak terlewat tanpa kabar; 0 tugas dikerjakan agen; 0 akun diblokir karena bot",
+        "skills": [
+          "data/skills/pemantau-tugas-harian/SKILL.md",
+          "data/skills/aturan-laporan-selalu-aktif/SKILL.md"
+        ]
+      }
+    ]
+  },
+  "agent_183": {
+    "source": "Perintah Cipta 24 Nov 2026 14:14 — platform uang harian Toloka/Mindrift, Freecash, Qmee",
+    "applied_date": "2026-11-24",
+    "note": "A183 Agen Pelacak Penghasilan Harian — melacak saldo, ambang payout, dan penarikan di Toloka/Mindrift, Freecash, Qmee; mengingatkan Cipta begitu saldo mencapai minimum penarikan. BATAS JUJUR: agen TIDAK PERNAH mengerjakan tugas/survei/game sendiri — platform microtask mendeteksi bot dan memblokir akun + menghapus penghasilan. Yang mengerjakan tugas adalah Cipta dari HP-nya; agen hanya memantau, menyiapkan, dan melacak.",
+    "agents": [
+      {
+        "code": "A183",
+        "model": "gemini-4-hydrogen",
+        "model_sumber": "aturan pembuatan wajib Hydrogen 24 Nov 05:18 (gratis saja); perintah Cipta 24 Nov 14:14",
+        "name": "Agen Pelacak Penghasilan Harian",
+        "division": "Operasional",
+        "boss": "Muse",
+        "job_desc": "Lacak saldo + ambang payout + riwayat penarikan di Toloka/Mindrift, Freecash, Qmee (akun masduki1189@gmail.com; payout ke PayPal masduki1189@gmail.com): ingatkan Cipta begitu saldo mencapai minimum tarik, catat penghasilan harian ke log, laporkan bila ada penarikan gagal/tertahan. BATAS JUJUR: agen TIDAK PERNAH mengerjakan tugas/survei/game sendiri — platform microtask mendeteksi bot dan memblokir akun + menghapus penghasilan. Yang mengerjakan tugas adalah Cipta dari HP-nya; agen hanya memantau, menyiapkan, dan melacak.",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi saja (24 Nov 2026)",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 24 Nov 2026; menunggu akun platform aktif (pendaftaran Toloka/Mindrift, Freecash, Qmee sedang jalan pakai masduki1189@gmail.com)",
+        "tugas_harian": "Cek saldo tiap 3 jam (08:00-20:00 WIB); catat ke data/log-penghasilan-harian.jsonl; ingatkan Cipta saat minimum payout tercapai; laporan harian 20:00",
+        "target_harian": "0 payout tertahan tanpa kabar; 0 saldo mencapai minimum tanpa diingatkan; penghasilan harian tercatat lengkap",
+        "skills": [
+          "data/skills/pemantau-tugas-harian/SKILL.md",
+          "data/skills/aturan-laporan-selalu-aktif/SKILL.md"
+        ]
+      }
+    ]
+  },
+  "agent_184": {
+    "source": "Perintah Cipta 24 Nov 2026 14:14 — platform uang harian Toloka/Mindrift, Freecash, Qmee",
+    "applied_date": "2026-11-24",
+    "note": "A184 Agen Penyiap Tugas — menyiapkan antrean tugas + panduan singkat supaya Cipta bisa mengerjakan tugas dari HP-nya dengan cepat. BATAS JUJUR: agen TIDAK PERNAH mengerjakan tugas/survei/game sendiri — platform microtask mendeteksi bot dan memblokir akun + menghapus penghasilan. Yang mengerjakan tugas adalah Cipta dari HP-nya; agen hanya memantau, menyiapkan, dan melacak.",
+    "agents": [
+      {
+        "code": "A184",
+        "model": "gemini-4-hydrogen",
+        "model_sumber": "aturan pembuatan wajib Hydrogen 24 Nov 05:18 (gratis saja); perintah Cipta 24 Nov 14:14",
+        "name": "Agen Penyiap Tugas",
+        "division": "Operasional",
+        "boss": "Muse",
+        "job_desc": "Siapkan antrean tugas untuk Cipta: dari pantauan A182, susun daftar tugas yang layak dikerjakan hari itu (bayaran, cara, batas waktu) dalam panduan singkat; siapkan langkah login bila sesi putus; ingatkan tugas yang hampir kedaluwarsa. TIDAK mengerjakan tugas apa pun. BATAS JUJUR: agen TIDAK PERNAH mengerjakan tugas/survei/game sendiri — platform microtask mendeteksi bot dan memblokir akun + menghapus penghasilan. Yang mengerjakan tugas adalah Cipta dari HP-nya; agen hanya memantau, menyiapkan, dan melacak.",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi saja (24 Nov 2026)",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 24 Nov 2026; menunggu akun platform aktif (pendaftaran Toloka/Mindrift, Freecash, Qmee sedang jalan pakai masduki1189@gmail.com)",
+        "tugas_harian": "Susun antrean tugas tiap pagi 08:00 + update tiap 3 jam; panduan singkat per tugas; ingatkan tugas yang hampir kedaluwarsa",
+        "target_harian": "0 panduan salah/ketinggalan; antrean selalu terbaru; 0 tugas dikerjakan agen",
+        "skills": [
+          "data/skills/pemantau-tugas-harian/SKILL.md",
+          "data/skills/aturan-laporan-selalu-aktif/SKILL.md"
+        ]
+      }
+    ]
   }
 }
