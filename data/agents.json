@@ -12644,7 +12644,15 @@
           "data/skills/pemulih-akun-sosial/SKILL.md",
           "data/skills/pemasaran-organik/SKILL.md",
           "data/skills/qa-verifikasi/SKILL.md"
-        ]
+        ],
+        "pemulihan_skills": [
+          "pemulihan-akun-r1-diagnosis-status",
+          "pemulihan-akun-r2-banding-sosial",
+          "pemulihan-akun-r3-2fa-kode-cadangan",
+          "pemulihan-akun-r5-browser-aman",
+          "pemulihan-akun-r4-pemantau-batas"
+        ],
+        "pemulihan_dipasang": "2026-11-24 — 5 skill R1-R5 dibangun dari riset; label BELUM DIUJI; hanya untuk akun milik Cipta"
       }
     ]
   },
