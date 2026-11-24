@@ -1,282 +1,932 @@
 [
- {
-  "nama": "AdArena — Micro Drama",
-  "hadiah": "$5.000 (40 pemenang)",
-  "tenggat": "2026-11-20",
-  "kategori": "video",
-  "kebijakan_ai": "diizinkan",
-  "status": "dikirim",
-  "catatan": "The Last Key dikirim 17 Nov (Entry #1 dari 2 kuota). Entry #2 'Oyen Dipecat oleh Momo' TERKIRIM 19 Nov 19:15 WIB ('You're in the Arena!', 'All 2 entries submitted! Maximum reached'; My Submissions: Submitted Nov 19, 2026, 07:15 PM; tanpa ID numerik). Reel IG @meongcast https://www.instagram.com/reel/Df7Det1juzH/. Klausul hak di formulir SESUAI pengumuman resmi PilotRush: kreator tetap pegang hak cipta, lisensi non-eksklusif (ketentuan lomba ini mengalahkan FAQ umum AdArena). Pemenang <=7 hari setelah tutup (20 Nov 03:00 WIB).",
-  "cek_berikutnya": "2026-11-27"
- },
- {
-  "nama": "Kemenkes — Poster Skrining Mata",
-  "hadiah": "Rp6.000.000",
-  "tenggat": "2026-11-30",
-  "kategori": "poster/desain",
-  "kebijakan_ai": "diizinkan",
-  "status": "dikirim",
-  "catatan": "KEDUA poster terkirim 19 Nov 10:35 via formulir s.kemkes.go.id (konfirmasi \"We have received your registration\"). Pemenang 10 Des 2026.",
-  "cek_berikutnya": "2026-12-10"
- },
- {
-  "nama": "Artefact",
-  "hadiah": "lihat halaman resmi",
-  "tenggat": "2026-12-01",
-  "kategori": "film",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "DISETUJUI Cipta 19 Nov 2026. Konsep 'The Number She Never Deleted' (10 shot, ~1:40) + paket eksekusi lengkap siap (lomba-artefact-2026/paket-eksekusi-artefact.md). Produksi Flow setelah AdArena entry #2. Tenggat 1 Des (target internal; resmi 2 Des).",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "HeyGen — Video AI",
-  "hadiah": "lihat halaman resmi",
-  "tenggat": "2026-12-01",
-  "kategori": "video",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "TERBLOKIR DUA LAPIS: signup HeyGen tertahan Cloudflare Turnstile (butuh Cipta klik sendiri); signup akun X GAGAL (error teknis X, 6x). Rules terverifikasi 19 Nov: TIDAK BISA ikut tanpa akun X (entry = video + postingan X + form; tidak ada jalur alternatif). Indonesia BOLEH ikut. Video wajib >=70% footage HeyGen Video 1.0 via MCP; klip Flow DILARANG. Konsep iklan KikiWorks 30 dtk siap (paket-eksekusi-heygen.md). Tenggat 2 Des 14:59 WIB (koreksi dari 15:59).",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Kiroween (Devpost)",
-  "hadiah": "$100.000",
-  "tenggat": "2026-12-05",
-  "kategori": "website",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "HAMPIR SIAP (update 20 Nov 18:35): video demo v2 2:53 SUDAH PUBLIK di YouTube https://youtu.be/plTqvlL9nkQ (terverifikasi 20 Nov) + Spookify Pages live HTTP 200 + app.js/styles.css 200. KURANG: persetujuan Cipta atas video + karya + konfirmasi akun Devpost. Kategori Costume Contest. Kredit Kiro 4.000 OPSIONAL, tutup 1 Des 12:00 PT, butuh KTP+foto wajah — JANGAN ajukan tanpa persetujuan. Tenggat 5 Des 05:00 WIB.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Deck the Pixels",
-  "hadiah": "$25.000",
-  "tenggat": "2026-12-08",
-  "kategori": "poster/desain",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "Aturan terverifikasi 19 Nov: sweater Natal + avatar/foto pakai sweater + latar kartu, SEMUA di Photoshop pakai Nano Banana; submit 2 PNG/JPEG + jawaban tertulis + screenshot Layers. Tenggat 8 Des 04:00 WIB (7 Des 16:00 EST). OPSI A (utama): coba lagi Nano Banana DI Photoshop web (bersihkan riwayat, sesi baru, referensi PNG/JPG saja). OPSI B: generate di Gemini app/Flow lalu komposit di Photoshop web (jujur di jawaban). OPSI C (Ideogram/Leonardo/Firefly Image 5) HANYA draf — bukan Nano Banana, tidak memenuhi syarat. Kelayakan Indonesia belum terverifikasi (cek tab Rules).",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "AKOOL — AI Video",
-  "hadiah": "lihat halaman resmi",
-  "tenggat": "2026-12-18",
-  "kategori": "video",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "DISETUJUI Cipta 19 Nov 2026. Konsep 'The Last Postman of the Moon' (trailer 60 dtk, 6 shot) + paket eksekusi lengkap siap (lomba-akool-2026/paket-eksekusi-akool.md). Perlu akun AKOOL gratis + face swap Arka. Tenggat 18 Des (target internal; resmi 20 Des).",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "AOYF (AI Art)",
-  "hadiah": "lihat halaman resmi",
-  "tenggat": "2026-12-20",
-  "kategori": "foto",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "DISETUJUI Cipta 19 Nov 2026. Konsep 'The News That Never Happened' (10 gambar) + paket eksekusi disiapkan. Tutup 20 Des 23:59 CET (= 21 Des 05:59 WIB).",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Lirika 14",
-  "hadiah": "lihat halaman resmi",
-  "tenggat": "2026-12-20",
-  "kategori": "puisi",
-  "kebijakan_ai": "belum terverifikasi",
-  "status": "baru",
-  "catatan": "AI MASIH BELUM TERVERIFIKASI (19 Nov, percobaan ke-4 gagal): panduan resmi dimuat via JavaScript/Google Spreadsheet, tidak terbaca; pencarian tidak menemukan aturan AI. Tema 'Lentera Aksara', gratis, umum se-Indonesia, antologi ber-ISBN + e-sertifikat. Tenggat 20 Des 23:59 WIB. JANGAN produksi/kirim sebelum pedoman resmi dibaca (tugas browser idnulis.id / tanya penyelenggara IG @idnulis.id / WA 0838 7178 1996).",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "NEXMUSE",
-  "hadiah": "₩21.000.000 (~$15.000, 32 pemenang)",
-  "tenggat": "2026-12-28",
-  "kategori": "musik",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "REKOMENDASI: LEWATI (19 Nov). Alasan: tidak ada alat musik AI gratis yang terbukti memberi file MP3 + hak pakai bersih (Suno Free tanpa download/hak, Udio download dimatikan, Mureka Free status bertentangan); eligibilitas worldwide belum pasti (satu sumber menulis Korea saja); video 2-4 mnt (±50 shot) terlalu berat; vote audiens 30% hampir mustahil (subs 73); risiko hak cipta/debut belum dibaca. Hadiah ₩21 juta (~$15.000), tenggat 28 Des 21:59 WIB. Bila Cipta tetap lanjut, syarat pembuka: verifikasi nexmuse.kr + buktikan download Mureka.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Chroma Awards",
-  "hadiah": "lihat halaman resmi",
-  "tenggat": "2027-01-07",
-  "kategori": "film",
-  "kebijakan_ai": "diizinkan",
-  "status": "dikirim",
-  "catatan": "The Last Key SUBMITTED (ID fdf0dc2e-de40-4654-843d-a1ab2174831b). Pemenang 11 Feb 2027.",
-  "cek_berikutnya": "2027-02-11"
- },
- {
-  "nama": "NMWP (New Media Writing Prize)",
-  "hadiah": "lihat halaman resmi",
-  "tenggat": "2027-02-01",
-  "kategori": "website",
-  "kebijakan_ai": "belum terverifikasi",
-  "status": "baru",
-  "catatan": "AI TIDAK DIATUR (19 Nov): PDF aturan resmi 2025-6 tidak menyebut AI sama sekali; FAQ hanya berisi hadiah; PDF aturan edisi 2027-2028 belum terbit. Karya harus 'original material'. Tenggat 1 Feb 2027 23:59 GMT. Konsep 'Oyen & the Last Fish' sudah draf. Keputusan ikut/tidak di Cipta; cek ulang aturan edisi baru sebelum submit.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Codegeist 2026 (Devpost)",
-  "hadiah": "$120.000",
-  "tenggat": "2026-12-23",
-  "kategori": "aplikasi",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "BELUM ADA PROYEK. Rencana siap: konsep disarankan 'Meong Tales for Confluence' (kategori Business Teams, adaptasi konten cerita nabi). Butuh akun Atlassian Developer gratis + Forge CLI; usaha ~2 minggu. Hadiah $120.000. Tenggat 23 Des 03:00 WIB (22 Des 12:00 PT). Butuh keputusan Cipta atas konsep + akun Atlassian.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "#BuildHybridAI 2026 (Devpost)",
-  "hadiah": "$30.000",
-  "tenggat": "2026-12-01",
-  "kategori": "aplikasi",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "HAMPIR SIAP (update 20 Nov 18:35): kunci API Firebase LAMA sudah dicabut, kunci BARU live di ?v=6 (commit c17f07c, hash kunci lokal = live, terverifikasi 20 Nov); URL live https://podcastmeong.github.io/meong-tales/ HTTP 200. App Check Enterprise (reCAPTCHA) terpasang di kode; UJI LIVE 401 BELUM bisa dikonfirmasi dari subagent — butuh uji browser live (buka halaman, klik generate, lihat badge LIVE vs fallback template). KURANG: uji live end-to-end + video demo belum direkam/YouTube + persetujuan Cipta + status akun Devpost. Tenggat 1 Des 05:00 WIB (30 Nov 17:00 ET).",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "QNX Global Hackathon 2026 (Devpost)",
-  "hadiah": "$50.000",
-  "tenggat": "2026-12-16",
-  "kategori": "aplikasi",
-  "kebijakan_ai": "belum terverifikasi",
-  "status": "baru",
-  "catatan": "TERVERIFIKASI 19 Nov: AI TIDAK DILARANG (aturan resmi tidak menyebut AI sama sekali; kriteria juri ada 'Innovation & AI Creativity'). Indonesia BOLEH (tidak di daftar larangan). Hadiah $50.000. TAPI butuh proyek software yang sungguh jalan di QNX 8.0 (QEMU/Raspberry Pi 5) + video demo <3 mnt + repo publik. Kategori paling realistis: Developer Tooling & Host Tools atau Ports. Tenggat 16 Des 02:00 WIB (15 Des 14:00 ET). Butuh keputusan Cipta atas konsep — effort teknis besar.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Reddit's Game of the Day Hackathon (Devpost)",
-  "hadiah": "$35.000",
-  "tenggat": "2026-12-09",
-  "kategori": "game",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "Rencana siap: port Oyen Tangkap Ikan (IP asli Cipta) ke Devvit, jalur Best Ported Daily Game $6.000. KURANG: lapisan daily (tantangan/streak), rebuild Devvit Web, akun Reddit Developer + subreddit uji. Hadiah total $35.000. Tenggat 9 Des 09:00 WIB (8 Des 21:00 ET). Target submit 5-6 Des. Butuh keputusan Cipta atas konsep + akun.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Open Agentic Web Challenge (DevPost)",
-  "hadiah": "$10.000 tunai (total inisiatif $13.000)",
-  "tenggat": "2027-01-11",
-  "kategori": "website",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "BELUM ADA PROYEK. Rencana siap: 'Meong Tales Agent Network' (agentify Meong Tales: agen Oyen+Momo+router, file .json + runtime JS). Hadiah tunai Devpost $10.000 (angka $13.000 adalah total inisiatif). Tenggat 11 Jan 2027 23:00 WIB. Video <2 mnt HARUS Cipta sendiri yang menjelaskan (bukan AI). Prioritas terendah — kerjakan setelah 4 hackathon lain.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "KSEI — Short Video",
-  "hadiah": "Rp54.000.000",
-  "tenggat": "2026-11-30",
-  "kategori": "video",
-  "kebijakan_ai": "dilarang",
-  "status": "ditolak",
-  "catatan": "DICORET: butuh ≥70% rekaman asli — karya AI tidak bisa ikut.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Tag Comics",
-  "hadiah": "—",
-  "tenggat": "",
-  "kategori": "lainnya",
-  "kebijakan_ai": "dilarang",
-  "status": "ditolak",
-  "catatan": "DICORET: AI dilarang (terverifikasi di halaman resmi).",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Writers of the Future",
-  "hadiah": "—",
-  "tenggat": "",
-  "kategori": "cerpen",
-  "kebijakan_ai": "dilarang",
-  "status": "ditolak",
-  "catatan": "DICORET: AI dilarang (terverifikasi di halaman resmi).",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "After the End",
-  "hadiah": "—",
-  "tenggat": "",
-  "kategori": "cerpen",
-  "kebijakan_ai": "dilarang",
-  "status": "ditolak",
-  "catatan": "DICORET: AI dilarang (terverifikasi di halaman resmi).",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Awwwards — Site of the Day",
-  "hadiah": "—",
-  "tenggat": "",
-  "kategori": "website",
-  "kebijakan_ai": "belum terverifikasi",
-  "status": "ditolak",
-  "catatan": "DICORET: biaya submit $65/€65 per website — lomba berbayar, tidak ada jalur gratis.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "CSS Design Awards — Website of the Day",
-  "hadiah": "—",
-  "tenggat": "",
-  "kategori": "website",
-  "kebijakan_ai": "belum terverifikasi",
-  "status": "ditolak",
-  "catatan": "DICORET: biaya submit ~$50 per website — lomba berbayar.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Game Off 2026 (GitHub)",
-  "hadiah": "— (tanpa hadiah uang)",
-  "tenggat": "2026-12-01",
-  "kategori": "game",
-  "kebijakan_ai": "diizinkan",
-  "status": "ditolak",
-  "catatan": "DICORET: tanpa hadiah uang/fisik — hanya 'nerd cred' + tampil di blog GitHub. AI diizinkan, tapi tidak memenuhi syarat hadiah jelas. Tema 2026: Shift.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Global Game Jam 2027",
-  "hadiah": "— (tanpa hadiah uang)",
-  "tenggat": "2027-01-31",
-  "kategori": "game",
-  "kebijakan_ai": "belum terverifikasi",
-  "status": "ditolak",
-  "catatan": "DICORET: tanpa hadiah uang — fokus kreativitas/komunitas; biaya tergantung situs lokal (ada yang berbayar). Kebijakan AI merujuk ke pedoman GGJ — belum terverifikasi. 25–31 Jan 2027.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Reichman (AdArena)",
-  "hadiah": "$7.000 (25 pemenang)",
-  "tenggat": "2026-11-27",
-  "kategori": "video",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "AdArena x Reichman University. Iklan video AI 'Why choose Reichman University for your degree?' Gratis. Tutup 26 Nov 20:00 UTC = 27 Nov 03:00 WIB. PERINGATAN IP AdArena (pengalihan hak saat submit, termasuk non-pemenang). Kelayakan Indonesia BELUM terverifikasi — baca brief resmi dulu sebelum produksi.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "Guardio (AdArena)",
-  "hadiah": "$12.500 (60 pemenang: $8.500 tunai + $4.000 kredit KOLBO AI)",
-  "tenggat": "2026-12-04",
-  "kategori": "video",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "AdArena x Guardio (keamanan siber). AI Video Challenge, gratis. Tutup 3 Des 20:00 UTC = 4 Des 03:00 WIB. PERINGATAN IP AdArena (pengalihan hak saat submit, termasuk non-pemenang). Kelayakan Indonesia BELUM terverifikasi — baca brief resmi dulu sebelum produksi.",
-  "cek_berikutnya": ""
- },
- {
-  "nama": "PixVerse Earn",
-  "hadiah": ">$100.000 (pool kampanye)",
-  "tenggat": "",
-  "kategori": "video",
-  "kebijakan_ai": "diizinkan",
-  "status": "baru",
-  "catatan": "BUKAN lomba — program monetisasi kreator berkelanjutan (rilis 16 Sep 2026). Video WAJIB dibuat dengan PixVerse (Flow/Kling tidak memenuhi syarat). Payout via Tremendous (Indonesia belum terverifikasi). Tiap kampanye punya tenggat sendiri. Evaluasi terpisah dari lomba.",
-  "cek_berikutnya": ""
- }
+  {
+    "nama": "AdArena — Micro Drama",
+    "hadiah": "$5.000 (40 pemenang)",
+    "tenggat": "2026-11-20",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "dikirim",
+    "catatan": "The Last Key dikirim 17 Nov (Entry #1 dari 2 kuota). Entry #2 'Oyen Dipecat oleh Momo' TERKIRIM 19 Nov 19:15 WIB ('You're in the Arena!', 'All 2 entries submitted! Maximum reached'; My Submissions: Submitted Nov 19, 2026, 07:15 PM; tanpa ID numerik). Reel IG @meongcast https://www.instagram.com/reel/Df7Det1juzH/. Klausul hak di formulir SESUAI pengumuman resmi PilotRush: kreator tetap pegang hak cipta, lisensi non-eksklusif (ketentuan lomba ini mengalahkan FAQ umum AdArena). Pemenang <=7 hari setelah tutup (20 Nov 03:00 WIB). ATURAN 24 Nov 20:10 (perintah Cipta): saat lomba tutup, WAJIB cek pemenang + AI apa yang dipakai pemenang, laporkan ke Cipta + catat; bila kita menang, kawal sampai hadiah CAIR/diterima.",
+    "cek_berikutnya": "2026-11-27"
+  },
+  {
+    "nama": "Kemenkes — Poster Skrining Mata",
+    "hadiah": "Rp6.000.000",
+    "tenggat": "2026-11-30",
+    "kategori": "poster/desain",
+    "kebijakan_ai": "diizinkan",
+    "status": "dikirim",
+    "catatan": "KEDUA poster terkirim 19 Nov 10:35 via formulir s.kemkes.go.id (konfirmasi \"We have received your registration\"). Pemenang 10 Des 2026. ATURAN 24 Nov 20:10 (perintah Cipta): saat lomba tutup, WAJIB cek pemenang + AI apa yang dipakai pemenang, laporkan ke Cipta + catat; bila kita menang, kawal sampai hadiah CAIR/diterima.",
+    "cek_berikutnya": "2026-12-10"
+  },
+  {
+    "nama": "Artefact",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-12-01",
+    "kategori": "film",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "DISETUJUI Cipta 19 Nov 2026. Konsep 'The Number She Never Deleted' (10 shot, ~1:40) + paket eksekusi lengkap siap (lomba-artefact-2026/paket-eksekusi-artefact.md). Produksi Flow setelah AdArena entry #2. Tenggat 1 Des (target internal; resmi 2 Des).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "HeyGen — Video AI",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-12-01",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "TERBLOKIR DUA LAPIS: signup HeyGen tertahan Cloudflare Turnstile (butuh Cipta klik sendiri); signup akun X GAGAL (error teknis X, 6x). Rules terverifikasi 19 Nov: TIDAK BISA ikut tanpa akun X (entry = video + postingan X + form; tidak ada jalur alternatif). Indonesia BOLEH ikut. Video wajib >=70% footage HeyGen Video 1.0 via MCP; klip Flow DILARANG. Konsep iklan KikiWorks 30 dtk siap (paket-eksekusi-heygen.md). Tenggat 2 Des 14:59 WIB (koreksi dari 15:59).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Kiroween (Devpost)",
+    "hadiah": "$100.000",
+    "tenggat": "2026-12-05",
+    "kategori": "website",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "HAMPIR SIAP (update 20 Nov 18:35): video demo v2 2:53 SUDAH PUBLIK di YouTube https://youtu.be/plTqvlL9nkQ (terverifikasi 20 Nov) + Spookify Pages live HTTP 200 + app.js/styles.css 200. KURANG: persetujuan Cipta atas video + karya + konfirmasi akun Devpost. Kategori Costume Contest. Kredit Kiro 4.000 OPSIONAL, tutup 1 Des 12:00 PT, butuh KTP+foto wajah — JANGAN ajukan tanpa persetujuan. Tenggat 5 Des 05:00 WIB.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Deck the Pixels",
+    "hadiah": "$25.000",
+    "tenggat": "2026-12-08",
+    "kategori": "poster/desain",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "Aturan terverifikasi 19 Nov: sweater Natal + avatar/foto pakai sweater + latar kartu, SEMUA di Photoshop pakai Nano Banana; submit 2 PNG/JPEG + jawaban tertulis + screenshot Layers. Tenggat 8 Des 04:00 WIB (7 Des 16:00 EST). OPSI A (utama): coba lagi Nano Banana DI Photoshop web (bersihkan riwayat, sesi baru, referensi PNG/JPG saja). OPSI B: generate di Gemini app/Flow lalu komposit di Photoshop web (jujur di jawaban). OPSI C (Ideogram/Leonardo/Firefly Image 5) HANYA draf — bukan Nano Banana, tidak memenuhi syarat. Kelayakan Indonesia belum terverifikasi (cek tab Rules).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "AKOOL — AI Video",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-12-18",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "DISETUJUI Cipta 19 Nov 2026. Konsep 'The Last Postman of the Moon' (trailer 60 dtk, 6 shot) + paket eksekusi lengkap siap (lomba-akool-2026/paket-eksekusi-akool.md). Perlu akun AKOOL gratis + face swap Arka. Tenggat 18 Des (target internal; resmi 20 Des).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "AOYF (AI Art)",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-12-20",
+    "kategori": "foto",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "DISETUJUI Cipta 19 Nov 2026. Konsep 'The News That Never Happened' (10 gambar) + paket eksekusi disiapkan. Tutup 20 Des 23:59 CET (= 21 Des 05:59 WIB).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Lirika 14",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-12-20",
+    "kategori": "puisi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "AI MASIH BELUM TERVERIFIKASI (19 Nov, percobaan ke-4 gagal): panduan resmi dimuat via JavaScript/Google Spreadsheet, tidak terbaca; pencarian tidak menemukan aturan AI. Tema 'Lentera Aksara', gratis, umum se-Indonesia, antologi ber-ISBN + e-sertifikat. Tenggat 20 Des 23:59 WIB. JANGAN produksi/kirim sebelum pedoman resmi dibaca (tugas browser idnulis.id / tanya penyelenggara IG @idnulis.id / WA 0838 7178 1996).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "NEXMUSE",
+    "hadiah": "₩21.000.000 (~$15.000, 32 pemenang)",
+    "tenggat": "2026-12-28",
+    "kategori": "musik",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "REKOMENDASI: LEWATI (19 Nov). Alasan: tidak ada alat musik AI gratis yang terbukti memberi file MP3 + hak pakai bersih (Suno Free tanpa download/hak, Udio download dimatikan, Mureka Free status bertentangan); eligibilitas worldwide belum pasti (satu sumber menulis Korea saja); video 2-4 mnt (±50 shot) terlalu berat; vote audiens 30% hampir mustahil (subs 73); risiko hak cipta/debut belum dibaca. Hadiah ₩21 juta (~$15.000), tenggat 28 Des 21:59 WIB. Bila Cipta tetap lanjut, syarat pembuka: verifikasi nexmuse.kr + buktikan download Mureka.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Chroma Awards",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2027-01-07",
+    "kategori": "film",
+    "kebijakan_ai": "diizinkan",
+    "status": "dikirim",
+    "catatan": "The Last Key SUBMITTED (ID fdf0dc2e-de40-4654-843d-a1ab2174831b). Pemenang 11 Feb 2027. ATURAN 24 Nov 20:10 (perintah Cipta): saat lomba tutup, WAJIB cek pemenang + AI apa yang dipakai pemenang, laporkan ke Cipta + catat; bila kita menang, kawal sampai hadiah CAIR/diterima.",
+    "cek_berikutnya": "2027-02-11"
+  },
+  {
+    "nama": "NMWP (New Media Writing Prize)",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2027-02-01",
+    "kategori": "website",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "AI TIDAK DIATUR (19 Nov): PDF aturan resmi 2025-6 tidak menyebut AI sama sekali; FAQ hanya berisi hadiah; PDF aturan edisi 2027-2028 belum terbit. Karya harus 'original material'. Tenggat 1 Feb 2027 23:59 GMT. Konsep 'Oyen & the Last Fish' sudah draf. Keputusan ikut/tidak di Cipta; cek ulang aturan edisi baru sebelum submit.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Codegeist 2026 (Devpost)",
+    "hadiah": "$120.000",
+    "tenggat": "2026-12-23",
+    "kategori": "aplikasi",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "BELUM ADA PROYEK. Rencana siap: konsep disarankan 'Meong Tales for Confluence' (kategori Business Teams, adaptasi konten cerita nabi). Butuh akun Atlassian Developer gratis + Forge CLI; usaha ~2 minggu. Hadiah $120.000. Tenggat 23 Des 03:00 WIB (22 Des 12:00 PT). Butuh keputusan Cipta atas konsep + akun Atlassian.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "#BuildHybridAI 2026 (Devpost)",
+    "hadiah": "$30.000",
+    "tenggat": "2026-12-01",
+    "kategori": "aplikasi",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "HAMPIR SIAP (update 20 Nov 18:35): kunci API Firebase LAMA sudah dicabut, kunci BARU live di ?v=6 (commit c17f07c, hash kunci lokal = live, terverifikasi 20 Nov); URL live https://podcastmeong.github.io/meong-tales/ HTTP 200. App Check Enterprise (reCAPTCHA) terpasang di kode; UJI LIVE 401 BELUM bisa dikonfirmasi dari subagent — butuh uji browser live (buka halaman, klik generate, lihat badge LIVE vs fallback template). KURANG: uji live end-to-end + video demo belum direkam/YouTube + persetujuan Cipta + status akun Devpost. Tenggat 1 Des 05:00 WIB (30 Nov 17:00 ET).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "QNX Global Hackathon 2026 (Devpost)",
+    "hadiah": "$50.000",
+    "tenggat": "2026-12-16",
+    "kategori": "aplikasi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "TERVERIFIKASI 19 Nov: AI TIDAK DILARANG (aturan resmi tidak menyebut AI sama sekali; kriteria juri ada 'Innovation & AI Creativity'). Indonesia BOLEH (tidak di daftar larangan). Hadiah $50.000. TAPI butuh proyek software yang sungguh jalan di QNX 8.0 (QEMU/Raspberry Pi 5) + video demo <3 mnt + repo publik. Kategori paling realistis: Developer Tooling & Host Tools atau Ports. Tenggat 16 Des 02:00 WIB (15 Des 14:00 ET). Butuh keputusan Cipta atas konsep — effort teknis besar.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Reddit's Game of the Day Hackathon (Devpost)",
+    "hadiah": "$35.000",
+    "tenggat": "2026-12-09",
+    "kategori": "game",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "Rencana siap: port Oyen Tangkap Ikan (IP asli Cipta) ke Devvit, jalur Best Ported Daily Game $6.000. KURANG: lapisan daily (tantangan/streak), rebuild Devvit Web, akun Reddit Developer + subreddit uji. Hadiah total $35.000. Tenggat 9 Des 09:00 WIB (8 Des 21:00 ET). Target submit 5-6 Des. Butuh keputusan Cipta atas konsep + akun.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Open Agentic Web Challenge (DevPost)",
+    "hadiah": "$10.000 tunai (total inisiatif $13.000)",
+    "tenggat": "2027-01-11",
+    "kategori": "website",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "BELUM ADA PROYEK. Rencana siap: 'Meong Tales Agent Network' (agentify Meong Tales: agen Oyen+Momo+router, file .json + runtime JS). Hadiah tunai Devpost $10.000 (angka $13.000 adalah total inisiatif). Tenggat 11 Jan 2027 23:00 WIB. Video <2 mnt HARUS Cipta sendiri yang menjelaskan (bukan AI). Prioritas terendah — kerjakan setelah 4 hackathon lain.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "KSEI — Short Video",
+    "hadiah": "Rp54.000.000",
+    "tenggat": "2026-11-30",
+    "kategori": "video",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET: butuh ≥70% rekaman asli — karya AI tidak bisa ikut.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Tag Comics",
+    "hadiah": "—",
+    "tenggat": "",
+    "kategori": "lainnya",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET: AI dilarang (terverifikasi di halaman resmi).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Writers of the Future",
+    "hadiah": "—",
+    "tenggat": "",
+    "kategori": "cerpen",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET: AI dilarang (terverifikasi di halaman resmi).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "After the End",
+    "hadiah": "—",
+    "tenggat": "",
+    "kategori": "cerpen",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET: AI dilarang (terverifikasi di halaman resmi).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Awwwards — Site of the Day",
+    "hadiah": "—",
+    "tenggat": "",
+    "kategori": "website",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "ditolak",
+    "catatan": "DICORET: biaya submit $65/€65 per website — lomba berbayar, tidak ada jalur gratis.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "CSS Design Awards — Website of the Day",
+    "hadiah": "—",
+    "tenggat": "",
+    "kategori": "website",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "ditolak",
+    "catatan": "DICORET: biaya submit ~$50 per website — lomba berbayar.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Game Off 2026 (GitHub)",
+    "hadiah": "— (tanpa hadiah uang)",
+    "tenggat": "2026-12-01",
+    "kategori": "game",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET: tanpa hadiah uang/fisik — hanya 'nerd cred' + tampil di blog GitHub. AI diizinkan, tapi tidak memenuhi syarat hadiah jelas. Tema 2026: Shift.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Global Game Jam 2027",
+    "hadiah": "— (tanpa hadiah uang)",
+    "tenggat": "2027-01-31",
+    "kategori": "game",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "ditolak",
+    "catatan": "DICORET: tanpa hadiah uang — fokus kreativitas/komunitas; biaya tergantung situs lokal (ada yang berbayar). Kebijakan AI merujuk ke pedoman GGJ — belum terverifikasi. 25–31 Jan 2027.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Reichman (AdArena)",
+    "hadiah": "$7.000 (25 pemenang)",
+    "tenggat": "2026-11-27",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DIBATALKAN Cipta 21 Nov 2026 — PENGECUALIAN AGAMA (FINAL 10:30): jangan ikut lomba yang menyangkut agama apa pun kecuali Islam; Reichman University (Yahudi, video wajib bahasa Ibrani). Naskah Ibrani yang sedang ditulis DIHENTIKAN. Catatan lama: AdArena x Reichman University. Iklan video AI 'Why choose Reichman University for your degree?' Gratis. Tutup 26 Nov 20:00 UTC = 27 Nov 03:00 WIB. Hadiah $7.000 (25 pemenang).",
+    "cek_berikutnya": "",
+    "alasan": "Dibatalkan Cipta 21 Nov 2026 10:28: jangan ikut lomba yang menyangkut agama/narasi Yahudi (universitas Israel, video bahasa Ibrani)."
+  },
+  {
+    "nama": "Guardio (AdArena)",
+    "hadiah": "$12.500 (60 pemenang: $8.500 tunai + $4.000 kredit KOLBO AI)",
+    "tenggat": "2026-12-04",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "AdArena x Guardio (keamanan siber). AI Video Challenge, gratis. Tutup 3 Des 20:00 UTC = 4 Des 03:00 WIB. PERINGATAN IP AdArena (pengalihan hak saat submit, termasuk non-pemenang). Kelayakan Indonesia BELUM terverifikasi — baca brief resmi dulu sebelum produksi.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "PixVerse Earn",
+    "hadiah": ">$100.000 (pool kampanye)",
+    "tenggat": "",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "BUKAN lomba — program monetisasi kreator berkelanjutan (rilis 16 Sep 2026). Video WAJIB dibuat dengan PixVerse (Flow/Kling tidak memenuhi syarat). Payout via Tremendous (Indonesia belum terverifikasi). Tiap kampanye punya tenggat sendiri. Evaluasi terpisah dari lomba.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Higgsfield Talent Contest",
+    "hadiah": "$1.000.000 (20 hadiah)",
+    "tenggat": "2026-11-26",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 (riset lomba baru). GRATIS; 18+; film orisinal 3:00-7:00 tema bebas; SEMUA visual AI HARUS digenerate di proyek kontes Higgsfield (jendela 12-26 Nov); klip Flow hanya boleh jadi source via Qualifying Higgsfield Edit; musik+suara WAJIB AI; watermark+packshot wajib; tautan YouTube publik wajib; proyek jadi publik permanen beserta prompt. Indonesia: worldwide kecuali negara sanksi (cek Official Rules). Tenggat 26 Nov 19:00 UTC = 27 Nov 02:00 WIB. Konsep + shot list di lomba-baru-2026-11-21/paket-eksekusi-lomba-baru.md. BUTUH browser (akun Higgsfield + generate).",
+    "cek_berikutnya": "2026-11-26"
+  },
+  {
+    "nama": "Runway AI Festival 2027",
+    "hadiah": "Grand Prix $50.000 (total tunai ~$100.000, 10 hadiah)",
+    "tenggat": "2027-04-05",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026. GRATIS; 18+; Indonesia BOLEH (tidak di daftar larangan); film naratif 3-10 mnt video AI generatif; alat sejenis Runway Gen-4.5/Aleph/Act-Two/Gen-4 — Flow DIIZINKAN, Runway tools tidak wajib; submit via akun Runway gratis atau tautan YouTube/Vimeo + form aif.runwayml.com/submission + deskripsi teknik AI <=200 kata + sinopsis <=200 kata; lisensi non-eksklusif perpetual ke Runway. The Last Key hanya 60 dtk — BUTUH film 3-10 mnt baru/perpanjangan. Pemenang ~30 Apr 2027.",
+    "cek_berikutnya": "2027-04-05"
+  },
+  {
+    "nama": "AI ZONE International AI Film Festival",
+    "hadiah": "$500 Grand Prize",
+    "tenggat": "2026-11-30",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "dikirim",
+    "catatan": "TERKIRIM 21 Nov 2026 11:20 via FilmFreeway, GRATIS $0.00. Order #31377211, Tracking 2996, kategori Best AI Movie. Akun FilmFreeway via Google ciptabintanglestari@gmail.com (profil https://filmfreeway.com/CiptaBintangLestari), proyek https://filmfreeway.com/projects/4508070. Status 15:19 WIB 21 Nov 2026 (dicek via browser): 'In Consideration' — 'All submission requirements satisfied. Submission under review', Judging Undecided. Pengumuman 15 Des 2026; festival online 15 Jan 2027; Grand Prize $500. JANGAN submit ganda. ATURAN 24 Nov 20:10 (perintah Cipta): saat lomba tutup, WAJIB cek pemenang + AI apa yang dipakai pemenang, laporkan ke Cipta + catat; bila kita menang, kawal sampai hadiah CAIR/diterima.",
+    "cek_berikutnya": "2026-12-15"
+  },
+  {
+    "nama": "NEXTALE Award",
+    "hadiah": "$3.000 pool ($2.000 seri terbaik + $100 x 10 season + 100% revenue 6 bln)",
+    "tenggat": "2026-12-14",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026. GRATIS; seri vertikal 20+ episode; alat AI apa pun; BOLEH seri yang sudah dibuat (tanpa eksklusivitas); hak tetap di kreator; upload via NEXTALE Studio. Kandidat: paket 20 episode Podcast Meong dari 379 mp4 yang ada. Pemenang 20 Des 2026. BUTUH browser (akun NEXTALE Studio + upload).",
+    "cek_berikutnya": "2026-12-14"
+  },
+  {
+    "nama": "MetaMorph x TapNow Winter",
+    "hadiah": "£500 + 20.000 kredit TapNow",
+    "tenggat": "2026-12-30",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026. GRATIS; film 30 dtk-10 mnt; >=50% HARUS digenerate di TapNow, canvas Public; submit via TapTV Arena. Ronde musiman 'Winter' — BUKAN lomba agama/Natal. Pemenang 15 Jan 2027. BUTUH akun TapNow + generate >=50% di TapNow; BUTUH browser.",
+    "cek_berikutnya": "2026-12-30"
+  },
+  {
+    "nama": "Cue Xmas '26",
+    "hadiah": "4 hadiah tunai (nominal belum diumumkan)",
+    "tenggat": "2026-11-30",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DITOLAK 21 Nov 2026 — PENGECUALIAN AGAMA (Cipta, 21 Nov 10:30, FINAL): tema Natal (Nasrani); hanya Islam yang boleh. Draf 'Meowy Christmas' v1/v2 (50 dtk) tetap di lomba-cue-xmas/ tapi TIDAK dikirim. Catatan tambahan: konflik tenggat (situs resmi per cek 17 Nov: 20 Nov 23:59 ET = 21 Nov 11:59 WIB; agregator bilang 30 Nov) + draf belum memenuhi syarat (butuh 2-6 mnt, 1080p landscape; draf baru 50 dtk, 640x360).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Curious Refuge Holiday Film Competition 2026",
+    "hadiah": "$7.500+",
+    "tenggat": "2026-12-06",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DITOLAK 21 Nov 2026 — PENGECUALIAN AGAMA (Cipta, 21 Nov 10:30, FINAL): kompetisi film Natal/liburan (motif Natal wajib; musik wajib Epidemic Sound). Sebelumnya lolos 4 syarat; dibatalkan oleh aturan agama.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Sony World Photography Awards 2027",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2027-01-05",
+    "kategori": "foto",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: AI dilarang ('Computer generated content cannot be the origin of the Entry'). Gratis. Tenggat: Student 27 Nov 2026; Single/Youth 5 Jan 2027; Series 12 Jan 2027.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "World Sports Photography Awards 2027",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-11-23",
+    "kategori": "foto",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: AI dilarang ('no synthetic or AI-generated images are allowed'). Gratis. Tenggat 23 Nov 2026 23:59 UTC.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "RPS International Photography Exhibition 168",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-12-15",
+    "kategori": "foto",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: karya yang memakai AI generatif 'not eligible'. Satu gambar gratis; sisanya berbayar.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "World Press Photo 2027",
+    "hadiah": "€1.000 per pemenang",
+    "tenggat": "2027-01-13",
+    "kategori": "foto",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: gambar sintetis + generative fill dilarang. Gratis untuk fotojurnalis profesional; entri 1 Des 2026-13 Jan 2027.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Pride Photo 2027",
+    "hadiah": "€500 per karya terpilih",
+    "tenggat": "2026-10-31",
+    "kategori": "foto",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: tenggat LEWAT (31 Okt 2026) + gambar full-AI tidak diterima (AI-assisted boleh dengan deklarasi).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "REFLECTION: AI AND US (Thirdplat)",
+    "hadiah": "— (tanpa hadiah)",
+    "tenggat": "2026-12-31",
+    "kategori": "foto",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: BUKAN kompetisi — hanya publikasi, tanpa pembayaran/hadiah/komisi. Gratis, AI diterima dengan disclosure. Tidak memenuhi 'peluang menang nyata'.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Yeats Poetry Prize 2027",
+    "hadiah": "$1.000 (1st) + $500 (2nd)",
+    "tenggat": "2027-02-01",
+    "kategori": "puisi",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: AI dilarang ('Human-created work only; no AI use allowed' — Duotrope). Gratis, sedunia, 1 puisi <=60 baris belum terbit.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "TAG Comics Story Prize",
+    "hadiah": "$1.500",
+    "tenggat": "2027-01-10",
+    "kategori": "cerpen",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: AI dilarang ('written by you, not by AI'). Gratis, sedunia 18+, cerita 1.000-2.500 kata Inggris, tema 'You're It'.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Story Unlikely Annual Short Story Contest",
+    "hadiah": "$4.000",
+    "tenggat": "2027-01-07",
+    "kategori": "cerpen",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: AI dilarang (pedoman resmi: 'Don't use ChatGPT or some other AI to write your story'). Gratis, sedunia 18+, <=5.000 kata, belum terbit.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "One Teen Story 2027",
+    "hadiah": "$500",
+    "tenggat": "2026-12-01",
+    "kategori": "cerpen",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: usia 13-19 — Cipta tidak eligible. Gratis, internasional, cerpen 2.000-4.500 kata.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Silva Award 2027",
+    "hadiah": "€2.000 + kontrak terbit",
+    "tenggat": "2027-06-14",
+    "kategori": "ebook",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: teks/ilustrasi AI dilarang ('AI-generated text or illustrations are prohibited'). Gratis; picture book anak 3-6 th, maks 40 hal, Inggris.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Apila's First Printing Award 2027",
+    "hadiah": "€4.000 + kontrak terbit",
+    "tenggat": "2027-02-14",
+    "kategori": "ebook",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: ilustrasi AI dilarang ('generative AI-assisted illustrations are not permitted'). Gratis; picture book Spanyol/Inggris, 18+, belum pernah terbit via penerbit.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Animayo 2027 International Poster Competition",
+    "hadiah": "€500",
+    "tenggat": "2026-12-31",
+    "kategori": "poster/desain",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: karya AI generatif tidak diterima (minta layered source file untuk verifikasi authorship manusia). Gratis, 16+, vertikal 50x70cm + horizontal 100x50cm.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Waterband Poster Design Challenge",
+    "hadiah": "$100 + tiket + kaos",
+    "tenggat": "2026-12-15",
+    "kategori": "poster/desain",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: AI dilarang ('All submitted artwork must be created by humans. AI-generated images... not eligible'). Gratis, sedunia.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Chicago Latino Film Festival Poster Contest 2027",
+    "hadiah": "$1.000",
+    "tenggat": "2026-12-01",
+    "kategori": "poster/desain",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: karya full-AI tidak diterima ('Fully AI-generated artwork will not be considered'; wajib disclose tools). Gratis, sedunia, tema 'Latino Stories for Movie Lovers'.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Cosmo Hacks 2026",
+    "hadiah": "$405 tunai",
+    "tenggat": "2027-01-18",
+    "kategori": "aplikasi",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: khusus pelajar (SMP/SMA/mahasiswa 13+). Gratis; tema Tech for Student & Community Life; AI diizinkan dengan disclosure.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "checkpoint 1 — Games for Good",
+    "hadiah": "$11.960",
+    "tenggat": "2027-01-10",
+    "kategori": "game",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: usia 13-18 saja. Gratis, online, 48 jam (8-10 Jan 2027); AI sebanyak apa pun diizinkan.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "HackOut! 2027",
+    "hadiah": "$3.000",
+    "tenggat": "2027-01-31",
+    "kategori": "aplikasi",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: khusus siswa SMA, tim 2-4 (solo tidak diterima). Gratis; proyek dibuat 1-31 Jan 2027.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "GAIMVA 2027 (Global AI Music Video Awards)",
+    "hadiah": "$1.000 pool",
+    "tenggat": "2027-01-01",
+    "kategori": "musik",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: BERBAYAR ($40/kategori; min 2 kategori untuk Best AI Music Video = $80). Video musik AI <=8 mnt; 17 kategori.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "LundinStudio AI Film Festival 2027",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2027-01-21",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: BERBAYAR (tier November $70; fee FilmFreeway $10-90). Film AI 1-10 mnt.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Kursaal AI Film Festival San Sebastián",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2027-01-31",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: BERBAYAR (€10). Festival online VOD 15 Mar-15 Apr 2027.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "IA Play Madrid",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2027-01-01",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: BERBAYAR (€6 via Festhome).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "WAIFF Los Angeles",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2027-01-20",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: BERBAYAR ($60 late tier; $35 sebelumnya).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Hashtag Kalakar — Poetry & Creative Writing (Indonesia)",
+    "hadiah": "Rp304.637.000 pool",
+    "tenggat": "2026-11-21",
+    "kategori": "puisi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: BERBAYAR (biaya registrasi; 'refundable' bila tidak lolos Round 1). Tenggat registrasi 21 Nov 2026 (hari ini). Kebijakan AI tidak terverifikasi.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "EDTC (English Dept Talent Competition)",
+    "hadiah": "Rp1.500.000 pool",
+    "tenggat": "2026-11-05",
+    "kategori": "puisi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: BERBAYAR (Rp15.000) + khusus pelajar/mahasiswa (SMP-universitas). Kategori Poem & Storytelling.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "AI Film Festival Africa",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-11-30",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: tema 'Africa 2063' — tidak cocok dengan materi Podcast Meong. Gratis.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Melbourne AI Film Festival Awards",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-11-29",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: BERBAYAR ($15-30 entri).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Veritas AI Film Festival Toronto",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-11-30",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: BERBAYAR ($9 entri).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Jade Lens Awards",
+    "hadiah": "$3.500 kredit ZenCreator",
+    "tenggat": "2026-12-03",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: hadiah berupa KREDIT (bukan uang tunai) — tidak memenuhi 'peluang menang nyata'.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Young Romantics Poetry Prize 2026–27",
+    "hadiah": "£700",
+    "tenggat": "2027-02-01",
+    "kategori": "puisi",
+    "kebijakan_ai": "dilarang",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: usia 15-18 (pelajar) + AI dilarang ('plagiarism will not be accepted, including AI-generated work'). Gratis; tema 'Oceans'.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Bow Seat Blue Planet Awareness Contest 2027",
+    "hadiah": "$1.000",
+    "tenggat": "2027-06-07",
+    "kategori": "puisi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: usia 11-18 (pelajar) + butuh sponsor dewasa. Gratis; kategori Poetry & Spoken Word, Visual Art, Film, dll. Kebijakan AI tidak terverifikasi.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Naugatuck River Review — Narrative Poetry Contest",
+    "hadiah": "— (tidak dinyatakan)",
+    "tenggat": "2027-07-01",
+    "kategori": "puisi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: TIDAK ADA hadiah yang dinyatakan (hanya 'contest') + kebijakan AI tidak terverifikasi. Gratis; puisi naratif.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "1 Billion Followers Summit AI Film Award 2027",
+    "hadiah": "$1.000.000",
+    "tenggat": "2026-11-20",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: tenggat LEWAT (20 Nov 2026). Gratis; film 5-7 mnt, >=70% Seedance; 18+ sedunia.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "PixLight 2026 (PixVerse)",
+    "hadiah": "$300.000 pool",
+    "tenggat": "2026-10-31",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: tenggat LEWAT (31 Okt 2026). Gratis; film WAJIB di PixVerse Canvas.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Wandura Drama Challenge",
+    "hadiah": "$10.000",
+    "tenggat": "2026-10-31",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: tenggat LEWAT (31 Okt 2026). Gratis; episode 1 serial AI <=90 detik vertikal, WAJIB di Wandura Studio.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "M.AI — International AI Short Film Festival (Cagliari)",
+    "hadiah": "€5.750",
+    "tenggat": "2026-11-20",
+    "kategori": "video",
+    "kebijakan_ai": "diizinkan",
+    "status": "ditolak",
+    "catatan": "DICORET 21 Nov 2026: tenggat LEWAT (20 Nov 2026). Gratis via FilmFreeway; 6 penghargaan.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Gossip Goblin x Showrunner",
+    "hadiah": "$20.000",
+    "tenggat": "2026-12-15",
+    "kategori": "video",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: tanpa biaya entri di halaman resmi, TAPI 3dart mencatat 'Showrunner Studio subscription is needed to generate' — belum jelas apakah ada tier gratis; kelayakan Indonesia belum terverifikasi. Film 2-20 mnt WAJIB di Showrunner Studio, watermark resmi, dilarang posting sosmed sebelum submit. JANGAN eksekusi sebelum verifikasi halaman resmi showrunnerstudio.com/gossip-goblin.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Fairground x CapCut Animation Imagination",
+    "hadiah": "$15.000",
+    "tenggat": "2026-12-01",
+    "kategori": "video",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: karya 100% orisinal WAJIB dibuat dengan produk CapCut (bukti workflow bisa diminta); belum jelas apakah CapCut gratis cukup + kelayakan Indonesia. Cek halaman resmi Fairground sebelum eksekusi.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Road to MarsAi",
+    "hadiah": "€1.000",
+    "tenggat": "2026-11-22",
+    "kategori": "video",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI + SANGAT MEPET: film 1-3 mnt, tema edisi 1 'Chills', registrasi gratis; aturan resmi (kelayakan + kebijakan AI) belum dibaca penuh di armoni-studio.com/festival. Tenggat 22 Nov 23:59.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Cine Prague AI Film Festival",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-11-28",
+    "kategori": "video",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: kategori Best Experimental Film, cap 5 mnt; biaya masuk belum terverifikasi.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Berlin AI Film Festival",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2026-12-31",
+    "kategori": "video",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: kategori Experimental & Hybrid Works; biaya masuk belum terverifikasi.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "International Poster Triennial in Toyama 2027",
+    "hadiah": "¥1.000.000 (Grand Prix)",
+    "tenggat": "2027-02-28",
+    "kategori": "poster/desain",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: gratis; Grand Prix ¥1.000.000; kategori A/B butuh kirim poster CETAK via pos (biaya cetak+ongkir); kebijakan AI belum terverifikasi; U30+Student tidak eligible (lahir 1996+/mahasiswa). Tenggat ~28 Feb 2027 (112 hari dari 8 Nov 2026).",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "BREW Poetry Award 2027",
+    "hadiah": "— (publikasi)",
+    "tenggat": "2027-08-31",
+    "kategori": "puisi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: gratis, internasional, puisi Inggris 10-30 baris belum terbit; hadiah HANYA publikasi di website (tanpa uang) + kebijakan AI belum terverifikasi. Lemah — kemungkinan ditolak.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "erbacce-prize 2027",
+    "hadiah": "kontrak buku (tanpa uang)",
+    "tenggat": "2027-01-01",
+    "kategori": "puisi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: gratis, sedunia; hadiah kontrak penerbitan buku (tanpa uang tunai); kebijakan AI belum terverifikasi; kirim 5 halaman puisi via email.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Cloud9 x JetBrains Hackathon",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2027-01-12",
+    "kategori": "aplikasi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: gratis; butuh alat JetBrains (kode All Products Pack + AI Ultimate dibagikan); kategori VALORANT/LoL scouting + mini game event; kelayakan Indonesia belum terverifikasi; fit rendah untuk katalog Cipta.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "Horizons IA (Punta del Este)",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2027-04-26",
+    "kategori": "video",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: kategori Experimental & Videoclip, maks 5 mnt; biaya masuk belum terverifikasi.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "London AI Independent",
+    "hadiah": "lihat halaman resmi",
+    "tenggat": "2027-06-02",
+    "kategori": "video",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: Best Experimental Film, rolling deadline; biaya masuk belum terverifikasi.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "AI Filmfest Malaga 2027",
+    "hadiah": "Bitcoin tips (tidak jelas)",
+    "tenggat": "2026-12-01",
+    "kategori": "video",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "BARU 21 Nov 2026 — BELUM TERVERIFIKASI: gratis, tapi hadiah 'audience Bitcoin tips' — bukan uang tunai pasti; tidak memenuhi 'peluang menang nyata' bila tidak ada hadiah tunai.",
+    "cek_berikutnya": ""
+  },
+  {
+    "nama": "OpenGame Game Jam #1",
+    "hadiah": "$100.000 tunai",
+    "tenggat": "2026-12-18",
+    "kategori": "game",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "VALID (riset 24 Nov 2026): AI assets & code diizinkan; game wajib dibuat selama jam, web browser desktop, individual, maks 2 game; pemenang 30 Des 2026; withholding s.d. 30% untuk non-AS. Keputusan ikut/lewati + game apa — menunggu Cipta (ditanya 20:03)."
+  },
+  {
+    "nama": "N3F Amateur Short Story Contest",
+    "hadiah": "$100",
+    "tenggat": "2026-12-31",
+    "kategori": "cerpen",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "PERLU KONFIRMASI (riset 24 Nov 2026): khusus amatir saja."
+  },
+  {
+    "nama": "Jay Yes International Short Story Contest",
+    "hadiah": "belum terverifikasi",
+    "tenggat": "belum terverifikasi",
+    "kategori": "cerpen",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "PERLU KONFIRMASI (riset 24 Nov 2026): tenggat/aturan AI tidak terbaca."
+  },
+  {
+    "nama": "Flapper Press — Chiaroscuro Poetry Contest",
+    "hadiah": "$25 x 5",
+    "tenggat": "2026-11-26",
+    "kategori": "puisi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "PERLU KONFIRMASI (riset 24 Nov 2026): format sangat ketat — curtal sonnet 11 baris iambic pentameter. Keputusan lewati/kerjakan 1 soneta — menunggu Cipta (ditanya 20:03)."
+  },
+  {
+    "nama": "Gregory O'Donoghue International Poetry Competition",
+    "hadiah": "belum terverifikasi",
+    "tenggat": "2026-11-30",
+    "kategori": "puisi",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "PERLU KONFIRMASI (riset 24 Nov 2026): gratis untuk penyair negara berkembang termasuk Indonesia."
+  },
+  {
+    "nama": "Global Startup Challenge 2026",
+    "hadiah": "$25.000",
+    "tenggat": "2026-11-30",
+    "kategori": "ide usaha",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "PERLU KONFIRMASI (riset 24 Nov 2026): Ronde 1 gratis, Ronde 2 top 25 BERBAYAR $100. Keputusan lanjut Ronde 2 bila lolos — menunggu Cipta (ditanya 20:03)."
+  },
+  {
+    "nama": "Craftable 3D Website Challenge",
+    "hadiah": "langganan (tanpa uang tunai)",
+    "tenggat": "2026-12-31",
+    "kategori": "website",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "PERLU KONFIRMASI (riset 24 Nov 2026): daftar 30 Nov 2026, submit 31 Des 2026."
+  },
+  {
+    "nama": "THE MUSIC ZONE",
+    "hadiah": "tanpa uang tunai",
+    "tenggat": "2027-01-01",
+    "kategori": "lagu",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "PERLU KONFIRMASI (riset 24 Nov 2026): AI welcome."
+  },
+  {
+    "nama": "SongUp AI Song Contest",
+    "hadiah": "3 bulan Pro",
+    "tenggat": "2026-11-30",
+    "kategori": "lagu",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "PERLU KONFIRMASI (riset 24 Nov 2026): hadiah 3 bulan langganan Pro."
+  },
+  {
+    "nama": "First Light Photography Competition",
+    "hadiah": "tanpa uang tunai",
+    "tenggat": "2026-12-20",
+    "kategori": "foto",
+    "kebijakan_ai": "diizinkan",
+    "status": "baru",
+    "catatan": "PERLU KONFIRMASI (riset 24 Nov 2026): AI welcome menurut sumber sekunder."
+  },
+  {
+    "nama": "Tiny Loop Jam 2026",
+    "hadiah": "tanpa uang tunai",
+    "tenggat": "2026-11-29",
+    "kategori": "game",
+    "kebijakan_ai": "belum terverifikasi",
+    "status": "baru",
+    "catatan": "PERLU KONFIRMASI (riset 24 Nov 2026): AI belum terverifikasi."
+  }
 ]

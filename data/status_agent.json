@@ -1,6 +1,6 @@
 {
-  "diperbarui": "2026-11-24",
-  "sumber": "audit-32-agent.md (21 Nov 2026 ~06:50 WIB) + struktur-pusat-komando-2.0.md + refresh 24 Nov 2026 17:19 WIB (status, approvals, progres, activity_log, cek_dm, leads, akun-sosial-dm diperbarui ke fakta terbaru) + refresh 24 Nov 2026 18:32 WIB (adaptasi 14 poin, APR-16, Ronde 19, H3, penawaran 48, akun Digicat)",
+  "diperbarui": "2026-11-24 20:47",
+  "sumber": "audit-32-agent.md (21 Nov 2026 ~06:50 WIB) + struktur-pusat-komando-2.0.md + refresh 24 Nov 2026 17:19 WIB (status, approvals, progres, activity_log, cek_dm, leads, akun-sosial-dm diperbarui ke fakta terbaru) + refresh 24 Nov 2026 18:32 WIB (adaptasi 14 poin, APR-16, Ronde 19, H3, penawaran 48, akun Digicat) + refresh 24 Nov 2026 20:47 WIB (roster 196 agent — A01–A184 + 4 Agen Pintar + 8 Dify; label ruangan '30 Agent' diganti '196 Agent'; penawaran 57, A184 dicopot, APR-17 Vultr, lomba +11 entri, leads 61; file ini hanya berisi A01–A36, roster lengkap di repo agents.json)",
   "aturan": "OK = jalur eksekusi ada DAN target harian bisa dihasilkan sebagai draf. TERBLOKIR = target tidak bisa dihasilkan karena hambatan nyata. Refresh 24 Nov 2026: dari 8 TERBLOKIR hasil audit 21 Nov, 7 sudah dibuka (A21 dibuka — TikTok Studio @meongcast + @podcast_kucing masuk 21 Nov) — tersisa 1 TERBLOKIR (A28 Opportunity Hunter: keputusan Upwork/freelance masih menunggu Cipta).",
   "agent": [
     {
@@ -87,7 +87,7 @@
       "kode": "A11",
       "nama": "AI Video Producer",
       "status": "OK",
-      "alasan": "Skill 21 Nov 2026 (tinjau + tambah): ALAT_VIDEO_GRATIS_2026 (7 alat AI video gratis). ATURAN_SUARA lama tetap. Import OK. 24 Nov 2026: Ep1 'Satu Otak, Dua Kucing' upload 20:00; produksi Oyen Dokter 21:00 (Flow 264 kredit, aman); rencana 60 hari Podcast Meong 25 Nov 2026-23 Jan 2027 diterapkan.",
+      "alasan": "Skill 21 Nov 2026 (tinjau + tambah): ALAT_VIDEO_GRATIS_2026 (7 alat AI video gratis). ATURAN_SUARA lama tetap. Import OK. 24 Nov 2026: Ep1 'Satu Otak, Dua Kucing' upload 20:00; produksi Oyen Dokter 21:00 (Flow 264 kredit, aman); rencana 60 hari Podcast Meong 25 Nov 2026-23 Jan 2027 diterapkan. 24 Nov 2026 20:46: Ep1 tayang 20:00 BELUM terverifikasi; produksi Oyen Dokter 21:00; naskah promo Digicat 'Karyawan AI' (6 klip) siap, antrean produksi berikutnya.",
       "jalur": "persiapan-video-0630",
       "diperbarui": "2026-11-24"
     },
@@ -176,9 +176,9 @@
       "kode": "A22",
       "nama": "YouTube Manager",
       "status": "OK",
-      "alasan": "Skill 21 Nov 2026: FORMAT_SHORTS_2026 + STRUKTUR_DESKRIPSI + CHECKLIST_SHORTS (cek_judul_shorts). Import OK.",
+      "alasan": "Skill 21 Nov 2026: FORMAT_SHORTS_2026 + STRUKTUR_DESKRIPSI + CHECKLIST_SHORTS (cek_judul_shorts). Import OK. 24 Nov 2026: YouTube Podcast meong sesi habis 18:00 (perlu login ulang oleh Cipta); Ep1 'Satu Otak, Dua Kucing' tayang 20:00 BELUM terverifikasi.",
       "jalur": "manual Muse",
-      "diperbarui": "2026-11-21"
+      "diperbarui": "2026-11-24"
     },
     {
       "kode": "A23",
@@ -200,7 +200,7 @@
       "kode": "A25",
       "nama": "Sales Manager",
       "status": "OK",
-      "alasan": "Skill 21 Nov 2026: JALUR_PENJUALAN (4 jalur) + FUNNEL + TEMPLATE_FOLLOW_UP (baca_leads dari 15 lead nyata, draf_follow_up_lead). Template penawaran selesai ditulis 15:36 (6 DM + 1 email, di log A25 + b25). Penjualan 21 Nov: 6 DM IG terkirim 11:54, 2 email terkirim 11:56, 1 DM TikTok Garden terkirim 12:16 (@gardenvet31). Import OK. 24 Nov 2026 18:24: penawaran 48 email terkirim, 0 balasan; funnel dilacak (pelacak-funnel-bulanan.csv); tangga penawaran + usulan harga recurring diterapkan (APR-16 menunggu Cipta).",
+      "alasan": "Skill 21 Nov 2026: JALUR_PENJUALAN (4 jalur) + FUNNEL + TEMPLATE_FOLLOW_UP (baca_leads dari 15 lead nyata, draf_follow_up_lead). Template penawaran selesai ditulis 15:36 (6 DM + 1 email, di log A25 + b25). Penjualan 21 Nov: 6 DM IG terkirim 11:54, 2 email terkirim 11:56, 1 DM TikTok Garden terkirim 12:16 (@gardenvet31). Import OK. 24 Nov 2026 18:24: penawaran 48 email terkirim, 0 balasan; funnel dilacak (pelacak-funnel-bulanan.csv); tangga penawaran + usulan harga recurring diterapkan (APR-16 menunggu Cipta). 24 Nov 2026 20:29: penawaran 57 email terkirim, 0 balasan; penyimpangan ke-4 Proton/Atomic tidak dipakai; DM 0 terkirim (IG @meongcast terbatas, TikTok login putus, Threads ditahan).",
       "jalur": "follow-up-penjualan-harian",
       "diperbarui": "2026-11-24"
     },

@@ -1,5 +1,5 @@
 {
-  "diperbarui": "2026-11-24",
+  "diperbarui": "2026-11-24 20:47 WIB",
   "sumber": "audit-32-agent.md (21 Nov 2026) + data/handoff.json (PG-19NOV-02, PG-19NOV-04) + tugas lama Kasir",
   "catatan": "HANYA item nyata yang menunggu persetujuan Cipta. merah = wajib persetujuan sebelum jalan; kuning = draf untuk diperiksa.",
   "approvals": [
@@ -128,6 +128,16 @@
       "kategori": "keuangan",
       "judul": "Setujui harga layanan recurring (maintenance/langganan)",
       "detail": "USULAN dari Bab 4 dokumen rencana penerapan adaptasi Bintang Digital (24 Nov 2026) — HANYA usulan, BUKAN harga toko, TIDAK tampil di toko/dokumen lain sampai disetujui: pemeliharaan website $15/bulan, pemeliharaan aplikasi $25/bulan, paket konten bulanan $39/bulan, dukungan prioritas $29/bulan. Bila disetujui (penuh/berubah), barulah ditambahkan ke toko + dokumen tangga penawaran diperbarui.",
+      "agent": "A25",
+      "sejak": "2026-11-24",
+      "tingkat": "merah",
+      "status": "menunggu"
+    },
+    {
+      "id": "APR-17",
+      "kategori": "keuangan",
+      "judul": "Putuskan eksekusi pendaftaran Vultr ($300 kredit gratis)",
+      "detail": "Kode FLY300VULTR terverifikasi VALID di halaman resmi vultr.com/coupons 24 Nov 2026: kredit $300, berlaku 30 hari, pelanggan baru, 1 kode per akun, hanya produk tertentu. Syarat: wajib menautkan kartu kredit/PayPal (ada opsi deposit $0 — tidak wajib deposit); BAHAYA: server wajib dimatikan sebelum kredit habis atau tagihan jalan ke metode pembayaran yang ditautkan. Penautan PayPal/kartu hanya bisa Cipta sendiri. VULTRMATCH (deposit didobelin s.d. $100) DILEWATI — butuh deposit beneran. Manfaat: hosting n8n (paket self-host sudah jadi), bot, Dify — VM Muse tidak bisa jalan Docker.",
       "agent": "A25",
       "sejak": "2026-11-24",
       "tingkat": "merah",
