@@ -12620,5 +12620,30 @@
         ]
       }
     ]
+  },
+  "agent_181": {
+    "source": "Perintah Cipta 24 Nov 2026 10:39 (\"Bisa g bangun agent.ai yang menangani 6 akun error\")",
+    "applied_date": "2026-11-24",
+    "note": "A181 Agen Pemulih Akun Sosial — menangani 6 akun medsos Cipta yang error (IG @meongcast terbatas, IG @meongcast.id login gagal, IG @podcast_meong belum login, TikTok @podcast_kucing login putus, TikTok @ciptabintanglesta belum terverifikasi, YouTube Meong Cast login gagal + rename terkunci s.d. 20 Des 2026). Dibuat LANGSUNG Gemini 4 Hydrogen (aturan pembuatan wajib Hydrogen 24 Nov 05:18, gratis saja). PEKERJA di bawah Muse — BUKAN pemicu/komandan kedua (pelajaran DIFY-09 yang dibatalkan 24 Nov 08:30 karena bentrok); jadwal cek jalan lewat cron yang sudah ada + perintah Muse, A181 tidak membuat trigger/loop sendiri.",
+    "agents": [
+      {
+        "code": "A181",
+        "model": "gemini-4-hydrogen",
+        "model_sumber": "aturan pembuatan wajib Hydrogen 24 Nov 05:18 (gratis saja); perintah Cipta 24 Nov 10:39",
+        "name": "Agen Pemulih Akun Sosial",
+        "division": "Operasional",
+        "boss": "Muse",
+        "job_desc": "Pulihkan 6 akun medsos Cipta yang error: cek status tiap jam (login hidup/mati, terbatas, rename terkunci), coba pulihkan yang bisa diotomatisasi (login browser dengan kredensial tersimpan yang sudah ada), siapkan langkah persis + ingatkan Cipta 1x/hari untuk langkah yang hanya Cipta bisa. Lapor ke Muse (status harian 08:00 + langsung bila ada akun pulih).",
+        "file": null,
+        "modul": "belum dibuat — skill + spesifikasi saja (24 Nov 2026)",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 24 Nov 2026; 6 akun masih error, menunggu cek pertama",
+        "tugas_harian": "Cek status 6 akun tiap jam (lewat cron yang sudah ada + perintah Muse); catat ke data/log-pemulihan-akun.jsonl + 1 baris ke ~/memory/YYYY-MM-DD.md; coba login yang bisa diotomatisasi; ingatkan Cipta 1x/hari untuk langkah yang hanya dia bisa; pengingat rename YouTube 20 Des 2026",
+        "target_harian": "0 akun dibiarkan tanpa status terbaru; tiap akun pulih diverifikasi (bisa buka pesan/inbox) sebelum dilaporkan PULIH; 0 kata sandi/OTP dicatat",
+        "skills": [
+          "data/skills/pemulih-akun-sosial/SKILL.md"
+        ]
+      }
+    ]
   }
 }
