@@ -2,16 +2,6 @@
   "akun_dm": [
     {
       "platform": "Instagram",
-      "status": "BERSIH 24 Nov 11:22 — Status Profil: tidak ada batasan aktif, semua fitur bisa dipakai; boleh DM",
-      "username": "@meongcast"
-    },
-    {
-      "platform": "Instagram",
-      "status": "login hidup 24 Nov 11:24 — inbox kosong; masih pemanasan, jangan DM dulu; ganti nama tampilan jadi Digicat masih tertunda",
-      "username": "@meongcast.id"
-    },
-    {
-      "platform": "Instagram",
       "status": "login hidup — boleh DM; 24 Nov 12:50 Cipta masuk sendiri lewat tautan 'Login tanpa kata sandi' dari Gmail lawaklucu182; inbox 0 belum dibaca",
       "username": "@podcast_meong"
     },
@@ -19,11 +9,6 @@
       "platform": "TikTok",
       "status": "login hidup 24 Nov 11:54 — inbox dibaca 12:05, 0 pesan belum dibaca; boleh DM",
       "username": "@podcast_kucing"
-    },
-    {
-      "platform": "TikTok",
-      "status": "login dicoba 24 Nov 12:07 di profil terpisah — kata sandi diminta lewat kartu aman; JANGAN DM sampai login berhasil",
-      "username": "@meongcast"
     },
     {
       "platform": "Instagram",
@@ -39,10 +24,10 @@
     "akun_email_platform": "Beda akun, beda email, beda platform — tapi kata sandi SAMA (satu kata sandi biasa untuk semua akun; nilainya TIDAK ditulis di file ini)",
     "pengecualian_kata_sandi": "IG podcast_kucing (kata sandi ditolak 24 Nov 11:16) — kata sandinya diduga BERBEDA dari kata sandi biasa",
     "jangan_tanya_kata_sandi": "Jangan tanyakan kata sandi ke Cipta (aturan 24 Nov 09:40 — semua pakai kata sandi biasa)",
-    "cakupan": "Berlaku untuk SEMUA akun Cipta, termasuk YouTube Cipta dan Threads Cipta — yang beda hanya emailnya; kata sandi tetap sama"
+    "cakupan": "Daftar ini hanya berisi akun Podcast Meong. Akun promo/Digicat dicatat terpisah setelah akun baru Digicat selesai dibuat."
   },
-  "diperbarui": "2026-11-24 16:30 WIB — hapus dari daftar akun (perintah Cipta 16:28): TikTok @ciptabintanglesta, Threads @ciptabintanglestari, YouTube @CiptaBintangLestari. Hanya hapus dari DAFTAR, akunnya sendiri tidak dihapus.",
-  "perintah_cipta": "3 Instagram, 2 TikTok, 2 YouTube, 1 Threads; setiap jam kirim DM 10x; YouTube tidak ada DM -> hapus",
+  "diperbarui": "2026-11-24 16:30 WIB — hanya Podcast Meong di daftar (perintah Cipta 16:30)",
+  "perintah_cipta": "HANYA akun Podcast Meong di daftar ini (perintah Cipta 24 Nov 16:30: selain Podcast & Meong hapus semua dari daftar akun). Akun lama yang dihapus dari daftar: IG @meongcast, @meongcast.id, TikTok @meongcast, @ciptabintanglesta, Threads @ciptabintanglestari, YouTube Toko Oyen, Meong Cast, @CiptaBintangLestari. Akun-akun itu sendiri TIDAK dihapus permanen.",
   "youtube_dihapus_dari_dm": {
     "akun": [
       "@Podcastmeong"
@@ -55,16 +40,6 @@
       "channel": "Podcast meong",
       "email": "lawaklucu182@gmail.com",
       "status": "login hidup 24 Nov 12:38 — 80 subscriber; channel aktif di browser"
-    },
-    {
-      "channel": "Toko Oyen",
-      "email": "masduki1189@gmail.com",
-      "status": "terdaftar di pemilih akun Google; bukan channel utama"
-    },
-    {
-      "channel": "Meong Cast",
-      "email": "ciptabintanglestari@gmail.com",
-      "status": "RUSAK — login gagal 24 Nov 12:38, kata sandi tersimpan ditolak Google ('Sandi salah'); ganti nama terkunci sampai 20 Des 2026; butuh kata sandi benar lewat kartu aman atau reset 'Lupa sandi?' oleh Cipta"
     }
   ]
 }
