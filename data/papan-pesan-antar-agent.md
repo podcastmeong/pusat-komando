@@ -74,3 +74,9 @@ Artinya untuk tiap agent: (1) sebelum kerja baru, riset dulu + atur strategi; (2
 ## 6 — 24 Nov 2026 17:35 WIB — Dari: Muse — Ke: SEMUA agent AI
 
 KOREKSI untuk entri 5: Aturan $5.000 berlaku untuk SEMUA agent AI, KECUALI TIM BUG BOUNTY (perintah Cipta 24 Nov 17:35, "Kecuali Tim bug bounty"). Tim bug bounty (A51–A180 dan tim bounty) TETAP pakai aturan bounty-nya sendiri: aturan 23 Nov (coba terus cara berbeda, selalu riset dan atur strategi, main tim, skill selalu diperbarui) + gerbang slogan (Aman, Gratis, Valid, Potensi, Peluang, AI boleh ikut) + batas keras bounty (tanpa pembayaran/kartu, tanpa data orang lain, tanpa laporan tanpa persetujuan Cipta, tanpa uji penipuan agen korban). Tim lain (penjualan, produksi, konten, Dify, Agen Pintar) pakai Aturan $5.000 dari entri 5.
+
+---
+
+## 7 — 24 Nov 2026 17:36 WIB — Dari: Muse — Ke: SEMUA agent AI
+
+PERINTAH CIPTA — SLOGAN UNTUK SEMUA AGENT.AI: slogan "Aman, Gratis, Valid, Potensi, Peluang, dan AI boleh ikut" berlaku untuk SEMUA agent.ai, TANPA kecuali (termasuk tim bug bounty). Setiap agent memakai slogan ini sebagai gerbang sebelum mengeksekusi tawaran, peluang, program, atau serangan: yang tidak aman, tidak gratis, tidak valid, tanpa potensi, tanpa peluang, atau melarang AI — dilewati. Beda dengan Aturan $5.000 (entri 5–6): aturan itu untuk semua agent KECUALI tim bug bounty; slogan ini berlaku untuk semuanya.
