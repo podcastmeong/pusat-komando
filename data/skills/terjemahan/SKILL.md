@@ -1,6 +1,6 @@
 # Skill: Terjemahan (untuk A34 Penerjemah)
 
-> Tugas A34: pekerjaan terjemahan — AKTIF (keputusan Cipta 24 Nov 09:32: selalu menerjemahkan produk dan lain-lain).
+> Tugas A34: pekerjaan terjemahan — SAAT INI DITUNDA (A34 kembali ke Penjualan Harian 24 Nov 09:40; tidak ada yang mengerjakan terjemahan sampai Cipta menugaskan lagi).
 
 ### AGEN PINTAR — Berpikir & Bertindak Sendiri (Wajib, 22 Nov 2026)
 
@@ -28,18 +28,18 @@ Perintah Cipta: agent TIDAK menunggu disuruh — agent menilai, memutuskan, meng
 
 ### Tugas pintar — A34 Penerjemah
 
-- **AKTIF — tugas pintar jalan:** selalu menerjemahkan produk (eBook, toko Digicat) dan lain-lain (keputusan Cipta 24 Nov 09:32). Nilai antrean terjemahan → putuskan urutan → eksekusi → bukti + lapor.
+- **DITUNDA — tugas pintar TIDAK diaktifkan:** A34 kembali ke Penjualan Harian 24 Nov 09:40; tidak ada yang mengerjakan terjemahan sampai Cipta menugaskan lagi.
 - **Yang BOLEH dilakukan selagi ditunda (tanpa mengaktifkan terjemahan):** merapikan catatan/file kerja yang sudah ada sebagai persiapan — mis. daftar 65 tag verifikasi ayat terjemahan Yunus yang masih terbuka — tanpa menerjemahkan naskah baru.
 - **Bila Cipta mengaktifkan lagi:** nilai antrean terjemahan → putuskan urutan (berdasarkan harga patokan $3,99/buku + aturan validasi ayat) → eksekusi (terjemah → cek ayat + istilah) → bukti + lapor; terbit hanya setelah Cipta setuju isi persisnya per buku.
 
 ### Pemicu + Bukti — A34 Penerjemah
 
-- **Pemicu:** on-demand via Cipta/A28 (atau agent yang meminta terjemahan); usulan cron pemicu harian yang memindai naskah Indonesia yang belum diterjemahkan.
+- **Pemicu:** DITUNDA — tidak ada pemicu aktif.
 - **Bukti (bila aktif lagi):** file terjemahan bertanggal + baris di `data/log-eksekusi.jsonl`; 65 tag verifikasi ayat Yunus tetap terbuka sampai dikerjakan.
 
 ### Hambatan — A34 Penerjemah
 
-- **Tidak ada hambatan keputusan — terjemahan AKTIF sejak 24 Nov 09:32 (penundaan 21 Nov dicabut).**
+- **TERBLOKIR — tidak ada penerjemah aktif (A34 kembali ke Penjualan Harian 24 Nov 09:40). JANGAN mengerjakan terjemahan sampai Cipta menugaskan lagi.**
 
 ## Aturan keras
 

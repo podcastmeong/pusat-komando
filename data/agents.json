@@ -2015,10 +2015,10 @@
         "nama": "Penjualan Harian",
         "modul": "a04_penjualan_harian",
         "sumber_data": "penjualan_toko",
-        "status": "Aktif — diganti nama jadi A34 Penerjemah",
+        "status": "Aktif — kembali jadi A34 Penjualan Harian (24 Nov 09:40)",
         "kode_baru": "A34",
-        "nama_baru": "Penerjemah",
-        "tugas": "Penerjemah — pekerjaan terjemahan (saat ini DITUNDA). Kerja 24 jam nonstop.",
+        "nama_baru": "Penjualan Harian",
+        "tugas": "Penjualan Harian — penjualan harian ke toko-toko (alur kerja 4): cari toko, verifikasi, buat draf penawaran personal per toko dari katalog, catat hasil + follow-up di data/penjualan_toko.json. Ikuti target penjualan: penawaran tiap jam dalam batas platform sampai kuota email terpenuhi; target harian 20 toko + 1 balasan; mingguan 1 closing; bulanan (Des 2026) Rp10.000.000. Kerja 24 jam nonstop.",
         "skills": [
           "data/skills/terjemahan/SKILL.md"
         ]
@@ -7232,16 +7232,18 @@
         "code": "A34",
         "model": "gemini-4-hydrogen",
         "model_sumber": "upgrade 44 agent 22 Nov 16:27 — Hydrogen gratis untuk semua; modul a04_penjualan_harian diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov)",
-        "name": "Penerjemah",
+        "name": "Penjualan Harian",
         "division": "Operasional",
         "boss": "Muse",
-        "job_desc": "Penerjemah — menerjemahkan produk dan materi (eBook, toko Digicat, listing, deskripsi) Indonesia-Inggris dan sebaliknya; terjemahan eBook nabi wajib valid (ayat Al-Quran dicek, tanpa gambar wajah nabi); harga patokan $3,99/buku; terbit hanya setelah Cipta setuju isi persisnya per buku. Kerja 24 jam nonstop.",
+        "job_desc": "Penjualan Harian — penjualan harian ke toko-toko (alur kerja 4): cari toko, verifikasi, buat draf penawaran personal per toko dari katalog, catat hasil + follow-up di data/penjualan_toko.json. Ikuti target penjualan: penawaran tiap jam dalam batas platform sampai kuota email terpenuhi; target harian 20 toko + 1 balasan; mingguan 1 closing; bulanan (Des 2026) Rp10.000.000. Kerja 24 jam nonstop.",
         "modul": "a04_penjualan_harian",
-        "status": "Aktif — selalu menerjemahkan produk dan lain-lain (keputusan Cipta 24 Nov 09:32; penundaan 21 Nov 11:37 dicabut)",
+        "status": "Aktif — kembali ke Penjualan Harian (keputusan Cipta 24 Nov 09:40; sempat jadi Penerjemah 24 Nov 05:34-09:40)",
         "skills": [
-          "data/skills/terjemahan/SKILL.md"
+          "data/skills/penawaran-email/SKILL.md",
+          "data/skills/pencari-target/SKILL.md",
+          "data/skills/closer-penjualan/SKILL.md"
         ],
-        "tugas_harian": "Terjemahkan produk (eBook, toko Digicat) dan lain-lain setiap hari"
+        "tugas_harian": "Penjualan harian mengikuti target penjualan: penawaran tiap jam dalam batas platform, follow-up + balas toko; target harian 20 toko + 1 balasan; mingguan 1 closing"
       },
       {
         "code": "A35",
