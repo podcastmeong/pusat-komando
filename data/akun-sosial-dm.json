@@ -1,1 +1,70 @@
-{"akun_dm":[{"platform":"Instagram","status":"TERBATAS — jangan DM, butuh verifikasi kemanusiaan oleh Cipta","username":"@meongcast"},{"platform":"Instagram","status":"pemanasan — jangan DM dulu; login cloud gagal 23 Nov 15:34 (kata sandi tersimpan salah, yang terisi login podcast_kucing), butuh login benar dari Cipta; ganti nama tampilan jadi Digicat masih tertunda","username":"@meongcast.id"},{"platform":"Instagram","status":"login hidup — boleh DM","username":"@podcast_meong"},{"platform":"TikTok","status":"login PUTUS 23 Nov 15:21 (OAuth tertutup) — jangan DM sampai Cipta login ulang","username":"@podcast_kucing"},{"platform":"TikTok","status":"belum terverifikasi — cek login dulu sebelum DM","username":"@ciptabintanglesta"},{"platform":"Threads","status":"nama tampil Digicat — boleh DM","username":"@ciptabintanglestari"}],"aturan":{"batas_aman_harian_per_akun":"~10 DM/hari","dm_per_jam_per_akun":10,"jeda_minimal_antar_dm":"3 menit","whatsapp":"DILARANG total untuk penjualan"},"diperbarui":"2026-11-23 15:36 WIB","perintah_cipta":"3 Instagram, 2 TikTok, 2 YouTube, 1 Threads; setiap jam kirim DM 10x; YouTube tidak ada DM -> hapus","youtube_dihapus_dari_dm":{"akun":["@Podcastmeong","@CiptaBintangLestari"],"alasan":"YouTube tidak punya fitur DM ke pemilik channel (pesan langsung YouTube dihapus 2019); hanya komentar atau email bisnis di halaman Tentang","peran":"konten/upload saja"}}
+{
+  "akun_dm": [
+    {
+      "platform": "Instagram",
+      "status": "BERSIH 24 Nov 11:22 — Status Profil: tidak ada batasan aktif, semua fitur bisa dipakai; boleh DM",
+      "username": "@meongcast"
+    },
+    {
+      "platform": "Instagram",
+      "status": "login hidup 24 Nov 11:24 — inbox kosong; masih pemanasan, jangan DM dulu; ganti nama tampilan jadi Digicat masih tertunda",
+      "username": "@meongcast.id"
+    },
+    {
+      "platform": "Instagram",
+      "status": "login hidup — boleh DM; 24 Nov 12:50 Cipta masuk sendiri lewat tautan 'Login tanpa kata sandi' dari Gmail lawaklucu182; inbox 0 belum dibaca",
+      "username": "@podcast_meong"
+    },
+    {
+      "platform": "TikTok",
+      "status": "login hidup 24 Nov 11:54 — inbox dibaca 12:05, 0 pesan belum dibaca; boleh DM",
+      "username": "@podcast_kucing"
+    },
+    {
+      "platform": "TikTok",
+      "status": "login dicoba 24 Nov 12:07 di profil terpisah — kata sandi diminta lewat kartu aman; JANGAN DM sampai login berhasil",
+      "username": "@meongcast"
+    },
+    {
+      "platform": "Instagram",
+      "status": "RUSAK — kata sandi ditolak IG 24 Nov 11:16 dan 12:42; login-link dikirim 2x (12:56, 13:05) tapi tidak ada email IG untuk akun ini di ketiga Gmail (email IG di lawaklucu182 hanya untuk podcast_meong — koreksi Cipta 13:11); jalur nomor HP +62 812-4798-6994 dicoba 13:08 lalu tertahan di reCAPTCHA, menunggu Cipta selesaikan sendiri; JANGAN DM",
+      "username": "podcast_kucing"
+    }
+  ],
+  "aturan": {
+    "batas_aman_harian_per_akun": "~10 DM/hari",
+    "dm_per_jam_per_akun": 10,
+    "jeda_minimal_antar_dm": "3 menit",
+    "whatsapp": "DILARANG total untuk penjualan",
+    "akun_email_platform": "Beda akun, beda email, beda platform — tapi kata sandi SAMA (satu kata sandi biasa untuk semua akun; nilainya TIDAK ditulis di file ini)",
+    "pengecualian_kata_sandi": "IG podcast_kucing (kata sandi ditolak 24 Nov 11:16) — kata sandinya diduga BERBEDA dari kata sandi biasa",
+    "jangan_tanya_kata_sandi": "Jangan tanyakan kata sandi ke Cipta (aturan 24 Nov 09:40 — semua pakai kata sandi biasa)",
+    "cakupan": "Berlaku untuk SEMUA akun Cipta, termasuk YouTube Cipta dan Threads Cipta — yang beda hanya emailnya; kata sandi tetap sama"
+  },
+  "diperbarui": "2026-11-24 16:30 WIB — hapus dari daftar akun (perintah Cipta 16:28): TikTok @ciptabintanglesta, Threads @ciptabintanglestari, YouTube @CiptaBintangLestari. Hanya hapus dari DAFTAR, akunnya sendiri tidak dihapus.",
+  "perintah_cipta": "3 Instagram, 2 TikTok, 2 YouTube, 1 Threads; setiap jam kirim DM 10x; YouTube tidak ada DM -> hapus",
+  "youtube_dihapus_dari_dm": {
+    "akun": [
+      "@Podcastmeong"
+    ],
+    "alasan": "YouTube tidak punya fitur DM ke pemilik channel (pesan langsung YouTube dihapus 2019); hanya komentar atau email bisnis di halaman Tentang",
+    "peran": "konten/upload saja"
+  },
+  "youtube": [
+    {
+      "channel": "Podcast meong",
+      "email": "lawaklucu182@gmail.com",
+      "status": "login hidup 24 Nov 12:38 — 80 subscriber; channel aktif di browser"
+    },
+    {
+      "channel": "Toko Oyen",
+      "email": "masduki1189@gmail.com",
+      "status": "terdaftar di pemilih akun Google; bukan channel utama"
+    },
+    {
+      "channel": "Meong Cast",
+      "email": "ciptabintanglestari@gmail.com",
+      "status": "RUSAK — login gagal 24 Nov 12:38, kata sandi tersimpan ditolak Google ('Sandi salah'); ganti nama terkunci sampai 20 Des 2026; butuh kata sandi benar lewat kartu aman atau reset 'Lupa sandi?' oleh Cipta"
+    }
+  ]
+}
