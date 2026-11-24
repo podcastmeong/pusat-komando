@@ -1,0 +1,137 @@
+{
+  "diperbarui": "2026-11-24",
+  "sumber": "audit-32-agent.md (21 Nov 2026) + data/handoff.json (PG-19NOV-02, PG-19NOV-04) + tugas lama Kasir",
+  "catatan": "HANYA item nyata yang menunggu persetujuan Cipta. merah = wajib persetujuan sebelum jalan; kuning = draf untuk diperiksa.",
+  "approvals": [
+    {
+      "id": "APR-01",
+      "kategori": "video",
+      "judul": "Pilih video slot 07:00/20:00 + setujui judul/caption persisnya",
+      "detail": "SELESAI 21 Nov 2026 09:06 — keputusan diserahkan ke Muse (delegasi Cipta): Promo POD v1 dipilih untuk slot 20:00, judul + caption diputuskan Muse. Pacaran v2 ditolak (dialog terulang 2x + dissolve hantu ~2 dtk di 34-36 dtk).",
+      "agent": "A11",
+      "sejak": "2026-11-19",
+      "tingkat": "merah",
+      "status": "selesai"
+    },
+    {
+      "id": "APR-02",
+      "kategori": "ebook",
+      "judul": "Setujui 9 eBook ilustrasi Rp29.000 untuk terbit",
+      "detail": "Nuh, Yunus, Yusuf, Musa, Ibrahim, Abu Bakar, Umar, Syafi'i, Salahuddin — masing-masing Rp29.000. Ilustrasi Yunus (A12) sudah disetujui Cipta 21 Nov 2026; 9 eBook menunggu persetujuan terbit.",
+      "agent": "A16",
+      "sejak": "2026-11-19",
+      "tingkat": "merah",
+      "status": "menunggu"
+    },
+    {
+      "id": "APR-03",
+      "kategori": "tulisan",
+      "judul": "Setujui naskah Basabasi/IDN Times (1 cerpen + 2 puisi BARU)",
+      "detail": "JANGAN submit sebelum Cipta setuju; JANGAN pakai isi eBook Rindu (sudah terbit di KaryaKarsa). Draf 5 puisi + 5 cerpen TIDAK BOLEH tampil (Basabasi butuh karya belum terbit).",
+      "agent": "A17",
+      "sejak": "2026-11-19",
+      "tingkat": "merah",
+      "status": "menunggu"
+    },
+    {
+      "id": "APR-05",
+      "kategori": "login",
+      "judul": "Login TikTok @meongcast + login ulang @podcast_kucing",
+      "detail": "@podcast_kucing logout di browser 21 Nov 2026; @meongcast belum pernah login (Cipta login sendiri, diarahkan ke TikTok Studio). Tanpa ini SEMUA upload TikTok tidak bisa jalan. 24 Nov 2026: login TikTok @meongcast gagal lagi (angka verifikasi Google 4→7→51 berganti, lalu dialog verifikasi TikTok beku tidak merespons klik); masih menunggu.",
+      "agent": "A21",
+      "sejak": "2026-11-21",
+      "tingkat": "merah",
+      "status": "menunggu"
+    },
+    {
+      "id": "APR-07",
+      "kategori": "login",
+      "judul": "Pindai ulang QR WA Web",
+      "detail": "DIBATALKAN 23 Nov 2026 — sesi WA Web putus dan TIDAK disambung lagi atas perintah Cipta: WhatsApp tidak dipakai untuk penjualan/pemasaran/promo/penawaran; cron cek-chat-customer-wa NONAKTIF permanen. Pertanyaan customer WA tidak dipantau.",
+      "agent": "A26",
+      "sejak": "2026-11-19",
+      "tingkat": "merah",
+      "status": "dibatalkan"
+    },
+    {
+      "id": "APR-09",
+      "kategori": "keputusan",
+      "judul": "Putuskan cara menghubungkan Gmail",
+      "detail": "SELESAI 21 Nov 2026 08:47 — ketiga akun Gmail terhubung via konektor (ciptabintanglestari, masduki1189, lawaklucu182); cron cek email 05:30 + 19:30 aktif. A27 kini OK.",
+      "agent": "A27",
+      "sejak": "2026-11-21",
+      "tingkat": "merah",
+      "status": "selesai"
+    },
+    {
+      "id": "APR-10",
+      "kategori": "keputusan",
+      "judul": "Putuskan pembuatan akun Upwork",
+      "detail": "Akun Upwork belum ada; signup tertahan cek Cloudflare (butuh Cipta klik sendiri). Tanpa akun, target hingga 5 draf proposal/hari tidak punya jalur kirim.",
+      "agent": "A28",
+      "sejak": "2026-11-21",
+      "tingkat": "merah",
+      "status": "menunggu"
+    },
+    {
+      "id": "APR-11",
+      "kategori": "keuangan",
+      "judul": "Selesaikan KYC Mayar",
+      "detail": "KYC Mayar BELUM SELESAI; pembayaran tidak boleh diarahkan ke Mayar sampai KYC selesai (pembayaran hanya ke BCA / PayPal / KaryaKarsa / Lynk.id / Saweria / Trakteer).",
+      "agent": "A29",
+      "sejak": "2026-11-21",
+      "tingkat": "merah",
+      "status": "menunggu"
+    },
+    {
+      "id": "APR-12",
+      "kategori": "aplikasi",
+      "judul": "Konfirmasi login Kasir Bisnis (admin/admin123)",
+      "detail": "Tugas lama: konfirmasi bahwa login Kasir Bisnis dengan akun admin/admin123 berfungsi di demo kasir-toko.",
+      "agent": "A13",
+      "sejak": "2026-11-21",
+      "tingkat": "kuning",
+      "status": "menunggu"
+    },
+    {
+      "id": "APR-13",
+      "kategori": "aplikasi",
+      "judul": "Kirim file Kasir v2 via WA",
+      "detail": "Tugas lama: kirim file aplikasi Kasir v2 ke Cipta via WhatsApp (pengiriman keluar — butuh persetujuan Cipta).",
+      "agent": "A13",
+      "sejak": "2026-11-21",
+      "tingkat": "merah",
+      "status": "menunggu"
+    },
+    {
+      "id": "APR-14",
+      "kategori": "lomba",
+      "judul": "Kirim pesan ke Support Higgsfield minta pengecualian go-live",
+      "detail": "SELESAI 24 Nov 2026 17:13 — terkirim sebagai email dari ciptabintanglestari@gmail.com ke support@higgsfield.ai (subjek 'Urgent: Talent Contest Project Cannot Go Public – Free Plan, 0 Credits', isi sesuai draf). Help Center Higgsfield TIDAK punya formulir tiket web — email support@higgsfield.ai adalah kanal resminya. Login Higgsfield terverifikasi (Cipta Bintang Lestari @cantorguinea_pig2186, Free, 0 kredit). Proyek Talent Contest masih Private, kredit 0. Tenggat 27 Nov 02:00 WIB — menunggu balasan support.",
+      "agent": "A06",
+      "sejak": "2026-11-21",
+      "tingkat": "merah",
+      "status": "selesai"
+    },
+    {
+      "id": "APR-15",
+      "kategori": "akun",
+      "judul": "Ganti nama Threads @ciptabintanglestari jadi Digicat",
+      "detail": "SELESAI 23 Nov 2026 — rencana lama 'Dunia Kiki' DIGANTI 'Digicat' atas perintah Cipta 23 Nov 05:19; Threads sudah diganti jadi 'Digicat' (terverifikasi setelah reload; username tetap ciptabintanglestari). KOREKSI 24 Nov 2026: klaim kunci YouTube s.d. 20 Des 2026 TIDAK terkonfirmasi di halaman Studio (hanya aturan umum 2x/14 hari); rename TikTok @meongcast BELUM selesai (login gagal 24 Nov 17:08); Facebook terblokir (nama diubah 17 Nov, aturan 60 hari, coba lagi ~16 Jan 2027); IG @meongcast terblokir (2x ganti dalam 14 hari).",
+      "agent": "A23",
+      "sejak": "2026-11-21",
+      "tingkat": "merah",
+      "status": "selesai"
+    },
+    {
+      "id": "APR-16",
+      "kategori": "keuangan",
+      "judul": "Setujui harga layanan recurring (maintenance/langganan)",
+      "detail": "USULAN dari Bab 4 dokumen rencana penerapan adaptasi Bintang Digital (24 Nov 2026) — HANYA usulan, BUKAN harga toko, TIDAK tampil di toko/dokumen lain sampai disetujui: pemeliharaan website $15/bulan, pemeliharaan aplikasi $25/bulan, paket konten bulanan $39/bulan, dukungan prioritas $29/bulan. Bila disetujui (penuh/berubah), barulah ditambahkan ke toko + dokumen tangga penawaran diperbarui.",
+      "agent": "A25",
+      "sejak": "2026-11-24",
+      "tingkat": "merah",
+      "status": "menunggu"
+    }
+  ]
+}

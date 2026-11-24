@@ -1,0 +1,312 @@
+{
+  "diperbarui": "2026-11-24",
+  "sumber": "audit-32-agent.md (21 Nov 2026 ~06:50 WIB) + struktur-pusat-komando-2.0.md + refresh 24 Nov 2026 17:19 WIB (status, approvals, progres, activity_log, cek_dm, leads, akun-sosial-dm diperbarui ke fakta terbaru) + refresh 24 Nov 2026 18:32 WIB (adaptasi 14 poin, APR-16, Ronde 19, H3, penawaran 48, akun Digicat)",
+  "aturan": "OK = jalur eksekusi ada DAN target harian bisa dihasilkan sebagai draf. TERBLOKIR = target tidak bisa dihasilkan karena hambatan nyata. Refresh 24 Nov 2026: dari 8 TERBLOKIR hasil audit 21 Nov, 7 sudah dibuka (A21 dibuka — TikTok Studio @meongcast + @podcast_kucing masuk 21 Nov) — tersisa 1 TERBLOKIR (A28 Opportunity Hunter: keputusan Upwork/freelance masih menunggu Cipta).",
+  "agent": [
+    {
+      "kode": "A01",
+      "nama": "CEO Director",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: KERANGKA_KEPUTUSAN + PRIORITAS_HARIAN + KPI_CEO + TEMPLATE_RAPAT (buat_keputusan_draf, baca_kpi_draf). Import OK.",
+      "jalur": "rencana-pagi-0500, laporan-malam-2000",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A02",
+      "nama": "COO Manager",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: CHECKLIST_KOORDINASI + ATURAN_ESKALASI + JADWAL_OPERASIONAL. Import OK.",
+      "jalur": "manual Muse",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A03",
+      "nama": "Command Controller",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: ATURAN_ROUTING + FORMAT_HANDOFF + ATURAN_VALIDASI_OUTPUT. Import OK. 24 Nov 2026: loop kerja 10 tahap + Task ID (registry BD-...) diterapkan; ritme per jam + checklist penutupan shift diterapkan.",
+      "jalur": "rencana-pagi-0500, laporan-malam-2000",
+      "diperbarui": "2026-11-24"
+    },
+    {
+      "kode": "A04",
+      "nama": "Quality Control",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: CEKLIST_QC_DEMO/VIDEO/DOKUMEN + KATA_TERLARANG_QC + FORMAT_LAPORAN_QC (qc_negatif, laporan_qc_baru). Import OK.",
+      "jalur": "produksi-utama-0900",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A05",
+      "nama": "Business Analyst",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: BASELINE_TOKO_21_NOV_2026 + FEE_KANAL + KPI_TOKO + TEMPLATE_LABA_RUGI (hitung_margin_kanal, laporan_laba_rugi); MODEL selaras llm_router gemini-3.8-flash. Import OK.",
+      "jalur": "laporan-strategi-harian, laporan-malam-2000",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A06",
+      "nama": "Market Researcher",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: SUMBER_RISET_GRATIS_2026 (8 sumber) + TEMPLATE_BRIEF_RISET + SKALA_VALIDASI_PERMINTAAN; MODEL gemini-3.8-flash. Import OK.",
+      "jalur": "laporan-strategi-harian",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A07",
+      "nama": "Trend Hunter",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: SUMBER_TREN_GRATIS_2026 (8 sumber) + FORMAT_CATATAN_TREN + ALUR_TREN_KE_A10 (catat_tren_v2, teruskan_ke_a10); MODEL gemini-3.8-flash. Import OK.",
+      "jalur": "laporan-strategi-harian",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A08",
+      "nama": "Product Developer",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: KERANGKA_IDE_PRODUK + KRITERIA_PRODUK_LAYAK + cek_duplikat() (worklist-73 + upload-toko); MODEL gemini-3.8-flash. Import OK.",
+      "jalur": "produksi-utama-0900",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A09",
+      "nama": "Competitor Analyst",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: SUMBER_HARGA_RESMI (9 sumber resmi) + TEMPLATE_TABEL_BANDING (cek_kecukupan_data_referensi, tabel_banding_harga); tetap \"belum cukup data\" sampai harga dicek satu per satu; MODEL gemini-3.8-flash. Import OK.",
+      "jalur": "laporan-strategi-harian",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A10",
+      "nama": "Product Validator",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: KRITERIA_VALIDASI (skor maks 20) + SKALA_SKOR_VALIDASI + TEMPLATE_LAPORAN_VALIDASI (laporan_validasi, validasi_tren_dari_a07); MODEL gemini-3.8-flash. Import OK.",
+      "jalur": "laporan-strategi-harian",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A11",
+      "nama": "AI Video Producer",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026 (tinjau + tambah): ALAT_VIDEO_GRATIS_2026 (7 alat AI video gratis). ATURAN_SUARA lama tetap. Import OK. 24 Nov 2026: Ep1 'Satu Otak, Dua Kucing' upload 20:00; produksi Oyen Dokter 21:00 (Flow 264 kredit, aman); rencana 60 hari Podcast Meong 25 Nov 2026-23 Jan 2027 diterapkan.",
+      "jalur": "persiapan-video-0630",
+      "diperbarui": "2026-11-24"
+    },
+    {
+      "kode": "A12",
+      "nama": "AI Image Designer",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: TREN_VISUAL_2026 + ATURAN_THUMBNAIL + ALAT_GRATIS + TEMPLATE_PROMPT_GAMBAR + UKURAN_STANDAR. Import OK.",
+      "jalur": "upload-foto-harian",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A13",
+      "nama": "App Developer",
+      "status": "OK",
+      "alasan": "Skill sudah lengkap (ATURAN_MERAMBAT 6 butir mutakhir) — ditinjau 21 Nov 2026, tidak ditambah. Import OK.",
+      "jalur": "produksi-utama-0900",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A14",
+      "nama": "Web Developer",
+      "status": "OK",
+      "alasan": "Skill sudah lengkap (ATURAN_MERAMBAT + harga paket jasa benar) — ditinjau 21 Nov 2026, tidak ditambah. Import OK.",
+      "jalur": "produksi-utama-0900",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A15",
+      "nama": "POD Designer",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: TREN_POD_2026 + SPESIFIKASI_ZAZZLE + CEKLIST_UPLOAD_POD + TARGET_HARIAN_POD. Import OK.",
+      "jalur": "produksi-pod-harian",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A16",
+      "nama": "eBook Publisher",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: FORMAT_EBOOK + HARGA_TERCATAT + CEKLIST_KARYAKARSA + CEKLIST_LYNK + PLATFORM_EBOOK. Import OK.",
+      "jalur": "produksi-ebook-harian",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A17",
+      "nama": "Creative Writer",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: STRUKTUR_PUISI/CERPEN/CERBUNG + ATURAN_KARYA + DAFTAR_BAHAN_CERITA + TARGET_HARIAN. Import OK.",
+      "jalur": "produksi-tulisan-harian",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A18",
+      "nama": "Game Developer",
+      "status": "OK",
+      "alasan": "Skill sudah lengkap (ATURAN_MERAMBAT + standar game Level 3/file tunggal) — ditinjau 21 Nov 2026, tidak ditambah. Import OK.",
+      "jalur": "produksi-utama-0900",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A19",
+      "nama": "Content Producer",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: PAKET_HARIAN + KALENDER_POSTING + FORMAT_PAKET + KANAL. Import OK.",
+      "jalur": "paket-konten-harian",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A20",
+      "nama": "Instagram Manager",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: FORMAT_IG_2026 + JAM_POSTING_IG + CHECKLIST_IG + TEMPLATE_CAPTION_IG (cek_format_ig). Import OK.",
+      "jalur": "manual Muse",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A21",
+      "nama": "TikTok Manager",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026 (tinjau + tambah): FORMAT_TIKTOK_2026 (9 entri, terverifikasi web) + koreksi fakta login TikTok 21 Nov 2026. PLAYBOOK_LOGIN lama tetap. Import OK.",
+      "jalur": "manual Muse",
+      "diperbarui": "2026-11-24",
+      "catatan": "TikTok Studio @meongcast + TikTok @podcast_kucing masuk 21 Nov 2026 (Google lawaklucu182); puzzle captcha sempat timeout setelah login tapi sesi masuk. 24 Nov 2026: login TikTok @meongcast gagal lagi (angka verifikasi Google 4→7→51 berganti, lalu dialog verifikasi TikTok beku tidak merespons klik); nama belum jadi Digicat. 24 Nov 2026: TikTok Digicat BELUM terbentuk — 5x gagal kirim kode (kode tidak pernah sampai; TikTok memblokir dari browser ini); @podcast_kucing sesi habis 24 Nov 18:00 (perlu login ulang oleh Cipta); coba lagi besok/dari HP Cipta."
+    },
+    {
+      "kode": "A22",
+      "nama": "YouTube Manager",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: FORMAT_SHORTS_2026 + STRUKTUR_DESKRIPSI + CHECKLIST_SHORTS (cek_judul_shorts). Import OK.",
+      "jalur": "manual Muse",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A23",
+      "nama": "Threads Manager",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: FORMAT_THREADS_2026 + STRATEGI_TUMBUH_THREADS (cek_post_threads). Import OK.",
+      "jalur": "manual Muse",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A24",
+      "nama": "SEO & Growth",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: CHECKLIST_SEO_2026 + PANTAU_SEO (cek_seo_halaman). Import OK.",
+      "jalur": "auto-update-website-0600, auto-update-website-0800, auto-update-website-2030",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A25",
+      "nama": "Sales Manager",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: JALUR_PENJUALAN (4 jalur) + FUNNEL + TEMPLATE_FOLLOW_UP (baca_leads dari 15 lead nyata, draf_follow_up_lead). Template penawaran selesai ditulis 15:36 (6 DM + 1 email, di log A25 + b25). Penjualan 21 Nov: 6 DM IG terkirim 11:54, 2 email terkirim 11:56, 1 DM TikTok Garden terkirim 12:16 (@gardenvet31). Import OK. 24 Nov 2026 18:24: penawaran 48 email terkirim, 0 balasan; funnel dilacak (pelacak-funnel-bulanan.csv); tangga penawaran + usulan harga recurring diterapkan (APR-16 menunggu Cipta).",
+      "jalur": "follow-up-penjualan-harian",
+      "diperbarui": "2026-11-24"
+    },
+    {
+      "kode": "A26",
+      "nama": "Customer Service",
+      "status": "OK",
+      "alasan": "Skill sudah lengkap (PLAYBOOK_WA + KANAL_CS mutakhir) — ditinjau 21 Nov 2026, tidak ditambah. Import OK.",
+      "jalur": "menunggu keputusan Cipta",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A27",
+      "nama": "Email Administrator",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: KATEGORI_TRIASE + PRIORITAS_TRIASE + TANDA_ANEH_URGENT + TEMPLATE_BALASAN (deteksi_aneh, draf_balasan); aturan verifikasi 10:11-10:12 tidak diubah. Import OK.",
+      "jalur": "cek-email-a27-0530, cek-email-a27-1930",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A28",
+      "nama": "Opportunity Hunter",
+      "status": "TERBLOKIR",
+      "alasan": "Sribu SELESAI 21 Nov 2026 11:39 (username CiptaBintangLestari, ID Cipta10542, profil Step 1 lengkap 33%). Projects.co.id menunggu kata sandi Cipta (kartu Secure Vault dikirim 11:19 + 11:28). Fiverr, Upwork, Freelancer.com belum mulai. BIO_ID/BIO_EN DIPERBAIKI 12:58 — kini 129 aplikasi (bukan 124) via A28_config.json. Import OK. 24 Nov 2026: tetap TERBLOKIR — keputusan freelance masih menunggu Cipta (pilih 2 dari 5 draf Freelancer.co.id untuk 2 bid gratis tersisa; profil 55%); Fiverr 19 pesan belum dibaca (6 percakapan).",
+      "jalur": "menunggu keputusan Cipta",
+      "diperbarui": "2026-11-24"
+    },
+    {
+      "kode": "A29",
+      "nama": "Finance Manager",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: TEMPLATE_ENTRI_KEUANGAN + FEE_PLATFORM + METRIK_KEUANGAN (baca_keuangan_data, hitung_margin_draf). Import OK. 24 Nov 2026: log keuangan baru dibuat (saldo awal $0/Rp0); laba bersih + kas dilacak, bukan omzet saja.",
+      "jalur": "laporan-malam-2000",
+      "diperbarui": "2026-11-24"
+    },
+    {
+      "kode": "A30",
+      "nama": "Operations Manager",
+      "status": "OK",
+      "alasan": "Skill 21 Nov 2026: SOP_HARIAN + CHECKLIST_CRON + PENANGANAN_GAGAL. Import OK.",
+      "jalur": "manual Muse",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A31",
+      "nama": "Agent 31 — Publish",
+      "status": "OK",
+      "alasan": "Tidak ada modul b-series (didorong cron distribusi-1300); skill dicatat di status saja — tidak ada yang bisa di-upgrade di modul. Peran: Publish.",
+      "jalur": "distribusi-1300",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A32",
+      "nama": "Agent 32 — Build",
+      "status": "OK",
+      "alasan": "Tidak ada modul b-series (didorong cron produksi-utama-0900); skill dicatat di status saja — tidak ada yang bisa di-upgrade di modul. Peran: Build. 24 Nov 2026: level produk internal diterapkan (pemetaan level 4-7 aplikasi/website, 4-10 game); audit 5 produk/minggu mulai 25 Nov.",
+      "jalur": "produksi-utama-0900",
+      "diperbarui": "2026-11-24"
+    },
+    {
+      "kode": "A33",
+      "nama": "Agent 33 — Pertumbuhan",
+      "status": "OK",
+      "alasan": "Tidak ada modul b-series (modul lama a03_pertumbuhan.py, gagal import karena gradio — warisan, tidak diperbaiki); skill dicatat di status saja. Peran: Pertumbuhan organik.",
+      "jalur": "a03_pertumbuhan.py",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A34",
+      "nama": "Agent 34 — Penerjemah",
+      "status": "OK",
+      "alasan": "Penerjemah pendukung pembuatan produk (56 bahasa + glosarium produk 30 istilah). DITUNDA LAGI 21 Nov 2026 11:37 (Cipta: \"Translate lewat dulu\") — SEMUA pekerjaan translate ditunda sampai Cipta bilang jalan, termasuk translate produk (aktivasi produk 11:07 dicabut). Mesin translate (Gemini) PULIH 21 Nov 2026 13:15 — gateway jawab OK 0,90 dtk via gemini-3.5-flash-lite — tapi pekerjaan translate tetap ditunda. Modul tetap OK.",
+      "jalur": "manual via Muse",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A35",
+      "nama": "Agent 35 — Ngetik",
+      "status": "OK",
+      "alasan": "Jasa pengetikan (ketik ulang dokumen, data entry, transkrip audio/video, format + rapikan dokumen); diganti nama dari Agent 5 atas perintah Cipta 21 Nov 2026. Skill diperbarui 21 Nov 2026 (tarif pasar riset Sribu/Projects.co.id, standar kualitas, alur kerja, alat gratis).",
+      "jalur": "manual via Muse",
+      "diperbarui": "2026-11-21"
+    },
+    {
+      "kode": "A36",
+      "nama": "Agent 36 — Copywriter",
+      "status": "OK",
+      "alasan": "Copywriter (iklan digital, landing page, email promosi, konten sosmed, materi penjualan, pesan merek); diganti nama dari Agent 6 atas perintah Cipta 21 Nov 2026. Skill diperbarui 21 Nov 2026 (riset copywriter.id/belajarlagi.id/Upwork/Fiverr: tarif pasar, alur kerja brief→riset→tulis→uji, prinsip tulisan).",
+      "jalur": "manual via Muse",
+      "diperbarui": "2026-11-21"
+    }
+  ],
+  "jadwal_diusulkan": [
+    {
+      "kode": "A27",
+      "nama": "Email Administrator",
+      "cron": "cek-email-harian",
+      "jam": "05:30 & 19:30",
+      "catatan": "AKTIF 21 Nov 2026 — cron cek-email-a27-0530 (05:30) + cek-email-a27-1930 (19:30)."
+    },
+    {
+      "kode": "A28",
+      "nama": "Opportunity Hunter",
+      "cron": "riset-peluang-harian",
+      "jam": "08:30",
+      "catatan": "DIUSULKAN, belum aktif — menunggu keputusan Cipta soal akun Upwork."
+    }
+  ]
+}
