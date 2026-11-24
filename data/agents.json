@@ -2601,6 +2601,27 @@
         "model": "gemini-4-hydrogen",
         "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
         "model_status": "rencana — model wajib Hydrogen saat dibangun"
+      },
+      {
+        "code": "DIFY-09",
+        "name": "Pemicu Utama — Trigger Master",
+        "platform": "Dify Cloud (cloud.dify.ai)",
+        "type": "Agent",
+        "division": "Operasional",
+        "boss": "Muse",
+        "job_desc": "Komandan pemicu seluruh sistem Digicat/Pusat Komando: memerintahkan semua agent/tim berjalan sesuai jadwal (looping), mengingatkan yang belum jalan, dan SELALU mengingatkan Muse juga",
+        "url": null,
+        "knowledge_base": "Digistore Oyen — Master Knowledge",
+        "mapped_to": "Muse (browser) + Dify",
+        "status": "Dibuat 24 Nov 2026 atas perintah Cipta — instruksi ditulis (dify-09-pemicu-utama.md), menunggu dibuat di Dify via browser",
+        "tugas_harian": "Tiap jam: cek jadwal → perintahkan yang harus jalan → cek papan/log → ingatkan yang belum jalan (termasuk ingatkan Muse) → catat selesai; ulangi terus (looping)",
+        "target_harian": "0 tugas terjadwal terlewat tanpa pengingat; 0 pengingat tanpa tindak lanjut",
+        "skills": [
+          "data/skills/manajer-memori/SKILL.md"
+        ],
+        "model": "gemini-4-hydrogen",
+        "model_sumber": "keputusan Cipta 24 Nov 05:18 — pembuatan wajib Gemini 4 Hydrogen (gratis saja)",
+        "model_status": "menunggu dibuat di Dify: Hydrogen TIDAK ADA di dropdown (terverifikasi 24 Nov); dibangun dengan Gemini 3.5 Flash (tertinggi di daftar, perintah Cipta 24 Nov 07:15); ganti ke Hydrogen bila own-key terpasang"
       }
     ]
   },
