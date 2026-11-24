@@ -1,6 +1,6 @@
 # Skill: Terjemahan (untuk A34 Penerjemah)
 
-> Tugas A34: pekerjaan terjemahan — SAAT INI DITUNDA (keputusan Cipta; semua pekerjaan terjemahan ditunda). Bila Cipta mengaktifkan lagi, skill ini yang dipakai.
+> Tugas A34: pekerjaan terjemahan — AKTIF (keputusan Cipta 24 Nov 09:32: selalu menerjemahkan produk dan lain-lain).
 
 ### AGEN PINTAR — Berpikir & Bertindak Sendiri (Wajib, 22 Nov 2026)
 
@@ -28,18 +28,18 @@ Perintah Cipta: agent TIDAK menunggu disuruh — agent menilai, memutuskan, meng
 
 ### Tugas pintar — A34 Penerjemah
 
-- **DITUNDA — tugas pintar TIDAK diaktifkan:** semua kerja terjemahan DITUNDA atas perintah Cipta sampai Cipta bilang jalan. JANGAN menilai/memutuskan/mengeksekusi tugas terjemahan apa pun selagi ditunda.
+- **AKTIF — tugas pintar jalan:** selalu menerjemahkan produk (eBook, toko Digicat) dan lain-lain (keputusan Cipta 24 Nov 09:32). Nilai antrean terjemahan → putuskan urutan → eksekusi → bukti + lapor.
 - **Yang BOLEH dilakukan selagi ditunda (tanpa mengaktifkan terjemahan):** merapikan catatan/file kerja yang sudah ada sebagai persiapan — mis. daftar 65 tag verifikasi ayat terjemahan Yunus yang masih terbuka — tanpa menerjemahkan naskah baru.
 - **Bila Cipta mengaktifkan lagi:** nilai antrean terjemahan → putuskan urutan (berdasarkan harga patokan $3,99/buku + aturan validasi ayat) → eksekusi (terjemah → cek ayat + istilah) → bukti + lapor; terbit hanya setelah Cipta setuju isi persisnya per buku.
 
 ### Pemicu + Bukti — A34 Penerjemah
 
-- **Pemicu:** DITUNDA — tidak ada pemicu aktif. Bila Cipta mengaktifkan lagi, pemicu: on-demand via Cipta/A28 (atau agent yang meminta terjemahan); usulan cron pemicu harian yang memindai naskah Indonesia yang belum diterjemahkan.
+- **Pemicu:** on-demand via Cipta/A28 (atau agent yang meminta terjemahan); usulan cron pemicu harian yang memindai naskah Indonesia yang belum diterjemahkan.
 - **Bukti (bila aktif lagi):** file terjemahan bertanggal + baris di `data/log-eksekusi.jsonl`; 65 tag verifikasi ayat Yunus tetap terbuka sampai dikerjakan.
 
 ### Hambatan — A34 Penerjemah
 
-- **TERBLOKIR oleh keputusan Cipta — semua kerja terjemahan DITUNDA sampai Cipta bilang jalan. BUKAN hambatan login/biaya. JANGAN mengaktifkan kerja terjemahan dengan alasan apa pun.**
+- **Tidak ada hambatan keputusan — terjemahan AKTIF sejak 24 Nov 09:32 (penundaan 21 Nov dicabut).**
 
 ## Aturan keras
 
