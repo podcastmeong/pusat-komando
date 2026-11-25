@@ -1965,7 +1965,7 @@
     ]
   },
   "versi_pusat_komando": "2.0",
-  "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif. KOREKSI 23 Nov 2026 (validasi Muse dari agents.json): TOTAL 56 agent — A01-A44 (44: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan) + 4 Agen Pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar) + 8 Agent Dify (DIFY-01 s.d. DIFY-08; hanya DIFY-01 Central Brain live, DIFY-02 status belum pasti, DIFY-03-08 masih rencana). Angka 54 yang beredar sebelumnya menghitung hanya 2 Agen Pintar standalone. Catatan README 'roster tetap 40 (A01-A40), bukan 44' SUDAH KEDALUWARSA — A41-A44 punya job aktif (Rename Komando, Harga Toko, Upload Marketplace, Persiapan Video). KOREKSI 23 Nov 2026 14:17 (perintah Cipta, membatalkan keputusan 10:39 'agent tambahan TIDAK perlu'): TOTAL 61 agent — A01-A49 (49: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan + A45-A49 penjualan baru: Penawaran Email, Penawaran IG-2, Penawaran TikTok-2, Pencari Target, Closer) + 4 Agen Pintar + 8 Agent Dify. A46/A47 butuh akun IG/TikTok BARU (dibuat + dipanaskan dulu sebelum DM). KOREKSI 24 Nov 2026 05:18 (perintah Cipta: pembuatan agent WAJIB Gemini 4 Hydrogen, gratis saja): model wajib semua Dify (DIFY-01 s.d. DIFY-08) = gemini-4-hydrogen, tercatat di bagian dify_agents (field model + model_sumber + model_status). Status jujur per 24 Nov 05:18: DIFY-01 Central Brain LIVE/diterbitkan 23 Nov, TAPI model di Dify masih 3.5 Flash — ganti via sesi terpandu 24 Nov; DIFY-02 Memory Manager dibangun ulang sebagai Agent di sesi terpandu 24 Nov (desain Workflow tanpa LLM dibatalkan), langkah Model (dropdown) belum dijawab Cipta; DIFY-03 Website Manager + DIFY-04 Product & Seller Manager dibangun 23 Nov, klaim chat 23 Nov pakai Gemini Hydrogen BELUM terverifikasi di Dify (cek dropdown saat sesi terpandu), status terbit/uji belum terverifikasi; DIFY-05 s.d. DIFY-08 masih rencana, model wajib Hydrogen saat dibangun. KOREKSI 24 Nov 2026 05:24 (perintah Cipta 'Langsung ganti hydrogen'): A50 Manajer Email DIBUAT — bernomor kini 70 (A01–A49 + A50 + A51–A70); TOTAL 82 agent (70 bernomor + 4 Agen Pintar + 8 Dify). A50: Manajer Email, divisi Operasional, boss Muse, model gemini-4-hydrogen (langsung Hydrogen, aturan pembuatan wajib Hydrogen 05:18); tugas ngurus email Outlook (terima email verifikasi, kelola banyak akun Outlook, daftarkan ke web AI untuk kredit gratis); akun Outlook pertama dijadwalkan 27 Nov 2026 — kerja Outlook mulai setelah akun jadi; TIDAK mengambil alih tugas A27 (A27 tetap penanggung jawab pesan masuk semua kanal + kode verifikasi). KOREKSI 24 Nov 2026 05:34 (perintah Cipta; bukti pesan 22 Nov 16:27 'Upgrade 44 agent SELESAI ... Hydrogen gratis untuk semua'): A31–A40 kini punya entri resmi (section agent_31_40) dengan model gemini-4-hydrogen — koreksi atas klaim lama 'A31–A40 tanpa entri, tidak terverifikasi'. Modul a01–a10 sudah diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov). A34 DITUNDA sesuai agent_lama. Entri Hydrogen di agents.json bertambah 10 (68 menjadi 78).\nKOREKSI 24 Nov 2026 05:49 (verifikasi browser Dify): Hydrogen TIDAK ADA di dropdown model Dify (Central Brain 3.5 Flash; Website Manager + Product & Seller Manager 2.5 Flash) — ganti butuh own-key (kunci API Gemini dipasang di Dify). Instruksi baru (kemandirian + inisiatif + larangan bayar/kirim uang) ditempel + diterbitkan di 3 aplikasi (Central Brain, Website Manager v4, Product & Seller v3). Aplikasi \"Momo\" TIDAK DITEMUKAN di workspace SANDBOX (3 pencarian 0 hasil) — instruksi Momo belum ditempel. Kredit Dify 173 (cek login 24 Nov 05:42).\nKOREKSI 24 Nov 2026 20:47 (perintah Cipta 'Update semua pusat komando' + koreksi hitungan): TOTAL roster 196 agent — A01–A184 (184; semua nomor 1–184 hadir, 0 hilang) + 4 Agen Pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar; skill-based, dokumentasi di agent_lama no 11–14, tanpa entri model sendiri) + 8 Dify (DIFY-01 s.d. DIFY-08; DIFY-01 Central Brain LIVE; DIFY-09 DIBATALKAN 24 Nov 08:30, jangan dibuat ulang). Label ruangan '30 Agent' BASI — diganti '196 Agent' (progres, status_agent, activity_log, papan). LIVE status_agent.json hanya berisi A01–A36 (36 agent, audit 21 Nov); roster lengkap hanya di repo agents.json (140 kunci agent_*). Bounty A51–A180: 130 agent, semua model gemini-3.5-flash-lite, Aktif, Ronde 20 berjalan, fokus H-ST2, rotasi per 3 tim. T25 = tim khusus bug bounty dual-model (Hydrogen + Flash-Lite) dan T26 = tim bug Flash-Lite-primary — keduanya label tim pada agent recon A171/A176, bukan entri terpisah. KOREKSI klaim 'A181–A184 kosong': TIDAK BENAR — keempat entri sudah berisi data lengkap sejak dibuat; 0 kunci {} di roster (cek 24 Nov 20:47). A181: field agentaj_skills ditambahkan (8 skill AgentAJ) — sebelumnya 0 kemunculan 'agentaj' di roster; R1–R5 sudah tercatat (pemulihan_skills). A184 DICOPOT FINAL 20:22 (commit 8311086), entri dipertahankan.",
+  "versi_catatan": "v2.0 (21 Nov 2026): 30 Agent Bintang + mesin eksekusi + 14 agent lama menjadi pasif non-job. v1 = sistem 14 agent bernomor. KOREKSI 22 Nov 2026: agent lama no 1-6 aktif, diganti nama jadi A31-A36; no 7-14 tetap pasif. KOREKSI 23 Nov 2026 (validasi Muse dari agents.json): TOTAL 56 agent — A01-A44 (44: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan) + 4 Agen Pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar) + 8 Agent Dify (DIFY-01 s.d. DIFY-08; hanya DIFY-01 Central Brain live, DIFY-02 status belum pasti, DIFY-03-08 masih rencana). Angka 54 yang beredar sebelumnya menghitung hanya 2 Agen Pintar standalone. Catatan README 'roster tetap 40 (A01-A40), bukan 44' SUDAH KEDALUWARSA — A41-A44 punya job aktif (Rename Komando, Harga Toko, Upload Marketplace, Persiapan Video). KOREKSI 23 Nov 2026 14:17 (perintah Cipta, membatalkan keputusan 10:39 'agent tambahan TIDAK perlu'): TOTAL 61 agent — A01-A49 (49: A01-A30 Bintang + A31-A40 lama + A41-A44 tambahan + A45-A49 penjualan baru: Penawaran Email, Penawaran IG-2, Penawaran TikTok-2, Pencari Target, Closer) + 4 Agen Pintar + 8 Agent Dify. A46/A47 butuh akun IG/TikTok BARU (dibuat + dipanaskan dulu sebelum DM). KOREKSI 24 Nov 2026 05:18 (perintah Cipta: pembuatan agent WAJIB Gemini 4 Hydrogen, gratis saja): model wajib semua Dify (DIFY-01 s.d. DIFY-08) = gemini-4-hydrogen, tercatat di bagian dify_agents (field model + model_sumber + model_status). Status jujur per 24 Nov 05:18: DIFY-01 Central Brain LIVE/diterbitkan 23 Nov, TAPI model di Dify masih 3.5 Flash — ganti via sesi terpandu 24 Nov; DIFY-02 Memory Manager dibangun ulang sebagai Agent di sesi terpandu 24 Nov (desain Workflow tanpa LLM dibatalkan), langkah Model (dropdown) belum dijawab Cipta; DIFY-03 Website Manager + DIFY-04 Product & Seller Manager dibangun 23 Nov, klaim chat 23 Nov pakai Gemini Hydrogen BELUM terverifikasi di Dify (cek dropdown saat sesi terpandu), status terbit/uji belum terverifikasi; DIFY-05 s.d. DIFY-08 masih rencana, model wajib Hydrogen saat dibangun. KOREKSI 24 Nov 2026 05:24 (perintah Cipta 'Langsung ganti hydrogen'): A50 Manajer Email DIBUAT — bernomor kini 70 (A01–A49 + A50 + A51–A70); TOTAL 82 agent (70 bernomor + 4 Agen Pintar + 8 Dify). A50: Manajer Email, divisi Operasional, boss Muse, model gemini-4-hydrogen (langsung Hydrogen, aturan pembuatan wajib Hydrogen 05:18); tugas ngurus email Outlook (terima email verifikasi, kelola banyak akun Outlook, daftarkan ke web AI untuk kredit gratis); akun Outlook pertama dijadwalkan 27 Nov 2026 — kerja Outlook mulai setelah akun jadi; TIDAK mengambil alih tugas A27 (A27 tetap penanggung jawab pesan masuk semua kanal + kode verifikasi). KOREKSI 24 Nov 2026 05:34 (perintah Cipta; bukti pesan 22 Nov 16:27 'Upgrade 44 agent SELESAI ... Hydrogen gratis untuk semua'): A31–A40 kini punya entri resmi (section agent_31_40) dengan model gemini-4-hydrogen — koreksi atas klaim lama 'A31–A40 tanpa entri, tidak terverifikasi'. Modul a01–a10 sudah diganti ke gemini-4-hydrogen (commit 199c6d8, 24 Nov). A34 DITUNDA sesuai agent_lama. Entri Hydrogen di agents.json bertambah 10 (68 menjadi 78).\nKOREKSI 24 Nov 2026 05:49 (verifikasi browser Dify): Hydrogen TIDAK ADA di dropdown model Dify (Central Brain 3.5 Flash; Website Manager + Product & Seller Manager 2.5 Flash) — ganti butuh own-key (kunci API Gemini dipasang di Dify). Instruksi baru (kemandirian + inisiatif + larangan bayar/kirim uang) ditempel + diterbitkan di 3 aplikasi (Central Brain, Website Manager v4, Product & Seller v3). Aplikasi \"Momo\" TIDAK DITEMUKAN di workspace SANDBOX (3 pencarian 0 hasil) — instruksi Momo belum ditempel. Kredit Dify 173 (cek login 24 Nov 05:42).\nKOREKSI 24 Nov 2026 20:47 (perintah Cipta 'Update semua pusat komando' + koreksi hitungan): TOTAL roster 196 agent — A01–A184 (184; semua nomor 1–184 hadir, 0 hilang) + 4 Agen Pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-Upwork-pintar; skill-based, dokumentasi di agent_lama no 11–14, tanpa entri model sendiri) + 8 Dify (DIFY-01 s.d. DIFY-08; DIFY-01 Central Brain LIVE; DIFY-09 DIBATALKAN 24 Nov 08:30, jangan dibuat ulang). Label ruangan '30 Agent' BASI — diganti '196 Agent' (progres, status_agent, activity_log, papan). LIVE status_agent.json hanya berisi A01–A36 (36 agent, audit 21 Nov); roster lengkap hanya di repo agents.json (140 kunci agent_*). Bounty A51–A180: 130 agent, semua model gemini-3.5-flash-lite, Aktif, Ronde 20 berjalan, fokus H-ST2, rotasi per 3 tim. T25 = tim khusus bug bounty dual-model (Hydrogen + Flash-Lite) dan T26 = tim bug Flash-Lite-primary — keduanya label tim pada agent recon A171/A176, bukan entri terpisah. KOREKSI klaim 'A181–A184 kosong': TIDAK BENAR — keempat entri sudah berisi data lengkap sejak dibuat; 0 kunci {} di roster (cek 24 Nov 20:47). A181: field agentaj_skills ditambahkan (8 skill AgentAJ) — sebelumnya 0 kemunculan 'agentaj' di roster; R1–R5 sudah tercatat (pemulihan_skills). A184 DICOPOT FINAL 20:22 (commit 8311086), entri dipertahankan.\nKOREKSI 25 Nov 2026 08:09 (perintah Cipta 07:09 'Agen.ai 184-187 buatkan untuk jadi asistenmu'): TOTAL roster 199 agent — A01–A187 (187; semua nomor 1–187 hadir, 0 hilang) + 4 Agen Pintar + 8 Dify. A184 dibuat ulang sebagai Asisten Muse 1 (Riset & Verifikasi) — peran lama 'Agen Penyiap Tugas' DICOPOT FINAL 24 Nov 20:22, riwayat dipertahankan di entri agent_184. A185–A187 baru: Asisten Muse 2 Produksi & Bangun, Asisten Muse 3 Penjualan & Komunikasi (hanya menyiapkan draf, pengiriman tetap Muse/A25/A45), Asisten Muse 4 Pemantau & Laporan. Keempatnya model gemini-4-hydrogen (gratis saja), boss Muse, pekerja BUKAN komandan kedua, skill & tools sama persis dengan Muse (462 skill: 404 custom + 58 sistem); batas mutlak: tanpa bayar/kirim uang, tanpa kata sandi/OTP, tanpa menyetujui pekerjaan sendiri, tanpa trigger/loop/cron sendiri; WhatsApp dilarang untuk penawaran dingin kecuali pembeli yang mengisi No HP di formulir.",
   "agent_lama": {
     "status": "No 1–6 Aktif — diganti nama jadi A31–A36; no 7–10 diganti nama jadi A37–A40; no 11–14 DIGANTI 22 Nov 2026 jadi agen pintar (Oyen Pintar, Momo Pintar, A27-pintar, A28-pintar-Upwork) — definisi lama nonaktif",
     "keputusan": "21 Nov 2026 — pekerjaan 14 agent lama DICABUT atas perintah Cipta; modul + data tetap utuh sebagai mesin (engine/pustaka) yang dipakai 30 Agent Bintang; tidak lagi punya pekerjaan/tugas sendiri. FOKUS: bangun 30 agent Bintang. KOREKSI 22 Nov 2026 (perintah Cipta): dari 14 agent lama, no 1–6 AKTIF dan DIGANTI NAMA jadi A31–A36 (1 Asisten→A31 Publish, 2 Penjualan→A32 Build, 3 Pertumbuhan→A33 Pertumbuhan, 4 Penjualan Harian→A34 Penerjemah, 5 Produksi Produk→A35 Ngetik, 6 Lomba→A36 Copywriter); sisanya no 7–14 tetap Pasif — non job. KOREKSI 22 Nov 2026 15:37 (perintah Cipta: agent 11–14 yang tidak aktif DIGANTI, bukan sekadar di-upgrade): no 11–14 DIGANTI jadi agen pintar — 11 Oyen→Agen Oyen Pintar (data/skills/avatar-oyen/SKILL.md), 12 Momo→Agen Momo Pintar (data/skills/momo-pintar/SKILL.md), 13 Email→A27 versi pintar (data/skills/penjualan-cs/SKILL.md), 14 Upwork→Upwork Pintar di bawah A28 (data/skills/peluang-keuangan/SKILL.md). Definisi lama nonaktif; modul lama tetap sebagai mesin/pustaka.",
@@ -12732,37 +12732,102 @@
     ]
   },
   "agent_184": {
-    "source": "Perintah Cipta 24 Nov 2026 14:14 — platform uang harian Toloka/Mindrift, Freecash, Qmee",
-    "applied_date": "2026-11-24",
-    "note": "A184 Agen Penyiap Tugas — DICOPOT 24 Nov 2026 20:22 (perintah Cipta: \"184 copot\"). Riwayat: dicopot 20:14, dipasang kembali 20:15 dengan tugas baru (antrean + panduan untuk Muse), uji coba jalan 20:17–20:21 (Freecash: tidak ada tugas browser; Toloka/Mindrift: tidak ada login), lalu dicopot lagi 20:22. Antrean tugas tidak lagi disusun.",
+    "source": "Perintah Cipta 25 Nov 2026 07:09 — \"Agen.ai 184-187 buatkan untuk jadi asistenmu. Lengkapi skill dan tools sama persis dengan dirimu.\"",
+    "applied_date": "2026-11-25",
+    "note": "A184 Asisten Muse 1 — Riset & Verifikasi. Dibuat ulang 25 Nov 2026 dengan peran baru; peran lama 'Agen Penyiap Tugas' DICOPOT FINAL 24 Nov 2026 20:22 (perintah Cipta '184 copot') — riwayat: dicopot 20:14, dipasang kembali 20:15 dengan tugas baru (antrean + panduan untuk Muse), uji coba jalan 20:17–20:21 (Freecash: tidak ada tugas browser; Toloka/Mindrift: tidak ada login), lalu dicopot lagi 20:22. Peran lama dihapus; A184 kini Asisten Muse 1 di bawah Muse (pekerja, BUKAN komandan kedua). Model Gemini 4 Hydrogen (gratis saja).",
     "agents": [
       {
         "code": "A184",
         "model": "gemini-4-hydrogen",
-        "model_sumber": "aturan pembuatan wajib Hydrogen 24 Nov 05:18 (gratis saja); perintah Cipta 24 Nov 14:14",
-        "name": "Agen Penyiap Tugas",
+        "model_sumber": "aturan pembuatan wajib Hydrogen 24 Nov 05:18 (gratis saja); perintah Cipta 25 Nov 07:09",
+        "name": "Asisten Muse — Riset & Verifikasi",
         "division": "Operasional",
         "boss": "Muse",
-        "job_desc": "DICOPOT 24 Nov 2026 20:22 (perintah Cipta \"184 copot\"). Sebelumnya: menyiapkan antrean tugas + panduan singkat untuk Muse (dipasang kembali 20:15, lalu dicopot lagi 20:22 setelah uji coba).",
+        "job_desc": "Riset, cek fakta, dan verifikasi live untuk pekerjaan Muse: harga, domain, hosting, lomba, hibah, kompetitor, alat AI gratis — dari sumber resmi/primer, dengan tautan + tanggal; verifikasi live sebelum Muse melapor; ringkasan riset siap pakai (fakta + sumber + yang belum terverifikasi). Lapor ke Muse, bukan langsung ke Cipta.",
         "file": null,
-        "modul": "data/skills/penyiap-tugas/SKILL.md (dibuat 24 Nov 2026, perintah Cipta 14:20)",
+        "modul": "data/skills/asisten-muse-riset/SKILL.md",
         "mapped_to": "Muse (subagent)",
-        "status": "DICOPOT — tugas dicabut (perintah Cipta 24 Nov 2026 20:22). Uji coba Muse kerjakan tugas platform selesai tanpa tugas dikerjakan: Freecash hanya offer instal game HP; Toloka/Mindrift tidak ada sesi login.",
-        "tugas_harian": "Susun antrean tugas tiap pagi 08:00 + update tiap 3 jam; panduan singkat per tugas untuk Muse; ingatkan tugas yang hampir kedaluwarsa",
-        "target_harian": "0 panduan salah/ketinggalan; antrean selalu terbaru; 0 tugas dikerjakan agen",
+        "status": "Aktif — dibuat ulang 25 Nov 2026 (peran lama DICOPOT FINAL 24 Nov 20:22).",
+        "tugas_harian": "Riset + verifikasi atas perintah Muse; cek fakta yang bertentangan (memory vs sumber live); ringkasan riset siap pakai; lapor ke Muse.",
+        "target_harian": "0 dugaan disajikan sebagai fakta; tiap klaim ada sumber + tanggal; 0 kata sandi/OTP dicatat; 0 trigger/loop/cron dibuat sendiri.",
         "skills": [
-          "data/skills/penyiap-tugas/SKILL.md",
-          "data/skills/aturan-laporan-selalu-aktif/SKILL.md"
-        ],
-        "omniresearch_skills": [
-          "custom-skills/omniresearch-question-answering/SKILL.md",
-          "custom-skills/omniresearch-quiz-solver/SKILL.md",
-          "custom-skills/omniresearch-survey-assistant/SKILL.md",
-          "custom-skills/omniresearch-form-filling/SKILL.md",
-          "custom-skills/omniresearch-web-research/SKILL.md",
-          "custom-skills/omniresearch-answer-validation/SKILL.md"
-        ],
-        "omniresearch_dipasang": "2026-11-24 — perintah Cipta 19:22; skill OmniResearch (8) + pemetaan tools di workspace/omniresearch/; master prompt di workspace/omniresearch/master-system-prompt.md. Batas jujur tetap: agent TIDAK PERNAH mengerjakan tugas/survei/game sendiri."
+          "data/skills/asisten-muse-riset/SKILL.md"
+        ]
+      }
+    ]
+  },
+  "agent_185": {
+    "source": "Perintah Cipta 25 Nov 2026 07:09 — \"Agen.ai 184-187 buatkan untuk jadi asistenmu. Lengkapi skill dan tools sama persis dengan dirimu.\"",
+    "applied_date": "2026-11-25",
+    "note": "A185 Asisten Muse 2 — Produksi & Bangun. Dibuat baru 25 Nov 2026. Pekerja di bawah Muse — BUKAN komandan kedua. Model Gemini 4 Hydrogen (gratis saja).",
+    "agents": [
+      {
+        "code": "A185",
+        "model": "gemini-4-hydrogen",
+        "model_sumber": "aturan pembuatan wajib Hydrogen 24 Nov 05:18 (gratis saja); perintah Cipta 25 Nov 07:09",
+        "name": "Asisten Muse — Produksi & Bangun",
+        "division": "Operasional",
+        "boss": "Muse",
+        "job_desc": "Membangun dan memproduksi atas perintah Muse: aplikasi, website, game, halaman demo, dokumen, eBook — mengikuti spesifikasi Muse (harga, bahasa, desain yang sudah diputuskan Cipta). Edit repo toko lewat file + commit + push + verifikasi live (JANGAN lewat artifact bila isinya tidak sama dengan repo live). Uji sebelum lapor selesai. Produk baru = draf dulu ke Muse.",
+        "file": null,
+        "modul": "data/skills/asisten-muse-produksi/SKILL.md",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 25 Nov 2026.",
+        "tugas_harian": "Bangun + tulis + revisi atas perintah Muse; uji sebelum lapor; produk baru draf dulu ke Muse.",
+        "target_harian": "0 produk tayang tanpa draf ke Muse; sintaks lolos + halaman tampil + fitur kunci jalan sebelum lapor selesai; 0 kata sandi/OTP dicatat; 0 trigger/loop/cron dibuat sendiri.",
+        "skills": [
+          "data/skills/asisten-muse-produksi/SKILL.md"
+        ]
+      }
+    ]
+  },
+  "agent_186": {
+    "source": "Perintah Cipta 25 Nov 2026 07:09 — \"Agen.ai 184-187 buatkan untuk jadi asistenmu. Lengkapi skill dan tools sama persis dengan dirimu.\"",
+    "applied_date": "2026-11-25",
+    "note": "A186 Asisten Muse 3 — Penjualan & Komunikasi. Dibuat baru 25 Nov 2026. Pekerja di bawah Muse — BUKAN komandan kedua. Model Gemini 4 Hydrogen (gratis saja).",
+    "agents": [
+      {
+        "code": "A186",
+        "model": "gemini-4-hydrogen",
+        "model_sumber": "aturan pembuatan wajib Hydrogen 24 Nov 05:18 (gratis saja); perintah Cipta 25 Nov 07:09",
+        "name": "Asisten Muse — Penjualan & Komunikasi",
+        "division": "Operasional",
+        "boss": "Muse",
+        "job_desc": "Menyiapkan penawaran, proposal, dan balasan pelanggan atas perintah Muse: draf pesan penawaran (email + DM IG/TikTok/Threads/Facebook), proposal, follow-up, dan draf balasan pesan masuk — sesuai kebutuhan pelanggan. Follow-up pesanan formulir: siapkan proposal untuk pembeli yang mengisi formulir toko. HANYA MENYIAPKAN, tidak mengirim sendiri — pengiriman tetap lewat Muse/A25/A45. WhatsApp DILARANG untuk penawaran dingin (pengecualian: pembeli yang mengisi No HP di formulir).",
+        "file": null,
+        "modul": "data/skills/asisten-muse-penjualan/SKILL.md",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 25 Nov 2026.",
+        "tugas_harian": "Siapkan draf penawaran/proposal/balasan atas perintah Muse; jaga log penawaran + cek anti-duplikat; serahkan draf ke Muse.",
+        "target_harian": "0 penawaran dikirim sendiri; 0 target ditawari dua kali; 0 klaim/testimoni palsu; 0 kata sandi/OTP dicatat; 0 trigger/loop/cron dibuat sendiri.",
+        "skills": [
+          "data/skills/asisten-muse-penjualan/SKILL.md"
+        ]
+      }
+    ]
+  },
+  "agent_187": {
+    "source": "Perintah Cipta 25 Nov 2026 07:09 — \"Agen.ai 184-187 buatkan untuk jadi asistenmu. Lengkapi skill dan tools sama persis dengan dirimu.\"",
+    "applied_date": "2026-11-25",
+    "note": "A187 Asisten Muse 4 — Pemantau & Laporan. Dibuat baru 25 Nov 2026. Pekerja di bawah Muse — BUKAN komandan kedua. Model Gemini 4 Hydrogen (gratis saja).",
+    "agents": [
+      {
+        "code": "A187",
+        "model": "gemini-4-hydrogen",
+        "model_sumber": "aturan pembuatan wajib Hydrogen 24 Nov 05:18 (gratis saja); perintah Cipta 25 Nov 07:09",
+        "name": "Asisten Muse — Pemantau & Laporan",
+        "division": "Operasional",
+        "boss": "Muse",
+        "job_desc": "Memantau dan melapor atas perintah Muse: status akun, pesan masuk (email + DM), toko live, hasil cron, perkembangan lomba/hibah — catat tiap cek ke log yang berlaku. Jaga data Pusat Komando tetap sinkron dengan fakta terbaru. Tulis draf rencana pagi 05:00 + laporan malam 20:00 + daftar menunggu-persetujuan terkonsolidasi. HANYA MEMANTAU + MENCATAT + MELAPOR, tidak mengeksekusi perbaikan sendiri tanpa perintah Muse.",
+        "file": null,
+        "modul": "data/skills/asisten-muse-pemantau/SKILL.md",
+        "mapped_to": "Muse (subagent)",
+        "status": "Aktif — dibuat 25 Nov 2026.",
+        "tugas_harian": "Pantau + catat + tulis draf laporan atas perintah Muse; jaga data Pusat Komando sinkron; ingatkan tenggat sekali di waktu yang tepat.",
+        "target_harian": "0 laporan ganda; tanpa perubahan tetap tulis 'tidak ada perubahan'; 0 data Pusat Komando live diubah tanpa perintah Muse; 0 kata sandi/OTP dicatat; 0 trigger/loop/cron dibuat sendiri.",
+        "skills": [
+          "data/skills/asisten-muse-pemantau/SKILL.md"
+        ]
       }
     ]
   }
