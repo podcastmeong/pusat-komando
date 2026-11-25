@@ -1,1 +1,58 @@
-{"akun_dm":[{"platform":"Instagram","status":"login hidup — boleh DM; 24 Nov 12:50 Cipta masuk sendiri lewat tautan 'Login tanpa kata sandi' dari Gmail lawaklucu182; inbox 0 belum dibaca","username":"@podcast_meong"},{"platform":"TikTok","status":"login PUTUS — sesi habis 24 Nov 2026 18:00 (dicek berkala 18:00: dialihkan ke tiktok.com/login); perlu login ulang oleh Cipta; JANGAN DM sampai login pulih","username":"@podcast_kucing"},{"platform":"Instagram","status":"RUSAK — kata sandi ditolak IG 24 Nov 11:16 dan 12:42; login-link dikirim 2x (12:56, 13:05) tapi tidak ada email IG untuk akun ini di ketiga Gmail (email IG di lawaklucu182 hanya untuk podcast_meong — koreksi Cipta 13:11); jalur nomor HP +62 812-4798-6994 dicoba 13:08 lalu tertahan di reCAPTCHA, menunggu Cipta selesaikan sendiri; JANGAN DM","username":"podcast_kucing"},{"platform":"Instagram","status":"baru dibuat 24 Nov 2026 — pemanasan, BELUM boleh DM","username":"@digicatshop"},{"platform":"Threads","status":"baru dibuat 24 Nov 2026 — pemanasan, BELUM boleh DM","username":"@digicatshop"}],"aturan":{"batas_aman_harian_per_akun":"~10 DM/hari","dm_per_jam_per_akun":10,"jeda_minimal_antar_dm":"3 menit","whatsapp":"DILARANG total untuk penjualan","akun_email_platform":"Beda akun, beda email, beda platform — tapi kata sandi SAMA (satu kata sandi biasa untuk semua akun; nilainya TIDAK ditulis di file ini)","pengecualian_kata_sandi":"IG podcast_kucing (kata sandi ditolak 24 Nov 11:16) — kata sandinya diduga BERBEDA dari kata sandi biasa","jangan_tanya_kata_sandi":"Jangan tanyakan kata sandi ke Cipta (aturan 24 Nov 09:40 — semua pakai kata sandi biasa)","satu_file_login":"PEGANGAN login (perintah Cipta 24 Nov 20:42-20:43, WAJIB — catat, simpan, amalkan): file login-semua-akun.xlsx + .md di ~/workspace/catatan/ (salinan di ~/workspace/user/files/ + part_2.xlsx) adalah pegangan Muse untuk SEMUA login — ambil login dari file itu, cek juga file ini + ~/workspace/catatan/akun-dan-login.md, JANGAN bertanya lagi soal login/kata sandi/akun yang mana. Nilai kata sandi TIDAK PERNAH ditulis di file ini.","cakupan":"Daftar ini berisi akun Podcast Meong + akun Digicat baru (IG @digicatshop, Threads @digicatshop — pemanasan, belum boleh DM). Akun Digicat lain (TikTok, Facebook) menyusul setelah selesai dibuat."},"diperbarui":"2026-11-24 19:46 WIB - keputusan ganti semua akun non-Podcast-Meong ke Digicat; koneksi pesan @meongcast -> @digicatshop (menunggu ketukan Cipta)","perintah_cipta":"HANYA akun Podcast Meong di daftar ini (perintah Cipta 24 Nov 16:30: selain Podcast & Meong hapus semua dari daftar akun). Akun lama yang dihapus dari daftar: IG @meongcast, @meongcast.id, TikTok @meongcast, @ciptabintanglesta, Threads @ciptabintanglestari, YouTube Toko Oyen, Meong Cast, @CiptaBintangLestari. Akun-akun itu sendiri TIDAK dihapus permanen. Keputusan 24 Nov 19:45-19:46 (disesuaikan Muse): selain Podcast Meong, semua diganti akun Digicat; pakai akun Digicat; mumpung masih 0.","youtube_dihapus_dari_dm":{"akun":["@Podcastmeong"],"alasan":"YouTube tidak punya fitur DM ke pemilik channel (pesan langsung YouTube dihapus 2019); hanya komentar atau email bisnis di halaman Tentang","peran":"konten/upload saja"},"youtube":[{"channel":"Podcast meong","email":"lawaklucu182@gmail.com","status":"sesi habis 24 Nov 2026 18:00 (Google Account Chooser, semua akun Signed out); channel aktif (80 subscriber, 69 video); perlu login ulang oleh Cipta untuk cek komentar"}],"digicat_baru":"Koneksi pesan IG: @meongcast DIHAPUS (Cipta hapus di Accounts Center), ganti @digicatshop (Cipta sambungkan lewat Connect Instagram Messages). TikTok Digicat BELUM terbentuk (gagal 5x 24 Nov, kode tidak pernah sampai — TikTok memblokir kirim kode dari browser ini); Facebook Digicat BELUM terkonfirmasi (gagal 3x, semua halaman error); coba lagi besok/dari HP Cipta. Email baru digicatshop@atomicmail.io AKTIF (dibuat 24 Nov 17:34); seed phrase pemulihan harus disimpan Cipta sendiri dari pengaturan keamanan Atomic Mail.","penggantian_akun_digicat":"Keputusan Cipta 24 Nov 2026 19:45-19:46 (disesuaikan Muse): semua akun SELAIN Podcast Meong diganti dengan akun Digicat; pakai akun Digicat; mumpung masih 0. Yang TETAP: IG @podcast_meong, TikTok @podcast_kucing, YouTube Podcast meong. Yang DIGANTI: koneksi pesan IG @meongcast -> @digicatshop (Cipta hapus @meongcast di Meta Accounts Center + sambungkan @digicatshop lewat Connect Instagram Messages); TikTok + Facebook Digicat masih dibuat (coba lagi besok/dari HP Cipta). @digicatshop IG/Threads masih pemanasan - BELUM boleh DM penawaran sampai pemanasan selesai."}
+{
+  "akun_dm": [
+    {
+      "platform": "Instagram",
+      "status": "login hidup — boleh DM; 24 Nov 12:50 Cipta masuk sendiri lewat tautan 'Login tanpa kata sandi' dari Gmail lawaklucu182; inbox 0 belum dibaca",
+      "username": "@podcast_meong"
+    },
+    {
+      "platform": "TikTok",
+      "status": "login PUTUS — sesi habis 24 Nov 2026 18:00 (dicek berkala 18:00: dialihkan ke tiktok.com/login); perlu login ulang oleh Cipta; JANGAN DM sampai login pulih",
+      "username": "@podcast_kucing"
+    },
+    {
+      "platform": "Instagram",
+      "status": "RUSAK — kata sandi ditolak IG 24 Nov 11:16 dan 12:42; login-link dikirim 2x (12:56, 13:05) tapi tidak ada email IG untuk akun ini di ketiga Gmail (email IG di lawaklucu182 hanya untuk podcast_meong — koreksi Cipta 13:11); jalur nomor HP +62 812-4798-6994 dicoba 13:08 lalu tertahan di reCAPTCHA, menunggu Cipta selesaikan sendiri; JANGAN DM",
+      "username": "podcast_kucing"
+    },
+    {
+      "platform": "Instagram",
+      "status": "baru dibuat 24 Nov 2026 — pemanasan, BELUM boleh DM",
+      "username": "@digicatshop"
+    },
+    {
+      "platform": "Threads",
+      "status": "baru dibuat 24 Nov 2026 — pemanasan, BELUM boleh DM",
+      "username": "@digicatshop"
+    }
+  ],
+  "aturan": {
+    "batas_aman_harian_per_akun": "~10 DM/hari",
+    "dm_per_jam_per_akun": 10,
+    "jeda_minimal_antar_dm": "3 menit",
+    "whatsapp": "DILARANG total untuk penjualan",
+    "akun_email_platform": "Beda akun, beda email, beda platform — tapi kata sandi SAMA (satu kata sandi biasa untuk semua akun; nilainya TIDAK ditulis di file ini)",
+    "pengecualian_kata_sandi": "IG podcast_kucing (kata sandi ditolak 24 Nov 11:16) dan TikTok @ciptabintanglesta (login gagal 24 Nov 11:58) — kata sandi keduanya diduga BERBEDA dari kata sandi biasa",
+    "jangan_tanya_kata_sandi": "Jangan tanyakan kata sandi ke Cipta (aturan 24 Nov 09:40 — semua pakai kata sandi biasa)",
+    "satu_file_login": "PEGANGAN login (perintah Cipta 24 Nov 20:42-20:43, WAJIB — catat, simpan, amalkan): file login-semua-akun.xlsx + .md di ~/workspace/catatan/ (salinan di ~/workspace/user/files/ + part_2.xlsx) adalah pegangan Muse untuk SEMUA login — ambil login dari file itu, cek juga file ini + ~/workspace/catatan/akun-dan-login.md, JANGAN bertanya lagi soal login/kata sandi/akun yang mana. Nilai kata sandi TIDAK PERNAH ditulis di file ini.",
+    "cakupan": "Daftar ini berisi akun Podcast Meong + akun Digicat baru (IG @digicatshop, Threads @digicatshop — pemanasan, belum boleh DM). Akun Digicat lain (TikTok, Facebook) menyusul setelah selesai dibuat."
+  },
+  "diperbarui": "2026-11-24 19:46 WIB - keputusan ganti semua akun non-Podcast-Meong ke Digicat; koneksi pesan @meongcast -> @digicatshop (menunggu ketukan Cipta)",
+  "perintah_cipta": "HANYA akun Podcast Meong di daftar ini (perintah Cipta 24 Nov 16:30: selain Podcast & Meong hapus semua dari daftar akun). Akun lama yang dihapus dari daftar: IG @meongcast, @meongcast.id, TikTok @meongcast, @ciptabintanglesta, Threads @ciptabintanglestari, YouTube Toko Oyen, Meong Cast, @CiptaBintangLestari. Akun-akun itu sendiri TIDAK dihapus permanen. Keputusan 24 Nov 19:45-19:46 (disesuaikan Muse): selain Podcast Meong, semua diganti akun Digicat; pakai akun Digicat; mumpung masih 0.",
+  "youtube_dihapus_dari_dm": {
+    "akun": [
+      "@Podcastmeong"
+    ],
+    "alasan": "YouTube tidak punya fitur DM ke pemilik channel (pesan langsung YouTube dihapus 2019); hanya komentar atau email bisnis di halaman Tentang",
+    "peran": "konten/upload saja"
+  },
+  "youtube": [
+    {
+      "channel": "Podcast meong",
+      "email": "lawaklucu182@gmail.com",
+      "status": "sesi habis 24 Nov 2026 18:00 (Google Account Chooser, semua akun Signed out); channel aktif (80 subscriber, 69 video); perlu login ulang oleh Cipta untuk cek komentar"
+    }
+  ],
+  "digicat_baru": "Koneksi pesan IG: @meongcast DIHAPUS (Cipta hapus di Accounts Center), ganti @digicatshop (Cipta sambungkan lewat Connect Instagram Messages). TikTok Digicat BELUM terbentuk (gagal 5x 24 Nov, kode tidak pernah sampai — TikTok memblokir kirim kode dari browser ini); Facebook Digicat BELUM terkonfirmasi (gagal 3x, semua halaman error); coba lagi besok/dari HP Cipta. Email baru digicatshop@atomicmail.io AKTIF (dibuat 24 Nov 17:34); seed phrase pemulihan harus disimpan Cipta sendiri dari pengaturan keamanan Atomic Mail.",
+  "penggantian_akun_digicat": "Keputusan Cipta 24 Nov 2026 19:45-19:46 (disesuaikan Muse): semua akun SELAIN Podcast Meong diganti dengan akun Digicat; pakai akun Digicat; mumpung masih 0. Yang TETAP: IG @podcast_meong, TikTok @podcast_kucing, YouTube Podcast meong. Yang DIGANTI: koneksi pesan IG @meongcast -> @digicatshop (Cipta hapus @meongcast di Meta Accounts Center + sambungkan @digicatshop lewat Connect Instagram Messages); TikTok + Facebook Digicat masih dibuat (coba lagi besok/dari HP Cipta). @digicatshop IG/Threads masih pemanasan - BELUM boleh DM penawaran sampai pemanasan selesai."
+}
